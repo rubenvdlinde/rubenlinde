@@ -21,7 +21,7 @@ Laten we het mysterie ontrafelen: **AI is geen magie, maar een tekstvoorspeller*
 
 Een LLM (Large Language Model) is een rekenmodel dat getraind is op enorme hoeveelheden tekst. Het heeft patronen geleerd uit die voorbeelden. Wanneer je iets invoert, voorspelt het model stap voor stap wat de meest logische volgende tekst zou zijn - puur op basis van waarschijnlijkheden en patronen en (met name) de gestelde vraag. 
 
- AI **denkt niet na** zoals een mens. Het geeft simpelweg de meest waarschijnlijke volgende tekst terug op basis van wat het heeft geleerd. En dus die gestelde vraag. Met name dat laatste maakt het zo fijn om mee te werken. Het geeft in het ware het meest wensenlijke antwoord op je vraag en is dus een zekere zin een digitale pschychopaat. Maar dat levert ook een acuut probleem op
+ AI **denkt niet na** zoals een mens. Het geeft simpelweg de meest waarschijnlijke volgende tekst terug op basis van wat het heeft geleerd. En dus die gestelde vraag. Met name dat laatste maakt het zo fijn om mee te werken. Het geeft in het ware het meest wensenlijke antwoord op je vraag en is dus een zekere zin een digitale pschychopaat. En dat levert ook een acuut probleem op
 
 
 ## AI is net zo Ethisch als de Data
@@ -47,6 +47,8 @@ Maar goed daarmee komen we op een fundamenteel probleem, de neutrale AI bestaad 
 ## Hou op met het jagen op eenhoors
 
 Een perfecte AI ga je niet vinden, iedere filisoof had je dat op voorhand kunnen vertellen. Wat je ook traind en hoe je het in elkaar schroeft als de data het geheel van de mensheid is dan krijg je iets mensenljks. De vraag is hoe je hiermee omgaat. En dat is eigenlijk verdomt simpel we doen het al jaren. Iedere ambtelijke organisatie bestaad uit menenlijke mensen die we ooit hebben aangenomen in de volste overtuiging dat ze nooit 100% neutraal zijn. En daarop hebben we toesting, bezwaar en een legio aan beheers maatregelen genomen.
+
+Los daarvan denkt AI in patronen, niet in feitenlijk data. Als veel teksten naar een wetstekst verwijzen dan is dat een patroon, maar als ergens een wet of precedent logisch in het patroon past (doch niet feitenlijk bestaad) dan wordt het een halucinatie. Een AI die er van overtuigs is dat weten of precedenten bestaan inclusief bronvermelding zonder dat ze er daadwerkenljik zijn. Zelf puur trainen op waarheid voorkomt dus nog geen onwaarheden.
 
 Waar we met AI dus op moeten letten is zorgen dat we advies niet als neutraal ervaren, niet klakkenloos overnemen en niet als absolute waarheid zien. 
 
