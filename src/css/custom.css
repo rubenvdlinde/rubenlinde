@@ -543,7 +543,7 @@ article p {
 
 /* Also apply to all content pages except homepage */
 .main-wrapper:not(.homepage-root) .container {
-  max-width: 1400px !important;
+  max-width: 100% !important;
   width: 100%;
   padding: 0 2rem;
 }
@@ -552,7 +552,7 @@ article p {
 .footer .container {
   max-width: 100% !important;
   width: 100%;
-  padding: 0;
+  padding: 0 2rem !important;
 }
 
 .blog-card:hover {
