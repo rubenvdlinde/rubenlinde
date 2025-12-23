@@ -7,7 +7,6 @@ import {
   ThemeClassNames,
 } from '@docusaurus/theme-common';
 import BlogLayout from '@theme/BlogLayout';
-import BlogListPaginator from '@theme/BlogListPaginator';
 import SearchMetadata from '@theme/SearchMetadata';
 import type { Props } from '@theme/BlogListPage';
 import BlogCard from '@site/src/components/BlogCard';
@@ -129,7 +128,6 @@ function BlogListPageContent(props: Props): JSX.Element {
                 />
               );
             })}
-            {!selectedTag && <BlogListPaginator metadata={metadata} />}
           </div>
         </div>
       </div>

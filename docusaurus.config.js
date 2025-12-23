@@ -56,6 +56,9 @@ const config = {
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
+          // Show all blog posts on one page (no pagination)
+          blogListComponent: '@theme/BlogListPage',
+          postsPerPage: 'ALL',
         },
         theme: {
           customCss: './src/css/custom.css',
