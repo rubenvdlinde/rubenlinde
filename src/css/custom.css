@@ -1174,7 +1174,7 @@ article p {
 }
 
 [data-theme='light'] article header {
-  background: #ffffff !important;
+  background: transparent !important;
   color: #000000 !important;
 }
 
@@ -1190,9 +1190,21 @@ main,
   background: transparent !important;
 }
 
+/* Ensure body and html are transparent too */
+body,
+html {
+  background: transparent !important;
+}
+
+/* Light mode needs transparent main as well */
 [data-theme='light'] main {
-  background: #ffffff !important;
+  background: transparent !important;
   color: #000000 !important;
+}
+
+[data-theme='light'] body,
+[data-theme='light'] html {
+  background: transparent !important;
 }
 
 [data-theme='light'] .markdown h1,
