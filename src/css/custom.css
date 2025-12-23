@@ -592,6 +592,17 @@ article p {
   flex: 0 0 100% !important;
 }
 
+/* Remove container restrictions on blog post pages */
+article[itemtype='http://schema.org/BlogPosting'] {
+  max-width: 100% !important;
+}
+
+/* Make the container full width on blog post pages */
+article[itemtype='http://schema.org/BlogPosting'] .container {
+  max-width: 100% !important;
+  padding: 0 2rem !important;
+}
+
 .blog-card__link:hover .blog-card__title {
   color: #93c5fd !important;
   text-shadow: 0 0 10px rgba(96, 165, 250, 0.3);
