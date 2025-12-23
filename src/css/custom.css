@@ -843,18 +843,9 @@ article a {
 }
 
 .blog-card__author-name {
+  color: var(--ifm-color-secondary); /* Always orange */
   font-weight: 600;
   font-size: 1.1rem;
-}
-
-/* Dark mode */
-[data-theme='dark'] .blog-card__author-name {
-  color: #60a5fa;
-}
-
-/* Light mode */
-[data-theme='light'] .blog-card__author-name {
-  color: var(--ifm-color-secondary);
 }
 
 .blog-card__author-title {
