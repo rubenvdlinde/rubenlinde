@@ -6,6 +6,7 @@ interface TerminalFeatureProps {
   icon: string;
   description: string;
   delay?: number;
+  startImmediately?: boolean;
 }
 
 const TerminalFeature: React.FC<TerminalFeatureProps> = ({
@@ -13,6 +14,7 @@ const TerminalFeature: React.FC<TerminalFeatureProps> = ({
   icon,
   description,
   delay = 0,
+  startImmediately = false,
 }) => {
   const [displayedText, setDisplayedText] = useState('');
   const [isTyping, setIsTyping] = useState(false);
@@ -20,6 +22,29 @@ const TerminalFeature: React.FC<TerminalFeatureProps> = ({
   const cardRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    // If startImmediately is true, skip IntersectionObserver
+    if (startImmediately && !hasStarted) {
+      setHasStarted(true);
+
+      setTimeout(() => {
+        setIsTyping(true);
+        let currentIndex = 0;
+
+        const typingInterval = setInterval(() => {
+          if (currentIndex < description.length) {
+            setDisplayedText(description.slice(0, currentIndex + 1));
+            currentIndex++;
+          } else {
+            setIsTyping(false);
+            clearInterval(typingInterval);
+          }
+        }, 30);
+      }, delay);
+
+      return;
+    }
+
+    // Otherwise, use IntersectionObserver
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -57,7 +82,7 @@ const TerminalFeature: React.FC<TerminalFeatureProps> = ({
         observer.unobserve(currentRef);
       }
     };
-  }, [description, hasStarted, delay]);
+  }, [description, hasStarted, delay, startImmediately]);
 
   return (
     <div ref={cardRef} className="feature-card">

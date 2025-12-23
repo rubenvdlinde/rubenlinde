@@ -150,7 +150,12 @@ export default function Home(): JSX.Element {
             >
               {showFeatures &&
                 FeatureList.map((props, idx) => (
-                  <TerminalFeature key={idx} {...props} delay={idx * 1500} />
+                  <TerminalFeature
+                    key={idx}
+                    {...props}
+                    delay={idx * 1500}
+                    startImmediately={idx === 0}
+                  />
                 ))}
             </div>
           </div>
