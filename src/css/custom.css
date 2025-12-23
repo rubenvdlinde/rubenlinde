@@ -85,55 +85,23 @@
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* Homepage-specific navbar styling - AGGRESSIVE hiding of left items */
-/* This targets the navbar items directly with maximum specificity */
+/* Homepage-specific navbar styling - HIDE ENTIRE NAVBAR */
+/* Remove the navbar completely from the landing page */
 
-/* Hide the entire left section of the navbar on homepage */
-body .navbar__items:first-child,
-body.homepage-root .navbar__items--left,
-body:not([class*='docs']):not([class*='blog']) .navbar__items--left,
-body:not([class*='docs']):not([class*='blog']):not([class*='page'])
-  .navbar__items--left,
-html[data-is-root-path='true'] .navbar__items--left {
+/* Hide the entire navbar on homepage */
+body.homepage-root .navbar,
+body:not([class*='docs']):not([class*='blog']):not([class*='page']) .navbar,
+html[data-is-root-path='true'] .navbar {
   display: none !important;
   visibility: hidden !important;
   opacity: 0 !important;
-  width: 0 !important;
-  max-width: 0 !important;
   height: 0 !important;
+  min-height: 0 !important;
   max-height: 0 !important;
   overflow: hidden !important;
   position: absolute !important;
   left: -9999px !important;
-}
-
-/* Hide individual left navbar items */
-body .navbar__brand,
-body .navbar__logo,
-body .navbar__link[href='/rubenlinde/'],
-body .navbar__link[href='/rubenlinde/docs/intro'],
-body .navbar__link[href='/rubenlinde/blog'],
-.navbar__items--left > *,
-.navbar__items--left .navbar__item {
-  display: none !important;
-  visibility: hidden !important;
-  opacity: 0 !important;
-}
-
-body.homepage-root .navbar__toggle,
-body:not([class*='docs']):not([class*='blog']) .navbar__toggle,
-body:not([class*='docs']):not([class*='blog']):not([class*='page'])
-  .navbar__toggle,
-html[data-is-root-path='true'] .navbar__toggle {
-  display: none !important;
-}
-
-body.homepage-root .navbar,
-body:not([class*='docs']):not([class*='blog']) .navbar,
-body:not([class*='docs']):not([class*='blog']):not([class*='page']) .navbar,
-html[data-is-root-path='true'] .navbar {
-  background: rgba(15, 23, 42, 0.6) !important;
-  backdrop-filter: blur(10px);
+  pointer-events: none !important;
 }
 
 /* Ensure right items stay visible */
