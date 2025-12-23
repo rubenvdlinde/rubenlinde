@@ -982,9 +982,18 @@ article a {
 .feature-card__icon {
   font-size: 2rem;
   margin-right: 0.5rem;
-  filter: grayscale(100%) brightness(0.8);
   display: inline-block;
   vertical-align: middle;
+}
+
+/* Dark mode - grayscale icons */
+[data-theme='dark'] .feature-card__icon {
+  filter: grayscale(100%) brightness(0.8);
+}
+
+/* Light mode - colored icons */
+[data-theme='light'] .feature-card__icon {
+  filter: none; /* Show full color */
 }
 
 .feature-card__title {
