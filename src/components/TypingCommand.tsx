@@ -81,14 +81,14 @@ export default function TypingCommand({
                 if (currentStepIndex < allSteps.length - 1) {
                   setCurrentStepIndex(currentStepIndex + 1);
                 } else {
-                  // All steps done, show cards
+                  // All steps done, show cards and remove all commands
                   setIsComplete(true); // Mark as complete to stop further animations
                   setTimeout(() => {
                     setShowCards(true);
                     onComplete();
-                    // Keep only the sudo command, remove first two
+                    // Remove all commands after cards appear
                     setTimeout(() => {
-                      setSteps([allSteps[2]]); // Keep only sudo command
+                      setSteps([]); // Clear all commands
                     }, 500);
                   }, 300);
                 }
