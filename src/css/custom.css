@@ -423,7 +423,6 @@ body[class*='blog'] .navbar__link {
   justify-content: center;
   margin-top: 2rem;
   padding-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .hero__social-link {
