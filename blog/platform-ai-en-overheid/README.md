@@ -15,6 +15,7 @@ This folder contains articles about AI platforms in the government sector, digit
 ## Focus Areas
 
 ### Dutch Government Context
+
 - AVG (GDPR) compliance
 - Dutch AI strategy
 - Government service delivery
@@ -22,6 +23,7 @@ This folder contains articles about AI platforms in the government sector, digit
 - Open data initiatives
 
 ### International Perspective
+
 - EU AI regulations
 - Best practices from other countries
 - Cross-border collaboration
@@ -37,6 +39,7 @@ This folder contains articles about AI platforms in the government sector, digit
 ## Tags to Use
 
 Common tags for this category:
+
 - `ai`
 - `government`, `overheid`
 - `platform-ai`
@@ -71,4 +74,3 @@ tags: [ai, government, overheid, platform-ai, ethics]
 - EU AI Act implications
 - Digital inclusion strategies
 - Open-source AI for government
-

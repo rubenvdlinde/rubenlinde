@@ -28,12 +28,14 @@ blog/
 **Content:** Personal reflections, technical tutorials, and general software development insights.
 
 **Typical Tags:**
+
 - `personal`, `development`, `tutorial`
 - Language tags: `javascript`, `php`, `python`, `typescript`
 - Framework tags: `react`, `symfony`, `docusaurus`
 - Topic tags: `tips`, `best-practices`, `project-showcase`
 
 **Example Topics:**
+
 - Technical tutorials
 - Tool comparisons
 - Development environment setups
@@ -47,11 +49,13 @@ blog/
 **Content:** Articles about AI platforms in the government sector, digital transformation, and public sector innovation.
 
 **Typical Tags:**
+
 - `ai`, `government`, `overheid`, `platform-ai`
 - `digital-transformation`, `privacy`, `security`, `ethics`
 - `accessibility`, `policy`, `dutch-government`, `eu-regulations`
 
 **Example Topics:**
+
 - AI implementation in government
 - Privacy and GDPR/AVG compliance
 - Digital transformation strategies
@@ -66,12 +70,14 @@ blog/
 **Content:** Updates and articles about Conduction projects, open-source initiatives, and client work.
 
 **Typical Tags:**
+
 - `conduction`, `opencatalogi`, `common-ground`
 - `api`, `api-management`, `opensource`
 - `php`, `symfony`, `architecture`
 - `case-study`, `interoperability`, `standards`
 
 **Example Topics:**
+
 - OpenCatalogi features and updates
 - Common Ground components
 - Client case studies
@@ -86,6 +92,7 @@ blog/
 ### 1. Choose the Right Category
 
 Ask yourself:
+
 - Is this about my personal work or learning? → `personal/`
 - Is this about AI in government? → `platform-ai-en-overheid/`
 - Is this about Conduction projects? → `conduction/`
@@ -158,16 +165,19 @@ Simply type your query in the search bar...
 ### Use Consistent Tags
 
 **Category Tags** (always include one):
+
 - `personal` - For personal blog posts
 - `platform-ai`, `government`, `overheid` - For AI & government posts
 - `conduction` - For Conduction-related posts
 
 **Technology Tags:**
+
 - `javascript`, `typescript`, `php`, `python`, `react`, `symfony`
 - `api`, `rest`, `graphql`
 - `docker`, `kubernetes`
 
 **Topic Tags:**
+
 - `tutorial`, `guide`, `best-practices`
 - `case-study`, `announcement`, `feature`
 - `security`, `performance`, `testing`
@@ -184,6 +194,7 @@ Simply type your query in the search bar...
 ### Blog Organization
 
 Docusaurus automatically:
+
 - ✅ Finds all `.md` files in subdirectories
 - ✅ Orders posts by date (from filename or frontmatter)
 - ✅ Creates tag pages automatically
@@ -193,12 +204,14 @@ Docusaurus automatically:
 ### URL Structure
 
 Posts will have URLs like:
+
 - `/blog/url-friendly-slug` (from the `slug` field)
 - Category folders don't affect URLs (unless specified)
 
 ### Date Ordering
 
 Posts are ordered by:
+
 1. `date` field in frontmatter (if present)
 2. Date in filename (`YYYY-MM-DD-title.md`)
 3. File creation date (fallback)
@@ -255,7 +268,7 @@ image: /img/blog/my-post-image.png
 
 \`\`\`php title="src/Controller/ApiController.php"
 class ApiController {
-    // code here
+// code here
 }
 \`\`\`
 
@@ -299,6 +312,7 @@ Visit: `http://localhost:3000/blog`
 ### Category Views
 
 Docusaurus doesn't create separate category pages by default, but you can filter by tags:
+
 - `/blog/tags/personal`
 - `/blog/tags/platform-ai`
 - `/blog/tags/conduction`
@@ -342,4 +356,3 @@ npm run build
 ---
 
 **Happy blogging! 📝**
-

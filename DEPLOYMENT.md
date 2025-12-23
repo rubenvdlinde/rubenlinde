@@ -40,6 +40,7 @@ projectName: 'YOUR_REPO_NAME',
 ```
 
 For this project:
+
 - url: `https://rubenvdlinde.github.io`
 - baseUrl: `/rubenlinde/`
 - organizationName: `rubenvdlinde`
@@ -108,6 +109,7 @@ rubenlinde.nl
 Add these DNS records at your domain registrar:
 
 For apex domain (`rubenlinde.nl`):
+
 ```
 A     185.199.108.153
 A     185.199.109.153
@@ -116,6 +118,7 @@ A     185.199.111.153
 ```
 
 For www subdomain (`www.rubenlinde.nl`):
+
 ```
 CNAME rubenvdlinde.github.io
 ```
@@ -142,17 +145,20 @@ baseUrl: '/',
 ### Build Fails
 
 **Check the Actions log:**
+
 1. Go to Actions tab
 2. Click on the failed workflow
 3. Expand the failed step to see error messages
 
 **Common issues:**
+
 - Broken markdown links
 - Missing images
 - Invalid frontmatter in blog posts
 - Syntax errors in config files
 
 **Fix:**
+
 ```bash
 # Test build locally first
 npm run build
@@ -164,6 +170,7 @@ npm run build
 ### 404 Error on Deployment
 
 **Verify baseUrl:**
+
 - If using GitHub Pages without custom domain, `baseUrl` must be `/repository-name/`
 - If using custom domain, `baseUrl` should be `/`
 
@@ -173,9 +180,11 @@ Make sure images are in the `static/` folder and referenced correctly:
 
 ```markdown
 # Correct
+
 ![Image](/img/my-image.png)
 
 # Incorrect
+
 ![Image](../static/img/my-image.png)
 ```
 
@@ -210,16 +219,17 @@ on:
   push:
     branches:
       - main
-      - production  # Add more branches
+      - production # Add more branches
 ```
 
 ### Add Build Cache
 
 Already included! The workflow uses:
+
 ```yaml
 - uses: actions/setup-node@v4
   with:
-    cache: npm  # Caches npm dependencies
+    cache: npm # Caches npm dependencies
 ```
 
 ### Run Tests Before Deploy
@@ -237,9 +247,9 @@ The workflow uses minimal permissions:
 
 ```yaml
 permissions:
-  contents: read      # Read repository
-  pages: write        # Write to GitHub Pages
-  id-token: write     # Deploy verification
+  contents: read # Read repository
+  pages: write # Write to GitHub Pages
+  id-token: write # Deploy verification
 ```
 
 ## Next Steps
@@ -269,4 +279,3 @@ If you encounter issues:
 3. Open an issue in the repository
 
 Happy deploying! 🚀
-

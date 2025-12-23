@@ -26,4 +26,3 @@ The documentation is organized into different sections to help you find what you
 ## Contributing
 
 If you find any issues or have suggestions for improvement, feel free to open an issue or submit a pull request on GitHub!
-

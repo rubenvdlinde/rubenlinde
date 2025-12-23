@@ -186,12 +186,13 @@ The workflow uses minimal required permissions:
 
 ```yaml
 permissions:
-  contents: read      # Read repository files
-  pages: write        # Write to GitHub Pages
-  id-token: write     # Deploy verification token
+  contents: read # Read repository files
+  pages: write # Write to GitHub Pages
+  id-token: write # Deploy verification token
 ```
 
 ### What This Means:
+
 - ✅ Cannot modify your repository
 - ✅ Cannot access secrets unless explicitly defined
 - ✅ Can only deploy to GitHub Pages
@@ -404,4 +405,3 @@ To understand this architecture better:
 ---
 
 **This architecture provides a modern, performant, and maintainable foundation for your blog! 🎉**
-

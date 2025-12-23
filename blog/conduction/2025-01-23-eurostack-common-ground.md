@@ -20,12 +20,14 @@ Nederland loopt voorop met Common Ground. Europa bouwt aan Eurostack. Hoe verhou
 ### Common Ground: De Nederlandse Aanpak
 
 **Gestart in 2019:**
+
 - Initiatief van Nederlandse gemeenten
 - Oplossing voor versnipperde IT-landschap
 - Open source als uitgangspunt
 - Samenwerking in plaats van inkoop
 
 **Kernprincipes:**
+
 - Data gescheiden van applicaties
 - API-first architectuur
 - Open standaarden
@@ -33,6 +35,7 @@ Nederland loopt voorop met Common Ground. Europa bouwt aan Eurostack. Hoe verhou
 - Geen vendor lock-in
 
 **Status nu:**
+
 - Tientallen gemeenten actief
 - Groeiend ecosysteem
 - Bewezen componenten
@@ -41,20 +44,24 @@ Nederland loopt voorop met Common Ground. Europa bouwt aan Eurostack. Hoe verhou
 ### Eurostack: De Europese Ambitie
 
 **Emerging beweging:**
+
 - Reactie op Amerikaanse big tech dominantie
 - Europese digitale soevereiniteit
 - Publieke waarden centraal
 - Multi-level governance
 
 **Initiatieven onder de paraplu:**
+
 - Gaia-X (cloud infrastructuur)
 - GXFS (Sovereig
 
 n Cloud Stack)
+
 - Europese AI-projecten
 - Open source samenwerkingen
 
 **Uitgangspunten:**
+
 - Europese waarden (privacy, democratie)
 - Technologische soevereiniteit
 - Open en interoperabel
@@ -67,6 +74,7 @@ Beide bewegingen delen fundamentele principes:
 ### 1. Open Source als Basis
 
 **Common Ground:**
+
 ```
 Publiek geld → Publieke code
 Code op GitHub
@@ -75,6 +83,7 @@ Community-driven development
 ```
 
 **Eurostack:**
+
 ```
 Europese investeringen → Europese code
 Open source licenties
@@ -87,12 +96,14 @@ Collaborative innovation
 ### 2. Soevereiniteit en Controle
 
 **Common Ground:**
+
 - Onafhankelijk van leveranciers
 - Data blijft bij gemeente
 - Zelf beheer mogelijk
 - Exit-strategie altijd aanwezig
 
 **Eurostack:**
+
 - Onafhankelijk van VS/China
 - Data blijft in Europa
 - Europese governance
@@ -103,6 +114,7 @@ Collaborative innovation
 ### 3. Samenwerking boven Concurrentie
 
 **Common Ground:**
+
 ```
 Gemeente A ontwikkelt component X
    ↓
@@ -116,6 +128,7 @@ Iedereen profiteert
 ```
 
 **Eurostack:**
+
 ```
 Land A investeert in technologie X
    ↓
@@ -131,11 +144,13 @@ Gezamenlijke EU-capaciteit groeit
 ### 4. Interoperabiliteit
 
 **Common Ground:**
+
 - Standaard API's tussen systemen
 - JSON:API, REST principes
 - Uniform Landschap van Voorzieningen (VNG)
 
 **Eurostack:**
+
 - Europese data spaces
 - GXFS Federation Services
 - Cross-border interoperabiliteit
@@ -149,12 +164,14 @@ Maar er zijn ook belangrijke verschillen:
 ### Schaal
 
 **Common Ground:**
+
 - Focus: Nederlandse gemeenten
 - Scope: Lokale overheid
 - Schaal: 345 gemeenten
 - Governance: VNG-regie
 
 **Eurostack:**
+
 - Focus: Europese naties
 - Scope: Alle overheidslagen + bedrijfsleven
 - Schaal: 27 landen, 450 miljoen mensen
@@ -163,12 +180,14 @@ Maar er zijn ook belangrijke verschillen:
 ### Concretheidsniveau
 
 **Common Ground:**
+
 - Zeer praktisch en concreet
 - Werkende componenten (nu)
 - Direct implementeerbaar
 - "Gewoon doen"
 
 **Eurostack:**
+
 - Meer strategisch en abstract
 - Frameworks en principes
 - Langetermijn visie
@@ -177,11 +196,13 @@ Maar er zijn ook belangrijke verschillen:
 ### Financiering
 
 **Common Ground:**
+
 - Gemeentelijke budgetten
 - Shared development costs
 - Relatief beperkt (miljoenen)
 
 **Eurostack:**
+
 - EU-fondsen (Horizon, Digital Europe)
 - Nationale investeringen
 - Grootschalig (miljarden)
@@ -189,12 +210,14 @@ Maar er zijn ook belangrijke verschillen:
 ### Cultuur
 
 **Common Ground:**
+
 - Nederlandse pragmatiek
 - "Gewoon beginnen"
 - Bottom-up energie
 - Korte beslislijnen
 
 **Eurostack:**
+
 - Europese diplomatie
 - Consensusvorming tussen 27 landen
 - Top-down structuren
@@ -207,6 +230,7 @@ Maar er zijn ook belangrijke verschillen:
 **1. Schaalgrootte Denken**
 
 Common Ground is succesvol lokaal, maar:
+
 - Beperkt tot Nederland
 - Mist Europese scope
 - Onvoldoende geopolitiek gewicht
@@ -218,6 +242,7 @@ Common Ground is succesvol lokaal, maar:
 **2. Strategische Positionering**
 
 Common Ground is praktisch, maar:
+
 - Mist geopolitieke framing
 - Onzichtbaar voor Brussels
 - Onderbenut op EU-beleidsniveau
@@ -229,6 +254,7 @@ Common Ground is praktisch, maar:
 **3. Financiële Hefboomwerking**
 
 Common Ground is efficiënt, maar:
+
 - Beperkte budgetten
 - Moet concurreren met leveranciers
 - Mist grote investeringen
@@ -242,6 +268,7 @@ Common Ground is efficiënt, maar:
 **1. Concreetheid en Pragmatiek**
 
 Eurostack is ambitieus, maar:
+
 - Veel strategie, minder code
 - Lange implementatiecycli
 - Abstractieniveau te hoog
@@ -253,6 +280,7 @@ Eurostack is ambitieus, maar:
 **2. Bottom-Up Energie**
 
 Eurostack is top-down, maar:
+
 - Gemeenten moeten het uiteindelijk doen
 - Praktijk wijkt af van beleid
 - Adoptie blijft achter
@@ -264,6 +292,7 @@ Eurostack is top-down, maar:
 **3. Community-Driven Ontwikkeling**
 
 Eurostack is institutioneel, maar:
+
 - Ontwikkelaars missen betrokkenheid
 - Geen levendige open source community
 - Te veel committees, te weinig code
@@ -325,16 +354,19 @@ Nederlandse en Duitse gemeenten profiteren
 **Scenario:**
 
 **Nederland:** Heeft Common Ground Zaaksysteem
+
 - Open source
 - API-first
 - Voldoet aan VNG-standaarden
 
 **Duitsland:** Zoekt zaaksysteem voor gemeenten
+
 - Wil open source
 - Soevereine oplossing
 - Duitse wetgeving
 
 **Samen:**
+
 1. Duitse gemeenten testen Common Ground Zaaksysteem
 2. Identificeren Duitse requirements
 3. Nederlandse én Duitse developers bouwen samen
@@ -342,6 +374,7 @@ Nederlandse en Duitse gemeenten profiteren
 5. EU financiert joint development
 
 **Resultaat:**
+
 - Geen dubbel werk
 - Gezamenlijke innovatie
 - Europese schaalgrootte
@@ -354,11 +387,13 @@ Nederlandse en Duitse gemeenten profiteren
 ### 1. Taal en Cultuur
 
 **Probleem:**
+
 - Verschillende talen
 - Verschillende bestuursculturen
 - Verschillende juridische systemen
 
 **Oplossing:**
+
 - Core componenten language-agnostic
 - Configureerbare lokalisatie
 - Juridische parameters als config
@@ -366,11 +401,13 @@ Nederlandse en Duitse gemeenten profiteren
 ### 2. Governance
 
 **Probleem:**
+
 - Wie bepaalt roadmap?
 - Hoe conflicten oplossen?
 - Wie neemt besluiten?
 
 **Oplossing:**
+
 - Open governance modellen (Apache, Linux Foundation)
 - Multi-stakeholder steering committees
 - Transparante besluitvorming
@@ -378,11 +415,13 @@ Nederlandse en Duitse gemeenten profiteren
 ### 3. Financiële Duurzaamheid
 
 **Probleem:**
+
 - Ontwikkeling kost geld
 - Onderhoud kost geld
 - Wie betaalt?
 
 **Oplossing:**
+
 - EU-funding voor common infrastructure
 - Nationale bijdragen op basis van gebruik
 - Cost-sharing modellen
@@ -394,18 +433,21 @@ Europa is niet alleen:
 ### Andere Bewegingen
 
 **India Stack:**
+
 - Publieke digitale infrastructuur
 - Open API's
 - Digital identity, payments
 - Lessons learned: schaalgrootte mogelijk
 
 **X-Road (Estland/Finland):**
+
 - Data exchange layer
 - Vertrouwde communicatie
 - Cross-border mogelijk
 - Lessons learned: interoperabiliteit werkt
 
 **GovTech Singapore:**
+
 - Government as Platform
 - Open source componenten
 - API-first
@@ -436,18 +478,21 @@ Democratische controle
 ### Hoe Komen We Daar?
 
 **2025-2026: Fundament**
+
 - Common Ground uitbreiden naar 100+ gemeenten
 - Eerste pilots in 5 andere EU-landen
 - Eurostack governance opgezet
 - Joint funding programma's
 
 **2027-2028: Expansie**
+
 - Common Ground Federation in 15 landen
 - 500+ gemeenten participeren
 - Eurostack componenten in productie
 - Gezamenlijke standaarden geratificeerd
 
 **2029-2030: Consolidatie**
+
 - Eurostack als alternatief voor big tech
 - Duizenden publieke organisaties
 - Bewezen track record
@@ -458,18 +503,21 @@ Democratische controle
 **Common Ground en Eurostack zijn geen concurrenten, maar complementair.**
 
 **Common Ground biedt:**
+
 - Bewezen aanpak
 - Concrete componenten
 - Pragmatische executie
 - Nederlandse voorsprong
 
 **Eurostack biedt:**
+
 - Strategische visie
 - Europese schaalgrootte
 - Geopolitiek gewicht
 - Financiële slagkracht
 
 **Samen kunnen ze:**
+
 - Europese digitale soevereiniteit realiseren
 - Vendor lock-in doorbreken
 - Publieke waarden beschermen
@@ -486,4 +534,3 @@ Want de wereld verandert snel. Amerika trekt zich terug. China breidt uit. Europ
 **Volgende blog:** Open Source voor het MKB - Van Public Money is Public Code naar Public Money is Public Functionality
 
 **Gerelateerd:** [Common Ground](https://commonground.nl) | [Gaia-X](https://gaia-x.eu/) | [GXFS](https://gxfs.eu/)
-

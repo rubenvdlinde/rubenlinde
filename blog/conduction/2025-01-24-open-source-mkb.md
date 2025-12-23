@@ -20,6 +20,7 @@ Open source voor de overheid is mooi. Maar wat als die overheids-software ook he
 ### De Huidige Situatie
 
 **"Public Money is Public Code" zegt:**
+
 ```
 Overheid betaalt voor software
     ↓
@@ -31,12 +32,14 @@ Iedereen kan de code zien
 ```
 
 **De realiteit:**
-- Code op GitHub  
+
+- Code op GitHub
 - Maar onbruikbaar voor niet-developers
 - Gericht op overheids-specifieke processen
 - Geen directe waarde voor MKB
 
 **Voorbeeld:**
+
 ```
 Gemeente bouwt formulieren-systeem
    ↓
@@ -52,6 +55,7 @@ Groenteman heeft er niets aan
 **De overheid investeert miljarden in software-ontwikkeling.**
 
 Wat als die investering niet alleen de overheid helpt, maar ook:
+
 - Kleine ondernemers
 - Verenigingen
 - Stichtingen
@@ -82,12 +86,14 @@ MKB kan het ook gebruiken!
 **Voorbeeld 1: Contact Management**
 
 **Overheid bouwt:**
+
 - Systeem om burgeraanvragen te behandelen
 - Contact history
 - Communicatie logging
 - Status tracking
 
 **Groenteman kan dit gebruiken als:**
+
 - Lichtgewicht CRM
 - Klantcontact geschiedenis
 - Order tracking
@@ -98,12 +104,14 @@ MKB kan het ook gebruiken!
 **Voorbeeld 2: Document Management**
 
 **Overheid bouwt:**
+
 - Systeem voor officiële documenten
 - Versiebeheer
 - Access control
 - Archivering
 
 **MKB-er kan dit gebruiken als:**
+
 - Contract management
 - Offerte archief
 - Factuur opslag
@@ -112,12 +120,14 @@ MKB kan het ook gebruiken!
 **Voorbeeld 3: Planning en Taken**
 
 **Overheid bouwt:**
+
 - Zaaksysteem voor procesbewaking
 - Taken toewijzen
 - Deadlines bewaken
 - Rapportages
 
 **Ondernemer kan dit gebruiken als:**
+
 - Project management
 - Team coördinatie
 - Klus-tracking
@@ -128,6 +138,7 @@ MKB kan het ook gebruiken!
 ### Amerika vs Europa
 
 **Amerikaans model (SaaS-dominant):**
+
 ```
 Bedrijf betaalt → Abonnement → Vendor lock-in
          ↓
@@ -141,6 +152,7 @@ Data bij leverancier
 ```
 
 **Risico's:**
+
 - Eindeloze abonnementen
 - Vendor kan prijzen verhogen
 - Vendor kan stoppen
@@ -148,6 +160,7 @@ Data bij leverancier
 - Geen privacy-garanties
 
 **Europees model (Open Source + Self-Hosted):**
+
 ```
 Overheid investeert → Open Source → Iedereen profiteert
                 ↓
@@ -161,6 +174,7 @@ Overheid investeert → Open Source → Iedereen profiteert
 ```
 
 **Voordelen:**
+
 - Geen abonnementen (of veel lager)
 - Geen vendor lock-in
 - Data blijft in Europa
@@ -170,12 +184,14 @@ Overheid investeert → Open Source → Iedereen profiteert
 ### De Economische Impact
 
 **Als 1 miljoen Europese MKB-ers:**
+
 - €50/maand BESPAREN aan SaaS-abonnementen
 - = €600 miljoen per jaar
 - = Geld dat in de Europese economie blijft
 - = In plaats van naar big tech
 
 **Plus:**
+
 - Kennisopbouw in Europa
 - Banen in open source sector
 - Innovatie rond open platforms
@@ -188,6 +204,7 @@ Overheid investeert → Open Source → Iedereen profiteert
 **Meet Frans, groenteboer:**
 
 **Situatie nu:**
+
 - Betaalt voor:
   - Boekhoudpakket (€30/maand)
   - CRM systeem (€25/maand)
@@ -196,6 +213,7 @@ Overheid investeert → Open Source → Iedereen profiteert
   - **Totaal: €80/maand = €960/jaar**
 
 **Situatie met Public Functionality:**
+
 - Gebruikt overheids-ontwikkelde tools:
   - Contact management (gratis)
   - Document management (gratis)
@@ -244,12 +262,14 @@ Ready to use
 Bij Conduction ontwikkelen we OpenRegister - een open source data-oplossing die:
 
 **Voor de overheid:**
+
 - Documenten opslaan
 - Gestructureerde data beheren
 - Data en documenten relateren
 - Vectoriseren voor AI
 
 **Voor het MKB:**
+
 - Hetzelfde platform
 - Zelfde voordelen
 - Aangepast aan business needs
@@ -266,16 +286,19 @@ Bij Conduction ontwikkelen we OpenRegister - een open source data-oplossing die:
 **Ze gebruikt Public Functionality tools:**
 
 **Contact Management:**
+
 - Klantgegevens
 - Order historie
 - Communicatie logging
 
 **Document Management:**
+
 - Product foto's
 - Certificaten
 - Facturen
 
 **AI-Assistent (on-premise):**
+
 - Helpt bij klantservice emails
 - Genereert product beschrijvingen
 - Analyseert verkoop trends
@@ -291,16 +314,19 @@ Bij Conduction ontwikkelen we OpenRegister - een open source data-oplossing die:
 **Ze gebruiken Public Functionality tools:**
 
 **Member Management:**
+
 - Ledenregistratie (hergebruik van burger-registratie systeem)
 - Contributie tracking
 - Communicatie
 
 **Event Management:**
+
 - Wedstrijden plannen
 - Toernooien organiseren
 - Inschrijvingen beheren
 
 **Document Management:**
+
 - Statuten
 - Notulen
 - Foto albums
@@ -316,17 +342,20 @@ Bij Conduction ontwikkelen we OpenRegister - een open source data-oplossing die:
 **Hij gebruikt Public Functionality tools:**
 
 **Client Management:**
+
 - Klantdossiers
 - Project tracking
 - Uren registratie
 
 **Document Management:**
+
 - Offertes
 - Contracten
 - Facturen
 - Design bestanden
 
 **Financial Tracking:**
+
 - Inkomsten/uitgaven
 - BTW berekeningen
 - Jaaroverzichten
@@ -342,6 +371,7 @@ Bij Conduction ontwikkelen we OpenRegister - een open source data-oplossing die:
 **Bij ontwikkeling denken aan hergebruik:**
 
 ❌ **Slecht:**
+
 ```
 HardcodeGemeente() {
   if (user.type == "burger") {
@@ -351,6 +381,7 @@ HardcodeGemeente() {
 ```
 
 ✅ **Goed:**
+
 ```
 GenericEntity() {
   // Generic contact management
@@ -377,6 +408,7 @@ terminology:
 ### 3. Gebruiksvriendelijk
 
 **MKB heeft geen IT-afdeling:**
+
 - Makkelijk te installeren
 - Intuïtieve UI
 - Goede documentatie
@@ -387,16 +419,19 @@ terminology:
 **Verschillende modellen:**
 
 **DIY (Doe-Het-Zelf):**
+
 - Documentatie
 - Community forum
 - Voor tech-savvy gebruikers
 
 **Gemeente-gehost:**
+
 - Gemeente biedt hosting aan lokaal MKB
 - Kleine vergoeding (cost-recovery)
 - Ondersteuning via gemeente-servicedesk
 
 **Commercial Support:**
+
 - Lokale IT-bedrijven bieden setup + support
 - Verdienen aan dienstverlening, niet aan licenties
 - Stimuleert lokale economie
@@ -406,12 +441,14 @@ terminology:
 ### Van Code naar Functionaliteit
 
 **Oude denken:**
+
 - Overheid bouwt voor overheid
 - Code wordt open source
 - Iedereen blij (theoretisch)
 - Weinig hergebruik (praktijk)
 
 **Nieuwe denken:**
+
 - Overheid bouwt generieke functionaliteit
 - Richt in voor eigen gebruik
 - Maar: core is bruikbaar voor iedereen
@@ -421,6 +458,7 @@ terminology:
 ### Van Ownership naar Use
 
 **SaaS-model:**
+
 ```
 Je BETAALT voor gebruik
 Je BEZIT niets
@@ -428,6 +466,7 @@ Je CONTROLEERT niets
 ```
 
 **Open Source model:**
+
 ```
 Je DOWNLOADT gratis (of goedkoop)
 Je BEZIT je eigen installatie
@@ -441,12 +480,14 @@ Je CONTROLEERT je eigen data
 ### Voor het MKB
 
 **Direct:**
+
 - Lagere IT-kosten
 - Meer controle
 - Betere privacy
 - Geen vendor lock-in
 
 **Indirect:**
+
 - Meer geld voor groei
 - Focus op core business
 - Minder afhankelijkheid
@@ -455,12 +496,14 @@ Je CONTROLEERT je eigen data
 ### Voor de Local Economy
 
 **IT-dienstverleners:**
+
 - Verdienen aan setup, training, support
 - Niet aan licenties
 - Duurzamer business model
 - Lokale werkgelegenheid
 
 **Software Developers:**
+
 - Bijdragen aan open source
 - Bouwen op gemeenschappelijke basis
 - Delen van kennis
@@ -469,12 +512,14 @@ Je CONTROLEERT je eigen data
 ### Voor Europa
 
 **Strategisch:**
+
 - Minder geld naar Amerikaanse big tech
 - Sterker MKB (backbone van Europese economie)
 - Technologische soevereiniteit
 - Innovatie in Europa
 
 **Economisch:**
+
 - Miljarden blijven in Europa
 - Banen in open source sector
 - Concurrentie op basis van service, niet lock-in
@@ -485,6 +530,7 @@ Je CONTROLEERT je eigen data
 ### 1. Mindset Verandering
 
 **Overheid moet denken:**
+
 - Niet alleen aan eigen processen
 - Maar aan generieke functionaliteit
 - Met hergebruik in gedachten
@@ -493,11 +539,13 @@ Je CONTROLEERT je eigen data
 ### 2. Investment in Usability
 
 **Open source vaak:**
+
 - Developer-focused
 - Moeilijk te gebruiken
 - Slechte documentatie
 
 **Voor MKB-adoptie nodig:**
+
 - Consumer-grade UX
 - Plug-and-play installatie
 - Nederlandse handleidingen
@@ -506,6 +554,7 @@ Je CONTROLEERT je eigen data
 ### 3. Ecosystem Development
 
 **Niet alleen software bouwen:**
+
 - Community opbouwen
 - Training aanbieden
 - Showcase successes
@@ -514,11 +563,13 @@ Je CONTROLEERT je eigen data
 ### 4. Sustainable Funding
 
 **Open source is niet gratis:**
+
 - Ontwikkeling kost geld
 - Onderhoud kost geld
 - Support kost geld
 
 **Oplossing:**
+
 - Overheids-investering in common infrastructure
 - Cost-sharing modellen
 - Commercial support mogelijk
@@ -543,6 +594,7 @@ Die blijft in de Europese economie
 ```
 
 **Met als gevolg:**
+
 - Sterker MKB
 - Minder afhankelijkheid big tech
 - Meer digitale soevereiniteit
@@ -554,18 +606,21 @@ Die blijft in de Europese economie
 **Public Money is Public Functionality is een game-changer.**
 
 Het gaat verder dan "Public Money is Public Code":
+
 - Niet alleen code beschikbaar
 - Maar daadwerkelijk bruikbaar
 - Voor bredere doelgroep
 - Met tastbare economische impact
 
 **Het combineert:**
+
 - Europese waarden (solidariteit, samenwerking)
 - Pragmatische aanpak (hergebruik, efficiency)
 - Economisch voordeel (lagere kosten, minder afhankelijkheid)
 - Technologische soevereiniteit (controle, privacy)
 
 **De shift van abonnement-model naar eigenaarschap-model is:**
+
 - Goed voor MKB (lagere kosten)
 - Goed voor economie (geld blijft in Europa)
 - Goed voor innovatie (open platforms)
@@ -584,6 +639,7 @@ Tijd om die euro's in Europa te houden - en te investeren in onze gezamenlijke d
 **Alle blogs:**
 
 **AI & Overheid:**
+
 1. [AI Bubbels en Wereldbeeld](/blog/ai-bubbels-wereldbeeld)
 2. [AI en Open Source](/blog/ai-open-source-common-ground)
 3. [AI en Data](/blog/ai-data-datalaag-basis)
@@ -592,10 +648,6 @@ Tijd om die euro's in Europa te houden - en te investeren in onze gezamenlijke d
 6. [Kansen voor Burgers](/blog/ai-kansen-burgers-regelgeving-navigator)
 7. [Risico's Niet-Adopteren](/blog/ai-risicos-niet-adopteren-achterblijven)
 
-**Open Source & Europa:**
-8. [Einde Pax Americana](/blog/einde-pax-americana-digitale-soevereiniteit)
-9. [Eurostack & Common Ground](/blog/eurostack-common-ground-europese-samenwerking)
-10. [Open Source voor MKB](/blog/open-source-mkb-public-functionality) ← **Je bent hier**
+**Open Source & Europa:** 8. [Einde Pax Americana](/blog/einde-pax-americana-digitale-soevereiniteit) 9. [Eurostack & Common Ground](/blog/eurostack-common-ground-europese-samenwerking) 10. [Open Source voor MKB](/blog/open-source-mkb-public-functionality) ← **Je bent hier**
 
 **Gerelateerd:** [Common Ground](https://commonground.nl) | [OpenRegister](https://github.com/ConductionNL/openregister) | [Conduction](https://conduction.nl)
-

@@ -18,6 +18,7 @@ Kunstmatige intelligentie kan een krachtige partner zijn voor de overheid - maar
 ## Het Probleem met Gesloten AI
 
 Stel je voor: een AI-systeem adviseert een ambtenaar over een belangrijke beslissing. Maar niemand weet:
+
 - Hoe het model precies werkt
 - Op welke data het getraind is
 - Waarom het tot deze conclusie komt
@@ -40,18 +41,23 @@ Stel je voor: een AI-systeem adviseert een ambtenaar over een belangrijke beslis
 Open source betekent dat de broncode, de modellen en bij voorkeur ook de trainingsdata openbaar en inspecteerbaar zijn. Voor de overheid levert dit cruciale voordelen op:
 
 ### 1. Inzicht in Werking
+
 Je kunt zien hoe het AI-model tot zijn conclusies komt. Geen black box, maar een transparant proces.
 
 ### 2. Controleerbaarheid
+
 Onafhankelijke experts kunnen het systeem doorlichten op fouten, bias en ethische problemen.
 
 ### 3. Hergebruik tussen Gemeenten
+
 Wat gemeente A ontwikkelt, kan gemeente B hergebruiken en verbeteren. Geen dubbel werk, geen dubbele kosten.
 
 ### 4. Gezamenlijke Verbetering
+
 Samen werken aan betere AI. Bugs worden sneller gevonden en opgelost. Nieuwe features komen iedereen ten goede.
 
 ### 5. Geen Vendor Lock-in
+
 Je bent niet afhankelijk van één commerciële partij. Je behoudt controle over je eigen infrastructuur.
 
 **Argument:** Open source is een bestuurlijke keuze, geen technische hobby.
@@ -85,6 +91,7 @@ Hier komt Common Ground om de hoek kijken - het programma waarin Nederlandse gem
 ### Waarom dit Perfect Past bij AI
 
 AI werkt het beste op:
+
 - **Gedeelde, goed beschreven data** (Common Ground bronregisters)
 - **Transparante systemen** (open source)
 - **Controleerbare processen** (geen black boxes)
@@ -94,15 +101,19 @@ Dit zijn precies de uitgangspunten van Common Ground!
 ## Open Source en AI: Een Logische Combinatie
 
 ### Modellen Inspecteerbaar
+
 Je kunt zien hoe het AI-model is opgebouwd, welke technieken het gebruikt, en waar eventuele zwakke plekken zitten.
 
 ### Prompts en Regels Reproduceerbaar
+
 De instructies aan de AI (prompts) en de regels waaraan het moet voldoen zijn gedocumenteerd en te controleren.
 
 ### Ethische Kaders Afdwingbaar
+
 Je kunt technische guardrails inbouwen die ervoor zorgen dat AI binnen ethische grenzen blijft.
 
 ### Training Data Transparant
+
 Bij echte open source AI weet je op welke data het model getraind is - essentieel voor het beoordelen van mogelijke bias.
 
 ## Vertrouwen door Ontwerp
@@ -110,16 +121,19 @@ Bij echte open source AI weet je op welke data het model getraind is - essentiee
 Een democratische overheid vraagt om democratische AI:
 
 ### Voor Burgers
+
 - Recht op uitleg over beslissingen
 - Vertrouwen in overheidsprocessen
 - Inzicht in hoe AI gebruikt wordt
 
 ### Voor Ambtenaren
+
 - Kunnen verantwoorden waarom ze AI-adviezen volgen
 - Begrijpen wat het systeem doet
 - Controle over de tools die ze gebruiken
 
 ### Voor Bestuurders
+
 - Kunnen sturen op ontwikkeling
 - Kunnen verantwoorden aan de gemeenteraad
 - Kunnen ingrijpen bij problemen
@@ -129,12 +143,14 @@ Een democratische overheid vraagt om democratische AI:
 Stel: een gemeente wil AI inzetten om burgers te helpen met het vinden van de juiste regeling.
 
 **Gesloten AI-scenario:**
+
 - Koopt kant-en-klaar systeem van leverancier X
 - Niemand weet hoe het werkt
 - Bij problemen afhankelijk van leverancier
 - Andere gemeenten beginnen opnieuw
 
 **Open Source AI-scenario:**
+
 - Gemeente A ontwikkelt samen met B en C
 - Code en model zijn openbaar
 - Gemeente D kan het hergebruiken
@@ -143,13 +159,13 @@ Stel: een gemeente wil AI inzetten om burgers te helpen met het vinden van de ju
 
 ## De Modelvergelijking
 
-In onze volgende blog gaan we dieper in op concrete AI-modellen zoals Mistral, en waarom sommige modellen populairder zijn in de Nederlandse overheid. 
+In onze volgende blog gaan we dieper in op concrete AI-modellen zoals Mistral, en waarom sommige modellen populairder zijn in de Nederlandse overheid.
 
 Spoiler: het gaat niet alleen om technische superioriteit, maar ook om **transparantie, controleerbaarheid en ethische overwegingen**.
 
 ## Kritische Vraag
 
-Is open source echt de enige manier om AI transparant en eerlijk te houden, of kunnen we ook met gesloten software voldoende controle houden? 
+Is open source echt de enige manier om AI transparant en eerlijk te houden, of kunnen we ook met gesloten software voldoende controle houden?
 
 Met andere woorden: is open source echt onmisbaar, of vooral een ideaal?
 
@@ -170,4 +186,3 @@ De vraag is niet óf we open source moeten gebruiken voor AI. De vraag is hoe sn
 **Volgende blog:** AI en Data - Waarom de datalaag alles bepaalt
 
 **Gerelateerd:** [Common Ground](https://commonground.nl) | [NL Design System](https://nldesignsystem.nl)
-

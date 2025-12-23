@@ -23,6 +23,7 @@ When writing personal blog posts:
 ## Tags to Use
 
 Common tags for this category:
+
 - `personal`
 - `development`
 - `tutorial`
@@ -51,4 +52,3 @@ tags: [personal, development, tutorial, react]
 - Development environment setups
 - Open-source contributions
 - Side project updates
-

@@ -1,0 +1,18 @@
+# Build directories
+build
+.docusaurus
+node_modules
+
+# Generated files
+.cache
+*.log
+
+# Package files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Config files that should keep their formatting
+*.config.js
+*.config.ts
+

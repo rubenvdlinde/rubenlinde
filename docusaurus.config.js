@@ -7,7 +7,7 @@ const darkTheme = themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Ruben Linde',
+  title: 'Ruben van der Linde',
   tagline: 'Software Developer & Tech Enthusiast',
   favicon: 'img/favicon.ico',
 
@@ -73,7 +73,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Ruben Linde',
+          title: 'Ruben van der Linde',
         logo: {
           alt: 'Ruben Linde Logo',
           src: 'img/logo.svg',
@@ -101,7 +101,7 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Content',
+            title: '> Navigation',
             items: [
               {
                 label: 'Documentation',
@@ -111,10 +111,14 @@ const config = {
                 label: 'Blog',
                 to: '/blog',
               },
+              {
+                label: 'Conduction',
+                href: 'https://www.conduction.nl',
+              },
             ],
           },
           {
-            title: 'Connect',
+            title: '> Social',
             items: [
               {
                 label: 'GitHub',
@@ -122,25 +126,40 @@ const config = {
               },
               {
                 label: 'LinkedIn',
-                href: 'https://linkedin.com/in/rubenvanderlinde',
+                href: 'https://www.linkedin.com/in/rubenlinde/',
+              },
+              {
+                label: 'X (Twitter)',
+                href: 'https://x.com/rubenlinde',
+              },
+              {
+                label: 'Instagram',
+                href: 'https://www.instagram.com/rubenlinde1985/',
               },
             ],
           },
           {
-            title: 'More',
+            title: '> Topics',
             items: [
               {
-                label: 'RSS Feed',
-                to: '/blog/rss.xml',
+                label: 'Open Source',
+                to: '/blog/tags/open-source',
               },
               {
-                label: 'Atom Feed',
-                to: '/blog/atom.xml',
+                label: 'AI & Innovation',
+                to: '/blog/tags/ai',
+              },
+              {
+                label: 'Digital Sovereignty',
+                to: '/blog/tags/soevereiniteit',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Ruben van de Linde. Built with Docusaurus.`,
+        copyright: `<div class="footer-terminal">
+          <div class="footer-prompt">root@rubenlinde:~$ echo "Built with ❤️ and Open Source"</div>
+          <div class="footer-output">Copyright © ${new Date().getFullYear()} Ruben van der Linde | Powered by Docusaurus</div>
+        </div>`,
       },
       prism: {
         theme: lightTheme,

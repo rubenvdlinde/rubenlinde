@@ -28,11 +28,13 @@ Terwijl we discussiëren en twijfelen, gaat de wereld om ons heen door. En dat h
 ### De Kloof Groeit
 
 **Andere landen investeren:**
+
 - Estland: Volledig gedigitaliseerde overheid met AI-assistentie
 - Singapore: AI voor vergunningverlening
 - Denemarken: Geautomatiseerde belastingaangifte met AI-checks
 
 **Nederlandse gemeenten worstelen nog met:**
+
 - Papieren processen
 - Versnipperde systemen
 - Overbelaste ambtenaren
@@ -41,12 +43,14 @@ Terwijl we discussiëren en twijfelen, gaat de wereld om ons heen door. En dat h
 ### Verwachtingen Stijgen
 
 **Burgers zijn gewend aan:**
+
 - Netflix die weet wat je wilt zien
 - Spotify die perfect playlists maakt
 - Google die je vraag begrijpt
 - ChatGPT die complexe vragen beantwoordt
 
 **Ze verwachten van de overheid:**
+
 - Ook snelle, persoonlijke service
 - Begrijpelijke communicatie
 - Pro-actieve ondersteuning
@@ -57,12 +61,14 @@ Terwijl we discussiëren en twijfelen, gaat de wereld om ons heen door. En dat h
 ### Het Efficiency-Gat
 
 **Private sector met AI:**
+
 - Processen in minuten
 - Automatische checks
 - Foutloze administratie
 - Lage kosten
 
 **Overheid zonder AI:**
+
 - Processen in weken
 - Handmatige checks
 - Menselijke fouten
@@ -75,6 +81,7 @@ Terwijl we discussiëren en twijfelen, gaat de wereld om ons heen door. En dat h
 ### Anderen Bepalen de Regels
 
 Als Nederland niet meedoet aan AI-ontwikkeling:
+
 - Amerikaanse big tech dicteert de standaarden
 - Chinese systemen worden de norm
 - EU zonder Nederland bepaalt het beleid
@@ -83,6 +90,7 @@ Als Nederland niet meedoet aan AI-ontwikkeling:
 ### Afhankelijkheid Groeit
 
 **Zonder eigen AI-capaciteit:**
+
 ```
 Probleem → Moeten externe partij inhuren
          → Geen interne kennis
@@ -97,6 +105,7 @@ Probleem → Moeten externe partij inhuren
 ### Verlies van Soevereiniteit
 
 **Strategische autonomie vereist:**
+
 - Eigen technologie
 - Eigen kennis
 - Eigen standaarden
@@ -109,12 +118,14 @@ Probleem → Moeten externe partij inhuren
 ### Slimme Koppen Vertrekken
 
 **Talent trekt naar waar de actie is:**
+
 - AI-specialisten gaan naar bedrijven
 - Onderzoekers gaan naar het buitenland
 - Innovators starten in Silicon Valley
 - Kennis vloeit weg
 
 **Overheid blijft achter met:**
+
 - Vergrijzende workforce
 - Verouderde kennis
 - Geen aansluiting bij ontwikkelingen
@@ -123,6 +134,7 @@ Probleem → Moeten externe partij inhuren
 ### Maatschappelijke Problemen Blijven
 
 AI kan helpen bij:
+
 - Vroegtijdige signalering van problemen
 - Efficiëntere zorgverlening
 - Beter onderwijs op maat
@@ -139,6 +151,7 @@ AI kan helpen bij:
 **Als je niet meedoet, kun je niet meesturen.**
 
 AI-ethiek wordt nu gevormd:
+
 - Welke waarden bouwen we in?
 - Hoe borgen we rechtvaardigheid?
 - Wat is acceptable gebruik?
@@ -147,6 +160,7 @@ AI-ethiek wordt nu gevormd:
 **Nederlandse overheid moet aan tafel zitten.**
 
 Als we niet meedoen:
+
 - Anderen bepalen wat ethisch is
 - Onze waarden niet vertegenwoordigd
 - Toekijken in plaats van sturen
@@ -155,12 +169,14 @@ Als we niet meedoen:
 ### Maatschappelijke Uitsluiting
 
 **Zonder overheids-AI:**
+
 - Alleen commerciële AI beschikbaar
 - Alleen voor wie kan betalen
 - Alleen voor digitaal vaardigen
 - Vergroting van ongelijkheid
 
 **Met publieke AI:**
+
 - Toegankelijk voor iedereen
 - Rekening houdend met diversiteit
 - Ondersteunend voor kwetsbaren
@@ -173,12 +189,14 @@ Dit is misschien wel het meest urgente risico:
 ### Burgers Krijgen AI-Assistenten
 
 **Nu al beschikbaar:**
+
 - ChatGPT Plus
 - Claude
 - Gemini
 - Copilot
 
 **Binnenkort mainstream:**
+
 - Iedereen heeft een AI-assistent
 - Op telefoon, computer, wearable
 - Helpt met dagelijkse taken
@@ -189,6 +207,7 @@ Dit is misschien wel het meest urgente risico:
 **Scenario:** Burgers met AI-assistenten kunnen:
 
 **Efficiënter aanvragen indienen:**
+
 ```
 Burger: "Assistente, kijk welke subsidies ik kan krijgen"
 AI: "Ik zie 12 mogelijkheden"
@@ -197,6 +216,7 @@ AI: Genereert 12 perfecte aanvragen in 5 minuten
 ```
 
 **Meer bezwaren maken:**
+
 ```
 Burger: "Ik ben het niet eens met dit besluit"
 AI: "Ik schrijf een bezwaarschrift"
@@ -204,6 +224,7 @@ AI: Genereert juridisch waterdicht bezwaar in 2 minuten
 ```
 
 **Complexe vragen stellen:**
+
 ```
 Burger: "Wat als ik ga scheiden, verhuizen en stoppen met werken?"
 AI: "Laat me alle consequenties doorrekenen..."
@@ -213,12 +234,14 @@ AI: Genereert rapport van 20 pagina's
 ### De Asymmetrie
 
 **Burgers met AI-assistent:**
+
 - Kunnen in minuten complexe aanvragen doen
 - Perfect geformuleerd
 - Juridisch onderbouwd
 - In grote aantallen
 
 **Overheid zonder AI:**
+
 - Moet alles handmatig behandelen
 - Kan niet bijhouden
 - Ambtenaren overspoeld
@@ -229,12 +252,14 @@ AI: Genereert rapport van 20 pagina's
 ### De Ongelijkheid
 
 **Wie profiteert:**
+
 - Digitaal vaardigen
 - Mensen die betalen voor premium AI
 - Hoger opgeleiden die AI kunnen inzetten
 - Nederlandstaligen
 
 **Wie achterblijft:**
+
 - Digitaal onvaardigen
 - Mensen zonder betaalde AI
 - Lager opgeleiden
@@ -247,12 +272,14 @@ AI: Genereert rapport van 20 pagina's
 ### Concurrentie Verschuift
 
 **Bedrijven met AI:**
+
 - Productiever
 - Innovatiever
 - Goedkoper
 - Flexibeler
 
 **Zonder overheids-AI:**
+
 - Bureaucratie blijft duur
 - Innovatie gehinderd
 - Talent trekt weg
@@ -261,11 +288,13 @@ AI: Genereert rapport van 20 pagina's
 ### Internationale Positie
 
 **Landen met AI-competente overheid:**
+
 - Aantrekkelijk voor bedrijven
 - Hub voor innovatie
 - Economische voorsprong
 
 **Nederland zonder AI-overheid:**
+
 - Minder aantrekkelijk
 - Achterstand groeit
 - Brain drain
@@ -277,24 +306,28 @@ Laten we een scenario schetsen voor 2030 als we nu niet in actie komen:
 ### Scenario 2030: Nederland zonder AI-Overheid
 
 **De burger:**
+
 - Gebruikt AI-assistent voor alles
 - Verwacht instant antwoorden
 - Frustratie over trage overheid
 - Vertrouwen in overheid daalt
 
 **De ambtenaar:**
+
 - Overspoeld door AI-gegenereerde aanvragen
 - Kan niet meer bijhouden
 - Burn-out rates stijgen
 - Moraal daalt
 
 **De overheid:**
+
 - Afhankelijk van Amerikaanse/Chinese tech
 - Geen eigen kennis
 - Hoge kosten
 - Lage effectiviteit
 
 **De maatschappij:**
+
 - Grote groep achterblijvers zonder AI-toegang
 - Kloof tussen hebben en niet-hebben groeit
 - Sociale spanning stijgt
@@ -303,24 +336,28 @@ Laten we een scenario schetsen voor 2030 als we nu niet in actie komen:
 ### Scenario 2030: Nederland met AI-Overheid
 
 **De burger:**
+
 - Overheids-AI-assistent helpt gratis
 - Toegankelijk voor iedereen
 - Snelle, persoonlijke service
 - Vertrouwen in overheid groeit
 
 **De ambtenaar:**
+
 - AI doet routinewerk
 - Focus op complexe gevallen
 - Meer tijd voor persoonlijk contact
 - Werk blijft zinvol
 
 **De overheid:**
+
 - Eigen AI-capaciteit
 - Soeverein en onafhankelijk
 - Lagere kosten
 - Betere dienstverlening
 
 **De maatschappij:**
+
 - Niemand wordt achtergelaten
 - AI verkleint kloof
 - Overheid toegankelijker
@@ -341,18 +378,21 @@ Er is geen neutrale positie. Niet kiezen is ook een keuze - en wel de slechtste.
 ### Drie Opties
 
 **Optie A: Afwachten**
+
 - ❌ Achterstand groeit
 - ❌ Afhankelijkheid neemt toe
 - ❌ Problemen stapelen zich op
 - ❌ Herstel wordt steeds moeilijker
 
 **Optie B: Inkopen**
+
 - ⚠️ Vendor lock-in
 - ⚠️ Geen eigen kennis
 - ⚠️ Geopolitieke risico's
 - ⚠️ Hoge kosten
 
 **Optie C: Zelf Bouwen (met Common Ground)**
+
 - ✅ Eigen kennis opbouwen
 - ✅ Open source en soeverein
 - ✅ Passend bij onze waarden
@@ -371,6 +411,7 @@ Er is geen neutrale positie. Niet kiezen is ook een keuze - en wel de slechtste.
 5. **Bouwen** aan eigen capaciteit
 
 **Want:**
+
 - De wereld wacht niet
 - De kloof groeit dagelijks
 - Herstel wordt steeds duurder
@@ -407,6 +448,7 @@ We kunnen soeverein zijn - of afhankelijk.
 **Volgende serie:** Open Source en Europese Digitale Soevereiniteit
 
 **Alle blogs in deze serie:**
+
 1. [De AI Bubbel](/blog/ai-bubbels-wereldbeeld)
 2. [AI en Open Source](/blog/ai-open-source-common-ground)
 3. [AI en Data](/blog/ai-data-datalaag-basis)
@@ -414,4 +456,3 @@ We kunnen soeverein zijn - of afhankelijk.
 5. [Veilige AI](/blog/ai-veilig-handelingskaders-rbak-pbak)
 6. [Kansen voor Burgers](/blog/ai-kansen-burgers-regelgeving-navigator)
 7. [Risico's van Niet-Adopteren](/blog/ai-risicos-niet-adopteren-achterblijven) ← **Je bent hier**
-

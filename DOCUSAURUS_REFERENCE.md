@@ -40,7 +40,7 @@ rubenlinde/
 ---
 slug: url-friendly-slug
 title: Your Blog Post Title
-authors: [ruben]  # Reference to authors.yml
+authors: [ruben] # Reference to authors.yml
 tags: [tag1, tag2, tag3]
 date: 2024-12-22
 ---
@@ -71,7 +71,7 @@ Your content here...
 
 \`\`\`javascript title="example.js"
 function hello() {
-  console.log('Hello World!');
+console.log('Hello World!');
 }
 \`\`\`
 
@@ -163,19 +163,21 @@ module.exports = {
 ## Troubleshooting
 
 ### Clear Cache
+
 ```bash
 npm run clear
 ```
 
 ### Reinstall Dependencies
+
 ```bash
 rm -rf node_modules package-lock.json
 npm install
 ```
 
 ### Check Build Locally
+
 ```bash
 npm run build
 npm run serve
 ```
-

@@ -25,6 +25,7 @@ npm install
 ```
 
 This will install all the necessary packages including:
+
 - Docusaurus 3.x
 - NL Design System components
 - React and other dependencies
@@ -101,7 +102,7 @@ Create new blog posts in the `blog/` directory:
 ---
 slug: my-post-slug
 title: My Post Title
-authors: 
+authors:
   - name: Ruben van de Linde
     title: Software Developer
     url: https://github.com/rubenvdlinde
@@ -146,6 +147,7 @@ Edit `src/css/custom.css` to customize the color scheme:
 ### Updating Site Info
 
 Edit `docusaurus.config.js` to change:
+
 - Site title and tagline
 - Navigation items
 - Footer links
@@ -164,6 +166,7 @@ Place images in the `static/img/` directory and reference them in your markdown:
 ### Build Failures
 
 If the build fails:
+
 1. Check the Actions tab for error messages
 2. Make sure all markdown files have valid frontmatter
 3. Ensure all links are valid
@@ -171,6 +174,7 @@ If the build fails:
 ### Local Development Issues
 
 If `npm start` fails:
+
 1. Delete `node_modules/` and run `npm install` again
 2. Clear the cache: `npm run clear`
 3. Make sure you are using Node.js 18.x or higher
@@ -182,4 +186,3 @@ If `npm start` fails:
 - [GitHub Actions Documentation](https://docs.github.com/en/actions)
 
 Happy blogging! 🚀
-

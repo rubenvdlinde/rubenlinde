@@ -53,6 +53,7 @@ rubenlinde/
 ### 🎨 Features Included
 
 #### ✅ Docusaurus 3.x
+
 - Modern static site generator
 - Fast and optimized builds
 - Built-in blog and documentation
@@ -60,24 +61,28 @@ rubenlinde/
 - Responsive design
 
 #### ✅ NL Design System Integration
+
 - Dutch government design system components
 - Accessibility-first approach (WCAG 2.1 AA)
 - Amsterdam design tokens included
 - Utrecht component library
 
 #### ✅ GitHub Actions Workflow
+
 - Automatic deployment on push to `main`
 - Builds and deploys to GitHub Pages
 - Optimized with dependency caching
 - Secure with minimal permissions
 
 #### ✅ Content
+
 - Welcome blog post
 - Tutorial on Docusaurus + NL Design
 - Documentation intro page
 - Example homepage with features section
 
 #### ✅ Configuration
+
 - Bilingual support (Dutch and English)
 - RSS and Atom feeds
 - Social media integration
@@ -85,14 +90,14 @@ rubenlinde/
 
 ### 📚 Documentation Files
 
-| File | Purpose |
-|------|---------|
-| `README.md` | Project overview and quick start |
-| `SETUP.md` | Detailed local setup instructions |
-| `DEPLOYMENT.md` | Complete GitHub Pages deployment guide |
+| File                      | Purpose                                 |
+| ------------------------- | --------------------------------------- |
+| `README.md`               | Project overview and quick start        |
+| `SETUP.md`                | Detailed local setup instructions       |
+| `DEPLOYMENT.md`           | Complete GitHub Pages deployment guide  |
 | `DOCUSAURUS_REFERENCE.md` | Quick reference for Docusaurus features |
-| `CONTRIBUTING.md` | Guidelines for contributions |
-| `CHANGELOG.md` | Version history |
+| `CONTRIBUTING.md`         | Guidelines for contributions            |
+| `CHANGELOG.md`            | Version history                         |
 
 ## 🚀 Next Steps
 
@@ -117,6 +122,7 @@ Open `http://localhost:3000` to see your site.
 #### Update Author Information
 
 Edit `blog/authors.yml`:
+
 ```yaml
 ruben:
   name: Your Name
@@ -128,6 +134,7 @@ ruben:
 #### Update Site Configuration
 
 Edit `docusaurus.config.js`:
+
 - Change title and tagline
 - Update URLs and social links
 - Customize navbar and footer
@@ -207,16 +214,19 @@ npm run clear                # Clear cache
 ## 📖 Learning Resources
 
 ### Docusaurus
+
 - [Official Documentation](https://docusaurus.io/)
 - [Markdown Features](https://docusaurus.io/docs/markdown-features)
 - [Blog](https://docusaurus.io/docs/blog)
 
 ### NL Design System
+
 - [Official Site](https://nldesignsystem.nl/)
 - [Component Library](https://nldesignsystem.nl/componenten/)
 - [Design Tokens](https://nldesignsystem.nl/handboek/design-tokens/)
 
 ### GitHub Actions
+
 - [GitHub Pages Docs](https://docs.github.com/en/pages)
 - [Actions Documentation](https://docs.github.com/en/actions)
 
@@ -225,17 +235,20 @@ npm run clear                # Clear cache
 ### Key Configuration Files
 
 #### `docusaurus.config.js`
+
 - Site metadata (title, tagline, URL)
 - Theme configuration
 - Navbar and footer
 - Plugins and presets
 
 #### `package.json`
+
 - Dependencies (Docusaurus, React, NL Design)
 - Scripts (start, build, deploy)
 - Node version requirement (18+)
 
 #### `.github/workflows/deploy.yml`
+
 - Automatic deployment workflow
 - Triggers on push to main
 - Builds and deploys to GitHub Pages
@@ -258,16 +271,19 @@ npm run clear                # Clear cache
 ## 🎨 Customization Ideas
 
 ### Visual Customization
+
 - Edit `src/css/custom.css` for colors and styles
 - Replace logo in `static/img/`
 - Customize homepage in `src/pages/index.tsx`
 
 ### Content Additions
+
 - Add more blog posts in `blog/`
 - Create documentation in `docs/`
 - Add custom pages in `src/pages/`
 
 ### Features to Add
+
 - Google Analytics
 - Comment system (Disqus, Giscus)
 - Newsletter signup
@@ -277,6 +293,7 @@ npm run clear                # Clear cache
 ## 🐛 Troubleshooting
 
 ### Build Errors
+
 ```bash
 npm run clear        # Clear cache
 rm -rf node_modules  # Remove dependencies
@@ -284,11 +301,13 @@ npm install          # Reinstall
 ```
 
 ### GitHub Actions Failing
+
 - Check Actions tab for logs
 - Verify all markdown files have valid frontmatter
 - Test build locally: `npm run build`
 
 ### Pages Not Loading
+
 - Check `docusaurus.config.js` baseUrl matches repository name
 - Verify GitHub Pages is set to "GitHub Actions" source
 - Wait a few minutes after first deployment
@@ -296,6 +315,7 @@ npm install          # Reinstall
 ## 📝 Content Writing Tips
 
 ### Blog Post Best Practices
+
 - Use descriptive titles
 - Add relevant tags
 - Include a good introduction before `<!--truncate-->`
@@ -303,6 +323,7 @@ npm install          # Reinstall
 - Add images to `static/img/`
 
 ### Markdown Features
+
 - Code blocks with title: \`\`\`js title="example.js"
 - Admonitions: :::tip, :::note, :::warning
 - Internal links: `[text](/docs/page)`
@@ -320,17 +341,17 @@ You now have a fully functional, modern blog and documentation site with:
 ✅ TypeScript support  
 ✅ Dark mode  
 ✅ RSS feeds  
-✅ Bilingual support (NL/EN)  
+✅ Bilingual support (NL/EN)
 
 **Start creating content and share your knowledge with the world! 🚀**
 
 ---
 
 For questions or issues, refer to:
+
 - `SETUP.md` - Local development
 - `DEPLOYMENT.md` - GitHub Pages deployment
 - `DOCUSAURUS_REFERENCE.md` - Quick reference
 - `CONTRIBUTING.md` - How to contribute
 
 Happy blogging! 📝
-

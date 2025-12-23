@@ -11,20 +11,25 @@ Use this checklist to get your Docusaurus blog up and running!
   - Verify: `node --version` (should be 18.x or higher)
 
 - [ ] **Clone or Initialize Repository**
+
   ```bash
   cd c:\Users\ruben\Documents\repositories\rubenvdlinde\rubenlinde
   ```
 
 - [ ] **Install Dependencies**
+
   ```bash
   npm install
   ```
+
   Wait for installation to complete (may take 2-5 minutes)
 
 - [ ] **Start Development Server**
+
   ```bash
   npm start
   ```
+
   Opens browser at `http://localhost:3000`
 
 - [ ] **Verify Site Works Locally**
@@ -87,16 +92,19 @@ Use this checklist to get your Docusaurus blog up and running!
 ### ✅ GitHub Setup (10 minutes)
 
 - [ ] **Initialize Git** (if not already done)
+
   ```bash
   git init
   ```
 
 - [ ] **Add All Files**
+
   ```bash
   git add .
   ```
 
 - [ ] **First Commit**
+
   ```bash
   git commit -m "Initial commit: Docusaurus blog with NL Design System"
   ```
@@ -108,6 +116,7 @@ Use this checklist to get your Docusaurus blog up and running!
   - Don't initialize with README (already have one)
 
 - [ ] **Add Remote**
+
   ```bash
   git remote add origin https://github.com/rubenvdlinde/rubenlinde.git
   ```
@@ -234,7 +243,7 @@ Use this checklist to get your Docusaurus blog up and running!
 ### If Build Fails Locally
 
 - [ ] Clear cache: `npm run clear`
-- [ ] Delete `node_modules` and reinstall: 
+- [ ] Delete `node_modules` and reinstall:
   ```bash
   rm -rf node_modules package-lock.json
   npm install
@@ -260,14 +269,14 @@ Use this checklist to get your Docusaurus blog up and running!
 
 ## 📚 Resources Quick Reference
 
-| Need Help With... | Look Here |
-|-------------------|-----------|
-| Local setup | `SETUP.md` |
-| Deployment | `DEPLOYMENT.md` |
-| Architecture | `ARCHITECTURE.md` |
-| Writing content | `DOCUSAURUS_REFERENCE.md` |
-| Project overview | `PROJECT_SUMMARY.md` |
-| Contributing | `CONTRIBUTING.md` |
+| Need Help With... | Look Here                 |
+| ----------------- | ------------------------- |
+| Local setup       | `SETUP.md`                |
+| Deployment        | `DEPLOYMENT.md`           |
+| Architecture      | `ARCHITECTURE.md`         |
+| Writing content   | `DOCUSAURUS_REFERENCE.md` |
+| Project overview  | `PROJECT_SUMMARY.md`      |
+| Contributing      | `CONTRIBUTING.md`         |
 
 ## ✨ You're All Set!
 
@@ -284,4 +293,3 @@ Once you've completed all items in the main checklist, your blog is:
 ---
 
 **Pro Tip**: Print this checklist or keep it open while setting up your blog!
-

@@ -1,4 +1,4 @@
-# Ruben Linde - Personal Website & Blog
+# Ruben van der Linde - Personal Website & Blog
 
 A serverless personal website and blog built with [Docusaurus](https://docusaurus.io/) and [NL Design System](https://nldesignsystem.nl/), automatically deployed via GitHub Actions.
 

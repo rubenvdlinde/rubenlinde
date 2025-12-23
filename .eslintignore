@@ -1,0 +1,6 @@
+build
+.docusaurus
+node_modules
+*.config.js
+*.config.ts
+

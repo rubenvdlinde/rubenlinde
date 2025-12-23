@@ -15,12 +15,15 @@ This folder contains articles about Conduction projects, open-source initiatives
 ## Key Projects
 
 ### OpenCatalogi
+
 Central registry for API discovery and management in the public sector.
 
 ### Common Ground Components
+
 Building blocks for modern government applications.
 
 ### Other Projects
+
 Various open-source tools and platforms developed at Conduction.
 
 ## Writing Guidelines
@@ -34,6 +37,7 @@ Various open-source tools and platforms developed at Conduction.
 ## Tags to Use
 
 Common tags for this category:
+
 - `conduction`
 - `opencatalogi`
 - `common-ground`
@@ -70,4 +74,3 @@ tags: [conduction, opencatalogi, api, opensource, php]
 - Testing strategies
 - DevOps and deployment
 - Standards implementation
-

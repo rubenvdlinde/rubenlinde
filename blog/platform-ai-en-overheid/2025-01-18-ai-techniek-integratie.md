@@ -22,6 +22,7 @@ De eerste regel van veilige AI-integratie: **AI is nooit een losstaand systeem**
 ### Altijd in Context
 
 AI moet altijd werken binnen een gedefinieerde context:
+
 - Welke data mag het zien?
 - Welke acties mag het adviseren?
 - Binnen welke grenzen moet het blijven?
@@ -29,6 +30,7 @@ AI moet altijd werken binnen een gedefinieerde context:
 ### Altijd Begrensd
 
 AI zonder grenzen is een gevaar. Veilige AI betekent:
+
 - Duidelijke rol
 - Beperkte toegang
 - Gecontroleerde output
@@ -44,6 +46,7 @@ MCP (Model Context Protocol) is een emerging standard voor hoe AI-systemen veili
 
 **1. Alleen Noodzakelijke Context**
 AI krijgt alleen de informatie die strikt noodzakelijk is:
+
 ```
 ❌ Toegang tot hele database
 ✅ Specifieke datapunten via API
@@ -51,6 +54,7 @@ AI krijgt alleen de informatie die strikt noodzakelijk is:
 
 **2. Geen Vrije Toegang tot Systemen**
 AI kan niet zelf systemen aanroepen:
+
 ```
 ❌ AI roept direct APIs aan
 ✅ Applicatie controleert en roept APIs aan
@@ -58,6 +62,7 @@ AI kan niet zelf systemen aanroepen:
 
 **3. API-Gedreven Integratie**
 Alle interactie verloopt via gecontroleerde APIs:
+
 - Input wordt gevalideerd
 - Output wordt gecontroleerd
 - Acties worden gelogd
@@ -65,6 +70,7 @@ Alle interactie verloopt via gecontroleerde APIs:
 ### Praktisch Voorbeeld: Subsidie-assistent
 
 **Onveilig:**
+
 ```
 AI → Directe database toegang
    → Kan alles lezen
@@ -73,6 +79,7 @@ AI → Directe database toegang
 ```
 
 **Veilig (MCP-stijl):**
+
 ```
 Burger → Applicatie → AI met context
                     ↓
@@ -90,11 +97,13 @@ Applicatie → Controleert advies
 ### Regel 1: AI Leest, maar Schrijft Niet
 
 **AI mag:**
+
 - Data opvragen (read-only)
 - Patronen analyseren
 - Adviezen genereren
 
 **AI mag NIET:**
+
 - Direct data wijzigen
 - Zelfstandig besluiten uitvoeren
 - Permanente acties ondernemen
@@ -102,10 +111,11 @@ Applicatie → Controleert advies
 ### Regel 2: AI Adviseert, Mens Besluit
 
 De **mens blijft verantwoordelijk**:
+
 ```
-AI: "Op basis van de gegevens lijkt deze burger 
+AI: "Op basis van de gegevens lijkt deze burger
      in aanmerking te komen voor regeling X"
-     
+
 Ambtenaar: Controleert
           → Besluit
           → Voert uit (of niet)
@@ -114,6 +124,7 @@ Ambtenaar: Controleert
 ### Regel 3: Logging en Herleidbaarheid Verplicht
 
 Elke AI-interactie moet worden vastgelegd:
+
 - **Wat** heeft de AI gezien? (input)
 - **Wat** heeft de AI geadviseerd? (output)
 - **Waarom** deze conclusie? (reasoning)
@@ -121,6 +132,7 @@ Elke AI-interactie moet worden vastgelegd:
 - **Wanneer** is het gebruikt? (timestamp)
 
 Dit is essentieel voor:
+
 - Verantwoording
 - Audit trails
 - Foutanalyse
@@ -131,6 +143,7 @@ Dit is essentieel voor:
 ### AI Draait "in de Kelder"
 
 **On-premise AI betekent:**
+
 - Geen data naar externe cloud
 - Volledige controle over infrastructure
 - Geen dependency op externe partijen
@@ -143,20 +156,25 @@ Dit is essentieel voor:
 **Principe:** Breng AI naar de data, niet andersom.
 
 ❌ **Anti-pattern:**
+
 ```
 On-premise data → Upload naar cloud AI
 ```
+
 Risico's: datalek, privacy-schending, afhankelijkheid
 
 ✅ **Best practice:**
+
 ```
 On-premise data + On-premise AI
 ```
+
 Voordelen: controle, privacy, soevereiniteit
 
 ### Geen Ongecontroleerde Cloud-koppelingen
 
 **Waarschuwing:** Zelfs "veilige" cloud AI kan:
+
 - Geopolitiek wapen worden (zie Pax Americana blog)
 - Onderhevig zijn aan vreemde wetgeving
 - Plotseling verdwijnen of veranderen
@@ -173,6 +191,7 @@ Wat mag AI dan wel doen in de overheid?
 **Waarde:** Hoog (tijdsbesparing)
 
 **Voorbeeld:**
+
 ```
 Input: Dossier van 200 pagina's
 AI: Genereert samenvatting van 2 pagina's
@@ -186,6 +205,7 @@ Ambtenaar: Leest samenvatting + controleert belangrijke details
 **Waarde:** Hoog (sneller werken)
 
 **Voorbeeld:**
+
 ```
 Input: "Burger vraagt kwijtschelding gemeentebelasting"
 AI: Genereert conceptbrief met standaard-clausules
@@ -199,6 +219,7 @@ Ambtenaar: Past aan, controleert, en verstuurt
 **Waarde:** Zeer hoog (maakt data bruikbaar)
 
 **Voorbeeld:**
+
 ```
 Input: Email van burger met vraag
 AI: Extraheert: naam, BSN, vraagtype, urgentie
@@ -208,6 +229,7 @@ Systeem: Valideert + routeert naar juiste afdeling
 ### 4. Nooit Zelfstandig Handelen
 
 **Rode lijn:** AI mag NOOIT autonoom:
+
 - Besluiten nemen
 - Geld overboeken
 - Brieven versturen
@@ -223,16 +245,19 @@ Mistral AI is enorm populair in de Nederlandse overheid. Maar waarom eigenlijk?
 ### Waarom Mistral Populair Is
 
 **1. Europees**
+
 - Frans bedrijf
 - Valt onder EU-wetgeving
 - Minder geopolitiek risico
 
 **2. Open gewicht modellen**
+
 - Modelgewichten zijn publiek
 - Kan on-premise draaien
 - Geen vendor lock-in
 
 **3. Nederlandse voorkeur**
+
 - Veel gemeenten en ministeries gebruiken het
 - Netwerkeffect
 - Gedeelde kennis
@@ -242,11 +267,13 @@ Mistral AI is enorm populair in de Nederlandse overheid. Maar waarom eigenlijk?
 **Maar is Mistral echt _inhoudelijk_ beter?**
 
 Laten we eerlijk zijn:
+
 - **Minder training:** Kleiner dan GPT-4, Claude 3, etc.
 - **Minder parameters:** Beperktere capaciteit
 - **Minder resources:** Kleinere organisatie
 
 **De trade-off:**
+
 ```
 Grotere modellen (GPT-4, Claude):
   ✅ Meer kennis
@@ -272,6 +299,7 @@ De echte vraag is niet "Welk model is het beste?" maar:
 **"Welke trade-offs zijn we bereid te maken voor soevereiniteit en transparantie?"**
 
 **Scenario 1: Kies het beste model**
+
 - Hoogste kwaliteit AI
 - Maar: Amerikaanse big tech
 - Maar: Cloud-only
@@ -279,6 +307,7 @@ De echte vraag is niet "Welk model is het beste?" maar:
 - Maar: Geopolitiek risico
 
 **Scenario 2: Kies het meest soevereine model**
+
 - Iets minder kwaliteit
 - Maar: Europees
 - Maar: On-premise mogelijk
@@ -292,16 +321,19 @@ De echte vraag is niet "Welk model is het beste?" maar:
 Een cruciaal punt: **op welke data is een model getraind?**
 
 **Mistral:**
+
 - ✅ Publiceert info over dataset
 - ✅ Europese focus in training
 - ⚠️ Nog niet 100% transparant
 
 **GPT-4, Claude, etc:**
+
 - ❌ Trainingsdata grotendeels geheim
 - ❌ Mogelijk copyrighted materiaal
 - ❌ Onbekende bias
 
 **Waarom dit belangrijk is:**
+
 - Training data bepaalt bias
 - Bepaalt juridische risico's
 - Bepaalt kwaliteit voor specifieke use cases
@@ -309,7 +341,7 @@ Een cruciaal punt: **op welke data is een model getraind?**
 
 ## Kritische Vraag
 
-Is het echt haalbaar om AI altijd alleen maar als ondersteunende tool te houden, of is het onvermijdelijk dat AI ooit wat meer autonomie krijgt? 
+Is het echt haalbaar om AI altijd alleen maar als ondersteunende tool te houden, of is het onvermijdelijk dat AI ooit wat meer autonomie krijgt?
 
 En hoe gaan we dan om met die grens?
 
@@ -320,6 +352,7 @@ En hoe gaan we dan om met die grens?
 **Goede AI-integratie gaat over begrenzen, niet over loslaten.**
 
 De techniek bestaat om AI veilig te integreren in overheidsprocessen:
+
 - MCP-principes voor contextuele AI
 - Strikte scheiding van lezen en schrijven
 - Mens blijft beslisser
@@ -327,6 +360,7 @@ De techniek bestaat om AI veilig te integreren in overheidsprocessen:
 - Volledige logging
 
 De keuze voor modellen als Mistral is geen compromis, maar een weloverwogen strategische beslissing:
+
 - Soevereiniteit boven maximale kwaliteit
 - Transparantie boven closed source
 - Europese waarborgen boven big tech
@@ -338,4 +372,3 @@ De vraag is niet of we de beste AI kunnen krijgen, maar of we verantwoorde AI ku
 **Volgende blog:** Veilige AI - Handelingskaders en R-bak/P-bak integratie
 
 **Gerelateerd:** [MCP Protocol](https://modelcontextprotocol.io) | [Mistral AI](https://mistral.ai)
-

@@ -64,17 +64,18 @@ En zo komen we terug bij waar we begonnen: AI leeft in een bubbel, waar kunnen w
 
 ### Vergelijking Populaire AI-Modellen
 
-| Model | Trainer Vertrouwen | Inzicht Trainingsdata | Breedte Dataset | Lokaal Draaien | Open Source Model |
-|-------|-------------------|----------------------|-----------------|----------------|-------------------|
-| **Mistral** | ✅ Europees bedrijf, transparant | ⚠️ Deels transparant | ✅ Breed, Europese focus | ✅ Ja, open gewichten | ✅ Ja |
-| **ChatGPT (OpenAI)** | ⚠️ Amerikaans, Microsoft-invloed | ❌ Volledig gesloten | ✅ Zeer breed | ❌ Nee, cloud-only | ❌ Nee |
-| **Claude (Anthropic)** | ⚠️ Amerikaans, "ethical AI" focus | ⚠️ Beperkt transparant | ✅ Breed, gefilterd | ❌ Nee, cloud-only | ❌ Nee |
-| **Llama (Meta)** | ⚠️ Amerikaans, Facebook-eigendom | ⚠️ Deels transparant | ✅ Zeer breed | ✅ Ja, open gewichten | ✅ Ja (met restricties) |
-| **Gemini (Google)** | ⚠️ Amerikaans, Google | ❌ Volledig gesloten | ✅ Zeer breed | ❌ Nee, cloud-only | ❌ Nee |
+| Model                  | Trainer Vertrouwen                | Inzicht Trainingsdata  | Breedte Dataset          | Lokaal Draaien        | Open Source Model       |
+| ---------------------- | --------------------------------- | ---------------------- | ------------------------ | --------------------- | ----------------------- |
+| **Mistral**            | ✅ Europees bedrijf, transparant  | ⚠️ Deels transparant   | ✅ Breed, Europese focus | ✅ Ja, open gewichten | ✅ Ja                   |
+| **ChatGPT (OpenAI)**   | ⚠️ Amerikaans, Microsoft-invloed  | ❌ Volledig gesloten   | ✅ Zeer breed            | ❌ Nee, cloud-only    | ❌ Nee                  |
+| **Claude (Anthropic)** | ⚠️ Amerikaans, "ethical AI" focus | ⚠️ Beperkt transparant | ✅ Breed, gefilterd      | ❌ Nee, cloud-only    | ❌ Nee                  |
+| **Llama (Meta)**       | ⚠️ Amerikaans, Facebook-eigendom  | ⚠️ Deels transparant   | ✅ Zeer breed            | ✅ Ja, open gewichten | ✅ Ja (met restricties) |
+| **Gemini (Google)**    | ⚠️ Amerikaans, Google             | ❌ Volledig gesloten   | ✅ Zeer breed            | ❌ Nee, cloud-only    | ❌ Nee                  |
 
 **Legenda:**
+
 - ✅ = Goed / Mogelijk
-- ⚠️ = Gedeeltelijk / Met kanttekeningen  
+- ⚠️ = Gedeeltelijk / Met kanttekeningen
 - ❌ = Slecht / Niet mogelijk
 
 **Kanttekening bij "Cursor":** Cursor is geen AI-model, maar een editor die gebruik maakt van verschillende onderliggende modellen (zoals GPT-4, Claude). De keuze hangt dus af van welk model je via Cursor gebruikt.
@@ -84,4 +85,3 @@ En zo komen we terug bij waar we begonnen: AI leeft in een bubbel, waar kunnen w
 Het belangrijkste is echter dat we ons bewust zijn van deze randjes van AI. We kunnen AI er nooit meer op vertrouwen om zelfstandig namens de overheid te opereren in casussen zoals zaakorchestratie etc. Het gaat in die zin nooit de inhoudelijke medewerker vervangen. Waar het echter wel een wereld van verschil kan maken is de snelheid waarmee het data doorzoekt en voorstelt aan die inhoudelijke medewerker. Daarover meer in het volgende blog.
 
 **Volgende blog in deze serie:** AI en Open Source - Waarom transparantie geen luxe is
-

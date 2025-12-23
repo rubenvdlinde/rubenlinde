@@ -22,18 +22,21 @@ Nederlandse burgers worden geconfronteerd met een ongekend complex systeem:
 ### De Complexiteit
 
 **Landelijk + Lokaal:**
+
 - Nationale wetgeving (Tweede Kamer)
 - Provinciale regelingen
 - Gemeente-specifieke voorschriften
 - Waterschapsregels
 
 **Verandert Constant:**
+
 - Nieuwe wetten
 - Aangepaste regelingen
 - Tijdelijke maatregelen
 - Uitzonderingen en overgangstermijnen
 
 **Moeilijk te Doorgronden:**
+
 - Juridisch jargon
 - Verwijzingen naar andere regelingen
 - Voorwaarden en uitzonderingen
@@ -56,13 +59,14 @@ AI: "Op basis van jouw situatie kom je mogelijk in aanmerking voor:
      - Kinderopvangtoeslag
      - Zorgtoeslag (afhankelijk van inkomen)
      - Gemeentelijke starterslening
-     
+
      Wil je dat ik deze één voor één doorloop?"
 ```
 
 **2. Doorvragen op Situatie**
 
 AI kan gedetailleerd doorvragen:
+
 ```
 AI: "Voor de kinderopvangtoeslag heb ik wat meer info nodig:
      - Gebruik je formele kinderopvang?
@@ -73,6 +77,7 @@ AI: "Voor de kinderopvangtoeslag heb ik wat meer info nodig:
 **3. Uitleg in Begrijpelijke Taal**
 
 Vertaling van ambtelijk naar Nederlands:
+
 ```
 Wettekst: "Aanspraak ontstaat indien het verzamelinkomen
            de geldende vermogenstoets niet overschrijdt..."
@@ -88,11 +93,13 @@ AI hoeft niet vanaf nul te beginnen. Er zijn prachtige initiatieven waar AI op k
 ### Regels.overheid.nl
 
 **Wat is het:**
+
 - Centrale plek voor alle Nederlandse regelgeving
 - Machine-leesbare format (STOP/TPOD)
 - Up-to-date en juridisch geldig
 
 **Hoe AI het kan gebruiken:**
+
 ```
 Burger stelt vraag
    ↓
@@ -108,6 +115,7 @@ AI wijst naar officiële bron
 ### Regellinger Scan
 
 AI kan pro-actief scannen:
+
 ```
 Input: Burgergegevens (met toestemming!)
        - Leeftijd, inkomen, gezinssituatie
@@ -130,16 +138,16 @@ Output: "Je mist mogelijk deze regelingen:
 Burger: "Wat verandert er als ik van Amsterdam naar Utrecht verhuis?"
 
 AI: "Laten we kijken:
-     
+
      Huurtoeslag: Blijft gelijk (landelijk)
-     
+
      Gemeentelijke regelingen:
      - Amsterdam scholingsvoucher vervalt
      - Utrecht fietsplan wordt beschikbaar
      - Afvalstoffenheffing €50 lager
-     
+
      Totaal effect: ~€200 per jaar verschil
-     
+
      Wil je meer details over één van deze punten?"
 ```
 
@@ -155,26 +163,27 @@ AI kan het aanvragen makkelijker maken:
 
 ```
 1. AI: "Je komt in aanmerking voor huurtoeslag"
-   
+
 2. Burger: "Hoe vraag ik dat aan?"
-   
+
 3. AI: "Ik help je de aanvraag voorbereiden:
          - Ik haal alvast je basisgegevens op
          - Ik bereken het bedrag
          - Ik maak een conceptaanvraag
-         
+
          Jij controleert en dient in. Goed?"
-   
+
 4. AI genereert concept met:
          - Pre-filled velden
          - Berekend bedrag
          - Benodigde bijlagen
          - Uitleg per veld
-   
+
 5. Burger: Controleert, past aan, dient in
 ```
 
 **Waarborgen:**
+
 - Burger blijft eigenaar van het proces
 - Burger controleert alle gegevens
 - Burger dient zelf in
@@ -183,12 +192,14 @@ AI kan het aanvragen makkelijker maken:
 ### Inwoner Blijft Verantwoordelijk
 
 **AI kan niet:**
+
 - ❌ Automatisch aanvragen indienen
 - ❌ Namens jou tekenen
 - ❌ Je verplichten iets aan te vragen
 - ❌ Data delen zonder toestemming
 
 **AI kan wel:**
+
 - ✅ Informeren over mogelijkheden
 - ✅ Uitleggen wat je nodig hebt
 - ✅ Concepten voorbereiden
@@ -221,21 +232,25 @@ Om dit allemaal mogelijk te maken, hebben we infrastructuur nodig.
 ### Wat Nodig Is
 
 **1. Gestandaardiseerde Data**
+
 - Regelingen in machine-leesbaar format
 - Common Ground bronregisters
 - API's voor gegevensuitwisseling
 
 **2. AI-Assistent per Gemeente**
+
 - On-premise deployment (zie vorige blogs)
 - Toegang tot lokale en landelijke regelingen
 - Privacy-conform
 
 **3. Burgerportaal**
+
 - Waar burgers de AI kunnen raadplegen
 - MijnOverheid-integratie
 - Toegankelijk voor iedereen
 
 **4. Consent Management**
+
 - Burger bepaalt welke data gedeeld wordt
 - Transparant over gebruik
 - Revoceerbaar
@@ -278,22 +293,22 @@ Om dit allemaal mogelijk te maken, hebben we infrastructuur nodig.
 Sara: "Ik ga starten als zelfstandige, waar moet ik aan denken?"
 
 AI: "Gefeliciteerd! Laten we het stap voor stap doornemen:
-     
+
      📋 Verplicht:
      - KvK-inschrijving (€50)
      - BTW-nummer aanvragen bij Belastingdienst
      - Administratie opzetten
-     
+
      💰 Regelingen waar je mogelijk recht op hebt:
      - Starterslening gemeente (€25.000 renteloos)
      - KIA belastingvoordeel (investering apparatuur)
      - Tegemoetkoming bedrijfsruimte
-     
+
      🏥 Belangrijk voor later:
      - Pensioenopbouw (je bouwt geen AOW meer op)
      - Ziektekostenverzekering blijft verplicht
      - Arbeidsongeschiktheidsverzekering overwegen
-     
+
      Waar wil je mee beginnen?"
 ```
 
@@ -304,28 +319,28 @@ AI leidt Sara door het hele proces, wijst op valkuilen, en helpt haar niets te m
 **Mark krijgt een kind:**
 
 ```
-Mark: "Mijn partner en ik krijgen over 2 maanden een baby. 
+Mark: "Mijn partner en ik krijgen over 2 maanden een baby.
        Wat komt er op ons af?"
 
 AI: "Wat fijn! Dit zijn de belangrijkste dingen:
-     
+
      📋 Voor de geboorte:
      - Aangifte doen binnen 3 dagen (gemeente)
      - BSN wordt automatisch toegekend
-     
+
      💰 Financieel:
      - Kinderbijslag: €250/kwartaal (automatisch)
      - Kinderopvangtoeslag: tot €1600/maand
        → Maar alleen als je beiden werkt
        → Wil je dat ik doorrekenen voor jullie situatie?
-     
+
      - Gemeentelijke baby-box: €100 cadeaukaart
-     
+
      ⏰ Werk:
      - Ouderschapsverlof: 26 weken (partner)
      - Geboorteverlof: 1 week (partner)
      - Aanspraak verlengen via CAO?
-     
+
      Zal ik een persoonlijk stappenplan maken?"
 ```
 
@@ -334,30 +349,30 @@ AI: "Wat fijn! Dit zijn de belangrijkste dingen:
 **Ans (70) heeft hulp nodig:**
 
 ```
-Ans: "Ik kan niet meer zo goed voor mezelf zorgen. 
+Ans: "Ik kan niet meer zo goed voor mezelf zorgen.
       Wat zijn mijn mogelijkheden?"
 
-AI: "Ik begrijp dat dit een moeilijke situatie is. 
+AI: "Ik begrijp dat dit een moeilijke situatie is.
      Er zijn verschillende vormen van ondersteuning:
-     
+
      🏠 Thuishulp:
      - WMO-voorziening via gemeente
      - Huishoudelijke hulp (mogelijk met eigen bijdrage)
      - Aanpassingen woning (drempelvrij maken, etc.)
-     
+
      💶 Financieel:
      - Eigen bijdrage afhankelijk van inkomen
      - Voor jouw situatie ongeveer €20/maand
-     
+
      🏥 Zorg:
      - Wijkverpleging via zorgverzekeraar
      - Medicijnen via huisarts
-     
+
      📞 Eerste stap:
      - Meld je bij Wmo-loket gemeente
      - Of bel 14030 (gratis)
-     
-     Zal ik een overzicht maken van wat bij jouw 
+
+     Zal ik een overzicht maken van wat bij jouw
      situatie past? Dan kun je dat met je familie bespreken."
 ```
 
@@ -368,21 +383,25 @@ Wat levert dit allemaal op?
 ### Voor Burgers
 
 **1. Niemand Hoeft Iets te Missen**
+
 - Pro-actieve signalering van rechten
 - Geen kennis vooraf nodig
 - Toegankelijk voor iedereen
 
 **2. Minder Stress**
+
 - Duidelijkheid over waar je aan toe bent
 - Stap-voor-stap begeleiding
 - Begrijpelijke taal
 
 **3. Tijdsbesparing**
+
 - Geen zoektocht door websites
 - Direct antwoord op vragen
 - Geen lange wachttijden telefoon
 
 **4. Betere Beslissingen**
+
 - Doorrekenen van scenario's
 - Vergelijken van opties
 - Inzicht in gevolgen
@@ -390,22 +409,26 @@ Wat levert dit allemaal op?
 ### Voor de Overheid
 
 **1. Beter Bereik**
+
 - Niet-westerse Nederlanders die taalbarrière ervaren
 - Laaggeletterden
 - Digitaal minder vaardigen
 - Ouderen
 
 **2. Minder Verspilling**
+
 - Regelingen worden beter benut
 - Minder verkeerde aanvragen
 - Efficiëntere afhandeling
 
 **3. Beter Beleid**
+
 - Inzicht in welke regelingen onbekend zijn
 - Waar burgers tegenaan lopen
 - Welke regels onduidelijk zijn
 
 **4. Menselijker Overheid**
+
 - Toegankelijker
 - Begrijpelijker
 - Responsiever
@@ -419,6 +442,7 @@ Er zijn ook risico's:
 **Risico:** Alleen digitaal vaardigen profiteren
 
 **Oplossing:**
+
 - Meerdere kanalen (web, telefoon, gemeentebalie)
 - Extra ondersteuning voor wie het nodig heeft
 - Klassieke kanalen blijven bestaan
@@ -428,6 +452,7 @@ Er zijn ook risico's:
 **Risico:** Big Brother gevoel
 
 **Oplossing:**
+
 - Expliciete toestemming voor datagebruik
 - Transparant over wat AI doet
 - Opt-in, niet opt-out
@@ -438,6 +463,7 @@ Er zijn ook risico's:
 **Risico:** Burger kan niet meer zonder AI
 
 **Oplossing:**
+
 - AI is hulpmiddel, geen vervanging
 - Burgers leren het systeem begrijpen
 - Documentatie blijft beschikbaar
@@ -447,11 +473,13 @@ Er zijn ook risico's:
 **AI kan de kloof tussen burger en overheid verkleinen.**
 
 Door AI slim in te zetten kunnen we de overheid toegankelijker maken voor iedereen:
+
 - Doorbreek de taalbarrière (ambtelijk → Nederlands)
 - Doorbreek de kennisbarrière (wat zijn mijn rechten?)
 - Doorbreek de procesbarrière (hoe vraag ik dit aan?)
 
 Maar alleen als we het goed doen:
+
 - Met waarborgen voor privacy
 - Met mens in control
 - Met meerdere kanalen
@@ -466,4 +494,3 @@ De techniek bestaat. De data is er (of kan er komen). Het is een keuze om dit te
 **Volgende blog:** Risico's van Niet-Adopteren - Waarom de overheid AI niet kan negeren
 
 **Gerelateerd:** [Regels.overheid.nl](https://regels.overheid.nl) | [MijnOverheid](https://mijn.overheid.nl)
-

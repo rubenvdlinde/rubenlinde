@@ -2,7 +2,8 @@
 slug: ai-veilig-handelingskaders-rbak-pbak
 title: Veilige AI - Handelingskaders en de R-bak/P-bak structuur
 authors: [ruben]
-tags: [ai, beveiliging, handelingskaders, platform-ai, overheid, ethiek, privacy]
+tags:
+  [ai, beveiliging, handelingskaders, platform-ai, overheid, ethiek, privacy]
 ---
 
 # Veilige AI: Handelingskaders en de R-bak/P-bak structuur
@@ -20,12 +21,14 @@ AI moet niet alleen technisch veilig zijn - het moet ook binnen juridische en et
 AI zonder grenzen is gevaarlijk. Maar welke grenzen dan precies? En hoe dwing je die technisch af?
 
 In de Nederlandse overheid kennen we de **R-bak en P-bak** structuur voor gegevensgebruik:
+
 - **R-bak (Registratie)**: Brongegevens, authentieke registraties
 - **P-bak (Verwerking)**: Afgeleide gegevens, analyses, verwerkingen
 
 ### Waarom Dit Voor AI Belangrijk Is
 
 AI moet:
+
 1. Weten uit welke bak het data mag halen
 2. Begrijpen welke privacy-regels gelden
 3. Binnen handelingskaders blijven
@@ -36,6 +39,7 @@ AI moet:
 ### Principe: Restrictieve Toegang
 
 **De R-bak bevat gevoelige brondata:**
+
 - BSN-gegevens (BRP)
 - Financiële gegevens
 - Medische informatie
@@ -60,6 +64,7 @@ AI moet:
 **Scenario:** AI helpt burgers controleren of ze recht hebben op subsidie.
 
 **Onveilig:**
+
 ```
 AI → Rechtstreeks BRP
    → Leest volledige burger-historie
@@ -68,6 +73,7 @@ AI → Rechtstreeks BRP
 ```
 
 **Veilig:**
+
 ```
 Burger geeft toestemming
    ↓
@@ -87,12 +93,14 @@ De P-bak is waar AI meer waarde kan toevoegen, maar ook hier gelden regels.
 ### Wat Mag in de P-bak?
 
 **Toegestaan:**
+
 - Statistische analyses
 - Geaggregeerde cijfers
 - Trends en patronen
 - Geanonimiseerde datasets
 
 **Niet toegestaan:**
+
 - Herleidbare persoonlijke analyses
 - Profielen zonder wettelijke grondslag
 - Discriminerende classificaties
@@ -123,6 +131,7 @@ Laten we helder zijn over de handelingsbevoegdheid van AI.
 ### AI Mag: Voorbereiden
 
 **Toegestaan:**
+
 - Conceptteksten maken
 - Data samenvatten
 - Analyses voorbereiden
@@ -131,6 +140,7 @@ Laten we helder zijn over de handelingsbevoegdheid van AI.
 **Voorwaarde:** Altijd controle door ambtenaar
 
 **Voorbeeld:**
+
 ```
 Burger vraagt vergunning
    ↓
@@ -146,6 +156,7 @@ Ambtenaar neemt definitief besluit
 ### AI Mag: Adviseren
 
 **Toegestaan:**
+
 - Aanbevelingen doen
 - Risico's signaleren
 - Alternatieven voorstellen
@@ -154,10 +165,11 @@ Ambtenaar neemt definitief besluit
 **Voorwaarde:** Duidelijk als "advies" gemarkeerd
 
 **Voorbeeld:**
+
 ```
-AI: "Op basis van vergelijkbare gevallen wordt meestal 
+AI: "Op basis van vergelijkbare gevallen wordt meestal
      optie B gekozen. Overwegingen: ..."
-     
+
 Ambtenaar: Leest advies
           → Beoordeelt zelf
           → Neemt eigen besluit
@@ -166,6 +178,7 @@ Ambtenaar: Leest advies
 ### AI Mag NOOIT: Beslissen
 
 **Verboden:**
+
 - Zelfstandig besluiten nemen
 - Burgers verplichtingen opleggen
 - Rechten toekennen of ontzeggen
@@ -173,6 +186,7 @@ Ambtenaar: Leest advies
 - Juridisch bindende acties
 
 **Waarom niet?**
+
 1. **Juridisch:** Besluit moet herleidbaar zijn tot ambtenaar
 2. **Democratisch:** Mens moet verantwoordelijk zijn
 3. **Ethisch:** AI heeft geen moreel kompas
@@ -253,21 +267,25 @@ AI Request → Gateway → Validation
 ### Voordelen On-Premise AI
 
 **1. Geen Data-uitwisseling met Derden**
+
 - Data verlaat nooit de gemeente-infrastructuur
 - Geen cloud providers met toegang
 - Geen risico op datalek bij derde partij
 
 **2. Volledige Controle**
+
 - Eigen servers, eigen beheer
 - Updates en wijzigingen controleren
 - Uitschakelen kan altijd
 
 **3. Privacy by Design**
+
 - GDPR-compliant door design
 - Geen data naar VS of andere jurisdicties
 - AVG-proof
 
 **4. Geen Afhankelijkheid**
+
 - Geen abonnementen die kunnen eindigen
 - Geen prijsverhogingen
 - Geen vendor lock-in
@@ -300,12 +318,14 @@ Techniek alleen is niet genoeg. We moeten ook ethisch nadenken.
 ### Wanneer is AI-Ondersteuning Ethisch?
 
 **✅ Ethisch verantwoord:**
+
 - AI helpt ambtenaar sneller werken
 - AI voorkomt menselijke fouten (tikfouten, vergeten checks)
 - AI maakt informatie toegankelijker
 - Mens blijft eindverantwoordelijk
 
 **❌ Ethisch problematisch:**
+
 - AI vervangt menselijk oordeelsvermogen
 - AI maakt beslissingen die mensen niet begrijpen
 - AI discrimineert (ook als dat "statistisch klopt")
@@ -316,6 +336,7 @@ Techniek alleen is niet genoeg. We moeten ook ethisch nadenken.
 **Problematisch geval: SyRI**
 
 Het Nederlandse SyRI-systeem werd verboden omdat:
+
 - Geen transparantie over werking
 - Geen controle voor burgers
 - Mogelijke discriminatie
@@ -340,22 +361,25 @@ Laten we concrete kaders opstellen:
 ### Kader 1: Transparantie
 
 **Burgers moeten weten:**
+
 - Dat AI gebruikt is
 - Hoe AI is gebruikt
 - Welke rol AI had
 - Wie verantwoordelijk is
 
 **Praktisch:**
+
 ```
-Brief: "Deze aanvraag is mede beoordeeld met 
-        ondersteuning van een AI-systeem. Het 
-        definitieve besluit is genomen door 
+Brief: "Deze aanvraag is mede beoordeeld met
+        ondersteuning van een AI-systeem. Het
+        definitieve besluit is genomen door
         medewerker J. de Vries."
 ```
 
 ### Kader 2: Proportionaliteit
 
 **AI alleen inzetten waar:**
+
 - Het proportioneel is
 - De inbreuk op privacy minimaal is
 - Er een legitiem doel is
@@ -364,6 +388,7 @@ Brief: "Deze aanvraag is mede beoordeeld met
 ### Kader 3: Menselijke Controle
 
 **Altijd menselijke controle bij:**
+
 - Besluiten die rechten raken
 - Financiële beslissingen
 - Persoonlijke situaties
@@ -372,11 +397,13 @@ Brief: "Deze aanvraag is mede beoordeeld met
 ### Kader 4: Non-Discriminatie
 
 **AI mag niet:**
+
 - Discrimineren op basis van beschermde kenmerken
 - Bestaande ongelijkheid versterken
 - Bepaalde groepen structureel benadelen
 
 **Technisch:**
+
 - Bias-testing verplicht
 - Diverse trainingsdata
 - Fairness metrics
@@ -384,7 +411,7 @@ Brief: "Deze aanvraag is mede beoordeeld met
 
 ## Kritische Vraag
 
-Als we AI niet inzetten om burgers door de wirwar van regels te helpen, lopen we dan niet het risico dat alleen de meest digitaal vaardigen profiteren? 
+Als we AI niet inzetten om burgers door de wirwar van regels te helpen, lopen we dan niet het risico dat alleen de meest digitaal vaardigen profiteren?
 
 Kortom, maken we de kloof niet groter als we het niet doen?
 
@@ -395,6 +422,7 @@ Kortom, maken we de kloof niet groter als we het niet doen?
 **Goed ingerichte AI vergroot bestaanszekerheid, niet bureaucratie.**
 
 Veilige AI betekent:
+
 - Technische waarborgen (R-bak/P-bak, API's, audit trails)
 - Juridische kaders (handelingsbevoegdheid, transparantie)
 - Ethische grenzen (mens beslist, geen discriminatie)
@@ -409,4 +437,3 @@ Met deze waarborgen kunnen we AI inzetten om de overheid toegankelijker, effecti
 **Volgende blog:** AI Kansen voor Burgers - De regelgeving-navigator
 
 **Gerelateerd:** [AVG](https://autoriteitpersoonsgegevens.nl) | [Common Ground](https://commonground.nl)
-

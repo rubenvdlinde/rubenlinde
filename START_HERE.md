@@ -125,6 +125,7 @@ See `DEPLOYMENT.md` for detailed instructions.
 ### 4️⃣ Write Your First Post (Whenever you're ready!)
 
 Choose a category and create your post:
+
 - `blog/personal/` - Personal posts and tutorials
 - `blog/platform-ai-en-overheid/` - AI & government topics
 - `blog/conduction/` - Conduction project posts
@@ -134,6 +135,7 @@ See `blog/README.md` for detailed guidelines!
 ## ✨ Features You Got
 
 ### 🎨 Design & UI
+
 - ✅ Modern, responsive design
 - ✅ Dark mode support
 - ✅ NL Design System integration
@@ -141,6 +143,7 @@ See `blog/README.md` for detailed guidelines!
 - ✅ Customizable color scheme
 
 ### 📝 Content Management
+
 - ✅ Markdown-based blog posts
 - ✅ Documentation section
 - ✅ Tags and categories
@@ -148,6 +151,7 @@ See `blog/README.md` for detailed guidelines!
 - ✅ Author profiles
 
 ### 🔧 Technical Features
+
 - ✅ TypeScript support
 - ✅ React 18
 - ✅ Code syntax highlighting
@@ -156,6 +160,7 @@ See `blog/README.md` for detailed guidelines!
 - ✅ Bilingual support (NL/EN)
 
 ### 🚀 Deployment
+
 - ✅ GitHub Actions workflow
 - ✅ Automatic deployment on push
 - ✅ GitHub Pages hosting (free!)
@@ -163,6 +168,7 @@ See `blog/README.md` for detailed guidelines!
 - ✅ CDN delivery
 
 ### 📚 Documentation
+
 - ✅ Complete setup guides
 - ✅ Deployment instructions
 - ✅ Architecture documentation
@@ -172,22 +178,26 @@ See `blog/README.md` for detailed guidelines!
 ## 🎓 Learning Resources
 
 ### Docusaurus
+
 - [Official Docs](https://docusaurus.io/) - Complete Docusaurus documentation
 - [Blog Guide](https://docusaurus.io/docs/blog) - How to use the blog feature
 - [Markdown Features](https://docusaurus.io/docs/markdown-features) - Advanced markdown
 
 ### NL Design System
+
 - [Website](https://nldesignsystem.nl/) - Official NL Design System site
 - [Components](https://nldesignsystem.nl/componenten/) - Available components
 - [Storybook](https://nl-design-system.github.io/utrecht/storybook/) - Utrecht components
 
 ### Deployment
+
 - [GitHub Pages](https://pages.github.com/) - Hosting documentation
 - [GitHub Actions](https://docs.github.com/en/actions) - CI/CD documentation
 
 ## 💡 Tips & Best Practices
 
 ### Content Writing
+
 - Write in markdown for easy formatting
 - Use meaningful slugs for SEO
 - Add relevant tags to posts
@@ -195,12 +205,14 @@ See `blog/README.md` for detailed guidelines!
 - Test locally before pushing
 
 ### Development
+
 - Always test with `npm start` before deploying
 - Clear cache if you see weird issues: `npm run clear`
 - Keep dependencies updated: `npm update`
 - Use meaningful commit messages
 
 ### Deployment
+
 - Wait 2-5 minutes for GitHub Pages to update
 - Check Actions tab if deployment fails
 - Test production build locally: `npm run build && npm run serve`
@@ -217,13 +229,13 @@ See `blog/README.md` for detailed guidelines!
 
 ### Common Issues
 
-| Problem | Solution | Where to Look |
-|---------|----------|---------------|
-| Build fails | Clear cache, reinstall | SETUP.md |
-| Deployment fails | Check Actions logs | DEPLOYMENT.md |
-| 404 errors | Verify baseUrl in config | DEPLOYMENT.md |
-| Styles broken | Check custom.css syntax | - |
-| Images not loading | Use `/img/` path | DOCUSAURUS_REFERENCE.md |
+| Problem            | Solution                 | Where to Look           |
+| ------------------ | ------------------------ | ----------------------- |
+| Build fails        | Clear cache, reinstall   | SETUP.md                |
+| Deployment fails   | Check Actions logs       | DEPLOYMENT.md           |
+| 404 errors         | Verify baseUrl in config | DEPLOYMENT.md           |
+| Styles broken      | Check custom.css syntax  | -                       |
+| Images not loading | Use `/img/` path         | DOCUSAURUS_REFERENCE.md |
 
 ## 🎊 You're Ready!
 
@@ -272,5 +284,4 @@ You now have everything you need to:
 
 **Happy blogging! 🎉**
 
-*Built with ❤️ using Docusaurus, React, and NL Design System*
-
+_Built with ❤️ using Docusaurus, React, and NL Design System_

@@ -1,4 +1,4 @@
-# Contributing to Ruben Linde's Website
+# Contributing to Ruben van der Linde's Website
 
 Thank you for your interest in contributing! While this is primarily a personal website, I welcome suggestions, bug reports, and improvements.
 
@@ -18,6 +18,7 @@ If you find a bug or have a suggestion:
 ### Suggesting Content
 
 Have an idea for a blog post topic? Feel free to:
+
 - Open an issue with the tag 'content-suggestion'
 - Describe the topic and why it would be interesting
 
@@ -53,4 +54,3 @@ Be respectful and constructive in all interactions. This is a welcoming space fo
 Feel free to reach out by opening an issue or contacting me through [GitHub](https://github.com/rubenvdlinde).
 
 Thank you for contributing! 🙏
-
