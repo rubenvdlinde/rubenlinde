@@ -664,15 +664,27 @@ article a {
   color: rgba(255, 255, 255, 0.7) !important;
 }
 
-/* Blog Card Component - Dark mode default */
-[data-theme='dark'] .blog-card {
-  background: rgba(0, 0, 0, 0.85);
+/* Blog Card Component - Base styling (same for both themes) */
+.blog-card {
   padding: 2rem;
   border-radius: 8px;
   margin-bottom: 2rem;
   border: 1px solid var(--ifm-color-secondary);
   transition: all 0.3s ease;
   max-width: 100%; /* Full width */
+  backdrop-filter: blur(5px);
+}
+
+/* Dark mode colors */
+[data-theme='dark'] .blog-card {
+  background: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+}
+
+/* Light mode colors */
+[data-theme='light'] .blog-card {
+  background: rgba(255, 255, 255, 0.85);
+  color: #000000;
 }
 
 /* Blog page container adjustments */
@@ -705,16 +717,25 @@ article a {
 
 /* Ensure footer is full width on all pages */
 .footer {
-  background: rgba(10, 10, 10, 0.7) !important;
   backdrop-filter: blur(5px);
   border-top: 2px solid var(--ifm-color-secondary);
-  padding: 3rem 2rem 2rem !important; /* Add horizontal padding directly to footer */
+  padding: 3rem 2rem 2rem !important;
   font-family: 'Courier New', 'Courier', monospace;
-  width: 100vw !important; /* Force full viewport width */
-  margin-left: calc(
-    -50vw + 50%
-  ) !important; /* Center align and extend to edges */
+  width: 100vw !important;
+  margin-left: calc(-50vw + 50%) !important;
   margin-right: calc(-50vw + 50%) !important;
+}
+
+/* Dark mode footer */
+[data-theme='dark'] .footer {
+  background: rgba(10, 10, 10, 0.7) !important;
+  color: #ffffff;
+}
+
+/* Light mode footer */
+[data-theme='light'] .footer {
+  background: rgba(255, 255, 255, 0.85) !important;
+  color: #000000;
 }
 
 /* Footer container should not add extra margins */
@@ -901,7 +922,6 @@ article a {
 }
 
 .feature-card {
-  background: rgba(10, 10, 10, 0.7); /* Semi-transparent black */
   padding: 2rem;
   border-radius: 0;
   border: 2px solid var(--ifm-color-secondary);
@@ -910,7 +930,19 @@ article a {
   position: relative;
   overflow: hidden;
   font-family: 'Courier New', 'Courier', monospace;
-  backdrop-filter: blur(5px); /* Add slight blur to background */
+  backdrop-filter: blur(5px);
+}
+
+/* Dark mode colors */
+[data-theme='dark'] .feature-card {
+  background: rgba(10, 10, 10, 0.7);
+  color: #ffffff;
+}
+
+/* Light mode colors */
+[data-theme='light'] .feature-card {
+  background: rgba(255, 255, 255, 0.85);
+  color: #000000;
 }
 
 .feature-card:hover {
@@ -950,12 +982,6 @@ article a {
 
 [data-theme='dark'] .features-section {
   background: transparent;
-}
-
-[data-theme='dark'] .feature-card {
-  background: rgba(10, 10, 10, 0.7);
-  backdrop-filter: blur(5px);
-  border-color: var(--ifm-color-secondary-light);
 }
 
 [data-theme='dark'] .feature-card__title {
@@ -1092,26 +1118,8 @@ article a {
 }
 
 /* Light Mode Overrides */
-[data-theme='light'] .feature-card {
-  background: rgba(255, 255, 255, 0.85) !important;
-  backdrop-filter: blur(5px);
-  color: #000000 !important;
-  border-color: var(--ifm-color-secondary) !important;
-}
-
 [data-theme='light'] .feature-card__title {
   color: var(--ifm-color-secondary) !important;
-}
-
-[data-theme='light'] .feature-card__description {
-  color: #000000 !important;
-}
-
-[data-theme='light'] .blog-card {
-  background: rgba(255, 255, 255, 0.85) !important;
-  backdrop-filter: blur(5px);
-  color: #000000 !important;
-  border-color: var(--ifm-color-secondary) !important;
 }
 
 [data-theme='light'] .blog-card__status,
@@ -1125,12 +1133,6 @@ article a {
 [data-theme='light'] .blog-card h2,
 [data-theme='light'] .blog-card h3 {
   color: var(--ifm-color-secondary) !important;
-}
-
-[data-theme='light'] .footer {
-  background: rgba(255, 255, 255, 0.85) !important;
-  backdrop-filter: blur(5px);
-  color: #000000 !important;
 }
 
 [data-theme='light'] .footer__title,
