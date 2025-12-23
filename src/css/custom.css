@@ -813,12 +813,13 @@ article p {
 .footer {
   background: #000000 !important;
   border-top: 2px solid var(--ifm-color-secondary);
-  padding: 3rem 0 2rem;
+  padding: 3rem 2rem 2rem; /* Added horizontal padding */
   font-family: 'Courier New', 'Courier', monospace;
 }
 
 .footer .container {
-  max-width: 1200px !important;
+  max-width: 100% !important; /* Full width */
+  width: 100%;
 }
 
 .footer__links {
@@ -827,8 +828,9 @@ article p {
   flex-wrap: wrap !important;
   justify-content: space-around !important;
   gap: 2rem !important;
-  max-width: 1200px;
+  max-width: 1400px; /* Match blog page width */
   margin: 0 auto;
+  width: 100%;
 }
 
 .footer__col {
