@@ -571,9 +571,8 @@ body[class*='blog'] .navbar__link {
   gap: 2rem;
   justify-content: center;
   margin-top: 1.5rem; /* Reduced from 2rem */
-  margin-bottom: 1rem; /* Added to reduce space below */
+  margin-bottom: 0.5rem; /* Reduced from 2rem - move expertise blocks up */
   padding-top: 0;
-  margin-bottom: 2rem; /* Reduced spacing before command */
 }
 
 .hero__social-link {
@@ -612,7 +611,7 @@ body[class*='blog'] .navbar__link {
 
 /* Features Section */
 .features-section {
-  padding: 2rem 0 4rem; /* Reduced top padding from 4rem to 2rem */
+  padding: 0 0 4rem; /* Removed top padding completely - move expertise blocks up */
   background: transparent;
   position: relative;
 }
