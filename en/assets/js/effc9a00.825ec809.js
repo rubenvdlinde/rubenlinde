@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkrubenlinde_website=globalThis.webpackChunkrubenlinde_website||[]).push([[3165],{930(e){e.exports=JSON.parse('{"metadata":{"permalink":"/rubenlinde/en/blog","page":1,"postsPerPage":10,"totalPages":2,"totalCount":17,"nextPage":"/rubenlinde/en/blog/page/2","blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

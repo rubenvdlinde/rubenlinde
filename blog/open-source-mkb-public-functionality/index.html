@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="nl" dir="ltr" class="blog-wrapper blog-post-page plugin-blog plugin-id-default" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Open Source voor het MKB - Van Public Code naar Public Functionality | Ruben van der Linde</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://rubenvdlinde.github.io/rubenlinde/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://rubenvdlinde.github.io/rubenlinde/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://rubenvdlinde.github.io/rubenlinde/blog/open-source-mkb-public-functionality"><meta data-rh="true" property="og:locale" content="nl"><meta data-rh="true" property="og:locale:alternate" content="en"><meta data-rh="true" name="docusaurus_locale" content="nl"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="nl"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" property="og:title" content="Open Source voor het MKB - Van Public Code naar Public Functionality | Ruben van der Linde"><meta data-rh="true" name="description" content="Deze blog is nog in concept-fase en wordt mogelijk nog aangepast voor publicatie."><meta data-rh="true" property="og:description" content="Deze blog is nog in concept-fase en wordt mogelijk nog aangepast voor publicatie."><meta data-rh="true" property="og:type" content="article"><meta data-rh="true" property="article:published_time" content="2025-01-24T00:00:00.000Z"><meta data-rh="true" property="article:author" content="https://github.com/rubenvdlinde"><meta data-rh="true" property="article:tag" content="open-source,mkb,public-money-public-code,functionality,groenteman"><link data-rh="true" rel="icon" href="/rubenlinde/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://rubenvdlinde.github.io/rubenlinde/blog/open-source-mkb-public-functionality"><link data-rh="true" rel="alternate" href="https://rubenvdlinde.github.io/rubenlinde/blog/open-source-mkb-public-functionality" hreflang="nl"><link data-rh="true" rel="alternate" href="https://rubenvdlinde.github.io/rubenlinde/en/blog/open-source-mkb-public-functionality" hreflang="en"><link data-rh="true" rel="alternate" href="https://rubenvdlinde.github.io/rubenlinde/blog/open-source-mkb-public-functionality" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://rubenvdlinde.github.io/rubenlinde/blog/open-source-mkb-public-functionality","mainEntityOfPage":"https://rubenvdlinde.github.io/rubenlinde/blog/open-source-mkb-public-functionality","url":"https://rubenvdlinde.github.io/rubenlinde/blog/open-source-mkb-public-functionality","headline":"Open Source voor het MKB - Van Public Code naar Public Functionality","name":"Open Source voor het MKB - Van Public Code naar Public Functionality","description":"Deze blog is nog in concept-fase en wordt mogelijk nog aangepast voor publicatie.","datePublished":"2025-01-24T00:00:00.000Z","author":{"@type":"Person","name":"Ruben van de Linde","description":"Software Developer","url":"https://github.com/rubenvdlinde","email":"your-email@example.com","image":"https://github.com/rubenvdlinde.png"},"keywords":[],"isPartOf":{"@type":"Blog","@id":"https://rubenvdlinde.github.io/rubenlinde/blog","name":"Blog"}}</script><link rel="alternate" type="application/rss+xml" href="/rubenlinde/blog/rss.xml" title="Ruben van der Linde RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/rubenlinde/blog/atom.xml" title="Ruben van der Linde Atom Feed"><link rel="stylesheet" href="/rubenlinde/assets/css/styles.8e74e4a8.css">
+<script src="/rubenlinde/assets/js/runtime~main.ee56b341.js" defer="defer"></script>
+<script src="/rubenlinde/assets/js/main.62c07583.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><canvas class="networkBackground"></canvas><div role="region" aria-label="Ga naar hoofdinhoud"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Ga naar hoofdinhoud</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Navigatiebalk schakelen" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/rubenlinde/"><div class="navbar__logo"><img src="https://github.com/rubenvdlinde.png" alt="Ruben van der Linde" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="https://github.com/rubenvdlinde.png" alt="Ruben van der Linde" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Ruben van der Linde</b></a><a class="navbar__item navbar__link" href="/rubenlinde/docs/intro">Documentation</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/rubenlinde/blog">Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="iconLanguage_nlXk"><path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg>Nederlands</a><ul class="dropdown__menu"><li><a href="/rubenlinde/blog/open-source-mkb-public-functionality" target="_self" rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang="nl">Nederlands</a></li><li><a href="/rubenlinde/en/blog/open-source-mkb-public-functionality" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="en">English</a></li></ul></div><a href="https://github.com/rubenvdlinde" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Schakel tussen donkere en lichte modus (momenteel system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="container margin-vert--lg"><div class="row"><aside class="col col--3"><nav class="sidebar_re4s thin-scrollbar" aria-label="Navigatie recente blogitems"><div class="sidebarItemTitle_pO2u margin-bottom--md">Recent posts</div><div role="group"><h3 class="yearGroupHeading_rMGB">2025</h3><ul class="sidebarItemList_Yudw clean-list"><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/rubenlinde/blog/BLOG_SERIES_OVERVIEW">Blog Series Overzicht</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/rubenlinde/blog/README">Blog Organization Guide</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/rubenlinde/blog/conduction/README">Conduction Blog Posts</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/rubenlinde/blog/platform-ai-en-overheid/README">Platform AI &amp; Overheid (Government)</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/rubenlinde/blog/personal/README">Personal Blog Posts</a></li></ul></div></nav></aside><main class="col col--7"><article class=""><header><h1 class="title_f1Hy">Open Source voor het MKB - Van Public Code naar Public Functionality</h1><div class="container_mt6G margin-vert--md"><time datetime="2025-01-24T00:00:00.000Z">24 januari 2025</time> · <!-- -->8 minuten leestijd</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--12 authorCol_Hf19"><div class="avatar margin-bottom--sm"><a href="https://github.com/rubenvdlinde" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo authorImage_XqGP" src="https://github.com/rubenvdlinde.png" alt="Ruben van de Linde"></a><div class="avatar__intro authorDetails_lV9A"><div class="avatar__name"><a href="https://github.com/rubenvdlinde" target="_blank" rel="noopener noreferrer"><span class="authorName_yefp" translate="no">Ruben van de Linde</span></a></div><small class="authorTitle_nd0D" title="Software Developer">Software Developer</small><div class="authorSocials_rSDt"></div></div></div></div></div></header><div id="__blog-post-container" class="markdown"><div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Status: Concept</div><div class="admonitionContent_BuS1"><p>Deze blog is nog in concept-fase en wordt mogelijk nog aangepast voor publicatie.</p></div></div>
+<p>Open source voor de overheid is mooi. Maar wat als die overheids-software ook het MKB kan helpen? Dan wordt het pas echt krachtig. Welkom bij het paradigma van &quot;Public Money is Public Functionality&quot;.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="het-probleem-met-public-money-is-public-code">Het Probleem met &quot;Public Money is Public Code&quot;<a href="#het-probleem-met-public-money-is-public-code" class="hash-link" aria-label="Direct link naar Het Probleem met &quot;Public Money is Public Code&quot;" title="Direct link naar Het Probleem met &quot;Public Money is Public Code&quot;" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="de-huidige-situatie">De Huidige Situatie<a href="#de-huidige-situatie" class="hash-link" aria-label="Direct link naar De Huidige Situatie" title="Direct link naar De Huidige Situatie" translate="no">​</a></h3>
+<p><strong>&quot;Public Money is Public Code&quot; zegt:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Overheid betaalt voor software</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Code wordt open source</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Iedereen kan de code zien</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">... en dan?</span><br></span></code></pre></div></div>
+<p><strong>De realiteit:</strong></p>
+<ul>
+<li class="">Code op GitHub</li>
+<li class="">Maar onbruikbaar voor niet-developers</li>
+<li class="">Gericht op overheids-specifieke processen</li>
+<li class="">Geen directe waarde voor MKB</li>
+</ul>
+<p><strong>Voorbeeld:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Gemeente bouwt formulieren-systeem</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Code is open source</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Maar: specifiek voor gemeentelijke processen</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Groenteman heeft er niets aan</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="het-gemiste-potentieel">Het Gemiste Potentieel<a href="#het-gemiste-potentieel" class="hash-link" aria-label="Direct link naar Het Gemiste Potentieel" title="Direct link naar Het Gemiste Potentieel" translate="no">​</a></h3>
+<p><strong>De overheid investeert miljarden in software-ontwikkeling.</strong></p>
+<p>Wat als die investering niet alleen de overheid helpt, maar ook:</p>
+<ul>
+<li class="">Kleine ondernemers</li>
+<li class="">Verenigingen</li>
+<li class="">Stichtingen</li>
+<li class="">Burgerinitiatieven</li>
+</ul>
+<p><strong>Dat is pas &quot;public&quot; in de echte zin van het woord.</strong></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="van-code-naar-functionality">Van Code naar Functionality<a href="#van-code-naar-functionality" class="hash-link" aria-label="Direct link naar Van Code naar Functionality" title="Direct link naar Van Code naar Functionality" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="het-nieuwe-paradigma">Het Nieuwe Paradigma<a href="#het-nieuwe-paradigma" class="hash-link" aria-label="Direct link naar Het Nieuwe Paradigma" title="Direct link naar Het Nieuwe Paradigma" translate="no">​</a></h3>
+<p><strong>&quot;Public Money is Public Functionality&quot; betekent:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Overheid heeft behoefte aan functionaliteit X</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Ontwikkelt generieke oplossing</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Richt in voor overheidsgebruik</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Maar: core functionaliteit is algemeen bruikbaar</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">MKB kan het ook gebruiken!</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="praktijkvoorbeelden">Praktijkvoorbeelden<a href="#praktijkvoorbeelden" class="hash-link" aria-label="Direct link naar Praktijkvoorbeelden" title="Direct link naar Praktijkvoorbeelden" translate="no">​</a></h3>
+<p><strong>Voorbeeld 1: Contact Management</strong></p>
+<p><strong>Overheid bouwt:</strong></p>
+<ul>
+<li class="">Systeem om burgeraanvragen te behandelen</li>
+<li class="">Contact history</li>
+<li class="">Communicatie logging</li>
+<li class="">Status tracking</li>
+</ul>
+<p><strong>Groenteman kan dit gebruiken als:</strong></p>
+<ul>
+<li class="">Lichtgewicht CRM</li>
+<li class="">Klantcontact geschiedenis</li>
+<li class="">Order tracking</li>
+<li class="">Communicatie met leveranciers</li>
+</ul>
+<p><strong>Het is hetzelfde systeem - andere context.</strong></p>
+<p><strong>Voorbeeld 2: Document Management</strong></p>
+<p><strong>Overheid bouwt:</strong></p>
+<ul>
+<li class="">Systeem voor officiële documenten</li>
+<li class="">Versiebeheer</li>
+<li class="">Access control</li>
+<li class="">Archivering</li>
+</ul>
+<p><strong>MKB-er kan dit gebruiken als:</strong></p>
+<ul>
+<li class="">Contract management</li>
+<li class="">Offerte archief</li>
+<li class="">Factuur opslag</li>
+<li class="">Compliance documentatie</li>
+</ul>
+<p><strong>Voorbeeld 3: Planning en Taken</strong></p>
+<p><strong>Overheid bouwt:</strong></p>
+<ul>
+<li class="">Zaaksysteem voor procesbewaking</li>
+<li class="">Taken toewijzen</li>
+<li class="">Deadlines bewaken</li>
+<li class="">Rapportages</li>
+</ul>
+<p><strong>Ondernemer kan dit gebruiken als:</strong></p>
+<ul>
+<li class="">Project management</li>
+<li class="">Team coördinatie</li>
+<li class="">Klus-tracking</li>
+<li class="">Planning tool</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="de-europese-visie-een-andere-manier-van-denken">De Europese Visie: Een Andere Manier van Denken<a href="#de-europese-visie-een-andere-manier-van-denken" class="hash-link" aria-label="Direct link naar De Europese Visie: Een Andere Manier van Denken" title="Direct link naar De Europese Visie: Een Andere Manier van Denken" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="amerika-vs-europa">Amerika vs Europa<a href="#amerika-vs-europa" class="hash-link" aria-label="Direct link naar Amerika vs Europa" title="Direct link naar Amerika vs Europa" translate="no">​</a></h3>
+<p><strong>Amerikaans model (SaaS-dominant):</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Bedrijf betaalt → Abonnement → Vendor lock-in</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">         ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    Prijzen stijgen</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">         ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Geen eigenaarschap</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">         ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Geen controle</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">         ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Data bij leverancier</span><br></span></code></pre></div></div>
+<p><strong>Risico&#x27;s:</strong></p>
+<ul>
+<li class="">Eindeloze abonnementen</li>
+<li class="">Vendor kan prijzen verhogen</li>
+<li class="">Vendor kan stoppen</li>
+<li class="">Data in VS (geopolitiek risico)</li>
+<li class="">Geen privacy-garanties</li>
+</ul>
+<p><strong>Europees model (Open Source + Self-Hosted):</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Overheid investeert → Open Source → Iedereen profiteert</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            MKB gebruikt</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    Self-hosted mogelijk</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        Eigenaarschap</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    Controle over data</span><br></span></code></pre></div></div>
+<p><strong>Voordelen:</strong></p>
+<ul>
+<li class="">Geen abonnementen (of veel lager)</li>
+<li class="">Geen vendor lock-in</li>
+<li class="">Data blijft in Europa</li>
+<li class="">Privacy by design</li>
+<li class="">Aanpasbaar aan eigen behoeften</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="de-economische-impact">De Economische Impact<a href="#de-economische-impact" class="hash-link" aria-label="Direct link naar De Economische Impact" title="Direct link naar De Economische Impact" translate="no">​</a></h3>
+<p><strong>Als 1 miljoen Europese MKB-ers:</strong></p>
+<ul>
+<li class="">€50/maand BESPAREN aan SaaS-abonnementen</li>
+<li class="">= €600 miljoen per jaar</li>
+<li class="">= Geld dat in de Europese economie blijft</li>
+<li class="">= In plaats van naar big tech</li>
+</ul>
+<p><strong>Plus:</strong></p>
+<ul>
+<li class="">Kennisopbouw in Europa</li>
+<li class="">Banen in open source sector</li>
+<li class="">Innovatie rond open platforms</li>
+<li class="">Sterker MKB-ecosysteem</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="praktisch-hoe-werkt-dit">Praktisch: Hoe Werkt Dit?<a href="#praktisch-hoe-werkt-dit" class="hash-link" aria-label="Direct link naar Praktisch: Hoe Werkt Dit?" title="Direct link naar Praktisch: Hoe Werkt Dit?" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="voor-de-groenteman-voorbeeld">Voor de Groenteman (Voorbeeld)<a href="#voor-de-groenteman-voorbeeld" class="hash-link" aria-label="Direct link naar Voor de Groenteman (Voorbeeld)" title="Direct link naar Voor de Groenteman (Voorbeeld)" translate="no">​</a></h3>
+<p><strong>Meet Frans, groenteboer:</strong></p>
+<p><strong>Situatie nu:</strong></p>
+<ul>
+<li class="">Betaalt voor:<!-- -->
+<ul>
+<li class="">Boekhoudpakket (€30/maand)</li>
+<li class="">CRM systeem (€25/maand)</li>
+<li class="">Email marketing (€15/maand)</li>
+<li class="">Website hosting (€10/maand)</li>
+<li class=""><strong>Totaal: €80/maand = €960/jaar</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>Situatie met Public Functionality:</strong></p>
+<ul>
+<li class="">Gebruikt overheids-ontwikkelde tools:<!-- -->
+<ul>
+<li class="">Contact management (gratis)</li>
+<li class="">Document management (gratis)</li>
+<li class="">Communicatie tools (gratis)</li>
+</ul>
+</li>
+<li class="">Self-hosted op goedkope VPS (€10/maand)</li>
+<li class="">Of via gemeentelijke hosting (€20/maand)</li>
+<li class=""><strong>Totaal: €20/maand = €240/jaar</strong></li>
+</ul>
+<p><strong>Besparing: €720/jaar</strong></p>
+<p>Voor een kleine ondernemer is dat significant!</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="de-infrastructuur">De Infrastructuur<a href="#de-infrastructuur" class="hash-link" aria-label="Direct link naar De Infrastructuur" title="Direct link naar De Infrastructuur" translate="no">​</a></h3>
+<p><strong>Hoe krijgt Frans toegang?</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Gemeente ontwikkelt systeem</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Publiceert als open source</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Maakt &quot;MKB-versie&quot; beschikbaar</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Frans installeert via:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - Eigen VPS (tech-savvy)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - Gemeentelijke hosting (gebruiksvriendelijk)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - Lokale IT-partner (ondersteuning)</span><br></span></code></pre></div></div>
+<p><strong>Of:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">NextCloud App Store</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">OpenRegister + Common Ground components</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Frans installeert als Nextcloud apps</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Drag-and-drop configuratie</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Ready to use</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="openregister-de-enabler">OpenRegister: De Enabler<a href="#openregister-de-enabler" class="hash-link" aria-label="Direct link naar OpenRegister: De Enabler" title="Direct link naar OpenRegister: De Enabler" translate="no">​</a></h2>
+<p>Bij Conduction ontwikkelen we OpenRegister - een open source data-oplossing die:</p>
+<p><strong>Voor de overheid:</strong></p>
+<ul>
+<li class="">Documenten opslaan</li>
+<li class="">Gestructureerde data beheren</li>
+<li class="">Data en documenten relateren</li>
+<li class="">Vectoriseren voor AI</li>
+</ul>
+<p><strong>Voor het MKB:</strong></p>
+<ul>
+<li class="">Hetzelfde platform</li>
+<li class="">Zelfde voordelen</li>
+<li class="">Aangepast aan business needs</li>
+<li class="">Betaalbaar of gratis</li>
+</ul>
+<p><strong>De kracht:</strong> Het is dezelfde technologie, alleen de use case verschilt.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="concrete-use-cases">Concrete Use Cases<a href="#concrete-use-cases" class="hash-link" aria-label="Direct link naar Concrete Use Cases" title="Direct link naar Concrete Use Cases" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="use-case-1-de-webshop-eigenaar">Use Case 1: De Webshop Eigenaar<a href="#use-case-1-de-webshop-eigenaar" class="hash-link" aria-label="Direct link naar Use Case 1: De Webshop Eigenaar" title="Direct link naar Use Case 1: De Webshop Eigenaar" translate="no">​</a></h3>
+<p><strong>Lotte verkoopt handgemaakte sieraden online.</strong></p>
+<p><strong>Ze gebruikt Public Functionality tools:</strong></p>
+<p><strong>Contact Management:</strong></p>
+<ul>
+<li class="">Klantgegevens</li>
+<li class="">Order historie</li>
+<li class="">Communicatie logging</li>
+</ul>
+<p><strong>Document Management:</strong></p>
+<ul>
+<li class="">Product foto&#x27;s</li>
+<li class="">Certificaten</li>
+<li class="">Facturen</li>
+</ul>
+<p><strong>AI-Assistent (on-premise):</strong></p>
+<ul>
+<li class="">Helpt bij klantservice emails</li>
+<li class="">Genereert product beschrijvingen</li>
+<li class="">Analyseert verkoop trends</li>
+</ul>
+<p><strong>Kosten:</strong> €15/maand (self-hosted VPS)
+<strong>Alternatief:</strong> €150/maand (Shopify + apps)
+<strong>Besparing:</strong> €135/maand = €1620/jaar</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="use-case-2-de-lokale-sportvereniging">Use Case 2: De Lokale Sportvereniging<a href="#use-case-2-de-lokale-sportvereniging" class="hash-link" aria-label="Direct link naar Use Case 2: De Lokale Sportvereniging" title="Direct link naar Use Case 2: De Lokale Sportvereniging" translate="no">​</a></h3>
+<p><strong>Voetbalclub Vooruit heeft 300 leden.</strong></p>
+<p><strong>Ze gebruiken Public Functionality tools:</strong></p>
+<p><strong>Member Management:</strong></p>
+<ul>
+<li class="">Ledenregistratie (hergebruik van burger-registratie systeem)</li>
+<li class="">Contributie tracking</li>
+<li class="">Communicatie</li>
+</ul>
+<p><strong>Event Management:</strong></p>
+<ul>
+<li class="">Wedstrijden plannen</li>
+<li class="">Toernooien organiseren</li>
+<li class="">Inschrijvingen beheren</li>
+</ul>
+<p><strong>Document Management:</strong></p>
+<ul>
+<li class="">Statuten</li>
+<li class="">Notulen</li>
+<li class="">Foto albums</li>
+</ul>
+<p><strong>Kosten:</strong> €0 (gehost door gemeente)
+<strong>Alternatief:</strong> €80/maand (commercial membership software)
+<strong>Besparing:</strong> €960/jaar</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="use-case-3-de-zzp-er">Use Case 3: De ZZP-er<a href="#use-case-3-de-zzp-er" class="hash-link" aria-label="Direct link naar Use Case 3: De ZZP-er" title="Direct link naar Use Case 3: De ZZP-er" translate="no">​</a></h3>
+<p><strong>Ahmed is grafisch ontwerper, ZZP-er.</strong></p>
+<p><strong>Hij gebruikt Public Functionality tools:</strong></p>
+<p><strong>Client Management:</strong></p>
+<ul>
+<li class="">Klantdossiers</li>
+<li class="">Project tracking</li>
+<li class="">Uren registratie</li>
+</ul>
+<p><strong>Document Management:</strong></p>
+<ul>
+<li class="">Offertes</li>
+<li class="">Contracten</li>
+<li class="">Facturen</li>
+<li class="">Design bestanden</li>
+</ul>
+<p><strong>Financial Tracking:</strong></p>
+<ul>
+<li class="">Inkomsten/uitgaven</li>
+<li class="">BTW berekeningen</li>
+<li class="">Jaaroverzichten</li>
+</ul>
+<p><strong>Kosten:</strong> €10/maand (shared hosting)
+<strong>Alternatief:</strong> €75/maand (commercial project management + accounting)
+<strong>Besparing:</strong> €780/jaar</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="de-voorwaarden-voor-succes">De Voorwaarden voor Succes<a href="#de-voorwaarden-voor-succes" class="hash-link" aria-label="Direct link naar De Voorwaarden voor Succes" title="Direct link naar De Voorwaarden voor Succes" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-generiek-ontwerp">1. Generiek Ontwerp<a href="#1-generiek-ontwerp" class="hash-link" aria-label="Direct link naar 1. Generiek Ontwerp" title="Direct link naar 1. Generiek Ontwerp" translate="no">​</a></h3>
+<p><strong>Bij ontwikkeling denken aan hergebruik:</strong></p>
+<p>❌ <strong>Slecht:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">HardcodeGemeente() {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  if (user.type == &quot;burger&quot;) {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    // specifieke gemeente logic</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre></div></div>
+<p>✅ <strong>Goed:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">GenericEntity() {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  // Generic contact management</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  // Configureerbaar voor gemeente OF bedrijf</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-configureerbaar-niet-hard-coded">2. Configureerbaar, Niet Hard-Coded<a href="#2-configureerbaar-niet-hard-coded" class="hash-link" aria-label="Direct link naar 2. Configureerbaar, Niet Hard-Coded" title="Direct link naar 2. Configureerbaar, Niet Hard-Coded" translate="no">​</a></h3>
+<p><strong>Parameters voor context:</strong></p>
+<div class="language-yaml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-yaml codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token key atrule" style="color:#00a4db">organization_type</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> gemeente </span><span class="token punctuation" style="color:#393A34">|</span><span class="token plain"> bedrijf </span><span class="token punctuation" style="color:#393A34">|</span><span class="token plain"> vereniging</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token key atrule" style="color:#00a4db">workflows</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">-</span><span class="token plain"> gemeentelijk_proces (if gemeente)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">-</span><span class="token plain"> sales_pipeline (if bedrijf)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">-</span><span class="token plain"> member_registration (if vereniging)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token key atrule" style="color:#00a4db">terminology</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token key atrule" style="color:#00a4db">gemeente</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> &quot;burger&quot; → &quot;inwoner&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token key atrule" style="color:#00a4db">bedrijf</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> &quot;burger&quot; → &quot;klant&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token key atrule" style="color:#00a4db">vereniging</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> &quot;burger&quot; → &quot;lid&quot;</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-gebruiksvriendelijk">3. Gebruiksvriendelijk<a href="#3-gebruiksvriendelijk" class="hash-link" aria-label="Direct link naar 3. Gebruiksvriendelijk" title="Direct link naar 3. Gebruiksvriendelijk" translate="no">​</a></h3>
+<p><strong>MKB heeft geen IT-afdeling:</strong></p>
+<ul>
+<li class="">Makkelijk te installeren</li>
+<li class="">Intuïtieve UI</li>
+<li class="">Goede documentatie</li>
+<li class="">Nederlands (en andere talen)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-ondersteuning">4. Ondersteuning<a href="#4-ondersteuning" class="hash-link" aria-label="Direct link naar 4. Ondersteuning" title="Direct link naar 4. Ondersteuning" translate="no">​</a></h3>
+<p><strong>Verschillende modellen:</strong></p>
+<p><strong>DIY (Doe-Het-Zelf):</strong></p>
+<ul>
+<li class="">Documentatie</li>
+<li class="">Community forum</li>
+<li class="">Voor tech-savvy gebruikers</li>
+</ul>
+<p><strong>Gemeente-gehost:</strong></p>
+<ul>
+<li class="">Gemeente biedt hosting aan lokaal MKB</li>
+<li class="">Kleine vergoeding (cost-recovery)</li>
+<li class="">Ondersteuning via gemeente-servicedesk</li>
+</ul>
+<p><strong>Commercial Support:</strong></p>
+<ul>
+<li class="">Lokale IT-bedrijven bieden setup + support</li>
+<li class="">Verdienen aan dienstverlening, niet aan licenties</li>
+<li class="">Stimuleert lokale economie</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="paradigma-shift-needed">Paradigma Shift Needed<a href="#paradigma-shift-needed" class="hash-link" aria-label="Direct link naar Paradigma Shift Needed" title="Direct link naar Paradigma Shift Needed" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="van-code-naar-functionaliteit">Van Code naar Functionaliteit<a href="#van-code-naar-functionaliteit" class="hash-link" aria-label="Direct link naar Van Code naar Functionaliteit" title="Direct link naar Van Code naar Functionaliteit" translate="no">​</a></h3>
+<p><strong>Oude denken:</strong></p>
+<ul>
+<li class="">Overheid bouwt voor overheid</li>
+<li class="">Code wordt open source</li>
+<li class="">Iedereen blij (theoretisch)</li>
+<li class="">Weinig hergebruik (praktijk)</li>
+</ul>
+<p><strong>Nieuwe denken:</strong></p>
+<ul>
+<li class="">Overheid bouwt generieke functionaliteit</li>
+<li class="">Richt in voor eigen gebruik</li>
+<li class="">Maar: core is bruikbaar voor iedereen</li>
+<li class="">Actief faciliteren van hergebruik</li>
+<li class="">MKB-vriendelijke packaging</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="van-ownership-naar-use">Van Ownership naar Use<a href="#van-ownership-naar-use" class="hash-link" aria-label="Direct link naar Van Ownership naar Use" title="Direct link naar Van Ownership naar Use" translate="no">​</a></h3>
+<p><strong>SaaS-model:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Je BETAALT voor gebruik</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Je BEZIT niets</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Je CONTROLEERT niets</span><br></span></code></pre></div></div>
+<p><strong>Open Source model:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Je DOWNLOADT gratis (of goedkoop)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Je BEZIT je eigen installatie</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Je CONTROLEERT je eigen data</span><br></span></code></pre></div></div>
+<p><strong>Dit is fundamenteel anders.</strong></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="de-economische-kansen">De Economische Kansen<a href="#de-economische-kansen" class="hash-link" aria-label="Direct link naar De Economische Kansen" title="Direct link naar De Economische Kansen" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="voor-het-mkb">Voor het MKB<a href="#voor-het-mkb" class="hash-link" aria-label="Direct link naar Voor het MKB" title="Direct link naar Voor het MKB" translate="no">​</a></h3>
+<p><strong>Direct:</strong></p>
+<ul>
+<li class="">Lagere IT-kosten</li>
+<li class="">Meer controle</li>
+<li class="">Betere privacy</li>
+<li class="">Geen vendor lock-in</li>
+</ul>
+<p><strong>Indirect:</strong></p>
+<ul>
+<li class="">Meer geld voor groei</li>
+<li class="">Focus op core business</li>
+<li class="">Minder afhankelijkheid</li>
+<li class="">Digitale soevereiniteit</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="voor-de-local-economy">Voor de Local Economy<a href="#voor-de-local-economy" class="hash-link" aria-label="Direct link naar Voor de Local Economy" title="Direct link naar Voor de Local Economy" translate="no">​</a></h3>
+<p><strong>IT-dienstverleners:</strong></p>
+<ul>
+<li class="">Verdienen aan setup, training, support</li>
+<li class="">Niet aan licenties</li>
+<li class="">Duurzamer business model</li>
+<li class="">Lokale werkgelegenheid</li>
+</ul>
+<p><strong>Software Developers:</strong></p>
+<ul>
+<li class="">Bijdragen aan open source</li>
+<li class="">Bouwen op gemeenschappelijke basis</li>
+<li class="">Delen van kennis</li>
+<li class="">Sterker ecosystem</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="voor-europa">Voor Europa<a href="#voor-europa" class="hash-link" aria-label="Direct link naar Voor Europa" title="Direct link naar Voor Europa" translate="no">​</a></h3>
+<p><strong>Strategisch:</strong></p>
+<ul>
+<li class="">Minder geld naar Amerikaanse big tech</li>
+<li class="">Sterker MKB (backbone van Europese economie)</li>
+<li class="">Technologische soevereiniteit</li>
+<li class="">Innovatie in Europa</li>
+</ul>
+<p><strong>Economisch:</strong></p>
+<ul>
+<li class="">Miljarden blijven in Europa</li>
+<li class="">Banen in open source sector</li>
+<li class="">Concurrentie op basis van service, niet lock-in</li>
+<li class="">Gezondere markt</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="kritische-succesfactoren">Kritische Succesfactoren<a href="#kritische-succesfactoren" class="hash-link" aria-label="Direct link naar Kritische Succesfactoren" title="Direct link naar Kritische Succesfactoren" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-mindset-verandering">1. Mindset Verandering<a href="#1-mindset-verandering" class="hash-link" aria-label="Direct link naar 1. Mindset Verandering" title="Direct link naar 1. Mindset Verandering" translate="no">​</a></h3>
+<p><strong>Overheid moet denken:</strong></p>
+<ul>
+<li class="">Niet alleen aan eigen processen</li>
+<li class="">Maar aan generieke functionaliteit</li>
+<li class="">Met hergebruik in gedachten</li>
+<li class="">MKB als stakeholder</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-investment-in-usability">2. Investment in Usability<a href="#2-investment-in-usability" class="hash-link" aria-label="Direct link naar 2. Investment in Usability" title="Direct link naar 2. Investment in Usability" translate="no">​</a></h3>
+<p><strong>Open source vaak:</strong></p>
+<ul>
+<li class="">Developer-focused</li>
+<li class="">Moeilijk te gebruiken</li>
+<li class="">Slechte documentatie</li>
+</ul>
+<p><strong>Voor MKB-adoptie nodig:</strong></p>
+<ul>
+<li class="">Consumer-grade UX</li>
+<li class="">Plug-and-play installatie</li>
+<li class="">Nederlandse handleidingen</li>
+<li class="">Video tutorials</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-ecosystem-development">3. Ecosystem Development<a href="#3-ecosystem-development" class="hash-link" aria-label="Direct link naar 3. Ecosystem Development" title="Direct link naar 3. Ecosystem Development" translate="no">​</a></h3>
+<p><strong>Niet alleen software bouwen:</strong></p>
+<ul>
+<li class="">Community opbouwen</li>
+<li class="">Training aanbieden</li>
+<li class="">Showcase successes</li>
+<li class="">Faciliteren van peer-learning</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-sustainable-funding">4. Sustainable Funding<a href="#4-sustainable-funding" class="hash-link" aria-label="Direct link naar 4. Sustainable Funding" title="Direct link naar 4. Sustainable Funding" translate="no">​</a></h3>
+<p><strong>Open source is niet gratis:</strong></p>
+<ul>
+<li class="">Ontwikkeling kost geld</li>
+<li class="">Onderhoud kost geld</li>
+<li class="">Support kost geld</li>
+</ul>
+<p><strong>Oplossing:</strong></p>
+<ul>
+<li class="">Overheids-investering in common infrastructure</li>
+<li class="">Cost-sharing modellen</li>
+<li class="">Commercial support mogelijk</li>
+<li class="">EU-funding voor European Digital Commons</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="visie-european-digital-commons-for-sme">Visie: European Digital Commons for SME<a href="#visie-european-digital-commons-for-sme" class="hash-link" aria-label="Direct link naar Visie: European Digital Commons for SME" title="Direct link naar Visie: European Digital Commons for SME" translate="no">​</a></h2>
+<p><strong>Stel je voor in 2030:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">10 miljoen Europese MKB-ers</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Gebruiken overheids-ontwikkelde open source tools</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Self-hosted of via lokale hosting</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Betalen €0 tot €50/maand</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Besparen gezamenlijk €5 miljard/jaar</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Die blijft in de Europese economie</span><br></span></code></pre></div></div>
+<p><strong>Met als gevolg:</strong></p>
+<ul>
+<li class="">Sterker MKB</li>
+<li class="">Minder afhankelijkheid big tech</li>
+<li class="">Meer digitale soevereiniteit</li>
+<li class="">Europese innovatie</li>
+<li class="">Duurzamer business model</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="conclusie">Conclusie<a href="#conclusie" class="hash-link" aria-label="Direct link naar Conclusie" title="Direct link naar Conclusie" translate="no">​</a></h2>
+<p><strong>Public Money is Public Functionality is een game-changer.</strong></p>
+<p>Het gaat verder dan &quot;Public Money is Public Code&quot;:</p>
+<ul>
+<li class="">Niet alleen code beschikbaar</li>
+<li class="">Maar daadwerkelijk bruikbaar</li>
+<li class="">Voor bredere doelgroep</li>
+<li class="">Met tastbare economische impact</li>
+</ul>
+<p><strong>Het combineert:</strong></p>
+<ul>
+<li class="">Europese waarden (solidariteit, samenwerking)</li>
+<li class="">Pragmatische aanpak (hergebruik, efficiency)</li>
+<li class="">Economisch voordeel (lagere kosten, minder afhankelijkheid)</li>
+<li class="">Technologische soevereiniteit (controle, privacy)</li>
+</ul>
+<p><strong>De shift van abonnement-model naar eigenaarschap-model is:</strong></p>
+<ul>
+<li class="">Goed voor MKB (lagere kosten)</li>
+<li class="">Goed voor economie (geld blijft in Europa)</li>
+<li class="">Goed voor innovatie (open platforms)</li>
+<li class="">Goed voor soevereiniteit (geen lock-in)</li>
+</ul>
+<p><strong>De vraag is niet óf we dit moeten doen, maar hoe snel we kunnen beginnen.</strong></p>
+<p>Want elke euro die nu naar SaaS-abonnementen gaat, is een euro die Europa verlaat.</p>
+<p>Tijd om die euro&#x27;s in Europa te houden - en te investeren in onze gezamenlijke digitale toekomst.</p>
+<hr>
+<p><strong>Deze blog-serie rondde hiermee af!</strong></p>
+<p><strong>Alle blogs:</strong></p>
+<p><strong>AI &amp; Overheid:</strong></p>
+<ol>
+<li class=""><a class="" href="/rubenlinde/blog/ai-bubbels-wereldbeeld">AI Bubbels en Wereldbeeld</a></li>
+<li class=""><a class="" href="/rubenlinde/blog/ai-open-source-common-ground">AI en Open Source</a></li>
+<li class=""><a class="" href="/rubenlinde/blog/ai-data-datalaag-basis">AI en Data</a></li>
+<li class=""><a class="" href="/rubenlinde/blog/ai-techniek-integratie-mcp-mistral">AI en Techniek</a></li>
+<li class=""><a class="" href="/rubenlinde/blog/ai-veilig-handelingskaders-rbak-pbak">Veilige AI</a></li>
+<li class=""><a class="" href="/rubenlinde/blog/ai-kansen-burgers-regelgeving-navigator">Kansen voor Burgers</a></li>
+<li class=""><a class="" href="/rubenlinde/blog/ai-risicos-niet-adopteren-achterblijven">Risico&#x27;s Niet-Adopteren</a></li>
+</ol>
+<p><strong>Open Source &amp; Europa:</strong> 8. <a class="" href="/rubenlinde/blog/einde-pax-americana-digitale-soevereiniteit">Einde Pax Americana</a> 9. <a class="" href="/rubenlinde/blog/eurostack-common-ground-europese-samenwerking">Eurostack &amp; Common Ground</a> 10. <a class="" href="/rubenlinde/blog/open-source-mkb-public-functionality">Open Source voor MKB</a> ← <strong>Je bent hier</strong></p>
+<p><strong>Gerelateerd:</strong> <a href="https://commonground.nl" target="_blank" rel="noopener noreferrer" class="">Common Ground</a> | <a href="https://github.com/ConductionNL/openregister" target="_blank" rel="noopener noreferrer" class="">OpenRegister</a> | <a href="https://conduction.nl" target="_blank" rel="noopener noreferrer" class="">Conduction</a></p></div><footer class="docusaurus-mt-lg"><div class="row margin-top--sm theme-blog-footer-edit-meta-row"><div class="col"><b>Tags:</b><ul class="tags_jXut padding--none margin-left--sm"><li class="tag_QGVx"><a rel="tag" class="tag_zVej tagRegular_sFm0" href="/rubenlinde/blog/tags/open-source">open-source</a></li><li class="tag_QGVx"><a rel="tag" class="tag_zVej tagRegular_sFm0" href="/rubenlinde/blog/tags/mkb">mkb</a></li><li class="tag_QGVx"><a rel="tag" class="tag_zVej tagRegular_sFm0" href="/rubenlinde/blog/tags/public-money-public-code">public-money-public-code</a></li><li class="tag_QGVx"><a rel="tag" class="tag_zVej tagRegular_sFm0" href="/rubenlinde/blog/tags/functionality">functionality</a></li><li class="tag_QGVx"><a rel="tag" class="tag_zVej tagRegular_sFm0" href="/rubenlinde/blog/tags/groenteman">groenteman</a></li></ul></div></div><div class="row margin-top--sm theme-blog-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/rubenvdlinde/rubenlinde/tree/main/blog/conduction/2025-01-24-open-source-mkb.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Bewerk deze pagina</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Paginanavigatie blog"><a class="pagination-nav__link pagination-nav__link--prev" href="/rubenlinde/blog/personal/README"><div class="pagination-nav__sublabel">Nieuwer bericht</div><div class="pagination-nav__label">Personal Blog Posts</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/rubenlinde/blog/eurostack-common-ground-europese-samenwerking"><div class="pagination-nav__sublabel">Ouder bericht</div><div class="pagination-nav__label">Eurostack en Common Ground - Europese digitale samenwerking</div></a></nav></main><div class="col col--2"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#het-probleem-met-public-money-is-public-code" class="table-of-contents__link toc-highlight">Het Probleem met &quot;Public Money is Public Code&quot;</a><ul><li><a href="#de-huidige-situatie" class="table-of-contents__link toc-highlight">De Huidige Situatie</a></li><li><a href="#het-gemiste-potentieel" class="table-of-contents__link toc-highlight">Het Gemiste Potentieel</a></li></ul></li><li><a href="#van-code-naar-functionality" class="table-of-contents__link toc-highlight">Van Code naar Functionality</a><ul><li><a href="#het-nieuwe-paradigma" class="table-of-contents__link toc-highlight">Het Nieuwe Paradigma</a></li><li><a href="#praktijkvoorbeelden" class="table-of-contents__link toc-highlight">Praktijkvoorbeelden</a></li></ul></li><li><a href="#de-europese-visie-een-andere-manier-van-denken" class="table-of-contents__link toc-highlight">De Europese Visie: Een Andere Manier van Denken</a><ul><li><a href="#amerika-vs-europa" class="table-of-contents__link toc-highlight">Amerika vs Europa</a></li><li><a href="#de-economische-impact" class="table-of-contents__link toc-highlight">De Economische Impact</a></li></ul></li><li><a href="#praktisch-hoe-werkt-dit" class="table-of-contents__link toc-highlight">Praktisch: Hoe Werkt Dit?</a><ul><li><a href="#voor-de-groenteman-voorbeeld" class="table-of-contents__link toc-highlight">Voor de Groenteman (Voorbeeld)</a></li><li><a href="#de-infrastructuur" class="table-of-contents__link toc-highlight">De Infrastructuur</a></li></ul></li><li><a href="#openregister-de-enabler" class="table-of-contents__link toc-highlight">OpenRegister: De Enabler</a></li><li><a href="#concrete-use-cases" class="table-of-contents__link toc-highlight">Concrete Use Cases</a><ul><li><a href="#use-case-1-de-webshop-eigenaar" class="table-of-contents__link toc-highlight">Use Case 1: De Webshop Eigenaar</a></li><li><a href="#use-case-2-de-lokale-sportvereniging" class="table-of-contents__link toc-highlight">Use Case 2: De Lokale Sportvereniging</a></li><li><a href="#use-case-3-de-zzp-er" class="table-of-contents__link toc-highlight">Use Case 3: De ZZP-er</a></li></ul></li><li><a href="#de-voorwaarden-voor-succes" class="table-of-contents__link toc-highlight">De Voorwaarden voor Succes</a><ul><li><a href="#1-generiek-ontwerp" class="table-of-contents__link toc-highlight">1. Generiek Ontwerp</a></li><li><a href="#2-configureerbaar-niet-hard-coded" class="table-of-contents__link toc-highlight">2. Configureerbaar, Niet Hard-Coded</a></li><li><a href="#3-gebruiksvriendelijk" class="table-of-contents__link toc-highlight">3. Gebruiksvriendelijk</a></li><li><a href="#4-ondersteuning" class="table-of-contents__link toc-highlight">4. Ondersteuning</a></li></ul></li><li><a href="#paradigma-shift-needed" class="table-of-contents__link toc-highlight">Paradigma Shift Needed</a><ul><li><a href="#van-code-naar-functionaliteit" class="table-of-contents__link toc-highlight">Van Code naar Functionaliteit</a></li><li><a href="#van-ownership-naar-use" class="table-of-contents__link toc-highlight">Van Ownership naar Use</a></li></ul></li><li><a href="#de-economische-kansen" class="table-of-contents__link toc-highlight">De Economische Kansen</a><ul><li><a href="#voor-het-mkb" class="table-of-contents__link toc-highlight">Voor het MKB</a></li><li><a href="#voor-de-local-economy" class="table-of-contents__link toc-highlight">Voor de Local Economy</a></li><li><a href="#voor-europa" class="table-of-contents__link toc-highlight">Voor Europa</a></li></ul></li><li><a href="#kritische-succesfactoren" class="table-of-contents__link toc-highlight">Kritische Succesfactoren</a><ul><li><a href="#1-mindset-verandering" class="table-of-contents__link toc-highlight">1. Mindset Verandering</a></li><li><a href="#2-investment-in-usability" class="table-of-contents__link toc-highlight">2. Investment in Usability</a></li><li><a href="#3-ecosystem-development" class="table-of-contents__link toc-highlight">3. Ecosystem Development</a></li><li><a href="#4-sustainable-funding" class="table-of-contents__link toc-highlight">4. Sustainable Funding</a></li></ul></li><li><a href="#visie-european-digital-commons-for-sme" class="table-of-contents__link toc-highlight">Visie: European Digital Commons for SME</a></li><li><a href="#conclusie" class="table-of-contents__link toc-highlight">Conclusie</a></li></ul></div></div></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">&gt; Navigation</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/rubenlinde/docs/intro">Documentation</a></li><li class="footer__item"><a class="footer__link-item" href="/rubenlinde/blog">Blog</a></li><li class="footer__item"><a href="https://www.conduction.nl" target="_blank" rel="noopener noreferrer" class="footer__link-item">Conduction<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">&gt; Social</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/rubenvdlinde" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://www.linkedin.com/in/rubenlinde/" target="_blank" rel="noopener noreferrer" class="footer__link-item">LinkedIn<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/rubenlinde" target="_blank" rel="noopener noreferrer" class="footer__link-item">X (Twitter)<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://www.instagram.com/rubenlinde1985/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Instagram<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">&gt; Topics</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/rubenlinde/blog/tags/open-source">Open Source</a></li><li class="footer__item"><a class="footer__link-item" href="/rubenlinde/blog/tags/ai">AI &amp; Innovation</a></li><li class="footer__item"><a class="footer__link-item" href="/rubenlinde/blog/tags/soevereiniteit">Digital Sovereignty</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright"><div class="footer-terminal">
+          <div class="footer-prompt">root@rubenlinde:~$ echo "Built with ❤️ and Open Source"</div>
+          <div class="footer-output">Copyright © 2025 Ruben van der Linde | Powered by Docusaurus</div>
+        </div></div></div></div></footer></div>
+</body>
+</html>
