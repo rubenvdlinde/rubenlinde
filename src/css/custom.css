@@ -85,6 +85,22 @@
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* Homepage-specific navbar styling */
+body.homepage .navbar__items--left {
+  visibility: hidden !important;
+  width: 0 !important;
+  overflow: hidden !important;
+}
+
+body.homepage .navbar__inner {
+  justify-content: flex-end !important;
+}
+
+body.homepage .navbar {
+  background: rgba(15, 23, 42, 0.5) !important;
+  backdrop-filter: blur(10px);
+}
+
 /* Animated Network Background - Site-wide */
 .networkBackground {
   position: fixed;
