@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useLocation } from '@docusaurus/router';
 import NetworkBackground from '../components/NetworkBackground';
+import FloatingControls from '../components/FloatingControls';
 
 export default function Root({ children }) {
   const location = useLocation();
@@ -25,6 +26,7 @@ export default function Root({ children }) {
   return (
     <>
       <NetworkBackground />
+      <FloatingControls />
       {children}
     </>
   );
