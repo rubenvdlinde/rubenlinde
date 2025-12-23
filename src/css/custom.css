@@ -422,7 +422,8 @@ body[class*='blog'] .navbar__link {
   gap: 2rem;
   justify-content: center;
   margin-top: 2rem;
-  padding-top: 2rem;
+  padding-top: 0;
+  margin-bottom: 2rem; /* Reduced spacing before command */
 }
 
 .hero__social-link {
