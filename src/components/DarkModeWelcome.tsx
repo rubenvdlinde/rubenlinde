@@ -65,6 +65,7 @@ export default function DarkModeWelcome() {
             Dark mode is easier on the eyes and perfect for late-night coding
             sessions! 💻
           </p>
+          <p>Also everything just looks much cooler in darkmode.</p>
         </div>
         <div className="darkmode-modal-actions">
           <button
