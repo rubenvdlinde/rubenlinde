@@ -510,6 +510,54 @@ class ApiController <!-- -->
 </ul>]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Personal Blog Posts]]></title>
+        <id>https://www.rubenlinde.nl/blog/personal/README</id>
+        <link href="https://www.rubenlinde.nl/blog/personal/README"/>
+        <updated>2025-12-22T21:13:19.000Z</updated>
+        <summary type="html"><![CDATA[This folder contains personal reflections, technical tutorials, and general software development insights.]]></summary>
+        <content type="html"><![CDATA[<p>This folder contains personal reflections, technical tutorials, and general software development insights.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="topics-include">Topics Include<a href="https://www.rubenlinde.nl/blog/personal/README#topics-include" class="hash-link" aria-label="Direct link naar Topics Include" title="Direct link naar Topics Include" translate="no">​</a></h2>
+<ul>
+<li class="">💻 Software development tutorials</li>
+<li class="">🎨 Web development and design</li>
+<li class="">🔧 Tools and technologies</li>
+<li class="">📚 Learning experiences</li>
+<li class="">🚀 Project showcases</li>
+<li class="">💡 Technical tips and tricks</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="writing-guidelines">Writing Guidelines<a href="https://www.rubenlinde.nl/blog/personal/README#writing-guidelines" class="hash-link" aria-label="Direct link naar Writing Guidelines" title="Direct link naar Writing Guidelines" translate="no">​</a></h2>
+<p>When writing personal blog posts:</p>
+<ol>
+<li class=""><strong>Be authentic</strong> - Share your genuine experiences</li>
+<li class=""><strong>Be educational</strong> - Provide value to readers</li>
+<li class=""><strong>Be practical</strong> - Include code examples and real-world scenarios</li>
+<li class=""><strong>Be conversational</strong> - Write in a friendly, approachable tone</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tags-to-use">Tags to Use<a href="https://www.rubenlinde.nl/blog/personal/README#tags-to-use" class="hash-link" aria-label="Direct link naar Tags to Use" title="Direct link naar Tags to Use" translate="no">​</a></h2>
+<p>Common tags for this category:</p>
+<ul>
+<li class=""><code>personal</code></li>
+<li class=""><code>development</code></li>
+<li class=""><code>tutorial</code></li>
+<li class=""><code>javascript</code>, <code>php</code>, <code>python</code> (language-specific)</li>
+<li class=""><code>react</code>, <code>symfony</code>, <code>docusaurus</code> (framework-specific)</li>
+<li class=""><code>tips</code>, <code>best-practices</code></li>
+<li class=""><code>project-showcase</code></li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="example-frontmatter">Example Frontmatter<a href="https://www.rubenlinde.nl/blog/personal/README#example-frontmatter" class="hash-link" aria-label="Direct link naar Example Frontmatter" title="Direct link naar Example Frontmatter" translate="no">​</a></h2>
+<div class="language-markdown codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-markdown codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token front-matter-block punctuation" style="color:#393A34">---</span><span class="token front-matter-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token front-matter-block"></span><span class="token front-matter-block front-matter yaml language-yaml key atrule" style="color:#00a4db">slug</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">:</span><span class="token front-matter-block front-matter yaml language-yaml"> my</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">-</span><span class="token front-matter-block front-matter yaml language-yaml">blog</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">-</span><span class="token front-matter-block front-matter yaml language-yaml">post</span><br></span><span class="token-line" style="color:#393A34"><span class="token front-matter-block front-matter yaml language-yaml"></span><span class="token front-matter-block front-matter yaml language-yaml key atrule" style="color:#00a4db">title</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">:</span><span class="token front-matter-block front-matter yaml language-yaml"> My Blog Post Title</span><br></span><span class="token-line" style="color:#393A34"><span class="token front-matter-block front-matter yaml language-yaml"></span><span class="token front-matter-block front-matter yaml language-yaml key atrule" style="color:#00a4db">authors</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">:</span><span class="token front-matter-block front-matter yaml language-yaml"> </span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">[</span><span class="token front-matter-block front-matter yaml language-yaml">ruben</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">]</span><span class="token front-matter-block front-matter yaml language-yaml"></span><br></span><span class="token-line" style="color:#393A34"><span class="token front-matter-block front-matter yaml language-yaml"></span><span class="token front-matter-block front-matter yaml language-yaml key atrule" style="color:#00a4db">tags</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">:</span><span class="token front-matter-block front-matter yaml language-yaml"> </span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">[</span><span class="token front-matter-block front-matter yaml language-yaml">personal</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">,</span><span class="token front-matter-block front-matter yaml language-yaml"> development</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">,</span><span class="token front-matter-block front-matter yaml language-yaml"> tutorial</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">,</span><span class="token front-matter-block front-matter yaml language-yaml"> react</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">]</span><span class="token front-matter-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token front-matter-block"></span><span class="token front-matter-block punctuation" style="color:#393A34">---</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="content-ideas">Content Ideas<a href="https://www.rubenlinde.nl/blog/personal/README#content-ideas" class="hash-link" aria-label="Direct link naar Content Ideas" title="Direct link naar Content Ideas" translate="no">​</a></h2>
+<ul>
+<li class="">New technology explorations</li>
+<li class="">Problem-solving stories</li>
+<li class="">Code refactoring examples</li>
+<li class="">Tool comparisons</li>
+<li class="">Development environment setups</li>
+<li class="">Open-source contributions</li>
+<li class="">Side project updates</li>
+</ul>]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Platform AI & Overheid (Government)]]></title>
         <id>https://www.rubenlinde.nl/blog/platform-ai-en-overheid/README</id>
         <link href="https://www.rubenlinde.nl/blog/platform-ai-en-overheid/README"/>
@@ -577,54 +625,6 @@ class ApiController <!-- -->
 <li class="">EU AI Act implications</li>
 <li class="">Digital inclusion strategies</li>
 <li class="">Open-source AI for government</li>
-</ul>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Personal Blog Posts]]></title>
-        <id>https://www.rubenlinde.nl/blog/personal/README</id>
-        <link href="https://www.rubenlinde.nl/blog/personal/README"/>
-        <updated>2025-12-22T21:13:19.000Z</updated>
-        <summary type="html"><![CDATA[This folder contains personal reflections, technical tutorials, and general software development insights.]]></summary>
-        <content type="html"><![CDATA[<p>This folder contains personal reflections, technical tutorials, and general software development insights.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="topics-include">Topics Include<a href="https://www.rubenlinde.nl/blog/personal/README#topics-include" class="hash-link" aria-label="Direct link naar Topics Include" title="Direct link naar Topics Include" translate="no">​</a></h2>
-<ul>
-<li class="">💻 Software development tutorials</li>
-<li class="">🎨 Web development and design</li>
-<li class="">🔧 Tools and technologies</li>
-<li class="">📚 Learning experiences</li>
-<li class="">🚀 Project showcases</li>
-<li class="">💡 Technical tips and tricks</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="writing-guidelines">Writing Guidelines<a href="https://www.rubenlinde.nl/blog/personal/README#writing-guidelines" class="hash-link" aria-label="Direct link naar Writing Guidelines" title="Direct link naar Writing Guidelines" translate="no">​</a></h2>
-<p>When writing personal blog posts:</p>
-<ol>
-<li class=""><strong>Be authentic</strong> - Share your genuine experiences</li>
-<li class=""><strong>Be educational</strong> - Provide value to readers</li>
-<li class=""><strong>Be practical</strong> - Include code examples and real-world scenarios</li>
-<li class=""><strong>Be conversational</strong> - Write in a friendly, approachable tone</li>
-</ol>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tags-to-use">Tags to Use<a href="https://www.rubenlinde.nl/blog/personal/README#tags-to-use" class="hash-link" aria-label="Direct link naar Tags to Use" title="Direct link naar Tags to Use" translate="no">​</a></h2>
-<p>Common tags for this category:</p>
-<ul>
-<li class=""><code>personal</code></li>
-<li class=""><code>development</code></li>
-<li class=""><code>tutorial</code></li>
-<li class=""><code>javascript</code>, <code>php</code>, <code>python</code> (language-specific)</li>
-<li class=""><code>react</code>, <code>symfony</code>, <code>docusaurus</code> (framework-specific)</li>
-<li class=""><code>tips</code>, <code>best-practices</code></li>
-<li class=""><code>project-showcase</code></li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="example-frontmatter">Example Frontmatter<a href="https://www.rubenlinde.nl/blog/personal/README#example-frontmatter" class="hash-link" aria-label="Direct link naar Example Frontmatter" title="Direct link naar Example Frontmatter" translate="no">​</a></h2>
-<div class="language-markdown codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-markdown codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token front-matter-block punctuation" style="color:#393A34">---</span><span class="token front-matter-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token front-matter-block"></span><span class="token front-matter-block front-matter yaml language-yaml key atrule" style="color:#00a4db">slug</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">:</span><span class="token front-matter-block front-matter yaml language-yaml"> my</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">-</span><span class="token front-matter-block front-matter yaml language-yaml">blog</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">-</span><span class="token front-matter-block front-matter yaml language-yaml">post</span><br></span><span class="token-line" style="color:#393A34"><span class="token front-matter-block front-matter yaml language-yaml"></span><span class="token front-matter-block front-matter yaml language-yaml key atrule" style="color:#00a4db">title</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">:</span><span class="token front-matter-block front-matter yaml language-yaml"> My Blog Post Title</span><br></span><span class="token-line" style="color:#393A34"><span class="token front-matter-block front-matter yaml language-yaml"></span><span class="token front-matter-block front-matter yaml language-yaml key atrule" style="color:#00a4db">authors</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">:</span><span class="token front-matter-block front-matter yaml language-yaml"> </span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">[</span><span class="token front-matter-block front-matter yaml language-yaml">ruben</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">]</span><span class="token front-matter-block front-matter yaml language-yaml"></span><br></span><span class="token-line" style="color:#393A34"><span class="token front-matter-block front-matter yaml language-yaml"></span><span class="token front-matter-block front-matter yaml language-yaml key atrule" style="color:#00a4db">tags</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">:</span><span class="token front-matter-block front-matter yaml language-yaml"> </span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">[</span><span class="token front-matter-block front-matter yaml language-yaml">personal</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">,</span><span class="token front-matter-block front-matter yaml language-yaml"> development</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">,</span><span class="token front-matter-block front-matter yaml language-yaml"> tutorial</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">,</span><span class="token front-matter-block front-matter yaml language-yaml"> react</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">]</span><span class="token front-matter-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token front-matter-block"></span><span class="token front-matter-block punctuation" style="color:#393A34">---</span><br></span></code></pre></div></div>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="content-ideas">Content Ideas<a href="https://www.rubenlinde.nl/blog/personal/README#content-ideas" class="hash-link" aria-label="Direct link naar Content Ideas" title="Direct link naar Content Ideas" translate="no">​</a></h2>
-<ul>
-<li class="">New technology explorations</li>
-<li class="">Problem-solving stories</li>
-<li class="">Code refactoring examples</li>
-<li class="">Tool comparisons</li>
-<li class="">Development environment setups</li>
-<li class="">Open-source contributions</li>
-<li class="">Side project updates</li>
 </ul>]]></content>
     </entry>
     <entry>
