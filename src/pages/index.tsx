@@ -3,8 +3,8 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import Translate, { translate } from '@docusaurus/Translate';
-import TerminalFeature from '../components/TerminalFeature';
-import TypingCommand from '../components/TypingCommand';
+import TerminalFeature from '@site/src/components/TerminalFeature';
+import TypingCommand from '@site/src/components/TypingCommand';
 import { useState } from 'react';
 
 function HomepageHeader() {
