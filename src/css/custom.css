@@ -168,7 +168,7 @@ html[data-is-root-path='true'] .navbar {
   background: rgba(15, 23, 42, 0.9);
   backdrop-filter: blur(10px);
   border: 1px solid var(--ifm-color-secondary);
-  border-radius: 25px; /* Pill shape instead of circle */
+  border-radius: 8px; /* Square with rounded corners like homepage */
   padding: 8px 16px;
   min-width: 80px; /* Ensure enough space for icon + text */
   height: 45px;
