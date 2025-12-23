@@ -1,5 +1,5 @@
 ---
-slug: why-docusaurus-static-site
+slug: waarom-docusaurus-static-site
 title: Why I Chose Docusaurus Over WordPress
 authors: [ruben]
 tags: [docusaurus, static-site, open-source, personal, webdev, jamstack]

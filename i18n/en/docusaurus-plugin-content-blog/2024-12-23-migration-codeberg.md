@@ -1,4 +1,5 @@
 ---
+slug: migratie-naar-codeberg
 title: Migration to Codeberg
 date: 2024-12-23
 authors: [ruben]
