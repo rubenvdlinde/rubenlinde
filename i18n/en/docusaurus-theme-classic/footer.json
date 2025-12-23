@@ -1,0 +1,58 @@
+{
+  "link.title.> Navigation": {
+    "message": "> Navigation",
+    "description": "The title of the footer links column with title=> Navigation in the footer"
+  },
+  "link.title.> Social": {
+    "message": "> Social",
+    "description": "The title of the footer links column with title=> Social in the footer"
+  },
+  "link.title.> Topics": {
+    "message": "> Topics",
+    "description": "The title of the footer links column with title=> Topics in the footer"
+  },
+  "link.item.label.Documentation": {
+    "message": "Documentation",
+    "description": "The label of footer link with label=Documentation linking to /docs/intro"
+  },
+  "link.item.label.Blog": {
+    "message": "Blog",
+    "description": "The label of footer link with label=Blog linking to /blog"
+  },
+  "link.item.label.Conduction": {
+    "message": "Conduction",
+    "description": "The label of footer link with label=Conduction linking to https://www.conduction.nl"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/rubenvdlinde"
+  },
+  "link.item.label.LinkedIn": {
+    "message": "LinkedIn",
+    "description": "The label of footer link with label=LinkedIn linking to https://www.linkedin.com/in/rubenlinde/"
+  },
+  "link.item.label.X (Twitter)": {
+    "message": "X (Twitter)",
+    "description": "The label of footer link with label=X (Twitter) linking to https://x.com/rubenlinde"
+  },
+  "link.item.label.Instagram": {
+    "message": "Instagram",
+    "description": "The label of footer link with label=Instagram linking to https://www.instagram.com/rubenlinde1985/"
+  },
+  "link.item.label.Open Source": {
+    "message": "Open Source",
+    "description": "The label of footer link with label=Open Source linking to /blog/tags/open-source"
+  },
+  "link.item.label.AI & Innovation": {
+    "message": "AI & Innovation",
+    "description": "The label of footer link with label=AI & Innovation linking to /blog/tags/ai"
+  },
+  "link.item.label.Digital Sovereignty": {
+    "message": "Digital Sovereignty",
+    "description": "The label of footer link with label=Digital Sovereignty linking to /blog/tags/soevereiniteit"
+  },
+  "copyright": {
+    "message": "<div class=\"footer-terminal\">\n          <div class=\"footer-prompt\">root@rubenlinde:~$ echo \"Built with ❤️ and Open Source\"</div>\n          <div class=\"footer-output\">Copyright © 2025 Ruben van der Linde | Powered by Docusaurus</div>\n        </div>",
+    "description": "The footer copyright"
+  }
+}

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from '@docusaurus/router';
+import Link from '@docusaurus/Link';
 
 export default function FloatingControls() {
   const location = useLocation();
@@ -8,6 +9,29 @@ export default function FloatingControls() {
   // Check if we're on the homepage
   const isHomepage =
     location.pathname === '/' || location.pathname === '/rubenlinde/';
+
+  // Determine current locale from pathname
+  const currentLocale =
+    location.pathname.startsWith('/en') || location.pathname.startsWith('/en/')
+      ? 'en'
+      : 'nl';
+
+  // Calculate the alternate locale path
+  const getAlternateLocalePath = () => {
+    if (currentLocale === 'nl') {
+      // Switching to English
+      if (location.pathname === '/' || location.pathname === '') {
+        return '/en/';
+      }
+      return `/en${location.pathname}`;
+    } else {
+      // Switching to Dutch - remove /en prefix
+      if (location.pathname === '/en' || location.pathname === '/en/') {
+        return '/';
+      }
+      return location.pathname.replace('/en/', '/').replace('/en', '/');
+    }
+  };
 
   useEffect(() => {
     // Get the current theme from the document
@@ -43,17 +67,18 @@ export default function FloatingControls() {
         isHomepage ? 'homepage-floating-controls' : 'floating-controls'
       }
     >
-      {/* Language Selector - simple text for now */}
-      <button
+      {/* Language Selector */}
+      <Link
+        to={getAlternateLocalePath()}
         className="floating-control-button"
-        onClick={() => {
-          // For now, just a placeholder - could link to /en/ or show a menu
-          console.log('Language selector clicked');
-        }}
-        title="Language selector"
+        title={
+          currentLocale === 'nl'
+            ? 'Switch to English'
+            : 'Wissel naar Nederlands'
+        }
       >
-        🌐 NL
-      </button>
+        🌐 {currentLocale === 'nl' ? 'EN' : 'NL'}
+      </Link>
 
       {/* Theme Toggle */}
       <button

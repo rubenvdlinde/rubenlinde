@@ -1,0 +1,62 @@
+{
+  "title": {
+    "message": "Welcome to {siteTitle}",
+    "description": "The homepage welcome message"
+  },
+  "description": {
+    "message": "Personal website and blog by Ruben van der Linde - Software Developer, Open Source Advocate, AI Enthusiast",
+    "description": "The homepage meta description"
+  },
+  "hero.title": {
+    "message": "Ruben van der Linde",
+    "description": "The hero title on the homepage"
+  },
+  "hero.tagline": {
+    "message": "Software Developer & Open Source Enthusiast",
+    "description": "The hero tagline on the homepage"
+  },
+  "hero.button.blogs": {
+    "message": "Blogs",
+    "description": "Label for blogs button"
+  },
+  "hero.button.conduction": {
+    "message": "Conduction",
+    "description": "Label for conduction button"
+  },
+  "feature.openSource.title": {
+    "message": "Open Source",
+    "description": "Open Source feature card title"
+  },
+  "feature.openSource.description": {
+    "message": "Contributing to the community and building projects that make a difference. Public Money is Public Code - for a better digital government.",
+    "description": "Open Source feature card description"
+  },
+  "feature.aiInnovation.title": {
+    "message": "AI & Innovation",
+    "description": "AI & Innovation feature card title"
+  },
+  "feature.aiInnovation.description": {
+    "message": "Exploring how artificial intelligence can transform government, with a focus on ethics, transparency and public values.",
+    "description": "AI & Innovation feature card description"
+  },
+  "feature.digitalSovereignty.title": {
+    "message": "Digital Sovereignty",
+    "description": "Digital Sovereignty feature card title"
+  },
+  "feature.digitalSovereignty.description": {
+    "message": "Working on European digital independence. Together we build a secure and autonomous digital future.",
+    "description": "Digital Sovereignty feature card description"
+  },
+  "feature.securityPrivacy.title": {
+    "message": "Security & Privacy",
+    "description": "Security & Privacy feature card title"
+  },
+  "feature.securityPrivacy.description": {
+    "message": "Developing secure solutions that respect privacy. Technology that serves people, not the other way around.",
+    "description": "Security & Privacy feature card description"
+  },
+  "command.expertise": {
+    "message": "$ cat expertise.txt",
+    "description": "Terminal command for expertise section"
+  }
+}

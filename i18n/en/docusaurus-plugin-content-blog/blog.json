@@ -1,0 +1,26 @@
+{
+  "filter.title": {
+    "message": "Filter by Tags",
+    "description": "Title of the tag filter section"
+  },
+  "filter.clear": {
+    "message": "✕ Clear Filter",
+    "description": "Clear filter button text"
+  },
+  "filter.count": {
+    "message": "{count} {count, plural, one {blog} other {blogs}} found",
+    "description": "Number of blogs found text"
+  },
+  "readingTime": {
+    "message": "{readingTime} min read",
+    "description": "Reading time text"
+  },
+  "status.concept": {
+    "message": "STATUS: CONCEPT",
+    "description": "Concept status badge"
+  },
+  "status.concept.description": {
+    "message": "This blog is still in concept phase and may be modified before publication.",
+    "description": "Concept status description"
+  }
+}
