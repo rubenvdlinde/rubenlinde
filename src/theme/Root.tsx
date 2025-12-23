@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useLocation } from '@docusaurus/router';
 import NetworkBackground from '../components/NetworkBackground';
 import FloatingControls from '../components/FloatingControls';
+import DarkModeWelcome from '../components/DarkModeWelcome';
 
 export default function Root({ children }) {
   const location = useLocation();
@@ -27,6 +28,7 @@ export default function Root({ children }) {
     <>
       <NetworkBackground />
       <FloatingControls />
+      <DarkModeWelcome />
       {children}
     </>
   );
