@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from '@docusaurus/router';
+import { translate } from '@docusaurus/Translate';
 
 export default function DarkModeWelcome() {
   const [showModal, setShowModal] = useState(false);
@@ -54,31 +55,61 @@ export default function DarkModeWelcome() {
     <div className="darkmode-modal-overlay">
       <div className="darkmode-modal">
         <div className="darkmode-modal-header">
-          <h2>🌙 Welcome to the Dark Side</h2>
+          <h2>
+            🌙{' '}
+            {translate({
+              id: 'darkModeWelcome.title',
+              message: 'Welcome to the Dark Side',
+              description: 'Title for dark mode welcome modal',
+            })}
+          </h2>
         </div>
         <div className="darkmode-modal-body">
           <p>
-            We&apos;ve set your experience to <strong>dark mode</strong> for the
-            true developer experience.
+            {translate({
+              id: 'darkModeWelcome.message1',
+              message:
+                "We've set your experience to dark mode for the true developer experience.",
+              description: 'First message in dark mode welcome modal',
+            })}
           </p>
           <p>
-            Dark mode is easier on the eyes and perfect for late-night coding
-            sessions! 💻
+            {translate({
+              id: 'darkModeWelcome.message2',
+              message:
+                'Dark mode is easier on the eyes and perfect for late-night coding sessions! 💻',
+              description: 'Second message in dark mode welcome modal',
+            })}
           </p>
-          <p>Also everything just looks much cooler in darkmode.</p>
+          <p>
+            {translate({
+              id: 'darkModeWelcome.message3',
+              message: 'Also everything just looks much cooler in darkmode.',
+              description: 'Third message in dark mode welcome modal',
+            })}
+          </p>
         </div>
         <div className="darkmode-modal-actions">
           <button
             onClick={handleSwitchToLight}
             className="darkmode-modal-button darkmode-modal-button-light"
           >
-            ☀️ Switch to Light Mode
+            ☀️{' '}
+            {translate({
+              id: 'darkModeWelcome.switchToLight',
+              message: 'Switch to Light Mode',
+              description: 'Button to switch to light mode',
+            })}
           </button>
           <button
             onClick={handleClose}
             className="darkmode-modal-button darkmode-modal-button-dark"
           >
-            Stay in Dark Mode ✨
+            {translate({
+              id: 'darkModeWelcome.stayInDark',
+              message: 'Stay in Dark Mode ✨',
+              description: 'Button to stay in dark mode',
+            })}
           </button>
         </div>
       </div>

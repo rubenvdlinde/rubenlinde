@@ -4,7 +4,7 @@
     "description": "The homepage welcome message"
   },
   "description": {
-    "message": "Persoonlijke website en blog van Ruben van der Linde - Software Developer, Open Source Advocate, AI Enthoeisiast",
+    "message": "Persoonlijke website en blog van Ruben van der Linde - Software Developer, Open Source Advocaat, AI Enthousiast",
     "description": "The homepage meta description"
   },
   "hero.title": {
@@ -12,7 +12,7 @@
     "description": "The hero title on the homepage"
   },
   "hero.tagline": {
-    "message": "Software Developer & Open Source Enthusiast",
+    "message": "Software Developer & Open Source Enthousiast",
     "description": "The hero tagline on the homepage"
   },
   "hero.button.blogs": {
@@ -32,7 +32,7 @@
     "description": "Open Source feature card description"
   },
   "feature.aiInnovation.title": {
-    "message": "AI & Innovation",
+    "message": "AI & Innovatie",
     "description": "AI & Innovation feature card title"
   },
   "feature.aiInnovation.description": {
@@ -40,7 +40,7 @@
     "description": "AI & Innovation feature card description"
   },
   "feature.digitalSovereignty.title": {
-    "message": "Digital Sovereignty",
+    "message": "Digitale Soevereiniteit",
     "description": "Digital Sovereignty feature card title"
   },
   "feature.digitalSovereignty.description": {
@@ -48,7 +48,7 @@
     "description": "Digital Sovereignty feature card description"
   },
   "feature.securityPrivacy.title": {
-    "message": "Security & Privacy",
+    "message": "Beveiliging & Privacy",
     "description": "Security & Privacy feature card title"
   },
   "feature.securityPrivacy.description": {

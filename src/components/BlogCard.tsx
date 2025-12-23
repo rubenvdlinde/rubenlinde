@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
 import Heading from '@theme/Heading';
+import { translate } from '@docusaurus/Translate';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 interface BlogCardProps {
   title: string;
@@ -27,13 +29,16 @@ const BlogCard: React.FC<BlogCardProps> = ({
   status,
   tags,
 }) => {
+  const { i18n } = useDocusaurusContext();
+  const locale = i18n.currentLocale;
+
   const formatDate = (dateString: string) => {
     const options: Intl.DateTimeFormatOptions = {
       year: 'numeric',
       month: 'long',
       day: 'numeric',
     };
-    return new Date(dateString).toLocaleDateString('nl-NL', options);
+    return new Date(dateString).toLocaleDateString(locale, options);
   };
 
   const getStatusColor = (statusType?: string) => {
@@ -50,11 +55,23 @@ const BlogCard: React.FC<BlogCardProps> = ({
   const getStatusText = (statusType?: string) => {
     switch (statusType) {
       case 'concept':
-        return 'CONCEPT';
+        return translate({
+          id: 'blog.status.concept',
+          message: 'CONCEPT',
+          description: 'Status label for concept blog posts',
+        });
       case 'draft':
-        return 'DRAFT';
+        return translate({
+          id: 'blog.status.draft',
+          message: 'DRAFT',
+          description: 'Status label for draft blog posts',
+        });
       default:
-        return 'PUBLISHED';
+        return translate({
+          id: 'blog.status.published',
+          message: 'PUBLISHED',
+          description: 'Status label for published blog posts',
+        });
     }
   };
 
@@ -74,7 +91,16 @@ const BlogCard: React.FC<BlogCardProps> = ({
           <>
             <span className="blog-card__separator"> · </span>
             <span className="blog-card__reading-time">
-              {Math.ceil(readingTime)} minuten leestijd
+              {translate(
+                {
+                  id: 'blog.readingTime',
+                  message: '{minutes} minuten leestijd',
+                  description: 'Reading time label',
+                },
+                {
+                  minutes: Math.ceil(readingTime),
+                }
+              )}
             </span>
           </>
         )}
@@ -105,11 +131,25 @@ const BlogCard: React.FC<BlogCardProps> = ({
         >
           <span className="blog-card__status-icon">⚠</span>
           <span className="blog-card__status-text">
-            STATUS: {getStatusText(status)}
+            {translate({
+              id: 'blog.status.label',
+              message: 'STATUS',
+              description: 'Status label prefix',
+            })}
+            : {getStatusText(status)}
           </span>
           <div className="blog-card__status-message">
-            Deze blog is nog in {status}-fase en wordt mogelijk nog aangepast
-            voor publicatie.
+            {translate(
+              {
+                id: 'blog.status.message',
+                message:
+                  'Deze blog is nog in {status}-fase en wordt mogelijk nog aangepast voor publicatie.',
+                description: 'Status message for non-published blog posts',
+              },
+              {
+                status,
+              }
+            )}
           </div>
         </div>
       )}

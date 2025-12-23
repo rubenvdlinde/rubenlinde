@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from '@docusaurus/router';
-import Link from '@docusaurus/Link';
+import { translate } from '@docusaurus/Translate';
 import FloatingControlButton from './FloatingControlButton';
 
 export default function FloatingControls() {
@@ -23,17 +23,21 @@ export default function FloatingControls() {
   const getLocalePath = (locale: string) => {
     const currentPath = location.pathname;
     if (locale === 'nl') {
-      // Switch to Dutch
-      if (currentPath.startsWith('/en')) {
-        return currentPath.replace(/^\/en/, '') || '/';
+      // Switch to Dutch (remove /en prefix)
+      if (currentPath === '/en/' || currentPath === '/en') {
+        return '/'; // EN homepage -> NL homepage
+      }
+      if (currentPath.startsWith('/en/')) {
+        return currentPath.replace(/^\/en/, ''); // /en/blog -> /blog
       }
       return currentPath;
     } else {
-      // Switch to English
+      // Switch to English (add /en prefix)
       if (currentPath.startsWith('/en')) {
-        return currentPath;
+        return currentPath; // Already on EN
       }
-      return `/en${currentPath === '/' ? '' : currentPath}`;
+      // Ensure trailing slash for homepage
+      return currentPath === '/' ? '/en/' : `/en${currentPath}`;
     }
   };
 
@@ -67,7 +71,18 @@ export default function FloatingControls() {
 
   // Get short labels for current selection
   const languageLabel = currentLocale.toUpperCase();
-  const themeLabel = colorMode === 'dark' ? 'Dark' : 'Light';
+  const themeLabel =
+    colorMode === 'dark'
+      ? translate({
+          id: 'theme.mode.dark.short',
+          message: 'Dark',
+          description: 'Short label for dark mode',
+        })
+      : translate({
+          id: 'theme.mode.light.short',
+          message: 'Light',
+          description: 'Short label for light mode',
+        });
 
   return (
     <div
@@ -83,20 +98,30 @@ export default function FloatingControls() {
         onToggle={() => setShowLangDropdown(!showLangDropdown)}
         onClose={() => setShowLangDropdown(false)}
       >
-        <Link
-          to={getLocalePath('nl')}
+        <a
+          href={getLocalePath('nl')}
           className={`floating-control-dropdown-item ${currentLocale === 'nl' ? 'active' : ''}`}
           onClick={() => setShowLangDropdown(false)}
         >
-          🇳🇱 Nederlands
-        </Link>
-        <Link
-          to={getLocalePath('en')}
+          🇳🇱{' '}
+          {translate({
+            id: 'language.nl',
+            message: 'Nederlands',
+            description: 'Dutch language label',
+          })}
+        </a>
+        <a
+          href={getLocalePath('en')}
           className={`floating-control-dropdown-item ${currentLocale === 'en' ? 'active' : ''}`}
           onClick={() => setShowLangDropdown(false)}
         >
-          🇬🇧 English
-        </Link>
+          🇬🇧{' '}
+          {translate({
+            id: 'language.en',
+            message: 'English',
+            description: 'English language label',
+          })}
+        </a>
       </FloatingControlButton>
 
       {/* Theme Toggle */}
@@ -111,13 +136,23 @@ export default function FloatingControls() {
           className={`floating-control-dropdown-item ${colorMode === 'dark' ? 'active' : ''}`}
           onClick={() => setTheme('dark')}
         >
-          🌙 Dark Mode
+          🌙{' '}
+          {translate({
+            id: 'theme.mode.dark',
+            message: 'Dark Mode',
+            description: 'Dark mode label',
+          })}
         </button>
         <button
           className={`floating-control-dropdown-item ${colorMode === 'light' ? 'active' : ''}`}
           onClick={() => setTheme('light')}
         >
-          ☀️ Light Mode
+          ☀️{' '}
+          {translate({
+            id: 'theme.mode.light',
+            message: 'Light Mode',
+            description: 'Light mode label',
+          })}
         </button>
       </FloatingControlButton>
     </div>

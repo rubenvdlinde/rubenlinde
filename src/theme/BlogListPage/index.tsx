@@ -6,6 +6,7 @@ import {
   HtmlClassNameProvider,
   ThemeClassNames,
 } from '@docusaurus/theme-common';
+import { translate } from '@docusaurus/Translate';
 import BlogLayout from '@theme/BlogLayout';
 import SearchMetadata from '@theme/SearchMetadata';
 import type { Props } from '@theme/BlogListPage';
@@ -60,13 +61,23 @@ function BlogListPageContent(props: Props): JSX.Element {
         {/* Tag Filter Section */}
         <div className="blog-tags-filter">
           <div className="blog-tags-filter__header">
-            <h2>Filter op Tags</h2>
+            <h2>
+              {translate({
+                id: 'blog.filterByTags.title',
+                message: 'Filter op Tags',
+                description: 'Title for the tag filter section',
+              })}
+            </h2>
             {selectedTag && (
               <button
                 className="blog-tags-filter__clear"
                 onClick={() => setSelectedTag(null)}
               >
-                ✕ Wis Filter
+                {translate({
+                  id: 'blog.filterByTags.clear',
+                  message: '✕ Wis Filter',
+                  description: 'Button to clear the selected tag filter',
+                })}
               </button>
             )}
           </div>
@@ -85,8 +96,17 @@ function BlogListPageContent(props: Props): JSX.Element {
           </div>
           {selectedTag && (
             <div className="blog-tags-filter__count">
-              {filteredItems.length} blog{filteredItems.length !== 1 ? 's' : ''}{' '}
-              gevonden
+              {translate(
+                {
+                  id: 'blog.filterByTags.count',
+                  message: '{count} blog{plural} gevonden',
+                  description: 'Count of filtered blog posts',
+                },
+                {
+                  count: filteredItems.length,
+                  plural: filteredItems.length !== 1 ? 's' : '',
+                }
+              )}
             </div>
           )}
         </div>

@@ -2,28 +2,23 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
+import Translate, { translate } from '@docusaurus/Translate';
 import TerminalFeature from '@site/src/components/TerminalFeature';
 import TypingCommand from '@site/src/components/TypingCommand';
 import { useState } from 'react';
 
 function HomepageHeader() {
-  const { i18n } = useDocusaurusContext();
-  const isEnglish = i18n.currentLocale === 'en';
-
+  const { siteConfig } = useDocusaurusContext();
   return (
     <header className="hero">
       <div className="hero__content">
         <Heading as="h1" className="hero__title">
-          Ruben van der Linde
+          {siteConfig.title}
         </Heading>
-        <p className="hero__subtitle">
-          {isEnglish
-            ? 'Software Developer & Open Source Enthusiast'
-            : 'Software Developer & Open Source Enthousiast'}
-        </p>
+        <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className="hero__cta">
           <Link className="hero__button hero__button--primary" to="/blog">
-            {isEnglish ? 'Blogs' : 'Blogs'}
+            <Translate id="hero.button.blogs">Blogs</Translate>
           </Link>
           <a
             className="hero__button hero__button--secondary"
@@ -31,7 +26,7 @@ function HomepageHeader() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Conduction
+            <Translate id="hero.button.conduction">Conduction</Translate>
           </a>
         </div>
         <div className="hero__socials">
@@ -105,37 +100,54 @@ interface FeatureItem {
 
 // Hook to get translated feature list
 function useFeatureList(): FeatureItem[] {
-  const { i18n } = useDocusaurusContext();
-  const isEnglish = i18n.currentLocale === 'en';
-
   return [
     {
-      title: 'Open Source',
+      title: translate({
+        id: 'feature.openSource.title',
+        message: 'Open Source',
+      }),
       icon: '🚀',
-      description: isEnglish
-        ? 'Contributing to the community and building projects that make a difference. Public Money is Public Code - for better digital government.'
-        : 'Bijdragen aan de community en projecten bouwen die het verschil maken. Public Money is Public Code - voor een betere digitale overheid.',
+      description: translate({
+        id: 'feature.openSource.description',
+        message:
+          'Contributing to the community and building projects that make a difference. Public Money is Public Code - for better digital government.',
+      }),
     },
     {
-      title: isEnglish ? 'AI & Innovation' : 'AI & Innovatie',
+      title: translate({
+        id: 'feature.aiInnovation.title',
+        message: 'AI & Innovation',
+      }),
       icon: '🤖',
-      description: isEnglish
-        ? 'Exploring how artificial intelligence can transform government, with a focus on ethics, transparency, and public values.'
-        : 'Verkennen hoe kunstmatige intelligentie de overheid kan transformeren, met focus op ethiek, transparantie en publieke waarden.',
+      description: translate({
+        id: 'feature.aiInnovation.description',
+        message:
+          'Exploring how artificial intelligence can transform government, with a focus on ethics, transparency, and public values.',
+      }),
     },
     {
-      title: isEnglish ? 'Digital Sovereignty' : 'Digitale Soevereiniteit',
+      title: translate({
+        id: 'feature.digitalSovereignty.title',
+        message: 'Digital Sovereignty',
+      }),
       icon: '🌍',
-      description: isEnglish
-        ? 'Working towards European digital independence. From Eurostack to local open-source solutions for municipalities and SMEs.'
-        : 'Werken aan Europese digitale onafhankelijkheid. Van Eurostack tot lokale open-source oplossingen voor gemeenten en MKB.',
+      description: translate({
+        id: 'feature.digitalSovereignty.description',
+        message:
+          'Working towards European digital independence. From Eurostack to local open-source solutions for municipalities and SMEs.',
+      }),
     },
     {
-      title: isEnglish ? 'Security & Privacy' : 'Beveiliging & Privacy',
+      title: translate({
+        id: 'feature.securityPrivacy.title',
+        message: 'Security & Privacy',
+      }),
       icon: '🔒',
-      description: isEnglish
-        ? 'Focus on secure, privacy-respecting solutions. Control over data and infrastructure for organizations and citizens.'
-        : 'Focus op veilige, privacy-respecterende oplossingen. Controle over data en infrastructuur voor organisaties en burgers.',
+      description: translate({
+        id: 'feature.securityPrivacy.description',
+        message:
+          'Focus on secure, privacy-respecting solutions. Control over data and infrastructure for organizations and citizens.',
+      }),
     },
   ];
 }
