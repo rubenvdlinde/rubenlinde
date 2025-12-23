@@ -542,17 +542,46 @@ article p {
 }
 
 /* Also apply to all content pages except homepage */
+.main-wrapper:not(.homepage-root) {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
 .main-wrapper:not(.homepage-root) .container {
   max-width: 100% !important;
-  width: 100%;
-  padding: 0 2rem;
+  width: 100% !important;
+  padding: 0 !important; /* Remove padding from Docusaurus containers */
 }
 
 /* Ensure footer is full width on all pages */
+.footer {
+  background: #000000 !important;
+  border-top: 2px solid var(--ifm-color-secondary);
+  padding: 3rem 2rem 2rem !important; /* Add horizontal padding directly to footer */
+  font-family: 'Courier New', 'Courier', monospace;
+  width: 100vw !important; /* Force full viewport width */
+  margin-left: calc(
+    -50vw + 50%
+  ) !important; /* Center align and extend to edges */
+  margin-right: calc(-50vw + 50%) !important;
+}
+
+/* Footer container should not add extra margins */
 .footer .container {
   max-width: 100% !important;
+  width: 100% !important;
+  padding: 0 !important; /* Remove padding from container since footer has it */
+  margin: 0 auto !important;
+}
+
+/* Footer links layout */
+.footer__links {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  justify-content: space-around !important;
+  gap: 2rem !important;
   width: 100%;
-  padding: 0 2rem !important;
 }
 
 .blog-card:hover {
@@ -824,20 +853,7 @@ article p {
 }
 
 /* Terminal-style Footer */
-.footer {
-  background: #000000 !important;
-  border-top: 2px solid var(--ifm-color-secondary);
-  padding: 3rem 0 2rem; /* Remove horizontal padding from footer itself */
-  font-family: 'Courier New', 'Courier', monospace;
-}
-
-.footer .container {
-  max-width: 100% !important; /* Full width */
-  width: 100%;
-  padding: 0 2rem !important; /* Add padding to inner container */
-}
-
-.footer__links {
+.blog-card:hover {
   display: flex !important;
   flex-direction: row !important;
   flex-wrap: wrap !important;

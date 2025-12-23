@@ -18,12 +18,10 @@ function BlogPostPageContent({ children }: { children: React.ReactNode }) {
 
   return (
     <BlogLayout>
-      <div className="container margin-vert--lg">
-        <div className="row">
-          {/* Only render the main content column, no sidebars */}
-          <main className="col col--12">{children}</main>
-        </div>
-      </div>
+      {/* No container wrapper - let content be full width */}
+      <main className="margin-vert--lg" style={{ padding: '0 2rem' }}>
+        {children}
+      </main>
     </BlogLayout>
   );
 }
