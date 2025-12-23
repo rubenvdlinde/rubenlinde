@@ -88,17 +88,44 @@
 /* Homepage-specific navbar styling - hide left items on root path */
 @media screen {
   /* Target homepage specifically - hide ALL left navbar items */
-  body:not([class*='docs']):not([class*='blog']) .navbar__items--left {
+  /* Use multiple selectors to catch different scenarios */
+  body.homepage-root .navbar__items--left,
+  body:not([class*='docs']):not([class*='blog']) .navbar__items--left,
+  body:not([class*='docs']):not([class*='blog']):not([class*='page'])
+    .navbar__items--left,
+  html[data-is-root-path='true'] .navbar__items--left {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+  }
+
+  body.homepage-root .navbar__toggle,
+  body:not([class*='docs']):not([class*='blog']) .navbar__toggle,
+  body:not([class*='docs']):not([class*='blog']):not([class*='page'])
+    .navbar__toggle,
+  html[data-is-root-path='true'] .navbar__toggle {
     display: none !important;
   }
 
-  body:not([class*='docs']):not([class*='blog']) .navbar__toggle {
-    display: none !important;
-  }
-
-  body:not([class*='docs']):not([class*='blog']) .navbar {
+  body.homepage-root .navbar,
+  body:not([class*='docs']):not([class*='blog']) .navbar,
+  body:not([class*='docs']):not([class*='blog']):not([class*='page']) .navbar,
+  html[data-is-root-path='true'] .navbar {
     background: rgba(15, 23, 42, 0.6) !important;
     backdrop-filter: blur(10px);
+  }
+
+  /* Extra specific targeting for homepage navbar */
+  body .navbar__items--left > * {
+    display: var(--navbar-left-display, block);
+  }
+
+  body.homepage-root,
+  body:not([class*='docs']):not([class*='blog']):not([class*='page']) {
+    --navbar-left-display: none;
   }
 }
 
