@@ -1020,6 +1020,10 @@ article a {
   color: var(--ifm-color-secondary-light);
 }
 
+[data-theme='light'] .feature-card__description {
+  color: #000000; /* Black text in light mode */
+}
+
 @keyframes blink {
   0%,
   49% {
