@@ -85,20 +85,21 @@
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* Homepage-specific navbar styling */
-body.homepage .navbar__items--left {
-  visibility: hidden !important;
-  width: 0 !important;
-  overflow: hidden !important;
-}
+/* Homepage-specific navbar styling - hide left items on root path */
+@media screen {
+  /* Target homepage specifically - hide ALL left navbar items */
+  body:not([class*='docs']):not([class*='blog']) .navbar__items--left {
+    display: none !important;
+  }
 
-body.homepage .navbar__inner {
-  justify-content: flex-end !important;
-}
+  body:not([class*='docs']):not([class*='blog']) .navbar__toggle {
+    display: none !important;
+  }
 
-body.homepage .navbar {
-  background: rgba(15, 23, 42, 0.5) !important;
-  backdrop-filter: blur(10px);
+  body:not([class*='docs']):not([class*='blog']) .navbar {
+    background: rgba(15, 23, 42, 0.6) !important;
+    backdrop-filter: blur(10px);
+  }
 }
 
 /* Animated Network Background - Site-wide */
