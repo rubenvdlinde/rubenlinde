@@ -334,7 +334,7 @@ body[class*='blog'] .navbar__link {
   position: relative;
   background: transparent;
   overflow: hidden;
-  min-height: 600px;
+  min-height: 450px; /* Reduced from 600px */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -344,7 +344,7 @@ body[class*='blog'] .navbar__link {
   position: relative;
   z-index: 1;
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 3rem 2rem 2rem; /* Reduced vertical padding */
 }
 
 .hero__title {
@@ -421,7 +421,8 @@ body[class*='blog'] .navbar__link {
   display: flex;
   gap: 2rem;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 1.5rem; /* Reduced from 2rem */
+  margin-bottom: 1rem; /* Added to reduce space below */
   padding-top: 0;
   margin-bottom: 2rem; /* Reduced spacing before command */
 }
@@ -462,7 +463,7 @@ body[class*='blog'] .navbar__link {
 
 /* Features Section */
 .features-section {
-  padding: 4rem 0;
+  padding: 2rem 0 4rem; /* Reduced top padding from 4rem to 2rem */
   background: transparent;
   position: relative;
 }
