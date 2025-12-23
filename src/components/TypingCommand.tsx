@@ -83,9 +83,9 @@ export default function TypingCommand({
                   setTimeout(() => {
                     setShowCards(true);
                     onComplete();
-                    // Remove all command lines after cards appear
+                    // Keep only the sudo command, remove first two
                     setTimeout(() => {
-                      setSteps([]); // Remove all lines
+                      setSteps([allSteps[2]]); // Keep only sudo command
                     }, 500);
                   }, 300);
                 }
