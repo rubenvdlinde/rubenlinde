@@ -571,7 +571,7 @@ body[class*='blog'] .navbar__link {
   gap: 2rem;
   justify-content: center;
   margin-top: 1.5rem; /* Reduced from 2rem */
-  margin-bottom: 0.5rem; /* Reduced from 2rem - move expertise blocks up */
+  margin-bottom: 0rem; /* No margin - expertise blocks directly below */
   padding-top: 0;
 }
 

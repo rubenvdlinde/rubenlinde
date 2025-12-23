@@ -2,7 +2,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
-import Translate from '@docusaurus/Translate';
+import Translate, { translate } from '@docusaurus/Translate';
 import TerminalFeature from '../components/TerminalFeature';
 import TypingCommand from '../components/TypingCommand';
 import { useState } from 'react';
@@ -129,52 +129,52 @@ const FeatureList: FeatureItem[] = [
 function useFeatureList(): FeatureItem[] {
   return [
     {
-      title: Translate({
+      title: translate({
         id: 'feature.openSource.title',
         message: 'Open Source',
-      }).props.children as string,
+      }),
       icon: '🚀',
-      description: Translate({
+      description: translate({
         id: 'feature.openSource.description',
         message:
           'Bijdragen aan de community en projecten bouwen die het verschil maken. Public Money is Public Code - voor een betere digitale overheid.',
-      }).props.children as string,
+      }),
     },
     {
-      title: Translate({
+      title: translate({
         id: 'feature.aiInnovation.title',
         message: 'AI & Innovation',
-      }).props.children as string,
+      }),
       icon: '🤖',
-      description: Translate({
+      description: translate({
         id: 'feature.aiInnovation.description',
         message:
           'Verkennen hoe kunstmatige intelligentie de overheid kan transformeren, met focus op ethiek, transparantie en publieke waarden.',
-      }).props.children as string,
+      }),
     },
     {
-      title: Translate({
+      title: translate({
         id: 'feature.digitalSovereignty.title',
         message: 'Digital Sovereignty',
-      }).props.children as string,
+      }),
       icon: '🌍',
-      description: Translate({
+      description: translate({
         id: 'feature.digitalSovereignty.description',
         message:
           'Werken aan Europese digitale onafhankelijkheid. Van Eurostack tot lokale open-source oplossingen voor gemeenten en MKB.',
-      }).props.children as string,
+      }),
     },
     {
-      title: Translate({
+      title: translate({
         id: 'feature.securityPrivacy.title',
         message: 'Security & Privacy',
-      }).props.children as string,
+      }),
       icon: '🔒',
-      description: Translate({
+      description: translate({
         id: 'feature.securityPrivacy.description',
         message:
           'Focus op veilige, privacy-respecterende oplossingen. Controle over data en infrastructuur voor organisaties en burgers.',
-      }).props.children as string,
+      }),
     },
   ];
 }
