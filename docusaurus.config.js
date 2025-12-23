@@ -75,8 +75,8 @@ const config = {
       navbar: {
           title: 'Ruben van der Linde',
         logo: {
-          alt: 'Ruben Linde Logo',
-          src: 'img/logo.svg',
+          alt: 'Ruben van der Linde',
+          src: 'https://github.com/rubenvdlinde.png',
         },
         items: [
           {
