@@ -47,9 +47,15 @@ function BlogListPageContent(props: Props): JSX.Element {
                 readingTime,
               } = postMetadata;
 
-              // Get the first author
+              // Get the first author or use default
               const author =
-                authors && authors.length > 0 ? authors[0] : undefined;
+                authors && authors.length > 0
+                  ? authors[0]
+                  : {
+                      name: 'Ruben van der Linde',
+                      title: 'Software Developer',
+                      imageURL: 'https://github.com/rubenvdlinde.png',
+                    };
 
               // Determine status from frontMatter
               const status = frontMatter.status || undefined;
@@ -61,15 +67,7 @@ function BlogListPageContent(props: Props): JSX.Element {
                   permalink={permalink}
                   date={date}
                   readingTime={readingTime}
-                  author={
-                    author
-                      ? {
-                          name: author.name,
-                          title: author.title,
-                          imageURL: author.imageURL,
-                        }
-                      : undefined
-                  }
+                  author={author}
                   description={description}
                   status={status}
                   tags={tags}
