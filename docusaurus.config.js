@@ -51,10 +51,7 @@ const config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/rubenvdlinde/rubenlinde/tree/main/',
+          // Edit URL removed - we don't want "Edit this page" on blog posts
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',

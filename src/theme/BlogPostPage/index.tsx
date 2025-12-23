@@ -21,6 +21,8 @@ function BlogPostPageContent({ children }: { children: React.ReactNode }) {
       {/* No container wrapper - let content be full width */}
       <main className="margin-vert--lg" style={{ padding: '0 2rem' }}>
         {children}
+        {/* Add paginator inside main for proper display */}
+        <BlogPostPaginator />
       </main>
     </BlogLayout>
   );
@@ -40,7 +42,6 @@ export default function BlogPostPage(props: Props): JSX.Element {
           <BlogPostItem>
             <BlogPostContent />
           </BlogPostItem>
-          <BlogPostPaginator />
         </BlogPostPageContent>
       </HtmlClassNameProvider>
     </BlogPostProvider>
