@@ -854,17 +854,6 @@ article p {
 }
 
 /* Terminal-style Footer */
-.blog-card:hover {
-  display: flex !important;
-  flex-direction: row !important;
-  flex-wrap: wrap !important;
-  justify-content: space-around !important;
-  gap: 2rem !important;
-  max-width: 1400px; /* Match blog page width */
-  margin: 0 auto;
-  width: 100%;
-}
-
 .footer__col {
   flex: 1 !important;
   min-width: 200px !important;
