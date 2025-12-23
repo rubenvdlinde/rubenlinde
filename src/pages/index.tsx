@@ -138,7 +138,6 @@ export default function Home(): JSX.Element {
         <section className="features-section">
           <div className="container">
             <TypingCommand
-              command="$ cat expertise.txt"
               onComplete={() => setShowFeatures(true)}
               delay={500}
             />
