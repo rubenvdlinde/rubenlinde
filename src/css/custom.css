@@ -1093,7 +1093,7 @@ article a {
 
 /* Light Mode Overrides */
 [data-theme='light'] .feature-card {
-  background: rgba(255, 255, 255, 0.7) !important;
+  background: rgba(255, 255, 255, 0.85) !important;
   backdrop-filter: blur(5px);
   color: #000000 !important;
   border-color: var(--ifm-color-secondary) !important;
@@ -1108,7 +1108,7 @@ article a {
 }
 
 [data-theme='light'] .blog-card {
-  background: rgba(255, 255, 255, 0.7) !important;
+  background: rgba(255, 255, 255, 0.85) !important;
   backdrop-filter: blur(5px);
   color: #000000 !important;
   border-color: var(--ifm-color-secondary) !important;
@@ -1128,7 +1128,7 @@ article a {
 }
 
 [data-theme='light'] .footer {
-  background: rgba(255, 255, 255, 0.7) !important;
+  background: rgba(255, 255, 255, 0.85) !important;
   backdrop-filter: blur(5px);
   color: #000000 !important;
 }
@@ -1147,7 +1147,7 @@ article a {
 
 /* Blog post content in light mode */
 [data-theme='light'] article[itemtype='http://schema.org/BlogPosting'] {
-  background: rgba(255, 255, 255, 0.7) !important;
+  background: rgba(255, 255, 255, 0.85) !important;
   backdrop-filter: blur(5px);
   color: #000000 !important;
   padding: 2rem;
@@ -1320,7 +1320,7 @@ html {
 
 /* Light mode overrides for tag filter */
 [data-theme='light'] .blog-tags-filter {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(5px);
   border-color: var(--ifm-color-secondary);
 }
