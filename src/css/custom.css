@@ -705,7 +705,8 @@ article p {
 
 /* Ensure footer is full width on all pages */
 .footer {
-  background: #000000 !important;
+  background: rgba(10, 10, 10, 0.7) !important;
+  backdrop-filter: blur(5px);
   border-top: 2px solid var(--ifm-color-secondary);
   padding: 3rem 2rem 2rem !important; /* Add horizontal padding directly to footer */
   font-family: 'Courier New', 'Courier', monospace;
@@ -1082,10 +1083,6 @@ article p {
   font-size: 0.9rem;
 }
 
-[data-theme='dark'] .footer {
-  background: #000000 !important;
-}
-
 [data-theme='dark'] .footer__link-item {
   color: var(--ifm-color-secondary-light) !important;
 }
@@ -1096,8 +1093,8 @@ article p {
 
 /* Light Mode Overrides */
 [data-theme='light'] .feature-card {
-  background: rgba(255, 255, 255, 0.95) !important;
-  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.7) !important;
+  backdrop-filter: blur(5px);
   color: #000000 !important;
   border-color: var(--ifm-color-secondary) !important;
 }
@@ -1111,8 +1108,8 @@ article p {
 }
 
 [data-theme='light'] .blog-card {
-  background: rgba(255, 255, 255, 0.95) !important;
-  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.7) !important;
+  backdrop-filter: blur(5px);
   color: #000000 !important;
   border-color: var(--ifm-color-secondary) !important;
 }
@@ -1131,8 +1128,8 @@ article p {
 }
 
 [data-theme='light'] .footer {
-  background: rgba(255, 255, 255, 0.95) !important;
-  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.7) !important;
+  backdrop-filter: blur(5px);
   color: #000000 !important;
 }
 
@@ -1150,8 +1147,8 @@ article p {
 
 /* Blog post content in light mode */
 [data-theme='light'] article[itemtype='http://schema.org/BlogPosting'] {
-  background: rgba(255, 255, 255, 0.95) !important;
-  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.7) !important;
+  backdrop-filter: blur(5px);
   color: #000000 !important;
   padding: 2rem;
   border-radius: 8px;
@@ -1323,8 +1320,8 @@ html {
 
 /* Light mode overrides for tag filter */
 [data-theme='light'] .blog-tags-filter {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(5px);
   border-color: var(--ifm-color-secondary);
 }
 
