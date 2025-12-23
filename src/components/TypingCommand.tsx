@@ -20,6 +20,7 @@ export default function TypingCommand({
   const [isTyping, setIsTyping] = useState(false);
   const [showCards, setShowCards] = useState(false);
   const [hasStarted, setHasStarted] = useState(false);
+  const [isComplete, setIsComplete] = useState(false); // Add completion flag
   const commandRef = useRef<HTMLDivElement>(null);
 
   const allSteps: Step[] = [
@@ -51,7 +52,8 @@ export default function TypingCommand({
   }, [hasStarted]);
 
   useEffect(() => {
-    if (!hasStarted || currentStepIndex >= allSteps.length) return;
+    if (!hasStarted || currentStepIndex >= allSteps.length || isComplete)
+      return;
 
     const step = allSteps[currentStepIndex];
     const startDelay = currentStepIndex === 0 ? delay : 800;
@@ -80,6 +82,7 @@ export default function TypingCommand({
                   setCurrentStepIndex(currentStepIndex + 1);
                 } else {
                   // All steps done, show cards
+                  setIsComplete(true); // Mark as complete to stop further animations
                   setTimeout(() => {
                     setShowCards(true);
                     onComplete();
