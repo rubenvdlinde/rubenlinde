@@ -999,3 +999,107 @@ article p {
 [data-theme='dark'] .footer__link-item:hover {
   color: var(--ifm-color-secondary-lightest) !important;
 }
+
+/* Light Mode Overrides */
+[data-theme='light'] .feature-card {
+  background: #ffffff !important;
+  color: #000000 !important;
+  border-color: var(--ifm-color-secondary) !important;
+}
+
+[data-theme='light'] .feature-card__title {
+  color: var(--ifm-color-secondary) !important;
+}
+
+[data-theme='light'] .feature-card__description {
+  color: #000000 !important;
+}
+
+[data-theme='light'] .blog-card {
+  background: #ffffff !important;
+  color: #000000 !important;
+  border-color: var(--ifm-color-secondary) !important;
+}
+
+[data-theme='light'] .blog-card__status,
+[data-theme='light'] .blog-card__meta,
+[data-theme='light'] .blog-card__description,
+[data-theme='light'] .blog-card p {
+  color: #000000 !important;
+}
+
+[data-theme='light'] .blog-card h1,
+[data-theme='light'] .blog-card h2,
+[data-theme='light'] .blog-card h3 {
+  color: var(--ifm-color-secondary) !important;
+}
+
+[data-theme='light'] .footer {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+
+[data-theme='light'] .footer__title,
+[data-theme='light'] .footer__link-item,
+[data-theme='light'] .footer__copyright,
+[data-theme='light'] .footer-prompt,
+[data-theme='light'] .footer-output {
+  color: #000000 !important;
+}
+
+[data-theme='light'] .footer__link-item:hover {
+  color: var(--ifm-color-secondary) !important;
+}
+
+/* Blog post content in light mode */
+[data-theme='light'] article[itemtype='http://schema.org/BlogPosting'] {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+
+[data-theme='light'] article[itemtype='http://schema.org/BlogPosting'] h1,
+[data-theme='light'] article[itemtype='http://schema.org/BlogPosting'] h2,
+[data-theme='light'] article[itemtype='http://schema.org/BlogPosting'] h3,
+[data-theme='light'] article[itemtype='http://schema.org/BlogPosting'] h4,
+[data-theme='light'] article[itemtype='http://schema.org/BlogPosting'] h5,
+[data-theme='light'] article[itemtype='http://schema.org/BlogPosting'] h6 {
+  color: var(--ifm-color-secondary) !important;
+}
+
+[data-theme='light'] article[itemtype='http://schema.org/BlogPosting'] p,
+[data-theme='light'] article[itemtype='http://schema.org/BlogPosting'] li,
+[data-theme='light'] article[itemtype='http://schema.org/BlogPosting'] span,
+[data-theme='light'] article[itemtype='http://schema.org/BlogPosting'] time {
+  color: #000000 !important;
+}
+
+[data-theme='light'] article header {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* Blog post page wrapper in light mode */
+[data-theme='light'] .main-wrapper {
+  background: #ffffff !important;
+}
+
+[data-theme='light'] main {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+
+[data-theme='light'] .markdown h1,
+[data-theme='light'] .markdown h2,
+[data-theme='light'] .markdown h3 {
+  color: var(--ifm-color-secondary) !important;
+}
+
+[data-theme='light'] .markdown p,
+[data-theme='light'] .markdown li {
+  color: #000000 !important;
+}
+
+[data-theme='light'] .admonition {
+  background: #f5f5f5 !important;
+  color: #000000 !important;
+}
