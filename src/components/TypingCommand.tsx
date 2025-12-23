@@ -5,17 +5,24 @@ interface TypingCommandProps {
   delay?: number;
 }
 
+interface Step {
+  text: string;
+  type: 'command' | 'error';
+}
+
 export default function TypingCommand({
   onComplete,
   delay = 0,
 }: TypingCommandProps) {
-  const [displayedText, setDisplayedText] = useState('');
-  const [currentStep, setCurrentStep] = useState(0);
-  const [isComplete, setIsComplete] = useState(false);
+  const [steps, setSteps] = useState<Step[]>([]);
+  const [currentStepIndex, setCurrentStepIndex] = useState(0);
+  const [currentText, setCurrentText] = useState('');
+  const [isTyping, setIsTyping] = useState(false);
+  const [showCards, setShowCards] = useState(false);
   const [hasStarted, setHasStarted] = useState(false);
-  const commandRef = useRef<HTMLHeadingElement>(null);
+  const commandRef = useRef<HTMLDivElement>(null);
 
-  const steps = [
+  const allSteps: Step[] = [
     { text: '$ cat expertise.txt', type: 'command' },
     { text: 'cat: expertise.txt: Permission denied', type: 'error' },
     { text: '$ sudo cat expertise.txt', type: 'command' },
@@ -44,40 +51,51 @@ export default function TypingCommand({
   }, [hasStarted]);
 
   useEffect(() => {
-    if (!hasStarted || currentStep >= steps.length) return;
+    if (!hasStarted || currentStepIndex >= allSteps.length) return;
 
-    const step = steps[currentStep];
-    const startDelay = currentStep === 0 ? delay : 800; // Delay between steps
+    const step = allSteps[currentStepIndex];
+    const startDelay = currentStepIndex === 0 ? delay : 800;
 
     const timeoutId = setTimeout(() => {
+      setIsTyping(true);
       let currentIndex = 0;
 
       const typingInterval = setInterval(
         () => {
           if (currentIndex <= step.text.length) {
-            setDisplayedText(step.text.slice(0, currentIndex));
+            setCurrentText(step.text.slice(0, currentIndex));
             currentIndex++;
           } else {
             clearInterval(typingInterval);
+            setIsTyping(false);
 
-            // Move to next step after a pause
+            // Add completed step to the list
+            setSteps((prev) => [...prev, step]);
+            setCurrentText('');
+
+            // Move to next step or finish
             setTimeout(
               () => {
-                if (currentStep < steps.length - 1) {
-                  setCurrentStep(currentStep + 1);
+                if (currentStepIndex < allSteps.length - 1) {
+                  setCurrentStepIndex(currentStepIndex + 1);
                 } else {
-                  setIsComplete(true);
+                  // All steps done, show cards
                   setTimeout(() => {
+                    setShowCards(true);
                     onComplete();
+                    // Remove first two steps after cards appear
+                    setTimeout(() => {
+                      setSteps([allSteps[2]]); // Keep only sudo command
+                    }, 500);
                   }, 300);
                 }
               },
-              step.type === 'error' ? 1500 : 500
+              step.type === 'error' ? 1000 : 500
             );
           }
         },
         step.type === 'error' ? 40 : 80
-      ); // Faster for error message
+      );
 
       return () => {
         clearInterval(typingInterval);
@@ -87,10 +105,7 @@ export default function TypingCommand({
     return () => {
       clearTimeout(timeoutId);
     };
-  }, [hasStarted, currentStep, delay, onComplete, steps]);
-
-  const step = steps[currentStep];
-  const isError = step?.type === 'error';
+  }, [hasStarted, currentStepIndex, delay, onComplete]);
 
   return (
     <div
@@ -98,19 +113,40 @@ export default function TypingCommand({
       className="text--center margin-bottom--xl"
       style={{ minHeight: '2.5rem' }}
     >
-      <h2
-        className="typing-command"
-        style={{
-          color: isError ? '#ff4444' : 'var(--ifm-color-secondary)',
-          fontFamily: 'Courier New, monospace',
-          textTransform: 'uppercase',
-          letterSpacing: '3px',
-          marginBottom: '0.5rem',
-        }}
-      >
-        {displayedText}
-        {!isComplete && hasStarted && <span className="typing-cursor">_</span>}
-      </h2>
+      {steps.map((step, index) => (
+        <h2
+          key={index}
+          className="typing-command"
+          style={{
+            color:
+              step.type === 'error' ? '#ff4444' : 'var(--ifm-color-secondary)',
+            fontFamily: 'Courier New, monospace',
+            textTransform: 'uppercase',
+            letterSpacing: '3px',
+            marginBottom: '0.5rem',
+          }}
+        >
+          {step.text}
+        </h2>
+      ))}
+      {currentText && (
+        <h2
+          className="typing-command"
+          style={{
+            color:
+              allSteps[currentStepIndex]?.type === 'error'
+                ? '#ff4444'
+                : 'var(--ifm-color-secondary)',
+            fontFamily: 'Courier New, monospace',
+            textTransform: 'uppercase',
+            letterSpacing: '3px',
+            marginBottom: '0.5rem',
+          }}
+        >
+          {currentText}
+          {isTyping && <span className="typing-cursor">_</span>}
+        </h2>
+      )}
     </div>
   );
 }
