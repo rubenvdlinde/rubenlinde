@@ -617,9 +617,9 @@ body[class*='blog'] .navbar__link {
   position: relative;
 }
 
-/* Blog Page Styling */
-.blog-wrapper,
-main article {
+/* Blog Page Styling - Dark mode default */
+[data-theme='dark'] .blog-wrapper,
+[data-theme='dark'] main article {
   background: rgba(0, 0, 0, 0.85);
   padding: 2rem;
   border-radius: 8px;
@@ -640,8 +640,8 @@ article a {
   color: var(--ifm-color-secondary-light) !important;
 }
 
-.blog-wrapper .card,
-.blog-wrapper .margin-bottom--lg {
+[data-theme='dark'] .blog-wrapper .card,
+[data-theme='dark'] .blog-wrapper .margin-bottom--lg {
   background: rgba(0, 0, 0, 0.7) !important;
   border: 1px solid var(--ifm-color-secondary);
   padding: 1.5rem;
@@ -653,19 +653,19 @@ article a {
   color: var(--ifm-color-secondary) !important;
 }
 
-.blog-wrapper .card p,
-.blog-wrapper .margin-bottom--lg p,
-article p {
+[data-theme='dark'] .blog-wrapper .card p,
+[data-theme='dark'] .blog-wrapper .margin-bottom--lg p,
+[data-theme='dark'] article p {
   color: rgba(255, 255, 255, 0.9) !important;
 }
 
-.blog-wrapper .card footer,
-.blog-wrapper .margin-bottom--lg footer {
+[data-theme='dark'] .blog-wrapper .card footer,
+[data-theme='dark'] .blog-wrapper .margin-bottom--lg footer {
   color: rgba(255, 255, 255, 0.7) !important;
 }
 
-/* Blog Card Component */
-.blog-card {
+/* Blog Card Component - Dark mode default */
+[data-theme='dark'] .blog-card {
   background: rgba(0, 0, 0, 0.85);
   padding: 2rem;
   border-radius: 8px;
