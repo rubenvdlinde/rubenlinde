@@ -2,6 +2,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
+import Translate from '@docusaurus/Translate';
 import TerminalFeature from '../components/TerminalFeature';
 import TypingCommand from '../components/TypingCommand';
 import { useState } from 'react';
@@ -17,7 +18,7 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className="hero__cta">
           <Link className="hero__button hero__button--primary" to="/blog">
-            Blogs
+            <Translate id="hero.button.blogs">Blogs</Translate>
           </Link>
           <a
             className="hero__button hero__button--secondary"
@@ -25,7 +26,7 @@ function HomepageHeader() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Conduction
+            <Translate id="hero.button.conduction">Conduction</Translate>
           </a>
         </div>
         <div className="hero__socials">
@@ -124,9 +125,64 @@ const FeatureList: FeatureItem[] = [
   },
 ];
 
+// Hook to get translated feature list
+function useFeatureList(): FeatureItem[] {
+  return [
+    {
+      title: Translate({
+        id: 'feature.openSource.title',
+        message: 'Open Source',
+      }).props.children as string,
+      icon: '🚀',
+      description: Translate({
+        id: 'feature.openSource.description',
+        message:
+          'Bijdragen aan de community en projecten bouwen die het verschil maken. Public Money is Public Code - voor een betere digitale overheid.',
+      }).props.children as string,
+    },
+    {
+      title: Translate({
+        id: 'feature.aiInnovation.title',
+        message: 'AI & Innovation',
+      }).props.children as string,
+      icon: '🤖',
+      description: Translate({
+        id: 'feature.aiInnovation.description',
+        message:
+          'Verkennen hoe kunstmatige intelligentie de overheid kan transformeren, met focus op ethiek, transparantie en publieke waarden.',
+      }).props.children as string,
+    },
+    {
+      title: Translate({
+        id: 'feature.digitalSovereignty.title',
+        message: 'Digital Sovereignty',
+      }).props.children as string,
+      icon: '🌍',
+      description: Translate({
+        id: 'feature.digitalSovereignty.description',
+        message:
+          'Werken aan Europese digitale onafhankelijkheid. Van Eurostack tot lokale open-source oplossingen voor gemeenten en MKB.',
+      }).props.children as string,
+    },
+    {
+      title: Translate({
+        id: 'feature.securityPrivacy.title',
+        message: 'Security & Privacy',
+      }).props.children as string,
+      icon: '🔒',
+      description: Translate({
+        id: 'feature.securityPrivacy.description',
+        message:
+          'Focus op veilige, privacy-respecterende oplossingen. Controle over data en infrastructuur voor organisaties en burgers.',
+      }).props.children as string,
+    },
+  ];
+}
+
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   const [showFeatures, setShowFeatures] = useState(false);
+  const featureList = useFeatureList();
 
   return (
     <Layout
@@ -149,7 +205,7 @@ export default function Home(): JSX.Element {
               }}
             >
               {showFeatures &&
-                FeatureList.map((props, idx) => (
+                featureList.map((props, idx) => (
                   <TerminalFeature
                     key={idx}
                     {...props}

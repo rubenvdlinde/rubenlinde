@@ -1,0 +1,62 @@
+{
+  "title": {
+    "message": "Welkom bij {siteTitle}",
+    "description": "The homepage welcome message"
+  },
+  "description": {
+    "message": "Persoonlijke website en blog van Ruben van der Linde - Software Developer, Open Source Advocate, AI Enthoeisiast",
+    "description": "The homepage meta description"
+  },
+  "hero.title": {
+    "message": "Ruben van der Linde",
+    "description": "The hero title on the homepage"
+  },
+  "hero.tagline": {
+    "message": "Software Developer & Open Source Enthusiast",
+    "description": "The hero tagline on the homepage"
+  },
+  "hero.button.blogs": {
+    "message": "Blogs",
+    "description": "Label for blogs button"
+  },
+  "hero.button.conduction": {
+    "message": "Conduction",
+    "description": "Label for conduction button"
+  },
+  "feature.openSource.title": {
+    "message": "Open Source",
+    "description": "Open Source feature card title"
+  },
+  "feature.openSource.description": {
+    "message": "Bijdragen aan de community en projecten bouwen die het verschil maken. Public Money is Public Code - voor een betere digitale overheid.",
+    "description": "Open Source feature card description"
+  },
+  "feature.aiInnovation.title": {
+    "message": "AI & Innovation",
+    "description": "AI & Innovation feature card title"
+  },
+  "feature.aiInnovation.description": {
+    "message": "Verkennen hoe kunstmatige intelligentie de overheid kan transformeren, met focus op ethiek, transparantie en publieke waarden.",
+    "description": "AI & Innovation feature card description"
+  },
+  "feature.digitalSovereignty.title": {
+    "message": "Digital Sovereignty",
+    "description": "Digital Sovereignty feature card title"
+  },
+  "feature.digitalSovereignty.description": {
+    "message": "Werken aan Europese digitale onafhankelijkheid. Van Eurostack tot lokale open-source oplossingen voor gemeenten en MKB.",
+    "description": "Digital Sovereignty feature card description"
+  },
+  "feature.securityPrivacy.title": {
+    "message": "Security & Privacy",
+    "description": "Security & Privacy feature card title"
+  },
+  "feature.securityPrivacy.description": {
+    "message": "Focus op veilige, privacy-respecterende oplossingen. Controle over data en infrastructuur voor organisaties en burgers.",
+    "description": "Security & Privacy feature card description"
+  },
+  "command.expertise": {
+    "message": "$ cat expertise.txt",
+    "description": "Terminal command for expertise section"
+  }
+}
