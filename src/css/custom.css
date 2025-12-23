@@ -658,6 +658,29 @@ article p {
   padding: 0 2rem;
 }
 
+/* Typing Command Animation */
+.typing-command {
+  position: relative;
+}
+
+.typing-cursor {
+  display: inline-block;
+  margin-left: 4px;
+  animation: cursorBlink 1s infinite;
+  color: var(--ifm-color-secondary);
+}
+
+@keyframes cursorBlink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
 .feature-card {
   background: rgba(10, 10, 10, 0.7); /* Semi-transparent black */
   padding: 2rem;

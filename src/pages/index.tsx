@@ -3,6 +3,8 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import TerminalFeature from '../components/TerminalFeature';
+import TypingCommand from '../components/TypingCommand';
+import { useState } from 'react';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -124,6 +126,8 @@ const FeatureList: FeatureItem[] = [
 
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
+  const [showFeatures, setShowFeatures] = useState(false);
+
   return (
     <Layout
       title={`Welcome to ${siteConfig.title}`}
@@ -133,22 +137,22 @@ export default function Home(): JSX.Element {
       <main>
         <section className="features-section">
           <div className="container">
-            <Heading
-              as="h2"
-              className="text--center margin-bottom--xl"
+            <TypingCommand
+              command="$ cat expertise.txt"
+              onComplete={() => setShowFeatures(true)}
+              delay={500}
+            />
+            <div
+              className="features-grid"
               style={{
-                color: 'var(--ifm-color-secondary)',
-                fontFamily: 'Courier New, monospace',
-                textTransform: 'uppercase',
-                letterSpacing: '3px',
+                opacity: showFeatures ? 1 : 0,
+                transition: 'opacity 0.5s ease-in',
               }}
             >
-              $ cat expertise.txt
-            </Heading>
-            <div className="features-grid">
-              {FeatureList.map((props, idx) => (
-                <TerminalFeature key={idx} {...props} delay={idx * 1500} />
-              ))}
+              {showFeatures &&
+                FeatureList.map((props, idx) => (
+                  <TerminalFeature key={idx} {...props} delay={idx * 1500} />
+                ))}
             </div>
           </div>
         </section>
