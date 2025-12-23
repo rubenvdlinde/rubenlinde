@@ -154,7 +154,7 @@ html[data-is-root-path='true'] .navbar {
   right: 15px;
   z-index: 1000;
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* Horizontal layout like homepage */
   gap: 10px;
   align-items: center;
 }
