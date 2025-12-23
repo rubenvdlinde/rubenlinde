@@ -19,7 +19,7 @@
   --ifm-color-secondary-dark: #d34e0b;
   --ifm-color-secondary-darker: #c74a0a;
   --ifm-color-secondary-darkest: #a43d08;
-  --ifm-color-secondary-light: #f1620d;
+  --ifm-color-secondary-light: #ec6a2d;
   --ifm-color-secondary-lighter: #f2680e;
   --ifm-color-secondary-lightest: #f47a26;
 
@@ -33,7 +33,7 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  /* Dark Blue and Orange for dark mode */
+  /* Use same orange for dark mode */
   --ifm-color-primary: #3b82f6; /* Brighter blue for dark mode */
   --ifm-color-primary-dark: #2563eb;
   --ifm-color-primary-darker: #1d4ed8;
@@ -42,13 +42,13 @@
   --ifm-color-primary-lighter: #93c5fd;
   --ifm-color-primary-lightest: #bfdbfe;
 
-  --ifm-color-secondary: #fb923c; /* Brighter orange for dark mode */
-  --ifm-color-secondary-dark: #f97316;
-  --ifm-color-secondary-darker: #ea580c;
-  --ifm-color-secondary-darkest: #c2410c;
-  --ifm-color-secondary-light: #fdba74;
-  --ifm-color-secondary-lighter: #fed7aa;
-  --ifm-color-secondary-lightest: #ffedd5;
+  --ifm-color-secondary: #ea580c; /* Same orange as light mode */
+  --ifm-color-secondary-dark: #d34e0b;
+  --ifm-color-secondary-darker: #c74a0a;
+  --ifm-color-secondary-darkest: #a43d08;
+  --ifm-color-secondary-light: #ec6a2d;
+  --ifm-color-secondary-lighter: #f2680e;
+  --ifm-color-secondary-lightest: #f47a26;
 
   --docusaurus-highlighted-code-line-bg: rgba(59, 130, 246, 0.15);
 
@@ -446,7 +446,7 @@ article p {
 }
 
 .feature-card {
-  background: #0a0a0a;
+  background: rgba(10, 10, 10, 0.7); /* Semi-transparent black */
   padding: 2rem;
   border-radius: 0;
   border: 2px solid var(--ifm-color-secondary);
@@ -455,6 +455,7 @@ article p {
   position: relative;
   overflow: hidden;
   font-family: 'Courier New', 'Courier', monospace;
+  backdrop-filter: blur(5px); /* Add slight blur to background */
 }
 
 .feature-card:hover {
