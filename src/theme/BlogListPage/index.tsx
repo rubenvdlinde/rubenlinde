@@ -35,8 +35,10 @@ function BlogListPageContent(props: Props): JSX.Element {
   const allTags = useMemo(() => {
     const tagSet = new Set<string>();
     items.forEach(({ content: BlogPostContent }) => {
-      const { tags } = BlogPostContent.metadata;
-      tags?.forEach((tag) => tagSet.add(tag.label));
+      // Check if metadata exists before accessing tags
+      if (BlogPostContent?.metadata?.tags) {
+        BlogPostContent.metadata.tags.forEach((tag) => tagSet.add(tag.label));
+      }
     });
     return Array.from(tagSet).sort();
   }, [items]);
@@ -45,6 +47,8 @@ function BlogListPageContent(props: Props): JSX.Element {
   const filteredItems = useMemo(() => {
     if (!selectedTag) return items;
     return items.filter(({ content: BlogPostContent }) => {
+      // Check if metadata exists before accessing tags
+      if (!BlogPostContent?.metadata?.tags) return false;
       const { tags } = BlogPostContent.metadata;
       return tags?.some((tag) => tag.label === selectedTag);
     });
@@ -90,6 +94,12 @@ function BlogListPageContent(props: Props): JSX.Element {
         <div className="row">
           <div className="col col--12">
             {filteredItems.map(({ content: BlogPostContent }) => {
+              // Check if metadata exists
+              if (!BlogPostContent?.metadata) {
+                console.error('Blog post missing metadata:', BlogPostContent);
+                return null;
+              }
+
               const { metadata: postMetadata, frontMatter } = BlogPostContent;
               const {
                 title,
@@ -112,7 +122,7 @@ function BlogListPageContent(props: Props): JSX.Element {
                     };
 
               // Determine status from frontMatter
-              const status = frontMatter.status || undefined;
+              const status = frontMatter?.status || undefined;
 
               return (
                 <BlogCard
