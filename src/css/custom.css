@@ -578,11 +578,12 @@ article p {
 }
 
 [data-theme='dark'] .features-section {
-  background: #000000;
+  background: transparent;
 }
 
 [data-theme='dark'] .feature-card {
-  background: #0a0a0a;
+  background: rgba(10, 10, 10, 0.7);
+  backdrop-filter: blur(5px);
   border-color: var(--ifm-color-secondary-light);
 }
 
