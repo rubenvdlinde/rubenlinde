@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useMemo } from 'react';
 import clsx from 'clsx';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import {
@@ -30,12 +30,67 @@ function BlogListPageMetadata(props: Props): JSX.Element {
 
 function BlogListPageContent(props: Props): JSX.Element {
   const { metadata, items } = props;
+  const [selectedTag, setSelectedTag] = useState<string | null>(null);
+
+  // Extract all unique tags from all blog posts
+  const allTags = useMemo(() => {
+    const tagSet = new Set<string>();
+    items.forEach(({ content: BlogPostContent }) => {
+      const { tags } = BlogPostContent.metadata;
+      tags?.forEach((tag) => tagSet.add(tag.label));
+    });
+    return Array.from(tagSet).sort();
+  }, [items]);
+
+  // Filter items based on selected tag
+  const filteredItems = useMemo(() => {
+    if (!selectedTag) return items;
+    return items.filter(({ content: BlogPostContent }) => {
+      const { tags } = BlogPostContent.metadata;
+      return tags?.some((tag) => tag.label === selectedTag);
+    });
+  }, [items, selectedTag]);
+
   return (
     <BlogLayout>
       <div className="container margin-vert--lg">
+        {/* Tag Filter Section */}
+        <div className="blog-tags-filter">
+          <div className="blog-tags-filter__header">
+            <h2>Filter op Tags</h2>
+            {selectedTag && (
+              <button
+                className="blog-tags-filter__clear"
+                onClick={() => setSelectedTag(null)}
+              >
+                ✕ Wis Filter
+              </button>
+            )}
+          </div>
+          <div className="blog-tags-filter__tags">
+            {allTags.map((tag) => (
+              <button
+                key={tag}
+                className={clsx('blog-tag-button', {
+                  'blog-tag-button--active': selectedTag === tag,
+                })}
+                onClick={() => setSelectedTag(selectedTag === tag ? null : tag)}
+              >
+                {tag}
+              </button>
+            ))}
+          </div>
+          {selectedTag && (
+            <div className="blog-tags-filter__count">
+              {filteredItems.length} blog{filteredItems.length !== 1 ? 's' : ''}{' '}
+              gevonden
+            </div>
+          )}
+        </div>
+
         <div className="row">
           <div className="col col--12">
-            {items.map(({ content: BlogPostContent }) => {
+            {filteredItems.map(({ content: BlogPostContent }) => {
               const { metadata: postMetadata, frontMatter } = BlogPostContent;
               const {
                 title,
@@ -74,7 +129,7 @@ function BlogListPageContent(props: Props): JSX.Element {
                 />
               );
             })}
-            <BlogListPaginator metadata={metadata} />
+            {!selectedTag && <BlogListPaginator metadata={metadata} />}
           </div>
         </div>
       </div>
