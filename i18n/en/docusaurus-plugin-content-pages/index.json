@@ -28,7 +28,7 @@
     "description": "Open Source feature card title"
   },
   "feature.openSource.description": {
-    "message": "Contributing to the community and building projects that make a difference. Public Money is Public Code - for a better digital government.",
+    "message": "Contributing to the community and building projects that make a difference. Public Money is Public Code - for better digital government.",
     "description": "Open Source feature card description"
   },
   "feature.aiInnovation.title": {
@@ -36,7 +36,7 @@
     "description": "AI & Innovation feature card title"
   },
   "feature.aiInnovation.description": {
-    "message": "Exploring how artificial intelligence can transform government, with a focus on ethics, transparency and public values.",
+    "message": "Exploring how artificial intelligence can transform government, with a focus on ethics, transparency, and public values.",
     "description": "AI & Innovation feature card description"
   },
   "feature.digitalSovereignty.title": {
@@ -44,7 +44,7 @@
     "description": "Digital Sovereignty feature card title"
   },
   "feature.digitalSovereignty.description": {
-    "message": "Working on European digital independence. Together we build a secure and autonomous digital future.",
+    "message": "Working towards European digital independence. From Eurostack to local open-source solutions for municipalities and SMEs.",
     "description": "Digital Sovereignty feature card description"
   },
   "feature.securityPrivacy.title": {
@@ -52,7 +52,7 @@
     "description": "Security & Privacy feature card title"
   },
   "feature.securityPrivacy.description": {
-    "message": "Developing secure solutions that respect privacy. Technology that serves people, not the other way around.",
+    "message": "Focus on secure, privacy-respecting solutions. Control over data and infrastructure for organizations and citizens.",
     "description": "Security & Privacy feature card description"
   },
   "command.expertise": {
