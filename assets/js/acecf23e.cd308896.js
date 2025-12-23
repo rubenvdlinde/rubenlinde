@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkrubenlinde_website=globalThis.webpackChunkrubenlinde_website||[]).push([[1903],{1912(e){e.exports=JSON.parse('{"blogBasePath":"/rubenlinde/blog","blogTitle":"Blog","authorsListPath":"/rubenlinde/blog/authors"}')}}]);
