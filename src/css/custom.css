@@ -522,6 +522,23 @@ article p {
   margin-bottom: 2rem;
   border: 1px solid var(--ifm-color-secondary);
   transition: all 0.3s ease;
+  max-width: 100%; /* Full width */
+}
+
+/* Blog page container adjustments */
+.blogListPage__container {
+  max-width: 100% !important;
+  padding: 0 2rem;
+}
+
+/* Override Docusaurus container width for blog pages */
+[class*='blogListPage'] .container {
+  max-width: 1400px !important;
+  width: 100%;
+}
+
+[class*='blogListPage'] .col {
+  max-width: 100%;
 }
 
 .blog-card:hover {
