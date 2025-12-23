@@ -159,29 +159,51 @@ html[data-is-root-path='true'] .navbar {
   align-items: center;
 }
 
+/* Floating Controls Wrapper */
+.floating-control-wrapper {
+  position: relative;
+}
+
 .floating-control-button {
   background: rgba(15, 23, 42, 0.9);
   backdrop-filter: blur(10px);
   border: 1px solid var(--ifm-color-secondary);
-  border-radius: 50%;
-  width: 45px;
+  border-radius: 25px; /* Pill shape instead of circle */
+  padding: 8px 16px;
+  min-width: 80px; /* Ensure enough space for icon + text */
   height: 45px;
   color: var(--ifm-color-secondary);
   cursor: pointer;
   transition: all 0.3s ease;
-  font-size: 18px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Courier New', monospace;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   text-decoration: none;
+  white-space: nowrap;
+}
+
+.floating-control-button__icon {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.floating-control-button__label {
+  font-size: 12px;
+  line-height: 1;
 }
 
 .floating-control-button:hover {
   background: rgba(15, 23, 42, 1);
   border-color: var(--ifm-color-secondary);
   box-shadow: 0 0 15px rgba(234, 88, 12, 0.4);
-  transform: scale(1.1);
+  transform: translateY(-2px);
 }
 
 /* Dropdown menu for floating controls */
@@ -248,9 +270,18 @@ html[data-is-root-path='true'] .navbar {
   }
 
   .floating-control-button {
-    width: 40px;
+    padding: 6px 12px;
+    min-width: 70px;
     height: 40px;
+    font-size: 12px;
+  }
+
+  .floating-control-button__icon {
     font-size: 16px;
+  }
+
+  .floating-control-button__label {
+    font-size: 10px;
   }
 
   .homepage-floating-controls button,

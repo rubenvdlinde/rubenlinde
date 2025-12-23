@@ -1,14 +1,13 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLocation } from '@docusaurus/router';
 import Link from '@docusaurus/Link';
+import FloatingControlButton from './FloatingControlButton';
 
 export default function FloatingControls() {
   const location = useLocation();
   const [colorMode, setColorModeState] = useState<'light' | 'dark'>('dark');
   const [showLangDropdown, setShowLangDropdown] = useState(false);
   const [showThemeDropdown, setShowThemeDropdown] = useState(false);
-  const langDropdownRef = useRef<HTMLDivElement>(null);
-  const themeDropdownRef = useRef<HTMLDivElement>(null);
 
   // Check if we're on the homepage
   const isHomepage =
@@ -59,27 +58,6 @@ export default function FloatingControls() {
     return () => observer.disconnect();
   }, []);
 
-  // Close dropdowns when clicking outside
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (
-        langDropdownRef.current &&
-        !langDropdownRef.current.contains(event.target as Node)
-      ) {
-        setShowLangDropdown(false);
-      }
-      if (
-        themeDropdownRef.current &&
-        !themeDropdownRef.current.contains(event.target as Node)
-      ) {
-        setShowThemeDropdown(false);
-      }
-    };
-
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, []);
-
   const setTheme = (mode: 'light' | 'dark') => {
     document.documentElement.setAttribute('data-theme', mode);
     localStorage.setItem('theme', mode);
@@ -87,69 +65,61 @@ export default function FloatingControls() {
     setShowThemeDropdown(false);
   };
 
+  // Get short labels for current selection
+  const languageLabel = currentLocale.toUpperCase();
+  const themeLabel = colorMode === 'dark' ? 'Dark' : 'Light';
+
   return (
     <div
       className={
         isHomepage ? 'homepage-floating-controls' : 'floating-controls'
       }
     >
-      {/* Language Selector with Dropdown */}
-      <div style={{ position: 'relative' }} ref={langDropdownRef}>
-        <button
-          className="floating-control-button"
-          onClick={() => setShowLangDropdown(!showLangDropdown)}
-          aria-label="Select language"
-          title="Select language"
+      {/* Language Selector */}
+      <FloatingControlButton
+        icon="🌐"
+        label={languageLabel}
+        isOpen={showLangDropdown}
+        onToggle={() => setShowLangDropdown(!showLangDropdown)}
+        onClose={() => setShowLangDropdown(false)}
+      >
+        <Link
+          to={getLocalePath('nl')}
+          className={`floating-control-dropdown-item ${currentLocale === 'nl' ? 'active' : ''}`}
+          onClick={() => setShowLangDropdown(false)}
         >
-          🌐
-        </button>
-        <div
-          className={`floating-control-dropdown ${showLangDropdown ? 'active' : ''}`}
+          🇳🇱 Nederlands
+        </Link>
+        <Link
+          to={getLocalePath('en')}
+          className={`floating-control-dropdown-item ${currentLocale === 'en' ? 'active' : ''}`}
+          onClick={() => setShowLangDropdown(false)}
         >
-          <Link
-            to={getLocalePath('nl')}
-            className={`floating-control-dropdown-item ${currentLocale === 'nl' ? 'active' : ''}`}
-            onClick={() => setShowLangDropdown(false)}
-          >
-            🇳🇱 Nederlands
-          </Link>
-          <Link
-            to={getLocalePath('en')}
-            className={`floating-control-dropdown-item ${currentLocale === 'en' ? 'active' : ''}`}
-            onClick={() => setShowLangDropdown(false)}
-          >
-            🇬🇧 English
-          </Link>
-        </div>
-      </div>
+          🇬🇧 English
+        </Link>
+      </FloatingControlButton>
 
-      {/* Theme Toggle with Dropdown */}
-      <div style={{ position: 'relative' }} ref={themeDropdownRef}>
+      {/* Theme Toggle */}
+      <FloatingControlButton
+        icon={colorMode === 'dark' ? '🌙' : '☀️'}
+        label={themeLabel}
+        isOpen={showThemeDropdown}
+        onToggle={() => setShowThemeDropdown(!showThemeDropdown)}
+        onClose={() => setShowThemeDropdown(false)}
+      >
         <button
-          className="floating-control-button"
-          onClick={() => setShowThemeDropdown(!showThemeDropdown)}
-          aria-label="Select theme"
-          title="Select theme"
+          className={`floating-control-dropdown-item ${colorMode === 'dark' ? 'active' : ''}`}
+          onClick={() => setTheme('dark')}
         >
-          {colorMode === 'dark' ? '🌙' : '☀️'}
+          🌙 Dark Mode
         </button>
-        <div
-          className={`floating-control-dropdown ${showThemeDropdown ? 'active' : ''}`}
+        <button
+          className={`floating-control-dropdown-item ${colorMode === 'light' ? 'active' : ''}`}
+          onClick={() => setTheme('light')}
         >
-          <button
-            className={`floating-control-dropdown-item ${colorMode === 'dark' ? 'active' : ''}`}
-            onClick={() => setTheme('dark')}
-          >
-            🌙 Dark Mode
-          </button>
-          <button
-            className={`floating-control-dropdown-item ${colorMode === 'light' ? 'active' : ''}`}
-            onClick={() => setTheme('light')}
-          >
-            ☀️ Light Mode
-          </button>
-        </div>
-      </div>
+          ☀️ Light Mode
+        </button>
+      </FloatingControlButton>
     </div>
   );
 }
