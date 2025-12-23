@@ -5,7 +5,7 @@ export default function FloatingControls() {
   const location = useLocation();
   const [colorMode, setColorModeState] = useState<'light' | 'dark'>('dark');
 
-  // Only show on homepage
+  // Check if we're on the homepage
   const isHomepage =
     location.pathname === '/' || location.pathname === '/rubenlinde/';
 
@@ -30,10 +30,6 @@ export default function FloatingControls() {
     return () => observer.disconnect();
   }, []);
 
-  if (!isHomepage) {
-    return null;
-  }
-
   const toggleColorMode = () => {
     const newMode = colorMode === 'dark' ? 'light' : 'dark';
     document.documentElement.setAttribute('data-theme', newMode);
@@ -42,9 +38,14 @@ export default function FloatingControls() {
   };
 
   return (
-    <div className="homepage-floating-controls">
+    <div
+      className={
+        isHomepage ? 'homepage-floating-controls' : 'floating-controls'
+      }
+    >
       {/* Language Selector - simple text for now */}
       <button
+        className="floating-control-button"
         onClick={() => {
           // For now, just a placeholder - could link to /en/ or show a menu
           console.log('Language selector clicked');
@@ -56,6 +57,7 @@ export default function FloatingControls() {
 
       {/* Theme Toggle */}
       <button
+        className="floating-control-button"
         onClick={toggleColorMode}
         aria-label="Toggle dark mode"
         title={
