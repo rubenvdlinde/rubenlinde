@@ -577,7 +577,7 @@ article p {
 .blog-card h1,
 .blog-card h2,
 .blog-card h3 {
-  color: #60a5fa !important;
+  color: var(--ifm-color-secondary) !important; /* Orange */
 }
 
 .blog-card__link:hover .blog-card__title {
