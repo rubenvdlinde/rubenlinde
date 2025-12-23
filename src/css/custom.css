@@ -1002,7 +1002,8 @@ article p {
 
 /* Light Mode Overrides */
 [data-theme='light'] .feature-card {
-  background: #ffffff !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
   color: #000000 !important;
   border-color: var(--ifm-color-secondary) !important;
 }
@@ -1016,7 +1017,8 @@ article p {
 }
 
 [data-theme='light'] .blog-card {
-  background: #ffffff !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
   color: #000000 !important;
   border-color: var(--ifm-color-secondary) !important;
 }
@@ -1035,7 +1037,8 @@ article p {
 }
 
 [data-theme='light'] .footer {
-  background: #ffffff !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
   color: #000000 !important;
 }
 
@@ -1053,8 +1056,11 @@ article p {
 
 /* Blog post content in light mode */
 [data-theme='light'] article[itemtype='http://schema.org/BlogPosting'] {
-  background: #ffffff !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
   color: #000000 !important;
+  padding: 2rem;
+  border-radius: 8px;
 }
 
 [data-theme='light'] article[itemtype='http://schema.org/BlogPosting'] h1,
@@ -1080,7 +1086,14 @@ article p {
 
 /* Blog post page wrapper in light mode */
 [data-theme='light'] .main-wrapper {
-  background: #ffffff !important;
+  background: transparent !important;
+}
+
+/* Make sure all major wrappers are transparent to show animation */
+.main-wrapper,
+main,
+.container {
+  background: transparent !important;
 }
 
 [data-theme='light'] main {
@@ -1204,7 +1217,8 @@ article p {
 
 /* Light mode overrides for tag filter */
 [data-theme='light'] .blog-tags-filter {
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
   border-color: var(--ifm-color-secondary);
 }
 
