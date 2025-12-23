@@ -683,7 +683,7 @@ article a {
 
 /* Light mode colors */
 [data-theme='light'] .blog-card {
-  background: rgba(255, 255, 255, 0.85);
+  background: #ffffff; /* Solid white, no transparency */
   color: #000000;
 }
 
@@ -734,7 +734,7 @@ article a {
 
 /* Light mode footer */
 [data-theme='light'] .footer {
-  background: rgba(255, 255, 255, 0.85) !important;
+  background: #ffffff !important; /* Solid white, no transparency */
   color: #000000;
 }
 
@@ -969,7 +969,7 @@ article a {
 
 /* Light mode colors */
 [data-theme='light'] .feature-card {
-  background: rgba(255, 255, 255, 0.85);
+  background: #ffffff; /* Solid white, no transparency */
   color: #000000;
 }
 
@@ -1177,7 +1177,7 @@ article a {
 
 /* Blog post content in light mode */
 [data-theme='light'] article[itemtype='http://schema.org/BlogPosting'] {
-  background: rgba(255, 255, 255, 0.85) !important;
+  background: #ffffff !important; /* Solid white, no transparency */
   backdrop-filter: blur(5px);
   color: #000000 !important;
   padding: 2rem;
@@ -1350,7 +1350,7 @@ html {
 
 /* Light mode overrides for tag filter */
 [data-theme='light'] .blog-tags-filter {
-  background: rgba(255, 255, 255, 0.85);
+  background: #ffffff; /* Solid white, no transparency */
   backdrop-filter: blur(5px);
   border-color: var(--ifm-color-secondary);
 }
