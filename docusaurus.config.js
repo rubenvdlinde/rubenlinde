@@ -8,7 +8,7 @@ const darkTheme = themes.dracula;
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Ruben van der Linde',
-  tagline: 'Software Developer & Tech Enthusiast',
+  tagline: 'Software Developer & Open Source Enthusiast',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
