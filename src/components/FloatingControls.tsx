@@ -1,10 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useLocation } from '@docusaurus/router';
 import Link from '@docusaurus/Link';
 
 export default function FloatingControls() {
   const location = useLocation();
   const [colorMode, setColorModeState] = useState<'light' | 'dark'>('dark');
+  const [showLangDropdown, setShowLangDropdown] = useState(false);
+  const [showThemeDropdown, setShowThemeDropdown] = useState(false);
+  const langDropdownRef = useRef<HTMLDivElement>(null);
+  const themeDropdownRef = useRef<HTMLDivElement>(null);
 
   // Check if we're on the homepage
   const isHomepage =
@@ -17,19 +21,20 @@ export default function FloatingControls() {
       : 'nl';
 
   // Calculate the alternate locale path
-  const getAlternateLocalePath = () => {
-    if (currentLocale === 'nl') {
-      // Switching to English
-      if (location.pathname === '/' || location.pathname === '') {
-        return '/en/';
+  const getLocalePath = (locale: string) => {
+    const currentPath = location.pathname;
+    if (locale === 'nl') {
+      // Switch to Dutch
+      if (currentPath.startsWith('/en')) {
+        return currentPath.replace(/^\/en/, '') || '/';
       }
-      return `/en${location.pathname}`;
+      return currentPath;
     } else {
-      // Switching to Dutch - remove /en prefix
-      if (location.pathname === '/en' || location.pathname === '/en/') {
-        return '/';
+      // Switch to English
+      if (currentPath.startsWith('/en')) {
+        return currentPath;
       }
-      return location.pathname.replace('/en/', '/').replace('/en', '/');
+      return `/en${currentPath === '/' ? '' : currentPath}`;
     }
   };
 
@@ -54,11 +59,32 @@ export default function FloatingControls() {
     return () => observer.disconnect();
   }, []);
 
-  const toggleColorMode = () => {
-    const newMode = colorMode === 'dark' ? 'light' : 'dark';
-    document.documentElement.setAttribute('data-theme', newMode);
-    localStorage.setItem('theme', newMode);
-    setColorModeState(newMode);
+  // Close dropdowns when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        langDropdownRef.current &&
+        !langDropdownRef.current.contains(event.target as Node)
+      ) {
+        setShowLangDropdown(false);
+      }
+      if (
+        themeDropdownRef.current &&
+        !themeDropdownRef.current.contains(event.target as Node)
+      ) {
+        setShowThemeDropdown(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  const setTheme = (mode: 'light' | 'dark') => {
+    document.documentElement.setAttribute('data-theme', mode);
+    localStorage.setItem('theme', mode);
+    setColorModeState(mode);
+    setShowThemeDropdown(false);
   };
 
   return (
@@ -67,30 +93,63 @@ export default function FloatingControls() {
         isHomepage ? 'homepage-floating-controls' : 'floating-controls'
       }
     >
-      {/* Language Selector */}
-      <Link
-        to={getAlternateLocalePath()}
-        className="floating-control-button"
-        title={
-          currentLocale === 'nl'
-            ? 'Switch to English'
-            : 'Wissel naar Nederlands'
-        }
-      >
-        🌐 {currentLocale === 'nl' ? 'EN' : 'NL'}
-      </Link>
+      {/* Language Selector with Dropdown */}
+      <div style={{ position: 'relative' }} ref={langDropdownRef}>
+        <button
+          className="floating-control-button"
+          onClick={() => setShowLangDropdown(!showLangDropdown)}
+          aria-label="Select language"
+          title="Select language"
+        >
+          🌐
+        </button>
+        <div
+          className={`floating-control-dropdown ${showLangDropdown ? 'active' : ''}`}
+        >
+          <Link
+            to={getLocalePath('nl')}
+            className={`floating-control-dropdown-item ${currentLocale === 'nl' ? 'active' : ''}`}
+            onClick={() => setShowLangDropdown(false)}
+          >
+            🇳🇱 Nederlands
+          </Link>
+          <Link
+            to={getLocalePath('en')}
+            className={`floating-control-dropdown-item ${currentLocale === 'en' ? 'active' : ''}`}
+            onClick={() => setShowLangDropdown(false)}
+          >
+            🇬🇧 English
+          </Link>
+        </div>
+      </div>
 
-      {/* Theme Toggle */}
-      <button
-        className="floating-control-button"
-        onClick={toggleColorMode}
-        aria-label="Toggle dark mode"
-        title={
-          colorMode === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'
-        }
-      >
-        {colorMode === 'dark' ? '☀️' : '🌙'}
-      </button>
+      {/* Theme Toggle with Dropdown */}
+      <div style={{ position: 'relative' }} ref={themeDropdownRef}>
+        <button
+          className="floating-control-button"
+          onClick={() => setShowThemeDropdown(!showThemeDropdown)}
+          aria-label="Select theme"
+          title="Select theme"
+        >
+          {colorMode === 'dark' ? '🌙' : '☀️'}
+        </button>
+        <div
+          className={`floating-control-dropdown ${showThemeDropdown ? 'active' : ''}`}
+        >
+          <button
+            className={`floating-control-dropdown-item ${colorMode === 'dark' ? 'active' : ''}`}
+            onClick={() => setTheme('dark')}
+          >
+            🌙 Dark Mode
+          </button>
+          <button
+            className={`floating-control-dropdown-item ${colorMode === 'light' ? 'active' : ''}`}
+            onClick={() => setTheme('light')}
+          >
+            ☀️ Light Mode
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
