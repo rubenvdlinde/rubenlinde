@@ -2,7 +2,7 @@
 slug: einde-pax-americana-digitale-soevereiniteit
 title: Het Einde van Pax Americana - Tijd voor digitale soevereiniteit
 date: 2025-01-22
-authors: [Ruben van der Linde]
+authors: [ruben]
 tags:
   [
     open-source,
@@ -138,7 +138,7 @@ Bouw AI-kennis op, versterk cybersecurity, behoud talent. Ontwikkel nationale cl
 **Lokaal Niveau: Praktische Stappen (Gemeenten, Jullie Kunnen Dit!)**  
 Bij aanbestedingen: soevereiniteit first, open source prefereren, lokaal hosten.[^5] Omarm [Common Ground](https://commonground.nl/): samen bouwen en delen, hergebruiken in plaats van Foreign Tech betalen.[^6] Experimenteer met pilots van Euro-tech, leer en deel successen – als een virale meme.[^21]
 
-Samenwerking is cruciaal: geen lone wolves. Bottom-up feedback, top-down standaarden – Nederland heeft met [Common Ground](https://commonground.nl/) en [Mijn Bureaublad](https://minbzk.github.io/mijn-bureau/) een voorsprong; rol het Europees uit.[^18]
+Samenwerking is cruciaal: geen lone wolves. Bottom-up feedback, top-down standaarden – Nederland heeft met [Common Ground](https://commonground.nl/) en [Mijn Bureau](https://minbzk.github.io/mijn-bureau/) een voorsprong; rol het Europees uit.[^18]
 
 ## Conclusie: Dump de Foreign Tech-Loverboy – Tijd Voor Een Eigen, Gezonde Relatie
 

@@ -616,14 +616,25 @@ body[class*='blog'] .navbar__link {
   position: relative;
 }
 
-/* Blog Page Styling - Dark mode default */
-[data-theme='dark'] .blog-wrapper,
-[data-theme='dark'] main article {
-  background: rgba(0, 0, 0, 0.85);
+/* Blog Page Styling - Base */
+.blog-wrapper,
+main article {
   padding: 2rem;
   border-radius: 8px;
   margin: 2rem auto;
   max-width: 1200px;
+}
+
+/* Blog Page Styling - Dark mode */
+[data-theme='dark'] .blog-wrapper,
+[data-theme='dark'] main article {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+/* Blog Page Styling - Light mode */
+[data-theme='light'] .blog-wrapper,
+[data-theme='light'] main article {
+  background: #ffffff;
 }
 
 .blog-wrapper h1,
