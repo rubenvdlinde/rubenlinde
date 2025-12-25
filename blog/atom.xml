@@ -510,6 +510,54 @@ class ApiController <!-- -->
 </ul>]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Personal Blog Posts]]></title>
+        <id>https://www.rubenlinde.nl/blog/personal/README</id>
+        <link href="https://www.rubenlinde.nl/blog/personal/README"/>
+        <updated>2025-12-22T21:13:19.000Z</updated>
+        <summary type="html"><![CDATA[This folder contains personal reflections, technical tutorials, and general software development insights.]]></summary>
+        <content type="html"><![CDATA[<p>This folder contains personal reflections, technical tutorials, and general software development insights.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="topics-include">Topics Include<a href="https://www.rubenlinde.nl/blog/personal/README#topics-include" class="hash-link" aria-label="Direct link naar Topics Include" title="Direct link naar Topics Include" translate="no">​</a></h2>
+<ul>
+<li class="">💻 Software development tutorials</li>
+<li class="">🎨 Web development and design</li>
+<li class="">🔧 Tools and technologies</li>
+<li class="">📚 Learning experiences</li>
+<li class="">🚀 Project showcases</li>
+<li class="">💡 Technical tips and tricks</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="writing-guidelines">Writing Guidelines<a href="https://www.rubenlinde.nl/blog/personal/README#writing-guidelines" class="hash-link" aria-label="Direct link naar Writing Guidelines" title="Direct link naar Writing Guidelines" translate="no">​</a></h2>
+<p>When writing personal blog posts:</p>
+<ol>
+<li class=""><strong>Be authentic</strong> - Share your genuine experiences</li>
+<li class=""><strong>Be educational</strong> - Provide value to readers</li>
+<li class=""><strong>Be practical</strong> - Include code examples and real-world scenarios</li>
+<li class=""><strong>Be conversational</strong> - Write in a friendly, approachable tone</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tags-to-use">Tags to Use<a href="https://www.rubenlinde.nl/blog/personal/README#tags-to-use" class="hash-link" aria-label="Direct link naar Tags to Use" title="Direct link naar Tags to Use" translate="no">​</a></h2>
+<p>Common tags for this category:</p>
+<ul>
+<li class=""><code>personal</code></li>
+<li class=""><code>development</code></li>
+<li class=""><code>tutorial</code></li>
+<li class=""><code>javascript</code>, <code>php</code>, <code>python</code> (language-specific)</li>
+<li class=""><code>react</code>, <code>symfony</code>, <code>docusaurus</code> (framework-specific)</li>
+<li class=""><code>tips</code>, <code>best-practices</code></li>
+<li class=""><code>project-showcase</code></li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="example-frontmatter">Example Frontmatter<a href="https://www.rubenlinde.nl/blog/personal/README#example-frontmatter" class="hash-link" aria-label="Direct link naar Example Frontmatter" title="Direct link naar Example Frontmatter" translate="no">​</a></h2>
+<div class="language-markdown codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-markdown codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token front-matter-block punctuation" style="color:#393A34">---</span><span class="token front-matter-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token front-matter-block"></span><span class="token front-matter-block front-matter yaml language-yaml key atrule" style="color:#00a4db">slug</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">:</span><span class="token front-matter-block front-matter yaml language-yaml"> my</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">-</span><span class="token front-matter-block front-matter yaml language-yaml">blog</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">-</span><span class="token front-matter-block front-matter yaml language-yaml">post</span><br></span><span class="token-line" style="color:#393A34"><span class="token front-matter-block front-matter yaml language-yaml"></span><span class="token front-matter-block front-matter yaml language-yaml key atrule" style="color:#00a4db">title</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">:</span><span class="token front-matter-block front-matter yaml language-yaml"> My Blog Post Title</span><br></span><span class="token-line" style="color:#393A34"><span class="token front-matter-block front-matter yaml language-yaml"></span><span class="token front-matter-block front-matter yaml language-yaml key atrule" style="color:#00a4db">authors</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">:</span><span class="token front-matter-block front-matter yaml language-yaml"> </span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">[</span><span class="token front-matter-block front-matter yaml language-yaml">ruben</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">]</span><span class="token front-matter-block front-matter yaml language-yaml"></span><br></span><span class="token-line" style="color:#393A34"><span class="token front-matter-block front-matter yaml language-yaml"></span><span class="token front-matter-block front-matter yaml language-yaml key atrule" style="color:#00a4db">tags</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">:</span><span class="token front-matter-block front-matter yaml language-yaml"> </span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">[</span><span class="token front-matter-block front-matter yaml language-yaml">personal</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">,</span><span class="token front-matter-block front-matter yaml language-yaml"> development</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">,</span><span class="token front-matter-block front-matter yaml language-yaml"> tutorial</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">,</span><span class="token front-matter-block front-matter yaml language-yaml"> react</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">]</span><span class="token front-matter-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token front-matter-block"></span><span class="token front-matter-block punctuation" style="color:#393A34">---</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="content-ideas">Content Ideas<a href="https://www.rubenlinde.nl/blog/personal/README#content-ideas" class="hash-link" aria-label="Direct link naar Content Ideas" title="Direct link naar Content Ideas" translate="no">​</a></h2>
+<ul>
+<li class="">New technology explorations</li>
+<li class="">Problem-solving stories</li>
+<li class="">Code refactoring examples</li>
+<li class="">Tool comparisons</li>
+<li class="">Development environment setups</li>
+<li class="">Open-source contributions</li>
+<li class="">Side project updates</li>
+</ul>]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Platform AI & Overheid (Government)]]></title>
         <id>https://www.rubenlinde.nl/blog/platform-ai-en-overheid/README</id>
         <link href="https://www.rubenlinde.nl/blog/platform-ai-en-overheid/README"/>
@@ -580,502 +628,46 @@ class ApiController <!-- -->
 </ul>]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Personal Blog Posts]]></title>
-        <id>https://www.rubenlinde.nl/blog/personal/README</id>
-        <link href="https://www.rubenlinde.nl/blog/personal/README"/>
-        <updated>2025-12-22T21:13:19.000Z</updated>
-        <summary type="html"><![CDATA[This folder contains personal reflections, technical tutorials, and general software development insights.]]></summary>
-        <content type="html"><![CDATA[<p>This folder contains personal reflections, technical tutorials, and general software development insights.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="topics-include">Topics Include<a href="https://www.rubenlinde.nl/blog/personal/README#topics-include" class="hash-link" aria-label="Direct link naar Topics Include" title="Direct link naar Topics Include" translate="no">​</a></h2>
-<ul>
-<li class="">💻 Software development tutorials</li>
-<li class="">🎨 Web development and design</li>
-<li class="">🔧 Tools and technologies</li>
-<li class="">📚 Learning experiences</li>
-<li class="">🚀 Project showcases</li>
-<li class="">💡 Technical tips and tricks</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="writing-guidelines">Writing Guidelines<a href="https://www.rubenlinde.nl/blog/personal/README#writing-guidelines" class="hash-link" aria-label="Direct link naar Writing Guidelines" title="Direct link naar Writing Guidelines" translate="no">​</a></h2>
-<p>When writing personal blog posts:</p>
-<ol>
-<li class=""><strong>Be authentic</strong> - Share your genuine experiences</li>
-<li class=""><strong>Be educational</strong> - Provide value to readers</li>
-<li class=""><strong>Be practical</strong> - Include code examples and real-world scenarios</li>
-<li class=""><strong>Be conversational</strong> - Write in a friendly, approachable tone</li>
-</ol>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tags-to-use">Tags to Use<a href="https://www.rubenlinde.nl/blog/personal/README#tags-to-use" class="hash-link" aria-label="Direct link naar Tags to Use" title="Direct link naar Tags to Use" translate="no">​</a></h2>
-<p>Common tags for this category:</p>
-<ul>
-<li class=""><code>personal</code></li>
-<li class=""><code>development</code></li>
-<li class=""><code>tutorial</code></li>
-<li class=""><code>javascript</code>, <code>php</code>, <code>python</code> (language-specific)</li>
-<li class=""><code>react</code>, <code>symfony</code>, <code>docusaurus</code> (framework-specific)</li>
-<li class=""><code>tips</code>, <code>best-practices</code></li>
-<li class=""><code>project-showcase</code></li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="example-frontmatter">Example Frontmatter<a href="https://www.rubenlinde.nl/blog/personal/README#example-frontmatter" class="hash-link" aria-label="Direct link naar Example Frontmatter" title="Direct link naar Example Frontmatter" translate="no">​</a></h2>
-<div class="language-markdown codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-markdown codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token front-matter-block punctuation" style="color:#393A34">---</span><span class="token front-matter-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token front-matter-block"></span><span class="token front-matter-block front-matter yaml language-yaml key atrule" style="color:#00a4db">slug</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">:</span><span class="token front-matter-block front-matter yaml language-yaml"> my</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">-</span><span class="token front-matter-block front-matter yaml language-yaml">blog</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">-</span><span class="token front-matter-block front-matter yaml language-yaml">post</span><br></span><span class="token-line" style="color:#393A34"><span class="token front-matter-block front-matter yaml language-yaml"></span><span class="token front-matter-block front-matter yaml language-yaml key atrule" style="color:#00a4db">title</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">:</span><span class="token front-matter-block front-matter yaml language-yaml"> My Blog Post Title</span><br></span><span class="token-line" style="color:#393A34"><span class="token front-matter-block front-matter yaml language-yaml"></span><span class="token front-matter-block front-matter yaml language-yaml key atrule" style="color:#00a4db">authors</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">:</span><span class="token front-matter-block front-matter yaml language-yaml"> </span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">[</span><span class="token front-matter-block front-matter yaml language-yaml">ruben</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">]</span><span class="token front-matter-block front-matter yaml language-yaml"></span><br></span><span class="token-line" style="color:#393A34"><span class="token front-matter-block front-matter yaml language-yaml"></span><span class="token front-matter-block front-matter yaml language-yaml key atrule" style="color:#00a4db">tags</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">:</span><span class="token front-matter-block front-matter yaml language-yaml"> </span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">[</span><span class="token front-matter-block front-matter yaml language-yaml">personal</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">,</span><span class="token front-matter-block front-matter yaml language-yaml"> development</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">,</span><span class="token front-matter-block front-matter yaml language-yaml"> tutorial</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">,</span><span class="token front-matter-block front-matter yaml language-yaml"> react</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">]</span><span class="token front-matter-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token front-matter-block"></span><span class="token front-matter-block punctuation" style="color:#393A34">---</span><br></span></code></pre></div></div>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="content-ideas">Content Ideas<a href="https://www.rubenlinde.nl/blog/personal/README#content-ideas" class="hash-link" aria-label="Direct link naar Content Ideas" title="Direct link naar Content Ideas" translate="no">​</a></h2>
-<ul>
-<li class="">New technology explorations</li>
-<li class="">Problem-solving stories</li>
-<li class="">Code refactoring examples</li>
-<li class="">Tool comparisons</li>
-<li class="">Development environment setups</li>
-<li class="">Open-source contributions</li>
-<li class="">Side project updates</li>
-</ul>]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Open Source voor het MKB - Van Public Code naar Public Functionality]]></title>
         <id>https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality</id>
         <link href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality"/>
         <updated>2025-01-24T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Deze blog is nog in concept-fase en wordt mogelijk nog aangepast voor publicatie.]]></summary>
-        <content type="html"><![CDATA[<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Status: Concept</div><div class="admonitionContent_BuS1"><p>Deze blog is nog in concept-fase en wordt mogelijk nog aangepast voor publicatie.</p></div></div>
-<p>Open source voor de overheid is mooi. Maar wat als die overheids-software ook het MKB kan helpen? Dan wordt het pas echt krachtig. Welkom bij het paradigma van "Public Money is Public Functionality".</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="het-probleem-met-public-money-is-public-code">Het Probleem met "Public Money is Public Code"<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#het-probleem-met-public-money-is-public-code" class="hash-link" aria-label="Direct link naar Het Probleem met &quot;Public Money is Public Code&quot;" title="Direct link naar Het Probleem met &quot;Public Money is Public Code&quot;" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="de-huidige-situatie">De Huidige Situatie<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#de-huidige-situatie" class="hash-link" aria-label="Direct link naar De Huidige Situatie" title="Direct link naar De Huidige Situatie" translate="no">​</a></h3>
-<p><strong>"Public Money is Public Code" zegt:</strong></p>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Overheid betaalt voor software</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Code wordt open source</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Iedereen kan de code zien</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">... en dan?</span><br></span></code></pre></div></div>
-<p><strong>De realiteit:</strong></p>
-<ul>
-<li class="">Code op GitHub</li>
-<li class="">Maar onbruikbaar voor niet-developers</li>
-<li class="">Gericht op overheids-specifieke processen</li>
-<li class="">Geen directe waarde voor MKB</li>
-</ul>
-<p><strong>Voorbeeld:</strong></p>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Gemeente bouwt formulieren-systeem</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Code is open source</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Maar: specifiek voor gemeentelijke processen</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Groenteman heeft er niets aan</span><br></span></code></pre></div></div>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="het-gemiste-potentieel">Het Gemiste Potentieel<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#het-gemiste-potentieel" class="hash-link" aria-label="Direct link naar Het Gemiste Potentieel" title="Direct link naar Het Gemiste Potentieel" translate="no">​</a></h3>
-<p><strong>De overheid investeert miljarden in software-ontwikkeling.</strong></p>
-<p>Wat als die investering niet alleen de overheid helpt, maar ook:</p>
-<ul>
-<li class="">Kleine ondernemers</li>
-<li class="">Verenigingen</li>
-<li class="">Stichtingen</li>
-<li class="">Burgerinitiatieven</li>
-</ul>
-<p><strong>Dat is pas "public" in de echte zin van het woord.</strong></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="van-code-naar-functionality">Van Code naar Functionality<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#van-code-naar-functionality" class="hash-link" aria-label="Direct link naar Van Code naar Functionality" title="Direct link naar Van Code naar Functionality" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="het-nieuwe-paradigma">Het Nieuwe Paradigma<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#het-nieuwe-paradigma" class="hash-link" aria-label="Direct link naar Het Nieuwe Paradigma" title="Direct link naar Het Nieuwe Paradigma" translate="no">​</a></h3>
-<p><strong>"Public Money is Public Functionality" betekent:</strong></p>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Overheid heeft behoefte aan functionaliteit X</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Ontwikkelt generieke oplossing</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Richt in voor overheidsgebruik</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Maar: core functionaliteit is algemeen bruikbaar</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">MKB kan het ook gebruiken!</span><br></span></code></pre></div></div>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="praktijkvoorbeelden">Praktijkvoorbeelden<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#praktijkvoorbeelden" class="hash-link" aria-label="Direct link naar Praktijkvoorbeelden" title="Direct link naar Praktijkvoorbeelden" translate="no">​</a></h3>
-<p><strong>Voorbeeld 1: Contact Management</strong></p>
-<p><strong>Overheid bouwt:</strong></p>
-<ul>
-<li class="">Systeem om burgeraanvragen te behandelen</li>
-<li class="">Contact history</li>
-<li class="">Communicatie logging</li>
-<li class="">Status tracking</li>
-</ul>
-<p><strong>Groenteman kan dit gebruiken als:</strong></p>
-<ul>
-<li class="">Lichtgewicht CRM</li>
-<li class="">Klantcontact geschiedenis</li>
-<li class="">Order tracking</li>
-<li class="">Communicatie met leveranciers</li>
-</ul>
-<p><strong>Het is hetzelfde systeem - andere context.</strong></p>
-<p><strong>Voorbeeld 2: Document Management</strong></p>
-<p><strong>Overheid bouwt:</strong></p>
-<ul>
-<li class="">Systeem voor officiële documenten</li>
-<li class="">Versiebeheer</li>
-<li class="">Access control</li>
-<li class="">Archivering</li>
-</ul>
-<p><strong>MKB-er kan dit gebruiken als:</strong></p>
-<ul>
-<li class="">Contract management</li>
-<li class="">Offerte archief</li>
-<li class="">Factuur opslag</li>
-<li class="">Compliance documentatie</li>
-</ul>
-<p><strong>Voorbeeld 3: Planning en Taken</strong></p>
-<p><strong>Overheid bouwt:</strong></p>
-<ul>
-<li class="">Zaaksysteem voor procesbewaking</li>
-<li class="">Taken toewijzen</li>
-<li class="">Deadlines bewaken</li>
-<li class="">Rapportages</li>
-</ul>
-<p><strong>Ondernemer kan dit gebruiken als:</strong></p>
-<ul>
-<li class="">Project management</li>
-<li class="">Team coördinatie</li>
-<li class="">Klus-tracking</li>
-<li class="">Planning tool</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="de-europese-visie-een-andere-manier-van-denken">De Europese Visie: Een Andere Manier van Denken<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#de-europese-visie-een-andere-manier-van-denken" class="hash-link" aria-label="Direct link naar De Europese Visie: Een Andere Manier van Denken" title="Direct link naar De Europese Visie: Een Andere Manier van Denken" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="amerika-vs-europa">Amerika vs Europa<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#amerika-vs-europa" class="hash-link" aria-label="Direct link naar Amerika vs Europa" title="Direct link naar Amerika vs Europa" translate="no">​</a></h3>
-<p><strong>Amerikaans model (SaaS-dominant):</strong></p>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Bedrijf betaalt → Abonnement → Vendor lock-in</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">         ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    Prijzen stijgen</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">         ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Geen eigenaarschap</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">         ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Geen controle</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">         ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Data bij leverancier</span><br></span></code></pre></div></div>
-<p><strong>Risico's:</strong></p>
-<ul>
-<li class="">Eindeloze abonnementen</li>
-<li class="">Vendor kan prijzen verhogen</li>
-<li class="">Vendor kan stoppen</li>
-<li class="">Data in VS (geopolitiek risico)</li>
-<li class="">Geen privacy-garanties</li>
-</ul>
-<p><strong>Europees model (Open Source + Self-Hosted):</strong></p>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Overheid investeert → Open Source → Iedereen profiteert</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            MKB gebruikt</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    Self-hosted mogelijk</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        Eigenaarschap</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    Controle over data</span><br></span></code></pre></div></div>
-<p><strong>Voordelen:</strong></p>
-<ul>
-<li class="">Geen abonnementen (of veel lager)</li>
-<li class="">Geen vendor lock-in</li>
-<li class="">Data blijft in Europa</li>
-<li class="">Privacy by design</li>
-<li class="">Aanpasbaar aan eigen behoeften</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="de-economische-impact">De Economische Impact<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#de-economische-impact" class="hash-link" aria-label="Direct link naar De Economische Impact" title="Direct link naar De Economische Impact" translate="no">​</a></h3>
-<p><strong>Als 1 miljoen Europese MKB-ers:</strong></p>
-<ul>
-<li class="">€50/maand BESPAREN aan SaaS-abonnementen</li>
-<li class="">= €600 miljoen per jaar</li>
-<li class="">= Geld dat in de Europese economie blijft</li>
-<li class="">= In plaats van naar big tech</li>
-</ul>
-<p><strong>Plus:</strong></p>
-<ul>
-<li class="">Kennisopbouw in Europa</li>
-<li class="">Banen in open source sector</li>
-<li class="">Innovatie rond open platforms</li>
-<li class="">Sterker MKB-ecosysteem</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="praktisch-hoe-werkt-dit">Praktisch: Hoe Werkt Dit?<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#praktisch-hoe-werkt-dit" class="hash-link" aria-label="Direct link naar Praktisch: Hoe Werkt Dit?" title="Direct link naar Praktisch: Hoe Werkt Dit?" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="voor-de-groenteman-voorbeeld">Voor de Groenteman (Voorbeeld)<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#voor-de-groenteman-voorbeeld" class="hash-link" aria-label="Direct link naar Voor de Groenteman (Voorbeeld)" title="Direct link naar Voor de Groenteman (Voorbeeld)" translate="no">​</a></h3>
-<p><strong>Meet Frans, groenteboer:</strong></p>
-<p><strong>Situatie nu:</strong></p>
-<ul>
-<li class="">Betaalt voor:<!-- -->
-<ul>
-<li class="">Boekhoudpakket (€30/maand)</li>
-<li class="">CRM systeem (€25/maand)</li>
-<li class="">Email marketing (€15/maand)</li>
-<li class="">Website hosting (€10/maand)</li>
-<li class=""><strong>Totaal: €80/maand = €960/jaar</strong></li>
-</ul>
-</li>
-</ul>
-<p><strong>Situatie met Public Functionality:</strong></p>
-<ul>
-<li class="">Gebruikt overheids-ontwikkelde tools:<!-- -->
-<ul>
-<li class="">Contact management (gratis)</li>
-<li class="">Document management (gratis)</li>
-<li class="">Communicatie tools (gratis)</li>
-</ul>
-</li>
-<li class="">Self-hosted op goedkope VPS (€10/maand)</li>
-<li class="">Of via gemeentelijke hosting (€20/maand)</li>
-<li class=""><strong>Totaal: €20/maand = €240/jaar</strong></li>
-</ul>
-<p><strong>Besparing: €720/jaar</strong></p>
-<p>Voor een kleine ondernemer is dat significant!</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="de-infrastructuur">De Infrastructuur<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#de-infrastructuur" class="hash-link" aria-label="Direct link naar De Infrastructuur" title="Direct link naar De Infrastructuur" translate="no">​</a></h3>
-<p><strong>Hoe krijgt Frans toegang?</strong></p>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Gemeente ontwikkelt systeem</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Publiceert als open source</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Maakt "MKB-versie" beschikbaar</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Frans installeert via:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - Eigen VPS (tech-savvy)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - Gemeentelijke hosting (gebruiksvriendelijk)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - Lokale IT-partner (ondersteuning)</span><br></span></code></pre></div></div>
-<p><strong>Of:</strong></p>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">NextCloud App Store</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">OpenRegister + Common Ground components</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Frans installeert als Nextcloud apps</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Drag-and-drop configuratie</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Ready to use</span><br></span></code></pre></div></div>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="openregister-de-enabler">OpenRegister: De Enabler<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#openregister-de-enabler" class="hash-link" aria-label="Direct link naar OpenRegister: De Enabler" title="Direct link naar OpenRegister: De Enabler" translate="no">​</a></h2>
-<p>Bij Conduction ontwikkelen we OpenRegister - een open source data-oplossing die:</p>
-<p><strong>Voor de overheid:</strong></p>
-<ul>
-<li class="">Documenten opslaan</li>
-<li class="">Gestructureerde data beheren</li>
-<li class="">Data en documenten relateren</li>
-<li class="">Vectoriseren voor AI</li>
-</ul>
-<p><strong>Voor het MKB:</strong></p>
-<ul>
-<li class="">Hetzelfde platform</li>
-<li class="">Zelfde voordelen</li>
-<li class="">Aangepast aan business needs</li>
-<li class="">Betaalbaar of gratis</li>
-</ul>
-<p><strong>De kracht:</strong> Het is dezelfde technologie, alleen de use case verschilt.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="concrete-use-cases">Concrete Use Cases<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#concrete-use-cases" class="hash-link" aria-label="Direct link naar Concrete Use Cases" title="Direct link naar Concrete Use Cases" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="use-case-1-de-webshop-eigenaar">Use Case 1: De Webshop Eigenaar<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#use-case-1-de-webshop-eigenaar" class="hash-link" aria-label="Direct link naar Use Case 1: De Webshop Eigenaar" title="Direct link naar Use Case 1: De Webshop Eigenaar" translate="no">​</a></h3>
-<p><strong>Lotte verkoopt handgemaakte sieraden online.</strong></p>
-<p><strong>Ze gebruikt Public Functionality tools:</strong></p>
-<p><strong>Contact Management:</strong></p>
-<ul>
-<li class="">Klantgegevens</li>
-<li class="">Order historie</li>
-<li class="">Communicatie logging</li>
-</ul>
-<p><strong>Document Management:</strong></p>
-<ul>
-<li class="">Product foto's</li>
-<li class="">Certificaten</li>
-<li class="">Facturen</li>
-</ul>
-<p><strong>AI-Assistent (on-premise):</strong></p>
-<ul>
-<li class="">Helpt bij klantservice emails</li>
-<li class="">Genereert product beschrijvingen</li>
-<li class="">Analyseert verkoop trends</li>
-</ul>
-<p><strong>Kosten:</strong> €15/maand (self-hosted VPS)
-<strong>Alternatief:</strong> €150/maand (Shopify + apps)
-<strong>Besparing:</strong> €135/maand = €1620/jaar</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="use-case-2-de-lokale-sportvereniging">Use Case 2: De Lokale Sportvereniging<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#use-case-2-de-lokale-sportvereniging" class="hash-link" aria-label="Direct link naar Use Case 2: De Lokale Sportvereniging" title="Direct link naar Use Case 2: De Lokale Sportvereniging" translate="no">​</a></h3>
-<p><strong>Voetbalclub Vooruit heeft 300 leden.</strong></p>
-<p><strong>Ze gebruiken Public Functionality tools:</strong></p>
-<p><strong>Member Management:</strong></p>
-<ul>
-<li class="">Ledenregistratie (hergebruik van burger-registratie systeem)</li>
-<li class="">Contributie tracking</li>
-<li class="">Communicatie</li>
-</ul>
-<p><strong>Event Management:</strong></p>
-<ul>
-<li class="">Wedstrijden plannen</li>
-<li class="">Toernooien organiseren</li>
-<li class="">Inschrijvingen beheren</li>
-</ul>
-<p><strong>Document Management:</strong></p>
-<ul>
-<li class="">Statuten</li>
-<li class="">Notulen</li>
-<li class="">Foto albums</li>
-</ul>
-<p><strong>Kosten:</strong> €0 (gehost door gemeente)
-<strong>Alternatief:</strong> €80/maand (commercial membership software)
-<strong>Besparing:</strong> €960/jaar</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="use-case-3-de-zzp-er">Use Case 3: De ZZP-er<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#use-case-3-de-zzp-er" class="hash-link" aria-label="Direct link naar Use Case 3: De ZZP-er" title="Direct link naar Use Case 3: De ZZP-er" translate="no">​</a></h3>
-<p><strong>Ahmed is grafisch ontwerper, ZZP-er.</strong></p>
-<p><strong>Hij gebruikt Public Functionality tools:</strong></p>
-<p><strong>Client Management:</strong></p>
-<ul>
-<li class="">Klantdossiers</li>
-<li class="">Project tracking</li>
-<li class="">Uren registratie</li>
-</ul>
-<p><strong>Document Management:</strong></p>
-<ul>
-<li class="">Offertes</li>
-<li class="">Contracten</li>
-<li class="">Facturen</li>
-<li class="">Design bestanden</li>
-</ul>
-<p><strong>Financial Tracking:</strong></p>
-<ul>
-<li class="">Inkomsten/uitgaven</li>
-<li class="">BTW berekeningen</li>
-<li class="">Jaaroverzichten</li>
-</ul>
-<p><strong>Kosten:</strong> €10/maand (shared hosting)
-<strong>Alternatief:</strong> €75/maand (commercial project management + accounting)
-<strong>Besparing:</strong> €780/jaar</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="de-voorwaarden-voor-succes">De Voorwaarden voor Succes<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#de-voorwaarden-voor-succes" class="hash-link" aria-label="Direct link naar De Voorwaarden voor Succes" title="Direct link naar De Voorwaarden voor Succes" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-generiek-ontwerp">1. Generiek Ontwerp<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#1-generiek-ontwerp" class="hash-link" aria-label="Direct link naar 1. Generiek Ontwerp" title="Direct link naar 1. Generiek Ontwerp" translate="no">​</a></h3>
-<p><strong>Bij ontwikkeling denken aan hergebruik:</strong></p>
-<p>❌ <strong>Slecht:</strong></p>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">HardcodeGemeente() {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  if (user.type == "burger") {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    // specifieke gemeente logic</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre></div></div>
-<p>✅ <strong>Goed:</strong></p>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">GenericEntity() {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  // Generic contact management</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  // Configureerbaar voor gemeente OF bedrijf</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre></div></div>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-configureerbaar-niet-hard-coded">2. Configureerbaar, Niet Hard-Coded<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#2-configureerbaar-niet-hard-coded" class="hash-link" aria-label="Direct link naar 2. Configureerbaar, Niet Hard-Coded" title="Direct link naar 2. Configureerbaar, Niet Hard-Coded" translate="no">​</a></h3>
-<p><strong>Parameters voor context:</strong></p>
-<div class="language-yaml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-yaml codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token key atrule" style="color:#00a4db">organization_type</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> gemeente </span><span class="token punctuation" style="color:#393A34">|</span><span class="token plain"> bedrijf </span><span class="token punctuation" style="color:#393A34">|</span><span class="token plain"> vereniging</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token key atrule" style="color:#00a4db">workflows</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">-</span><span class="token plain"> gemeentelijk_proces (if gemeente)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">-</span><span class="token plain"> sales_pipeline (if bedrijf)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">-</span><span class="token plain"> member_registration (if vereniging)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token key atrule" style="color:#00a4db">terminology</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token key atrule" style="color:#00a4db">gemeente</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> "burger" → "inwoner"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token key atrule" style="color:#00a4db">bedrijf</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> "burger" → "klant"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token key atrule" style="color:#00a4db">vereniging</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> "burger" → "lid"</span><br></span></code></pre></div></div>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-gebruiksvriendelijk">3. Gebruiksvriendelijk<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#3-gebruiksvriendelijk" class="hash-link" aria-label="Direct link naar 3. Gebruiksvriendelijk" title="Direct link naar 3. Gebruiksvriendelijk" translate="no">​</a></h3>
-<p><strong>MKB heeft geen IT-afdeling:</strong></p>
-<ul>
-<li class="">Makkelijk te installeren</li>
-<li class="">Intuïtieve UI</li>
-<li class="">Goede documentatie</li>
-<li class="">Nederlands (en andere talen)</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-ondersteuning">4. Ondersteuning<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#4-ondersteuning" class="hash-link" aria-label="Direct link naar 4. Ondersteuning" title="Direct link naar 4. Ondersteuning" translate="no">​</a></h3>
-<p><strong>Verschillende modellen:</strong></p>
-<p><strong>DIY (Doe-Het-Zelf):</strong></p>
-<ul>
-<li class="">Documentatie</li>
-<li class="">Community forum</li>
-<li class="">Voor tech-savvy gebruikers</li>
-</ul>
-<p><strong>Gemeente-gehost:</strong></p>
-<ul>
-<li class="">Gemeente biedt hosting aan lokaal MKB</li>
-<li class="">Kleine vergoeding (cost-recovery)</li>
-<li class="">Ondersteuning via gemeente-servicedesk</li>
-</ul>
-<p><strong>Commercial Support:</strong></p>
-<ul>
-<li class="">Lokale IT-bedrijven bieden setup + support</li>
-<li class="">Verdienen aan dienstverlening, niet aan licenties</li>
-<li class="">Stimuleert lokale economie</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="paradigma-shift-needed">Paradigma Shift Needed<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#paradigma-shift-needed" class="hash-link" aria-label="Direct link naar Paradigma Shift Needed" title="Direct link naar Paradigma Shift Needed" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="van-code-naar-functionaliteit">Van Code naar Functionaliteit<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#van-code-naar-functionaliteit" class="hash-link" aria-label="Direct link naar Van Code naar Functionaliteit" title="Direct link naar Van Code naar Functionaliteit" translate="no">​</a></h3>
-<p><strong>Oude denken:</strong></p>
-<ul>
-<li class="">Overheid bouwt voor overheid</li>
-<li class="">Code wordt open source</li>
-<li class="">Iedereen blij (theoretisch)</li>
-<li class="">Weinig hergebruik (praktijk)</li>
-</ul>
-<p><strong>Nieuwe denken:</strong></p>
-<ul>
-<li class="">Overheid bouwt generieke functionaliteit</li>
-<li class="">Richt in voor eigen gebruik</li>
-<li class="">Maar: core is bruikbaar voor iedereen</li>
-<li class="">Actief faciliteren van hergebruik</li>
-<li class="">MKB-vriendelijke packaging</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="van-ownership-naar-use">Van Ownership naar Use<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#van-ownership-naar-use" class="hash-link" aria-label="Direct link naar Van Ownership naar Use" title="Direct link naar Van Ownership naar Use" translate="no">​</a></h3>
-<p><strong>SaaS-model:</strong></p>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Je BETAALT voor gebruik</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Je BEZIT niets</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Je CONTROLEERT niets</span><br></span></code></pre></div></div>
-<p><strong>Open Source model:</strong></p>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Je DOWNLOADT gratis (of goedkoop)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Je BEZIT je eigen installatie</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Je CONTROLEERT je eigen data</span><br></span></code></pre></div></div>
-<p><strong>Dit is fundamenteel anders.</strong></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="de-economische-kansen">De Economische Kansen<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#de-economische-kansen" class="hash-link" aria-label="Direct link naar De Economische Kansen" title="Direct link naar De Economische Kansen" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="voor-het-mkb">Voor het MKB<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#voor-het-mkb" class="hash-link" aria-label="Direct link naar Voor het MKB" title="Direct link naar Voor het MKB" translate="no">​</a></h3>
-<p><strong>Direct:</strong></p>
-<ul>
-<li class="">Lagere IT-kosten</li>
-<li class="">Meer controle</li>
-<li class="">Betere privacy</li>
-<li class="">Geen vendor lock-in</li>
-</ul>
-<p><strong>Indirect:</strong></p>
-<ul>
-<li class="">Meer geld voor groei</li>
-<li class="">Focus op core business</li>
-<li class="">Minder afhankelijkheid</li>
-<li class="">Digitale soevereiniteit</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="voor-de-local-economy">Voor de Local Economy<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#voor-de-local-economy" class="hash-link" aria-label="Direct link naar Voor de Local Economy" title="Direct link naar Voor de Local Economy" translate="no">​</a></h3>
-<p><strong>IT-dienstverleners:</strong></p>
-<ul>
-<li class="">Verdienen aan setup, training, support</li>
-<li class="">Niet aan licenties</li>
-<li class="">Duurzamer business model</li>
-<li class="">Lokale werkgelegenheid</li>
-</ul>
-<p><strong>Software Developers:</strong></p>
-<ul>
-<li class="">Bijdragen aan open source</li>
-<li class="">Bouwen op gemeenschappelijke basis</li>
-<li class="">Delen van kennis</li>
-<li class="">Sterker ecosystem</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="voor-europa">Voor Europa<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#voor-europa" class="hash-link" aria-label="Direct link naar Voor Europa" title="Direct link naar Voor Europa" translate="no">​</a></h3>
-<p><strong>Strategisch:</strong></p>
-<ul>
-<li class="">Minder geld naar Amerikaanse big tech</li>
-<li class="">Sterker MKB (backbone van Europese economie)</li>
-<li class="">Technologische soevereiniteit</li>
-<li class="">Innovatie in Europa</li>
-</ul>
-<p><strong>Economisch:</strong></p>
-<ul>
-<li class="">Miljarden blijven in Europa</li>
-<li class="">Banen in open source sector</li>
-<li class="">Concurrentie op basis van service, niet lock-in</li>
-<li class="">Gezondere markt</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="kritische-succesfactoren">Kritische Succesfactoren<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#kritische-succesfactoren" class="hash-link" aria-label="Direct link naar Kritische Succesfactoren" title="Direct link naar Kritische Succesfactoren" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-mindset-verandering">1. Mindset Verandering<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#1-mindset-verandering" class="hash-link" aria-label="Direct link naar 1. Mindset Verandering" title="Direct link naar 1. Mindset Verandering" translate="no">​</a></h3>
-<p><strong>Overheid moet denken:</strong></p>
-<ul>
-<li class="">Niet alleen aan eigen processen</li>
-<li class="">Maar aan generieke functionaliteit</li>
-<li class="">Met hergebruik in gedachten</li>
-<li class="">MKB als stakeholder</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-investment-in-usability">2. Investment in Usability<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#2-investment-in-usability" class="hash-link" aria-label="Direct link naar 2. Investment in Usability" title="Direct link naar 2. Investment in Usability" translate="no">​</a></h3>
-<p><strong>Open source vaak:</strong></p>
-<ul>
-<li class="">Developer-focused</li>
-<li class="">Moeilijk te gebruiken</li>
-<li class="">Slechte documentatie</li>
-</ul>
-<p><strong>Voor MKB-adoptie nodig:</strong></p>
-<ul>
-<li class="">Consumer-grade UX</li>
-<li class="">Plug-and-play installatie</li>
-<li class="">Nederlandse handleidingen</li>
-<li class="">Video tutorials</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-ecosystem-development">3. Ecosystem Development<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#3-ecosystem-development" class="hash-link" aria-label="Direct link naar 3. Ecosystem Development" title="Direct link naar 3. Ecosystem Development" translate="no">​</a></h3>
-<p><strong>Niet alleen software bouwen:</strong></p>
-<ul>
-<li class="">Community opbouwen</li>
-<li class="">Training aanbieden</li>
-<li class="">Showcase successes</li>
-<li class="">Faciliteren van peer-learning</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-sustainable-funding">4. Sustainable Funding<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#4-sustainable-funding" class="hash-link" aria-label="Direct link naar 4. Sustainable Funding" title="Direct link naar 4. Sustainable Funding" translate="no">​</a></h3>
-<p><strong>Open source is niet gratis:</strong></p>
-<ul>
-<li class="">Ontwikkeling kost geld</li>
-<li class="">Onderhoud kost geld</li>
-<li class="">Support kost geld</li>
-</ul>
-<p><strong>Oplossing:</strong></p>
-<ul>
-<li class="">Overheids-investering in common infrastructure</li>
-<li class="">Cost-sharing modellen</li>
-<li class="">Commercial support mogelijk</li>
-<li class="">EU-funding voor European Digital Commons</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="visie-european-digital-commons-for-sme">Visie: European Digital Commons for SME<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#visie-european-digital-commons-for-sme" class="hash-link" aria-label="Direct link naar Visie: European Digital Commons for SME" title="Direct link naar Visie: European Digital Commons for SME" translate="no">​</a></h2>
-<p><strong>Stel je voor in 2030:</strong></p>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">10 miljoen Europese MKB-ers</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Gebruiken overheids-ontwikkelde open source tools</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Self-hosted of via lokale hosting</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Betalen €0 tot €50/maand</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Besparen gezamenlijk €5 miljard/jaar</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Die blijft in de Europese economie</span><br></span></code></pre></div></div>
-<p><strong>Met als gevolg:</strong></p>
-<ul>
-<li class="">Sterker MKB</li>
-<li class="">Minder afhankelijkheid big tech</li>
-<li class="">Meer digitale soevereiniteit</li>
-<li class="">Europese innovatie</li>
-<li class="">Duurzamer business model</li>
-</ul>
+        <summary type="html"><![CDATA[Van Public Money is Public Code naar Public Money is Public Functionality. Hoe overheids-software het MKB kan helpen en Europa sterker kan maken door generieke tools te bouwen die iedereen kan gebruiken.]]></summary>
+        <content type="html"><![CDATA[<p>Beste overheidsbestuurders, stel je voor dat je zit in een vergaderzaal, omringd door stapels rapporten over IT-projecten die miljoenen kosten, en je vraagt je af – net als ik vaak doe – of dat geld niet slimmer besteed kan worden. Niet alleen om ambtenaren efficiënter te laten werken, maar om heel Nederland een boost te geven. Want laten we eerlijk zijn: als bestuurder weet je dat publieke investeringen verder reiken dan de muren van het stadhuis. "Public Money is Public Code" is een goed begin – code openbaar maken zodat iedereen kan meekijken en hergebruiken. Maar wat als we een stap verder gaan? Wat als we projecten zo sturen dat de ontwikkelde tools niet alleen voor de overheid zijn, maar bruikbaar voor het MKB, zzp'ers en verenigingen? Welkom bij <strong>Public Money is Public Functionality</strong>: functionaliteit generiek ontwerpen, zodat het de hele samenleving versterkt.</p>
+<p>Ik spreek jullie aan omdat jullie de sleutel in handen hebben. Jullie sturen de projecten, kiezen de aanpak. En ja, dit kan echt – het is geen wensdenken, maar een praktische shift die al in gang is gezet met initiatieven als Common Ground. Laten we duiken in waarom dit werkt, met verhalen uit de praktijk, en hoe het jullie helpt om impact te maken die verder gaat dan budgetrapporten.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="het-probleem-met-public-money-is-public-code-goed-bedoeld-maar-niet-goed-genoeg">Het Probleem met "Public Money is Public Code": Goed Bedoeld, Maar Niet Goed Genoeg<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#het-probleem-met-public-money-is-public-code-goed-bedoeld-maar-niet-goed-genoeg" class="hash-link" aria-label="Direct link naar Het Probleem met &quot;Public Money is Public Code&quot;: Goed Bedoeld, Maar Niet Goed Genoeg" title="Direct link naar Het Probleem met &quot;Public Money is Public Code&quot;: Goed Bedoeld, Maar Niet Goed Genoeg" translate="no">​</a></h2>
+<p>"Public Money is Public Code" komt van de <a href="https://fsfe.org/" target="_blank" rel="noopener noreferrer" class="">Free Software Foundation Europe</a>: als belastinggeld software financiert, moet die code openbaar zijn. Het heeft geleid tot mooie stappen, zoals de Wet open overheid die een inspanningsverplichting legt om broncode openbaar te maken. Maar in de praktijk belandt veel van die code op repositories als GitHub, waar het vooral nuttig is voor tech-savvy types. Voor de gemiddelde MKB'er – die geen tijd heeft voor coderen – is het een zwart gat. Het is vaak te specifiek voor overheidsprocessen, vol jargon over vergunningen en bezwaren, en mist gebruiksvriendelijkheid.</p>
+<p>Neem een verhaal uit de praktijk: een gemeente bouwt een formulieren-systeem voor burgeraanvragen. Code open? Check. Maar voor de groenteboer die klantorders beheert? Onbruikbaar. Hij betaalt nog steeds voor een SaaS-tool uit de VS, met abonnementen die zijn marge opslokken. De overheid investeert miljarden in IT, maar die waarde sijpelt niet door naar het MKB – de motor van onze economie. Dat is zonde. Met een kleine mindset-shift kunnen we die tools breder inzetten – niet alleen code, maar functionaliteit die iedereen versterkt.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="van-code-naar-functionality-stuur-projecten-op-herbruikbaarheid">Van Code naar Functionality: Stuur Projecten op Herbruikbaarheid<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#van-code-naar-functionality-stuur-projecten-op-herbruikbaarheid" class="hash-link" aria-label="Direct link naar Van Code naar Functionality: Stuur Projecten op Herbruikbaarheid" title="Direct link naar Van Code naar Functionality: Stuur Projecten op Herbruikbaarheid" translate="no">​</a></h2>
+<p>Hier komt "Public Money is Public Functionality" om de hoek kijken: stuur projecten zo dat de kern – contactbeheer, documentopslag, taakplanning – niet alleen voor ambtenaren werkt, maar voor iedereen. Het is een uitbreiding op bestaande beleid, zoals NORA-richtlijnen die hergebruik aanmoedigen, en sluit aan bij de Kamerbrief "Open tenzij" uit 2020, die pleit voor open source als standaard tenzij het echt niet kan.<sup><a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#user-content-fn-27-87485c" id="user-content-fnref-27-87485c" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">1</a></sup> Jullie kunnen dit doen door bij aanbestedingen te eisen: "Maak het modulair, configureerbaar, en MKB-vriendelijk." Rapporten tonen dat dit werkt – open source stimuleert toepassing in MKB, zoals het OASE-programma al in 2007 deed.</p>
+<p>Stel, jullie bouwen een contactmanagementsysteem voor burgeraanvragen: history loggen, communicatie tracken. Maak het generiek, en de groenteboer gebruikt het als CRM voor klanten en leveranciers. Of documentmanagement: versiebeheer voor officiële papieren. Voor MKB? Contracten en facturen opslaan, zonder Dropbox. Taakplanning? Procesbewaking voor overheid, projectmanagement voor ondernemers.</p>
+<p>Dit kan echt: denk aan MijnOverheid, met Berichtenbox en profielbeheer. Nu gesloten, maar stel het open source en eenvoudig installbaar – off-the-shelf via app stores of lokale hosting. Dan wordt het een enterprise-tool voor MKB: veilige berichtgeving voor klanten, profielbeheer voor teams. Met simpele installatie (plug-and-play VPS of gemeentelijke hosting) en configuratie (geen code, alleen settings), is het toegankelijk. Belgische broncode is al openbare informatie; waarom niet hier?</p>
+<p>Een anekdote: in België beschouwt de overheid broncode als openbaar, wat hergebruik stimuleert. In Nederland: Syntens-programma hielp MKB met open source. Jullie kunnen dit sturen – maak herbruikbaarheid een KPI.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="overheid-als-dienstverlener-processen-die-overlappen-met-mkb">Overheid als Dienstverlener: Processen Die Overlappen met MKB<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#overheid-als-dienstverlener-processen-die-overlappen-met-mkb" class="hash-link" aria-label="Direct link naar Overheid als Dienstverlener: Processen Die Overlappen met MKB" title="Direct link naar Overheid als Dienstverlener: Processen Die Overlappen met MKB" translate="no">​</a></h2>
+<p>Laten we even stilstaan bij een cruciaal inzicht: in de basis verschilt de overheid in haar ICT-processen niet zoveel van andere dienstverleners, zoals een bank of verzekeraar. Er komen vragen binnen – een burger vraagt een vergunning aan, een klant een lening – die door een beoordelingsproces lopen en leiden tot besluiten. De beoordelingskaders zijn bij de overheid wetten en regels, bij een bank kredietchecks, maar de flow is hetzelfde: intake, analyse, goedkeuring of afwijzing. Extra authenticatie zoals DigiD voegt een laag toe voor veiligheid, maar doet niets af aan het concept. Overheidsprocessen lijken dus sterk op commerciële – een zaaksysteem voor vergunningen kan net zo goed dienen als claimverwerking bij een verzekeraar. Door tools generiek te maken, zonder hard-coded overheidsregels, kunnen ze naadloos overgenomen worden door MKB. Authenticatie? Vervang DigiD door een eenvoudige login. Dit maakt overstap makkelijk – en versterkt de hele economie.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="data-soevereiniteit-bescherm-niet-alleen-de-overheid-maar-de-hele-samenleving">Data Soevereiniteit: Bescherm Niet Alleen de Overheid, Maar de Hele Samenleving<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#data-soevereiniteit-bescherm-niet-alleen-de-overheid-maar-de-hele-samenleving" class="hash-link" aria-label="Direct link naar Data Soevereiniteit: Bescherm Niet Alleen de Overheid, Maar de Hele Samenleving" title="Direct link naar Data Soevereiniteit: Bescherm Niet Alleen de Overheid, Maar de Hele Samenleving" translate="no">​</a></h2>
+<p>En dan data soevereiniteit: als overheid moeten we groter denken dan onszelf. Om burgers veilig te houden, moeten we commerciële data beschermen – van bedrijven, scholen, iedereen. Big tech's lock-in maakt ons kwetsbaar; data in VS of China is een risico. Door tools open te maken, bieden we alternatieven: hosted op NL servers, Europese data. Zo ontsnapt het bedrijfsleven en onderwijs aan big tech – lagere kosten, meer controle. Jullie rol? Stuur op functionaliteit die breed inzetbaar is, zodat soevereiniteit een nationaal goed wordt, niet alleen overheidszaak.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="de-europese-visie-eigenaarschap-voor-allen">De Europese Visie: Eigenaarschap voor Allen<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#de-europese-visie-eigenaarschap-voor-allen" class="hash-link" aria-label="Direct link naar De Europese Visie: Eigenaarschap voor Allen" title="Direct link naar De Europese Visie: Eigenaarschap voor Allen" translate="no">​</a></h2>
+<p>Beste bestuurders, stel je voor dat Europa niet langer de volger is in de tech-wereld, maar de leider – een continent waar open source niet alleen een idealistisch principe is, maar een motor voor economische groei. In tegenstelling tot het Amerikaanse SaaS-model, met zijn eindeloze abonnementen, lock-in en data die vaak in verre servers belandt, kiest Europa voor open source en hosted oplossingen op NL servers. De overheid investeert, en het MKB profiteert direct: eigenaarschap over je data, privacy by design, en geen onverwachte prijsstijgingen of vendor-stop. De risico's van SaaS zijn bekend: een vendor trekt de stekker eruit, of geopolitieke spanningen – denk aan het einde van Pax Americana – maken je data kwetsbaar.</p>
+<p>De economische impact is enorm. Stel dat 1 miljoen Europese MKB'ers €50 per maand besparen op SaaS: dat is €600 miljoen per jaar die in onze economie blijft, in plaats van naar buitenlandse big tech vloeit. En dat is conservatief; studies tonen dat open source banen creëert in de open source-sector, kennisopbouw stimuleert en het ecosysteem versterkt – denk aan lokale IT-dienstverleners die verdienen aan support in plaats van licenties. Europa excelleert hier, omdat we waarden als solidariteit en samenwerking inbouwen: overheidsinvesteringen leiden tot tools die iedereen versterken, niet alleen de aandeelhouders van Silicon Valley.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="praktisch-hoe-werkt-dit-in-de-echte-wereld">Praktisch: Hoe Werkt Dit in de Echte Wereld?<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#praktisch-hoe-werkt-dit-in-de-echte-wereld" class="hash-link" aria-label="Direct link naar Praktisch: Hoe Werkt Dit in de Echte Wereld?" title="Direct link naar Praktisch: Hoe Werkt Dit in de Echte Wereld?" translate="no">​</a></h2>
+<p>Dit is geen theorie – het kan echt, en het gebeurt al. Neem Frans, de groenteboer op de hoekmarkt. Nu betaalt hij €5.50 per maand voor Microsoft 365 Business Basic – webversies van Office-apps, email, cloudopslag. Maar met Public Functionality overstapt hij naar Nextcloud met apps, gehost op NL servers door KPN: vanaf €5-10/maand voor hele setup, apps voor documenten, contacten en taakplanning. Besparing? Tot €60/jaar per user, die hij steekt in verse producten of een nieuwe kraam. En de winst? Naast economisch: weer klantgegevens gered uit een Amerikaanse cloud – veilig in Nederland.</p>
+<p>Hoe werkt dat? Jullie sturen het project: ontwikkel open source, publiceer, en maak een MKB-versie – eenvoudig te installeren via NextCloud met Common Ground-componenten. KPN biedt Nextcloud aan op NL servers, perfect voor soevereiniteit. Lokale IT'ers helpen met setup – zij verdienen aan service, niet licenties, wat de economie stimuleert. Bij Conduction bouwen we OpenRegister: voor overheid data beheren en vectoriseren voor AI, maar voor MKB hetzelfde – gratis of goedkoop, als off-the-shelf oplossing.</p>
+<p>Lotte, webshopeigenaar met sieraden, gebruikt Microsoft 365 (€5.50/maand) voor Office-apps. Overstap naar KPN Nextcloud: €5-10/maand – bespaart op abonnementen, en redt data uit US clouds. Voetbalclub Vooruit: Microsoft voor teamcommunicatie (€5.50/user/maand) naar KPN Nextcloud vanaf €5/maand. Ahmed, zzp-ontwerper: Office-tools (€5.50/maand) naar KPN Nextcloud €5-10/maand. Dit werkt, zoals Waag pleit voor open software met hergebruik buiten overheid. Zelfs MijnOverheid kan als enterprise-tool voor MKB dienen: Berichtenbox voor veilige communicatie, profielbeheer voor teams – mits simpeler te installeren, off-the-shelf via app stores of lokale hosting. Jullie sturen dit: eis modulariteit in aanbestedingen.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="de-voorwaarden-voor-succes-stuur-op-generiek-en-ondersteuning">De Voorwaarden voor Succes: Stuur op Generiek en Ondersteuning<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#de-voorwaarden-voor-succes-stuur-op-generiek-en-ondersteuning" class="hash-link" aria-label="Direct link naar De Voorwaarden voor Succes: Stuur op Generiek en Ondersteuning" title="Direct link naar De Voorwaarden voor Succes: Stuur op Generiek en Ondersteuning" translate="no">​</a></h2>
+<p>Om dit te laten slagen, stuur je op generiek ontwerp: modulair en configureerbaar, geen hard-coded jargon – denk aan parameters voor "gemeente" of "bedrijf". Maak het gebruiksvriendelijk: intuïtieve UI voor non-techies, Nederlandse tutorials – niet developer-focused. Ondersteuning is key: DIY voor savvy users, gemeentelijk voor eenvoud, commercial via lokale IT – lokaal en duurzaam. Bouw een ecosystem: community, trainingen, showcases voor peer-learning. Funding? Overheidsinvestering in commons, cost-sharing, EU-fonds – sustainable zonder lock-in.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="conclusie">Conclusie<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#conclusie" class="hash-link" aria-label="Direct link naar Conclusie" title="Direct link naar Conclusie" translate="no">​</a></h2>
-<p><strong>Public Money is Public Functionality is een game-changer.</strong></p>
-<p>Het gaat verder dan "Public Money is Public Code":</p>
-<ul>
-<li class="">Niet alleen code beschikbaar</li>
-<li class="">Maar daadwerkelijk bruikbaar</li>
-<li class="">Voor bredere doelgroep</li>
-<li class="">Met tastbare economische impact</li>
-</ul>
-<p><strong>Het combineert:</strong></p>
-<ul>
-<li class="">Europese waarden (solidariteit, samenwerking)</li>
-<li class="">Pragmatische aanpak (hergebruik, efficiency)</li>
-<li class="">Economisch voordeel (lagere kosten, minder afhankelijkheid)</li>
-<li class="">Technologische soevereiniteit (controle, privacy)</li>
-</ul>
-<p><strong>De shift van abonnement-model naar eigenaarschap-model is:</strong></p>
-<ul>
-<li class="">Goed voor MKB (lagere kosten)</li>
-<li class="">Goed voor economie (geld blijft in Europa)</li>
-<li class="">Goed voor innovatie (open platforms)</li>
-<li class="">Goed voor soevereiniteit (geen lock-in)</li>
-</ul>
-<p><strong>De vraag is niet óf we dit moeten doen, maar hoe snel we kunnen beginnen.</strong></p>
-<p>Want elke euro die nu naar SaaS-abonnementen gaat, is een euro die Europa verlaat.</p>
-<p>Tijd om die euro's in Europa te houden - en te investeren in onze gezamenlijke digitale toekomst.</p>
-<hr>
-<p><strong>Deze blog-serie rondde hiermee af!</strong></p>
-<p><strong>Alle blogs:</strong></p>
-<p><strong>AI &amp; Overheid:</strong></p>
+<p>Bestuurders, stuur projecten op functionality – het kan, zoals Common Ground bewijst. Maak MijnOverheid-achtig tools open en eenvoudig – off-the-shelf voor MKB. Convinceer yourselves: dit versterkt economie, soevereiniteit.</p>
+<p>Begin nu – public money voor public good.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="bronnen">Bronnen<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#bronnen" class="hash-link" aria-label="Direct link naar Bronnen" title="Direct link naar Bronnen" translate="no">​</a></h2>
+<!-- -->
+<section data-footnotes="true" class="footnotes"><h2 class="anchor anchorTargetStickyNavbar_Vzrq sr-only" id="footnote-label">Footnotes<a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#footnote-label" class="hash-link" aria-label="Direct link naar Footnotes" title="Direct link naar Footnotes" translate="no">​</a></h2>
 <ol>
-<li class=""><a class="" href="https://www.rubenlinde.nl/blog/ai-bubbels-wereldbeeld">AI Bubbels en Wereldbeeld</a></li>
-<li class=""><a class="" href="https://www.rubenlinde.nl/blog/ai-open-source-common-ground">AI en Open Source</a></li>
-<li class=""><a class="" href="https://www.rubenlinde.nl/blog/ai-data-datalaag-basis">AI en Data</a></li>
-<li class=""><a class="" href="https://www.rubenlinde.nl/blog/ai-techniek-integratie-mcp-mistral">AI en Techniek</a></li>
-<li class=""><a class="" href="https://www.rubenlinde.nl/blog/ai-veilig-handelingskaders-rbak-pbak">Veilige AI</a></li>
-<li class=""><a class="" href="https://www.rubenlinde.nl/blog/ai-kansen-burgers-regelgeving-navigator">Kansen voor Burgers</a></li>
-<li class=""><a class="" href="https://www.rubenlinde.nl/blog/ai-risicos-niet-adopteren-achterblijven">Risico's Niet-Adopteren</a></li>
+<li class="anchorTargetStickyNavbar_Vzrq" id="user-content-fn-27-87485c">
+<p><strong>Kamerbrief Open Source Ten Zij</strong> - <a href="https://www.rijksoverheid.nl/documenten/kamerstukken/2023/06/30/kamerbrief-over-open-source-software-open-tenzij" target="_blank" rel="noopener noreferrer" class="">Kamerbrief over open source software 'open, tenzij'</a> <a href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality#user-content-fnref-27-87485c" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+</li>
 </ol>
-<p><strong>Open Source &amp; Europa:</strong> 8. <a class="" href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit">Einde Pax Americana</a> 9. <a class="" href="https://www.rubenlinde.nl/blog/eurostack-common-ground-europese-samenwerking">Eurostack &amp; Common Ground</a> 10. <a class="" href="https://www.rubenlinde.nl/blog/open-source-mkb-public-functionality">Open Source voor MKB</a> ← <strong>Je bent hier</strong></p>
-<p><strong>Gerelateerd:</strong> <a href="https://commonground.nl/" target="_blank" rel="noopener noreferrer" class="">Common Ground</a> | <a href="https://github.com/ConductionNL/openregister" target="_blank" rel="noopener noreferrer" class="">OpenRegister</a> | <a href="https://conduction.nl/" target="_blank" rel="noopener noreferrer" class="">Conduction</a></p>]]></content>
+</section>]]></content>
         <author>
             <name>Ruben van de Linde</name>
             <email>your-email@example.com</email>
@@ -1084,8 +676,18 @@ class ApiController <!-- -->
         <category label="open-source" term="open-source"/>
         <category label="mkb" term="mkb"/>
         <category label="public-money-public-code" term="public-money-public-code"/>
-        <category label="functionality" term="functionality"/>
+        <category label="public-functionality" term="public-functionality"/>
         <category label="groenteman" term="groenteman"/>
+        <category label="common-ground" term="common-ground"/>
+        <category label="digitale-soevereiniteit" term="digitale-soevereiniteit"/>
+        <category label="europa" term="europa"/>
+        <category label="saas" term="saas"/>
+        <category label="vendor-lock-in" term="vendor-lock-in"/>
+        <category label="nextcloud" term="nextcloud"/>
+        <category label="openregister" term="openregister"/>
+        <category label="zzp" term="zzp"/>
+        <category label="verenigingen" term="verenigingen"/>
+        <category label="self-hosted" term="self-hosted"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Eurostack en Common Ground - Europese digitale samenwerking]]></title>
@@ -1501,7 +1103,7 @@ class ApiController <!-- -->
         <content type="html"><![CDATA[<p>Hé, Europa! Herinner je je die goede oude dagen nog? Toen Amerika de grote, vriendelijke reus was die de wereldorde bewaakte met een Big Mac in de ene hand en een cloud-server in de andere? Ja? Nou, wakker worden! Die Pax Americana is voorbij. Het is tijd voor Post-Americana, waar we niet langer blindelings vertrouwen op <strong>Foreign Tech</strong> – Amerikaanse, Chinese en Russische techbedrijven die gehoorzamen aan mogendheden die niet altijd onze beste vrienden zijn. Het probleem zit hem niet in “Big Tech” omdat ze groot zijn of onetisch zijn (spoiler ze zijn bijde), maar omdat ze <strong>vreemd</strong> zijn: onderworpen aan wetten en politieke grillen van landen die onze soevereiniteit, privacy en veiligheid zomaar kunnen ondermijnen.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-19-092097" id="user-content-fnref-19-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">1</a></sup></p>
 <p>En laten we eerlijk zijn: onze relatie met deze Foreign Tech-giganten lijkt verdacht veel op een klassieke <strong>loverboy-constructie</strong>. Ze verleiden ons met gratis of spotgoedkope diensten, maken ons volledig afhankelijk, en zodra we diep in de relatie zitten, trekken ze de controle naar zich toe – of laat het Witte Huis, Beijing of Moskou de teugels aantrekken.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-21-092097" id="user-content-fnref-21-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">2</a></sup> Tijd om uit deze toxische relatie te stappen.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="geopolitieke-herordening-van-amerika-als-primus-inter-pares-naar-een-tripolair-systeem">Geopolitieke Herordening: Van Amerika als Primus Inter Pares naar een Tripolair Systeem<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#geopolitieke-herordening-van-amerika-als-primus-inter-pares-naar-een-tripolair-systeem" class="hash-link" aria-label="Direct link naar Geopolitieke Herordening: Van Amerika als Primus Inter Pares naar een Tripolair Systeem" title="Direct link naar Geopolitieke Herordening: Van Amerika als Primus Inter Pares naar een Tripolair Systeem" translate="no">​</a></h2>
-<p>Voordat we duiken in de tech-chaos, laten we dit even in een groter plaatje zetten: de wereld ondergaat een geopolitieke herordening, van de VS als 'primus inter pares' (eerste onder gelijken) in een unipolaire orde naar een tripolair systeem met de VS, China en de EU als drie grote polen.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-22-092097" id="user-content-fnref-22-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">3</a></sup><sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-23-092097" id="user-content-fnref-23-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">4</a></sup> Pax Americana, die tijd van Amerikaanse hegemonie na WOII, brokkelt af door interne polarisatie, overbelaste militaire avonturen en een 'America First'-mentaliteit die bondgenoten als lastige sidekicks ziet.</p>
+<p>Voordat we duiken in de tech-chaos, laten we dit even in een groter plaatje zetten: de wereld ondergaat een geopolitieke herordening, van de VS als 'primus inter pares' (eerste onder gelijken) in een unipolaire orde naar een tripolair systeem met de VS, China en de EU als drie grote polen.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-22-092097" id="user-content-fnref-22-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">3</a></sup>, <sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-23-092097" id="user-content-fnref-23-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">4</a></sup> Pax Americana, die tijd van Amerikaanse hegemonie na WOII, brokkelt af door interne polarisatie, overbelaste militaire avonturen en een 'America First'-mentaliteit die bondgenoten als lastige sidekicks ziet.</p>
 <p>We weten dit al een tijdje. Al in 2022 sprak toenmalig kanselier Olaf Scholz van een <strong>Zeitenwende</strong> – een keerpunt in de geschiedenis – na de Russische invasie van Oekraïne, waarmee hij impliciet het einde van de oude Pax Americana-orde markeerde.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-28-092097" id="user-content-fnref-28-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">5</a></sup> En recent, in december 2025, was de huidige kanselier Friedrich Merz nog explicieter tijdens een CSU-congres: "De decades van Pax Americana zijn grotendeels voorbij voor ons in Europa en Duitsland." Hij waarschuwde dat nostalgie geen zin heeft en dat Europa zijn eigen belangen agressiever moet verdedigen.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-27-092097" id="user-content-fnref-27-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">6</a></sup></p>
 <p>In plaats daarvan zien we een multipolaire – of specifieker, tripolaire – wereld opkomen, waar de VS, China en de EU elk hun eigen economische en politieke spheres of influence bouwen.</p>
 <p>Denk eraan: de VS blijft militair topdog, maar China domineert in economie en tech (hallo, AI en quantum), terwijl de EU met haar markt van 500 miljoen zielen en waarden als privacy-first een derde pool kan claimen – mits we niet langer als tech-kolonie van Uncle Sam of Beijing fungeren. Deze shift betekent meer rivaliteit, maar ook kansen voor Europa om strategische autonomie te grijpen, vooral in digitale domeinen. Want in een tripolair systeem kun je niet leunen op één pool; je moet je eigen stack bouwen, of je wordt een speelbal in de grote-machten-pingpong. En ja, dat maakt digitale soevereiniteit niet zomaar een buzzword, maar een geopolitieke noodzaak – anders eindig je als de sidekick die de rekeningen betaalt terwijl de helden vechten. Tijd om op te staan, Europa!</p>
@@ -1512,8 +1114,8 @@ class ApiController <!-- -->
 <p><strong>De verschuiving:</strong> Het gaat niet meer om of een tech-bedrijf groot of ethisch is. Het gaat erom dat veel van deze bedrijven <strong>buitenlands</strong> zijn en moeten gehoorzamen aan mogendheden die niet per se onze belangen dienen. Dat maakt ze Foreign Tech: niet alleen groot, maar <strong>vreemd</strong> en potentieel vijandig. En daarop zijn we afhankelijk voor de bedrijfsvoering van de overheid.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-1-092097" id="user-content-fnref-1-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">7</a></sup></p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="het-internationaal-strafhof-de-wake-up-call-die-we-niet-zagen-aankomen-maar-wel-hadden-moeten">Het Internationaal Strafhof: De Wake-up Call Die We Niet Zagen Aankomen (Maar Wel Hadden Moeten)<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#het-internationaal-strafhof-de-wake-up-call-die-we-niet-zagen-aankomen-maar-wel-hadden-moeten" class="hash-link" aria-label="Direct link naar Het Internationaal Strafhof: De Wake-up Call Die We Niet Zagen Aankomen (Maar Wel Hadden Moeten)" title="Direct link naar Het Internationaal Strafhof: De Wake-up Call Die We Niet Zagen Aankomen (Maar Wel Hadden Moeten)" translate="no">​</a></h2>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="de-feiten-een-slechte-hollywood-plot-maar-echt-gebeurd">De Feiten: Een Slechte Hollywood-Plot, Maar Echt Gebeurd<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#de-feiten-een-slechte-hollywood-plot-maar-echt-gebeurd" class="hash-link" aria-label="Direct link naar De Feiten: Een Slechte Hollywood-Plot, Maar Echt Gebeurd" title="Direct link naar De Feiten: Een Slechte Hollywood-Plot, Maar Echt Gebeurd" translate="no">​</a></h3>
-<p>Stel je voor: het Internationaal Strafhof (ICC) in Den Haag onderzoekt mogelijke oorlogsmisdaden. Microsoft levert de cloud-diensten. Tot het Witte Huis het niet eens is met het onderzoek. Wat doet Microsoft? Op verzoek van Uncle Sam trekken ze de stekker eruit – contract weg, dienstverlening kaput.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-8-092097" id="user-content-fnref-8-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">8</a></sup><sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-9-092097" id="user-content-fnref-9-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">9</a></sup><sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-10-092097" id="user-content-fnref-10-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">10</a></sup><sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-11-092097" id="user-content-fnref-11-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">11</a></sup></p>
-<p>Dit is geen aflevering van "House of Cards". Dit is gebeurd. En het ICC dumpt nu Microsoft voor een Europese open-source suite zoals openDesk – slim, want wie wil er nog afhankelijk zijn van Foreign Tech die "America First" boven "Justice First" stelt?<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-8-092097" id="user-content-fnref-8-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">8</a></sup><sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-9-092097" id="user-content-fnref-9-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">9</a></sup></p>
+<p>Stel je voor: het Internationaal Strafhof (ICC) in Den Haag onderzoekt mogelijke oorlogsmisdaden. Microsoft levert de cloud-diensten. Tot het Witte Huis het niet eens is met het onderzoek. Wat doet Microsoft? Op verzoek van Uncle Sam trekken ze de stekker eruit – contract weg, dienstverlening kaput.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-8-092097" id="user-content-fnref-8-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">8</a></sup>, <sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-9-092097" id="user-content-fnref-9-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">9</a></sup>, <sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-10-092097" id="user-content-fnref-10-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">10</a></sup>, <sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-11-092097" id="user-content-fnref-11-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">11</a></sup></p>
+<p>Dit is geen aflevering van "House of Cards". Dit is gebeurd. En het ICC dumpt nu Microsoft voor een Europese open-source suite zoals openDesk – slim, want wie wil er nog afhankelijk zijn van Foreign Tech die "America First" boven "Justice First" stelt?<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-8-092097" id="user-content-fnref-8-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">8</a></sup>, <sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-9-092097" id="user-content-fnref-9-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">9</a></sup></p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="wat-dit-betekent-een-les-in-vertrouw-niemand">Wat Dit Betekent: Een Les in "Vertrouw Niemand"<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#wat-dit-betekent-een-les-in-vertrouw-niemand" class="hash-link" aria-label="Direct link naar Wat Dit Betekent: Een Les in &quot;Vertrouw Niemand&quot;" title="Direct link naar Wat Dit Betekent: Een Les in &quot;Vertrouw Niemand&quot;" translate="no">​</a></h3>
 <ul>
 <li class="">Niet juridische kaders, maar politieke grillen bepalen je toegang tot data.</li>
@@ -1524,43 +1126,43 @@ class ApiController <!-- -->
 <p>Dit incident heeft de discussie over digitale soevereiniteit aangewakkerd, zoals iBestuur het noemt.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-1-092097" id="user-content-fnref-1-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">7</a></sup> Maar nog niet beslecht.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="amerikaanse-technologie-als-politiek-wapen-america-first-betekent-europa-last--en-betaal-de-rekening">Amerikaanse Technologie als Politiek Wapen: "America First" Betekent "Europa Last – En Betaal de Rekening"<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#amerikaanse-technologie-als-politiek-wapen-america-first-betekent-europa-last--en-betaal-de-rekening" class="hash-link" aria-label="Direct link naar Amerikaanse Technologie als Politiek Wapen: &quot;America First&quot; Betekent &quot;Europa Last – En Betaal de Rekening&quot;" title="Direct link naar Amerikaanse Technologie als Politiek Wapen: &quot;America First&quot; Betekent &quot;Europa Last – En Betaal de Rekening&quot;" translate="no">​</a></h2>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="de-realiteit-geen-romantische-relatie-meer">De Realiteit: Geen Romantische Relatie Meer<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#de-realiteit-geen-romantische-relatie-meer" class="hash-link" aria-label="Direct link naar De Realiteit: Geen Romantische Relatie Meer" title="Direct link naar De Realiteit: Geen Romantische Relatie Meer" translate="no">​</a></h3>
-<p>Onze relatie met Foreign Tech is geen gezonde partnership, maar een klassieke <strong>loverboy-tactiek</strong>: eerst verleiden met lage prijzen en gemak, dan volledig afhankelijk maken, en uiteindelijk de controle overnemen wanneer het hun uitkomt. En we laten dit toe – niemand maakt er een punt van dat Microsoft gratis licenties uitdeelt in het onderwijs en daar leerlingen en studenten al vroeg aan boord haalt.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-24-092097" id="user-content-fnref-24-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">12</a></sup><sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-25-092097" id="user-content-fnref-25-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">13</a></sup><sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-26-092097" id="user-content-fnref-26-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">14</a></sup></p>
+<p>Onze relatie met Foreign Tech is geen gezonde partnership, maar een klassieke <strong>loverboy-tactiek</strong>: eerst verleiden met lage prijzen en gemak, dan volledig afhankelijk maken, en uiteindelijk de controle overnemen wanneer het hun uitkomt. En we laten dit toe – niemand maakt er een punt van dat Microsoft gratis licenties uitdeelt in het onderwijs en daar leerlingen en studenten al vroeg aan boord haalt.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-24-092097" id="user-content-fnref-24-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">12</a></sup>, <sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-25-092097" id="user-content-fnref-25-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">13</a></sup>, <sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-26-092097" id="user-content-fnref-26-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">14</a></sup></p>
 <p>Zoals Marleen Stikker het treffend zegt in Trouw: "Big tech is een instrument geworden van de geopolitiek" en "Inmiddels gaat het om onze nationale veiligheid." Vier Europese landen (Finland, Frankrijk, Italië en Nederland) lanceren een eigen software-ontwikkelingsinitiatief om minder afhankelijk te worden van VS-big tech – de eerste stap naar digitale onafhankelijkheid.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-18-092097" id="user-content-fnref-18-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">15</a></sup></p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="recente-voorbeelden-een-komische-maar-eng-hitlijst">Recente Voorbeelden: Een Komische (Maar Eng) Hitlijst<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#recente-voorbeelden-een-komische-maar-eng-hitlijst" class="hash-link" aria-label="Direct link naar Recente Voorbeelden: Een Komische (Maar Eng) Hitlijst" title="Direct link naar Recente Voorbeelden: Een Komische (Maar Eng) Hitlijst" translate="no">​</a></h3>
-<p>Laten we eens duiken in de recente voorbeelden die laten zien hoe Foreign Tech niet zomaar tools zijn, maar verlengstukken van nationale macht – en hoe dat ons in Europa in een benarde positie brengt.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-3-092097" id="user-content-fnref-3-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">16</a></sup><sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-17-092097" id="user-content-fnref-17-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">17</a></sup> Het patroon is duidelijk en eerlijk gezegd een beetje komisch, als het niet zo eng zou zijn: Amerika zet bondgenoten onder druk alsof we een spelletje Monopoly spelen, maar dan met echte tarieven en dreigementen.</p>
+<p>Laten we eens duiken in de recente voorbeelden die laten zien hoe Foreign Tech niet zomaar tools zijn, maar verlengstukken van nationale macht – en hoe dat ons in Europa in een benarde positie brengt.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-3-092097" id="user-content-fnref-3-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">16</a></sup>, <sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-17-092097" id="user-content-fnref-17-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">17</a></sup> Het patroon is duidelijk en eerlijk gezegd een beetje komisch, als het niet zo eng zou zijn: Amerika zet bondgenoten onder druk alsof we een spelletje Monopoly spelen, maar dan met echte tarieven en dreigementen.</p>
 <p>Neem de <strong>handelsorlog</strong>: willekeurige tarieven op Europese goederen, tech-exportrestricties – het is "America First" ten koste van alles.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-4-092097" id="user-content-fnref-4-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">18</a></sup> Of de <strong>NAVO-twijfels</strong>: Trump zet openlijk vraagtekens bij Article 5, ons collectieve verdedigingspact – het is als een vriendschap waarin één partij zegt: "Ik help je alleen als je meer betaalt voor defensie."<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-6-092097" id="user-content-fnref-6-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">19</a></sup></p>
-<p>Dan het <strong>Groenland-dreigement</strong>: Trump's bizarre plan om Groenland te kopen, en toen Denemarken nee zei, volgden dreigementen.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-6-092097" id="user-content-fnref-6-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">19</a></sup> En recenter: <strong>visa bans op EU-regulators</strong> zoals Thierry Breton, de architect achter de Digital Services Act. Het Witte Huis noemt het "extraterritoriale censuur", maar Macron spreekt van pure intimidatie om onze digitale soevereiniteit te ondermijnen.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-3-092097" id="user-content-fnref-3-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">16</a></sup><sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-17-092097" id="user-content-fnref-17-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">17</a></sup></p>
-<p>AD waarschuwt al jaren: twee derde van de Nederlandse gemeenten mailt met Microsoft, terwijl Trump chantagemiddelen niet schuwt – denk aan kill switches op mailboxes als we niet meewerken.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-4-092097" id="user-content-fnref-4-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">18</a></sup><sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-5-092097" id="user-content-fnref-5-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">20</a></sup><sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-7-092097" id="user-content-fnref-7-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">21</a></sup> Nijmegen wil daarom minder invloed van Amerikaanse big tech, precies omdat die kill switch een reëel risico is.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-7-092097" id="user-content-fnref-7-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">21</a></sup></p>
+<p>Dan het <strong>Groenland-dreigement</strong>: Trump's bizarre plan om Groenland te kopen, en toen Denemarken nee zei, volgden dreigementen.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-6-092097" id="user-content-fnref-6-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">19</a></sup> En recenter: <strong>visa bans op EU-regulators</strong> zoals Thierry Breton, de architect achter de Digital Services Act. Het Witte Huis noemt het "extraterritoriale censuur", maar Macron spreekt van pure intimidatie om onze digitale soevereiniteit te ondermijnen.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-3-092097" id="user-content-fnref-3-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">16</a></sup>, <sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-17-092097" id="user-content-fnref-17-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">17</a></sup></p>
+<p>AD waarschuwt al jaren: twee derde van de Nederlandse gemeenten mailt met Microsoft, terwijl Trump chantagemiddelen niet schuwt – denk aan kill switches op mailboxes als we niet meewerken.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-4-092097" id="user-content-fnref-4-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">18</a></sup>, <sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-5-092097" id="user-content-fnref-5-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">20</a></sup>, <sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-7-092097" id="user-content-fnref-7-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">21</a></sup> Nijmegen wil daarom minder invloed van Amerikaanse big tech, precies omdat die kill switch een reëel risico is.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-7-092097" id="user-content-fnref-7-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">21</a></sup></p>
 <p>Het patroon? Foreign Tech is geen neutrale speler; het is een geopolitiek schaakstuk, en wij zijn de pionnen.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="juridische-continuïteit-in-gevaar-rule-of-law-meer-rule-of-lol">Juridische Continuïteit in Gevaar: "Rule of Law? Meer Rule of LOL"<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#juridische-continu%C3%AFteit-in-gevaar-rule-of-law-meer-rule-of-lol" class="hash-link" aria-label="Direct link naar Juridische Continuïteit in Gevaar: &quot;Rule of Law? Meer Rule of LOL&quot;" title="Direct link naar Juridische Continuïteit in Gevaar: &quot;Rule of Law? Meer Rule of LOL&quot;" translate="no">​</a></h2>
 <p>En dan de juridische chaos: Trump's aanpak ondermijnt de rule of law – rechters ontslaan, hoven politiseren, independence van justitie onder druk.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-2-092097" id="user-content-fnref-2-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">22</a></sup> Het gevolg? Juridische voorspelbaarheid verdwijnt, contracten worden waardeloos, en de rechtsgang een loterij.</p>
-<p>Centraal staat het <strong>Transatlantic Data Privacy Framework</strong>: dit dataverdrag tussen EU en VS kan elk moment klappen. Het steunt op presidentiële besluiten die Trump zomaar kan intrekken, met onafhankelijke toezichthouders onder druk en eerdere verdragen al twee keer ongeldig verklaard.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-19-092097" id="user-content-fnref-19-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">1</a></sup> Overheid, opgelet: breng afhankelijkheden in kaart en schakel over op eigen infrastructuur, anders val je terug op zand.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-19-092097" id="user-content-fnref-19-092097-3" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">1</a></sup><sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-2-092097" id="user-content-fnref-2-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">22</a></sup></p>
+<p>Centraal staat het <strong>Transatlantic Data Privacy Framework</strong>: dit dataverdrag tussen EU en VS kan elk moment klappen. Het steunt op presidentiële besluiten die Trump zomaar kan intrekken, met onafhankelijke toezichthouders onder druk en eerdere verdragen al twee keer ongeldig verklaard.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-19-092097" id="user-content-fnref-19-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">1</a></sup> Overheid, opgelet: breng afhankelijkheden in kaart en schakel over op eigen infrastructuur, anders val je terug op zand.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-19-092097" id="user-content-fnref-19-092097-3" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">1</a></sup>, <sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-2-092097" id="user-content-fnref-2-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">22</a></sup></p>
 <p>Europa bouwt op wankele juridische fundamenten, en het tij keert.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="van-handelsorlog-naar-economische-oorlogvoering-oorlog-is-het-nieuwe-handel">Van Handelsorlog naar Economische Oorlogvoering: "Oorlog" Is Het Nieuwe "Handel"<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#van-handelsorlog-naar-economische-oorlogvoering-oorlog-is-het-nieuwe-handel" class="hash-link" aria-label="Direct link naar Van Handelsorlog naar Economische Oorlogvoering: &quot;Oorlog&quot; Is Het Nieuwe &quot;Handel&quot;" title="Direct link naar Van Handelsorlog naar Economische Oorlogvoering: &quot;Oorlog&quot; Is Het Nieuwe &quot;Handel&quot;" translate="no">​</a></h2>
 <p>Deze spanningen escaleren van handelsorlog naar pure economische oorlogvoering: tarieven als straf, tech-restricties als wapen, en chantage zoals "betaal meer voor defensie of anders..." – het is een slechte date die dreigt met geen tweede afspraakje.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-1-092097" id="user-content-fnref-1-092097-3" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">7</a></sup></p>
-<p>We zijn geen gelijkwaardige partner, maar een cashcow voor Foreign Tech. Tijd om terug te slaan en te bewijzen: "Watch us." Nederland pleit al voor een soevereine cloud voor de hele overheid – samen bouwen aan eigen infrastructuur, weg van afhankelijkheden.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-20-092097" id="user-content-fnref-20-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">23</a></sup> <a href="https://eurostack.eu/" target="_blank" rel="noopener noreferrer" class="">EuroStack</a> is een concreet initiatief: een volledige Europese tech-stack opbouwen, van connectivity tot chips, met layers als Sovereign AI en Data Commons voor echte autonomie.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-14-092097" id="user-content-fnref-14-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">24</a></sup><sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-15-092097" id="user-content-fnref-15-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">25</a></sup><sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-16-092097" id="user-content-fnref-16-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">26</a></sup></p>
+<p>We zijn geen gelijkwaardige partner, maar een cashcow voor Foreign Tech. Tijd om terug te slaan en te bewijzen: "Watch us." Nederland pleit al voor een soevereine cloud voor de hele overheid – samen bouwen aan eigen infrastructuur, weg van afhankelijkheden.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-20-092097" id="user-content-fnref-20-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">23</a></sup> <a href="https://eurostack.eu/" target="_blank" rel="noopener noreferrer" class="">EuroStack</a> is een concreet initiatief: een volledige Europese tech-stack opbouwen, van connectivity tot chips, met layers als Sovereign AI en Data Commons voor echte autonomie.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-14-092097" id="user-content-fnref-14-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">24</a></sup>, <sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-15-092097" id="user-content-fnref-15-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">25</a></sup>, <sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-16-092097" id="user-content-fnref-16-092097" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">26</a></sup></p>
 <p>In deze tripolaire wereld is het niet meer "handel", maar "oorlog" – en wij moeten ons bewapenen met eigen tech.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="wat-dit-betekent-voor-digitale-diensten-scenarios-die-te-echt-zijn">Wat Dit Betekent Voor Digitale Diensten: Scenario's Die Te Echt Zijn<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#wat-dit-betekent-voor-digitale-diensten-scenarios-die-te-echt-zijn" class="hash-link" aria-label="Direct link naar Wat Dit Betekent Voor Digitale Diensten: Scenario's Die Te Echt Zijn" title="Direct link naar Wat Dit Betekent Voor Digitale Diensten: Scenario's Die Te Echt Zijn" translate="no">​</a></h2>
 <p>Wat betekent dit allemaal voor onze dagelijkse digitale diensten? Laten we het uitspellen in scenario's die helaas geen sciencefiction zijn, maar dinsdagmiddag-realiteit – allemaal dankzij onze afhankelijkheid van Foreign Tech.</p>
 <p><strong>Scenario 1: Politieke Onenigheid</strong><br>
-<!-- -->De EU neemt een besluit waar Washington niet blij mee is. VS pissig, Witte Huis commandeert: "Kill switch" Services gaan down, overheidssystemen in chaos. Gebeurd bij het ICC; volgende keer misschien jouw belastingapp of gemeenteportaal?<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-8-092097" id="user-content-fnref-8-092097-3" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">8</a></sup><sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-10-092097" id="user-content-fnref-10-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">10</a></sup></p>
+<!-- -->De EU neemt een besluit waar Washington niet blij mee is. VS pissig, Witte Huis commandeert: "Kill switch" Services gaan down, overheidssystemen in chaos. Gebeurd bij het ICC; volgende keer misschien jouw belastingapp of gemeenteportaal?<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-8-092097" id="user-content-fnref-8-092097-3" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">8</a></sup>, <sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-10-092097" id="user-content-fnref-10-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">10</a></sup></p>
 <p><strong>Scenario 2: Handelsconflict</strong><br>
-<!-- -->EU legt een antitrustboete op aan een Amerikaans techbedrijf. VS slaat terug met hogere cloudprijzen of beperkte toegang. Europa betaalt de prijs of moet halsoverkop migreren – vendor lock-in maakt het pijnlijk duur.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-5-092097" id="user-content-fnref-5-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">20</a></sup><sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-7-092097" id="user-content-fnref-7-092097-3" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">21</a></sup></p>
+<!-- -->EU legt een antitrustboete op aan een Amerikaans techbedrijf. VS slaat terug met hogere cloudprijzen of beperkte toegang. Europa betaalt de prijs of moet halsoverkop migreren – vendor lock-in maakt het pijnlijk duur.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-5-092097" id="user-content-fnref-5-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">20</a></sup>, <sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-7-092097" id="user-content-fnref-7-092097-3" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">21</a></sup></p>
 <p><strong>Scenario 3: Datasoevereiniteit</strong><br>
 <!-- -->EU eist strengere data-lokalisatie. Foreign Tech-bedrijven weigeren, Witte Huis roept "economische oorlog!" Sancties en escalatie volgen, met onze data als gijzelaar.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-19-092097" id="user-content-fnref-19-092097-4" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">1</a></sup></p>
 <p>We kunnen niet blijven bouwen op Foreign Tech-clouds; het is tijd voor eigen grond.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="hoe-reageren-we-op-alle-niveaus-met-een-glimlach-en-een-plan">Hoe Reageren We? Op Alle Niveaus, Met Een Glimlach en Een Plan<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#hoe-reageren-we-op-alle-niveaus-met-een-glimlach-en-een-plan" class="hash-link" aria-label="Direct link naar Hoe Reageren We? Op Alle Niveaus, Met Een Glimlach en Een Plan" title="Direct link naar Hoe Reageren We? Op Alle Niveaus, Met Een Glimlach en Een Plan" translate="no">​</a></h2>
 <p>Dit is geen simpele switch, maar een complexe, gelaagde operatie – met een glimlach, want we doen het voor onze vrijheid. De loverboy-relatie eindigt hier: verleiding door Foreign Tech maakt plaats voor zelfrespect.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-21-092097" id="user-content-fnref-21-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">2</a></sup></p>
 <p><strong>Europees Niveau: Gezamenlijke Standaarden</strong><br>
-<!-- -->Investeer in <a href="https://eurostack.eu/" target="_blank" rel="noopener noreferrer" class="">EuroStack</a>: bouw <a href="https://gaia-x.eu/" target="_blank" rel="noopener noreferrer" class="">Gaia-X</a> uit, ontwikkel Europese AI, en promoot open-source alternatieven.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-14-092097" id="user-content-fnref-14-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">24</a></sup><sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-15-092097" id="user-content-fnref-15-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">25</a></sup><sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-16-092097" id="user-content-fnref-16-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">26</a></sup> Handhaaf de Data Act voor interoperabiliteit, verbied vendor lock-in, en smeed allianties buiten de VS – precies zoals vier landen (Finland, Frankrijk, Italië, Nederland) nu doen met hun eigen software-initiatief.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-18-092097" id="user-content-fnref-18-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">15</a></sup></p>
+<!-- -->Investeer in <a href="https://eurostack.eu/" target="_blank" rel="noopener noreferrer" class="">EuroStack</a>: bouw <a href="https://gaia-x.eu/" target="_blank" rel="noopener noreferrer" class="">Gaia-X</a> uit, ontwikkel Europese AI, en promoot open-source alternatieven.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-14-092097" id="user-content-fnref-14-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">24</a></sup>, <sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-15-092097" id="user-content-fnref-15-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">25</a></sup>, <sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-16-092097" id="user-content-fnref-16-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">26</a></sup> Handhaaf de Data Act voor interoperabiliteit, verbied vendor lock-in, en smeed allianties buiten de VS – precies zoals vier landen (Finland, Frankrijk, Italië, Nederland) nu doen met hun eigen software-initiatief.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-18-092097" id="user-content-fnref-18-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">15</a></sup></p>
 <p><strong>Nationaal Niveau: Eigen Infrastructuur (Nederland, Let's Go!)</strong><br>
-<!-- -->Bouw AI-kennis op, versterk cybersecurity, behoud talent. Ontwikkel nationale clouds en datacenters met redundantie. Schakel van "Cloud-first" naar "Soeverein-first", beoordeel geopolitieke risico's, en maak exit-strategieën verplicht.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-2-092097" id="user-content-fnref-2-092097-3" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">22</a></sup><sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-20-092097" id="user-content-fnref-20-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">23</a></sup><sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-7-092097" id="user-content-fnref-7-092097-4" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">21</a></sup></p>
+<!-- -->Bouw AI-kennis op, versterk cybersecurity, behoud talent. Ontwikkel nationale clouds en datacenters met redundantie. Schakel van "Cloud-first" naar "Soeverein-first", beoordeel geopolitieke risico's, en maak exit-strategieën verplicht.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-2-092097" id="user-content-fnref-2-092097-3" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">22</a></sup>, <sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-20-092097" id="user-content-fnref-20-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">23</a></sup>, <sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-7-092097" id="user-content-fnref-7-092097-4" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">21</a></sup></p>
 <p><strong>Lokaal Niveau: Praktische Stappen (Gemeenten, Jullie Kunnen Dit!)</strong><br>
 <!-- -->Bij aanbestedingen: soevereiniteit first, open source prefereren, lokaal hosten.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-5-092097" id="user-content-fnref-5-092097-3" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">20</a></sup> Omarm <a href="https://commonground.nl/" target="_blank" rel="noopener noreferrer" class="">Common Ground</a>: samen bouwen en delen, hergebruiken in plaats van Foreign Tech betalen.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-6-092097" id="user-content-fnref-6-092097-3" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">19</a></sup> Experimenteer met pilots van Euro-tech, leer en deel successen – als een virale meme.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-21-092097" id="user-content-fnref-21-092097-3" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">2</a></sup></p>
 <p>Samenwerking is cruciaal: geen lone wolves. Bottom-up feedback, top-down standaarden – Nederland heeft met <a href="https://commonground.nl/" target="_blank" rel="noopener noreferrer" class="">Common Ground</a> en <a href="https://minbzk.github.io/mijn-bureau/" target="_blank" rel="noopener noreferrer" class="">Mijn Bureau</a> een voorsprong; rol het Europees uit.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-18-092097" id="user-content-fnref-18-092097-3" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">15</a></sup></p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="conclusie-dump-de-foreign-tech-loverboy--tijd-voor-een-eigen-gezonde-relatie">Conclusie: Dump de Foreign Tech-Loverboy – Tijd Voor Een Eigen, Gezonde Relatie<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#conclusie-dump-de-foreign-tech-loverboy--tijd-voor-een-eigen-gezonde-relatie" class="hash-link" aria-label="Direct link naar Conclusie: Dump de Foreign Tech-Loverboy – Tijd Voor Een Eigen, Gezonde Relatie" title="Direct link naar Conclusie: Dump de Foreign Tech-Loverboy – Tijd Voor Een Eigen, Gezonde Relatie" translate="no">​</a></h2>
-<p>Het einde van Pax Americana dwingt ons tot actie – een boodschap die al in 2022 doorklonk in Scholz' Zeitenwende-speech en die Friedrich Merz in december 2025 nog eens glashelder herhaalde: de tijd van Amerikaanse dominantie is voorbij, tijd voor Europa om zelf op te staan.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-27-092097" id="user-content-fnref-27-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">6</a></sup><sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-28-092097" id="user-content-fnref-28-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">5</a></sup> We weten dit dus al een tijdje, maar nu is het menens.</p>
-<p>We moeten afkicken van de loverboy-tactiek van Foreign Tech: verleiding, afhankelijkheid, controle. Niet omdat ze groot zijn, maar omdat ze vreemd zijn en gehoorzamen aan mogendheden die onze soevereiniteit niet respecteren.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-1-092097" id="user-content-fnref-1-092097-4" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">7</a></sup><sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-2-092097" id="user-content-fnref-2-092097-4" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">22</a></sup><sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-19-092097" id="user-content-fnref-19-092097-5" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">1</a></sup></p>
+<p>Het einde van Pax Americana dwingt ons tot actie – een boodschap die al in 2022 doorklonk in Scholz' Zeitenwende-speech en die Friedrich Merz in december 2025 nog eens glashelder herhaalde: de tijd van Amerikaanse dominantie is voorbij, tijd voor Europa om zelf op te staan.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-27-092097" id="user-content-fnref-27-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">6</a></sup>, <sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-28-092097" id="user-content-fnref-28-092097-2" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">5</a></sup> We weten dit dus al een tijdje, maar nu is het menens.</p>
+<p>We moeten afkicken van de loverboy-tactiek van Foreign Tech: verleiding, afhankelijkheid, controle. Niet omdat ze groot zijn, maar omdat ze vreemd zijn en gehoorzamen aan mogendheden die onze soevereiniteit niet respecteren.<sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-1-092097" id="user-content-fnref-1-092097-4" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">7</a></sup>, <sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-2-092097" id="user-content-fnref-2-092097-4" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">22</a></sup>, <sup><a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#user-content-fn-19-092097" id="user-content-fnref-19-092097-5" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">1</a></sup></p>
 <p>Tijd voor open source, <a href="https://eurostack.eu/" target="_blank" rel="noopener noreferrer" class="">EuroStack</a>, echte soevereiniteit. Niet omdat we haten, maar omdat we beter verdienen.</p>
 <p>De vraag: hoe snel stappen we uit deze toxische relatie? Begin klein, lokaal; verbind nationaal, denk Europees.</p>
 <p>Maar begin nu – voordat je wakker wordt en ontdekt dat je data allang niet meer van jou is. 💔➡️🇪🇺</p>
