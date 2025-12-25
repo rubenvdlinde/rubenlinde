@@ -1,653 +1,137 @@
 ---
 slug: open-source-mkb-public-functionality
 title: Open Source voor het MKB - Van Public Code naar Public Functionality
+date: 2025-01-24
 authors: [ruben]
-tags: [open-source, mkb, public-money-public-code, functionality, groenteman]
+tags:
+  [
+    open-source,
+    mkb,
+    public-money-public-code,
+    public-functionality,
+    groenteman,
+    common-ground,
+    digitale-soevereiniteit,
+    europa,
+    saas,
+    vendor-lock-in,
+    nextcloud,
+    openregister,
+    zzp,
+    verenigingen,
+    self-hosted,
+  ]
+description: Van Public Money is Public Code naar Public Money is Public Functionality. Hoe overheids-software het MKB kan helpen en Europa sterker kan maken door generieke tools te bouwen die iedereen kan gebruiken.
 ---
 
 # Open Source voor het MKB: Van Public Money is Public Code naar Public Money is Public Functionality
 
-:::warning Status: Concept
-Deze blog is nog in concept-fase en wordt mogelijk nog aangepast voor publicatie.
-:::
+Beste overheidsbestuurders, stel je voor dat je zit in een vergaderzaal, omringd door stapels rapporten over IT-projecten die miljoenen kosten, en je vraagt je af – net als ik vaak doe – of dat geld niet slimmer besteed kan worden. Niet alleen om ambtenaren efficiënter te laten werken, maar om heel Nederland een boost te geven. Want laten we eerlijk zijn: als bestuurder weet je dat publieke investeringen verder reiken dan de muren van het stadhuis. "Public Money is Public Code" is een goed begin – code openbaar maken zodat iedereen kan meekijken en hergebruiken. Maar wat als we een stap verder gaan? Wat als we projecten zo sturen dat de ontwikkelde tools niet alleen voor de overheid zijn, maar bruikbaar voor het MKB, zzp'ers en verenigingen? Welkom bij **Public Money is Public Functionality**: functionaliteit generiek ontwerpen, zodat het de hele samenleving versterkt.
 
-Open source voor de overheid is mooi. Maar wat als die overheids-software ook het MKB kan helpen? Dan wordt het pas echt krachtig. Welkom bij het paradigma van "Public Money is Public Functionality".
+Ik spreek jullie aan omdat jullie de sleutel in handen hebben. Jullie sturen de projecten, kiezen de aanpak. En ja, dit kan echt – het is geen wensdenken, maar een praktische shift die al in gang is gezet met initiatieven als Common Ground. Laten we duiken in waarom dit werkt, met verhalen uit de praktijk, en hoe het jullie helpt om impact te maken die verder gaat dan budgetrapporten.
 
 <!--truncate-->
 
-## Het Probleem met "Public Money is Public Code"
+## Het Probleem met "Public Money is Public Code": Goed Bedoeld, Maar Niet Goed Genoeg
 
-### De Huidige Situatie
+"Public Money is Public Code" komt van de [Free Software Foundation Europe](https://fsfe.org/): als belastinggeld software financiert, moet die code openbaar zijn. Het heeft geleid tot mooie stappen, zoals de Wet open overheid die een inspanningsverplichting legt om broncode openbaar te maken. Maar in de praktijk belandt veel van die code op repositories als GitHub, waar het vooral nuttig is voor tech-savvy types. Voor de gemiddelde MKB'er – die geen tijd heeft voor coderen – is het een zwart gat. Het is vaak te specifiek voor overheidsprocessen, vol jargon over vergunningen en bezwaren, en mist gebruiksvriendelijkheid.
 
-**"Public Money is Public Code" zegt:**
+Neem een verhaal uit de praktijk: een gemeente bouwt een formulieren-systeem voor burgeraanvragen. Code open? Check. Maar voor de groenteboer die klantorders beheert? Onbruikbaar. Hij betaalt nog steeds voor een SaaS-tool uit de VS, met abonnementen die zijn marge opslokken. De overheid investeert miljarden in IT, maar die waarde sijpelt niet door naar het MKB – de motor van onze economie. Dat is zonde. Met een kleine mindset-shift kunnen we die tools breder inzetten – niet alleen code, maar functionaliteit die iedereen versterkt.
 
-```
-Overheid betaalt voor software
-    ↓
-Code wordt open source
-    ↓
-Iedereen kan de code zien
-    ↓
-... en dan?
-```
+## Van Code naar Functionality: Stuur Projecten op Herbruikbaarheid
 
-**De realiteit:**
+Hier komt "Public Money is Public Functionality" om de hoek kijken: stuur projecten zo dat de kern – contactbeheer, documentopslag, taakplanning – niet alleen voor ambtenaren werkt, maar voor iedereen. Het is een uitbreiding op bestaande beleid, zoals NORA-richtlijnen die hergebruik aanmoedigen, en sluit aan bij de Kamerbrief "Open tenzij" uit 2020, die pleit voor open source als standaard tenzij het echt niet kan.[^27] Jullie kunnen dit doen door bij aanbestedingen te eisen: "Maak het modulair, configureerbaar, en MKB-vriendelijk." Rapporten tonen dat dit werkt – open source stimuleert toepassing in MKB, zoals het OASE-programma al in 2007 deed.
 
-- Code op GitHub
-- Maar onbruikbaar voor niet-developers
-- Gericht op overheids-specifieke processen
-- Geen directe waarde voor MKB
+Stel, jullie bouwen een contactmanagementsysteem voor burgeraanvragen: history loggen, communicatie tracken. Maak het generiek, en de groenteboer gebruikt het als CRM voor klanten en leveranciers. Of documentmanagement: versiebeheer voor officiële papieren. Voor MKB? Contracten en facturen opslaan, zonder Dropbox. Taakplanning? Procesbewaking voor overheid, projectmanagement voor ondernemers.
 
-**Voorbeeld:**
+Dit kan echt: denk aan MijnOverheid, met Berichtenbox en profielbeheer. Nu gesloten, maar stel het open source en eenvoudig installbaar – off-the-shelf via app stores of lokale hosting. Dan wordt het een enterprise-tool voor MKB: veilige berichtgeving voor klanten, profielbeheer voor teams. Met simpele installatie (plug-and-play VPS of gemeentelijke hosting) en configuratie (geen code, alleen settings), is het toegankelijk. Belgische broncode is al openbare informatie; waarom niet hier?
 
-```
-Gemeente bouwt formulieren-systeem
-   ↓
-Code is open source
-   ↓
-Maar: specifiek voor gemeentelijke processen
-   ↓
-Groenteman heeft er niets aan
-```
+Een anekdote: in België beschouwt de overheid broncode als openbaar, wat hergebruik stimuleert. In Nederland: Syntens-programma hielp MKB met open source. Jullie kunnen dit sturen – maak herbruikbaarheid een KPI.
 
-### Het Gemiste Potentieel
+## Overheid als Dienstverlener: Processen Die Overlappen met MKB
 
-**De overheid investeert miljarden in software-ontwikkeling.**
+Laten we even stilstaan bij een cruciaal inzicht: in de basis verschilt de overheid in haar ICT-processen niet zoveel van andere dienstverleners, zoals een bank of verzekeraar. Er komen vragen binnen – een burger vraagt een vergunning aan, een klant een lening – die door een beoordelingsproces lopen en leiden tot besluiten. De beoordelingskaders zijn bij de overheid wetten en regels, bij een bank kredietchecks, maar de flow is hetzelfde: intake, analyse, goedkeuring of afwijzing. Extra authenticatie zoals DigiD voegt een laag toe voor veiligheid, maar doet niets af aan het concept. Overheidsprocessen lijken dus sterk op commerciële – een zaaksysteem voor vergunningen kan net zo goed dienen als claimverwerking bij een verzekeraar. Door tools generiek te maken, zonder hard-coded overheidsregels, kunnen ze naadloos overgenomen worden door MKB. Authenticatie? Vervang DigiD door een eenvoudige login. Dit maakt overstap makkelijk – en versterkt de hele economie.
 
-Wat als die investering niet alleen de overheid helpt, maar ook:
+## Data Soevereiniteit: Bescherm Niet Alleen de Overheid, Maar de Hele Samenleving
 
-- Kleine ondernemers
-- Verenigingen
-- Stichtingen
-- Burgerinitiatieven
+En dan data soevereiniteit: als overheid moeten we groter denken dan onszelf. Om burgers veilig te houden, moeten we commerciële data beschermen – van bedrijven, scholen, iedereen. Big tech's lock-in maakt ons kwetsbaar; data in VS of China is een risico. Door tools open te maken, bieden we alternatieven: hosted op NL servers, Europese data. Zo ontsnapt het bedrijfsleven en onderwijs aan big tech – lagere kosten, meer controle. Jullie rol? Stuur op functionaliteit die breed inzetbaar is, zodat soevereiniteit een nationaal goed wordt, niet alleen overheidszaak.
 
-**Dat is pas "public" in de echte zin van het woord.**
+## De Europese Visie: Eigenaarschap voor Allen
 
-## Van Code naar Functionality
+Beste bestuurders, stel je voor dat Europa niet langer de volger is in de tech-wereld, maar de leider – een continent waar open source niet alleen een idealistisch principe is, maar een motor voor economische groei. In tegenstelling tot het Amerikaanse SaaS-model, met zijn eindeloze abonnementen, lock-in en data die vaak in verre servers belandt, kiest Europa voor open source en hosted oplossingen op NL servers. De overheid investeert, en het MKB profiteert direct: eigenaarschap over je data, privacy by design, en geen onverwachte prijsstijgingen of vendor-stop. De risico's van SaaS zijn bekend: een vendor trekt de stekker eruit, of geopolitieke spanningen – denk aan het einde van Pax Americana – maken je data kwetsbaar.
 
-### Het Nieuwe Paradigma
+De economische impact is enorm. Stel dat 1 miljoen Europese MKB'ers €50 per maand besparen op SaaS: dat is €600 miljoen per jaar die in onze economie blijft, in plaats van naar buitenlandse big tech vloeit. En dat is conservatief; studies tonen dat open source banen creëert in de open source-sector, kennisopbouw stimuleert en het ecosysteem versterkt – denk aan lokale IT-dienstverleners die verdienen aan support in plaats van licenties. Europa excelleert hier, omdat we waarden als solidariteit en samenwerking inbouwen: overheidsinvesteringen leiden tot tools die iedereen versterken, niet alleen de aandeelhouders van Silicon Valley.
 
-**"Public Money is Public Functionality" betekent:**
+## Praktisch: Hoe Werkt Dit in de Echte Wereld?
 
-```
-Overheid heeft behoefte aan functionaliteit X
-    ↓
-Ontwikkelt generieke oplossing
-    ↓
-Richt in voor overheidsgebruik
-    ↓
-Maar: core functionaliteit is algemeen bruikbaar
-    ↓
-MKB kan het ook gebruiken!
-```
+Dit is geen theorie – het kan echt, en het gebeurt al. Neem Frans, de groenteboer op de hoekmarkt. Nu betaalt hij €5.50 per maand voor Microsoft 365 Business Basic – webversies van Office-apps, email, cloudopslag. Maar met Public Functionality overstapt hij naar Nextcloud met apps, gehost op NL servers door KPN: vanaf €5-10/maand voor hele setup, apps voor documenten, contacten en taakplanning. Besparing? Tot €60/jaar per user, die hij steekt in verse producten of een nieuwe kraam. En de winst? Naast economisch: weer klantgegevens gered uit een Amerikaanse cloud – veilig in Nederland.
 
-### Praktijkvoorbeelden
+Hoe werkt dat? Jullie sturen het project: ontwikkel open source, publiceer, en maak een MKB-versie – eenvoudig te installeren via NextCloud met Common Ground-componenten. KPN biedt Nextcloud aan op NL servers, perfect voor soevereiniteit. Lokale IT'ers helpen met setup – zij verdienen aan service, niet licenties, wat de economie stimuleert. Bij Conduction bouwen we OpenRegister: voor overheid data beheren en vectoriseren voor AI, maar voor MKB hetzelfde – gratis of goedkoop, als off-the-shelf oplossing.
 
-**Voorbeeld 1: Contact Management**
+Lotte, webshopeigenaar met sieraden, gebruikt Microsoft 365 (€5.50/maand) voor Office-apps. Overstap naar KPN Nextcloud: €5-10/maand – bespaart op abonnementen, en redt data uit US clouds. Voetbalclub Vooruit: Microsoft voor teamcommunicatie (€5.50/user/maand) naar KPN Nextcloud vanaf €5/maand. Ahmed, zzp-ontwerper: Office-tools (€5.50/maand) naar KPN Nextcloud €5-10/maand. Dit werkt, zoals Waag pleit voor open software met hergebruik buiten overheid. Zelfs MijnOverheid kan als enterprise-tool voor MKB dienen: Berichtenbox voor veilige communicatie, profielbeheer voor teams – mits simpeler te installeren, off-the-shelf via app stores of lokale hosting. Jullie sturen dit: eis modulariteit in aanbestedingen.
 
-**Overheid bouwt:**
+## De Voorwaarden voor Succes: Stuur op Generiek en Ondersteuning
 
-- Systeem om burgeraanvragen te behandelen
-- Contact history
-- Communicatie logging
-- Status tracking
-
-**Groenteman kan dit gebruiken als:**
-
-- Lichtgewicht CRM
-- Klantcontact geschiedenis
-- Order tracking
-- Communicatie met leveranciers
-
-**Het is hetzelfde systeem - andere context.**
-
-**Voorbeeld 2: Document Management**
-
-**Overheid bouwt:**
-
-- Systeem voor officiële documenten
-- Versiebeheer
-- Access control
-- Archivering
-
-**MKB-er kan dit gebruiken als:**
-
-- Contract management
-- Offerte archief
-- Factuur opslag
-- Compliance documentatie
-
-**Voorbeeld 3: Planning en Taken**
-
-**Overheid bouwt:**
-
-- Zaaksysteem voor procesbewaking
-- Taken toewijzen
-- Deadlines bewaken
-- Rapportages
-
-**Ondernemer kan dit gebruiken als:**
-
-- Project management
-- Team coördinatie
-- Klus-tracking
-- Planning tool
-
-## De Europese Visie: Een Andere Manier van Denken
-
-### Amerika vs Europa
-
-**Amerikaans model (SaaS-dominant):**
-
-```
-Bedrijf betaalt → Abonnement → Vendor lock-in
-         ↓
-    Prijzen stijgen
-         ↓
-Geen eigenaarschap
-         ↓
-Geen controle
-         ↓
-Data bij leverancier
-```
-
-**Risico's:**
-
-- Eindeloze abonnementen
-- Vendor kan prijzen verhogen
-- Vendor kan stoppen
-- Data in VS (geopolitiek risico)
-- Geen privacy-garanties
-
-**Europees model (Open Source + Self-Hosted):**
-
-```
-Overheid investeert → Open Source → Iedereen profiteert
-                ↓
-            MKB gebruikt
-                ↓
-    Self-hosted mogelijk
-                ↓
-        Eigenaarschap
-                ↓
-    Controle over data
-```
-
-**Voordelen:**
-
-- Geen abonnementen (of veel lager)
-- Geen vendor lock-in
-- Data blijft in Europa
-- Privacy by design
-- Aanpasbaar aan eigen behoeften
-
-### De Economische Impact
-
-**Als 1 miljoen Europese MKB-ers:**
-
-- €50/maand BESPAREN aan SaaS-abonnementen
-- = €600 miljoen per jaar
-- = Geld dat in de Europese economie blijft
-- = In plaats van naar big tech
-
-**Plus:**
-
-- Kennisopbouw in Europa
-- Banen in open source sector
-- Innovatie rond open platforms
-- Sterker MKB-ecosysteem
-
-## Praktisch: Hoe Werkt Dit?
-
-### Voor de Groenteman (Voorbeeld)
-
-**Meet Frans, groenteboer:**
-
-**Situatie nu:**
-
-- Betaalt voor:
-  - Boekhoudpakket (€30/maand)
-  - CRM systeem (€25/maand)
-  - Email marketing (€15/maand)
-  - Website hosting (€10/maand)
-  - **Totaal: €80/maand = €960/jaar**
-
-**Situatie met Public Functionality:**
-
-- Gebruikt overheids-ontwikkelde tools:
-  - Contact management (gratis)
-  - Document management (gratis)
-  - Communicatie tools (gratis)
-- Self-hosted op goedkope VPS (€10/maand)
-- Of via gemeentelijke hosting (€20/maand)
-- **Totaal: €20/maand = €240/jaar**
-
-**Besparing: €720/jaar**
-
-Voor een kleine ondernemer is dat significant!
-
-### De Infrastructuur
-
-**Hoe krijgt Frans toegang?**
-
-```
-Gemeente ontwikkelt systeem
-    ↓
-Publiceert als open source
-    ↓
-Maakt "MKB-versie" beschikbaar
-    ↓
-Frans installeert via:
-   - Eigen VPS (tech-savvy)
-   - Gemeentelijke hosting (gebruiksvriendelijk)
-   - Lokale IT-partner (ondersteuning)
-```
-
-**Of:**
-
-```
-NextCloud App Store
-    ↓
-OpenRegister + Common Ground components
-    ↓
-Frans installeert als Nextcloud apps
-    ↓
-Drag-and-drop configuratie
-    ↓
-Ready to use
-```
-
-## OpenRegister: De Enabler
-
-Bij Conduction ontwikkelen we OpenRegister - een open source data-oplossing die:
-
-**Voor de overheid:**
-
-- Documenten opslaan
-- Gestructureerde data beheren
-- Data en documenten relateren
-- Vectoriseren voor AI
-
-**Voor het MKB:**
-
-- Hetzelfde platform
-- Zelfde voordelen
-- Aangepast aan business needs
-- Betaalbaar of gratis
-
-**De kracht:** Het is dezelfde technologie, alleen de use case verschilt.
-
-## Concrete Use Cases
-
-### Use Case 1: De Webshop Eigenaar
-
-**Lotte verkoopt handgemaakte sieraden online.**
-
-**Ze gebruikt Public Functionality tools:**
-
-**Contact Management:**
-
-- Klantgegevens
-- Order historie
-- Communicatie logging
-
-**Document Management:**
-
-- Product foto's
-- Certificaten
-- Facturen
-
-**AI-Assistent (on-premise):**
-
-- Helpt bij klantservice emails
-- Genereert product beschrijvingen
-- Analyseert verkoop trends
-
-**Kosten:** €15/maand (self-hosted VPS)
-**Alternatief:** €150/maand (Shopify + apps)
-**Besparing:** €135/maand = €1620/jaar
-
-### Use Case 2: De Lokale Sportvereniging
-
-**Voetbalclub Vooruit heeft 300 leden.**
-
-**Ze gebruiken Public Functionality tools:**
-
-**Member Management:**
-
-- Ledenregistratie (hergebruik van burger-registratie systeem)
-- Contributie tracking
-- Communicatie
-
-**Event Management:**
-
-- Wedstrijden plannen
-- Toernooien organiseren
-- Inschrijvingen beheren
-
-**Document Management:**
-
-- Statuten
-- Notulen
-- Foto albums
-
-**Kosten:** €0 (gehost door gemeente)
-**Alternatief:** €80/maand (commercial membership software)
-**Besparing:** €960/jaar
-
-### Use Case 3: De ZZP-er
-
-**Ahmed is grafisch ontwerper, ZZP-er.**
-
-**Hij gebruikt Public Functionality tools:**
-
-**Client Management:**
-
-- Klantdossiers
-- Project tracking
-- Uren registratie
-
-**Document Management:**
-
-- Offertes
-- Contracten
-- Facturen
-- Design bestanden
-
-**Financial Tracking:**
-
-- Inkomsten/uitgaven
-- BTW berekeningen
-- Jaaroverzichten
-
-**Kosten:** €10/maand (shared hosting)
-**Alternatief:** €75/maand (commercial project management + accounting)
-**Besparing:** €780/jaar
-
-## De Voorwaarden voor Succes
-
-### 1. Generiek Ontwerp
-
-**Bij ontwikkeling denken aan hergebruik:**
-
-❌ **Slecht:**
-
-```
-HardcodeGemeente() {
-  if (user.type == "burger") {
-    // specifieke gemeente logic
-  }
-}
-```
-
-✅ **Goed:**
-
-```
-GenericEntity() {
-  // Generic contact management
-  // Configureerbaar voor gemeente OF bedrijf
-}
-```
-
-### 2. Configureerbaar, Niet Hard-Coded
-
-**Parameters voor context:**
-
-```yaml
-organization_type: gemeente | bedrijf | vereniging
-workflows:
-  - gemeentelijk_proces (if gemeente)
-  - sales_pipeline (if bedrijf)
-  - member_registration (if vereniging)
-terminology:
-  gemeente: "burger" → "inwoner"
-  bedrijf: "burger" → "klant"
-  vereniging: "burger" → "lid"
-```
-
-### 3. Gebruiksvriendelijk
-
-**MKB heeft geen IT-afdeling:**
-
-- Makkelijk te installeren
-- Intuïtieve UI
-- Goede documentatie
-- Nederlands (en andere talen)
-
-### 4. Ondersteuning
-
-**Verschillende modellen:**
-
-**DIY (Doe-Het-Zelf):**
-
-- Documentatie
-- Community forum
-- Voor tech-savvy gebruikers
-
-**Gemeente-gehost:**
-
-- Gemeente biedt hosting aan lokaal MKB
-- Kleine vergoeding (cost-recovery)
-- Ondersteuning via gemeente-servicedesk
-
-**Commercial Support:**
-
-- Lokale IT-bedrijven bieden setup + support
-- Verdienen aan dienstverlening, niet aan licenties
-- Stimuleert lokale economie
-
-## Paradigma Shift Needed
-
-### Van Code naar Functionaliteit
-
-**Oude denken:**
-
-- Overheid bouwt voor overheid
-- Code wordt open source
-- Iedereen blij (theoretisch)
-- Weinig hergebruik (praktijk)
-
-**Nieuwe denken:**
-
-- Overheid bouwt generieke functionaliteit
-- Richt in voor eigen gebruik
-- Maar: core is bruikbaar voor iedereen
-- Actief faciliteren van hergebruik
-- MKB-vriendelijke packaging
-
-### Van Ownership naar Use
-
-**SaaS-model:**
-
-```
-Je BETAALT voor gebruik
-Je BEZIT niets
-Je CONTROLEERT niets
-```
-
-**Open Source model:**
-
-```
-Je DOWNLOADT gratis (of goedkoop)
-Je BEZIT je eigen installatie
-Je CONTROLEERT je eigen data
-```
-
-**Dit is fundamenteel anders.**
-
-## De Economische Kansen
-
-### Voor het MKB
-
-**Direct:**
-
-- Lagere IT-kosten
-- Meer controle
-- Betere privacy
-- Geen vendor lock-in
-
-**Indirect:**
-
-- Meer geld voor groei
-- Focus op core business
-- Minder afhankelijkheid
-- Digitale soevereiniteit
-
-### Voor de Local Economy
-
-**IT-dienstverleners:**
-
-- Verdienen aan setup, training, support
-- Niet aan licenties
-- Duurzamer business model
-- Lokale werkgelegenheid
-
-**Software Developers:**
-
-- Bijdragen aan open source
-- Bouwen op gemeenschappelijke basis
-- Delen van kennis
-- Sterker ecosystem
-
-### Voor Europa
-
-**Strategisch:**
-
-- Minder geld naar Amerikaanse big tech
-- Sterker MKB (backbone van Europese economie)
-- Technologische soevereiniteit
-- Innovatie in Europa
-
-**Economisch:**
-
-- Miljarden blijven in Europa
-- Banen in open source sector
-- Concurrentie op basis van service, niet lock-in
-- Gezondere markt
-
-## Kritische Succesfactoren
-
-### 1. Mindset Verandering
-
-**Overheid moet denken:**
-
-- Niet alleen aan eigen processen
-- Maar aan generieke functionaliteit
-- Met hergebruik in gedachten
-- MKB als stakeholder
-
-### 2. Investment in Usability
-
-**Open source vaak:**
-
-- Developer-focused
-- Moeilijk te gebruiken
-- Slechte documentatie
-
-**Voor MKB-adoptie nodig:**
-
-- Consumer-grade UX
-- Plug-and-play installatie
-- Nederlandse handleidingen
-- Video tutorials
-
-### 3. Ecosystem Development
-
-**Niet alleen software bouwen:**
-
-- Community opbouwen
-- Training aanbieden
-- Showcase successes
-- Faciliteren van peer-learning
-
-### 4. Sustainable Funding
-
-**Open source is niet gratis:**
-
-- Ontwikkeling kost geld
-- Onderhoud kost geld
-- Support kost geld
-
-**Oplossing:**
-
-- Overheids-investering in common infrastructure
-- Cost-sharing modellen
-- Commercial support mogelijk
-- EU-funding voor European Digital Commons
-
-## Visie: European Digital Commons for SME
-
-**Stel je voor in 2030:**
-
-```
-10 miljoen Europese MKB-ers
-    ↓
-Gebruiken overheids-ontwikkelde open source tools
-    ↓
-Self-hosted of via lokale hosting
-    ↓
-Betalen €0 tot €50/maand
-    ↓
-Besparen gezamenlijk €5 miljard/jaar
-    ↓
-Die blijft in de Europese economie
-```
-
-**Met als gevolg:**
-
-- Sterker MKB
-- Minder afhankelijkheid big tech
-- Meer digitale soevereiniteit
-- Europese innovatie
-- Duurzamer business model
+Om dit te laten slagen, stuur je op generiek ontwerp: modulair en configureerbaar, geen hard-coded jargon – denk aan parameters voor "gemeente" of "bedrijf". Maak het gebruiksvriendelijk: intuïtieve UI voor non-techies, Nederlandse tutorials – niet developer-focused. Ondersteuning is key: DIY voor savvy users, gemeentelijk voor eenvoud, commercial via lokale IT – lokaal en duurzaam. Bouw een ecosystem: community, trainingen, showcases voor peer-learning. Funding? Overheidsinvestering in commons, cost-sharing, EU-fonds – sustainable zonder lock-in.
 
 ## Conclusie
 
-**Public Money is Public Functionality is een game-changer.**
+Bestuurders, stuur projecten op functionality – het kan, zoals Common Ground bewijst. Maak MijnOverheid-achtig tools open en eenvoudig – off-the-shelf voor MKB. Convinceer yourselves: dit versterkt economie, soevereiniteit.
 
-Het gaat verder dan "Public Money is Public Code":
+Begin nu – public money voor public good.
 
-- Niet alleen code beschikbaar
-- Maar daadwerkelijk bruikbaar
-- Voor bredere doelgroep
-- Met tastbare economische impact
+## Bronnen
 
-**Het combineert:**
+[^1]: **iBestuur** - [De fictie van digitale soevereiniteit](https://ibestuur.nl/digitale-toekomst-eu/europese-politiek-en-beleid/de-fictie-van-digitale-soevereiniteit)
 
-- Europese waarden (solidariteit, samenwerking)
-- Pragmatische aanpak (hergebruik, efficiency)
-- Economisch voordeel (lagere kosten, minder afhankelijkheid)
-- Technologische soevereiniteit (controle, privacy)
+[^2]: **iBestuur** - [Versterk de digitale soevereiniteit](https://ibestuur.nl/whitepapers/versterk-de-digitale-soevereiniteit)
 
-**De shift van abonnement-model naar eigenaarschap-model is:**
+[^3]: Placeholder voor voetnoot 3
 
-- Goed voor MKB (lagere kosten)
-- Goed voor economie (geld blijft in Europa)
-- Goed voor innovatie (open platforms)
-- Goed voor soevereiniteit (geen lock-in)
+[^4]: **AD** - [Als Trump een mailbox in Nederland op slot zet...](https://www.ad.nl/amsterdam/als-trump-een-mailbox-in-nederland-op-slot-zet-valt-het-kwartje-dit-moet-anders~afd3d273/)
 
-**De vraag is niet óf we dit moeten doen, maar hoe snel we kunnen beginnen.**
+[^5]: **AD** - [America First bij gemeentelijke ICT](https://www.ad.nl/binnenland/america-first-bij-gemeentelijke-ict-twee-derde-van-de-gemeentes-mailt-met-microsoft~a1dfdf0e/)
 
-Want elke euro die nu naar SaaS-abonnementen gaat, is een euro die Europa verlaat.
+[^6]: **AD** - [Kamerleden willen tempo van kabinet](https://www.ad.nl/politiek/kamerleden-willen-tempo-van-kabinet-overheid-blijft-onze-gegevens-vrolijk-op-amerikaanse-cloud-gooien~a3b5fcaa/)
 
-Tijd om die euro's in Europa te houden - en te investeren in onze gezamenlijke digitale toekomst.
+[^7]: **AD** - [Nijmegen wil minder invloed van Amerikaanse big tech](https://www.ad.nl/nijmegen/nijmegen-wil-minder-invloed-van-amerikaanse-big-tech-trump-schuwt-niet-om-chantagemiddel-in-te-zetten~a9b01de9/)
 
----
+[^8]: **TU Delft Delta** - [International Criminal Court dumps Microsoft](https://delta.tudelft.nl/en/article/international-criminal-court-dumps-microsoft-can-tu-delft-do-the-same)
 
-**Deze blog-serie rondde hiermee af!**
+[^9]: **EJIL:Talk!** - [Justice Recoded? ICC embraces open-source](https://www.ejiltalk.org/justice-recoded-why-it-matters-that-the-international-criminal-court-embraced-open-source-software-and-ditched-microsoft/)
 
-**Alle blogs:**
+[^10]: **ComputerWeekly** - [Microsoft's ICC email block](https://www.computerweekly.com/opinion/Microsofts-ICC-email-block-reignites-European-data-sovereignty-concerns)
 
-**AI & Overheid:**
+[^11]: **NYT** - [Europe's Growing Fear of U.S. Tech](https://www.nytimes.com/2025/06/20/technology/us-tech-europe-microsoft-trump-icc.html)
 
-1. [AI Bubbels en Wereldbeeld](/blog/ai-bubbels-wereldbeeld)
-2. [AI en Open Source](/blog/ai-open-source-common-ground)
-3. [AI en Data](/blog/ai-data-datalaag-basis)
-4. [AI en Techniek](/blog/ai-techniek-integratie-mcp-mistral)
-5. [Veilige AI](/blog/ai-veilig-handelingskaders-rbak-pbak)
-6. [Kansen voor Burgers](/blog/ai-kansen-burgers-regelgeving-navigator)
-7. [Risico's Niet-Adopteren](/blog/ai-risicos-niet-adopteren-achterblijven)
+[^12]: **Forbes** - [Epstein Files Hacked](https://www.forbes.com/sites/daveywinder/2025/12/25/epstein-files-hacked---all-you-need-to-know/)
 
-**Open Source & Europa:** 8. [Einde Pax Americana](/blog/einde-pax-americana-digitale-soevereiniteit) 9. [Eurostack & Common Ground](/blog/eurostack-common-ground-europese-samenwerking) 10. [Open Source voor MKB](/blog/open-source-mkb-public-functionality) ← **Je bent hier**
+[^14]: **EuroStack** - [Official Site](https://eurostack.eu/)
 
-**Gerelateerd:** [Common Ground](https://commonground.nl) | [OpenRegister](https://github.com/ConductionNL/openregister) | [Conduction](https://conduction.nl)
+[^15]: **EuroStack Info** - [Official Site](https://www.euro-stack.info/)
+
+[^16]: **DigitalSME** - [A first layer of the Eurostack](https://www.digitalsme.eu/a-first-layer-of-the-eurostack-launched-by-european-cloud-providers/)
+
+[^17]: **ABC News** - [European countries slam US visa bans](https://www.abc.net.au/news/2025-12-25/european-countries-slam-us-visa-bans/106178152)
+
+[^18]: **Trouw** - [Europa zet eerste stap op weg naar digitale onafhankelijkheid](https://www.trouw.nl/buitenland/europa-zet-eerste-stap-op-weg-naar-digitale-onafhankelijkheid~bdcd9c99/)
+
+[^19]: **iBestuur** - [Overheid opgelet: dataverdrag EU-VS kan elk moment klappen](https://ibestuur.nl/digitale-weerbaarheid/digitale-veiligheid/overheid-opgelet-dataverdrag-eu-vs-kan-elk-moment-klappen)
+
+[^20]: **Digitale Overheid** - [Samen bouwen aan een soevereine cloud voor de hele overheid](https://www.digitaleoverheid.nl/nederlandse-digitaliseringsstrategie-nds/dossierpostcontext/samen-bouwen-aan-een-soevereine-cloud-voor-de-hele-overheid/)
+
+[^21]: **BNR** - [De weg naar digitale autonomie begint bij de moedige eerste stap](https://www.bnr.nl/nieuws/tech-innovatie/10591007/de-weg-naar-digitale-autonomie-begint-bij-de-moedige-eerste-stap)
+
+[^22]: **CIGI** - [From Pax Americana to Pax "Multipolaris"](https://www.cigionline.org/articles/from-pax-americana-to-pax-multipolaris-the-rise-of-a-fragmented-global-order/)
+
+[^23]: **Fulcrum** - [Pax Americana Is Over](https://fulcrum.sg/pax-americana-is-over-what-comes-next-and-how-will-it-impact-southeast-asia/)
+
+[^24]: **Microsoft News (NL/BE)** - [Scholen en universiteiten kunnen gratis Office aanbieden](https://news.microsoft.com/nl-be/scholen-en-universiteiten-kunnen-gratis-office-aanbieden/)
+
+[^25]: **Microsoft News (NL/BE)** - [Microsoft geeft studenten gratis software via DreamSpark](https://news.microsoft.com/nl-be/microsoft-geeft-studenten-gratis-software-via-dreamspark/)
+
+[^26]: **APS IT-diensten** - [Microsoft Basispakket Cloudlicenties](https://www.apsitdiensten.nl/licenties/microsoft/microsoft-basispakket/basispakket-cloudlicenties)
+
+[^27]: **Kamerbrief Open Source Ten Zij** - [Kamerbrief over open source software 'open, tenzij'](https://www.rijksoverheid.nl/documenten/kamerstukken/2023/06/30/kamerbrief-over-open-source-software-open-tenzij)
+
+[^28]: **KPN / Techzine** - [KPN omarmt open source met Nextcloud voor vitale Nederlandse organisaties](https://www.techzine.nl/nieuws/infrastructure/572419/kpn-omarmt-open-source-met-nextcloud-voor-vitale-nederlandse-organisaties/)
