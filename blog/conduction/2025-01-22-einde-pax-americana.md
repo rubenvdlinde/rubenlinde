@@ -51,7 +51,7 @@ Denk eraan: de VS blijft militair topdog, maar China domineert in economie en te
 
 **Nu:** Trump en z’n entourage ondermijnen die orde sneller dan een kat die achter een laserpointer aan zit een kerstboom omgooit. Foreign Tech (VS, China, Rusland) is een geopolitiek wapen – denk aan een drone, maar dan met je data. Juridische continuïteit? Haha, dat is een grap. Het tech-landschap is onvoorspelbaarder dan het weer in Nederland – of Trump's tweets.
 
-**De verschuiving:** Het gaat niet meer om of een tech-bedrijf groot of ethisch is. Het gaat erom dat veel van deze bedrijven **buitenlands** zijn en moeten gehoorzamen aan mogendheden die niet per se onze belangen dienen. Dat maakt ze Foreign Tech: niet alleen groot, maar **vreemd** en potentieel vijandig. En daarop zijn we afhankelijk voor de bedrijfsvoering van de overheid.[^1]
+**De verschuiving:** Het gaat niet meer om of een tech-bedrijf groot of ethisch is. Het gaat erom dat veel van deze bedrijven **buitenlands** zijn en moeten gehoorzamen aan mogendheden die niet per se onze belangen dienen. Dat maakt ze Foreign Tech: niet alleen groot en onetisch, maar **vreemd** en potentieel vijandig. En daarop zijn we afhankelijk voor de bedrijfsvoering van de overheid.[^1]
 
 ## Het Internationaal Strafhof: De Wake-up Call Die We Niet Zagen Aankomen (Maar Wel Hadden Moeten)
 
