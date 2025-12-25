@@ -35,7 +35,7 @@ En laten we eerlijk zijn: onze relatie met deze Foreign Tech-giganten lijkt verd
 
 ## Geopolitieke Herordening: Van Amerika als Primus Inter Pares naar een Tripolair Systeem
 
-Voordat we duiken in de tech-chaos, laten we dit even in een groter plaatje zetten: de wereld ondergaat een geopolitieke herordening, van de VS als 'primus inter pares' (eerste onder gelijken) in een unipolaire orde naar een tripolair systeem met de VS, China en de EU als drie grote polen.[^22][^23] Pax Americana, die tijd van Amerikaanse hegemonie na WOII, brokkelt af door interne polarisatie, overbelaste militaire avonturen en een 'America First'-mentaliteit die bondgenoten als lastige sidekicks ziet.
+Voordat we duiken in de tech-chaos, laten we dit even in een groter plaatje zetten: de wereld ondergaat een geopolitieke herordening, van de VS als 'primus inter pares' (eerste onder gelijken) in een unipolaire orde naar een tripolair systeem met de VS, China en de EU als drie grote polen.[^22], [^23] Pax Americana, die tijd van Amerikaanse hegemonie na WOII, brokkelt af door interne polarisatie, overbelaste militaire avonturen en een 'America First'-mentaliteit die bondgenoten als lastige sidekicks ziet.
 
 We weten dit al een tijdje. Al in 2022 sprak toenmalig kanselier Olaf Scholz van een **Zeitenwende** – een keerpunt in de geschiedenis – na de Russische invasie van Oekraïne, waarmee hij impliciet het einde van de oude Pax Americana-orde markeerde.[^28] En recent, in december 2025, was de huidige kanselier Friedrich Merz nog explicieter tijdens een CSU-congres: "De decades van Pax Americana zijn grotendeels voorbij voor ons in Europa en Duitsland." Hij waarschuwde dat nostalgie geen zin heeft en dat Europa zijn eigen belangen agressiever moet verdedigen.[^27]
 
@@ -57,9 +57,9 @@ Denk eraan: de VS blijft militair topdog, maar China domineert in economie en te
 
 ### De Feiten: Een Slechte Hollywood-Plot, Maar Echt Gebeurd
 
-Stel je voor: het Internationaal Strafhof (ICC) in Den Haag onderzoekt mogelijke oorlogsmisdaden. Microsoft levert de cloud-diensten. Tot het Witte Huis het niet eens is met het onderzoek. Wat doet Microsoft? Op verzoek van Uncle Sam trekken ze de stekker eruit – contract weg, dienstverlening kaput.[^8][^9][^10][^11]
+Stel je voor: het Internationaal Strafhof (ICC) in Den Haag onderzoekt mogelijke oorlogsmisdaden. Microsoft levert de cloud-diensten. Tot het Witte Huis het niet eens is met het onderzoek. Wat doet Microsoft? Op verzoek van Uncle Sam trekken ze de stekker eruit – contract weg, dienstverlening kaput.[^8], [^9], [^10], [^11]
 
-Dit is geen aflevering van "House of Cards". Dit is gebeurd. En het ICC dumpt nu Microsoft voor een Europese open-source suite zoals openDesk – slim, want wie wil er nog afhankelijk zijn van Foreign Tech die "America First" boven "Justice First" stelt?[^8][^9]
+Dit is geen aflevering van "House of Cards". Dit is gebeurd. En het ICC dumpt nu Microsoft voor een Europese open-source suite zoals openDesk – slim, want wie wil er nog afhankelijk zijn van Foreign Tech die "America First" boven "Justice First" stelt?[^8], [^9]
 
 ### Wat Dit Betekent: Een Les in "Vertrouw Niemand"
 
@@ -74,19 +74,19 @@ Dit incident heeft de discussie over digitale soevereiniteit aangewakkerd, zoals
 
 ### De Realiteit: Geen Romantische Relatie Meer
 
-Onze relatie met Foreign Tech is geen gezonde partnership, maar een klassieke **loverboy-tactiek**: eerst verleiden met lage prijzen en gemak, dan volledig afhankelijk maken, en uiteindelijk de controle overnemen wanneer het hun uitkomt. En we laten dit toe – niemand maakt er een punt van dat Microsoft gratis licenties uitdeelt in het onderwijs en daar leerlingen en studenten al vroeg aan boord haalt.[^24][^25][^26]
+Onze relatie met Foreign Tech is geen gezonde partnership, maar een klassieke **loverboy-tactiek**: eerst verleiden met lage prijzen en gemak, dan volledig afhankelijk maken, en uiteindelijk de controle overnemen wanneer het hun uitkomt. En we laten dit toe – niemand maakt er een punt van dat Microsoft gratis licenties uitdeelt in het onderwijs en daar leerlingen en studenten al vroeg aan boord haalt.[^24], [^25], [^26]
 
 Zoals Marleen Stikker het treffend zegt in Trouw: "Big tech is een instrument geworden van de geopolitiek" en "Inmiddels gaat het om onze nationale veiligheid." Vier Europese landen (Finland, Frankrijk, Italië en Nederland) lanceren een eigen software-ontwikkelingsinitiatief om minder afhankelijk te worden van VS-big tech – de eerste stap naar digitale onafhankelijkheid.[^18]
 
 ### Recente Voorbeelden: Een Komische (Maar Eng) Hitlijst
 
-Laten we eens duiken in de recente voorbeelden die laten zien hoe Foreign Tech niet zomaar tools zijn, maar verlengstukken van nationale macht – en hoe dat ons in Europa in een benarde positie brengt.[^3][^17] Het patroon is duidelijk en eerlijk gezegd een beetje komisch, als het niet zo eng zou zijn: Amerika zet bondgenoten onder druk alsof we een spelletje Monopoly spelen, maar dan met echte tarieven en dreigementen.
+Laten we eens duiken in de recente voorbeelden die laten zien hoe Foreign Tech niet zomaar tools zijn, maar verlengstukken van nationale macht – en hoe dat ons in Europa in een benarde positie brengt.[^3], [^17] Het patroon is duidelijk en eerlijk gezegd een beetje komisch, als het niet zo eng zou zijn: Amerika zet bondgenoten onder druk alsof we een spelletje Monopoly spelen, maar dan met echte tarieven en dreigementen.
 
 Neem de **handelsorlog**: willekeurige tarieven op Europese goederen, tech-exportrestricties – het is "America First" ten koste van alles.[^4] Of de **NAVO-twijfels**: Trump zet openlijk vraagtekens bij Article 5, ons collectieve verdedigingspact – het is als een vriendschap waarin één partij zegt: "Ik help je alleen als je meer betaalt voor defensie."[^6]
 
-Dan het **Groenland-dreigement**: Trump's bizarre plan om Groenland te kopen, en toen Denemarken nee zei, volgden dreigementen.[^6] En recenter: **visa bans op EU-regulators** zoals Thierry Breton, de architect achter de Digital Services Act. Het Witte Huis noemt het "extraterritoriale censuur", maar Macron spreekt van pure intimidatie om onze digitale soevereiniteit te ondermijnen.[^3][^17]
+Dan het **Groenland-dreigement**: Trump's bizarre plan om Groenland te kopen, en toen Denemarken nee zei, volgden dreigementen.[^6] En recenter: **visa bans op EU-regulators** zoals Thierry Breton, de architect achter de Digital Services Act. Het Witte Huis noemt het "extraterritoriale censuur", maar Macron spreekt van pure intimidatie om onze digitale soevereiniteit te ondermijnen.[^3], [^17]
 
-AD waarschuwt al jaren: twee derde van de Nederlandse gemeenten mailt met Microsoft, terwijl Trump chantagemiddelen niet schuwt – denk aan kill switches op mailboxes als we niet meewerken.[^4][^5][^7] Nijmegen wil daarom minder invloed van Amerikaanse big tech, precies omdat die kill switch een reëel risico is.[^7]
+AD waarschuwt al jaren: twee derde van de Nederlandse gemeenten mailt met Microsoft, terwijl Trump chantagemiddelen niet schuwt – denk aan kill switches op mailboxes als we niet meewerken.[^4], [^5], [^7] Nijmegen wil daarom minder invloed van Amerikaanse big tech, precies omdat die kill switch een reëel risico is.[^7]
 
 Het patroon? Foreign Tech is geen neutrale speler; het is een geopolitiek schaakstuk, en wij zijn de pionnen.
 
@@ -94,7 +94,7 @@ Het patroon? Foreign Tech is geen neutrale speler; het is een geopolitiek schaak
 
 En dan de juridische chaos: Trump's aanpak ondermijnt de rule of law – rechters ontslaan, hoven politiseren, independence van justitie onder druk.[^2] Het gevolg? Juridische voorspelbaarheid verdwijnt, contracten worden waardeloos, en de rechtsgang een loterij.
 
-Centraal staat het **Transatlantic Data Privacy Framework**: dit dataverdrag tussen EU en VS kan elk moment klappen. Het steunt op presidentiële besluiten die Trump zomaar kan intrekken, met onafhankelijke toezichthouders onder druk en eerdere verdragen al twee keer ongeldig verklaard.[^19] Overheid, opgelet: breng afhankelijkheden in kaart en schakel over op eigen infrastructuur, anders val je terug op zand.[^19][^2]
+Centraal staat het **Transatlantic Data Privacy Framework**: dit dataverdrag tussen EU en VS kan elk moment klappen. Het steunt op presidentiële besluiten die Trump zomaar kan intrekken, met onafhankelijke toezichthouders onder druk en eerdere verdragen al twee keer ongeldig verklaard.[^19] Overheid, opgelet: breng afhankelijkheden in kaart en schakel over op eigen infrastructuur, anders val je terug op zand.[^19], [^2]
 
 Europa bouwt op wankele juridische fundamenten, en het tij keert.
 
@@ -102,7 +102,7 @@ Europa bouwt op wankele juridische fundamenten, en het tij keert.
 
 Deze spanningen escaleren van handelsorlog naar pure economische oorlogvoering: tarieven als straf, tech-restricties als wapen, en chantage zoals "betaal meer voor defensie of anders..." – het is een slechte date die dreigt met geen tweede afspraakje.[^1]
 
-We zijn geen gelijkwaardige partner, maar een cashcow voor Foreign Tech. Tijd om terug te slaan en te bewijzen: "Watch us." Nederland pleit al voor een soevereine cloud voor de hele overheid – samen bouwen aan eigen infrastructuur, weg van afhankelijkheden.[^20] [EuroStack](https://eurostack.eu/) is een concreet initiatief: een volledige Europese tech-stack opbouwen, van connectivity tot chips, met layers als Sovereign AI en Data Commons voor echte autonomie.[^14][^15][^16]
+We zijn geen gelijkwaardige partner, maar een cashcow voor Foreign Tech. Tijd om terug te slaan en te bewijzen: "Watch us." Nederland pleit al voor een soevereine cloud voor de hele overheid – samen bouwen aan eigen infrastructuur, weg van afhankelijkheden.[^20] [EuroStack](https://eurostack.eu/) is een concreet initiatief: een volledige Europese tech-stack opbouwen, van connectivity tot chips, met layers als Sovereign AI en Data Commons voor echte autonomie.[^14], [^15], [^16]
 
 In deze tripolaire wereld is het niet meer "handel", maar "oorlog" – en wij moeten ons bewapenen met eigen tech.
 
@@ -111,10 +111,10 @@ In deze tripolaire wereld is het niet meer "handel", maar "oorlog" – en wij mo
 Wat betekent dit allemaal voor onze dagelijkse digitale diensten? Laten we het uitspellen in scenario's die helaas geen sciencefiction zijn, maar dinsdagmiddag-realiteit – allemaal dankzij onze afhankelijkheid van Foreign Tech.
 
 **Scenario 1: Politieke Onenigheid**  
-De EU neemt een besluit waar Washington niet blij mee is. VS pissig, Witte Huis commandeert: "Kill switch" Services gaan down, overheidssystemen in chaos. Gebeurd bij het ICC; volgende keer misschien jouw belastingapp of gemeenteportaal?[^8][^10]
+De EU neemt een besluit waar Washington niet blij mee is. VS pissig, Witte Huis commandeert: "Kill switch" Services gaan down, overheidssystemen in chaos. Gebeurd bij het ICC; volgende keer misschien jouw belastingapp of gemeenteportaal?[^8], [^10]
 
 **Scenario 2: Handelsconflict**  
-EU legt een antitrustboete op aan een Amerikaans techbedrijf. VS slaat terug met hogere cloudprijzen of beperkte toegang. Europa betaalt de prijs of moet halsoverkop migreren – vendor lock-in maakt het pijnlijk duur.[^5][^7]
+EU legt een antitrustboete op aan een Amerikaans techbedrijf. VS slaat terug met hogere cloudprijzen of beperkte toegang. Europa betaalt de prijs of moet halsoverkop migreren – vendor lock-in maakt het pijnlijk duur.[^5], [^7]
 
 **Scenario 3: Datasoevereiniteit**  
 EU eist strengere data-lokalisatie. Foreign Tech-bedrijven weigeren, Witte Huis roept "economische oorlog!" Sancties en escalatie volgen, met onze data als gijzelaar.[^19]
@@ -126,10 +126,10 @@ We kunnen niet blijven bouwen op Foreign Tech-clouds; het is tijd voor eigen gro
 Dit is geen simpele switch, maar een complexe, gelaagde operatie – met een glimlach, want we doen het voor onze vrijheid. De loverboy-relatie eindigt hier: verleiding door Foreign Tech maakt plaats voor zelfrespect.[^21]
 
 **Europees Niveau: Gezamenlijke Standaarden**  
-Investeer in [EuroStack](https://eurostack.eu/): bouw [Gaia-X](https://gaia-x.eu/) uit, ontwikkel Europese AI, en promoot open-source alternatieven.[^14][^15][^16] Handhaaf de Data Act voor interoperabiliteit, verbied vendor lock-in, en smeed allianties buiten de VS – precies zoals vier landen (Finland, Frankrijk, Italië, Nederland) nu doen met hun eigen software-initiatief.[^18]
+Investeer in [EuroStack](https://eurostack.eu/): bouw [Gaia-X](https://gaia-x.eu/) uit, ontwikkel Europese AI, en promoot open-source alternatieven.[^14], [^15], [^16] Handhaaf de Data Act voor interoperabiliteit, verbied vendor lock-in, en smeed allianties buiten de VS – precies zoals vier landen (Finland, Frankrijk, Italië, Nederland) nu doen met hun eigen software-initiatief.[^18]
 
 **Nationaal Niveau: Eigen Infrastructuur (Nederland, Let's Go!)**  
-Bouw AI-kennis op, versterk cybersecurity, behoud talent. Ontwikkel nationale clouds en datacenters met redundantie. Schakel van "Cloud-first" naar "Soeverein-first", beoordeel geopolitieke risico's, en maak exit-strategieën verplicht.[^2][^20][^7]
+Bouw AI-kennis op, versterk cybersecurity, behoud talent. Ontwikkel nationale clouds en datacenters met redundantie. Schakel van "Cloud-first" naar "Soeverein-first", beoordeel geopolitieke risico's, en maak exit-strategieën verplicht.[^2], [^20], [^7]
 
 **Lokaal Niveau: Praktische Stappen (Gemeenten, Jullie Kunnen Dit!)**  
 Bij aanbestedingen: soevereiniteit first, open source prefereren, lokaal hosten.[^5] Omarm [Common Ground](https://commonground.nl/): samen bouwen en delen, hergebruiken in plaats van Foreign Tech betalen.[^6] Experimenteer met pilots van Euro-tech, leer en deel successen – als een virale meme.[^21]
@@ -138,9 +138,9 @@ Samenwerking is cruciaal: geen lone wolves. Bottom-up feedback, top-down standaa
 
 ## Conclusie: Dump de Foreign Tech-Loverboy – Tijd Voor Een Eigen, Gezonde Relatie
 
-Het einde van Pax Americana dwingt ons tot actie – een boodschap die al in 2022 doorklonk in Scholz' Zeitenwende-speech en die Friedrich Merz in december 2025 nog eens glashelder herhaalde: de tijd van Amerikaanse dominantie is voorbij, tijd voor Europa om zelf op te staan.[^27][^28] We weten dit dus al een tijdje, maar nu is het menens.
+Het einde van Pax Americana dwingt ons tot actie – een boodschap die al in 2022 doorklonk in Scholz' Zeitenwende-speech en die Friedrich Merz in december 2025 nog eens glashelder herhaalde: de tijd van Amerikaanse dominantie is voorbij, tijd voor Europa om zelf op te staan.[^27], [^28] We weten dit dus al een tijdje, maar nu is het menens.
 
-We moeten afkicken van de loverboy-tactiek van Foreign Tech: verleiding, afhankelijkheid, controle. Niet omdat ze groot zijn, maar omdat ze vreemd zijn en gehoorzamen aan mogendheden die onze soevereiniteit niet respecteren.[^1][^2][^19]
+We moeten afkicken van de loverboy-tactiek van Foreign Tech: verleiding, afhankelijkheid, controle. Niet omdat ze groot zijn, maar omdat ze vreemd zijn en gehoorzamen aan mogendheden die onze soevereiniteit niet respecteren.[^1], [^2], [^19]
 
 Tijd voor open source, [EuroStack](https://eurostack.eu/), echte soevereiniteit. Niet omdat we haten, maar omdat we beter verdienen.
 
