@@ -511,54 +511,6 @@ class ApiController <!-- -->
 </ul>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Personal Blog Posts]]></title>
-            <link>https://www.rubenlinde.nl/blog/personal/README</link>
-            <guid>https://www.rubenlinde.nl/blog/personal/README</guid>
-            <pubDate>Mon, 22 Dec 2025 21:13:19 GMT</pubDate>
-            <description><![CDATA[This folder contains personal reflections, technical tutorials, and general software development insights.]]></description>
-            <content:encoded><![CDATA[<p>This folder contains personal reflections, technical tutorials, and general software development insights.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="topics-include">Topics Include<a href="https://www.rubenlinde.nl/blog/personal/README#topics-include" class="hash-link" aria-label="Direct link naar Topics Include" title="Direct link naar Topics Include" translate="no">​</a></h2>
-<ul>
-<li class="">💻 Software development tutorials</li>
-<li class="">🎨 Web development and design</li>
-<li class="">🔧 Tools and technologies</li>
-<li class="">📚 Learning experiences</li>
-<li class="">🚀 Project showcases</li>
-<li class="">💡 Technical tips and tricks</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="writing-guidelines">Writing Guidelines<a href="https://www.rubenlinde.nl/blog/personal/README#writing-guidelines" class="hash-link" aria-label="Direct link naar Writing Guidelines" title="Direct link naar Writing Guidelines" translate="no">​</a></h2>
-<p>When writing personal blog posts:</p>
-<ol>
-<li class=""><strong>Be authentic</strong> - Share your genuine experiences</li>
-<li class=""><strong>Be educational</strong> - Provide value to readers</li>
-<li class=""><strong>Be practical</strong> - Include code examples and real-world scenarios</li>
-<li class=""><strong>Be conversational</strong> - Write in a friendly, approachable tone</li>
-</ol>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tags-to-use">Tags to Use<a href="https://www.rubenlinde.nl/blog/personal/README#tags-to-use" class="hash-link" aria-label="Direct link naar Tags to Use" title="Direct link naar Tags to Use" translate="no">​</a></h2>
-<p>Common tags for this category:</p>
-<ul>
-<li class=""><code>personal</code></li>
-<li class=""><code>development</code></li>
-<li class=""><code>tutorial</code></li>
-<li class=""><code>javascript</code>, <code>php</code>, <code>python</code> (language-specific)</li>
-<li class=""><code>react</code>, <code>symfony</code>, <code>docusaurus</code> (framework-specific)</li>
-<li class=""><code>tips</code>, <code>best-practices</code></li>
-<li class=""><code>project-showcase</code></li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="example-frontmatter">Example Frontmatter<a href="https://www.rubenlinde.nl/blog/personal/README#example-frontmatter" class="hash-link" aria-label="Direct link naar Example Frontmatter" title="Direct link naar Example Frontmatter" translate="no">​</a></h2>
-<div class="language-markdown codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-markdown codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token front-matter-block punctuation" style="color:#393A34">---</span><span class="token front-matter-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token front-matter-block"></span><span class="token front-matter-block front-matter yaml language-yaml key atrule" style="color:#00a4db">slug</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">:</span><span class="token front-matter-block front-matter yaml language-yaml"> my</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">-</span><span class="token front-matter-block front-matter yaml language-yaml">blog</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">-</span><span class="token front-matter-block front-matter yaml language-yaml">post</span><br></span><span class="token-line" style="color:#393A34"><span class="token front-matter-block front-matter yaml language-yaml"></span><span class="token front-matter-block front-matter yaml language-yaml key atrule" style="color:#00a4db">title</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">:</span><span class="token front-matter-block front-matter yaml language-yaml"> My Blog Post Title</span><br></span><span class="token-line" style="color:#393A34"><span class="token front-matter-block front-matter yaml language-yaml"></span><span class="token front-matter-block front-matter yaml language-yaml key atrule" style="color:#00a4db">authors</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">:</span><span class="token front-matter-block front-matter yaml language-yaml"> </span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">[</span><span class="token front-matter-block front-matter yaml language-yaml">ruben</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">]</span><span class="token front-matter-block front-matter yaml language-yaml"></span><br></span><span class="token-line" style="color:#393A34"><span class="token front-matter-block front-matter yaml language-yaml"></span><span class="token front-matter-block front-matter yaml language-yaml key atrule" style="color:#00a4db">tags</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">:</span><span class="token front-matter-block front-matter yaml language-yaml"> </span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">[</span><span class="token front-matter-block front-matter yaml language-yaml">personal</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">,</span><span class="token front-matter-block front-matter yaml language-yaml"> development</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">,</span><span class="token front-matter-block front-matter yaml language-yaml"> tutorial</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">,</span><span class="token front-matter-block front-matter yaml language-yaml"> react</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">]</span><span class="token front-matter-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token front-matter-block"></span><span class="token front-matter-block punctuation" style="color:#393A34">---</span><br></span></code></pre></div></div>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="content-ideas">Content Ideas<a href="https://www.rubenlinde.nl/blog/personal/README#content-ideas" class="hash-link" aria-label="Direct link naar Content Ideas" title="Direct link naar Content Ideas" translate="no">​</a></h2>
-<ul>
-<li class="">New technology explorations</li>
-<li class="">Problem-solving stories</li>
-<li class="">Code refactoring examples</li>
-<li class="">Tool comparisons</li>
-<li class="">Development environment setups</li>
-<li class="">Open-source contributions</li>
-<li class="">Side project updates</li>
-</ul>]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[Platform AI & Overheid (Government)]]></title>
             <link>https://www.rubenlinde.nl/blog/platform-ai-en-overheid/README</link>
             <guid>https://www.rubenlinde.nl/blog/platform-ai-en-overheid/README</guid>
@@ -626,6 +578,54 @@ class ApiController <!-- -->
 <li class="">EU AI Act implications</li>
 <li class="">Digital inclusion strategies</li>
 <li class="">Open-source AI for government</li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Personal Blog Posts]]></title>
+            <link>https://www.rubenlinde.nl/blog/personal/README</link>
+            <guid>https://www.rubenlinde.nl/blog/personal/README</guid>
+            <pubDate>Mon, 22 Dec 2025 21:13:19 GMT</pubDate>
+            <description><![CDATA[This folder contains personal reflections, technical tutorials, and general software development insights.]]></description>
+            <content:encoded><![CDATA[<p>This folder contains personal reflections, technical tutorials, and general software development insights.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="topics-include">Topics Include<a href="https://www.rubenlinde.nl/blog/personal/README#topics-include" class="hash-link" aria-label="Direct link naar Topics Include" title="Direct link naar Topics Include" translate="no">​</a></h2>
+<ul>
+<li class="">💻 Software development tutorials</li>
+<li class="">🎨 Web development and design</li>
+<li class="">🔧 Tools and technologies</li>
+<li class="">📚 Learning experiences</li>
+<li class="">🚀 Project showcases</li>
+<li class="">💡 Technical tips and tricks</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="writing-guidelines">Writing Guidelines<a href="https://www.rubenlinde.nl/blog/personal/README#writing-guidelines" class="hash-link" aria-label="Direct link naar Writing Guidelines" title="Direct link naar Writing Guidelines" translate="no">​</a></h2>
+<p>When writing personal blog posts:</p>
+<ol>
+<li class=""><strong>Be authentic</strong> - Share your genuine experiences</li>
+<li class=""><strong>Be educational</strong> - Provide value to readers</li>
+<li class=""><strong>Be practical</strong> - Include code examples and real-world scenarios</li>
+<li class=""><strong>Be conversational</strong> - Write in a friendly, approachable tone</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tags-to-use">Tags to Use<a href="https://www.rubenlinde.nl/blog/personal/README#tags-to-use" class="hash-link" aria-label="Direct link naar Tags to Use" title="Direct link naar Tags to Use" translate="no">​</a></h2>
+<p>Common tags for this category:</p>
+<ul>
+<li class=""><code>personal</code></li>
+<li class=""><code>development</code></li>
+<li class=""><code>tutorial</code></li>
+<li class=""><code>javascript</code>, <code>php</code>, <code>python</code> (language-specific)</li>
+<li class=""><code>react</code>, <code>symfony</code>, <code>docusaurus</code> (framework-specific)</li>
+<li class=""><code>tips</code>, <code>best-practices</code></li>
+<li class=""><code>project-showcase</code></li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="example-frontmatter">Example Frontmatter<a href="https://www.rubenlinde.nl/blog/personal/README#example-frontmatter" class="hash-link" aria-label="Direct link naar Example Frontmatter" title="Direct link naar Example Frontmatter" translate="no">​</a></h2>
+<div class="language-markdown codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-markdown codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token front-matter-block punctuation" style="color:#393A34">---</span><span class="token front-matter-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token front-matter-block"></span><span class="token front-matter-block front-matter yaml language-yaml key atrule" style="color:#00a4db">slug</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">:</span><span class="token front-matter-block front-matter yaml language-yaml"> my</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">-</span><span class="token front-matter-block front-matter yaml language-yaml">blog</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">-</span><span class="token front-matter-block front-matter yaml language-yaml">post</span><br></span><span class="token-line" style="color:#393A34"><span class="token front-matter-block front-matter yaml language-yaml"></span><span class="token front-matter-block front-matter yaml language-yaml key atrule" style="color:#00a4db">title</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">:</span><span class="token front-matter-block front-matter yaml language-yaml"> My Blog Post Title</span><br></span><span class="token-line" style="color:#393A34"><span class="token front-matter-block front-matter yaml language-yaml"></span><span class="token front-matter-block front-matter yaml language-yaml key atrule" style="color:#00a4db">authors</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">:</span><span class="token front-matter-block front-matter yaml language-yaml"> </span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">[</span><span class="token front-matter-block front-matter yaml language-yaml">ruben</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">]</span><span class="token front-matter-block front-matter yaml language-yaml"></span><br></span><span class="token-line" style="color:#393A34"><span class="token front-matter-block front-matter yaml language-yaml"></span><span class="token front-matter-block front-matter yaml language-yaml key atrule" style="color:#00a4db">tags</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">:</span><span class="token front-matter-block front-matter yaml language-yaml"> </span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">[</span><span class="token front-matter-block front-matter yaml language-yaml">personal</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">,</span><span class="token front-matter-block front-matter yaml language-yaml"> development</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">,</span><span class="token front-matter-block front-matter yaml language-yaml"> tutorial</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">,</span><span class="token front-matter-block front-matter yaml language-yaml"> react</span><span class="token front-matter-block front-matter yaml language-yaml punctuation" style="color:#393A34">]</span><span class="token front-matter-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token front-matter-block"></span><span class="token front-matter-block punctuation" style="color:#393A34">---</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="content-ideas">Content Ideas<a href="https://www.rubenlinde.nl/blog/personal/README#content-ideas" class="hash-link" aria-label="Direct link naar Content Ideas" title="Direct link naar Content Ideas" translate="no">​</a></h2>
+<ul>
+<li class="">New technology explorations</li>
+<li class="">Problem-solving stories</li>
+<li class="">Code refactoring examples</li>
+<li class="">Tool comparisons</li>
+<li class="">Development environment setups</li>
+<li class="">Open-source contributions</li>
+<li class="">Side project updates</li>
 </ul>]]></content:encoded>
         </item>
         <item>
@@ -1490,349 +1490,107 @@ class ApiController <!-- -->
             <link>https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit</link>
             <guid>https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit</guid>
             <pubDate>Wed, 22 Jan 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[Deze blog is nog in concept-fase en wordt mogelijk nog aangepast voor publicatie.]]></description>
-            <content:encoded><![CDATA[<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Status: Concept</div><div class="admonitionContent_BuS1"><p>Deze blog is nog in concept-fase en wordt mogelijk nog aangepast voor publicatie.</p></div></div>
-<p>Er was een tijd dat we blindelings vertrouwden op Amerikaanse techgiganten en de stabiliteit die de VS wereldwijd bood. Die tijd is voorbij. De vraag is niet langer of we Big Tech kunnen vertrouwen - maar of we het Witte Huis kunnen vertrouwen.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="de-wereld-is-veranderd">De Wereld is Veranderd<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#de-wereld-is-veranderd" class="hash-link" aria-label="Direct link naar De Wereld is Veranderd" title="Direct link naar De Wereld is Veranderd" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="van-vertrouwen-naar-twijfel">Van Vertrouwen naar Twijfel<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#van-vertrouwen-naar-twijfel" class="hash-link" aria-label="Direct link naar Van Vertrouwen naar Twijfel" title="Direct link naar Van Vertrouwen naar Twijfel" translate="no">​</a></h3>
-<p><strong>Vroeger:</strong></p>
+            <description><![CDATA[Het einde van Pax Americana dwingt Europa tot actie. Tijd om af te kicken van de loverboy-tactiek van Foreign Tech en te investeren in digitale soevereiniteit met EuroStack, Gaia-X en Common Ground.]]></description>
+            <content:encoded><![CDATA[<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Status: Concept? Nah, Dit Is Nu Nog Wittier en Bron-Gepimpt</div><div class="admonitionContent_BuS1"><p>Deze blog was in concept-fase, maar ik heb 'm nog grappiger gemaakt met extra snedige opmerkingen en echte bronnen. Want niets zegt "digitaal soeverein" als een blog met voetnoten – en een knipoog naar Uncle Sam's blunders.</p></div></div>
+<p>Hé, Europa! Herinner je je die goede oude dagen nog? Toen Amerika de grote, vriendelijke reus was die de wereldorde bewaakte met een Big Mac in de ene hand en een cloud-server in de andere? Ja? Nou, wakker worden! Die Pax Americana is voorbij. Het is tijd voor Post-Americana, waar we niet langer blindelings vertrouwen op <strong>Foreign Tech</strong> – Amerikaanse, Chinese en Russische techbedrijven die gehoorzamen aan mogendheden die niet altijd onze beste vrienden zijn. Het probleem zit hem niet in “Big Tech” omdat ze groot zijn of onetisch zijn (spoiler ze zijn bijde), maar omdat ze <strong>vreemd</strong> zijn: onderworpen aan wetten en politieke grillen van landen die onze soevereiniteit, privacy en veiligheid zomaar kunnen ondermijnen.[^19]</p>
+<p>En laten we eerlijk zijn: onze relatie met deze Foreign Tech-giganten lijkt verdacht veel op een klassieke <strong>loverboy-constructie</strong>. Ze verleiden ons met gratis of spotgoedkope diensten, maken ons volledig afhankelijk, en zodra we diep in de relatie zitten, trekken ze de controle naar zich toe – of laat het Witte Huis, Beijing of Moskou de teugels aantrekken.[^21] Tijd om uit deze toxische relatie te stappen.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="geopolitieke-herordening-van-amerika-als-primus-inter-pares-naar-een-tripolair-systeem">Geopolitieke Herordening: Van Amerika als Primus Inter Pares naar een Tripolair Systeem<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#geopolitieke-herordening-van-amerika-als-primus-inter-pares-naar-een-tripolair-systeem" class="hash-link" aria-label="Direct link naar Geopolitieke Herordening: Van Amerika als Primus Inter Pares naar een Tripolair Systeem" title="Direct link naar Geopolitieke Herordening: Van Amerika als Primus Inter Pares naar een Tripolair Systeem" translate="no">​</a></h2>
+<p>Voordat we duiken in de tech-chaos, laten we dit even in een groter plaatje zetten: de wereld ondergaat een geopolitieke herordening, van de VS als 'primus inter pares' (eerste onder gelijken) in een unipolaire orde naar een tripolair systeem met de VS, China en de EU als drie grote polen.[^22][^23] Pax Americana, die tijd van Amerikaanse hegemonie na WOII, brokkelt af door interne polarisatie, overbelaste militaire avonturen en een 'America First'-mentaliteit die bondgenoten als lastige sidekicks ziet.</p>
+<p>We weten dit al een tijdje. Al in 2022 sprak toenmalig kanselier Olaf Scholz van een <strong>Zeitenwende</strong> – een keerpunt in de geschiedenis – na de Russische invasie van Oekraïne, waarmee hij impliciet het einde van de oude Pax Americana-orde markeerde.[^28] En recent, in december 2025, was de huidige kanselier Friedrich Merz nog explicieter tijdens een CSU-congres: "De decades van Pax Americana zijn grotendeels voorbij voor ons in Europa en Duitsland." Hij waarschuwde dat nostalgie geen zin heeft en dat Europa zijn eigen belangen agressiever moet verdedigen.[^27]</p>
+<p>In plaats daarvan zien we een multipolaire – of specifieker, tripolaire – wereld opkomen, waar de VS, China en de EU elk hun eigen economische en politieke spheres of influence bouwen.</p>
+<p>Denk eraan: de VS blijft militair topdog, maar China domineert in economie en tech (hallo, AI en quantum), terwijl de EU met haar markt van 500 miljoen zielen en waarden als privacy-first een derde pool kan claimen – mits we niet langer als tech-kolonie van Uncle Sam of Beijing fungeren. Deze shift betekent meer rivaliteit, maar ook kansen voor Europa om strategische autonomie te grijpen, vooral in digitale domeinen. Want in een tripolair systeem kun je niet leunen op één pool; je moet je eigen stack bouwen, of je wordt een speelbal in de grote-machten-pingpong. En ja, dat maakt digitale soevereiniteit niet zomaar een buzzword, maar een geopolitieke noodzaak – anders eindig je als de sidekick die de rekeningen betaalt terwijl de helden vechten. Tijd om op te staan, Europa!</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="de-wereld-is-veranderd-van-yes-we-can-naar-no-you-cant--unless-we-say-so">De Wereld is Veranderd: Van "Yes We Can" naar "No You Can't – Unless We Say So"<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#de-wereld-is-veranderd-van-yes-we-can-naar-no-you-cant--unless-we-say-so" class="hash-link" aria-label="Direct link naar De Wereld is Veranderd: Van &quot;Yes We Can&quot; naar &quot;No You Can't – Unless We Say So&quot;" title="Direct link naar De Wereld is Veranderd: Van &quot;Yes We Can&quot; naar &quot;No You Can't – Unless We Say So&quot;" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="vroeger-vs-nu-een-tragikomische-vergelijking">Vroeger vs. Nu: Een Tragikomische Vergelijking<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#vroeger-vs-nu-een-tragikomische-vergelijking" class="hash-link" aria-label="Direct link naar Vroeger vs. Nu: Een Tragikomische Vergelijking" title="Direct link naar Vroeger vs. Nu: Een Tragikomische Vergelijking" translate="no">​</a></h3>
+<p><strong>Vroeger:</strong> Amerika was de hoeder van de internationale orde. Big Tech? Betrouwbare partners die ons hielpen met spreadsheets en selfies. Juridische zekerheid via verdragen? Check. Stabiel tech-ecosysteem? Als een Zwitsers horloge. En het mooiste: soms konden we zelfs trots zijn op onze eigen slagkracht—denk aan ASML, dat vanuit een klein Nederlands dorpje (Veldhoven) met lenzen uit een nog kleiner Duits dorpje (Zeiss, Oberkochen) machines bouwt waar letterlijk de hele wereldeconomie van afhankelijk is. Technologische afhankelijkheid gebaseerd op vertrouwen en rechtsorde.</p>
+<p><strong>Nu:</strong> Trump en z’n entourage ondermijnen die orde sneller dan een kat die achter een laserpointer aan zit een kerstboom omgooit. Foreign Tech (VS, China, Rusland) is een geopolitiek wapen – denk aan een drone, maar dan met je data. Juridische continuïteit? Haha, dat is een grap. Het tech-landschap is onvoorspelbaarder dan het weer in Nederland – of Trump's tweets.</p>
+<p><strong>De verschuiving:</strong> Het gaat niet meer om of een tech-bedrijf groot of ethisch is. Het gaat erom dat veel van deze bedrijven <strong>buitenlands</strong> zijn en moeten gehoorzamen aan mogendheden die niet per se onze belangen dienen. Dat maakt ze Foreign Tech: niet alleen groot, maar <strong>vreemd</strong> en potentieel vijandig. En daarop zijn we afhankelijk voor de bedrijfsvoering van de overheid.[^1]</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="het-internationaal-strafhof-de-wake-up-call-die-we-niet-zagen-aankomen-maar-wel-hadden-moeten">Het Internationaal Strafhof: De Wake-up Call Die We Niet Zagen Aankomen (Maar Wel Hadden Moeten)<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#het-internationaal-strafhof-de-wake-up-call-die-we-niet-zagen-aankomen-maar-wel-hadden-moeten" class="hash-link" aria-label="Direct link naar Het Internationaal Strafhof: De Wake-up Call Die We Niet Zagen Aankomen (Maar Wel Hadden Moeten)" title="Direct link naar Het Internationaal Strafhof: De Wake-up Call Die We Niet Zagen Aankomen (Maar Wel Hadden Moeten)" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="de-feiten-een-slechte-hollywood-plot-maar-echt-gebeurd">De Feiten: Een Slechte Hollywood-Plot, Maar Echt Gebeurd<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#de-feiten-een-slechte-hollywood-plot-maar-echt-gebeurd" class="hash-link" aria-label="Direct link naar De Feiten: Een Slechte Hollywood-Plot, Maar Echt Gebeurd" title="Direct link naar De Feiten: Een Slechte Hollywood-Plot, Maar Echt Gebeurd" translate="no">​</a></h3>
+<p>Stel je voor: het Internationaal Strafhof (ICC) in Den Haag onderzoekt mogelijke oorlogsmisdaden. Microsoft levert de cloud-diensten. Tot het Witte Huis het niet eens is met het onderzoek. Wat doet Microsoft? Op verzoek van Uncle Sam trekken ze de stekker eruit – contract weg, dienstverlening kaput.[^8][^9][^10][^11]</p>
+<p>Dit is geen aflevering van "House of Cards". Dit is gebeurd. En het ICC dumpt nu Microsoft voor een Europese open-source suite zoals openDesk – slim, want wie wil er nog afhankelijk zijn van Foreign Tech die "America First" boven "Justice First" stelt?[^8][^9]</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="wat-dit-betekent-een-les-in-vertrouw-niemand">Wat Dit Betekent: Een Les in "Vertrouw Niemand"<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#wat-dit-betekent-een-les-in-vertrouw-niemand" class="hash-link" aria-label="Direct link naar Wat Dit Betekent: Een Les in &quot;Vertrouw Niemand&quot;" title="Direct link naar Wat Dit Betekent: Een Les in &quot;Vertrouw Niemand&quot;" translate="no">​</a></h3>
 <ul>
-<li class="">Amerika als hoeder van internationale orde</li>
-<li class="">Big Tech als betrouwbare partner</li>
-<li class="">Juridische zekerheid via verdragen</li>
-<li class="">Stabiel tech-ecosysteem</li>
+<li class="">Niet juridische kaders, maar politieke grillen bepalen je toegang tot data.</li>
+<li class="">Contracten zijn net zo bindend als een Nieuwjaarsvoornemen.</li>
+<li class="">Foreign Tech-bedrijven zijn marionetten van hun thuisland.</li>
+<li class="">Digitale diensten? Gewoon een politiek wapen in vermomming.</li>
 </ul>
-<p><strong>Nu:</strong></p>
+<p>Dit incident heeft de discussie over digitale soevereiniteit aangewakkerd, zoals iBestuur het noemt.[^1] Maar nog niet beslecht.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="amerikaanse-technologie-als-politiek-wapen-america-first-betekent-europa-last--en-betaal-de-rekening">Amerikaanse Technologie als Politiek Wapen: "America First" Betekent "Europa Last – En Betaal de Rekening"<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#amerikaanse-technologie-als-politiek-wapen-america-first-betekent-europa-last--en-betaal-de-rekening" class="hash-link" aria-label="Direct link naar Amerikaanse Technologie als Politiek Wapen: &quot;America First&quot; Betekent &quot;Europa Last – En Betaal de Rekening&quot;" title="Direct link naar Amerikaanse Technologie als Politiek Wapen: &quot;America First&quot; Betekent &quot;Europa Last – En Betaal de Rekening&quot;" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="de-realiteit-geen-romantische-relatie-meer">De Realiteit: Geen Romantische Relatie Meer<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#de-realiteit-geen-romantische-relatie-meer" class="hash-link" aria-label="Direct link naar De Realiteit: Geen Romantische Relatie Meer" title="Direct link naar De Realiteit: Geen Romantische Relatie Meer" translate="no">​</a></h3>
+<p>Onze relatie met Foreign Tech is geen gezonde partnership, maar een klassieke <strong>loverboy-tactiek</strong>: eerst verleiden met lage prijzen en gemak, dan volledig afhankelijk maken, en uiteindelijk de controle overnemen wanneer het hun uitkomt. En we laten dit toe – niemand maakt er een punt van dat Microsoft gratis licenties uitdeelt in het onderwijs en daar leerlingen en studenten al vroeg aan boord haalt.[^24][^25][^26]</p>
+<p>Zoals Marleen Stikker het treffend zegt in Trouw: "Big tech is een instrument geworden van de geopolitiek" en "Inmiddels gaat het om onze nationale veiligheid." Vier Europese landen (Finland, Frankrijk, Italië en Nederland) lanceren een eigen software-ontwikkelingsinitiatief om minder afhankelijk te worden van VS-big tech – de eerste stap naar digitale onafhankelijkheid.[^18]</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="recente-voorbeelden-een-komische-maar-eng-hitlijst">Recente Voorbeelden: Een Komische (Maar Eng) Hitlijst<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#recente-voorbeelden-een-komische-maar-eng-hitlijst" class="hash-link" aria-label="Direct link naar Recente Voorbeelden: Een Komische (Maar Eng) Hitlijst" title="Direct link naar Recente Voorbeelden: Een Komische (Maar Eng) Hitlijst" translate="no">​</a></h3>
+<p>Laten we eens duiken in de recente voorbeelden die laten zien hoe Foreign Tech niet zomaar tools zijn, maar verlengstukken van nationale macht – en hoe dat ons in Europa in een benarde positie brengt.[^3][^17] Het patroon is duidelijk en eerlijk gezegd een beetje komisch, als het niet zo eng zou zijn: Amerika zet bondgenoten onder druk alsof we een spelletje Monopoly spelen, maar dan met echte tarieven en dreigementen.</p>
+<p>Neem de <strong>handelsorlog</strong>: willekeurige tarieven op Europese goederen, tech-exportrestricties – het is "America First" ten koste van alles.[^4] Of de <strong>NAVO-twijfels</strong>: Trump zet openlijk vraagtekens bij Article 5, ons collectieve verdedigingspact – het is als een vriendschap waarin één partij zegt: "Ik help je alleen als je meer betaalt voor defensie."[^6]</p>
+<p>Dan het <strong>Groenland-dreigement</strong>: Trump's bizarre plan om Groenland te kopen, en toen Denemarken nee zei, volgden dreigementen.[^6] En recenter: <strong>visa bans op EU-regulators</strong> zoals Thierry Breton, de architect achter de Digital Services Act. Het Witte Huis noemt het "extraterritoriale censuur", maar Macron spreekt van pure intimidatie om onze digitale soevereiniteit te ondermijnen.[^3][^17]</p>
+<p>AD waarschuwt al jaren: twee derde van de Nederlandse gemeenten mailt met Microsoft, terwijl Trump chantagemiddelen niet schuwt – denk aan kill switches op mailboxes als we niet meewerken.[^4][^5][^7] Nijmegen wil daarom minder invloed van Amerikaanse big tech, precies omdat die kill switch een reëel risico is.[^7]</p>
+<p>Het patroon? Foreign Tech is geen neutrale speler; het is een geopolitiek schaakstuk, en wij zijn de pionnen.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="juridische-continuïteit-in-gevaar-rule-of-law-meer-rule-of-lol">Juridische Continuïteit in Gevaar: "Rule of Law? Meer Rule of LOL"<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#juridische-continu%C3%AFteit-in-gevaar-rule-of-law-meer-rule-of-lol" class="hash-link" aria-label="Direct link naar Juridische Continuïteit in Gevaar: &quot;Rule of Law? Meer Rule of LOL&quot;" title="Direct link naar Juridische Continuïteit in Gevaar: &quot;Rule of Law? Meer Rule of LOL&quot;" translate="no">​</a></h2>
+<p>En dan de juridische chaos: Trump's aanpak ondermijnt de rule of law – rechters ontslaan, hoven politiseren, independence van justitie onder druk.[^2] Het gevolg? Juridische voorspelbaarheid verdwijnt, contracten worden waardeloos, en de rechtsgang een loterij.</p>
+<p>Centraal staat het <strong>Transatlantic Data Privacy Framework</strong>: dit dataverdrag tussen EU en VS kan elk moment klappen. Het steunt op presidentiële besluiten die Trump zomaar kan intrekken, met onafhankelijke toezichthouders onder druk en eerdere verdragen al twee keer ongeldig verklaard.[^19] Overheid, opgelet: breng afhankelijkheden in kaart en schakel over op eigen infrastructuur, anders val je terug op zand.[^19][^2]</p>
+<p>Europa bouwt op wankele juridische fundamenten, en het tij keert.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="van-handelsorlog-naar-economische-oorlogvoering-oorlog-is-het-nieuwe-handel">Van Handelsorlog naar Economische Oorlogvoering: "Oorlog" Is Het Nieuwe "Handel"<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#van-handelsorlog-naar-economische-oorlogvoering-oorlog-is-het-nieuwe-handel" class="hash-link" aria-label="Direct link naar Van Handelsorlog naar Economische Oorlogvoering: &quot;Oorlog&quot; Is Het Nieuwe &quot;Handel&quot;" title="Direct link naar Van Handelsorlog naar Economische Oorlogvoering: &quot;Oorlog&quot; Is Het Nieuwe &quot;Handel&quot;" translate="no">​</a></h2>
+<p>Deze spanningen escaleren van handelsorlog naar pure economische oorlogvoering: tarieven als straf, tech-restricties als wapen, en chantage zoals "betaal meer voor defensie of anders..." – het is een slechte date die dreigt met geen tweede afspraakje.[^1]</p>
+<p>We zijn geen gelijkwaardige partner, maar een cashcow voor Foreign Tech. Tijd om terug te slaan en te bewijzen: "Watch us." Nederland pleit al voor een soevereine cloud voor de hele overheid – samen bouwen aan eigen infrastructuur, weg van afhankelijkheden.[^20] <a href="https://eurostack.eu/" target="_blank" rel="noopener noreferrer" class="">EuroStack</a> is een concreet initiatief: een volledige Europese tech-stack opbouwen, van connectivity tot chips, met layers als Sovereign AI en Data Commons voor echte autonomie.[^14][^15][^16]</p>
+<p>In deze tripolaire wereld is het niet meer "handel", maar "oorlog" – en wij moeten ons bewapenen met eigen tech.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="wat-dit-betekent-voor-digitale-diensten-scenarios-die-te-echt-zijn">Wat Dit Betekent Voor Digitale Diensten: Scenario's Die Te Echt Zijn<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#wat-dit-betekent-voor-digitale-diensten-scenarios-die-te-echt-zijn" class="hash-link" aria-label="Direct link naar Wat Dit Betekent Voor Digitale Diensten: Scenario's Die Te Echt Zijn" title="Direct link naar Wat Dit Betekent Voor Digitale Diensten: Scenario's Die Te Echt Zijn" translate="no">​</a></h2>
+<p>Wat betekent dit allemaal voor onze dagelijkse digitale diensten? Laten we het uitspellen in scenario's die helaas geen sciencefiction zijn, maar dinsdagmiddag-realiteit – allemaal dankzij onze afhankelijkheid van Foreign Tech.</p>
+<p><strong>Scenario 1: Politieke Onenigheid</strong><br>
+<!-- -->De EU neemt een besluit waar Washington niet blij mee is. VS pissig, Witte Huis commandeert: "Kill switch" Services gaan down, overheidssystemen in chaos. Gebeurd bij het ICC; volgende keer misschien jouw belastingapp of gemeenteportaal?[^8][^10]</p>
+<p><strong>Scenario 2: Handelsconflict</strong><br>
+<!-- -->EU legt een antitrustboete op aan een Amerikaans techbedrijf. VS slaat terug met hogere cloudprijzen of beperkte toegang. Europa betaalt de prijs of moet halsoverkop migreren – vendor lock-in maakt het pijnlijk duur.[^5][^7]</p>
+<p><strong>Scenario 3: Datasoevereiniteit</strong><br>
+<!-- -->EU eist strengere data-lokalisatie. Foreign Tech-bedrijven weigeren, Witte Huis roept "economische oorlog!" Sancties en escalatie volgen, met onze data als gijzelaar.[^19]</p>
+<p>We kunnen niet blijven bouwen op Foreign Tech-clouds; het is tijd voor eigen grond.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="hoe-reageren-we-op-alle-niveaus-met-een-glimlach-en-een-plan">Hoe Reageren We? Op Alle Niveaus, Met Een Glimlach en Een Plan<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#hoe-reageren-we-op-alle-niveaus-met-een-glimlach-en-een-plan" class="hash-link" aria-label="Direct link naar Hoe Reageren We? Op Alle Niveaus, Met Een Glimlach en Een Plan" title="Direct link naar Hoe Reageren We? Op Alle Niveaus, Met Een Glimlach en Een Plan" translate="no">​</a></h2>
+<p>Dit is geen simpele switch, maar een complexe, gelaagde operatie – met een glimlach, want we doen het voor onze vrijheid. De loverboy-relatie eindigt hier: verleiding door Foreign Tech maakt plaats voor zelfrespect.[^21]</p>
+<p><strong>Europees Niveau: Gezamenlijke Standaarden</strong><br>
+<!-- -->Investeer in <a href="https://eurostack.eu/" target="_blank" rel="noopener noreferrer" class="">EuroStack</a>: bouw <a href="https://gaia-x.eu/" target="_blank" rel="noopener noreferrer" class="">Gaia-X</a> uit, ontwikkel Europese AI, en promoot open-source alternatieven.[^14][^15][^16] Handhaaf de Data Act voor interoperabiliteit, verbied vendor lock-in, en smeed allianties buiten de VS – precies zoals vier landen (Finland, Frankrijk, Italië, Nederland) nu doen met hun eigen software-initiatief.[^18]</p>
+<p><strong>Nationaal Niveau: Eigen Infrastructuur (Nederland, Let's Go!)</strong><br>
+<!-- -->Bouw AI-kennis op, versterk cybersecurity, behoud talent. Ontwikkel nationale clouds en datacenters met redundantie. Schakel van "Cloud-first" naar "Soeverein-first", beoordeel geopolitieke risico's, en maak exit-strategieën verplicht.[^2][^20][^7]</p>
+<p><strong>Lokaal Niveau: Praktische Stappen (Gemeenten, Jullie Kunnen Dit!)</strong><br>
+<!-- -->Bij aanbestedingen: soevereiniteit first, open source prefereren, lokaal hosten.[^5] Omarm <a href="https://commonground.nl/" target="_blank" rel="noopener noreferrer" class="">Common Ground</a>: samen bouwen en delen, hergebruiken in plaats van Foreign Tech betalen.[^6] Experimenteer met pilots van Euro-tech, leer en deel successen – als een virale meme.[^21]</p>
+<p>Samenwerking is cruciaal: geen lone wolves. Bottom-up feedback, top-down standaarden – Nederland heeft met <a href="https://commonground.nl/" target="_blank" rel="noopener noreferrer" class="">Common Ground</a> en <a href="https://minbzk.github.io/mijn-bureau/" target="_blank" rel="noopener noreferrer" class="">Mijn Bureau</a> een voorsprong; rol het Europees uit.[^18]</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="conclusie-dump-de-foreign-tech-loverboy--tijd-voor-een-eigen-gezonde-relatie">Conclusie: Dump de Foreign Tech-Loverboy – Tijd Voor Een Eigen, Gezonde Relatie<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#conclusie-dump-de-foreign-tech-loverboy--tijd-voor-een-eigen-gezonde-relatie" class="hash-link" aria-label="Direct link naar Conclusie: Dump de Foreign Tech-Loverboy – Tijd Voor Een Eigen, Gezonde Relatie" title="Direct link naar Conclusie: Dump de Foreign Tech-Loverboy – Tijd Voor Een Eigen, Gezonde Relatie" translate="no">​</a></h2>
+<p>Het einde van Pax Americana dwingt ons tot actie – een boodschap die al in 2022 doorklonk in Scholz' Zeitenwende-speech en die Friedrich Merz in december 2025 nog eens glashelder herhaalde: de tijd van Amerikaanse dominantie is voorbij, tijd voor Europa om zelf op te staan.[^27][^28] We weten dit dus al een tijdje, maar nu is het menens.</p>
+<p>We moeten afkicken van de loverboy-tactiek van Foreign Tech: verleiding, afhankelijkheid, controle. Niet omdat ze groot zijn, maar omdat ze vreemd zijn en gehoorzamen aan mogendheden die onze soevereiniteit niet respecteren.[^1][^2][^19]</p>
+<p>Tijd voor open source, <a href="https://eurostack.eu/" target="_blank" rel="noopener noreferrer" class="">EuroStack</a>, echte soevereiniteit. Niet omdat we haten, maar omdat we beter verdienen.</p>
+<p>De vraag: hoe snel stappen we uit deze toxische relatie? Begin klein, lokaal; verbind nationaal, denk Europees.</p>
+<p>Maar begin nu – voordat je wakker wordt en ontdekt dat je data allang niet meer van jou is. 💔➡️🇪🇺</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="bronnen">Bronnen<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#bronnen" class="hash-link" aria-label="Direct link naar Bronnen" title="Direct link naar Bronnen" translate="no">​</a></h2>
+<p>Hieronder een totale, overzichtelijke lijst van alle gebruikte bronnen (alfabetisch gesorteerd op publicatie):</p>
 <ul>
-<li class="">Trump-administratie ondermijnt internationale orde</li>
-<li class="">Big Tech als geopolitiek wapen</li>
-<li class="">Juridische continuïteit in gevaar</li>
-<li class="">Onvoorspelbaar tech-landschap</li>
-</ul>
-<p><strong>De verschuiving:</strong> Het gaat niet meer om of een tech-bedrijf ethisch is, maar of we een hele natie kunnen vertrouwen als hoeder van onze data en infrastructuur.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="het-internationaal-strafhof-een-wake-up-call">Het Internationaal Strafhof: Een Wake-up Call<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#het-internationaal-strafhof-een-wake-up-call" class="hash-link" aria-label="Direct link naar Het Internationaal Strafhof: Een Wake-up Call" title="Direct link naar Het Internationaal Strafhof: Een Wake-up Call" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="de-feiten">De Feiten<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#de-feiten" class="hash-link" aria-label="Direct link naar De Feiten" title="Direct link naar De Feiten" translate="no">​</a></h3>
-<p><strong>Wat gebeurde:</strong></p>
-<ul>
-<li class="">Het Internationaal Strafhof in Den Haag</li>
-<li class="">Onderzoekt mogelijke oorlogsmisdaden</li>
-<li class="">Microsoft levert cloud-diensten aan het hof</li>
-<li class="">Witte Huis is het niet eens met onderzoek</li>
-</ul>
-<p><strong>Microsoft's actie:</strong></p>
-<ul>
-<li class="">Op verzoek van het Witte Huis</li>
-<li class="">Zonder enige rechterlijke tussenkomst</li>
-<li class="">Stopt dienstverlening aan het ICC</li>
-<li class="">Contract eenzijdig verbroken</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="wat-dit-betekent">Wat Dit Betekent<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#wat-dit-betekent" class="hash-link" aria-label="Direct link naar Wat Dit Betekent" title="Direct link naar Wat Dit Betekent" translate="no">​</a></h3>
-<p><strong>Glashelder voorbeeld dat:</strong></p>
-<ul>
-<li class="">Niet juridische kaders, maar politieke wil bepaalt toegang</li>
-<li class="">Contractuele afspraken betekenisloos zijn</li>
-<li class="">Amerikaanse bedrijven gehoorzamen aan Witte Huis boven internationale verdragen</li>
-<li class="">Digitale diensten een politiek wapen zijn</li>
-</ul>
-<p><strong>Dit is niet hypothetisch - dit is gebeurd.</strong></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="amerikaanse-technologie-als-politiek-wapen">Amerikaanse Technologie als Politiek Wapen<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#amerikaanse-technologie-als-politiek-wapen" class="hash-link" aria-label="Direct link naar Amerikaanse Technologie als Politiek Wapen" title="Direct link naar Amerikaanse Technologie als Politiek Wapen" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="de-realiteit">De Realiteit<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#de-realiteit" class="hash-link" aria-label="Direct link naar De Realiteit" title="Direct link naar De Realiteit" translate="no">​</a></h3>
-<p><strong>Toegang tot Amerikaanse tech is geen</strong>:</p>
-<ul>
-<li class="">Markt-gedreven relatie</li>
-<li class="">Juridisch verankerd recht</li>
-<li class="">Betrouwbare handelsrelatie</li>
-</ul>
-<p><strong>Maar</strong>:</p>
-<ul>
-<li class="">Geopolitiek schaakstuk</li>
-<li class="">Politiek drukmiddel</li>
-<li class="">Strategisch wapen</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="recente-voorbeelden">Recente Voorbeelden<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#recente-voorbeelden" class="hash-link" aria-label="Direct link naar Recente Voorbeelden" title="Direct link naar Recente Voorbeelden" translate="no">​</a></h3>
-<p><strong>Handelsoorlog:</strong></p>
-<ul>
-<li class="">Tarieven op Europese goederen</li>
-<li class="">Tech-export restricties</li>
-<li class="">"America First" beleid</li>
-<li class="">Onvoorspelbare beleidswisseling</li>
-</ul>
-<p><strong>NAVO-Twijfels:</strong></p>
-<ul>
-<li class="">Openlijke vragen over Article 5</li>
-<li class="">Dreiging om bondgenoten niet te verdedigen</li>
-<li class="">Onderhandelingen als chantage</li>
-</ul>
-<p><strong>Groenland Dreigement:</strong></p>
-<ul>
-<li class="">Openlijke dreigementen richting Denemarken</li>
-<li class="">Strategisch bondgenoot onder druk</li>
-<li class="">Europa's veiligheid als onderhandelingsmassa</li>
-</ul>
-<p><strong>Patroon:</strong> Amerika ziet bondgenoten als ondergeschikten, niet als partners.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="juridische-continuïteit-in-gevaar">Juridische Continuïteit in Gevaar<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#juridische-continu%C3%AFteit-in-gevaar" class="hash-link" aria-label="Direct link naar Juridische Continuïteit in Gevaar" title="Direct link naar Juridische Continuïteit in Gevaar" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="het-rechtssysteem-ondermijnd">Het Rechtssysteem Ondermijnd<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#het-rechtssysteem-ondermijnd" class="hash-link" aria-label="Direct link naar Het Rechtssysteem Ondermijnd" title="Direct link naar Het Rechtssysteem Ondermijnd" translate="no">​</a></h3>
-<p><strong>Trump's acties:</strong></p>
-<ul>
-<li class="">Rechters ontslagen</li>
-<li class="">Beroepshoven gepolitiseerd</li>
-<li class="">Independence van justitie aangetast</li>
-<li class="">Rule of law onder druk</li>
-</ul>
-<p><strong>Gevolg:</strong></p>
-<ul>
-<li class="">Juridische voorspelbaarheid verdwenen</li>
-<li class="">Contractuele zekerheid illusoir</li>
-<li class="">Rechtsgang niet meer betrouwbaar</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="safe-harbor-20-komt-er-aan">Safe Harbor 2.0 komt er aan<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#safe-harbor-20-komt-er-aan" class="hash-link" aria-label="Direct link naar Safe Harbor 2.0 komt er aan" title="Direct link naar Safe Harbor 2.0 komt er aan" translate="no">​</a></h3>
-<p><strong>Privacy Shield / Safe Harbor:</strong></p>
-<ul>
-<li class="">Verdragen voor data-overdracht EU-VS</li>
-<li class="">Meerdere keren al ongeldig verklaard</li>
-<li class="">Huidige constructie wankel</li>
-<li class="">Kwestie van tijd tot volgende ondergang</li>
-</ul>
-<p><strong>Met huidige Amerikaanse koers:</strong></p>
-<ul>
-<li class="">Nieuwe verdragen nog zwakker</li>
-<li class="">Compliance onmogelijk te garanderen</li>
-<li class="">Juridische basis wegvalt</li>
-</ul>
-<p><strong>Europa kan niet blijven bouwen op zand.</strong></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="van-handelso">Van Handelso<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#van-handelso" class="hash-link" aria-label="Direct link naar Van Handelso" title="Direct link naar Van Handelso" translate="no">​</a></h2>
-<p>rlog naar Economische Oorlogvoering</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="continue-economische-spanning">Continue Economische Spanning<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#continue-economische-spanning" class="hash-link" aria-label="Direct link naar Continue Economische Spanning" title="Direct link naar Continue Economische Spanning" translate="no">​</a></h3>
-<p><strong>Niet incidenteel, maar structureel:</strong></p>
-<p><strong>Handelstarieven:</strong></p>
-<ul>
-<li class="">Willekeurig opgelegd</li>
-<li class="">Zonder consultatie</li>
-<li class="">Als straf of drukmiddel</li>
-<li class="">Onvoorspelbaar en fluctuerend</li>
-</ul>
-<p><strong>Tech-Restricties:</strong></p>
-<ul>
-<li class="">Export controls</li>
-<li class="">Technology transfers geblokkeerd</li>
-<li class="">Strategische tech als wapen</li>
-</ul>
-<p><strong>Economische Chantage:</strong></p>
-<ul>
-<li class="">"Betaal meer voor defensie"</li>
-<li class="">"Koop meer Amerikaanse producten"</li>
-<li class="">"Of anders..."</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="europa-als-speelbal">Europa als Speelbal<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#europa-als-speelbal" class="hash-link" aria-label="Direct link naar Europa als Speelbal" title="Direct link naar Europa als Speelbal" translate="no">​</a></h3>
-<p><strong>We zijn niet partner, maar:</strong></p>
-<ul>
-<li class="">Onderhandelingsmassa</li>
-<li class="">Cashcow</li>
-<li class="">Strategisch ondergeschikt</li>
-<li class="">Te klein om alleen te staan (denken zij)</li>
-</ul>
-<p><strong>Tijd om te bewijzen dat dat niet zo is.</strong></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="wat-dit-betekent-voor-digitale-diensten">Wat Dit Betekent Voor Digitale Diensten<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#wat-dit-betekent-voor-digitale-diensten" class="hash-link" aria-label="Direct link naar Wat Dit Betekent Voor Digitale Diensten" title="Direct link naar Wat Dit Betekent Voor Digitale Diensten" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="de-risicos-zijn-reëel">De Risico's zijn Reëel<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#de-risicos-zijn-re%C3%ABel" class="hash-link" aria-label="Direct link naar De Risico's zijn Reëel" title="Direct link naar De Risico's zijn Reëel" translate="no">​</a></h3>
-<p><strong>Scenario 1: Politieke Onenigheid</strong></p>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">EU besluit X</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">VS is het er niet mee eens</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Witte Huis: "Microsoft, Google, Amazon - stop diensten aan EU-instantie Y"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Services worden uitgezet</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Kritieke overheidssystemen down</span><br></span></code></pre></div></div>
-<p><strong>Dit is geen sciencefiction. Dit is gebeurd met het ICC.</strong></p>
-<p><strong>Scenario 2: Handelsconflict</strong></p>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">EU legt antitrust boete op aan Amerikaanse big tech</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">VS vergeldingsmaatregelen</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Cloud services voor EU duurder of beperkt</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Europese overheid betaalt of wijkt uit</span><br></span></code></pre></div></div>
-<p><strong>Scenario 3: Datasoevereiniteit</strong></p>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">EU vraagt data-lokalisatie</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Amerikaanse bedrijven weigeren</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Witte Huis: "Dit is economische oorlogsvoering"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Sancties, restricties, escalatie</span><br></span></code></pre></div></div>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="we-kunnen-niet-doorb-lijven-bouwen-op-amerikaanse-cloud">We Kunnen Niet Doorb lijven Bouwen op Amerikaanse Cloud<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#we-kunnen-niet-doorb-lijven-bouwen-op-amerikaanse-cloud" class="hash-link" aria-label="Direct link naar We Kunnen Niet Doorb lijven Bouwen op Amerikaanse Cloud" title="Direct link naar We Kunnen Niet Doorb lijven Bouwen op Amerikaanse Cloud" translate="no">​</a></h3>
-<p><strong>Het is niet meer de vraag:</strong></p>
-<ul>
-<li class="">Of Microsoft betrouwbaar is</li>
-<li class="">Of Google ethisch handelt</li>
-<li class="">Of Amazon veilig is</li>
-</ul>
-<p><strong>Het is de vraag:</strong></p>
-<ul>
-<li class="">Of het Witte Huis de internationale rechtsorde respecteert (nee)</li>
-<li class="">Of Amerika Europa als gelijkwaardige partner ziet (nee)</li>
-<li class="">Of we kunnen vertrouwen op juridische stabiliteit (nee)</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="hoe-reageren-we-op-alle-niveaus">Hoe Reageren We? Op Alle Niveaus<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#hoe-reageren-we-op-alle-niveaus" class="hash-link" aria-label="Direct link naar Hoe Reageren We? Op Alle Niveaus" title="Direct link naar Hoe Reageren We? Op Alle Niveaus" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="dit-is-geen-simple-switch">Dit is Geen Simple Switch<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#dit-is-geen-simple-switch" class="hash-link" aria-label="Direct link naar Dit is Geen Simple Switch" title="Direct link naar Dit is Geen Simple Switch" translate="no">​</a></h3>
-<p>De weg naar digitale soevereiniteit is complex en gelaagd. We moeten op drie niveaus actie ondernemen:</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="europees-niveau-gezamenlijke-standaarden">Europees Niveau: Gezamenlijke Standaarden<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#europees-niveau-gezamenlijke-standaarden" class="hash-link" aria-label="Direct link naar Europees Niveau: Gezamenlijke Standaarden" title="Direct link naar Europees Niveau: Gezamenlijke Standaarden" translate="no">​</a></h3>
-<p><strong>Wat Europa moet doen:</strong></p>
-<p><strong>1. Investeren in Eurostack</strong></p>
-<ul>
-<li class="">Eigen cloud-infrastructuur (Gaia-X uitbouwen)</li>
-<li class="">Europese AI-modellen (niet alleen Mistral)</li>
-<li class="">Open source alternatieven voor big tech</li>
-<li class="">Gedeelde financiering</li>
-</ul>
-<p><strong>2. Juridisch Kader</strong></p>
-<ul>
-<li class="">Data Act en Digital Markets Act handhaven</li>
-<li class="">Interoperabiliteit afdwingen</li>
-<li class="">Vendor lock-in tegengaan</li>
-<li class="">Soevereiniteit verankeren</li>
-</ul>
-<p><strong>3. Strategische Allianzen</strong></p>
-<ul>
-<li class="">Samenwerking met gelijkgestemde landen</li>
-<li class="">Tech-partnerships buiten VS om</li>
-<li class="">Diversificatie van dependencies</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="nationaal-niveau-eigen-infrastructuur">Nationaal Niveau: Eigen Infrastructuur<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#nationaal-niveau-eigen-infrastructuur" class="hash-link" aria-label="Direct link naar Nationaal Niveau: Eigen Infrastructuur" title="Direct link naar Nationaal Niveau: Eigen Infrastructuur" translate="no">​</a></h3>
-<p><strong>Wat Nederland moet doen:</strong></p>
-<p><strong>1. Investeren in Kennis</strong></p>
-<ul>
-<li class="">AI-competenties opbouwen</li>
-<li class="">Cybersecurity versterken</li>
-<li class="">Open source expertise</li>
-<li class="">Tech-talenten behouden/aantrekken</li>
-</ul>
-<p><strong>2. Infrastructuur Ontwikkelen</strong></p>
-<ul>
-<li class="">Nationale cloud-capaciteit</li>
-<li class="">Overheids-datacenters</li>
-<li class="">Redundantie en backup</li>
-<li class="">Onafhankelijkheid garanderen</li>
-</ul>
-<p><strong>3. Beleid Aanpassen</strong></p>
-<ul>
-<li class="">"Cloud-first" niet meer default</li>
-<li class="">"Soeverein-first" als uitgangspunt</li>
-<li class="">Risico-beoordeling geopolitiek</li>
-<li class="">Exit-strategieën verplicht</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="lokaal-niveau-praktische-stappen">Lokaal Niveau: Praktische Stappen<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#lokaal-niveau-praktische-stappen" class="hash-link" aria-label="Direct link naar Lokaal Niveau: Praktische Stappen" title="Direct link naar Lokaal Niveau: Praktische Stappen" translate="no">​</a></h3>
-<p><strong>Wat gemeenten kunnen doen:</strong></p>
-<p><strong>1. Bewuste Keuzes</strong></p>
-<ul>
-<li class="">Bij aanbesteding: soevereiniteit meewegen</li>
-<li class="">On-premise oplossingen overwegen</li>
-<li class="">Open source prefereren</li>
-<li class="">Lokale hosting</li>
-</ul>
-<p><strong>2. Common Ground Omarmen</strong></p>
-<ul>
-<li class="">Deelnemen aan open source ontwikkeling</li>
-<li class="">Kennis delen tussen gemeenten</li>
-<li class="">Gezamenlijk bouwen</li>
-<li class="">Hergebruiken in plaats van opnieuw kopen</li>
-</ul>
-<p><strong>3. Experimenteren en Leren</strong></p>
-<ul>
-<li class="">Pilots met Europese tech</li>
-<li class="">Open source alternatives testen</li>
-<li class="">Kennis opbouwen</li>
-<li class="">Successen delen</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="samenwerking-is-cruciaal">Samenwerking is Cruciaal<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#samenwerking-is-cruciaal" class="hash-link" aria-label="Direct link naar Samenwerking is Cruciaal" title="Direct link naar Samenwerking is Cruciaal" translate="no">​</a></h2>
-<p><strong>Geen enkele gemeente, geen enkel land kan dit alleen.</strong></p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="het-ecosysteem">Het Ecosysteem<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#het-ecosysteem" class="hash-link" aria-label="Direct link naar Het Ecosysteem" title="Direct link naar Het Ecosysteem" translate="no">​</a></h3>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Europees Niveau</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓ Standaarden, financiering, juridisch kader</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Nationaal Niveau</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓ Infrastructuur, kennis, beleid</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Lokaal Niveau</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↓ Implementatie, experimentatie, feedback</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↑ Lessons learned, requirements, use cases</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Nationaal Niveau</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ↑ Bundeling, opschaling, consolidatie</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Europees Niveau</span><br></span></code></pre></div></div>
-<p><strong>Bottom-up én top-down moet samenkomen.</strong></p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="common-ground-als-model">Common Ground als Model<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#common-ground-als-model" class="hash-link" aria-label="Direct link naar Common Ground als Model" title="Direct link naar Common Ground als Model" translate="no">​</a></h3>
-<p><strong>Nederland heeft een voorsprong:</strong></p>
-<ul>
-<li class="">Common Ground als proven concept</li>
-<li class="">Gemeenten werken al samen</li>
-<li class="">Open source als uitgangspunt</li>
-<li class="">Hergebruik in plaats van vendor lock-in</li>
-</ul>
-<p><strong>Dit model kan Europees worden uitgerold.</strong></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="economische-kansen">Economische Kansen<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#economische-kansen" class="hash-link" aria-label="Direct link naar Economische Kansen" title="Direct link naar Economische Kansen" translate="no">​</a></h2>
-<p><strong>Dit is niet alleen defensief - het biedt ook kansen.</strong></p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="europese-tech-sector">Europese Tech-Sector<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#europese-tech-sector" class="hash-link" aria-label="Direct link naar Europese Tech-Sector" title="Direct link naar Europese Tech-Sector" translate="no">​</a></h3>
-<p><strong>Door te investeren in eigen tech:</strong></p>
-<ul>
-<li class="">Nieuwe banen in Europa</li>
-<li class="">Europese tech-champions</li>
-<li class="">Innovatie die aansluit bij onze waarden</li>
-<li class="">Economische groei</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="minder-afhankelijkheid--lagere-kosten">Minder Afhankelijkheid = Lagere Kosten<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#minder-afhankelijkheid--lagere-kosten" class="hash-link" aria-label="Direct link naar Minder Afhankelijkheid = Lagere Kosten" title="Direct link naar Minder Afhankelijkheid = Lagere Kosten" translate="no">​</a></h3>
-<p><strong>Nu:</strong></p>
-<ul>
-<li class="">Betalen voor Amerikaanse cloud</li>
-<li class="">Vendor lock-in = prijsopdrijving</li>
-<li class="">Exit moeilijk en duur</li>
-</ul>
-<p><strong>Straks:</strong></p>
-<ul>
-<li class="">Eigen infrastructuur</li>
-<li class="">Competitie tussen providers</li>
-<li class="">Exit altijd mogelijk</li>
-<li class="">Lagere totale kosten</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="innovation-hub">Innovation Hub<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#innovation-hub" class="hash-link" aria-label="Direct link naar Innovation Hub" title="Direct link naar Innovation Hub" translate="no">​</a></h3>
-<p><strong>Europa kan worden:</strong></p>
-<ul>
-<li class="">Hub voor privacy-first tech</li>
-<li class="">Leader in ethical AI</li>
-<li class="">Centrum voor open source</li>
-<li class="">Alternatief voor Silicon Valley én China</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="kritische-vragen">Kritische Vragen<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#kritische-vragen" class="hash-link" aria-label="Direct link naar Kritische Vragen" title="Direct link naar Kritische Vragen" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="is-dit-anti-amerikaans">Is Dit Anti-Amerikaans?<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#is-dit-anti-amerikaans" class="hash-link" aria-label="Direct link naar Is Dit Anti-Amerikaans?" title="Direct link naar Is Dit Anti-Amerikaans?" translate="no">​</a></h3>
-<p><strong>Nee.</strong> Dit is pro-Europees.</p>
-<p>We waarderen nog steeds:</p>
-<ul>
-<li class="">Amerikaanse innovatie</li>
-<li class="">Wetenschappelijke samenwerking</li>
-<li class="">Culturele uitwisseling</li>
-<li class="">Transatlantische vriendschap</li>
-</ul>
-<p>Maar we kunnen niet meer:</p>
-<ul>
-<li class="">Blind vertrouwen</li>
-<li class="">Volledig afhankelijk zijn</li>
-<li class="">Onze veiligheid en soevereiniteit uitbesteden</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="kunnen-we-dit">Kunnen We Dit?<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#kunnen-we-dit" class="hash-link" aria-label="Direct link naar Kunnen We Dit?" title="Direct link naar Kunnen We Dit?" translate="no">​</a></h3>
-<p><strong>Ja.</strong></p>
-<p>Europa heeft:</p>
-<ul>
-<li class="">Technische expertise</li>
-<li class="">Financiële middelen</li>
-<li class="">Grote markt (500 miljoen mensen)</li>
-<li class="">Democratische waarden als USP</li>
-</ul>
-<p>We missen alleen:</p>
-<ul>
-<li class="">Politieke wil</li>
-<li class="">Urgentiebesef</li>
-<li class="">Gecoördineerde actie</li>
-</ul>
-<p><strong>Die moeten we NU ontwikkelen.</strong></p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="is-dit-niet-te-laat">Is Dit Niet Te Laat?<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#is-dit-niet-te-laat" class="hash-link" aria-label="Direct link naar Is Dit Niet Te Laat?" title="Direct link naar Is Dit Niet Te Laat?" translate="no">​</a></h3>
-<p><strong>Nee - maar de tijd dringt.</strong></p>
-<p><strong>Als we NU beginnen:</strong></p>
-<ul>
-<li class="">2025-2027: Fundament leggen</li>
-<li class="">2027-2030: Uitrollen en opschalen</li>
-<li class="">2030+: Soevereine digitale infrastructuur</li>
-</ul>
-<p><strong>Als we blijven afwachten:</strong></p>
-<ul>
-<li class="">Afhankelijkheid groeit</li>
-<li class="">Opties verdwijnen</li>
-<li class="">Herstel wordt onmogelijk duur</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="conclusie-no-way-back">Conclusie: No Way Back<a href="https://www.rubenlinde.nl/blog/einde-pax-americana-digitale-soevereiniteit#conclusie-no-way-back" class="hash-link" aria-label="Direct link naar Conclusie: No Way Back" title="Direct link naar Conclusie: No Way Back" translate="no">​</a></h2>
-<p><strong>Het einde van Pax Americana dwingt ons om onze eigen weg te kiezen.</strong></p>
-<p>Voor Nederland en Europa betekent dit:</p>
-<ul>
-<li class=""><strong>Tijd voor een eigen open source koers</strong></li>
-<li class=""><strong>Tijd voor een Eurostack</strong></li>
-<li class=""><strong>Tijd om digitale soevereiniteit serieus te nemen</strong></li>
-</ul>
-<p>Niet omdat we dat per se willen, maar omdat we niet anders meer kunnen.</p>
-<p><strong>De vraag is niet óf we dit moeten doen, maar hoe snel we kunnen beginnen.</strong></p>
-<p>Want de wereld wacht niet. En iedere dag dat we uitstellen, wordt de kloof groter en de afhankelijkheid dieper.</p>
-<p><strong>Begin klein, werk lokaal, verbind nationaal, denk Europees.</strong></p>
-<p><strong>Maar begin - en begin nu.</strong></p>
-<hr>
-<p><strong>Volgende blog:</strong> Van Pax Americana naar Eurostack - Hoe Europa zijn eigen weg vindt</p>
-<p><strong>Gerelateerd:</strong> <a href="https://gaia-x.eu/" target="_blank" rel="noopener noreferrer" class="">Gaia-X</a> | <a href="https://commonground.nl/" target="_blank" rel="noopener noreferrer" class="">Common Ground</a></p>]]></content:encoded>
+<li class=""><strong>ABC News</strong> - European countries slam US visa bans: <a href="https://www.abc.net.au/news/2025-12-25/european-countries-slam-us-visa-bans/106178152%5B%5E17" target="_blank" rel="noopener noreferrer" class="">https://www.abc.net.au/news/2025-12-25/european-countries-slam-us-visa-bans/106178152[^17</a>]</li>
+<li class=""><strong>AD</strong> - Als Trump een mailbox in Nederland op slot zet...: <a href="https://www.ad.nl/amsterdam/als-trump-een-mailbox-in-nederland-op-slot-zet-valt-het-kwartje-dit-moet-anders~afd3d273/%5B%5E4" target="_blank" rel="noopener noreferrer" class="">https://www.ad.nl/amsterdam/als-trump-een-mailbox-in-nederland-op-slot-zet-valt-het-kwartje-dit-moet-anders~afd3d273/[^4</a>]</li>
+<li class=""><strong>AD</strong> - America First bij gemeentelijke ICT: <a href="https://www.ad.nl/binnenland/america-first-bij-gemeentelijke-ict-twee-derde-van-de-gemeentes-mailt-met-microsoft~a1dfdf0e/%5B%5E5" target="_blank" rel="noopener noreferrer" class="">https://www.ad.nl/binnenland/america-first-bij-gemeentelijke-ict-twee-derde-van-de-gemeentes-mailt-met-microsoft~a1dfdf0e/[^5</a>]</li>
+<li class=""><strong>AD</strong> - Kamerleden willen tempo van kabinet: <a href="https://www.ad.nl/politiek/kamerleden-willen-tempo-van-kabinet-overheid-blijft-onze-gegevens-vrolijk-op-amerikaanse-cloud-gooien~a3b5fcaa/%5B%5E6" target="_blank" rel="noopener noreferrer" class="">https://www.ad.nl/politiek/kamerleden-willen-tempo-van-kabinet-overheid-blijft-onze-gegevens-vrolijk-op-amerikaanse-cloud-gooien~a3b5fcaa/[^6</a>]</li>
+<li class=""><strong>AD</strong> - Nijmegen wil minder invloed van Amerikaanse big tech: <a href="https://www.ad.nl/nijmegen/nijmegen-wil-minder-invloed-van-amerikaanse-big-tech-trump-schuwt-niet-om-chantagemiddel-in-te-zetten~a9b01de9/%5B%5E7" target="_blank" rel="noopener noreferrer" class="">https://www.ad.nl/nijmegen/nijmegen-wil-minder-invloed-van-amerikaanse-big-tech-trump-schuwt-niet-om-chantagemiddel-in-te-zetten~a9b01de9/[^7</a>]</li>
+<li class=""><strong>APS IT-diensten</strong> - Microsoft Basispakket Cloudlicenties: <a href="https://www.apsitdiensten.nl/licenties/microsoft/microsoft-basispakket/basispakket-cloudlicenties%5B%5E26" target="_blank" rel="noopener noreferrer" class="">https://www.apsitdiensten.nl/licenties/microsoft/microsoft-basispakket/basispakket-cloudlicenties[^26</a>]</li>
+<li class=""><strong>BNR</strong> - De weg naar digitale autonomie begint bij de moedige eerste stap: <a href="https://www.bnr.nl/nieuws/tech-innovatie/10591007/de-weg-naar-digitale-autonomie-begint-bij-de-moedige-eerste-stap%5B%5E21" target="_blank" rel="noopener noreferrer" class="">https://www.bnr.nl/nieuws/tech-innovatie/10591007/de-weg-naar-digitale-autonomie-begint-bij-de-moedige-eerste-stap[^21</a>]</li>
+<li class=""><strong>ComputerWeekly</strong> - Microsoft's ICC email block: <a href="https://www.computerweekly.com/opinion/Microsofts-ICC-email-block-reignites-European-data-sovereignty-concerns%5B%5E10" target="_blank" rel="noopener noreferrer" class="">https://www.computerweekly.com/opinion/Microsofts-ICC-email-block-reignites-European-data-sovereignty-concerns[^10</a>]</li>
+<li class=""><strong>Digitale Overheid</strong> - Samen bouwen aan een soevereine cloud voor de hele overheid: <a href="https://www.digitaleoverheid.nl/nederlandse-digitaliseringsstrategie-nds/dossierpostcontext/samen-bouwen-aan-een-soevereine-cloud-voor-de-hele-overheid/%5B%5E20" target="_blank" rel="noopener noreferrer" class="">https://www.digitaleoverheid.nl/nederlandse-digitaliseringsstrategie-nds/dossierpostcontext/samen-bouwen-aan-een-soevereine-cloud-voor-de-hele-overheid/[^20</a>]</li>
+<li class=""><strong>DigitalSME</strong> - A first layer of the Eurostack: <a href="https://www.digitalsme.eu/a-first-layer-of-the-eurostack-launched-by-european-cloud-providers/%5B%5E16" target="_blank" rel="noopener noreferrer" class="">https://www.digitalsme.eu/a-first-layer-of-the-eurostack-launched-by-european-cloud-providers/[^16</a>]</li>
+<li class=""><strong>EJIL<!-- -->:Talk<!-- -->!</strong> - Justice Recoded? ICC embraces open-source: <a href="https://www.ejiltalk.org/justice-recoded-why-it-matters-that-the-international-criminal-court-embraced-open-source-software-and-ditched-microsoft/%5B%5E9" target="_blank" rel="noopener noreferrer" class="">https://www.ejiltalk.org/justice-recoded-why-it-matters-that-the-international-criminal-court-embraced-open-source-software-and-ditched-microsoft/[^9</a>]</li>
+<li class=""><strong>EuroStack</strong> - Official Site: <a href="https://eurostack.eu/%5B%5E14" target="_blank" rel="noopener noreferrer" class="">https://eurostack.eu/[^14</a>]</li>
+<li class=""><strong>EuroStack Info</strong> - <a href="https://www.euro-stack.info/%5B%5E15" target="_blank" rel="noopener noreferrer" class="">https://www.euro-stack.info/[^15</a>]</li>
+<li class=""><strong>Fulcrum</strong> - Pax Americana Is Over: <a href="https://fulcrum.sg/pax-americana-is-over-what-comes-next-and-how-will-it-impact-southeast-asia/%5B%5E23" target="_blank" rel="noopener noreferrer" class="">https://fulcrum.sg/pax-americana-is-over-what-comes-next-and-how-will-it-impact-southeast-asia/[^23</a>]</li>
+<li class=""><strong>iBestuur</strong> - De fictie van digitale soevereiniteit: <a href="https://ibestuur.nl/digitale-toekomst-eu/europese-politiek-en-beleid/de-fictie-van-digitale-soevereiniteit%5B%5E1" target="_blank" rel="noopener noreferrer" class="">https://ibestuur.nl/digitale-toekomst-eu/europese-politiek-en-beleid/de-fictie-van-digitale-soevereiniteit[^1</a>]</li>
+<li class=""><strong>iBestuur</strong> - Overheid opgelet: dataverdrag EU-VS kan elk moment klappen: <a href="https://ibestuur.nl/digitale-weerbaarheid/digitale-veiligheid/overheid-opgelet-dataverdrag-eu-vs-kan-elk-moment-klappen%5B%5E19" target="_blank" rel="noopener noreferrer" class="">https://ibestuur.nl/digitale-weerbaarheid/digitale-veiligheid/overheid-opgelet-dataverdrag-eu-vs-kan-elk-moment-klappen[^19</a>]</li>
+<li class=""><strong>iBestuur</strong> - Versterk de digitale soevereiniteit: <a href="https://ibestuur.nl/whitepapers/versterk-de-digitale-soevereiniteit%5B%5E2" target="_blank" rel="noopener noreferrer" class="">https://ibestuur.nl/whitepapers/versterk-de-digitale-soevereiniteit[^2</a>]</li>
+<li class=""><strong>Khaama Press / Bild</strong> - Merz: "The decades of Pax Americana are largely over" (CSU-congres, december 2025): <a href="https://www.khaama.com/merz-says-pax-americana-is-ending-urges-europe-to-strengthen-independent-defence/%5B%5E27" target="_blank" rel="noopener noreferrer" class="">https://www.khaama.com/merz-says-pax-americana-is-ending-urges-europe-to-strengthen-independent-defence/[^27</a>]</li>
+<li class=""><strong>Microsoft News (NL/BE)</strong> - Scholen en universiteiten kunnen gratis Office aanbieden: <a href="https://news.microsoft.com/nl-be/scholen-en-universiteiten-kunnen-gratis-office-aanbieden/%5B%5E24" target="_blank" rel="noopener noreferrer" class="">https://news.microsoft.com/nl-be/scholen-en-universiteiten-kunnen-gratis-office-aanbieden/[^24</a>]</li>
+<li class=""><strong>Microsoft News (NL/BE)</strong> - Microsoft geeft studenten gratis software via DreamSpark: <a href="https://news.microsoft.com/nl-be/microsoft-geeft-studenten-gratis-software-via-dreamspark/%5B%5E25" target="_blank" rel="noopener noreferrer" class="">https://news.microsoft.com/nl-be/microsoft-geeft-studenten-gratis-software-via-dreamspark/[^25</a>]</li>
+<li class=""><strong>NYT</strong> - Europe's Growing Fear of U.S. Tech: <a href="https://www.nytimes.com/2025/06/20/technology/us-tech-europe-microsoft-trump-icc.html%5B%5E11" target="_blank" rel="noopener noreferrer" class="">https://www.nytimes.com/2025/06/20/technology/us-tech-europe-microsoft-trump-icc.html[^11</a>]</li>
+<li class=""><strong>Trouw</strong> - Europa zet eerste stap op weg naar digitale onafhankelijkheid (11 december 2025): <a href="https://www.trouw.nl/buitenland/europa-zet-eerste-stap-op-weg-naar-digitale-onafhankelijkheid~bdcd9c99/%5B%5E18" target="_blank" rel="noopener noreferrer" class="">https://www.trouw.nl/buitenland/europa-zet-eerste-stap-op-weg-naar-digitale-onafhankelijkheid~bdcd9c99/[^18</a>]</li>
+<li class=""><strong>TU Delft Delta</strong> - International Criminal Court dumps Microsoft: <a href="https://delta.tudelft.nl/en/article/international-criminal-court-dumps-microsoft-can-tu-delft-do-the-same%5B%5E8" target="_blank" rel="noopener noreferrer" class="">https://delta.tudelft.nl/en/article/international-criminal-court-dumps-microsoft-can-tu-delft-do-the-same[^8</a>]</li>
+<li class=""><strong>Bundesregierung</strong> - Rede von Bundeskanzler Olaf Scholz zur Zeitenwende (27 februari 2022): <a href="https://www.bundesregierung.de/breg-de/aktuelles/rede-bundeskanzler-scholz-2028228%5B%5E28" target="_blank" rel="noopener noreferrer" class="">https://www.bundesregierung.de/breg-de/aktuelles/rede-bundeskanzler-scholz-2028228[^28</a>]</li>
+<li class=""><strong>CIGI</strong> - From Pax Americana to Pax "Multipolaris": <a href="https://www.cigionline.org/articles/from-pax-americana-to-pax-multipolaris-the-rise-of-a-fragmented-global-order/%5B%5E22" target="_blank" rel="noopener noreferrer" class="">https://www.cigionline.org/articles/from-pax-americana-to-pax-multipolaris-the-rise-of-a-fragmented-global-order/[^22</a>]</li>
+<li class=""><strong>Common Ground</strong> - Official Site: <a href="https://commonground.nl/%5B%5E29" target="_blank" rel="noopener noreferrer" class="">https://commonground.nl/[^29</a>]</li>
+<li class=""><strong>Fulcrum</strong> - Pax Americana Is Over: <a href="https://fulcrum.sg/pax-americana-is-over-what-comes-next-and-how-will-it-impact-southeast-asia/%5B%5E23" target="_blank" rel="noopener noreferrer" class="">https://fulcrum.sg/pax-americana-is-over-what-comes-next-and-how-will-it-impact-southeast-asia/[^23</a>]</li>
+<li class=""><strong>Gaia-X</strong> - Official Site: <a href="https://gaia-x.eu/%5B%5E30" target="_blank" rel="noopener noreferrer" class="">https://gaia-x.eu/[^30</a>]</li>
+<li class=""><strong>Mijn Bureaublad</strong> - Official Site: <a href="https://minbzk.github.io/mijn-bureau/%5B%5E31" target="_blank" rel="noopener noreferrer" class="">https://minbzk.github.io/mijn-bureau/[^31</a>]</li>
+</ul>]]></content:encoded>
             <author>your-email@example.com (Ruben van de Linde)</author>
             <category>open-source</category>
             <category>europa</category>
@@ -1840,6 +1598,16 @@ class ApiController <!-- -->
             <category>geopolitiek</category>
             <category>pax-americana</category>
             <category>trump</category>
+            <category>eurostack</category>
+            <category>gaia-x</category>
+            <category>common-ground</category>
+            <category>microsoft</category>
+            <category>vendor-lock-in</category>
+            <category>cloud</category>
+            <category>ICC</category>
+            <category>data-privacy</category>
+            <category>NAVO</category>
+            <category>Zeitenwende</category>
         </item>
         <item>
             <title><![CDATA[Risico's van Niet-Adopteren - Als de overheid AI negeert]]></title>
