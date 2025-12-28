@@ -33,7 +33,7 @@ Of een startende zzp'er: "Ik begin een eenmanszaak, waar moet ik aan denken?" AI
 
 AI vertaalt ambtelijk naar alledaags: "Je verzamelinkomen overschrijdt de vermogenstoets niet" wordt "Je inkomen en spaargeld blijven onder de grens, dus je komt in aanmerking."[^14] Het vraagt door, rekent scenario's door, bereidt conceptaanvragen voor – altijd met burger in controle.[^15]
 
-Dit bouwt voort op bestaande bronnen: regels.overheid.nl (machine-leesbaar), MijnOverheid, Common Ground-registers.[^16][^17] AI raadpleegt ze, legt uit, verwijst naar officiële tekst – transparant en betrouwbaar.[^18]
+Dit bouwt voort op bestaande bronnen: regels.overheid.nl (machine-leesbaar), MijnOverheid, Common Ground-registers.[^16] [^17] AI raadpleegt ze, legt uit, verwijst naar officiële tekst – transparant en betrouwbaar.[^18]
 
 ```mermaid
 flowchart TD
@@ -100,9 +100,9 @@ Vraag niet óf, maar hoe snel. Elke burger die nu regelingen mist, is er één t
 
 Hieronder een totale, overzichtelijke lijst van alle gebruikte bronnen (alfabetisch gesorteerd op publicatie):
 
-- **Common Ground** - Principes en data-architectuur: https://commonground.nl/[^7][^31]
+- **Common Ground** - Principes en data-architectuur: https://commonground.nl/ [^7] [^31]
 - **iBestuur** - AI-toepassingen voor burgers: diverse artikelen over toegankelijkheid.[^1][^2][^4][^5][^8][^9][^11][^12][^15][^20][^21][^22][^23][^24][^25][^26][^27][^28][^29][^34][^35][^36][^37][^38][^39][^40][^41]
-- **Regels.overheid.nl** - Machine-leesbare regelgeving: https://regels.overheid.nl[^16][^30]
-- **Rijksoverheid** - Visie op AI en burgerdienstverlening: https://open.overheid.nl/[^3][^6][^10][^14][^18][^19][^32][^33]
-- **VNG** - Voorbeelden burgergerichte AI: https://vng.nl/[^13][^17]
-- **Waag** - Discussies over AI en toegankelijkheid: https://waag.org/[^42]
+- **Regels.overheid.nl** - Machine-leesbare regelgeving: https://regels.overheid.nl [^16] [^30]
+- **Rijksoverheid** - Visie op AI en burgerdienstverlening: https://open.overheid.nl/ [^3] [^6] [^10] [^14] [^18] [^19] [^32] [^33]
+- **VNG** - Voorbeelden burgergerichte AI: https://vng.nl/ [^13] [^17]
+- **Waag** - Discussies over AI en toegankelijkheid: https://waag.org/ [^42]
