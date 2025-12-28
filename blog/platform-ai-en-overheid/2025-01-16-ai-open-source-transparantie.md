@@ -5,184 +5,103 @@ authors: [ruben]
 tags: [ai, open-source, common-ground, platform-ai, overheid, transparantie]
 ---
 
-# AI en Open Source: Waarom transparantie geen luxe is
+-# AI en Open Source: Waarom transparantie geen luxe is
 
 :::warning Status: Concept
 Deze blog is nog in concept-fase en wordt mogelijk nog aangepast voor publicatie.
 :::
 
-Kunstmatige intelligentie kan een krachtige partner zijn voor de overheid - maar alleen als we begrijpen hoe het werkt en kunnen verantwoorden wat het doet. Open source is daarbij geen technische hobby, maar een bestuurlijke noodzaak.
+Stel je voor: een ambtenaar krijgt een AI-advies over een uitkeringsaanvraag. Het systeem zegt "afwijzen". Maar waarom? Welke data zijn gebruikt? Zit er bias in? Kan de burger uitleg krijgen? In een democratische samenleving is dit geen technische vraag, maar een bestuurlijke noodzaak. Kunstmatige intelligentie kan een krachtige partner zijn voor de overheid – sneller werken, betere analyses, meer burgergericht. Maar alleen als we begrijpen hoe het werkt, kunnen verantwoorden wat het doet, en kunnen ingrijpen als het fout gaat. Open source is daarbij geen technische hobby, maar een vereiste voor transparantie, controle en vertrouwen.[^1][^2]
+
+In een tijd waarin gesloten AI-systemen – black boxes van grote techbedrijven – domineren, kiezen wij voor een andere weg. Een weg die past bij onze waarden: open, inspecteerbaar, samen verbeterbaar. Dit blog legt uit waarom open source essentieel is voor overheids-AI, hoe Common Ground daarbij helpt, en waarom dit geen luxe is, maar een must.
 
 <!--truncate-->
 
-## Het Probleem met Gesloten AI
+## Het Probleem met Gesloten AI: Een Black Box in de Publieke Ruimte
 
-Stel je voor: een AI-systeem adviseert een ambtenaar over een belangrijke beslissing. Maar niemand weet:
+Gesloten AI – proprietary modellen van bedrijven als OpenAI, Google of Microsoft – is vaak een black box. Je ziet input en output, maar niet wat ertussen gebeurt.[^3] Voor commerciële toepassingen prima, maar voor de overheid onacceptabel. Stel: een AI adviseert over een vergunning, subsidie of handhavingsbesluit. Burgers hebben recht op uitleg, ambtenaren op inzicht, en bestuurders op verantwoording.[^4]
 
-- Hoe het model precies werkt
-- Op welke data het getraind is
-- Waarom het tot deze conclusie komt
-- Of er bias in het systeem zit
+De risico's zijn reëel:
 
-**Dit is onacceptabel voor een overheid die transparant en verantwoordelijk moet zijn.**
+- **Onzichtbare modellen**: Hoe werkt het precies? Welke algoritmes, welke weights?[^5]
+- **Onbekende trainingsdata**: Zitten er biases in van data uit andere culturen of periodes?[^6]
+- **Oncontroleerbaar gedrag**: Waarom deze uitkomst? Hallucinaties of fouten zijn niet te traceren.
+- **Juridische risico's**: Besluiten moeten uitlegbaar zijn onder de Awb en EU AI Act.[^7Permit]
+- **Ethische risico's**: Hoe waarborgen we eerlijkheid, non-discriminatie en menselijk toezicht?[^8]
 
-### De Risico's van Black Box AI
+De rijksoverheid erkent dit: in het overheidsbrede standpunt generatieve AI (2025) wordt open source aanbevolen voor meer inzicht en transparantie.[^9] Gesloten systemen maken ons afhankelijk van buitenlandse vendors – denk aan de Cloud Act, waarbij Amerikaanse bedrijven data moeten delen met hun overheid.[^10] Voor een soevereine overheid is dat onhoudbaar.
 
-- **Onzichtbare modellen**: We zien alleen input en output
-- **Onbekende trainingsdata**: Welke vooroordelen zitten erin?
-- **Oncontroleerbaar gedrag**: Waarom deze uitkomst?
-- **Juridische risico's**: Kunnen we besluiten verantwoorden?
-- **Ethische risico's**: Hoe zorgen we voor eerlijkheid?
+## Wat Open Source Mogelijk Maakt: Transparantie als Basis
 
-**Argument:** De overheid kan geen besluiten laten ondersteunen door systemen die zij niet begrijpt.
+Open source AI betekent dat broncode, modellen en idealiter trainingsdata openbaar en inspecteerbaar zijn.[^11] Dit levert cruciale voordelen voor de overheid:
 
-## Wat Open Source Mogelijk Maakt
+- **Inzicht in werking**: Je ziet hoe het model tot conclusies komt – geen black box, maar transparant proces.[^12]
+- **Controleerbaarheid**: Onafhankelijke experts doorlichten op bias, fouten en ethiek.[^13]
+- **Hergebruik en samenwerking**: Wat één gemeente ontwikkelt, kan een ander overnemen en verbeteren – geen dubbel werk.[^14]
+- **Gezamenlijke verbetering**: Community vindt bugs sneller, voegt features toe – zoals bij Linux of Nextcloud.[^15]
+- **Geen vendor lock-in**: Controle over eigen infrastructuur, geen afhankelijkheid van commerciële partijen.[^16]
 
-Open source betekent dat de broncode, de modellen en bij voorkeur ook de trainingsdata openbaar en inspecteerbaar zijn. Voor de overheid levert dit cruciale voordelen op:
+Open source is een bestuurlijke keuze: het past bij de Wet open overheid en de Nederlandse Digitaliseringsstrategie, die open source stimuleren.[^17][^18] Het rijk pleit zelfs voor voorkeur aan open source generatieve AI voor transparantie.[^9]
 
-### 1. Inzicht in Werking
+## Common Ground: Het Perfecte Ecosysteem voor Open Source AI
 
-Je kunt zien hoe het AI-model tot zijn conclusies komt. Geen black box, maar een transparant proces.
+Common Ground – het programma waarin gemeenten samenwerken aan een moderne informatiehuishouding – is dé basis voor open source AI.[^19] De principes passen naadloos:
 
-### 2. Controleerbaarheid
+1. **Data gescheiden van applicaties**: Data in bronregisters, AI-toepassingen gebruiken API's – hergebruik zonder duplicatie.[^20]
+2. **Open standaarden**: Interoperabiliteit als standaard – AI kan naadloos data raadplegen.[^21]
+3. **Open source**: Code publiek eigendom – samen ontwikkelen, kennisopbouw.[^22]
+4. **Samenwerken**: Publiek geld → publiek eigendom, minder afhankelijkheid leveranciers.[^23]
 
-Onafhankelijke experts kunnen het systeem doorlichten op fouten, bias en ethische problemen.
-
-### 3. Hergebruik tussen Gemeenten
-
-Wat gemeente A ontwikkelt, kan gemeente B hergebruiken en verbeteren. Geen dubbel werk, geen dubbele kosten.
-
-### 4. Gezamenlijke Verbetering
-
-Samen werken aan betere AI. Bugs worden sneller gevonden en opgelost. Nieuwe features komen iedereen ten goede.
-
-### 5. Geen Vendor Lock-in
-
-Je bent niet afhankelijk van één commerciële partij. Je behoudt controle over je eigen infrastructuur.
-
-**Argument:** Open source is een bestuurlijke keuze, geen technische hobby.
-
-## Common Ground: Het Open Source Ecosysteem voor de Overheid
-
-Hier komt Common Ground om de hoek kijken - het programma waarin Nederlandse gemeenten samenwerken aan een open, gedeelde digitale infrastructuur.
-
-### De Principes van Common Ground
-
-1. **Data gescheiden van applicaties**
-   - Data blijft in bronregisters
-   - Applicaties gebruiken API's
-   - Hergebruik van data zonder duplicatie
-
-2. **Open standaarden**
-   - Iedereen kan integreren
-   - Geen proprietary formats
-   - Interoperabiliteit als uitgangspunt
-
-3. **Open source**
-   - Code is publiek eigendom
-   - Samen ontwikkelen
-   - Kennisopbouw binnen de overheid
-
-4. **Samenwerken in plaats van inkopen**
-   - Publiek geld → publiek eigendom
-   - Minder afhankelijkheid van leveranciers
-   - Meer controle, lagere kosten
-
-### Waarom dit Perfect Past bij AI
-
-AI werkt het beste op:
-
-- **Gedeelde, goed beschreven data** (Common Ground bronregisters)
-- **Transparante systemen** (open source)
-- **Controleerbare processen** (geen black boxes)
-
-Dit zijn precies de uitgangspunten van Common Ground!
+AI werkt het beste op gedeelde, goed beschreven data (Common Ground-registers) en transparante systemen (open source). Denk aan een AI die burgers helpt met regelingen: met Common Ground-data is het accuraat, met open source controleerbaar.
 
 ## Open Source en AI: Een Logische Combinatie
 
-### Modellen Inspecteerbaar
+Open source maakt AI democratisch:
 
-Je kunt zien hoe het AI-model is opgebouwd, welke technieken het gebruikt, en waar eventuele zwakke plekken zitten.
+- **Modellen inspecteerbaar**: Zie opbouw, technieken, zwaktes.[^24]
+- **Prompts reproduceerbaar**: Instructies gedocumenteerd, controleerbaar.[^25]
+- **Ethische kaders afdwingbaar**: Bouw guardrails in voor eerlijkheid.[^26]
+- **Training transparant**: Weet op welke data getraind – essentieel voor bias-check.[^27]
 
-### Prompts en Regels Reproduceerbaar
+De EU AI Act en overheidsstandpunt benadrukken dit: voorkeur voor Europese, open source modellen.[^28][^9]
 
-De instructies aan de AI (prompts) en de regels waaraan het moet voldoen zijn gedocumenteerd en te controleren.
+## Vertrouwen door Ontwerp: Voor Burgers, Ambtenaren en Bestuurders
 
-### Ethische Kaders Afdwingbaar
+Democratische AI vraagt democratisch ontwerp:
 
-Je kunt technische guardrails inbouwen die ervoor zorgen dat AI binnen ethische grenzen blijft.
+- **Burgers**: Recht op uitleg (Awb), vertrouwen in processen.[^29]
+- **Ambtenaren**: Verantwoorden van AI-adviezen, begrijpen van tools.[^30]
+- **Bestuurders**: Sturen op ontwikkeling, verantwoording aan raad, ingrijpen bij problemen.[^31]
 
-### Training Data Transparant
+Open source + Common Ground levert dit.
 
-Bij echte open source AI weet je op welke data het model getraind is - essentieel voor het beoordelen van mogelijke bias.
+## Praktisch Voorbeeld: AI in Gemeentelijke Dienstverlening
 
-## Vertrouwen door Ontwerp
+Gesloten scenario: Gemeente koopt proprietary AI voor regeling-zoeker. Werkt? Ja. Maar black box, afhankelijk van vendor, andere gemeenten beginnen opnieuw.
 
-Een democratische overheid vraagt om democratische AI:
+Open source scenario: Gemeenten ontwikkelen samen op Common Ground-basis. Code en model openbaar. Andere gemeenten hergebruiken, verbeteren. Transparant, controleerbaar, kostenefficiënt – precies wat de overheid nodig heeft.[^32]
 
-### Voor Burgers
+## Kritische Vraag: Is Open Source Echt Onmisbaar?
 
-- Recht op uitleg over beslissingen
-- Vertrouwen in overheidsprocessen
-- Inzicht in hoe AI gebruikt wordt
-
-### Voor Ambtenaren
-
-- Kunnen verantwoorden waarom ze AI-adviezen volgen
-- Begrijpen wat het systeem doet
-- Controle over de tools die ze gebruiken
-
-### Voor Bestuurders
-
-- Kunnen sturen op ontwikkeling
-- Kunnen verantwoorden aan de gemeenteraad
-- Kunnen ingrijpen bij problemen
-
-## Praktisch Voorbeeld: AI in de Gemeentelijke Dienstverlening
-
-Stel: een gemeente wil AI inzetten om burgers te helpen met het vinden van de juiste regeling.
-
-**Gesloten AI-scenario:**
-
-- Koopt kant-en-klaar systeem van leverancier X
-- Niemand weet hoe het werkt
-- Bij problemen afhankelijk van leverancier
-- Andere gemeenten beginnen opnieuw
-
-**Open Source AI-scenario:**
-
-- Gemeente A ontwikkelt samen met B en C
-- Code en model zijn openbaar
-- Gemeente D kan het hergebruiken
-- Iedereen draagt verbeteringen bij
-- Common Ground zorgt voor gestandaardiseerde data-toegang
-
-## De Modelvergelijking
-
-In onze volgende blog gaan we dieper in op concrete AI-modellen zoals Mistral, en waarom sommige modellen populairder zijn in de Nederlandse overheid.
-
-Spoiler: het gaat niet alleen om technische superioriteit, maar ook om **transparantie, controleerbaarheid en ethische overwegingen**.
-
-## Kritische Vraag
-
-Is open source echt de enige manier om AI transparant en eerlijk te houden, of kunnen we ook met gesloten software voldoende controle houden?
-
-Met andere woorden: is open source echt onmisbaar, of vooral een ideaal?
-
-Ons antwoord: voor een democratische overheid is open source niet optioneel - het is een vereiste.
+Kunnen we met gesloten software voldoende controle houden? Ons antwoord: nee. Voor democratische AI is open source vereist – inzicht, verantwoording, samenwerking.[^33]
 
 ## Conclusie
 
-**Zonder open source geen democratische AI.**
+Zonder open source geen democratische AI. Open source maakt inzicht, controle en hergebruik mogelijk. Common Ground biedt het ecosysteem. Samen vormen ze de basis voor verantwoorde, transparante AI in de overheid.
 
-Als we AI willen inzetten in de publieke sector, moeten we kunnen uitleggen hoe het werkt. We moeten kunnen verantwoorden wat het doet. We moeten kunnen ingrijpen als het fout gaat.
+De vraag is niet óf we open source moeten gebruiken voor AI, maar hoe snel we dit implementeren – voordat we afhankelijk worden van black boxes die we niet begrijpen.
 
-Open source maakt dit mogelijk. Common Ground biedt het ecosysteem. Samen vormen ze de basis voor verantwoorde AI in de overheid.
+**Gerelateerd:** [Common Ground](https://commonground.nl)
 
-De vraag is niet óf we open source moeten gebruiken voor AI. De vraag is hoe snel we dit kunnen implementeren.
+## Bronnen
 
----
-
-**Volgende blog:** AI en Data - Waarom de datalaag alles bepaalt
-
-**Gerelateerd:** [Common Ground](https://commonground.nl) | [NL Design System](https://nldesignsystem.nl)
+- **Free Software Foundation Europe** - Public Money, Public Code: https://publiccode.eu/[^1]
+- **Rijksoverheid** - Overheidsbrede visie Generatieve AI: https://open.overheid.nl/documenten/9aa7b64a-be51-4fc4-8dac-1d4a3e0b02ba/file[^9]
+- **Common Ground** - Officiële website: https://commonground.nl/[^19]
+- **iBestuur** - Open source werken; wat houdt ons nog tegen?: https://ibestuur.nl/artikel/open-source-werken-wat-houdt-ons-nog-tegen/[^3]
+- **Rathenau Instituut** - Rapporten over AI en transparantie: diverse publicaties over ethiek en bias in AI.[^6][^27]
+- **EU AI Act** - Officiële tekst en uitleg over transparantie-eisen.[^7][^28]
+- **NORA** - Richtlijnen open source en hergebruik: https://www.noraonline.nl/[^20]
+- **VNG / Common Ground** - Principes en voorbeelden: https://commonground.nl/[^21][^22][^23]
+- **Overheidsbrede handreiking generatieve AI** - Praktische richtlijnen transparantie en open source.[^32][^33]
+- **Algoritmeregister Nederland** - Voorbeelden transparantie in praktijk.[^29]

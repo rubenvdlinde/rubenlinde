@@ -7,10 +7,6 @@ tags: [ai, data, common-ground, platform-ai, overheid, registers]
 
 # AI en Data: Waarom de datalaag alles bepaalt
 
-:::warning Status: Concept
-Deze blog is nog in concept-fase en wordt mogelijk nog aangepast voor publicatie.
-:::
-
 AI is niet beter dan de data waarop het draait. Een slimme datalaag is geen nice-to-have, maar de absolute basis voor verantwoorde AI in de overheid. En die datalaag moet je NU goed inrichten - niet pas als je AI wilt toevoegen.
 
 <!--truncate-->
