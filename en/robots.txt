@@ -1,0 +1,13 @@
+# www.robotstxt.org/
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Disallow admin/private areas if any exist
+# Disallow: /admin/
+
+# Sitemap
+Sitemap: https://www.rubenlinde.nl/sitemap.xml
+Sitemap: https://www.rubenlinde.nl/en/sitemap.xml
+
