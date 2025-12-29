@@ -267,4 +267,4 @@ Elk blog heeft potentieel voor:
 
 **Laatst bijgewerkt:** 2024-12-22
 
-**Auteur:** Ruben van de Linde (met AI-assistentie)
+**Auteur:** Ruben van der Linde (met AI-assistentie)

@@ -88,9 +88,8 @@
 /* Homepage-specific navbar styling - HIDE ENTIRE NAVBAR */
 /* Remove the navbar completely from the landing page */
 
-/* Hide the entire navbar on homepage */
-body.homepage-root .navbar,
-body:not([class*='docs']):not([class*='blog']):not([class*='page']) .navbar,
+/* Hide the entire navbar ONLY on homepage */
+body[class*='homepage'] .navbar,
 html[data-is-root-path='true'] .navbar {
   display: none !important;
   visibility: hidden !important;
@@ -102,6 +101,22 @@ html[data-is-root-path='true'] .navbar {
   position: absolute !important;
   left: -9999px !important;
   pointer-events: none !important;
+}
+
+/* Ensure navbar is visible on all other pages */
+body[class*='docs'] .navbar,
+body[class*='blog'] .navbar,
+body[class*='page'] .navbar {
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  height: auto !important;
+  min-height: var(--ifm-navbar-height) !important;
+  max-height: none !important;
+  overflow: visible !important;
+  position: sticky !important;
+  left: 0 !important;
+  pointer-events: auto !important;
 }
 
 /* Floating controls for homepage - top right */

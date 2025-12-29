@@ -103,7 +103,7 @@ Create new blog posts in the `blog/` directory:
 slug: my-post-slug
 title: My Post Title
 authors:
-  - name: Ruben van de Linde
+  - name: Ruben van der Linde
     title: Software Developer
     url: https://github.com/rubenvdlinde
     image_url: https://github.com/rubenvdlinde.png

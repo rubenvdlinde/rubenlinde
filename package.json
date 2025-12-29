@@ -1,7 +1,7 @@
 {
   "name": "rubenlinde-website",
   "version": "1.0.0",
-  "description": "Personal website and blog by Ruben van de Linde",
+  "description": "Personal website and blog by Ruben van der Linde",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",

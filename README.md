@@ -215,7 +215,7 @@ MIT License - feel free to use this setup for your own projects!
 
 ## 👤 Author
 
-**Ruben van de Linde**
+**Ruben van der Linde**
 
 - Website: [rubenlinde.nl](https://rubenlinde.nl)
 - GitHub: [@rubenvdlinde](https://github.com/rubenvdlinde)
