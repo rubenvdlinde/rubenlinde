@@ -2,7 +2,7 @@
 slug: waarom-docusaurus-static-site
 title: Waarom ik koos voor Docusaurus in plaats van WordPress
 authors: [ruben]
-tags: [personal, docusaurus]
+tags: [personal]
 ---
 
 # Waarom ik koos voor Docusaurus in plaats van WordPress

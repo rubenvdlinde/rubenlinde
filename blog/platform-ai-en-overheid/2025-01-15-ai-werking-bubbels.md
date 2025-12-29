@@ -79,5 +79,3 @@ En zo komen we terug bij waar we begonnen: AI leeft in een bubbel, waar kunnen w
 **Voor de Nederlandse overheid** scoort Mistral dus relatief goed op onze criteria: Europees, deels transparant, en lokaal te draaien. Maar ook Mistral is niet perfect - volledig inzicht in trainingsdata ontbreekt nog steeds.
 
 Het belangrijkste is echter dat we ons bewust zijn van deze randjes van AI. We kunnen AI er nooit meer op vertrouwen om zelfstandig namens de overheid te opereren in casussen zoals zaakorchestratie etc. Het gaat in die zin nooit de inhoudelijke medewerker vervangen. Waar het echter wel een wereld van verschil kan maken is de snelheid waarmee het data doorzoekt en voorstelt aan die inhoudelijke medewerker. Daarover meer in het volgende blog.
-
-**Volgende blog in deze serie:** AI en Open Source - Waarom transparantie geen luxe is

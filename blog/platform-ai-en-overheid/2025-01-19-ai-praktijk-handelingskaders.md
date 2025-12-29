@@ -2,7 +2,7 @@
 slug: ai-praktijk-handelingskaders-rbak-pbak
 title: 'AI en Praktijk: Handelingskaders en toepassing'
 authors: [ruben]
-tags: [ai, beveiliging, overheid, privacy]
+tags: [ai, overheid, privacy]
 ---
 
 # AI en Praktijk: Handelingskaders en toepassing

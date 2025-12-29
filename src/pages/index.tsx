@@ -117,7 +117,13 @@ function useFeatureList(): FeatureItem[] {
       description: isEnglish
         ? 'Contributing to the community and building projects that make a difference. Public Money is Public Code - for better digital government.'
         : 'Bijdragen aan de community en projecten bouwen die het verschil maken. Public Money is Public Code - voor een betere digitale overheid.',
-      tags: ['open-source', 'common-ground', 'europa'],
+      tags: [
+        'open-source',
+        'common-ground',
+        'europa',
+        'nextcloud',
+        'openregister',
+      ],
     },
     {
       title: isEnglish ? 'AI & Innovation' : 'AI & Innovatie',
@@ -125,7 +131,7 @@ function useFeatureList(): FeatureItem[] {
       description: isEnglish
         ? 'Exploring how artificial intelligence can transform government, with a focus on ethics, transparency, and public values.'
         : 'Verkennen hoe kunstmatige intelligentie de overheid kan transformeren, met focus op ethiek, transparantie en publieke waarden.',
-      tags: ['ai', 'rag', 'overheid'],
+      tags: ['ai', 'rag', 'overheid', 'llm', 'mcp'],
     },
     {
       title: isEnglish ? 'Digital Sovereignty' : 'Digitale Soevereiniteit',
@@ -133,7 +139,7 @@ function useFeatureList(): FeatureItem[] {
       description: isEnglish
         ? 'Working towards European digital independence. From Eurostack to local open-source solutions for municipalities and SMEs.'
         : 'Werken aan Europese digitale onafhankelijkheid. Van Eurostack tot lokale open-source oplossingen voor gemeenten en MKB.',
-      tags: ['soevereiniteit', 'eurostack', 'mkb'],
+      tags: ['soevereiniteit', 'eurostack', 'gaia-x'],
     },
     {
       title: isEnglish ? 'Security & Privacy' : 'Beveiliging & Privacy',
@@ -141,7 +147,7 @@ function useFeatureList(): FeatureItem[] {
       description: isEnglish
         ? 'Focus on secure, privacy-respecting solutions. Control over data and infrastructure for organizations and citizens.'
         : 'Focus op veilige, privacy-respecterende oplossingen. Controle over data en infrastructuur voor organisaties en burgers.',
-      tags: ['beveiliging', 'privacy', 'data'],
+      tags: ['beveiliging', 'privacy', 'data', 'personal'],
     },
   ];
 }

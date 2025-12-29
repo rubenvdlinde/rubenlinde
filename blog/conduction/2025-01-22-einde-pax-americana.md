@@ -11,7 +11,6 @@ tags:
     eurostack,
     gaia-x,
     common-ground,
-    cloud,
     data,
     privacy,
   ]
