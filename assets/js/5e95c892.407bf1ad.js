@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkrubenlinde_website=globalThis.webpackChunkrubenlinde_website||[]).push([[9647],{7121(e,s,r){r.r(s),r.d(s,{default:()=>b});r(6540);var n=r(4164),u=r(7559),a=r(5500),i=r(2831),l=r(9139),t=r(4848);function b(e){return(0,t.jsx)(a.e3,{className:(0,n.A)(u.G.wrapper.docsPages),children:(0,t.jsx)(l.A,{children:(0,i.v)(e.route.routes)})})}}}]);

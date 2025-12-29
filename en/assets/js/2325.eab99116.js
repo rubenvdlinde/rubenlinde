@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkrubenlinde_website=globalThis.webpackChunkrubenlinde_website||[]).push([[2325],{2325(e,b,i){i.d(b,{createPacketServices:()=>s.$});var s=i(1477);i(7960)}}]);
