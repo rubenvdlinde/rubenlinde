@@ -76,14 +76,26 @@ Met waarborgen maken we overheid toegankelijker, effectiever, menselijker – zo
 
 ## Bronnen
 
-Hieronder een totale, overzichtelijke lijst van alle gebruikte bronnen (alfabetisch gesorteerd op publicatie):
-
-- **Autoriteit Persoonsgegevens** - Boete Clearview AI: https://autoriteitpersoonsgegevens.nl/nl/nieuws/ap-boete-clearview-ai-voor-illegaal-verwerken-van-biometrische-gegevens[^11]
-- **EU AI Act** - High-risk AI en transparantie: https://artificialintelligenceact.eu/[^3][^13]
-- **iBestuur** - Artikelen over AI-kaders in overheid: https://ibestuur.nl/[^1][^2][^4][^5][^6][^7][^8][^9][^10][^12][^14][^15][^16][^17][^18][^19][^20][^21][^22][^23]
-- **NL Times** - Eindhoven data leak via AI sites: https://nltimes.nl/2025/12/19/eindhoven-officials-expose-resident-data-public-ai-websites[^13]
-- **Rathenau Instituut** - Ethische AI en SyRI-analyse: diverse rapporten.[^18]
-- **Rijksoverheid** - Algemene wet bestuursrecht (Awb): https://wetten.overheid.nl/BWBR0005537/2025-01-01[^12]
-- **Rijksoverheid** - Visie generatieve AI en handelingskaders: https://open.overheid.nl/[^19]
-- **VNG** - AI in gemeentelijke praktijk: https://vng.nl/[^20]
-- **Waag** - Open AI en ethiek: https://waag.org/[^15]
+- [^1]: **iBestuur** - [Artikelen over AI-kaders in overheid](https://ibestuur.nl/)
+- [^2]: **iBestuur** - [Artikelen over AI-kaders in overheid](https://ibestuur.nl/)
+- [^3]: **EU AI Act** - [High-risk AI en transparantie](https://artificialintelligenceact.eu/)
+- [^4]: **iBestuur** - [Artikelen over AI-kaders in overheid](https://ibestuur.nl/)
+- [^5]: **iBestuur** - [Artikelen over AI-kaders in overheid](https://ibestuur.nl/)
+- [^6]: **iBestuur** - [Artikelen over AI-kaders in overheid](https://ibestuur.nl/)
+- [^7]: **iBestuur** - [Artikelen over AI-kaders in overheid](https://ibestuur.nl/)
+- [^8]: **iBestuur** - [Artikelen over AI-kaders in overheid](https://ibestuur.nl/)
+- [^9]: **iBestuur** - [Artikelen over AI-kaders in overheid](https://ibestuur.nl/)
+- [^10]: **iBestuur** - [Artikelen over AI-kaders in overheid](https://ibestuur.nl/)
+- [^11]: **Autoriteit Persoonsgegevens** - [Boete Clearview AI voor illegaal verwerken van biometrische gegevens](https://autoriteitpersoonsgegevens.nl/nl/nieuws/ap-boete-clearview-ai-voor-illegaal-verwerken-van-biometrische-gegevens)
+- [^12]: **Rijksoverheid** - [Algemene wet bestuursrecht (Awb)](https://wetten.overheid.nl/BWBR0005537/2025-01-01)
+- [^13]: **EU AI Act** - [High-risk AI en transparantie](https://artificialintelligenceact.eu/)
+- [^14]: **iBestuur** - [Artikelen over AI-kaders in overheid](https://ibestuur.nl/)
+- [^15]: **Waag** - [Open AI en ethiek](https://waag.org/)
+- [^16]: **iBestuur** - [Artikelen over AI-kaders in overheid](https://ibestuur.nl/)
+- [^17]: **iBestuur** - [Artikelen over AI-kaders in overheid](https://ibestuur.nl/)
+- [^18]: **Rathenau Instituut** - Ethische AI en SyRI-analyse: diverse rapporten
+- [^19]: **Rijksoverheid** - [Visie generatieve AI en handelingskaders](https://open.overheid.nl/)
+- [^20]: **VNG** - [AI in gemeentelijke praktijk](https://vng.nl/)
+- [^21]: **iBestuur** - [Artikelen over AI-kaders in overheid](https://ibestuur.nl/)
+- [^22]: **iBestuur** - [Artikelen over AI-kaders in overheid](https://ibestuur.nl/)
+- [^23]: **iBestuur** - [Artikelen over AI-kaders in overheid](https://ibestuur.nl/)

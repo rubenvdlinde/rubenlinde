@@ -107,11 +107,42 @@ Antwoord: nee.
 
 ## Bronnen
 
-Hieronder een totale, overzichtelijke lijst van alle gebruikte bronnen (alfabetisch gesorteerd op publicatie):
-
-- **Common Ground** - Principes en risico's niet-adopteren: https://commonground.nl/[^37][^38]
-- **iBestuur** - Risico's achterblijven AI overheid: diverse artikelen.[^1][^2][^3][^5][^6][^7][^8][^9][^11][^12][^15][^16][^18][^20][^21][^22][^24][^25][^26][^27][^28][^29][^30][^31][^32][^33][^34][^35][^36][^39]
-- **Rathenau Instituut** - Rapporten AI-adoptie en maatschappelijke risico's: diverse publicaties.[^4][^10][^13][^14][^17][^19][^23]
-- **Rijksoverheid** - Visie AI en achterstand risico's: https://open.overheid.nl/[^39]
-- **VNG** - Voorbeelden internationale AI-overheid: https://vng.nl/[^4]
-- **Waag** - Discussies over AI en kloof: https://waag.org/[^9]
+- [^1]: **iBestuur** - [Risico's achterblijven AI overheid](https://ibestuur.nl/)
+- [^2]: **iBestuur** - [Risico's achterblijven AI overheid](https://ibestuur.nl/)
+- [^3]: **iBestuur** - [Risico's achterblijven AI overheid](https://ibestuur.nl/)
+- [^4]: **VNG** - [Voorbeelden internationale AI-overheid](https://vng.nl/)
+- [^5]: **iBestuur** - [Risico's achterblijven AI overheid](https://ibestuur.nl/)
+- [^6]: **iBestuur** - [Risico's achterblijven AI overheid](https://ibestuur.nl/)
+- [^7]: **iBestuur** - [Risico's achterblijven AI overheid](https://ibestuur.nl/)
+- [^8]: **iBestuur** - [Risico's achterblijven AI overheid](https://ibestuur.nl/)
+- [^9]: **Waag** - [Discussies over AI en kloof](https://waag.org/)
+- [^10]: **Rathenau Instituut** - Rapporten AI-adoptie en maatschappelijke risico's
+- [^11]: **iBestuur** - [Risico's achterblijven AI overheid](https://ibestuur.nl/)
+- [^12]: **iBestuur** - [Risico's achterblijven AI overheid](https://ibestuur.nl/)
+- [^13]: **Rathenau Instituut** - Rapporten AI-adoptie en maatschappelijke risico's
+- [^14]: **Rathenau Instituut** - Rapporten AI-adoptie en maatschappelijke risico's
+- [^15]: **iBestuur** - [Risico's achterblijven AI overheid](https://ibestuur.nl/)
+- [^16]: **iBestuur** - [Risico's achterblijven AI overheid](https://ibestuur.nl/)
+- [^17]: **Rathenau Instituut** - Rapporten AI-adoptie en maatschappelijke risico's
+- [^18]: **iBestuur** - [Risico's achterblijven AI overheid](https://ibestuur.nl/)
+- [^19]: **Rathenau Instituut** - Rapporten AI-adoptie en maatschappelijke risico's
+- [^20]: **iBestuur** - [Risico's achterblijven AI overheid](https://ibestuur.nl/)
+- [^21]: **iBestuur** - [Risico's achterblijven AI overheid](https://ibestuur.nl/)
+- [^22]: **iBestuur** - [Risico's achterblijven AI overheid](https://ibestuur.nl/)
+- [^23]: **Rathenau Instituut** - Rapporten AI-adoptie en maatschappelijke risico's
+- [^24]: **iBestuur** - [Risico's achterblijven AI overheid](https://ibestuur.nl/)
+- [^25]: **iBestuur** - [Risico's achterblijven AI overheid](https://ibestuur.nl/)
+- [^26]: **iBestuur** - [Risico's achterblijven AI overheid](https://ibestuur.nl/)
+- [^27]: **iBestuur** - [Risico's achterblijven AI overheid](https://ibestuur.nl/)
+- [^28]: **iBestuur** - [Risico's achterblijven AI overheid](https://ibestuur.nl/)
+- [^29]: **iBestuur** - [Risico's achterblijven AI overheid](https://ibestuur.nl/)
+- [^30]: **iBestuur** - [Risico's achterblijven AI overheid](https://ibestuur.nl/)
+- [^31]: **iBestuur** - [Risico's achterblijven AI overheid](https://ibestuur.nl/)
+- [^32]: **iBestuur** - [Risico's achterblijven AI overheid](https://ibestuur.nl/)
+- [^33]: **iBestuur** - [Risico's achterblijven AI overheid](https://ibestuur.nl/)
+- [^34]: **iBestuur** - [Risico's achterblijven AI overheid](https://ibestuur.nl/)
+- [^35]: **iBestuur** - [Risico's achterblijven AI overheid](https://ibestuur.nl/)
+- [^36]: **iBestuur** - [Risico's achterblijven AI overheid](https://ibestuur.nl/)
+- [^37]: **Common Ground** - [Principes en risico's niet-adopteren](https://commonground.nl/)
+- [^38]: **Common Ground** - [Principes en risico's niet-adopteren](https://commonground.nl/)
+- [^39]: **Rijksoverheid** - [Visie AI en achterstand risico's](https://open.overheid.nl/)

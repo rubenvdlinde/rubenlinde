@@ -5,15 +5,11 @@ authors: [ruben]
 tags: [ai, rag, dienstverlening, overheid]
 ---
 
-# AI Kansen voor Burgers: De Regelgeving Navigator
-
-:::warning Status: Concept
-Deze blog is nog in concept-fase en wordt mogelijk nog aangepast voor publicatie.
-:::
-
-Stel je voor dat je als burger een vraag hebt over toeslagen, vergunningen of subsidies. Je opent een app of belt een nummer, en in plaats van uren zoeken op websites of wachten aan de telefoon, krijg je direct een helder, persoonlijk antwoord – in begrijpelijke taal, met stappenplan en doorrekeningen. Geen juridisch jargon, geen "lees artikel 12.3 van wet X", maar gewoon: "Op basis van jouw situatie kom je waarschijnlijk in aanmerking voor huurtoeslag van ongeveer €200 per maand. Wil je dat ik het doorreken?" Dat is geen verre toekomst. Dat is wat AI nú al mogelijk maakt voor de overheid – als we het goed inrichten. Niet om ambtenaren te vervangen, maar om de overheid toegankelijker te maken voor iedereen.[^1][^2]
+# AI en kansen voor Burgers: De begrijpenlijke overheid
 
 De Nederlandse regelgeving is een jungle: landelijk, provinciaal, gemeentelijk, constant veranderend, vol voorwaarden en uitzonderingen.[^3] Veel burgers missen regelingen waar ze recht op hebben, of haken af door complexiteit. AI kan hier de gids zijn – de Regelgeving Navigator die burgers helpt door de wirwar heen.[^4] Dit is geen luxe, maar een kans om bestaanszekerheid te vergroten en de kloof tussen overheid en burger te verkleinen.[^5]
+
+Maar stel je voor dat je als burger een vraag hebt over toeslagen, vergunningen of subsidies. Je opent een app of belt een nummer, en in plaats van uren zoeken op websites of wachten aan de telefoon, krijg je direct een helder, persoonlijk antwoord – in begrijpelijke taal, met stappenplan en doorrekeningen. Geen juridisch jargon, geen "lees artikel 12.3 van wet X", maar gewoon: "Op basis van jouw situatie kom je waarschijnlijk in aanmerking voor huurtoeslag van ongeveer €200 per maand. Wil je dat ik het doorreken?" Dat is geen verre toekomst. Dat is wat AI nú al mogelijk maakt voor de overheid – als we het goed inrichten. Niet om ambtenaren te vervangen, maar om de overheid toegankelijker én eerlijker te maken voor iedereen.[^1][^2]
 
 <!--truncate-->
 
@@ -96,11 +92,44 @@ Vraag niet óf, maar hoe snel. Elke burger die nu regelingen mist, is er één t
 
 ## Bronnen
 
-Hieronder een totale, overzichtelijke lijst van alle gebruikte bronnen (alfabetisch gesorteerd op publicatie):
-
-- **Common Ground** - Principes en data-architectuur: https://commonground.nl/ [^7] [^31]
-- **iBestuur** - AI-toepassingen voor burgers: diverse artikelen over toegankelijkheid.[^1][^2][^4][^5][^8][^9][^11][^12][^15][^20][^21][^22][^23][^24][^25][^26][^27][^28][^29][^34][^35][^36][^37][^38][^39][^40][^41]
-- **Regels.overheid.nl** - Machine-leesbare regelgeving: https://regels.overheid.nl [^16] [^30]
-- **Rijksoverheid** - Visie op AI en burgerdienstverlening: https://open.overheid.nl/ [^3] [^6] [^10] [^14] [^18] [^19] [^32] [^33]
-- **VNG** - Voorbeelden burgergerichte AI: https://vng.nl/ [^13] [^17]
-- **Waag** - Discussies over AI en toegankelijkheid: https://waag.org/ [^42]
+- [^1]: **iBestuur** - [AI-toepassingen voor burgers](https://ibestuur.nl/)
+- [^2]: **iBestuur** - [AI-toepassingen voor burgers](https://ibestuur.nl/)
+- [^3]: **Rijksoverheid** - [Visie op AI en burgerdienstverlening](https://open.overheid.nl/)
+- [^4]: **iBestuur** - [AI-toepassingen voor burgers](https://ibestuur.nl/)
+- [^5]: **iBestuur** - [AI-toepassingen voor burgers](https://ibestuur.nl/)
+- [^6]: **Rijksoverheid** - [Visie op AI en burgerdienstverlening](https://open.overheid.nl/)
+- [^7]: **Common Ground** - [Principes en data-architectuur](https://commonground.nl/)
+- [^8]: **iBestuur** - [AI-toepassingen voor burgers](https://ibestuur.nl/)
+- [^9]: **iBestuur** - [AI-toepassingen voor burgers](https://ibestuur.nl/)
+- [^10]: **Rijksoverheid** - [Visie op AI en burgerdienstverlening](https://open.overheid.nl/)
+- [^11]: **iBestuur** - [AI-toepassingen voor burgers](https://ibestuur.nl/)
+- [^12]: **iBestuur** - [AI-toepassingen voor burgers](https://ibestuur.nl/)
+- [^13]: **VNG** - [Voorbeelden burgergerichte AI](https://vng.nl/)
+- [^14]: **Rijksoverheid** - [Visie op AI en burgerdienstverlening](https://open.overheid.nl/)
+- [^15]: **iBestuur** - [AI-toepassingen voor burgers](https://ibestuur.nl/)
+- [^16]: **Regels.overheid.nl** - [Machine-leesbare regelgeving](https://regels.overheid.nl)
+- [^17]: **VNG** - [Voorbeelden burgergerichte AI](https://vng.nl/)
+- [^18]: **Rijksoverheid** - [Visie op AI en burgerdienstverlening](https://open.overheid.nl/)
+- [^19]: **Rijksoverheid** - [Visie op AI en burgerdienstverlening](https://open.overheid.nl/)
+- [^20]: **iBestuur** - [AI-toepassingen voor burgers](https://ibestuur.nl/)
+- [^21]: **iBestuur** - [AI-toepassingen voor burgers](https://ibestuur.nl/)
+- [^22]: **iBestuur** - [AI-toepassingen voor burgers](https://ibestuur.nl/)
+- [^23]: **iBestuur** - [AI-toepassingen voor burgers](https://ibestuur.nl/)
+- [^24]: **iBestuur** - [AI-toepassingen voor burgers](https://ibestuur.nl/)
+- [^25]: **iBestuur** - [AI-toepassingen voor burgers](https://ibestuur.nl/)
+- [^26]: **iBestuur** - [AI-toepassingen voor burgers](https://ibestuur.nl/)
+- [^27]: **iBestuur** - [AI-toepassingen voor burgers](https://ibestuur.nl/)
+- [^28]: **iBestuur** - [AI-toepassingen voor burgers](https://ibestuur.nl/)
+- [^29]: **iBestuur** - [AI-toepassingen voor burgers](https://ibestuur.nl/)
+- [^30]: **Regels.overheid.nl** - [Machine-leesbare regelgeving](https://regels.overheid.nl)
+- [^31]: **Common Ground** - [Principes en data-architectuur](https://commonground.nl/)
+- [^32]: **Rijksoverheid** - [Visie op AI en burgerdienstverlening](https://open.overheid.nl/)
+- [^33]: **Rijksoverheid** - [Visie op AI en burgerdienstverlening](https://open.overheid.nl/)
+- [^34]: **iBestuur** - [AI-toepassingen voor burgers](https://ibestuur.nl/)
+- [^35]: **iBestuur** - [AI-toepassingen voor burgers](https://ibestuur.nl/)
+- [^36]: **iBestuur** - [AI-toepassingen voor burgers](https://ibestuur.nl/)
+- [^37]: **iBestuur** - [AI-toepassingen voor burgers](https://ibestuur.nl/)
+- [^38]: **iBestuur** - [AI-toepassingen voor burgers](https://ibestuur.nl/)
+- [^39]: **iBestuur** - [AI-toepassingen voor burgers](https://ibestuur.nl/)
+- [^40]: **iBestuur** - [AI-toepassingen voor burgers](https://ibestuur.nl/)
+- [^41]: **iBestuur** - [AI-toepassingen voor burgers](https://ibestuur.nl/)
