@@ -1,8 +1,8 @@
 ---
 slug: ai-werking-bubbels
-title: De AI en Werking: Wat is AI eigenlijk?
+title: 'De AI en Werking: Wat is AI eigenlijk?'
 authors: [ruben]
-tags: [ai, platform-ai, overheid, ethiek, technologie, llm]
+tags: [ai, llm, overheid]
 ---
 
 # De AI en Werking: Wat is AI eigenlijk?

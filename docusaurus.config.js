@@ -33,6 +33,11 @@ const config = {
     locales: ['nl', 'en'],
   },
 
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
+
   presets: [
     [
       'classic',

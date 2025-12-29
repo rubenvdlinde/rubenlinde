@@ -2,7 +2,7 @@
 slug: eurostack-common-ground-europese-samenwerking
 title: Eurostack en Common Ground - Europese digitale samenwerking
 authors: [ruben]
-tags: [open-source, europa, eurostack, common-ground, samenwerking]
+tags: [open-source, common-ground, europa]
 ---
 
 # Eurostack en Common Ground: Van Nederlandse innovatie naar Europese standaard

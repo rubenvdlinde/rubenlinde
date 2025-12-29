@@ -1,8 +1,8 @@
 ---
 slug: ai-kansen-burgers-regelgeving-navigator
-title: AI en Burgers: Kansen voor een ebtere dienstverlening
+title: 'AI en Burgers: Kansen voor een betere dienstverlening'
 authors: [ruben]
-tags: [ai, burgers, dienstverlening, platform-ai, overheid, toegankelijkheid]
+tags: [ai, rag, dienstverlening, overheid]
 ---
 
 # AI Kansen voor Burgers: De Regelgeving Navigator
@@ -37,11 +37,11 @@ Dit bouwt voort op bestaande bronnen: regels.overheid.nl (machine-leesbaar), Mij
 
 ```mermaid
 flowchart TD
-    A[Burger stelt vraag<br>"Ik krijg een kind, wat nu?"] --> B[AI vraagt door<br>Inkomen? Werk? Woonplaats?]
-    B --> C[AI raadpleegt bronnen<br>regels.overheid.nl + registers]
-    C --> D[AI geeft persoonlijk overzicht<br>Kinderbijslag, toeslagen, verlof]
-    D --> E[AI biedt hulp<br>Doorrekenen? Conceptaanvraag?]
-    E --> F[Burger beslist<br>Ja/Nee, zelf indienen]
+    A["Burger stelt vraag: Ik krijg een kind, wat nu?"] --> B["AI vraagt door: Inkomen? Werk? Woonplaats?"]
+    B --> C["AI raadpleegt bronnen: regels.overheid.nl + registers"]
+    C --> D["AI geeft persoonlijk overzicht: Kinderbijslag, toeslagen, verlof"]
+    D --> E["AI biedt hulp: Doorrekenen? Conceptaanvraag?"]
+    E --> F["Burger beslist: Ja/Nee, zelf indienen"]
     style A fill:#bbf,stroke:#333
     style F fill:#bfb,stroke:#333
 ```

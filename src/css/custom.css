@@ -1434,3 +1434,155 @@ html {
     font-size: 0.85rem;
   }
 }
+
+/* =====================================================
+   MERMAID DIAGRAM STYLING
+   ===================================================== */
+
+/* Base Mermaid container styling */
+.mermaid {
+  font-family: var(--ifm-font-family-base) !important;
+  background: #ffffff !important;
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+  border: 2px solid var(--ifm-color-secondary) !important;
+}
+
+[data-theme='dark'] .mermaid {
+  background: rgba(0, 0, 0, 0.85) !important;
+  border: 2px solid var(--ifm-color-secondary) !important;
+}
+
+/* Mermaid flowchart nodes */
+.mermaid .node rect,
+.mermaid .node circle,
+.mermaid .node ellipse,
+.mermaid .node polygon,
+.mermaid .node path {
+  fill: #ffffff !important;
+  stroke: var(--ifm-color-secondary) !important;
+  stroke-width: 2px !important;
+}
+
+[data-theme='dark'] .mermaid .node rect,
+[data-theme='dark'] .mermaid .node circle,
+[data-theme='dark'] .mermaid .node ellipse,
+[data-theme='dark'] .mermaid .node polygon,
+[data-theme='dark'] .mermaid .node path {
+  fill: rgba(0, 0, 0, 0.7) !important;
+  stroke: var(--ifm-color-secondary) !important;
+  stroke-width: 2px !important;
+}
+
+/* Secondary nodes (with styling applied) */
+.mermaid .node.secondary rect,
+.mermaid .node.secondary circle,
+.mermaid .node.secondary ellipse,
+.mermaid .node.secondary polygon,
+.mermaid .node.secondary path {
+  fill: #bbf !important;
+  stroke: var(--ifm-color-primary) !important;
+  stroke-width: 2px !important;
+}
+
+[data-theme='dark'] .mermaid .node.secondary rect,
+[data-theme='dark'] .mermaid .node.secondary circle,
+[data-theme='dark'] .mermaid .node.secondary ellipse,
+[data-theme='dark'] .mermaid .node.secondary polygon,
+[data-theme='dark'] .mermaid .node.secondary path {
+  fill: rgba(59, 130, 246, 0.3) !important;
+  stroke: var(--ifm-color-primary) !important;
+  stroke-width: 2px !important;
+}
+
+/* Node labels */
+.mermaid .nodeLabel,
+.mermaid .node .label,
+.mermaid text {
+  font-family: var(--ifm-font-family-base) !important;
+  fill: #000000 !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+[data-theme='dark'] .mermaid .nodeLabel,
+[data-theme='dark'] .mermaid .node .label,
+[data-theme='dark'] .mermaid text {
+  fill: #ffffff !important;
+}
+
+/* Edges (arrows and lines) */
+.mermaid .edgePath .path,
+.mermaid .flowchart-link,
+.mermaid line.relation {
+  stroke: var(--ifm-color-primary) !important;
+  stroke-width: 2px !important;
+}
+
+/* Arrow markers */
+.mermaid .arrowheadPath,
+.mermaid marker path,
+.mermaid .marker path {
+  fill: var(--ifm-color-primary) !important;
+  stroke: var(--ifm-color-primary) !important;
+}
+
+/* Edge labels */
+.mermaid .edgeLabel,
+.mermaid .edgeLabel .label,
+.mermaid .edgeLabel text {
+  background: #ffffff !important;
+  fill: #000000 !important;
+  font-family: var(--ifm-font-family-base) !important;
+  font-size: 12px !important;
+}
+
+[data-theme='dark'] .mermaid .edgeLabel,
+[data-theme='dark'] .mermaid .edgeLabel .label,
+[data-theme='dark'] .mermaid .edgeLabel text {
+  background: rgba(0, 0, 0, 0.85) !important;
+  fill: #ffffff !important;
+}
+
+/* Cluster/subgraph styling */
+.mermaid .cluster rect {
+  fill: rgba(234, 88, 12, 0.05) !important;
+  stroke: var(--ifm-color-secondary) !important;
+  stroke-width: 2px !important;
+  stroke-dasharray: 5, 5 !important;
+}
+
+[data-theme='dark'] .mermaid .cluster rect {
+  fill: rgba(234, 88, 12, 0.1) !important;
+}
+
+/* Cluster labels */
+.mermaid .cluster-label,
+.mermaid .cluster-label text {
+  fill: var(--ifm-color-secondary) !important;
+  font-family: var(--ifm-font-family-base) !important;
+  font-weight: 600 !important;
+}
+
+/* Specific style overrides for custom classes */
+.mermaid [fill='#bbf'] {
+  fill: #bbf !important;
+}
+
+.mermaid [fill='#bfb'] {
+  fill: #bfb !important;
+}
+
+/* Responsive mermaid on mobile */
+@media (max-width: 768px) {
+  .mermaid {
+    padding: 1rem;
+    overflow-x: auto;
+  }
+
+  .mermaid svg {
+    max-width: 100%;
+    height: auto;
+  }
+}

@@ -1,8 +1,8 @@
 ---
 slug: ai-techniek-integratie
-title: AI en Techniek: Veilige integratie
+title: 'AI en Techniek: Veilige integratie'
 authors: [ruben]
-tags: [ai, techniek, mcp, mistral, platform-ai, overheid, modellen]
+tags: [ai, rag, mcp, overheid]
 ---
 
 # AI en Techniek: Veilige integratie
@@ -57,10 +57,10 @@ n8n voert logica uit als een orkestdirigent – efficiënt, schaalbaar.[^21]
 
 ```mermaid
 flowchart TD
-    A[AI-agent conversatie: "Maak flow voor subsidiecheck"] --> B[n8n bouwt nodes: check inkomen]
-    B --> C[Node: check leeftijd]
-    C --> D[Node: genereer advies]
-    D --> E[Proces draait zelfstandig: exact hetzelfde elke run]
+    A["AI-agent conversatie: Maak flow voor subsidiecheck"] --> B["n8n bouwt nodes: check inkomen"]
+    B --> C["Node: check leeftijd"]
+    C --> D["Node: genereer advies"]
+    D --> E["Proces draait zelfstandig: exact hetzelfde elke run"]
     style A fill:#bbf,stroke:#333
     style E fill:#bfb,stroke:#333
 ```

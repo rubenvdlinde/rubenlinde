@@ -2,7 +2,7 @@
 slug: migratie-naar-codeberg
 title: Waarom ik overweeg te migreren van GitHub naar Codeberg
 authors: [ruben]
-tags: [personal, codeberg, github, opensource, sovereignty]
+tags: [personal, open-source, soevereiniteit]
 ---
 
 # Waarom ik overweeg te migreren van GitHub naar Codeberg
