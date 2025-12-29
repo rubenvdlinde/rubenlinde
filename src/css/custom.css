@@ -85,12 +85,8 @@
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* Homepage-specific navbar styling - HIDE ENTIRE NAVBAR */
-/* Remove the navbar completely from the landing page */
-
-/* Hide the entire navbar ONLY on homepage */
-body[class*='homepage'] .navbar,
-html[data-is-root-path='true'] .navbar {
+/* Hide navbar on all pages - we use floating controls instead */
+.navbar {
   display: none !important;
   visibility: hidden !important;
   opacity: 0 !important;
@@ -101,22 +97,6 @@ html[data-is-root-path='true'] .navbar {
   position: absolute !important;
   left: -9999px !important;
   pointer-events: none !important;
-}
-
-/* Ensure navbar is visible on all other pages */
-body[class*='docs'] .navbar,
-body[class*='blog'] .navbar,
-body[class*='page'] .navbar {
-  display: flex !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-  height: auto !important;
-  min-height: var(--ifm-navbar-height) !important;
-  max-height: none !important;
-  overflow: visible !important;
-  position: sticky !important;
-  left: 0 !important;
-  pointer-events: auto !important;
 }
 
 /* Floating controls for homepage - top right */
@@ -219,6 +199,40 @@ body[class*='page'] .navbar {
   border-color: var(--ifm-color-secondary);
   box-shadow: 0 0 15px rgba(234, 88, 12, 0.4);
   transform: translateY(-2px);
+}
+
+/* Navigation buttons (Home, Blog) in floating controls */
+.floating-control-nav-button {
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--ifm-color-secondary);
+  border-radius: 8px;
+  padding: 8px 14px;
+  color: var(--ifm-color-secondary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  white-space: nowrap;
+  min-width: 70px;
+  height: auto;
+}
+
+.floating-control-nav-button:hover {
+  background: rgba(15, 23, 42, 1);
+  border-color: var(--ifm-color-secondary);
+  box-shadow: 0 0 15px rgba(234, 88, 12, 0.4);
+  transform: translateY(-2px);
+  text-decoration: none;
+  color: var(--ifm-color-secondary);
 }
 
 /* Dropdown menu for floating controls */

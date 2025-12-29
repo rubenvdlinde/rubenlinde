@@ -90,6 +90,38 @@ export default function FloatingControls() {
         isHomepage ? 'homepage-floating-controls' : 'floating-controls'
       }
     >
+      {/* Home Button - only show when not on homepage */}
+      {!isHomepage && (
+        <a
+          href={currentLocale === 'en' ? '/en/' : '/'}
+          className="floating-control-button floating-control-nav-button"
+        >
+          <span className="floating-control-button__icon">🏠</span>
+          <span className="floating-control-button__label">
+            {translate({
+              id: 'nav.home',
+              message: 'Home',
+              description: 'Home navigation label',
+            })}
+          </span>
+        </a>
+      )}
+
+      {/* Blog Button */}
+      <a
+        href={currentLocale === 'en' ? '/en/blog' : '/blog'}
+        className="floating-control-button floating-control-nav-button"
+      >
+        <span className="floating-control-button__icon">📝</span>
+        <span className="floating-control-button__label">
+          {translate({
+            id: 'nav.blog',
+            message: 'Blog',
+            description: 'Blog navigation label',
+          })}
+        </span>
+      </a>
+
       {/* Language Selector */}
       <FloatingControlButton
         icon="🌐"
