@@ -1,6 +1,6 @@
 ---
 slug: ai-open-source-common-ground
-title: AI en Open Source - Waarom transparantie geen luxe is
+title: AI en Open Source: Waarom transparantie geen luxe is
 authors: [ruben]
 tags: [ai, open-source, common-ground, platform-ai, overheid, transparantie]
 ---

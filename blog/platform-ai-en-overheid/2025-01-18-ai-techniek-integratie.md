@@ -1,6 +1,6 @@
 ---
-slug: ai-techniek-integratie-mcp-mistral
-title: AI en Techniek - Veilige integratie en het Mistral-vraagstuk
+slug: ai-techniek-integratie
+title: AI en Techniek: Veilige integratie
 authors: [ruben]
 tags: [ai, techniek, mcp, mistral, platform-ai, overheid, modellen]
 ---

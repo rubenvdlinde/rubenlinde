@@ -1,6 +1,6 @@
 ---
-slug: ai-veilig-handelingskaders-rbak-pbak
-title: Veilige AI - Handelingskaders en de R-bak/P-bak structuur
+slug: ai-praktijk-handelingskaders-rbak-pbak
+title: AI en Praktijk: Handelingskaders en toepassing
 authors: [ruben]
 tags:
   [ai, beveiliging, handelingskaders, platform-ai, overheid, ethiek, privacy]

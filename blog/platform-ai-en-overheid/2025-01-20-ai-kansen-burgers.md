@@ -1,6 +1,6 @@
 ---
 slug: ai-kansen-burgers-regelgeving-navigator
-title: AI Kansen voor Burgers - De Regelgeving Navigator
+title: AI en Burgers: Kansen voor een ebtere dienstverlening
 authors: [ruben]
 tags: [ai, burgers, dienstverlening, platform-ai, overheid, toegankelijkheid]
 ---

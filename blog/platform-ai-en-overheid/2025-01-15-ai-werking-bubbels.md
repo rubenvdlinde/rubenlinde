@@ -1,6 +1,6 @@
 ---
-slug: ai-bubbels-wereldbeeld
-title: De AI die het beste bij jouw bubbel past - Hoe werkt AI eigenlijk?
+slug: ai-werking-bubbels
+title: De AI en Werking: Wat is AI eigenlijk?
 authors: [ruben]
 tags: [ai, platform-ai, overheid, ethiek, technologie, llm]
 ---
