@@ -6,138 +6,84 @@ tags:
   [ai, beveiliging, handelingskaders, platform-ai, overheid, ethiek, privacy]
 ---
 
-# Veilige AI: Handelingskaders en de R-bak/P-bak structuur
+# AI en Praktijk: Handelingskaders en toepassing
 
 :::warning Status: Concept
 Deze blog is nog in concept-fase en wordt mogelijk nog aangepast voor publicatie.
 :::
 
-Stel je voor dat je als ambtenaar een AI-tool gebruikt voor een belangrijke beslissing – een subsidieaanvraag, een vergunning, een handhavingsactie. Het advies komt binnen: "goedkeuren". Maar hoe weet je dat dit veilig is? Heeft de AI alleen de juiste data gezien? Bleef het binnen juridische en ethische grenzen? En wat als het fout gaat – wie is er dan verantwoordelijk? Veilige AI is geen technische luxe; het is een bestuurlijke en democratische noodzaak. AI kan de overheid efficiënter en menselijker maken, maar alleen als we het streng begrenzen met duidelijke handelingskaders.[^1][^2] In Nederland hebben we al een sterke basis met de R-bak/P-bak-structuur – laten we die gebruiken om AI verantwoord in te zetten.
-
-Dit blog duikt in hoe we AI technisch en ethisch begrenzen, met praktische voorbeelden en een duidelijke scheiding tussen wat AI mag (voorbereiden en adviseren) en wat niet (beslissen). Want de mens blijft altijd aan het roer – dat is geen compromis, maar een principe.[^3]
+AI kan de overheid efficiënter en menselijker maken, maar alleen als we het streng begrenzen met duidelijke handelingskaders. Stel je voor dat AI adviezen geeft voor subsidies of vergunningen – nuttig, maar hoe zorg je dat het binnen juridische en ethische grenzen blijft? Dit blog duikt in praktische toepassing, met voorbeelden, en scheidt wat AI mag (voorbereiden, adviseren) van wat niet (beslissen). Voor technische integratie, zie ons blog "AI en Techniek: Veilige integratie".
 
 <!--truncate-->
 
 ## De Uitdaging: AI Binnen Strakke Grenzen Houden
 
-AI zonder grenzen is gevaarlijk – het kan biases versterken, privacy schenden of besluiten nemen die niemand begrijpt.[^4] Maar welke grenzen precies? En hoe dwing je die af? In de Nederlandse overheid gebruiken we de **R-bak en P-bak**-structuur voor gegevensverwerking: een slimme scheiding die perfect aansluit bij veilige AI.[^5]
+AI zonder grenzen is gevaarlijk – het kan biases versterken, privacy schenden of besluiten nemen die niemand begrijpt. De kernvraag is: wanneer zet je AI in, en wanneer niet? In de praktijk betekent dit een zorgvuldige balans tussen ondersteuning en controle, met altijd de mens als eindverantwoordelijke. Want laten we eerlijk zijn, AI is slim, maar niet slim genoeg om je baas te zijn – de mens moet altijd de finale call maken.
 
-De R-bak (Registratie) bevat authentieke brongegevens – BSN's uit de BRP, adressen uit de BAG, financiële info. De P-bak (Verwerking) is voor afgeleide analyses en aggregaties. AI moet weten uit welke bak het mag halen, welke privacy-regels gelden, binnen welke kaders het opereert, en altijd verantwoording afleggen.[^6]
+Zonder grenzen risico's: oncontroleerbare adviezen, privacy-lekken (zoals in Eindhoven waar ambtenaren residentdata lekten via public AI-tools), juridische problemen (boetes onder AVG of AI Act). Met grenzen: transparantie, controle, vertrouwen.
 
-Zonder dit risico's: oncontroleerbare toegang, privacy-lekken, juridische problemen.[^7] Met dit: transparantie, controle, vertrouwen.
+## Wanneer AI Wel Inzetten: Ondersteunende Rollen met Praktijkvoorbeelden
 
-## AI en de R-bak: Restrictief en Met Toestemming
+AI is geschikt voor taken die ondersteunen, versnellen of verhelderen – altijd met menselijke controle. Neem een praktijkvoorbeeld uit een Nederlandse gemeente: AI wordt ingezet om lange dossiers samen te vatten voor ambtenaren die subsidieaanvragen beoordelen. In plaats van uren ploegen door pagina's, krijgt de ambtenaar een kernsamenvatting: "Burger voldoet aan criteria A en B, maar check C wegens mogelijke uitzondering." De ambtenaar controleert en beslist – AI versnelt het proces, reduceert fouten, en maakt het werk leuker, zonder de verantwoordelijkheid over te nemen.
 
-De R-bak is heilig – hier liggen gevoelige brondata zoals BSN-gegevens, medische info of strafrechtelijke feiten.[^8] AI krijgt hier zeer beperkte toegang: alleen noodzakelijke, gepseudonimiseerde data via gecontroleerde API's, gelogd en geauditeerd.[^9]
+Een ander voorbeeld: bij fraude-signalering in uitkeringen helpt AI patronen te spotten in geanonimiseerde data, zoals onregelmatige inkomstenstromen. Maar in plaats van automatisch te flaggen, geeft het een advies: "Dit patroon wijst op mogelijk onjuiste opgave – aanbevolen: extra verificatie." De ambtenaar onderzoekt – dit voorkomt discriminatie, zoals in gevallen waar algoritmes bepaalde groepen onevenredig raken, en houdt het ethisch verantwoord.
 
-Praktijkvoorbeeld: een AI helpt bij subsidiechecks. Onveilig: AI duikt rechtstreeks in de BRP en leest volledige historie – privacy-risico's galore.[^10] Veilig: burger geeft toestemming, applicatie vraagt alleen leeftijd, woonplaats en gezinssamenstelling op. AI analyseert dat, geeft advies. Geen vrije toegang, altijd begrensd.[^11]
+Of bij burgercontact: AI structureert inkomende emails, extracteert sleutelinfo zoals naam en urgentie, en routeert naar de juiste afdeling. In pilots bij gemeenten verkort dit de responstijd van dagen naar uren – een grapje waard: AI is de perfecte secretaresse, maar zonder koffie te morsen. Inzet wanneer: laag risico op fouten met impact, hoog waarde in snelheid/accuratesse, mens controleert output.
 
-```mermaid
-flowchart TD
-    A[Burger geeft toestemming] --> B[Applicatie vraagt specifieke data]
-    B --> C[R-bak levert alleen nodige info<br>(leeftijd, woonplaats, gezin)]
-    C --> D[AI analyseert]
-    D --> E[AI geeft advies: wel/niet in aanmerking]
-    E --> F[Ambtenaar controleert en beslist]
-    style C fill:#f9f,stroke:#333,stroke-width:2px
-    style D fill:#bbf,stroke:#333,stroke-width:2px
-```
+## Wanneer AI Niet Inzetten: Kritieke Besluiten en Autonome Acties
 
-Dit houdt AI restrictief – privacy-conform en verantwoord.[^12]
+AI niet inzetten voor autonome besluiten of acties met directe impact – te riskant, juridisch onmogelijk. Neem het voorbeeld van SyRI, het Nederlandse systeem voor fraudeopsporing dat verboden werd door de rechter: het profileerde burgers te autonoom, zonder voldoende transparantie, en leidde tot mogelijke discriminatie. Les: geen AI die zelfstandig subsidies toekent, boetes oplegt of zorg toewijst – dat vereist menselijk oordeel voor nuances en verantwoordelijkheid.
 
-## AI en de P-bak: Ruimte voor Analyses, Met Waarborgen
+Een ander praktijkvoorbeeld: bij persoonlijke situaties zoals uitkeringsbesluiten in gemeenten, waar AI wel patronen kan signaleren, maar niet mag beslissen – risico op fouten in complexe gevallen, zoals medische uitzonderingen, is te groot. Het zou een slechte grap zijn als AI je uitkering afwijst omdat het je kat als 'afhankelijk familielid' ziet. Niet inzetten wanneer: high-risk (EU AI Act), directe rechten raken, onvoorspelbaarheid leidt tot fouten, privacy-lekken of juridische problemen – zoals in het Clearview AI-geval, waar het bedrijf €30 miljoen boete kreeg van de Nederlandse AP voor illegale biometrische data-verwerking, of de toename van databreuken door AI-chatbots als ChatGPT in werkomgevingen, waaraan de AP waarschuwt.
 
-In de P-bak is meer speelruimte: statistieken, trends, geanonimiseerde datasets.[^13] Hier kan AI waarde toevoegen: patronen spotten, inzichten genereren voor beleid.
+## Juridische Duiding: Het Handelingskader van AI
 
-Toegestaan: geaggregeerde analyses, zoals gemiddelde woonlasten per wijk – geen individuele data, wel beleidsinzichten.[^14] Niet toegestaan: herleidbare profielen, discriminatie of zwarte lijsten zonder grondslag.[^15]
+Juridisch gezien mag AI in overheid geen handelingsbevoegdheid hebben – besluiten moeten herleidbaar zijn tot een menselijke ambtenaar (artikel 1:3 Awb en artikel 3:2 Awb). AI is tool, geen actor; het mag adviseren of voorbereiden, maar nooit bindende beslissingen nemen, rechten toekennen/ontzeggen of plichten opleggen. Dit voorkomt aansprakelijkheidskwesties en waarborgt democratie – mens blijft accountable. In EU AI Act high-risk categorieën vereist dit expliciete menselijke oversight.
 
-Voorbeeld: AI analyseert woonlasten – trend "stijgend" in Centrum-wijk. Privacy-conform, nuttig voor beleid.[^16]
+## AI als Ondersteunende Tool: Samenvatten, Genereren, Structureren – Met Menselijke Controle
 
-```mermaid
-flowchart LR
-    subgraph P-bak [P-bak: Verwerking]
-        A[Geaggregeerde data] --> B[AI analyseert trends]
-        B --> C[Inzichten: gemiddelde kosten, patronen]
-    end
-    subgraph R-bak [R-bak: Registratie]
-        D[Brondata] -- Geen directe toegang --> B
-    end
-    style P-bak fill:#ff9,stroke:#333
-    style R-bak fill:#9f9,stroke:#333
-```
+AI mag in overheid ondersteunen, niet leiden. Het kan lange dossiers samenvatten tot kernpunten – denk aan een 200-pagina rapport dat AI reduceert tot een overzichtelijke twee pagina's met highlights, zodat de ambtenaar snel de essentie grijpt en details controleert. Of conceptbrieven en adviezen genereren: AI draft een standaardbrief voor kwijtschelding, met placeholders voor persoonlijke info – ambtenaar past aan, voegt nuance toe, verstuurt. En ongestructureerde data structureren: een warrige burgeremail vol vragen wordt door AI geparsed – naam, BSN, urgentie eruit gehaald – en gerouteerd naar de juiste afdeling.
 
-AI verrijkt, maar blijft binnen waarborgen.[^17]
+Maar altijd met menselijke controle: ambtenaar checkt output, past aan, beslist – AI versnelt, mens waarborgt accuraatheid en ethiek. Rode lijn: nooit autonoom – geen besluiten, overboekingen, wijzigingen. Altijd menselijke controle.
 
-## Handelingskaders: Wat Mag AI Wel en Niet Doen?
+## Human in the Loop: De Mens Blijft Centraal
 
-Handelingsbevoegdheid van AI? Beperkt. AI mag voorbereiden en adviseren – nooit beslissen.[^18]
-
-**AI mag voorbereiden:** conceptteksten, samenvattingen, opties presenteren – altijd ambtenaar-controle.[^19] Voorbeeld: burger vraagt vergunning, AI genereert concept-beoordeling. Ambtenaar checkt, past aan, beslist.[^20]
-
-**AI mag adviseren:** aanbevelingen, risico's signaleren – duidelijk gemarkeerd als advies.[^21] Voorbeeld: "Op basis van vergelijkbare gevallen optie B" – ambtenaar beoordeelt zelf.
-
-**AI mag NOOIT beslissen:** geen zelfstandige besluiten, rechten toekennen/ontzeggen, geld overmaken.[^22] Waarom? Juridisch: besluit herleidbaar tot ambtenaar (Awb). Democratisch: mens verantwoordelijk. Ethisch: AI geen moreel kompas. Praktisch: AI kan fouten maken.[^23]
-
-## Technische Implementatie: Grenzen Afdwingen
-
-Technisch afdwingen met RBAC: AI role leest beperkt, schrijft drafts/logs – nooit officiële besluiten.[^24]
-
-API-gateway: validatie, permission check, privacy filter, logging.[^25]
-
-Audit trail: elke actie vastgelegd – input, output, reasoning, menselijke beslissing.[^26]
-
-On-premise: AI "in de kelder" – data verlaat nooit infrastructuur, compliance met AVG.[^27]
-
-```mermaid
-graph TD
-    subgraph Kasteel [Gemeente Kasteel - On-Premise]
-        R[R-bak: Brondata] <-->|Beperkte API| AI[AI Engine]
-        P[P-bak: Analyses] <--> AI
-        App[Applicaties] <--> AI
-        Logs[Audit Logs] <-- AI
-    end
-    External[Externe Clouds] -- Geen toegang --> Kasteel
-    style Kasteel fill:#ddf,stroke:#333,stroke-width:4px
-```
-
-Veilig binnen muren.[^28]
+Human in the Loop (HITL) is cruciaal: menselijke oversight in AI-processen. In overheid betekent dit: AI adviseert of prepareert, maar mens controleert, beslist. Voorbeeld: AI genereert subsidie-advies, ambtenaar valideert – voorkomt fouten, biases, waarborgt ethiek. HITL houdt AI accountable, past bij democratische waarden en AI Act.
 
 ## Ethische Handelingsbevoegdheid: Mens Centraal
 
-Techniek alleen volstaat niet – ethiek is key.[^29] Verantwoord: AI versnelt werk, voorkomt fouten, maakt toegankelijker – mens eindverantwoordelijk.[^30]
+Techniek alleen volstaat niet – ethiek is key. Verantwoord: AI versnelt werk, voorkomt tikfouten of vergeten checks, maakt informatie toegankelijker – mens eindverantwoordelijk.
 
-Problematisch: AI vervangt oordeel, discrimineert, machteloosheid creëert.[^31]
+Problematisch: AI vervangt oordeel, discrimineert (zelfs als "statistisch klopt"), creëert machteloosheid.
 
-Voorbeeld SyRI: verboden door black box, discriminatie-risico, disproportioneel.[^32] Les: transparant, uitlegbaar, proportioneel.[^33]
+Voorbeeld SyRI: verboden door black box, discriminatie-risico, disproportioneel. Les: transparant, uitlegbaar, proportioneel.
 
-Kaders: transparantie (burger weet AI-gebruik), proportionaliteit, menselijke controle, non-discriminatie (bias-testing).[^34]
+Kaders: transparantie (burger weet AI-gebruik), proportionaliteit, menselijke controle, non-discriminatie (bias-testing).
 
 ## Kritische Vraag: Vergroten We de Kloof Als We AI Niet Inzetten?
 
-Als we AI niet inzetten om burgers door regeldoolhoven te helpen, profiteren alleen digitaal vaardigen – vergroten we de kloof niet?[^35]
+Als we AI niet inzetten om burgers door regeldoolhoven te helpen, profiteren alleen digitaal vaardigen – vergroten we de kloof niet?
 
-Antwoord: ja, daarom wél inzetten – verantwoord, binnen kaders, voor iedereen toegankelijk.[^36]
+Antwoord: ja, daarom wél inzetten – verantwoord, binnen kaders, voor iedereen toegankelijk.
 
 ## Conclusie
 
-Goed ingerichte AI vergroot bestaanszekerheid, niet bureaucratie. Technische waarborgen (R-bak/P-bak, API's, trails), juridische kaders (bevoegdheid, transparantie), ethische grenzen (mens beslist, non-discriminatie), on-premise (kasteel).
+Goed ingerichte AI vergroot bestaanszekerheid, niet bureaucratie. Praktische waarborgen, juridische kaders (bevoegdheid, transparantie), ethische grenzen (mens beslist, non-discriminatie).
 
 AI voorbereidt en adviseert. Mens beslist.
 
-Met waarborgen maken we overheid toegankelijker, effectiever, menselijker – zonder concessies aan veiligheid, privacy, democratie.[^37]
-
-**Vorige blog:** AI en Techniek - Veilige integratie met MCP
-
-**Gerelateerd:** [Common Ground](https://commonground.nl)
+Met waarborgen maken we overheid toegankelijker, effectiever, menselijker – zonder concessies aan veiligheid, privacy, democratie.
 
 ## Bronnen
 
 Hieronder een totale, overzichtelijke lijst van alle gebruikte bronnen (alfabetisch gesorteerd op publicatie):
 
-- **Common Ground** - R-bak/P-bak structuur en principes: https://commonground.nl/[^5][^6][^7][^8]
-- **EU AI Act** - High-risk AI en transparantie: https://artificialintelligenceact.eu/[^3][^34]
-- **iBestuur** - Artikelen over AI-kaders in overheid: https://ibestuur.nl/[^1][^2][^4][^9][^11][^12][^15][^16][^17][^18][^19][^20][^21][^22][^23][^24][^25][^26][^27][^28][^29][^30][^31][^32][^33][^35][^36][^37]
-- **Rathenau Instituut** - Ethische AI en SyRI-analyse: diverse rapporten.[^31][^32]
-- **Rijksoverheid** - Visie generatieve AI en handelingskaders: https://open.overheid.nl/[^10][^14]
-- **VNG** - AI in gemeentelijke praktijk: https://vng.nl/[^13]
-- **Waag** - Open AI en ethiek: https://waag.org/[^30]
+- **Autoriteit Persoonsgegevens** - Boete Clearview AI: https://autoriteitpersoonsgegevens.nl/nl/nieuws/ap-boete-clearview-ai-voor-illegaal-verwerken-van-biometrische-gegevens[^11]
+- **EU AI Act** - High-risk AI en transparantie: https://artificialintelligenceact.eu/[^3][^13]
+- **iBestuur** - Artikelen over AI-kaders in overheid: https://ibestuur.nl/[^1][^2][^4][^5][^6][^7][^8][^9][^10][^12][^14][^15][^16][^17][^18][^19][^20][^21][^22][^23]
+- **NL Times** - Eindhoven data leak via AI sites: https://nltimes.nl/2025/12/19/eindhoven-officials-expose-resident-data-public-ai-websites[^13]
+- **Rathenau Instituut** - Ethische AI en SyRI-analyse: diverse rapporten.[^18]
+- **Rijksoverheid** - Algemene wet bestuursrecht (Awb): https://wetten.overheid.nl/BWBR0005537/2025-01-01[^12]
+- **Rijksoverheid** - Visie generatieve AI en handelingskaders: https://open.overheid.nl/[^19]
+- **VNG** - AI in gemeentelijke praktijk: https://vng.nl/[^20]
+- **Waag** - Open AI en ethiek: https://waag.org/[^15]

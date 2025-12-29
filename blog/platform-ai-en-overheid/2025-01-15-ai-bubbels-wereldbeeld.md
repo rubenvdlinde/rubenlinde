@@ -5,13 +5,9 @@ authors: [ruben]
 tags: [ai, platform-ai, overheid, ethiek, technologie, llm]
 ---
 
-# De AI die het beste bij jouw bubbel past - Hoe werkt AI eigenlijk?
+# De AI en Werking: Wat is AI eigenlijk?
 
-:::warning Status: Concept
-Deze blog is nog in concept-fase en wordt mogelijk nog aangepast voor publicatie.
-:::
-
-We krijgen vaak de vraag: welke AI moet ik kiezen? Mistral, Cursor, ChatGPT? Wat is het meest ethische en wat is het beste?
+Vanuit overheden krijgen we vaak de vraag : welke AI moet ik kiezen? Mistral, Cursor, ChatGPT? Wat is het meest ethische en wat is het beste?
 
 Een logische vraag, maar het antwoord is grappig: **Kies de AI die bij je social bubbel past.** Huh, die bubbels weer? Ja, AI's volgen net zo goed sociale media-bubbels, of althans ze zijn onderhevig aan "waarden, normen en wereldbeelden" aan de hand van de informatie die ze tot zich nemen of juist negeren. In die zin zijn ze niet heel anders dan een social media gebruiker. Maar om te begrijpen hoe dit werkt (en waarom je er op moet letten) moeten we eerst even duiken in wat AI eigenlijk is.
 
