@@ -8,7 +8,6 @@ tags:
     open-source,
     europa,
     soevereiniteit,
-    geopolitiek,
     eurostack,
     gaia-x,
     common-ground,

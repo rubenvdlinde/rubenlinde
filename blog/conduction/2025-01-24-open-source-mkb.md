@@ -3,16 +3,7 @@ slug: open-source-mkb-public-functionality
 title: Open Source voor het MKB - Van Public Code naar Public Functionality
 date: 2025-01-24
 authors: [ruben]
-tags:
-  [
-    open-source,
-    public-functionality,
-    common-ground,
-    europa,
-    saas,
-    nextcloud,
-    openregister,
-  ]
+tags: [open-source, common-ground, europa, nextcloud, openregister]
 description: Van Public Money is Public Code naar Public Money is Public Functionality. Hoe overheids-software het MKB kan helpen en Europa sterker kan maken door generieke tools te bouwen die iedereen kan gebruiken.
 ---
 
