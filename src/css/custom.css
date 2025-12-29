@@ -812,7 +812,17 @@ article a {
 }
 
 .blog-card__date {
+  /* Base styling only */
+}
+
+/* Dark mode */
+[data-theme='dark'] .blog-card__date {
   color: rgba(255, 255, 255, 0.8);
+}
+
+/* Light mode */
+[data-theme='light'] .blog-card__date {
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .blog-card__separator {
