@@ -123,44 +123,80 @@ Hieronder verwijzingen naar toepasbare EuroStack-componenten en gerelateerde ope
 
 Deze componenten en tools passen perfect bij veilige, soevereine AI-integratie in overheidscontext.
 
-## Bronnen
+[^1]: **Common Ground** - [Veilige AI-integratie in overheidslandschap](https://commonground.nl/groups/view/6f1a5b6c-4d0a-4b0a-8b0a-0b0a0b0a0b0a/ai-in-common-ground)
 
-- [^1]: **Common Ground** - [Veilige AI-integratie in overheidslandschap](https://commonground.nl/groups/view/6f1a5b6c-4d0a-4b0a-8b0a-0b0a0b0a0b0a/ai-in-common-ground)
-- [^2]: **iBestuur** - [Artikelen over AI in overheid](https://ibestuur.nl/artikel/ai-in-de-overheid-veilig-integreren)
-- [^3]: **EU AI Act** - [Officiële tekst over high-risk AI-systemen](https://artificialintelligenceact.eu/the-act/)
-- [^4]: **Anthropic** - [Model Context Protocol (MCP) documentatie](https://docs.anthropic.com/en/api/messages)
-- [^5]: **Rathenau Instituut** - Rapporten over AI-ethiek en bias: diverse publicaties over transparantie
-- [^6]: **Rathenau Instituut** - Rapporten over AI-ethiek en bias: diverse publicaties over transparantie
-- [^7]: **n8n** - [Workflow engine voor business logica](https://n8n.io/)
-- [^8]: **n8n** - [Workflow engine voor business logica](https://n8n.io/)
-- [^9]: **Rijksoverheid** - [Visie op generatieve AI](https://open.overheid.nl/documenten/9aa7b64a-be51-4fc4-8dac-1d4a3e0b02ba/file)
-- [^10]: **Flowable** - [Open source DMN engine (opvolger Camunda)](https://flowable.com/)
-- [^11]: **Anthropic** - [Model Context Protocol (MCP) documentatie](https://docs.anthropic.com/en/api/messages)
-- [^12]: **iBestuur** - [Artikelen over AI in overheid](https://ibestuur.nl/artikel/ai-in-de-overheid-veilig-integreren)
-- [^13]: **VNG** - [Common Ground en AI](https://vng.nl/projecten/common-ground-ai)
-- [^14]: **regels.overheid.nl** - [Machine-leesbare regelgeving](https://regels.overheid.nl/)
-- [^15]: **Waag** - [Discussies over open AI in publieke sector](https://waag.org/nl/article/open-ai-overheid)
-- [^16]: **Rathenau Instituut** - Rapporten over AI-ethiek en bias
-- [^17]: **Anthropic** - [Model Context Protocol (MCP) documentatie](https://docs.anthropic.com/en/api/messages)
-- [^18]: **OpenSkills.io** - [Context framework for AI](https://openskills.io/)
-- [^19]: **OAuth** - [Standaard voor token-based access](https://oauth.net/)
-- [^20]: **n8n** - [Workflow engine voor business logica](https://n8n.io/)
-- [^21]: **n8n** - [Workflow engine voor business logica](https://n8n.io/)
-- [^22]: **Flowable** - [Open source DMN engine](https://flowable.com/)
-- [^23]: **Waag** - [Discussies over open AI](https://waag.org/nl/article/open-ai-overheid)
-- [^24]: **regels.overheid.nl** - [Machine-leesbare regelgeving](https://regels.overheid.nl/)
-- [^25]: **EU AI Act** - [AI Act](https://artificialintelligenceact.eu/the-act/)
-- [^26]: **Algemene wet bestuursrecht (Awb)** - [Wet](https://wetten.overheid.nl/)
-- [^27]: **OAuth** - [Token-based access](https://oauth.net/)
-- [^28]: **Hugging Face** - [On-premise model hosting](https://huggingface.co/)
-- [^29]: **Ollama** - [Local AI inference](https://ollama.com/)
-- [^30]: **NL Times** - [Eindhoven data leak via AI sites](https://nltimes.nl/2025/12/19/eindhoven-officials-expose-resident-data-public-ai-websites)
-- [^31]: **EU AI Act** - [Human oversight requirements](https://artificialintelligenceact.eu/the-act/)
-- [^32]: **Waag** - [Open AI en verantwoordelijkheid](https://waag.org/nl/article/open-ai-overheid)
-- [^33]: **EuroStack** - [SovereignAI](https://eurostack.eu/)
-- [^34]: **EuroStack** - [DataCommons](https://eurostack.eu/)
-- [^35]: **EuroStack** - [EuroOS](https://eurostack.eu/)
-- [^36]: **n8n** - [Workflow automation](https://n8n.io/)
-- [^37]: **Flowable** - [DMN/BPMN engine](https://flowable.com/)
-- [^38]: **Ollama** - [Local AI inference](https://ollama.com/)
-- [^39]: **Hugging Face** - [Model repository](https://huggingface.co/)
+[^2]: **iBestuur** - [Artikelen over AI in overheid](https://ibestuur.nl/artikel/ai-in-de-overheid-veilig-integreren)
+
+[^3]: **EU AI Act** - [Officiële tekst over high-risk AI-systemen](https://artificialintelligenceact.eu/the-act/)
+
+[^4]: **Anthropic** - [Model Context Protocol (MCP) documentatie](https://docs.anthropic.com/en/api/messages)
+
+[^5]: **Rathenau Instituut** - Rapporten over AI-ethiek en bias: diverse publicaties over transparantie
+
+[^6]: **Rathenau Instituut** - Rapporten over AI-ethiek en bias: diverse publicaties over transparantie
+
+[^7]: **n8n** - [Workflow engine voor business logica](https://n8n.io/)
+
+[^8]: **n8n** - [Workflow engine voor business logica](https://n8n.io/)
+
+[^9]: **Rijksoverheid** - [Visie op generatieve AI](https://open.overheid.nl/documenten/9aa7b64a-be51-4fc4-8dac-1d4a3e0b02ba/file)
+
+[^10]: **Flowable** - [Open source DMN engine (opvolger Camunda)](https://flowable.com/)
+
+[^11]: **Anthropic** - [Model Context Protocol (MCP) documentatie](https://docs.anthropic.com/en/api/messages)
+
+[^12]: **iBestuur** - [Artikelen over AI in overheid](https://ibestuur.nl/artikel/ai-in-de-overheid-veilig-integreren)
+
+[^13]: **VNG** - [Common Ground en AI](https://vng.nl/projecten/common-ground-ai)
+
+[^14]: **regels.overheid.nl** - [Machine-leesbare regelgeving](https://regels.overheid.nl/)
+
+[^15]: **Waag** - [Discussies over open AI in publieke sector](https://waag.org/nl/article/open-ai-overheid)
+
+[^16]: **Rathenau Instituut** - Rapporten over AI-ethiek en bias
+
+[^17]: **Anthropic** - [Model Context Protocol (MCP) documentatie](https://docs.anthropic.com/en/api/messages)
+
+[^18]: **OpenSkills.io** - [Context framework for AI](https://openskills.io/)
+
+[^19]: **OAuth** - [Standaard voor token-based access](https://oauth.net/)
+
+[^20]: **n8n** - [Workflow engine voor business logica](https://n8n.io/)
+
+[^21]: **n8n** - [Workflow engine voor business logica](https://n8n.io/)
+
+[^22]: **Flowable** - [Open source DMN engine](https://flowable.com/)
+
+[^23]: **Waag** - [Discussies over open AI](https://waag.org/nl/article/open-ai-overheid)
+
+[^24]: **regels.overheid.nl** - [Machine-leesbare regelgeving](https://regels.overheid.nl/)
+
+[^25]: **EU AI Act** - [AI Act](https://artificialintelligenceact.eu/the-act/)
+
+[^26]: **Algemene wet bestuursrecht (Awb)** - [Wet](https://wetten.overheid.nl/)
+
+[^27]: **OAuth** - [Token-based access](https://oauth.net/)
+
+[^28]: **Hugging Face** - [On-premise model hosting](https://huggingface.co/)
+
+[^29]: **Ollama** - [Local AI inference](https://ollama.com/)
+
+[^30]: **NL Times** - [Eindhoven data leak via AI sites](https://nltimes.nl/2025/12/19/eindhoven-officials-expose-resident-data-public-ai-websites)
+
+[^31]: **EU AI Act** - [Human oversight requirements](https://artificialintelligenceact.eu/the-act/)
+
+[^32]: **Waag** - [Open AI en verantwoordelijkheid](https://waag.org/nl/article/open-ai-overheid)
+
+[^33]: **EuroStack** - [SovereignAI](https://eurostack.eu/)
+
+[^34]: **EuroStack** - [DataCommons](https://eurostack.eu/)
+
+[^35]: **EuroStack** - [EuroOS](https://eurostack.eu/)
+
+[^36]: **n8n** - [Workflow automation](https://n8n.io/)
+
+[^37]: **Flowable** - [DMN/BPMN engine](https://flowable.com/)
+
+[^38]: **Ollama** - [Local AI inference](https://ollama.com/)
+
+[^39]: **Hugging Face** - [Model repository](https://huggingface.co/)

@@ -11,10 +11,6 @@ tags: [ai, llm, overheid]
 Deze blog is geschreven in het kader van [Platform AI en Overheid](https://www.platformaienoverheid.nl/), een initiatief gericht op verantwoorde AI-adoptie binnen de publieke sector.
 :::
 
-:::warning Status: Concept
-Deze blog is nog in concept-fase en wordt mogelijk nog aangepast voor publicatie.
-:::
-
 Vanuit overheden krijgen we vaak de vraag: welke AI moet ik kiezen? Mistral, Cursor, ChatGPT? Wat is het meest ethische en wat is het beste?
 
 Een logische vraag, maar het antwoord is grappig: **Kies de AI die bij je social bubbel past.** Huh, die bubbels weer? Ja, AI's volgen net zo goed sociale media-bubbels, of althans ze zijn onderhevig aan "waarden, normen en wereldbeelden" aan de hand van de informatie die ze tot zich nemen of juist negeren. In die zin zijn ze niet heel anders dan een social media gebruiker. Maar om te begrijpen hoe dit werkt (en waarom je er op moet letten) moeten we eerst even duiken in wat AI eigenlijk is.
@@ -106,14 +102,26 @@ Hieronder verwijzingen naar toepasbare EuroStack-componenten en gerelateerde ope
 
 Deze componenten en tools passen perfect bij veilige, soevereine AI-integratie in overheidscontext.
 
-## Bronnen
+[^1]: **Hugging Face** - [Uitleg over LLM's en training](https://huggingface.co/docs/transformers/en/model_doc/llm)
 
-Hieronder een totale, overzichtelijke lijst van alle gebruikte bronnen (alfabetisch gesorteerd op publicatie):
+[^2]: **Stanford HAI** - [How AI language models work and predictions](https://hai.stanford.edu/news/how-large-language-models-work)
 
-- **Hugging Face** - Uitleg over LLM's en training: https://huggingface.co/docs/transformers/en/model_doc/llm
-- **iBestuur** - AI-ethiek en data in overheid: https://ibestuur.nl/artikel/ai-ethiek-en-data-in-overheid
-- **OpenAI** - Documentatie over hallucinaties: https://openai.com/research/hallucinations-in-llms
-- **Rathenau Instituut** - Rapport over AI-bias: https://www.rathenau.nl/nl/digitale-samenleving/ai-bias-en-ethiek
-- **Rijksoverheid** - Visie op AI-training en ethiek: https://open.overheid.nl/documenten/9aa7b64a-be51-4fc4-8dac-1d4a3e0b02ba/file
-- **VNG** - AI in gemeentelijke praktijk: https://vng.nl/projecten/ai-in-overheid
-- **Waag** - Discussies over AI-bubbles: https://waag.org/nl/article/ai-en-sociale-media-bubbles
+[^3]: **iBestuur** - [AI-ethiek en data in overheid](https://ibestuur.nl/artikel/ai-ethiek-en-data-in-overheid)
+
+[^4]: **Rathenau Instituut** - [Rapport over AI-bias en trainingsdata](https://www.rathenau.nl/nl/digitale-samenleving/ai-bias-en-ethiek)
+
+[^5]: **MIT Technology Review** - [AI fairness and statistical bias](https://www.technologyreview.com/topic/ai-fairness/)
+
+[^6]: **Rathenau Instituut** - [AI en kennisdeficiëntie](https://www.rathenau.nl/nl/digitale-samenleving/ai-bias-en-ethiek)
+
+[^7]: **Waag** - [Discussies over AI-neutraliteit en bias](https://waag.org/nl/article/ai-en-sociale-media-bubbles)
+
+[^8]: **Rijksoverheid** - [Visie op AI-training en ethiek](https://open.overheid.nl/documenten/9aa7b64a-be51-4fc4-8dac-1d4a3e0b02ba/file)
+
+[^9]: **OpenAI** - [Documentatie over hallucinaties in LLMs](https://openai.com/research/hallucinations-in-llms)
+
+[^10]: **VNG** - [AI in gemeentelijke praktijk: waarborgen en controle](https://vng.nl/projecten/ai-in-overheid)
+
+[^11]: **Cursor** - [AI-powered code editor met verschillende LLM-backends](https://cursor.sh/)
+
+[^12]: **Mistral AI** - [Europees AI-model met transparantie](https://mistral.ai/)

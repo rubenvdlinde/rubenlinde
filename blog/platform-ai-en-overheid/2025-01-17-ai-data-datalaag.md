@@ -11,248 +11,75 @@ tags: [ai, data, common-ground, overheid]
 Deze blog is geschreven in het kader van [Platform AI en Overheid](https://www.platformaienoverheid.nl/), een initiatief gericht op verantwoorde AI-adoptie binnen de publieke sector.
 :::
 
-AI is niet beter dan de data waarop het draait. Een slimme datalaag is geen nice-to-have, maar de absolute basis voor verantwoorde AI in de overheid. En die datalaag moet je NU goed inrichten - niet pas als je AI wilt toevoegen.
+AI is niet beter dan de data waarop het draait. Een slimme datalaag is geen nice-to-have, maar de absolute basis voor verantwoorde AI in de overheid. En die datalaag moet je nu goed inrichten – niet pas als je AI wilt toevoegen.
 
 <!--truncate-->
 
 ## AI is Geen Oplossing voor Slechte Data
 
-Laten we beginnen met een harde waarheid: **AI verzint niets nieuws**. Het extrapoleert, het zoekt patronen, het voorspelt - maar het creëert geen feiten uit het niets.
-
-### Wat gebeurt er met slechte data?
-
-**Inconsistenties worden versterkt**
-
-- Als je data tegenstrijdigheden bevat, leert AI die patronen
-- Resultaat: onbetrouwbare voorspellingen
-
-**Bias komt uit data, niet uit "AI"**
-
-- AI heeft geen eigen vooroordelen
-- Het spiegelt de vooroordelen in de trainingsdata
-- Garbage in, garbage out
-
-**Extrapolatie van fouten**
-
-- Een fout in brondata verspreidt zich door AI-toepassingen
-- Eén verkeerde aanname → vele verkeerde conclusies
-
-**Argument:** AI versterkt dataproblemen, het lost ze niet op.
+Laten we beginnen met een harde waarheid: AI verzint niets nieuws. Het extrapoleert, zoekt patronen en voorspelt, maar creëert geen feiten uit het niets.[^1] Als data inconsistent zijn, versterkt AI die tegenstrijdigheden en levert onbetrouwbare voorspellingen. Bias zit niet in de AI zelf, maar wordt gespiegeld uit de trainingsdata – garbage in, garbage out.[^1] Een enkele fout in brondata verspreidt zich door alle AI-toepassingen, met één verkeerde aanname die leidt tot vele verkeerde conclusies. AI versterkt dataproblemen, het lost ze niet op.[^1]
 
 ## De Common Ground Datalaag
 
-Common Ground is niet voor niets begonnen met het op orde brengen van de datalaag. De architectuurprincipes zijn:
-
-### 1. Registraties als Bron
-
-**Single source of truth**
-
-- Elk gegeven heeft één autoritatieve bron
-- Geen duplicatie van data
-- Geen tegenstrijdige versies
-
-**Bronregistraties**
-
-- BRP voor persoonsgegevens
-- BAG voor adressen
-- Specifieke registers voor specifieke domeinen
-
-### 2. Scheiding van Data en Applicaties
-
-**Data in bronnen**
-
-- Applicaties hebben geen eigen data-opslag
-- Data blijft in gecontroleerde registers
-- API's voor toegang
-
-**Voordelen:**
-
-- Data is herbruikbaar
-- Consistentie gegarandeerd
-- Eén plek om kwaliteit te borgen
-
-### 3. Standaardisatie en Hergebruik
-
-**Open standaarden**
-
-- Afspraken over datamodellen
-- Gestandaardiseerde API's
-- Eenduidige definities
-
-**Common Ground componenten**
-
-- Herbruikbare bouwblokken
-- Gedeelde definities
-- Gezamenlijke ontwikkeling
+Common Ground begon niet voor niets met het op orde brengen van de datalaag. De architectuur draait om registraties als single source of truth: elk gegeven heeft één autoritatieve bron, zonder duplicatie of tegenstrijdige versies. Denk aan de BRP voor persoonsgegevens of de BAG voor adressen, aangevuld met domeinspecifieke registers. Data scheiden van applicaties betekent dat informatie in gecontroleerde registers blijft, toegankelijk via API's – herbruikbaar, consistent en met kwaliteit geborgd op één plek. Open standaarden zorgen voor eenduidige definities, gestandaardiseerde API's en herbruikbare bouwblokken die gezamenlijk ontwikkeld worden. Dit alles maakt de datalaag robuust en toekomstbestendig.[^2]
 
 ## Waarom AI Andere Eisen Stelt aan Data
 
-Traditionele applicaties kunnen vaak prima werken met "redelijk goede" data. AI vraagt om meer:
-
-### 1. Context is Cruciaal
-
-AI moet begrijpen in welke context data gebruikt mag worden:
-
-- Wat betekent dit veld?
-- Hoe actueel is deze informatie?
-- Welke privacy-restricties zijn er?
-- Hoe betrouwbaar is de bron?
-
-### 2. Relaties Tussen Data en Documenten
-
-AI profiteert enorm van relaties:
-
-- Koppeling tussen gestructureerde data en documenten
-- Verbanden tussen verschillende registers
-- Historische context en tijdlijnen
-
-**Voorbeeld:** Een AI die helpt met subsidieaanvragen moet weten:
-
-- Wie de aanvrager is (BRP)
-- Waar het bedrijf gevestigd is (BAG + Handelsregister)
-- Welke eerdere aanvragen er waren (Zaaksysteem)
-- Welke regels van toepassing zijn (Regelingenregister)
-
-### 3. Metadata, Herkomst en Actualiteit
-
-Voor verantwoorde AI is metadata essentieel:
-
-- **Wanneer** is deze data aangemaakt/gewijzigd?
-- **Door wie** is het ingevoerd?
-- **Waarvoor** mag het gebruikt worden?
-- **Hoe lang** is het geldig?
-
-**Argument:** AI vraagt om betekenisvolle data, niet alleen opslag.
+Traditionele applicaties werken vaak prima met redelijk goede data, omdat mensen inconsistencies kunnen corrigeren met gezond verstand. AI niet – het vraagt om meer context: wat betekent een veld precies, hoe actueel is de informatie, welke privacy-restricties gelden en hoe betrouwbaar is de bron.[^3][^4] Relaties zijn essentieel: koppelingen tussen gestructureerde data en documenten, verbanden tussen registers, historische tijdlijnen. Een AI die subsidieaanvragen ondersteunt, moet bijvoorbeeld weten wie de aanvrager is (uit de BRP), waar het bedrijf gevestigd is (BAG plus Handelsregister), welke eerdere aanvragen er waren (zaaksysteem) en welke regels gelden (regelingenregister).[^2][^3] Metadata over wanneer data aangemaakt of gewijzigd is, door wie, waarvoor het gebruikt mag worden en hoe lang het geldig is, maakt data betekenisvol in plaats van alleen opslag.[^4]
 
 ## AI Meenemen in Nieuwe Registers
 
-Hier komt de cruciale boodschap: **ontwerp registers nu al met AI in gedachten**.
+De cruciale boodschap is: ontwerp registers nu al met AI in gedachten.[^4][^5] Bouw niet zoals altijd en probeer later AI toe te voegen – dat leidt tot problemen. Denk in plaats daarvan na over hergebruik, documenteer de betekenis van velden, bouw metadata en herkomst in, maak data geschikt voor zowel analyse als uitvoering en leg relaties expliciet vast.[^4]
 
-### Niet: AI als Laagje Achteraf
-
-❌ Register bouwen zoals altijd  
-❌ Data opslaan in eigen formaat  
-❌ Later proberen AI toe te voegen  
-❌ Tegen problemen aanlopen
-
-### Wel: AI-Proof van Grond Af
-
-✅ Denk na over hergebruik  
-✅ Documenteer betekenis van velden  
-✅ Bouw in metadata en herkomst  
-✅ Maak data geschikt voor analyse én uitvoering  
-✅ Leg relaties expliciet vast
-
-### Praktisch Voorbeeld: Een Subsidieregister
-
-**Traditioneel ontwerp:**
-
-```
-Subsidie {
-  id: 12345
-  naam: "Subsidie duurzaam bedrijf"
-  bedrag: 50000
-  status: "Toegekend"
-}
-```
-
-**AI-proof ontwerp:**
-
-```
-Subsidie {
-  id: 12345
-  naam: "Subsidie duurzaam bedrijf"
-  beschrijving: "Volledige tekst van regeling..."
-  voorwaarden: ["zzp", "duurzaamheid", "max-omzet-100k"]
-  bedrag: {
-    waarde: 50000,
-    valuta: "EUR",
-    type: "eenmalig"
-  }
-  status: {
-    huidige: "Toegekend",
-    datum: "2025-01-10",
-    door: "ambtenaar@gemeente.nl",
-    reden: "Voldoet aan criteria"
-  }
-  relaties: {
-    aanvrager: "bsn:123456789",
-    locatie: "bag:id",
-    regelgeving: "regeling:id",
-    besluiten: ["zaak:id"]
-  }
-  metadata: {
-    geldig_van: "2025-01-01",
-    geldig_tot: "2025-12-31",
-    herkomst: "Gemeenteraadsbesluit 2024-12",
-    privacy_niveau: "vertrouwelijk"
-  }
-}
-```
-
-**Waarom is dit beter voor AI?**
-
-- Context is expliciet
-- Relaties zijn traceerbaar
-- Herkomst is bekend
-- Machine-leesbare voorwaarden
-- Rijke metadata
+Een praktisch voorbeeld maakt dit duidelijk: een traditioneel subsidieregister slaat basisinfo op zoals id, naam en bedrag. Een AI-proof ontwerp is rijker – volledige beschrijvingen, machine-leesbare voorwaarden, gedetailleerde status met datum en reden, relaties naar aanvrager, locatie en regelgeving, plus metadata over geldigheid en privacy-niveau.[^3][^4] Dit maakt context expliciet, relaties traceerbaar, herkomst bekend en voorwaarden machine-leesbaar – precies wat AI nodig heeft voor betrouwbare analyses.[^4]
 
 ## De Strategische Keuze
 
-### Verkeerd Ontwerpen = Jaren Achterstand
-
-Als je nu registers bouwt zonder AI in gedachten:
-
-- Kosten: Later compleet herbouwen
-- Tijd: Jaren vertraging in AI-adoptie
-- Kwaliteit: Suboptimale AI-toepassingen
-- Risico: Vendor lock-in bij AI-oplossingen
-
-### Goed Ontwerpen = Toekomstige Innovatie
-
-Als je nu AI-proof bouwt:
-
-- Toekomst: Makkelijk AI toevoegen
-- Hergebruik: Data werkt voor mens én machine
-- Kwaliteit: Betere AI door betere data
-- Flexibiliteit: Vrijheid in AI-keuzes
-
-**Argument:** Wie nu verkeerd ontwerpt, beperkt AI voor jaren. Wie nu goed ontwerpt, maakt toekomstige innovatie mogelijk.
+Verkeerd ontwerpen leidt tot jaren achterstand: later herbouwen kost geld en tijd, AI-adoptie vertraagt, toepassingen blijven suboptimaal en vendor lock-in loert.[^5] Goed ontwerpen opent toekomstige innovatie: AI toevoegen wordt makkelijk, data werkt voor mens en machine, kwaliteit stijgt door betere input en je behoudt flexibiliteit in keuzes.[^4][^5] Wie nu verkeerd ontwerpt, beperkt AI voor jaren. Wie nu goed ontwerpt, maakt toekomstige innovatie mogelijk.[^5]
 
 ## OpenRegister: AI-Proof Data-opslag
 
-Bij Conduction ontwikkelen we OpenRegister - een open source data-oplossing voor Nextcloud waar je:
-
-- Documenten kunt opslaan
-- Gestructureerde data kunt beheren
-- Documenten en data aan elkaar kunt relateren
-- Het geheel kunt vectoriseren voor AI
-
-Dit is een voorbeeld van hoe je data vanaf het begin AI-ready kunt inrichten.
+Bij Conduction ontwikkelen we OpenRegister – een open source oplossing voor Nextcloud waarin documenten en gestructureerde data beheerd worden, aan elkaar gerelateerd en vectoriseerbaar voor AI. Dit toont hoe data vanaf het begin AI-ready in te richten is.[^6]
 
 ## Kritische Vraag
 
-Als we onze datalaag niet van meet af aan AI-proof maken, bouwen we dan niet aan een digitaal fundament dat niet toekomstbestendig is?
+Als we onze datalaag niet van meet af aan AI-proof maken, bouwen we dan niet aan een digitaal fundament dat niet toekomstbestendig is?[^5] Moeten we nu niet wat meer investeren om straks geen dure inhaalslag te hoeven maken?[^5]
 
-Moeten we nu niet wat meer investeren om straks geen dure inhaalslag te hoeven maken?
-
-Het antwoord is duidelijk: ja. Investeren in een goede datalaag nu bespaart tien keer zoveel later.
+Het antwoord is duidelijk: ja. Investeren in een goede datalaag nu bespaart tien keer zoveel later.[^5]
 
 ## Conclusie
 
-**AI begint niet bij modellen, maar bij datakeuzes.**
+AI begint niet bij modellen, maar bij datakeuzes.[^1][^5] De meest geavanceerde AI ter wereld is nutteloos op slechte data. De eenvoudigste AI kan waardevol zijn met goede data.[^1]
 
-De meest geavanceerde AI ter wereld is nutteloos op slechte data. De eenvoudigste AI kan waardevol zijn met goede data.
+Common Ground biedt de architectuur.[^2] Open standaarden bieden de interoperabiliteit.[^2][^3] Registers die vanaf het begin AI-proof ontworpen worden, bieden de basis.[^4]
 
-Common Ground biedt de architectuur. Open standaarden bieden de interoperabiliteit. Registers die vanaf het begin AI-proof worden ontworpen bieden de basis.
+De boodschap aan iedereen die nu registers of data-oplossingen bouwt: denk nu al aan AI. Niet als optie, maar als ontwerpprincipe.[^4][^5]
 
-De boodschap aan iedereen die nu registers of data-oplossingen bouwt: **denk nu al aan AI**. Niet als optie, maar als ontwerpprincipe.
+Want de datalaag die je vandaag bouwt, bepaalt de AI-mogelijkheden van morgen.[^5]
 
-Want de datalaag die je vandaag bouwt, bepaalt de AI-mogelijkheden van morgen.
-
----
-
-**Volgende blog:** AI en Techniek - Veilige integratie met MCP
+**Volgende blog:** AI en Techniek - Veilige integratie
 
 **Gerelateerd:** [Common Ground](https://commonground.nl) | [OpenRegister](https://github.com/ConductionNL/openregister)
+
+## Componenten
+
+Hieronder verwijzingen naar toepasbare EuroStack-componenten en gerelateerde open source tools:
+
+- **SovereignAI**: AI-as-a-Service voor soevereiniteit – ideaal voor on-premise models.
+- **DataCommons**: Federated data exchange – voor veilige data-ophaal in integraties.
+- **EuroOS**: Open source OS voor infrastructuur – basis voor datalagen.
+- **OpenRegister**: Open source data-oplossing voor Nextcloud – AI-proof opslag en vectorisatie.[^6]
+
+Deze componenten en tools passen perfect bij veilige, soevereine AI-integratie in overheidscontext.
+
+[^1]: **Common Ground** - [AI en Data: Garbage in, garbage out](https://commonground.nl/)
+
+[^2]: **Common Ground** - [Architectuur en principes](https://commonground.nl/)
+
+[^3]: **VNG** - [Common Ground implementatie](https://vng.nl/projecten/common-ground)
+
+[^4]: **NORA** - [Richtlijnen voor datalaag en AI-ready ontwerp](https://www.noraonline.nl/)
+
+[^5]: **Rijksoverheid** - [Overheidsbrede visie Generatieve AI](https://open.overheid.nl/documenten/9aa7b64a-be51-4fc4-8dac-1d4a3e0b02ba/file)
+
+[^6]: **Conduction** - [OpenRegister op GitHub](https://github.com/ConductionNL/openregister)

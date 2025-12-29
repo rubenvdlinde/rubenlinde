@@ -11,10 +11,6 @@ tags: [ai, open-source, common-ground, overheid]
 Deze blog is geschreven in het kader van [Platform AI en Overheid](https://www.platformaienoverheid.nl/), een initiatief gericht op verantwoorde AI-adoptie binnen de publieke sector.
 :::
 
-:::warning Status: Concept
-Deze blog is nog in concept-fase en wordt mogelijk nog aangepast voor publicatie.
-:::
-
 Stel je voor: een ambtenaar krijgt een AI-advies over een uitkeringsaanvraag. Het systeem zegt "afwijzen". Maar waarom? Welke data zijn gebruikt? Zit er bias in? Kan de burger uitleg krijgen? In een democratische samenleving is dit geen technische vraag, maar een bestuurlijke noodzaak. Kunstmatige intelligentie kan een krachtige partner zijn voor de overheid – sneller werken, betere analyses, meer burgergericht. Maar alleen als we begrijpen hoe het werkt, kunnen verantwoorden wat het doet, en kunnen ingrijpen als het fout gaat. Open source is daarbij geen technische hobby, maar een vereiste voor transparantie, controle en vertrouwen.[^1][^2]
 
 In een tijd waarin gesloten AI-systemen – black boxes van grote techbedrijven – domineren, kiezen wij voor een andere weg. Een weg die past bij onze waarden: open, inspecteerbaar, samen verbeterbaar. Dit blog legt uit waarom open source essentieel is voor overheids-AI, hoe Common Ground daarbij helpt, en waarom dit geen luxe is, maar een must.
@@ -97,38 +93,68 @@ De vraag is niet óf we open source moeten gebruiken voor AI, maar hoe snel we d
 
 **Gerelateerd:** [Common Ground](https://commonground.nl)
 
-## Bronnen
+[^1]: **Free Software Foundation Europe** - [Public Money, Public Code](https://publiccode.eu/)
 
-- [^1]: **Free Software Foundation Europe** - [Public Money, Public Code](https://publiccode.eu/)
-- [^2]: **Free Software Foundation Europe** - [Public Money, Public Code](https://publiccode.eu/)
-- [^3]: **iBestuur** - [Open source werken; wat houdt ons nog tegen?](https://ibestuur.nl/artikel/open-source-werken-wat-houdt-ons-nog-tegen/)
-- [^4]: **Algoritmeregister Nederland** - Voorbeelden transparantie in praktijk
-- [^5]: **iBestuur** - [Open source werken](https://ibestuur.nl/artikel/open-source-werken-wat-houdt-ons-nog-tegen/)
-- [^6]: **Rathenau Instituut** - Rapporten over AI en transparantie: diverse publicaties over ethiek en bias in AI
-- [^7]: **EU AI Act** - [Officiële tekst en uitleg over transparantie-eisen](https://artificialintelligenceact.eu/the-act/)
-- [^8]: **Rathenau Instituut** - Rapporten over ethiek en bias in AI
-- [^9]: **Rijksoverheid** - [Overheidsbrede visie Generatieve AI](https://open.overheid.nl/documenten/9aa7b64a-be51-4fc4-8dac-1d4a3e0b02ba/file)
-- [^10]: **Rijksoverheid** - [Cloud Act en datasoevereiniteit](https://www.rijksoverheid.nl/)
-- [^11]: **iBestuur** - [Open source AI](https://ibestuur.nl/)
-- [^12]: **iBestuur** - [Open source AI](https://ibestuur.nl/)
-- [^13]: **Rathenau Instituut** - Controleerbaarheid AI-systemen
-- [^14]: **Common Ground** - [Principes hergebruik](https://commonground.nl/)
-- [^15]: **iBestuur** - [Open source community](https://ibestuur.nl/)
-- [^16]: **iBestuur** - [Vendor lock-in risico's](https://ibestuur.nl/)
-- [^17]: **Rijksoverheid** - [Wet open overheid](https://www.rijksoverheid.nl/)
-- [^18]: **Rijksoverheid** - [Nederlandse Digitaliseringsstrategie](https://www.digitaleoverheid.nl/)
-- [^19]: **Common Ground** - [Officiële website](https://commonground.nl/)
-- [^20]: **NORA** - [Richtlijnen open source en hergebruik](https://www.noraonline.nl/)
-- [^21]: **VNG / Common Ground** - [Principes en voorbeelden](https://commonground.nl/)
-- [^22]: **VNG / Common Ground** - [Principes en voorbeelden](https://commonground.nl/)
-- [^23]: **VNG / Common Ground** - [Principes en voorbeelden](https://commonground.nl/)
-- [^24]: **iBestuur** - [Open source AI modellen](https://ibestuur.nl/)
-- [^25]: **iBestuur** - [Transparante prompts](https://ibestuur.nl/)
-- [^26]: **EU AI Act** - [Ethische kaders AI](https://artificialintelligenceact.eu/the-act/)
-- [^27]: **Rathenau Instituut** - Bias in training data
-- [^28]: **EU AI Act** - [Europese open source modellen](https://artificialintelligenceact.eu/the-act/)
-- [^29]: **Algoritmeregister Nederland** - [Recht op uitleg](https://algoritmes.overheid.nl/)
-- [^30]: **iBestuur** - [AI-tools voor ambtenaren](https://ibestuur.nl/)
-- [^31]: **iBestuur** - [Bestuurlijke verantwoording AI](https://ibestuur.nl/)
-- [^32]: **Overheidsbrede handreiking generatieve AI** - Praktische richtlijnen transparantie en open source
-- [^33]: **Overheidsbrede handreiking generatieve AI** - Praktische richtlijnen transparantie en open source
+[^2]: **Free Software Foundation Europe** - [Public Money, Public Code](https://publiccode.eu/)
+
+[^3]: **iBestuur** - [Open source werken; wat houdt ons nog tegen?](https://ibestuur.nl/artikel/open-source-werken-wat-houdt-ons-nog-tegen/)
+
+[^4]: **Algoritmeregister Nederland** - Voorbeelden transparantie in praktijk
+
+[^5]: **iBestuur** - [Open source werken](https://ibestuur.nl/artikel/open-source-werken-wat-houdt-ons-nog-tegen/)
+
+[^6]: **Rathenau Instituut** - Rapporten over AI en transparantie: diverse publicaties over ethiek en bias in AI
+
+[^7]: **EU AI Act** - [Officiële tekst en uitleg over transparantie-eisen](https://artificialintelligenceact.eu/the-act/)
+
+[^8]: **Rathenau Instituut** - Rapporten over ethiek en bias in AI
+
+[^9]: **Rijksoverheid** - [Overheidsbrede visie Generatieve AI](https://open.overheid.nl/documenten/9aa7b64a-be51-4fc4-8dac-1d4a3e0b02ba/file)
+
+[^10]: **Rijksoverheid** - [Cloud Act en datasoevereiniteit](https://www.rijksoverheid.nl/)
+
+[^11]: **iBestuur** - [Open source AI](https://ibestuur.nl/)
+
+[^12]: **iBestuur** - [Open source AI](https://ibestuur.nl/)
+
+[^13]: **Rathenau Instituut** - Controleerbaarheid AI-systemen
+
+[^14]: **Common Ground** - [Principes hergebruik](https://commonground.nl/)
+
+[^15]: **iBestuur** - [Open source community](https://ibestuur.nl/)
+
+[^16]: **iBestuur** - [Vendor lock-in risico's](https://ibestuur.nl/)
+
+[^17]: **Rijksoverheid** - [Wet open overheid](https://www.rijksoverheid.nl/)
+
+[^18]: **Rijksoverheid** - [Nederlandse Digitaliseringsstrategie](https://www.digitaleoverheid.nl/)
+
+[^19]: **Common Ground** - [Officiële website](https://commonground.nl/)
+
+[^20]: **NORA** - [Richtlijnen open source en hergebruik](https://www.noraonline.nl/)
+
+[^21]: **VNG / Common Ground** - [Principes en voorbeelden](https://commonground.nl/)
+
+[^22]: **VNG / Common Ground** - [Principes en voorbeelden](https://commonground.nl/)
+
+[^23]: **VNG / Common Ground** - [Principes en voorbeelden](https://commonground.nl/)
+
+[^24]: **iBestuur** - [Open source AI modellen](https://ibestuur.nl/)
+
+[^25]: **iBestuur** - [Transparante prompts](https://ibestuur.nl/)
+
+[^26]: **EU AI Act** - [Ethische kaders AI](https://artificialintelligenceact.eu/the-act/)
+
+[^27]: **Rathenau Instituut** - Bias in training data
+
+[^28]: **EU AI Act** - [Europese open source modellen](https://artificialintelligenceact.eu/the-act/)
+
+[^29]: **Algoritmeregister Nederland** - [Recht op uitleg](https://algoritmes.overheid.nl/)
+
+[^30]: **iBestuur** - [AI-tools voor ambtenaren](https://ibestuur.nl/)
+
+[^31]: **iBestuur** - [Bestuurlijke verantwoording AI](https://ibestuur.nl/)
+
+[^32]: **Overheidsbrede handreiking generatieve AI** - Praktische richtlijnen transparantie en open source
+
+[^33]: **Overheidsbrede handreiking generatieve AI** - Praktische richtlijnen transparantie en open source
