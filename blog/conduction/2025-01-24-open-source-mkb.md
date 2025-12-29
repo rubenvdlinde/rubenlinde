@@ -14,12 +14,8 @@ tags:
     digitale-soevereiniteit,
     europa,
     saas,
-    vendor-lock-in,
     nextcloud,
     openregister,
-    zzp,
-    verenigingen,
-    self-hosted,
   ]
 description: Van Public Money is Public Code naar Public Money is Public Functionality. Hoe overheids-software het MKB kan helpen en Europa sterker kan maken door generieke tools te bouwen die iedereen kan gebruiken.
 ---

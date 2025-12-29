@@ -1,11 +1,11 @@
 ---
 slug: ai-werking-bubbels
-title: 'De AI en Werking: Wat is AI eigenlijk?'
+title: 'AI en Werking: Wat is AI eigenlijk?'
 authors: [ruben]
 tags: [ai, llm, overheid]
 ---
 
-# De AI en Werking: Wat is AI eigenlijk?
+# AI en Werking: Wat is AI eigenlijk?
 
 Vanuit overheden krijgen we vaak de vraag : welke AI moet ik kiezen? Mistral, Cursor, ChatGPT? Wat is het meest ethische en wat is het beste?
 

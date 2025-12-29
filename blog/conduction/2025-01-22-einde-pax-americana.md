@@ -10,17 +10,13 @@ tags:
     soevereiniteit,
     geopolitiek,
     pax-americana,
-    trump,
     eurostack,
     gaia-x,
     common-ground,
     microsoft,
-    vendor-lock-in,
     cloud,
-    ICC,
-    data-privacy,
-    NAVO,
-    Zeitenwende,
+    data,
+    privacy,
   ]
 description: Het einde van Pax Americana dwingt Europa tot actie. Tijd om af te kicken van de loverboy-tactiek van Foreign Tech en te investeren in digitale soevereiniteit met EuroStack, Gaia-X en Common Ground.
 ---
