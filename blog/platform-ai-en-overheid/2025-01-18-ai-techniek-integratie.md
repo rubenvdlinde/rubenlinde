@@ -61,8 +61,6 @@ flowchart TD
     B --> C["Node: check leeftijd"]
     C --> D["Node: genereer advies"]
     D --> E["Proces draait zelfstandig: exact hetzelfde elke run"]
-    style A fill:#bbf,stroke:#333
-    style E fill:#bfb,stroke:#333
 ```
 
 ## DMN Engines voor Complexe Processen: De Open Source Opvolger van Camunda

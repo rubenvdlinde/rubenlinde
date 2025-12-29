@@ -42,8 +42,6 @@ flowchart TD
     C --> D["AI geeft persoonlijk overzicht: Kinderbijslag, toeslagen, verlof"]
     D --> E["AI biedt hulp: Doorrekenen? Conceptaanvraag?"]
     E --> F["Burger beslist: Ja/Nee, zelf indienen"]
-    style A fill:#bbf,stroke:#333
-    style F fill:#bfb,stroke:#333
 ```
 
 AI ondersteunt, burger beslist – mens blijft centraal.[^19]
