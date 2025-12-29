@@ -1449,8 +1449,8 @@ html {
    MERMAID DIAGRAM STYLING
    ===================================================== */
 
-/* Base Mermaid container styling */
-.mermaid {
+/* Base Mermaid container styling - Light mode */
+[data-theme='light'] .mermaid {
   font-family: var(--ifm-font-family-base) !important;
   background: #ffffff !important;
   padding: 2rem;
@@ -1459,129 +1459,104 @@ html {
   border: 2px solid var(--ifm-color-secondary) !important;
 }
 
+/* Dark mode container */
 [data-theme='dark'] .mermaid {
+  font-family: var(--ifm-font-family-base) !important;
   background: rgba(0, 0, 0, 0.85) !important;
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 2rem 0;
   border: 2px solid var(--ifm-color-secondary) !important;
 }
 
-/* Mermaid flowchart nodes */
-.mermaid .node rect,
-.mermaid .node circle,
-.mermaid .node ellipse,
-.mermaid .node polygon,
-.mermaid .node path {
+/* Light mode - Mermaid flowchart nodes */
+[data-theme='light'] .mermaid .node rect,
+[data-theme='light'] .mermaid .node circle,
+[data-theme='light'] .mermaid .node ellipse,
+[data-theme='light'] .mermaid .node polygon,
+[data-theme='light'] .mermaid .node path,
+[data-theme='light'] .mermaid g[id^='flowchart'] rect,
+[data-theme='light'] .mermaid g[id^='flowchart'] circle,
+[data-theme='light'] .mermaid g[id^='flowchart'] ellipse,
+[data-theme='light'] .mermaid g[id^='flowchart'] polygon {
   fill: #ffffff !important;
   stroke: var(--ifm-color-secondary) !important;
   stroke-width: 2px !important;
 }
 
+/* Dark mode - Mermaid flowchart nodes */
 [data-theme='dark'] .mermaid .node rect,
 [data-theme='dark'] .mermaid .node circle,
 [data-theme='dark'] .mermaid .node ellipse,
 [data-theme='dark'] .mermaid .node polygon,
-[data-theme='dark'] .mermaid .node path {
-  fill: rgba(0, 0, 0, 0.7) !important;
+[data-theme='dark'] .mermaid .node path,
+[data-theme='dark'] .mermaid g[id^='flowchart'] rect,
+[data-theme='dark'] .mermaid g[id^='flowchart'] circle,
+[data-theme='dark'] .mermaid g[id^='flowchart'] ellipse,
+[data-theme='dark'] .mermaid g[id^='flowchart'] polygon {
+  fill: rgba(15, 23, 42, 0.9) !important;
   stroke: var(--ifm-color-secondary) !important;
   stroke-width: 2px !important;
 }
 
-/* Secondary nodes (with styling applied) */
-.mermaid .node.secondary rect,
-.mermaid .node.secondary circle,
-.mermaid .node.secondary ellipse,
-.mermaid .node.secondary polygon,
-.mermaid .node.secondary path {
-  fill: #bbf !important;
-  stroke: var(--ifm-color-primary) !important;
-  stroke-width: 2px !important;
-}
-
-[data-theme='dark'] .mermaid .node.secondary rect,
-[data-theme='dark'] .mermaid .node.secondary circle,
-[data-theme='dark'] .mermaid .node.secondary ellipse,
-[data-theme='dark'] .mermaid .node.secondary polygon,
-[data-theme='dark'] .mermaid .node.secondary path {
-  fill: rgba(59, 130, 246, 0.3) !important;
-  stroke: var(--ifm-color-primary) !important;
-  stroke-width: 2px !important;
-}
-
-/* Node labels */
-.mermaid .nodeLabel,
-.mermaid .node .label,
-.mermaid text {
+/* Light mode - Node labels */
+[data-theme='light'] .mermaid .nodeLabel,
+[data-theme='light'] .mermaid .node .label,
+[data-theme='light'] .mermaid text,
+[data-theme='light'] .mermaid g[id^='flowchart'] text {
   font-family: var(--ifm-font-family-base) !important;
   fill: #000000 !important;
   font-size: 14px !important;
   font-weight: 500 !important;
 }
 
+/* Dark mode - Node labels */
 [data-theme='dark'] .mermaid .nodeLabel,
 [data-theme='dark'] .mermaid .node .label,
-[data-theme='dark'] .mermaid text {
+[data-theme='dark'] .mermaid text,
+[data-theme='dark'] .mermaid g[id^='flowchart'] text {
+  font-family: var(--ifm-font-family-base) !important;
   fill: #ffffff !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
 }
 
-/* Edges (arrows and lines) */
+/* Edges (arrows and lines) - Both themes */
 .mermaid .edgePath .path,
 .mermaid .flowchart-link,
-.mermaid line.relation {
+.mermaid line.relation,
+.mermaid path.path {
   stroke: var(--ifm-color-primary) !important;
   stroke-width: 2px !important;
 }
 
-/* Arrow markers */
+/* Arrow markers - Both themes */
 .mermaid .arrowheadPath,
 .mermaid marker path,
-.mermaid .marker path {
+.mermaid .marker path,
+.mermaid marker polygon {
   fill: var(--ifm-color-primary) !important;
   stroke: var(--ifm-color-primary) !important;
 }
 
-/* Edge labels */
-.mermaid .edgeLabel,
-.mermaid .edgeLabel .label,
-.mermaid .edgeLabel text {
+/* Light mode - Edge labels */
+[data-theme='light'] .mermaid .edgeLabel,
+[data-theme='light'] .mermaid .edgeLabel .label,
+[data-theme='light'] .mermaid .edgeLabel text {
   background: #ffffff !important;
   fill: #000000 !important;
   font-family: var(--ifm-font-family-base) !important;
   font-size: 12px !important;
 }
 
+/* Dark mode - Edge labels */
 [data-theme='dark'] .mermaid .edgeLabel,
 [data-theme='dark'] .mermaid .edgeLabel .label,
 [data-theme='dark'] .mermaid .edgeLabel text {
   background: rgba(0, 0, 0, 0.85) !important;
   fill: #ffffff !important;
-}
-
-/* Cluster/subgraph styling */
-.mermaid .cluster rect {
-  fill: rgba(234, 88, 12, 0.05) !important;
-  stroke: var(--ifm-color-secondary) !important;
-  stroke-width: 2px !important;
-  stroke-dasharray: 5, 5 !important;
-}
-
-[data-theme='dark'] .mermaid .cluster rect {
-  fill: rgba(234, 88, 12, 0.1) !important;
-}
-
-/* Cluster labels */
-.mermaid .cluster-label,
-.mermaid .cluster-label text {
-  fill: var(--ifm-color-secondary) !important;
   font-family: var(--ifm-font-family-base) !important;
-  font-weight: 600 !important;
-}
-
-/* Specific style overrides for custom classes */
-.mermaid [fill='#bbf'] {
-  fill: #bbf !important;
-}
-
-.mermaid [fill='#bfb'] {
-  fill: #bfb !important;
+  font-size: 12px !important;
 }
 
 /* Responsive mermaid on mobile */
