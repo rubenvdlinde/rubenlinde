@@ -68,6 +68,12 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
+        },
       }),
     ],
   ],
@@ -75,8 +81,18 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      // SEO metadata
+      metadata: [
+        {name: 'keywords', content: 'Ruben van der Linde, software developer, open source, AI, artificial intelligence, digital sovereignty, Common Ground, Eurostack, government technology, overheid, digitale soevereiniteit'},
+        {name: 'author', content: 'Ruben van der Linde'},
+        {name: 'description', content: 'Personal website and blog by Ruben van der Linde - Software Developer, Open Source Advocate, AI Enthusiast'},
+        {property: 'og:type', content: 'website'},
+        {property: 'og:site_name', content: 'Ruben van der Linde'},
+        {name: 'twitter:card', content: 'summary_large_image'},
+        {name: 'twitter:creator', content: '@rubenlinde'},
+      ],
+      // Social card image for Open Graph
+      image: 'https://github.com/rubenvdlinde.png',
       navbar: {
           title: 'Ruben van der Linde',
         logo: {

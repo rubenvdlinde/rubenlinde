@@ -2,6 +2,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
+import Head from '@docusaurus/Head';
 import TerminalFeature from '@site/src/components/TerminalFeature';
 import TypingCommand from '@site/src/components/TypingCommand';
 import { useState } from 'react';
@@ -146,15 +147,41 @@ function useFeatureList(): FeatureItem[] {
 }
 
 export default function Home(): JSX.Element {
-  const { siteConfig } = useDocusaurusContext();
+  const { siteConfig, i18n } = useDocusaurusContext();
   const [showFeatures, setShowFeatures] = useState(false);
   const featureList = useFeatureList();
 
+  const isEnglish = i18n.currentLocale === 'en';
+  const description = isEnglish
+    ? 'Personal website and blog by Ruben van der Linde - Software Developer, Open Source Advocate, AI Enthusiast. Exploring digital sovereignty, government technology, and open-source solutions.'
+    : 'Persoonlijke website en blog van Ruben van der Linde - Software Developer, Open Source Voorstander, AI Enthousiast. Onderzoek naar digitale soevereiniteit, overheidstechnologie en open-source oplossingen.';
+
   return (
-    <Layout
-      title={`Welcome to ${siteConfig.title}`}
-      description="Personal website and blog by Ruben van de Linde - Software Developer, Open Source Advocate, AI Enthusiast"
-    >
+    <Layout title={`${siteConfig.title}`} description={description}>
+      <Head>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Person',
+            name: 'Ruben van der Linde',
+            url: 'https://www.rubenlinde.nl',
+            image: 'https://github.com/rubenvdlinde.png',
+            jobTitle: 'Software Developer',
+            sameAs: [
+              'https://github.com/rubenvdlinde',
+              'https://www.linkedin.com/in/rubenlinde/',
+              'https://x.com/rubenlinde',
+              'https://www.instagram.com/rubenlinde1985/',
+            ],
+            worksFor: {
+              '@type': 'Organization',
+              name: 'Conduction',
+              url: 'https://www.conduction.nl',
+            },
+            description: description,
+          })}
+        </script>
+      </Head>
       <HomepageHeader />
       <main>
         <section className="features-section">
