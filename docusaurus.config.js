@@ -176,6 +176,24 @@ const config = {
         darkTheme: darkTheme,
         additionalLanguages: ['php', 'bash', 'json', 'yaml'],
       },
+      mermaid: {
+        theme: {light: 'base', dark: 'dark'},
+        options: {
+          themeVariables: {
+            primaryColor: '#ffffff',
+            primaryTextColor: '#000000',
+            primaryBorderColor: '#ea580c',
+            secondaryColor: '#bbf',
+            secondaryTextColor: '#000000',
+            secondaryBorderColor: '#1e3a8a',
+            lineColor: '#1e3a8a',
+            background: '#ffffff',
+            mainBkg: '#ffffff',
+            fontFamily: 'system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial',
+            fontSize: '14px',
+          },
+        },
+      },
     }),
 };
 
