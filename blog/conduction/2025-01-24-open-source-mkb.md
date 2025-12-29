@@ -6,12 +6,8 @@ authors: [ruben]
 tags:
   [
     open-source,
-    mkb,
-    public-money-public-code,
     public-functionality,
-    groenteman,
     common-ground,
-    digitale-soevereiniteit,
     europa,
     saas,
     nextcloud,
