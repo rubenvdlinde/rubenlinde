@@ -7,6 +7,10 @@ tags: [ai, overheid, privacy]
 
 # AI en Praktijk: Handelingskaders en toepassing
 
+:::info Platform AI en Overheid
+Deze blog is geschreven in het kader van [Platform AI en Overheid](https://www.platformaienoverheid.nl/), een initiatief gericht op verantwoorde AI-adoptie binnen de publieke sector.
+:::
+
 :::warning Status: Concept
 Deze blog is nog in concept-fase en wordt mogelijk nog aangepast voor publicatie.
 :::

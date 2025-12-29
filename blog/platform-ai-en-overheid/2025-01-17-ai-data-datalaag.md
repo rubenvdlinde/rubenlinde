@@ -7,6 +7,10 @@ tags: [ai, data, common-ground, overheid]
 
 # AI en Data: Waarom de datalaag alles bepaalt
 
+:::info Platform AI en Overheid
+Deze blog is geschreven in het kader van [Platform AI en Overheid](https://www.platformaienoverheid.nl/), een initiatief gericht op verantwoorde AI-adoptie binnen de publieke sector.
+:::
+
 AI is niet beter dan de data waarop het draait. Een slimme datalaag is geen nice-to-have, maar de absolute basis voor verantwoorde AI in de overheid. En die datalaag moet je NU goed inrichten - niet pas als je AI wilt toevoegen.
 
 <!--truncate-->

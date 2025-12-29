@@ -7,6 +7,10 @@ tags: [ai, rag, mcp, overheid, beveiliging]
 
 # AI en Techniek: Veilige integratie
 
+:::info Platform AI en Overheid
+Deze blog is geschreven in het kader van [Platform AI en Overheid](https://www.platformaienoverheid.nl/), een initiatief gericht op verantwoorde AI-adoptie binnen de publieke sector.
+:::
+
 AI-integratie in overheidsapplicaties brengt unieke uitdagingen met zich mee – hoe zorg je dat AI veilig toegang krijgt tot data, zonder risico's op lekken of foute adviezen? Dit blog legt in leken taal uit hoe AI werkt met reasoning, hoe data veilig opgehaald wordt met vectorisatie, en hoe tools als MCP context bieden. We verkennen workflow engines voor business logica, met focus op waarom AI niet voor uitvoering is (te onvoorspelbaar), maar wel voor setup en advies. Met een verbinding naar regels.overheid.nl. Voor praktische handelingskaders en toepassing, zie ons blog "AI en Praktijk: Handelingskaders en toepassing".
 
 <!--truncate-->
