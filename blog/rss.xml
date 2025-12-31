@@ -696,6 +696,7 @@
             <author>your-email@example.com (Ruben van der Linde)</author>
             <category>ai</category>
             <category>overheid</category>
+            <category>platform-ai-en-overheid</category>
         </item>
         <item>
             <title><![CDATA[AI en Burgers: Kansen voor een betere dienstverlening]]></title>
@@ -774,6 +775,7 @@
             <category>ai</category>
             <category>rag</category>
             <category>overheid</category>
+            <category>platform-ai-en-overheid</category>
         </item>
         <item>
             <title><![CDATA[AI en Praktijk: Handelingskaders en toepassing]]></title>
@@ -886,6 +888,7 @@
             <category>ai</category>
             <category>overheid</category>
             <category>privacy</category>
+            <category>platform-ai-en-overheid</category>
         </item>
         <item>
             <title><![CDATA[AI en Techniek: Veilige integratie]]></title>
@@ -1079,6 +1082,7 @@
             <category>mcp</category>
             <category>overheid</category>
             <category>beveiliging</category>
+            <category>platform-ai-en-overheid</category>
         </item>
         <item>
             <title><![CDATA[AI en Data - Waarom de datalaag alles bepaalt]]></title>
@@ -1148,6 +1152,7 @@
             <category>data</category>
             <category>common-ground</category>
             <category>overheid</category>
+            <category>platform-ai-en-overheid</category>
         </item>
         <item>
             <title><![CDATA[AI en Open Source - Waarom transparantie geen luxe is]]></title>
@@ -1320,6 +1325,7 @@
             <category>open-source</category>
             <category>common-ground</category>
             <category>overheid</category>
+            <category>platform-ai-en-overheid</category>
         </item>
         <item>
             <title><![CDATA[AI en Werking: Wat is AI eigenlijk?]]></title>
@@ -1426,6 +1432,7 @@
             <category>ai</category>
             <category>llm</category>
             <category>overheid</category>
+            <category>platform-ai-en-overheid</category>
         </item>
         <item>
             <title><![CDATA[Waarom ik overweeg te migreren van GitHub naar Codeberg]]></title>

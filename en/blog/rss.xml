@@ -1938,6 +1938,7 @@
             <category>ai</category>
             <category>overheid</category>
             <category>privacy</category>
+            <category>platform-ai-en-overheid</category>
         </item>
         <item>
             <title><![CDATA[AI en Techniek - Veilige integratie en het Mistral-vraagstuk]]></title>
@@ -2614,6 +2615,7 @@ Alle interactie verloopt via gecontroleerde APIs:</p>
             <category>ai</category>
             <category>llm</category>
             <category>overheid</category>
+            <category>platform-ai-en-overheid</category>
         </item>
         <item>
             <title><![CDATA[Waarom ik overweeg te migreren van GitHub naar Codeberg]]></title>

@@ -711,6 +711,7 @@
         </author>
         <category label="ai" term="ai"/>
         <category label="overheid" term="overheid"/>
+        <category label="platform-ai-en-overheid" term="platform-ai-en-overheid"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[AI en Burgers: Kansen voor een betere dienstverlening]]></title>
@@ -793,6 +794,7 @@
         <category label="ai" term="ai"/>
         <category label="rag" term="rag"/>
         <category label="overheid" term="overheid"/>
+        <category label="platform-ai-en-overheid" term="platform-ai-en-overheid"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[AI en Praktijk: Handelingskaders en toepassing]]></title>
@@ -909,6 +911,7 @@
         <category label="ai" term="ai"/>
         <category label="overheid" term="overheid"/>
         <category label="privacy" term="privacy"/>
+        <category label="platform-ai-en-overheid" term="platform-ai-en-overheid"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[AI en Techniek: Veilige integratie]]></title>
@@ -1106,6 +1109,7 @@
         <category label="mcp" term="mcp"/>
         <category label="overheid" term="overheid"/>
         <category label="beveiliging" term="beveiliging"/>
+        <category label="platform-ai-en-overheid" term="platform-ai-en-overheid"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[AI en Data - Waarom de datalaag alles bepaalt]]></title>
@@ -1179,6 +1183,7 @@
         <category label="data" term="data"/>
         <category label="common-ground" term="common-ground"/>
         <category label="overheid" term="overheid"/>
+        <category label="platform-ai-en-overheid" term="platform-ai-en-overheid"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[AI en Open Source - Waarom transparantie geen luxe is]]></title>
@@ -1355,6 +1360,7 @@
         <category label="open-source" term="open-source"/>
         <category label="common-ground" term="common-ground"/>
         <category label="overheid" term="overheid"/>
+        <category label="platform-ai-en-overheid" term="platform-ai-en-overheid"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[AI en Werking: Wat is AI eigenlijk?]]></title>
@@ -1465,6 +1471,7 @@
         <category label="ai" term="ai"/>
         <category label="llm" term="llm"/>
         <category label="overheid" term="overheid"/>
+        <category label="platform-ai-en-overheid" term="platform-ai-en-overheid"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Waarom ik overweeg te migreren van GitHub naar Codeberg]]></title>
