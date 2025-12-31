@@ -26,7 +26,7 @@ De risico's zijn reëel:
 - **Onzichtbare modellen**: Hoe werkt het precies? Welke algoritmes, welke weights?[^5]
 - **Onbekende trainingsdata**: Zitten er biases in van data uit andere culturen of periodes?[^6]
 - **Oncontroleerbaar gedrag**: Waarom deze uitkomst? Hallucinaties of fouten zijn niet te traceren.
-- **Juridische risico's**: Besluiten moeten uitlegbaar zijn onder de Awb en EU AI Act.[^7Permit]
+- **Juridische risico's**: Besluiten moeten uitlegbaar zijn onder de Awb en EU AI Act.[^7]
 - **Ethische risico's**: Hoe waarborgen we eerlijkheid, non-discriminatie en menselijk toezicht?[^8]
 
 De rijksoverheid erkent dit: in het overheidsbrede standpunt generatieve AI (2025) wordt open source aanbevolen voor meer inzicht en transparantie.[^9] Gesloten systemen maken ons afhankelijk van buitenlandse vendors – denk aan de Cloud Act, waarbij Amerikaanse bedrijven data moeten delen met hun overheid.[^10] Voor een soevereine overheid is dat onhoudbaar.
@@ -93,68 +93,82 @@ De vraag is niet óf we open source moeten gebruiken voor AI, maar hoe snel we d
 
 **Gerelateerd:** [Common Ground](https://commonground.nl)
 
+## Componenten
+
+Hieronder verwijzingen naar toepasbare EuroStack-componenten en gerelateerde open source tools:
+
+- **SovereignAI**: AI-as-a-Service voor soevereiniteit – ideaal voor on-premise models.
+- **DataCommons**: Federated data exchange – voor veilige data-ophaal in integraties.
+- **EuroOS**: Open source OS voor infrastructuur – basis voor workflow engines.
+- **n8n**: Open source workflow automation tool – voor snelle business logica en no-code workflows.
+- **Flowable**: Open source DMN/BPMN engine – opvolger Camunda, geschikt voor complexe processen en zaakafhandeling.
+- **Ollama**: Tool voor lokale AI-inference – draai modellen on-premise zonder cloud.
+- **Hugging Face**: Platform voor modeldownload en hosting – repositories voor on-premise deploy.
+
+Deze componenten en tools passen perfect bij veilige, soevereine AI-integratie in overheidscontext.
+
 [^1]: **Free Software Foundation Europe** - [Public Money, Public Code](https://publiccode.eu/)
 
 [^2]: **Free Software Foundation Europe** - [Public Money, Public Code](https://publiccode.eu/)
 
 [^3]: **iBestuur** - [Open source werken; wat houdt ons nog tegen?](https://ibestuur.nl/artikel/open-source-werken-wat-houdt-ons-nog-tegen/)
 
-[^4]: **Algoritmeregister Nederland** - Voorbeelden transparantie in praktijk
+[^4]: **Algoritmeregister Nederland** - [Voorbeelden transparantie in praktijk](https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/algoritmes/algoritmeregister/)
 
 [^5]: **iBestuur** - [Open source werken](https://ibestuur.nl/artikel/open-source-werken-wat-houdt-ons-nog-tegen/)
 
-[^6]: **Rathenau Instituut** - Rapporten over AI en transparantie: diverse publicaties over ethiek en bias in AI
+[^6]: **Rathenau Instituut** - [Rapporten over AI en transparantie](https://www.rathenau.nl/nl/digitalisering/generative-ai)
 
 [^7]: **EU AI Act** - [Officiële tekst en uitleg over transparantie-eisen](https://artificialintelligenceact.eu/the-act/)
 
-[^8]: **Rathenau Instituut** - Rapporten over ethiek en bias in AI
+[^8]: **Rathenau Instituut** - [Rapporten over ethiek en bias in AI](https://www.rathenau.nl/nl/digitalisering/generative-ai)
 
 [^9]: **Rijksoverheid** - [Overheidsbrede visie Generatieve AI](https://open.overheid.nl/documenten/9aa7b64a-be51-4fc4-8dac-1d4a3e0b02ba/file)
 
-[^10]: **Rijksoverheid** - [Cloud Act en datasoevereiniteit](https://www.rijksoverheid.nl/)
+[^10]: **Rijksoverheid** - [Cloud Act en datasoevereiniteit](https://www.rijksoverheid.nl/actueel/nieuws/2025/07/15/non-paper-versterken-van-cloudsoevereiniteit-van-overheden)
 
-[^11]: **iBestuur** - [Open source AI](https://ibestuur.nl/)
+[^11]: **NORA** - [Richtlijnen open source en hergebruik](https://www.noraonline.nl/wiki/Open_Source_Software_%28OSS%29)
 
-[^12]: **iBestuur** - [Open source AI](https://ibestuur.nl/)
+[^12]: **iBestuur** - [AI-systemen in de overheid: van black box naar transparantie](https://ibestuur.nl/artikel/ai-systemen-in-de-overheid-van-black-box-naar-transparantie)
 
-[^13]: **Rathenau Instituut** - Controleerbaarheid AI-systemen
+[^13]: **Rathenau Instituut** - [Controleerbaarheid AI-systemen](https://www.rathenau.nl/nl/digitalisering/generative-ai)
 
 [^14]: **Common Ground** - [Principes hergebruik](https://commonground.nl/)
 
-[^15]: **iBestuur** - [Open source community](https://ibestuur.nl/)
+[^15]: **VNG** - [Open source software bij gemeenten](https://vng.nl/artikelen/open-source-software-bij-gemeenten)
 
-[^16]: **iBestuur** - [Vendor lock-in risico's](https://ibestuur.nl/)
+[^16]: **iBestuur** - [Vendor lock-in bij overheidssoftware](https://ibestuur.nl/artikel/vendor-lock-in-bij-overheidssoftware)
 
-[^17]: **Rijksoverheid** - [Wet open overheid](https://www.rijksoverheid.nl/)
+[^17]: **Rijksoverheid** - [Wet open overheid](https://www.rijksoverheid.nl/onderwerpen/open-overheid/wet-open-overheid)
 
 [^18]: **Rijksoverheid** - [Nederlandse Digitaliseringsstrategie](https://www.digitaleoverheid.nl/)
 
 [^19]: **Common Ground** - [Officiële website](https://commonground.nl/)
 
-[^20]: **NORA** - [Richtlijnen open source en hergebruik](https://www.noraonline.nl/)
+[^20]: **NORA** - [Richtlijnen open source](https://www.noraonline.nl/wiki/Open_Source_Software_%28OSS%29)
 
-[^21]: **VNG / Common Ground** - [Principes en voorbeelden](https://commonground.nl/)
+[^21]: **VNG / Common Ground** - [Principes en voorbeelden](https://vng.nl/artikelen/common-ground-zonder-samenwerking-redden-we-het-niet)
 
 [^22]: **VNG / Common Ground** - [Principes en voorbeelden](https://commonground.nl/)
 
 [^23]: **VNG / Common Ground** - [Principes en voorbeelden](https://commonground.nl/)
 
-[^24]: **iBestuur** - [Open source AI modellen](https://ibestuur.nl/)
+[^24]: **iBestuur** - [Open source AI-modellen voor de overheid](https://ibestuur.nl/artikel/open-source-ai-modellen-voor-de-overheid)
 
-[^25]: **iBestuur** - [Transparante prompts](https://ibestuur.nl/)
+[^25]: **VNG** - [AI Governancekader: transparantie en uitlegbaarheid](https://aigovernance.vng.nl/)
 
 [^26]: **EU AI Act** - [Ethische kaders AI](https://artificialintelligenceact.eu/the-act/)
 
-[^27]: **Rathenau Instituut** - Bias in training data
+[^27]: **Rathenau Instituut** - [Bias in training data](https://www.rathenau.nl/nl/digitalisering/generative-ai)
 
 [^28]: **EU AI Act** - [Europese open source modellen](https://artificialintelligenceact.eu/the-act/)
 
 [^29]: **Algoritmeregister Nederland** - [Recht op uitleg](https://algoritmes.overheid.nl/)
 
-[^30]: **iBestuur** - [AI-tools voor ambtenaren](https://ibestuur.nl/)
+[^30]: **VNG** - [AI-tools voor gemeentelijke ambtenaren](https://vng.nl/artikelen/ai-tools-voor-gemeentelijke-ambtenaren)
 
-[^31]: **iBestuur** - [Bestuurlijke verantwoording AI](https://ibestuur.nl/)
+[^31]: **Rijksoverheid** - [Verantwoord gebruik van AI bij de overheid](https://www.rijksoverheid.nl/onderwerpen/kunstmatige-intelligentie/verantwoord-gebruik-van-ai)
 
-[^32]: **Overheidsbrede handreiking generatieve AI** - Praktische richtlijnen transparantie en open source
+[^32]: **Overheidsbrede handreiking generatieve AI** - [Praktische richtlijnen transparantie en open source](https://open.overheid.nl/documenten/9c273b71-cebb-4e11-b06f-fa20f7b4b90e/file)
 
-[^33]: **Overheidsbrede handreiking generatieve AI** - Praktische richtlijnen transparantie en open source
+[^33]: **Overheidsbrede handreiking generatieve AI** - [Praktische richtlijnen transparantie en open source](https://open.overheid.nl/documenten/9c273b71-cebb-4e11-b06f-fa20f7b4b90e/file)

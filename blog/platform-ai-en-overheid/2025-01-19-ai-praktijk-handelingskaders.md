@@ -106,14 +106,24 @@ Deze componenten en tools passen perfect bij veilige, soevereine AI-integratie b
 
 [^1]: **VNG** - [Position paper: AI, Algoritmen en Gemeenten](https://vng.nl/sites/default/files/2025-03/position-paper-ai-algoritmen-en-gemeenten.pdf)
 
-- [^2]: **VNG** - [AI Governancekader voor gemeenten](https://aigovernance.vng.nl/)
-- [^3]: **Rijksoverheid** - [Algemene wet bestuursrecht (Awb)](https://wetten.overheid.nl/BWBR0005537/2025-01-01)
-- [^4]: **EU AI Act** - [High-risk AI en transparantie](https://artificialintelligenceact.eu/)
-- [^5]: **Rechtbank Den Haag** - [SyRI-wetgeving in strijd met het Europees Verdrag voor de Rechten van de Mens](https://www.rechtspraak.nl/Organisatie-en-contact/Organisatie/Rechtbanken/Rechtbank-Den-Haag/Nieuws/Paginas/SyRI-wetgeving-in-strijd-met-het-Europees-Verdrag-voor-de-Rechten-voor-de-Mens.aspx)
-- [^6]: **Gemeente.nu** - [Rechtbank: SyRI schendt privacy burgers](https://www.gemeente.nu/bedrijfsvoering/ai/rechtbank-syri-schendt-privacy-burgers/)
-- [^7]: **Autoriteit Persoonsgegevens** - [Boete Clearview AI voor illegaal verwerken van biometrische gegevens](https://autoriteitpersoonsgegevens.nl/nl/nieuws/ap-boete-clearview-ai-voor-illegaal-verwerken-van-biometrische-gegevens)
-- [^8]: **Autoriteit Persoonsgegevens** - [Aan de slag met AI-geletterdheid](https://autoriteitpersoonsgegevens.nl/documenten/aan-de-slag-met-ai-geletterdheid)
-- [^9]: **Gemeente Eindhoven** - [Datalek openbare AI in Eindhoven](https://www.eindhoven.nl/nieuws/datalek-openbare-ai-in-eindhoven)
-- [^10]: **Rathenau Instituut** - [Zo brengen we AI in de praktijk vanuit Europese waarden](https://www.rathenau.nl/sites/default/files/inline-files/Zo%20brengen%20we%20AI%20in%20de%20praktijk%20vanuit%20Europese%20waarden%20-%20Roos%20de%20Jong%2C%20Linda%20Kool%20en%20Rinie%20van%20Est.pdf)
-- [^11]: **Rijksoverheid** - [Kabinet presenteert visie op generatieve AI](https://www.rijksoverheid.nl/actueel/nieuws/2024/01/18/kabinet-presenteert-visie-op-generatieve-ai)
-- [^12]: **Chiodo, M. et al.** - [Formalising Human-in-the-Loop: Computational Reductions, Failure Modes, and Legal-Moral Responsibility](https://arxiv.org/abs/2505.10426)
+[^2]: **VNG** - [AI Governancekader voor gemeenten](https://aigovernance.vng.nl/)
+
+[^3]: **Rijksoverheid** - [Algemene wet bestuursrecht (Awb)](https://wetten.overheid.nl/BWBR0005537/2025-01-01)
+
+[^4]: **EU AI Act** - [High-risk AI en transparantie](https://artificialintelligenceact.eu/)
+
+[^5]: **Rechtbank Den Haag** - [SyRI-wetgeving in strijd met het Europees Verdrag voor de Rechten van de Mens](https://www.rechtspraak.nl/Organisatie-en-contact/Organisatie/Rechtbanken/Rechtbank-Den-Haag/Nieuws/Paginas/SyRI-wetgeving-in-strijd-met-het-Europees-Verdrag-voor-de-Rechten-voor-de-Mens.aspx)
+
+[^6]: **Gemeente.nu** - [Rechtbank: SyRI schendt privacy burgers](https://www.gemeente.nu/bedrijfsvoering/ai/rechtbank-syri-schendt-privacy-burgers/)
+
+[^7]: **Autoriteit Persoonsgegevens** - [Boete Clearview AI voor illegaal verwerken van biometrische gegevens](https://autoriteitpersoonsgegevens.nl/nl/nieuws/ap-boete-clearview-ai-voor-illegaal-verwerken-van-biometrische-gegevens)
+
+[^8]: **Autoriteit Persoonsgegevens** - [Aan de slag met AI-geletterdheid](https://autoriteitpersoonsgegevens.nl/documenten/aan-de-slag-met-ai-geletterdheid)
+
+[^9]: **Gemeente Eindhoven** - [Datalek openbare AI in Eindhoven](https://www.eindhoven.nl/nieuws/datalek-openbare-ai-in-eindhoven)
+
+[^10]: **Rathenau Instituut** - [Zo brengen we AI in de praktijk vanuit Europese waarden](https://www.rathenau.nl/sites/default/files/inline-files/Zo%20brengen%20we%20AI%20in%20de%20praktijk%20vanuit%20Europese%20waarden%20-%20Roos%20de%20Jong%2C%20Linda%20Kool%20en%20Rinie%20van%20Est.pdf)
+
+[^11]: **Rijksoverheid** - [Kabinet presenteert visie op generatieve AI](https://www.rijksoverheid.nl/actueel/nieuws/2024/01/18/kabinet-presenteert-visie-op-generatieve-ai)
+
+[^12]: **Chiodo, M. et al.** - [Formalising Human-in-the-Loop: Computational Reductions, Failure Modes, and Legal-Moral Responsibility](https://arxiv.org/abs/2505.10426)
