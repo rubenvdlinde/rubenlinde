@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import clsx from 'clsx';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import {
@@ -11,6 +11,7 @@ import BlogLayout from '@theme/BlogLayout';
 import SearchMetadata from '@theme/SearchMetadata';
 import type { Props } from '@theme/BlogListPage';
 import BlogCard from '@site/src/components/BlogCard';
+import { useHistory, useLocation } from '@docusaurus/router';
 
 function BlogListPageMetadata(props: Props): JSX.Element {
   const { metadata } = props;
@@ -30,7 +31,45 @@ function BlogListPageMetadata(props: Props): JSX.Element {
 
 function BlogListPageContent(props: Props): JSX.Element {
   const { metadata, items } = props;
-  const [selectedTag, setSelectedTag] = useState<string | null>(null);
+  const history = useHistory();
+  const location = useLocation();
+
+  // Parse query parameters to get initial selected tags
+  const getTagsFromUrl = (): string[] => {
+    const params = new URLSearchParams(location.search);
+    const tags = params.getAll('tags[]');
+    return tags;
+  };
+
+  const [selectedTags, setSelectedTags] = useState<string[]>(getTagsFromUrl);
+
+  // Update URL when selected tags change
+  useEffect(() => {
+    const params = new URLSearchParams();
+    selectedTags.forEach((tag) => {
+      params.append('tags[]', tag);
+    });
+    const newUrl =
+      selectedTags.length > 0
+        ? `${location.pathname}?${params.toString()}`
+        : location.pathname;
+
+    // Only push if the URL actually changed
+    if (
+      location.search !== `?${params.toString()}` &&
+      selectedTags.length > 0
+    ) {
+      history.replace(newUrl);
+    } else if (selectedTags.length === 0 && location.search !== '') {
+      history.replace(location.pathname);
+    }
+  }, [selectedTags, history, location.pathname]);
+
+  // Sync selectedTags with URL on navigation (back/forward buttons)
+  useEffect(() => {
+    const tags = getTagsFromUrl();
+    setSelectedTags(tags);
+  }, [location.search]);
 
   // Extract all unique tags from all blog posts
   const allTags = useMemo(() => {
@@ -44,16 +83,29 @@ function BlogListPageContent(props: Props): JSX.Element {
     return Array.from(tagSet).sort();
   }, [items]);
 
-  // Filter items based on selected tag
+  // Filter items based on selected tags (AND logic: post must have ALL selected tags)
   const filteredItems = useMemo(() => {
-    if (!selectedTag) return items;
+    if (selectedTags.length === 0) return items;
     return items.filter(({ content: BlogPostContent }) => {
       // Check if metadata exists before accessing tags
       if (!BlogPostContent?.metadata?.tags) return false;
-      const { tags } = BlogPostContent.metadata;
-      return tags?.some((tag) => tag.label === selectedTag);
+      const postTags = BlogPostContent.metadata.tags.map((t) => t.label);
+      // Post must have ALL selected tags
+      return selectedTags.every((selectedTag) =>
+        postTags.includes(selectedTag)
+      );
     });
-  }, [items, selectedTag]);
+  }, [items, selectedTags]);
+
+  const toggleTag = (tag: string) => {
+    setSelectedTags((prev) =>
+      prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag]
+    );
+  };
+
+  const clearAllTags = () => {
+    setSelectedTags([]);
+  };
 
   return (
     <BlogLayout>
@@ -68,10 +120,10 @@ function BlogListPageContent(props: Props): JSX.Element {
                 description: 'Title for the tag filter section',
               })}
             </h2>
-            {selectedTag && (
+            {selectedTags.length > 0 && (
               <button
                 className="blog-tags-filter__clear"
-                onClick={() => setSelectedTag(null)}
+                onClick={clearAllTags}
               >
                 {translate({
                   id: 'blog.filterByTags.clear',
@@ -86,15 +138,15 @@ function BlogListPageContent(props: Props): JSX.Element {
               <button
                 key={tag}
                 className={clsx('blog-tag-button', {
-                  'blog-tag-button--active': selectedTag === tag,
+                  'blog-tag-button--active': selectedTags.includes(tag),
                 })}
-                onClick={() => setSelectedTag(selectedTag === tag ? null : tag)}
+                onClick={() => toggleTag(tag)}
               >
                 {tag}
               </button>
             ))}
           </div>
-          {selectedTag && (
+          {selectedTags.length > 0 && (
             <div className="blog-tags-filter__count">
               {translate(
                 {

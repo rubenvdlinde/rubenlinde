@@ -2,7 +2,7 @@
 slug: ai-risicos-niet-adopteren-achterblijven
 title: Risico's van Niet-Adopteren - Als de overheid AI negeert
 authors: [ruben]
-tags: [ai, overheid]
+tags: [ai, overheid, platform-ai-en-overheid]
 ---
 
 # Risico's van Niet-Adopteren: Als de overheid AI negeert

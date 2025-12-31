@@ -2,7 +2,7 @@
 slug: ai-data-datalaag-basis
 title: AI en Data - Waarom de datalaag alles bepaalt
 authors: [ruben]
-tags: [ai, data, common-ground, overheid]
+tags: [ai, data, common-ground, overheid, platform-ai-en-overheid]
 ---
 
 # AI en Data: Waarom de datalaag alles bepaalt

@@ -2,7 +2,7 @@
 slug: ai-techniek-integratie
 title: 'AI en Techniek: Veilige integratie'
 authors: [ruben]
-tags: [ai, rag, mcp, overheid, beveiliging]
+tags: [ai, rag, mcp, overheid, beveiliging, platform-ai-en-overheid]
 ---
 
 # AI en Techniek: Veilige integratie

@@ -2,7 +2,7 @@
 slug: ai-kansen-burgers-regelgeving-navigator
 title: 'AI en Burgers: Kansen voor een betere dienstverlening'
 authors: [ruben]
-tags: [ai, rag, overheid]
+tags: [ai, rag, overheid, platform-ai-en-overheid]
 ---
 
 # AI en kansen voor Burgers: De begrijpenlijke overheid
