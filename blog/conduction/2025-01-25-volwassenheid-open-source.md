@@ -61,9 +61,21 @@ En dan de vraag die niemand lijkt te stellen: is al die functionaliteit van Micr
 
 Maar toch hanteren we bij de evaluatie van alternatieven de eis van "100% feature-pariteit". Een alternatief moet álles kunnen wat Microsoft Office kan – inclusief die 80% aan functies die bijna niemand gebruikt. Dat is niet rationeel; dat is angst voor verandering verpakt als technische eis.[^13]
 
-En hier komt de Google Docs-les: toen organisaties massaal overstapten naar Google Workspace – in de VS gebruiken 70% van de Forbes 500-bedrijven Google Workspace, in Nederland onder meer Pon, KLM, Coolblue, ING en PWC[^10d] – bleek ineens dat iedereen met veel minder kon werken. Geen geavanceerde macro's? Geen probleem. Minder opmaakopties? Prima. Simpelere formules? Voldoende voor 95% van de use cases. De overstap naar Google dwong organisaties om kritisch te kijken naar wat ze echt nodig hadden – en dat bleek verrassend weinig te zijn.[^10e]
+### De Dubbele Standaard: Google Workspace Wel, Open Source Niet?
 
-Microsofts eigen onderzoeken tonen aan dat de meeste Office 365-gebruikers slechts basisfuncties gebruiken: tekstverwerking, eenvoudige spreadsheets, email, en bestandsopslag.[^10f] Diezelfde basisfuncties bieden open source alternatieven zoals OnlyOffice, Collabora Online en Nextcloud ook – vaak met vergelijkbare of betere samenwerkingsmogelijkheden, zonder vendor lock-in.[^10g]
+En hier wordt het pas echt interessant. Toen Google Drive in 2012 werd gelanceerd, had het aanzienlijk minder functionaliteit dan Microsoft Office – en dat heeft het nog steeds.[^19a] Google Docs mist geavanceerde opmaakfuncties die in Word standaard zijn. Google Sheets kan niet tippen aan de macro's en complexe formules van Excel. Google Slides is simpeler dan PowerPoint. Offline functionaliteit was jarenlang problematisch. Integratie met lokale bestanden? Beperkt. Geavanceerde document management features? Minimaal.[^19b]
+
+Toch zien we overheden massaal overstappen naar Google Workspace en het beschouwen als een "volwaardig alternatief".[^19c] In de VS gebruiken 70% van de Forbes 500-bedrijven Google Workspace, in Nederland onder meer Pon, KLM, Coolblue, ING en PWC.[^10d] Gemeenten, scholen, zelfs ministeries – allemaal migreren ze naar Google, ondanks de functionele beperkingen. En dat is prima – Google Workspace werkt, het is gebruiksvriendelijk, en voor veel use cases is het voldoende.
+
+De overstap naar Google dwong organisaties om kritisch te kijken naar wat ze echt nodig hadden – en dat bleek verrassend weinig te zijn.[^10e] Geen geavanceerde macro's? Geen probleem. Minder opmaakopties? Prima. Simpelere formules? Voldoende voor 95% van de use cases. Bij Google accepteren we zonder morren dat het functioneel minder biedt dan Microsoft Office. We roepen niet "Google is niet volwassen genoeg!" of "Dit mist te veel features!" Nee, we kijken naar wat het wél kan, en concluderen dat het goed genoeg is voor onze behoeften. We waarderen de voordelen: cloudgebaseerd, realtime samenwerking, lage kosten, eenvoud.[^19d]
+
+**Maar hier komt de hypocrisie**: zodra we naar open source kijken – Nextcloud, OnlyOffice, Collabora Online – worden plots heel andere maatstaven gehanteerd. Dan moet het 100% feature-pariteit hebben met Microsoft Office. Dan is elke ontbrekende functie een dealbreaker. Dan is "volwassen genoeg" plots niet genoeg meer.[^19e]
+
+Dit is een dubbele standaard. Nextcloud biedt veel van dezelfde functionaliteit als Google Drive – bestandsopslag, delen, samenwerking – maar dan zonder dataoverdracht naar Amerikaanse servers en zonder vendor lock-in.[^4] OnlyOffice en Collabora bieden documentbewerking die voor de meeste use cases ruim voldoende is.[^19f] Microsofts eigen onderzoeken tonen aan dat de meeste Office 365-gebruikers slechts basisfuncties gebruiken: tekstverwerking, eenvoudige spreadsheets, email, en bestandsopslag.[^10f] Precies die basisfuncties die open source alternatieven ook bieden – vaak met vergelijkbare of betere samenwerkingsmogelijkheden, zonder vendor lock-in.[^10g]
+
+Het functionele vraagstuk speelt dus blijkbaar niet als we Google of Microsoft inkopen, maar wordt wel als kritisch beschouwd bij open source. Dat is hypocriet. De werkelijke reden is niet functionaliteit, maar vertrouwdheid en de illusie van veiligheid die grote merken bieden. En dat is een slechte basis voor strategische besluitvorming over digitale soevereiniteit.[^19g]
+
+### De Echte Vraag
 
 De vraag is dus niet "kan open source alles wat Microsoft kan?" maar "wat hebben we echt nodig, en biedt open source dat?" En het antwoord is: ja, ruim voldoende voor de overgrote meerderheid van gebruikers en use cases. De rest is luxe die we misschien leuk vinden, maar niet nodig hebben – zeker niet als de prijs vendor lock-in, dataoverdracht naar de VS, en miljarden aan licentiekosten is.[^10h]
 
@@ -90,22 +102,6 @@ De paradox is bizar: we betalen Microsoft om open source software voor ons te be
 Het antwoord is simpel: open source is volwassen genoeg. Zo volwassen dat zelfs Microsoft – ooit de grootste tegenstander van open source, wiens CEO Steve Ballmer Linux in 2001 "een kanker" noemde[^14a] – nu zijn volledige cloudplatform erop bouwt en er volledig op vertrouwt. Het verschil is alleen dat Microsoft een commerciële laag eroverheen legt, waarbij ze controle en vendor lock-in introduceren die inherent afwezig zijn in de originele open source oplossingen.
 
 En daar betalen we vervolgens premie voor – niet voor betere technologie, maar voor gemak en de **illusie van zekerheid** die een groot merk biedt.[^17] Want onder de motorkap zijn het precies dezelfde open source componenten – waar Microsoft vaak niet eens aan bijdraagt of grip op heeft. Je betaalt dus voor een Microsoft-logo op software die ze niet hebben gebouwd, niet beheersen, en die je net zo goed zelf kunt draaien. Dat is geen zekerheid, dat is vendor lock-in verpakt als service.[^17a]
-
-## De Dubbele Standaard: Google Workspace Wel, Open Source Niet?
-
-En dan hebben we nog een andere olifant in de kamer: Google Workspace (voorheen G Suite). Laten we eerlijk zijn over wat Google Drive en Google Docs bieden – of juist niet bieden.
-
-Toen Google Drive in 2012 werd gelanceerd, had het aanzienlijk minder functionaliteit dan Microsoft Office.[^19a] En dat heeft het nog steeds. Google Docs mist geavanceerde opmaakfuncties die in Word standaard zijn. Google Sheets kan niet tippen aan de macro's en complexe formules van Excel. Google Slides is simpeler dan PowerPoint. Offline functionaliteit was jarenlang problematisch. Integratie met lokale bestanden? Beperkt. Geavanceerde document management features? Minimaal.[^19b]
-
-Toch zien we overheden massaal overstappen naar Google Workspace en het beschouwen als een "volwaardig alternatief".[^19c] Gemeenten, scholen, zelfs ministeries – allemaal migreren ze naar Google, ondanks de functionele beperkingen. En dat is prima – Google Workspace werkt, het is gebruiksvriendelijk, en voor veel use cases is het voldoende.
-
-Maar hier komt de hypocrisie: bij Google accepteren we zonder morren dat het functioneel minder biedt dan Microsoft Office. We roepen niet "Google is niet volwassen genoeg!" of "Dit mist te veel features!" Nee, we kijken naar wat het wél kan, en concluderen dat het goed genoeg is voor onze behoeften. We waarderen de voordelen: cloudgebaseerd, realtime samenwerking, lage kosten, eenvoud.[^19d]
-
-Maar zodra we naar open source kijken – Nextcloud, OnlyOffice, Collabora Online – worden plots heel andere maatstaven gehanteerd. Dan moet het 100% feature-pariteit hebben met Microsoft Office. Dan is elke ontbrekende functie een dealbreaker. Dan is "volwassen genoeg" plots niet genoeg meer.[^19e]
-
-Dit is een dubbele standaard. Als we Google Workspace accepteren met zijn beperkingen omdat de voordelen opwegen tegen de nadelen, waarom hanteren we dan niet dezelfde afweging bij open source? Nextcloud biedt veel van dezelfde functionaliteit als Google Drive – bestandsopslag, delen, samenwerking – maar dan zonder dataoverdracht naar Amerikaanse servers en zonder vendor lock-in.[^4] OnlyOffice en Collabora bieden documentbewerking die voor de meeste use cases ruim voldoende is.[^19f]
-
-Het functionele vraagstuk speelt dus blijkbaar niet als we Google of Microsoft inkopen, maar wordt wel als kritisch beschouwd bij open source. Dat is hypocriet. De werkelijke reden is niet functionaliteit, maar vertrouwdheid en de illusie van veiligheid die grote merken bieden. En dat is een slechte basis voor strategische besluitvorming over digitale soevereiniteit.[^19g]
 
 ## De Historische Werkelijkheid: Microsoft in 1995
 
@@ -211,7 +207,7 @@ Dus laten we ophouden met wachten op een volwassenheid die er al is, en beginnen
 
 [^5a]: **Common Ground** - [Meer dan 100 gemeenten werken samen](https://commonground.nl/)
 
-[^5b]: **VNG** - [Common Ground: API-first architectuur en herbruikbare componenten](https://vng.nl/projecten/common-ground)
+[https://www.rubenlinde.nl/blog/volwassenheid-open-source-overheid]: **VNG** - [Common Ground: API-first architectuur en herbruikbare componenten](https://vng.nl/projecten/common-ground)
 
 [^6]: **Ministerie van BZK** - [Mijn Bureau - Soevereine digitale werkplek](https://minbzk.github.io/mijn-bureau/)
 
