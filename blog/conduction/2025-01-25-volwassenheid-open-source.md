@@ -93,7 +93,7 @@ En dan wordt het echt ironisch. Laten we even stilstaan bij een ongemakkelijke w
 
 **Azure Data Lake**: De grootschalige dataopslag- en analysetool? Gebaseerd op Apache Hadoop en YARN – open source technologieën voor het verwerken van enorme hoeveelheden data.[^12c]
 
-**Linux**: Meer dan 50% van alle workloads op Azure draait op Linux[^14] – het open source besturingssysteem dat Microsoft decennialang bestreed en "een kanker" noemde. Nu is het de ruggengraat van hun cloudimperium.
+**Linux**: Meer dan 50% van alle workloads op Azure draait op Linux[^14] – het open source besturingssysteem dat Microsoft decennialang bestreed. Nu is het de ruggengraat van hun cloudimperium.
 
 **PostgreSQL, MySQL, Redis, Kafka, Apache**: Al deze open source databases, messaging-systemen en webservers worden als "managed services" aangeboden op Azure.[^15] Hetzelfde product, alleen met een Microsoft-logo en een prijskaartje.
 
@@ -207,7 +207,7 @@ Dus laten we ophouden met wachten op een volwassenheid die er al is, en beginnen
 
 [^5a]: **Common Ground** - [Meer dan 100 gemeenten werken samen](https://commonground.nl/)
 
-[https://www.rubenlinde.nl/blog/volwassenheid-open-source-overheid]: **VNG** - [Common Ground: API-first architectuur en herbruikbare componenten](https://vng.nl/projecten/common-ground)
+[^5b]: **VNG** - [Common Ground: API-first architectuur en herbruikbare componenten](https://vng.nl/projecten/common-ground)
 
 [^6]: **Ministerie van BZK** - [Mijn Bureau - Soevereine digitale werkplek](https://minbzk.github.io/mijn-bureau/)
 
@@ -230,8 +230,6 @@ Dus laten we ophouden met wachten op een volwassenheid die er al is, en beginnen
 [^10d]: **Presis.nl** - [70% van Forbes 500 gebruikt Google Workspace, Nederlandse adopties](https://presis.nl/wp-content/uploads/2023/10/Wat-is-het-verschil-tussen-Microsoft-Office-365-en-Google-Workspace_.pdf)
 
 [^10e]: **TechRepublic** - [Google Workspace adoption shows less is more](https://www.techrepublic.com/article/google-workspace-adoption/)
-
-[^10f]: **Microsoft** - [Office 365 Usage Analytics](https://support.microsoft.com/en-us/office/microsoft-365-usage-analytics-77ff780d-ab19-4553-adea-09cb65ad0f1f)
 
 [^10f]: **Microsoft** - [Office 365 Usage Analytics](https://support.microsoft.com/en-us/office/microsoft-365-usage-analytics-77ff780d-ab19-4553-adea-09cb65ad0f1f)
 
@@ -280,8 +278,6 @@ Dus laten we ophouden met wachten op een volwassenheid die er al is, en beginnen
 [^19f]: **OnlyOffice** - [Document collaboration for government](https://www.onlyoffice.com/for-government.aspx)
 
 [^19g]: **Rathenau Instituut** - [Digitale soevereiniteit en publieke waarden](https://www.rathenau.nl/nl/digitalisering/digitale-soevereiniteit)
-
-[^20]: **Microsoft** - [A History of Windows](https://support.microsoft.com/en-us/windows/a-history-of-windows-6138f88c-c2a7-4c6f-99e0-3ade5a9f2a8d)
 
 [^20]: **Microsoft** - [A History of Windows](https://support.microsoft.com/en-us/windows/a-history-of-windows-6138f88c-c2a7-4c6f-99e0-3ade5a9f2a8d)
 
