@@ -7,6 +7,10 @@ tags: [ai, overheid, platform-ai-en-overheid]
 
 # Risico's van Niet-Adopteren: Als de overheid AI negeert
 
+:::warning Concept
+Dit blog is nog in concept fase en niet geschickt voor publicatie
+:::
+
 :::info Platform AI en Overheid
 Deze blog is geschreven in het kader van [Platform AI en Overheid](https://www.platformaienoverheid.nl/), een initiatief gericht op verantwoorde AI-adoptie binnen de publieke sector.
 :::

@@ -7,6 +7,10 @@ tags: [ai, rag, overheid, platform-ai-en-overheid]
 
 # AI en kansen voor Burgers: De begrijpenlijke overheid
 
+:::warning Concept
+Dit blog is nog in concept fase en niet geschickt voor publicatie
+:::
+
 :::info Platform AI en Overheid
 Deze blog is geschreven in het kader van [Platform AI en Overheid](https://www.platformaienoverheid.nl/), een initiatief gericht op verantwoorde AI-adoptie binnen de publieke sector.
 :::
