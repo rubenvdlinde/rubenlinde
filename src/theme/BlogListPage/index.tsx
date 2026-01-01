@@ -30,18 +30,20 @@ function BlogListPageMetadata(props: Props): JSX.Element {
 }
 
 function BlogListPageContent(props: Props): JSX.Element {
-  const { metadata, items } = props;
+  const { items } = props;
   const history = useHistory();
   const location = useLocation();
 
   // Parse query parameters to get initial selected tags
-  const getTagsFromUrl = (): string[] => {
+  const getTagsFromUrl = React.useCallback((): string[] => {
     const params = new URLSearchParams(location.search);
     const tags = params.getAll('tags[]');
     return tags;
-  };
+  }, [location.search]);
 
-  const [selectedTags, setSelectedTags] = useState<string[]>(getTagsFromUrl);
+  const [selectedTags, setSelectedTags] = useState<string[]>(() =>
+    getTagsFromUrl()
+  );
 
   // Update URL when selected tags change
   useEffect(() => {
@@ -63,13 +65,13 @@ function BlogListPageContent(props: Props): JSX.Element {
     } else if (selectedTags.length === 0 && location.search !== '') {
       history.replace(location.pathname);
     }
-  }, [selectedTags, history, location.pathname]);
+  }, [selectedTags, history, location.pathname, location.search]);
 
   // Sync selectedTags with URL on navigation (back/forward buttons)
   useEffect(() => {
     const tags = getTagsFromUrl();
     setSelectedTags(tags);
-  }, [location.search]);
+  }, [getTagsFromUrl]);
 
   // Extract all unique tags from all blog posts
   const allTags = useMemo(() => {

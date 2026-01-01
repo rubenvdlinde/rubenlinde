@@ -18,16 +18,18 @@ export default function TypingCommand({
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
   const [currentText, setCurrentText] = useState('');
   const [isTyping, setIsTyping] = useState(false);
-  const [showCards, setShowCards] = useState(false);
   const [hasStarted, setHasStarted] = useState(false);
   const [isComplete, setIsComplete] = useState(false); // Add completion flag
   const commandRef = useRef<HTMLDivElement>(null);
 
-  const allSteps: Step[] = [
-    { text: '$ cat expertise.txt', type: 'command' },
-    { text: 'cat: expertise.txt: Permission denied', type: 'error' },
-    { text: '$ sudo cat expertise.txt', type: 'command' },
-  ];
+  const allSteps: Step[] = React.useMemo(
+    () => [
+      { text: '$ cat expertise.txt', type: 'command' },
+      { text: 'cat: expertise.txt: Permission denied', type: 'error' },
+      { text: '$ sudo cat expertise.txt', type: 'command' },
+    ],
+    []
+  );
 
   useEffect(() => {
     const currentRef = commandRef.current;
@@ -84,7 +86,6 @@ export default function TypingCommand({
                   // All steps done, show cards and remove all commands
                   setIsComplete(true); // Mark as complete to stop further animations
                   setTimeout(() => {
-                    setShowCards(true);
                     onComplete();
                     // Remove all commands after cards appear
                     setTimeout(() => {
@@ -108,7 +109,7 @@ export default function TypingCommand({
     return () => {
       clearTimeout(timeoutId);
     };
-  }, [hasStarted, currentStepIndex, delay, onComplete]);
+  }, [hasStarted, currentStepIndex, delay, onComplete, allSteps, isComplete]);
 
   return (
     <div

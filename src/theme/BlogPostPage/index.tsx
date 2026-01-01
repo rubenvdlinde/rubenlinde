@@ -14,8 +14,6 @@ import BlogPostPaginator from '@theme/BlogPostPaginator';
 import type { Props } from '@theme/BlogPostPage';
 
 function BlogPostPageContent({ children }: { children: React.ReactNode }) {
-  const { metadata } = useBlogPost();
-
   return (
     <BlogLayout>
       {/* No container wrapper - let content be full width */}
