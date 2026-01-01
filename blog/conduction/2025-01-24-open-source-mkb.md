@@ -57,13 +57,9 @@ Lotte, webshopeigenaar met sieraden, gebruikt Microsoft 365 (€5.50/maand) voor
 
 Om dit te laten slagen, moet worden gestuurd op generiek ontwerp: modulair en configureerbaar, geen hard-coded jargon – denk aan parameters voor "gemeente" of "bedrijf". Maak het gebruiksvriendelijk: intuïtieve UI voor non-techies, Nederlandse tutorials – niet developer-focused. Ondersteuning is key: DIY voor savvy gebruikers, gemeentelijk voor eenvoud, commercieel via lokale IT – lokaal en duurzaam. Bouw een ecosysteem: community, trainingen, showcases voor peer-learning. Funding? Overheidsinvestering in commons, cost-sharing, EU-fondsen – duurzaam zonder lock-in.
 
-## Conclusie: Van Publiek Geld naar Publieke Functionaliteit
-
 De overheid kan projecten sturen op functionaliteit – het kan, zoals Common Ground bewijst. MijnOverheid-achtige tools kunnen open en eenvoudig worden gemaakt – off-the-shelf voor MKB. Dit versterkt de economie en soevereiniteit.
 
 Publiek geld voor publiek goed – de tijd is nu.
-
-## Bronnen
 
 [^1]: **iBestuur** - [De fictie van digitale soevereiniteit](https://ibestuur.nl/digitale-toekomst-eu/europese-politiek-en-beleid/de-fictie-van-digitale-soevereiniteit)
 
