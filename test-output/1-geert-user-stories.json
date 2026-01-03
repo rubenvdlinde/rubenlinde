@@ -1,0 +1,33 @@
+{
+  "epic_name": "Contact Form API - Sprint 1",
+  "user_stories": [
+    {
+      "id": "US-1",
+      "title": "Basic Contact Form Submission",
+      "story": "As a website visitor, I want to submit a contact form with my details, so that I can reach the website owner",
+      "acceptance_criteria": [
+        "Accept name, email, subject, message fields",
+        "Validate all fields are required",
+        "Email must be valid format",
+        "Message must be at least 10 characters",
+        "Return 201 on success, 400 on validation error"
+      ],
+      "complexity": "M",
+      "dependencies": [],
+      "priority": "high"
+    },
+    {
+      "id": "US-2",
+      "title": "Email Notification",
+      "story": "As a website owner, I want to receive an email when someone submits the contact form",
+      "acceptance_criteria": [
+        "Email sent to configured address",
+        "Email contains all form fields",
+        "Uses email template with branding"
+      ],
+      "complexity": "S",
+      "dependencies": ["US-1"],
+      "priority": "high"
+    }
+  ]
+}

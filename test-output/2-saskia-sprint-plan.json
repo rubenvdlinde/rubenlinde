@@ -1,0 +1,37 @@
+{
+  "sprint_name": "Sprint 1: Contact Form MVP",
+  "sprint_goal": "Implement basic contact form with email notification",
+  "total_story_points": 5,
+  "tasks": [
+    {
+      "story_id": "US-1",
+      "task_id": "T-1",
+      "title": "Create Flask API structure",
+      "description": "Setup Flask app with routes, request validation using Pydantic, and proper error handling",
+      "assigned_to": "Johnie",
+      "story_points": 2,
+      "dependencies": [],
+      "order": 1
+    },
+    {
+      "story_id": "US-1",
+      "task_id": "T-2",
+      "title": "Database models",
+      "description": "Create SQLAlchemy models for contact submissions with proper indexes",
+      "assigned_to": "Johnie",
+      "story_points": 1,
+      "dependencies": ["T-1"],
+      "order": 2
+    },
+    {
+      "story_id": "US-2",
+      "task_id": "T-3",
+      "title": "Email service",
+      "description": "Implement SMTP email sending with HTML templates",
+      "assigned_to": "Anita",
+      "story_points": 2,
+      "dependencies": ["T-1"],
+      "order": 3
+    }
+  ]
+}
