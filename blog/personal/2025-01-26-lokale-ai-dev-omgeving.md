@@ -68,21 +68,21 @@ Hier is mijn experiment: in plaats van één generalist LLM, creëer ik een _cou
 ```mermaid
 graph TB
     subgraph Quality["🛡️ Quality Layer"]
-        Security["🔒 Security Review LLM"]
-        Test["🧪 Test & QA LLM"]
+        Security["🔒 Boris<br/>(Security Review)"]
+        Test["🧪 Linda<br/>(Test & QA)"]
     end
 
     subgraph Management["👔 Management Layer"]
-        SM["🎯 Scrum Master LLM<br/>(Orchestrator)"]
-        PO["📋 Product Owner LLM<br/>(Strategy)"]
-        Lead["🏗️ Lead Tech LLM<br/>(Architecture)"]
+        SM["🎯 Saskia<br/>(Scrum Master)"]
+        PO["📋 Geert<br/>(Product Owner)"]
+        Lead["🏗️ Thierry<br/>(Lead Tech)"]
     end
 
     subgraph Execution["💻 Execution Layer"]
-        FE1["⚛️ Frontend LLM Alpha<br/>(UI/UX Focus)"]
-        FE2["⚡ Frontend LLM Beta<br/>(Performance Focus)"]
-        BE1["🔧 Backend LLM Alpha<br/>(API/Business Logic)"]
-        BE2["🔐 Backend LLM Beta<br/>(Security/Infrastructure)"]
+        FE1["⚛️ Anita<br/>(Frontend: UI/UX)"]
+        FE2["⚡ Henk<br/>(Frontend: Performance)"]
+        BE1["🔧 Johnie<br/>(Backend: API/Business)"]
+        BE2["🔐 Ingrid<br/>(Backend: Security/Infra)"]
     end
 
     SM -->|Assigns Tasks| FE1
@@ -124,56 +124,56 @@ graph TB
 
 **2x Frontend LLMs** - elk met een net iets ander karakter:
 
-- **Frontend LLM Alpha**: Focus op UI/UX, toegankelijkheid, gebruikerservaring
+- **Anita (Frontend Alpha)**: Focus op UI/UX, toegankelijkheid, gebruikerservaring
   - Context: React best practices, design systems, WCAG richtlijnen
   - Karakter: Perfectionistisch op detail, denkt vanuit de gebruiker
-- **Frontend LLM Beta**: Focus op performance, state management, architectuur
+- **Henk (Frontend Beta)**: Focus op performance, state management, architectuur
   - Context: Performance patterns, bundle optimization, advanced React
   - Karakter: Technisch, optimalisatie-gedreven
 
 **2x Backend LLMs** - ook met specialisaties:
 
-- **Backend LLM Alpha**: Focus op API design, database modeling, business logic
+- **Johnie (Backend Alpha)**: Focus op API design, database modeling, business logic
   - Context: REST/GraphQL patterns, database normalisatie, domain modeling
   - Karakter: Architecturaal, denkt in systemen
-- **Backend LLM Beta**: Focus op security, performance, infrastructure
+- **Ingrid (Backend Beta)**: Focus op security, performance, infrastructure
   - Context: Security patterns, caching strategies, scalability
   - Karakter: Paranoia (op een goede manier), performance-minded
 
 #### Management Layer: De Coordinators (3 LLMs)
 
-**Lead Tech LLM**: De technische vraagbaak en architect
+**Thierry (Lead Tech)**: De technische vraagbaak en architect
 
-- Beantwoordt technische vragen van de dev LLMs
+- Beantwoordt technische vragen van Anita, Henk, Johnie en Ingrid
 - Maakt architecturale beslissingen
 - Lost technische blokkades op
 - Context: Breed, alle tech stacks en patterns
 
-**Product Owner LLM**: De strategische richting
+**Geert (Product Owner)**: De strategische richting
 
 - Bepaalt feature prioriteit
 - Schrijft user stories en acceptance criteria
 - Bewaakt de product visie
 - Context: Product management, user needs, business value
 
-**Scrum Master LLM**: De dirigent van het orkest
+**Saskia (Scrum Master)**: De dirigent van het orkest
 
 - Stuurt de sprint aan
-- Verdeelt werk over de dev LLMs
+- Verdeelt werk over Anita, Henk, Johnie en Ingrid
 - Bewaakt Definition of Done
 - Zorgt voor samenwerking
 - Context: Agile methodologie, team management
 
 #### Quality Layer: De Gatekeepers (2 LLMs)
 
-**Security Review LLM**: De paranoia-agent
+**Boris (Security Review)**: De paranoia-agent
 
 - Reviewed alle code op security issues
 - Checkt OWASP Top 10, injection attacks, auth flows
 - Moet elke PR goedkeuren
 - Context: Security best practices, CVE databases, threat modeling
 
-**Test & QA LLM**: De quality guardian
+**Linda (Test & QA)**: De quality guardian
 
 - Schrijft en runt tests
 - Doet visuele browser testing
@@ -187,47 +187,47 @@ Het idee is om te werken in **sprints** - afgebakende werkpakketten met een duid
 
 ```mermaid
 sequenceDiagram
-    participant PO as 📋 Product Owner
-    participant SM as 🎯 Scrum Master
-    participant Dev as 💻 Dev LLMs
-    participant Lead as 🏗️ Lead Tech
-    participant Sec as 🔒 Security
-    participant Test as 🧪 Test/QA
+    participant Geert as 📋 Geert (PO)
+    participant Saskia as 🎯 Saskia (SM)
+    participant Devs as 💻 Developers
+    participant Thierry as 🏗️ Thierry (Lead)
+    participant Boris as 🔒 Boris (Security)
+    participant Linda as 🧪 Linda (Test)
 
     rect rgb(200, 230, 255)
-        Note over PO,SM: Sprint Planning
-        PO->>SM: User stories + acceptance criteria
-        SM->>Dev: Task assignments
+        Note over Geert,Saskia: Sprint Planning
+        Geert->>Saskia: User stories + acceptance criteria
+        Saskia->>Devs: Task assignments<br/>(Anita, Henk, Johnie, Ingrid)
     end
 
     rect rgb(255, 230, 200)
-        Note over Dev,Lead: Development Phase
-        Dev->>Dev: Write code
-        Dev->>Lead: Technical questions?
-        Lead->>Dev: Guidance & decisions
-        Dev->>SM: Create Pull Request
+        Note over Devs,Thierry: Development Phase
+        Devs->>Devs: Write code
+        Devs->>Thierry: Technical questions?
+        Thierry->>Devs: Guidance & decisions
+        Devs->>Saskia: Create Pull Request
     end
 
     rect rgb(255, 200, 200)
-        Note over SM,Test: Code Review Phase
-        SM->>Sec: Review PR (security)
-        SM->>Test: Review PR (testing)
-        SM->>Dev: Peer review request
+        Note over Saskia,Linda: Code Review Phase
+        Saskia->>Boris: Review PR (security)
+        Saskia->>Linda: Review PR (testing)
+        Saskia->>Devs: Peer review request
 
-        Sec->>SM: Security approval ✓/✗
-        Test->>Test: Write tests + browser check
-        Test->>SM: Test approval ✓/✗
-        Dev->>SM: Peer approval ✓/✗
+        Boris->>Saskia: Security approval ✓/✗
+        Linda->>Linda: Write tests + browser check
+        Linda->>Saskia: Test approval ✓/✗
+        Devs->>Saskia: Peer approval ✓/✗
     end
 
     rect rgb(200, 255, 200)
-        Note over SM,PO: Sprint Review
-        SM->>PO: Feature complete?
-        PO->>SM: Accept/Reject
+        Note over Saskia,Geert: Sprint Review
+        Saskia->>Geert: Feature complete?
+        Geert->>Saskia: Accept/Reject
         alt All Approved
-            SM->>Dev: Merge & Deploy ✓
+            Saskia->>Devs: Merge & Deploy ✓
         else Rejected
-            SM->>Dev: Fix issues
+            Saskia->>Devs: Fix issues
         end
     end
 ```
@@ -236,23 +236,23 @@ sequenceDiagram
 
 ```
 1. Sprint Planning
-   └─> Product Owner LLM: Definieert features en acceptance criteria
-   └─> Scrum Master LLM: Breekt af in taken, wijst toe aan dev LLMs
+   └─> Geert (Product Owner): Definieert features en acceptance criteria
+   └─> Saskia (Scrum Master): Breekt af in taken, wijst toe aan developers
 
 2. Development
-   └─> Frontend/Backend LLMs: Werken parallel aan toegewezen taken
-   └─> Lead Tech LLM: Ondersteunt bij blokkades
+   └─> Anita, Henk, Johnie, Ingrid: Werken parallel aan toegewezen taken
+   └─> Thierry (Lead Tech): Ondersteunt bij blokkades
    └─> Code wordt gecommit als feature branches
 
 3. Code Review
-   └─> Partner Review: Frontend Alpha reviews Beta en vice versa
-   └─> Security Review LLM: Checkt alle PRs op security
-   └─> Test LLM: Schrijft tests, test in browser
+   └─> Partner Review: Anita reviews Henk en vice versa, Johnie reviews Ingrid
+   └─> Boris (Security): Checkt alle PRs op security
+   └─> Linda (Test): Schrijft tests, test in browser
    └─> Alle drie moeten goedkeuren voor merge
 
 4. Sprint Review
-   └─> Scrum Master LLM: Evalueert wat af is
-   └─> Product Owner LLM: Accepteert of wijst af
+   └─> Saskia: Evalueert wat af is
+   └─> Geert: Accepteert of wijst af
    └─> Team: Retrospective input voor volgende sprint
 
 5. Deploy
@@ -317,12 +317,12 @@ flowchart TD
 **Checklist detail:**
 
 - ✅ Code is geschreven en werkt
-- ✅ Partner developer LLM heeft gereviewd en goedgekeurd
-- ✅ Security LLM heeft gereviewd en goedgekeurd
-- ✅ Test LLM heeft tests geschreven en in browser getest
+- ✅ Partner developer heeft gereviewd en goedgekeurd (Anita ↔ Henk, Johnie ↔ Ingrid)
+- ✅ Boris (Security) heeft gereviewd en goedgekeurd
+- ✅ Linda (Test) heeft tests geschreven en in browser getest
 - ✅ Code voldoet aan style guide en lint regels
 - ✅ Acceptance criteria zijn gehaald
-- ✅ Product Owner LLM heeft geaccepteerd
+- ✅ Geert (Product Owner) heeft geaccepteerd
 
 ## De Tech Stack: Open Source All The Way
 
@@ -472,27 +472,27 @@ Een cruciaal onderdeel is hoe we de codebase structureren zodat LLMs effectief e
 ```mermaid
 graph TB
     subgraph Frontend["🎨 Frontend Domain"]
-        FE_Comp["components/<br/>(FE Alpha)"]
-        FE_Pages["pages/<br/>(FE Alpha)"]
-        FE_State["state/<br/>(FE Beta)"]
-        FE_Utils["utils/<br/>(FE Beta)"]
+        FE_Comp["components/<br/>(Anita)"]
+        FE_Pages["pages/<br/>(Anita)"]
+        FE_State["state/<br/>(Henk)"]
+        FE_Utils["utils/<br/>(Henk)"]
     end
 
     subgraph Backend["⚙️ Backend Domain"]
-        BE_API["api/<br/>(BE Alpha)"]
-        BE_DB["database/<br/>(BE Alpha)"]
-        BE_Auth["auth/<br/>(BE Beta)"]
-        BE_Infra["infrastructure/<br/>(BE Beta)"]
+        BE_API["api/<br/>(Johnie)"]
+        BE_DB["database/<br/>(Johnie)"]
+        BE_Auth["auth/<br/>(Ingrid)"]
+        BE_Infra["infrastructure/<br/>(Ingrid)"]
     end
 
     subgraph Shared["🔗 Shared Domain"]
-        Types["types/<br/>(Read: All, Write: Lead)"]
-        Schemas["schemas/<br/>(Read: All, Write: Lead)"]
+        Types["types/<br/>(Read: All, Write: Thierry)"]
+        Schemas["schemas/<br/>(Read: All, Write: Thierry)"]
     end
 
     subgraph Tests["🧪 Test Domain"]
-        E2E["e2e/<br/>(Test LLM)"]
-        Visual["visual/<br/>(Test LLM)"]
+        E2E["e2e/<br/>(Linda)"]
+        Visual["visual/<br/>(Linda)"]
     end
 
     FE_Comp -.->|reads| Types
@@ -519,36 +519,36 @@ graph TB
 
 ### Principe 1: Modulaire Grenzen
 
-Elke LLM heeft een **duidelijk afgebakend domein** waar het aan werkt:
+Elke agent heeft een **duidelijk afgebakend domein** waar het aan werkt:
 
 ```
 project/
 ├── frontend/
-│   ├── components/     ← Frontend LLM Alpha domein
-│   ├── pages/          ← Frontend LLM Alpha domein
-│   ├── state/          ← Frontend LLM Beta domein
-│   └── utils/          ← Frontend LLM Beta domein
+│   ├── components/     ← Anita's domein
+│   ├── pages/          ← Anita's domein
+│   ├── state/          ← Henk's domein
+│   └── utils/          ← Henk's domein
 ├── backend/
-│   ├── api/            ← Backend LLM Alpha domein
-│   ├── database/       ← Backend LLM Alpha domein
-│   ├── auth/           ← Backend LLM Beta domein
-│   └── infrastructure/ ← Backend LLM Beta domein
+│   ├── api/            ← Johnie's domein
+│   ├── database/       ← Johnie's domein
+│   ├── auth/           ← Ingrid's domein
+│   └── infrastructure/ ← Ingrid's domein
 └── tests/
-    └── e2e/            ← Test LLM domein
+    └── e2e/            ← Linda's domein
 ```
 
 **Waarom?**
 
-- Voorkomt merge conflicts tussen LLMs
+- Voorkomt merge conflicts tussen de agents
 - Maakt ownership duidelijk
 - Limiteert blast radius van fouten
 
 ### Principe 2: Context Boundaries
 
-Elke LLM krijgt **alleen de context die het nodig heeft**:
+Elke agent krijgt **alleen de context die het nodig heeft**:
 
 ```yaml
-frontend_llm_alpha:
+anita: # Frontend UI/UX
   read_access:
     - frontend/components/**
     - frontend/pages/**
@@ -557,7 +557,7 @@ frontend_llm_alpha:
     - frontend/components/**
     - frontend/pages/**
 
-backend_llm_alpha:
+johnie: # Backend API/Business
   read_access:
     - backend/api/**
     - backend/database/**
@@ -569,7 +569,7 @@ backend_llm_alpha:
 
 **Waarom?**
 
-- Voorkomt dat LLMs buiten hun expertise werken
+- Voorkomt dat agents buiten hun expertise werken
 - Reduceert token gebruik (kleinere context)
 - Verbetert focus en kwaliteit
 
@@ -594,13 +594,13 @@ Beide valideren runtime tegen het schema.
 
 **Waarom?**
 
-- Geen miscommunicatie tussen LLMs
+- Geen miscommunicatie tussen agents
 - Runtime validatie voorkomt bugs
 - Duidelijk contract = minder reviews nodig
 
 ### Principe 4: Automated Guardrails
 
-Implementeer **automatische checks** die voorkomen dat LLMs onveilige code schrijven:
+Implementeer **automatische checks** die voorkomen dat agents onveilige code schrijven:
 
 ```javascript
 // .llm-rules.json
@@ -626,8 +626,8 @@ Implementeer **automatische checks** die voorkomen dat LLMs onveilige code schri
 Deze rules worden gecheckt:
 
 1. **Pre-commit**: Git hook checkt of code voldoet
-2. **In n8n**: Voor een LLM code kan committen
-3. **In Security Review**: Security LLM gebruikt deze rules
+2. **In n8n**: Voor een agent code kan committen
+3. **In Security Review**: Boris gebruikt deze rules
 
 **Waarom?**
 
@@ -637,7 +637,7 @@ Deze rules worden gecheckt:
 
 ### Principe 5: Explicit Dependencies
 
-Maak dependencies **explicieet en locked**:
+Maak dependencies **explicieit en locked**:
 
 ```json
 // package.json
@@ -653,7 +653,7 @@ Maak dependencies **explicieet en locked**:
 }
 ```
 
-LLMs mogen **niet zomaar dependencies toevoegen** - dat moet via Product Owner LLM als bewuste keuze.
+LLMs mogen **niet zomaar dependencies toevoegen** - dat moet via Geert (Product Owner) als bewuste keuze.
 
 **Waarom?**
 
@@ -663,11 +663,11 @@ LLMs mogen **niet zomaar dependencies toevoegen** - dat moet via Product Owner L
 
 ## Security: De Paranoia Layer
 
-De **Security Review LLM** is cruciaal - het is de laatste verdedigingslinie tegen vulnerabilities. Hoe zorg ik dat deze effectief is?
+**Boris (Security Review)** is cruciaal - hij is de laatste verdedigingslinie tegen vulnerabilities. Hoe zorg ik dat Boris effectief is?
 
-### Security LLM Context & Prompting
+### Boris' Context & Prompting
 
-De Security LLM krijgt specialized context:
+Boris krijgt specialized context:
 
 ```
 You are a security expert reviewing code for vulnerabilities.
@@ -695,7 +695,7 @@ Output format:
 
 ### Automated Security Scanning Integration
 
-De Security LLM gebruikt ook **geautomatiseerde tools**:
+Boris gebruikt ook **geautomatiseerde tools**:
 
 ```mermaid
 flowchart LR
@@ -711,8 +711,8 @@ flowchart LR
     Secrets --> Results
     OWASP --> Results
 
-    Results --> LLM[🔒 Security LLM<br/>Analyzes Results]
-    LLM --> Report[Generate Human-Readable<br/>Security Report]
+    Results --> Boris[🔒 Boris<br/>Analyzes Results]
+    Boris --> Report[Generate Human-Readable<br/>Security Report]
 
     Report --> Decision{Issues Found?}
     Decision -->|Critical ⚠️| Block[Block PR + Detail Report]
@@ -724,7 +724,7 @@ flowchart LR
     style ESLint fill:#ff6b6b
     style Secrets fill:#ff6b6b
     style OWASP fill:#ff6b6b
-    style LLM fill:#f7b731
+    style Boris fill:#f7b731
     style Block fill:#eb3b5a
     style Warn fill:#fd9644
     style Approve fill:#26de81
@@ -739,20 +739,20 @@ n8n workflow:
   ├─> Run: eslint-plugin-security (static analysis)
   ├─> Run: git-secrets (secrets scanning)
   ├─> Aggregate results
-  └─> Feed to Security LLM for analysis + human-readable report
+  └─> Feed to Boris for analysis + human-readable report
 ```
 
-De LLM interpreteert de tool output en geeft context-aware feedback.
+Boris interpreteert de tool output en geeft context-aware feedback.
 
 ## Testing: De Visual QA Layer
 
-De **Test & QA LLM** heeft een special ability: **browser toegang** voor visuele testing.
+**Linda (Test & QA)** heeft een special ability: **browser toegang** voor visuele testing.
 
-### Test LLM Workflow
+### Linda's Workflow
 
 ```mermaid
 flowchart TB
-    Start([PR with new feature]) --> Analyze[🧪 Test LLM analyzes changes]
+    Start([PR with new feature]) --> Analyze[🧪 Linda analyzes changes]
 
     Analyze --> Generate{Generate Tests}
 
@@ -836,7 +836,7 @@ n8n heeft ingebouwde **browser automation** (gebaseerd op Puppeteer):
       └─> Return results to Test LLM
 ```
 
-De Test LLM kan zelf **test scripts schrijven** in Playwright syntax, die n8n uitvoert.
+Linda kan zelf **test scripts schrijven** in Playwright syntax, die n8n uitvoert.
 
 ## Challenges & Realiteit Check
 
@@ -844,22 +844,22 @@ Laten we eerlijk zijn - dit is een experiment, en er zijn challenges:
 
 ### Challenge 1: Context Management
 
-**Probleem**: LLMs hebben beperkte context windows. Hoe houden ze overzicht over een groeiende codebase?
+**Probleem**: LLMs hebben beperkte context windows. Hoe houden de agents overzicht over een groeiende codebase?
 
 **Oplossing**:
 
 - **Vector database** (ChromaDB) met code embeddings
-- LLMs querien alleen relevante context voor hun taak
+- Agents querien alleen relevante context voor hun taak
 - Semantic search: "find authentication code" → retrieves auth modules
 
-### Challenge 2: LLM Coordination Overhead
+### Challenge 2: Agent Coordination Overhead
 
-**Probleem**: 9 LLMs coördineren is complex. Wat als ze het niet eens zijn?
+**Probleem**: 9 agents coördineren is complex. Wat als ze het niet eens zijn?
 
 **Oplossing**:
 
-- **Scrum Master LLM** heeft final say bij deadlocks
-- **Voting system**: Bij conflicts stemmen relevante LLMs
+- **Saskia (Scrum Master)** heeft final say bij deadlocks
+- **Voting system**: Bij conflicts stemmen relevante agents
 - **Escalation**: Bij blijvend conflict → human intervention
 
 ### Challenge 3: Cost vs. Cloud
@@ -904,8 +904,8 @@ graph LR
 **Maar**:
 
 - DeepSeek Coder v2 is verrassend goed voor specifieke taken
-- Door **specialisatie** (elke LLM focust op klein domein) compenseert dit
-- Door **peer review** (LLMs checken elkaar) vang je fouten
+- Door **specialisatie** (elke agent focust op klein domein) compenseert dit
+- Door **peer review** (agents checken elkaar) vang je fouten
 - Voor veel taken is "goed genoeg" voldoende
 
 ### Challenge 5: Setup Complexiteit
@@ -916,7 +916,7 @@ graph LR
 
 - Dit is voor **gevorderde users** die willen experimenteren
 - Niet bedoeld als vervanging voor Cursor (nog niet)
-- De journey is het doel - leren hoe LLMs samenwerken
+- De journey is het doel - leren hoe agents samenwerken
 
 ## De Roadmap: Iteratief Bouwen
 
@@ -966,23 +966,23 @@ gantt
 
 ### Fase 2: Single LLM Development (Februari 2025)
 
-- [ ] Eén dev LLM werkend krijgen met n8n
+- [ ] Eén development agent werkend krijgen met n8n (laten we beginnen met Johnie)
 - [ ] Git workflow automation (commit, branch, PR)
 - [ ] Basic code generation + review cycle
 - [ ] Definition of Done implementeren
 
 ### Fase 3: Council Setup (Maart 2025)
 
-- [ ] 4 Dev LLMs met specialisaties
-- [ ] Security Review LLM integratie
-- [ ] Test LLM met browser automation
+- [ ] Alle 4 development agents actief (Anita, Henk, Johnie, Ingrid)
+- [ ] Boris (Security) integratie
+- [ ] Linda (Test) met browser automation
 - [ ] Sprint workflow in n8n
 
 ### Fase 4: Management Layer (April 2025)
 
-- [ ] Scrum Master LLM voor coördinatie
-- [ ] Product Owner LLM voor backlog
-- [ ] Lead Tech LLM voor architectuur
+- [ ] Saskia (Scrum Master) voor coördinatie
+- [ ] Geert (Product Owner) voor backlog
+- [ ] Thierry (Lead Tech) voor architectuur
 - [ ] Volledige sprint cycle
 
 ### Fase 5: Refinement (Mei 2025+)
