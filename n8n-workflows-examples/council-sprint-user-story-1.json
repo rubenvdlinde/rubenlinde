@@ -1,0 +1,271 @@
+{
+  "name": "Council Sprint: User Story 1",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "manual-trigger",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "project_path",
+              "value": "~/council-test-project/contact-form-api"
+            },
+            {
+              "name": "user_story",
+              "value": "User Story 1: Contact Form Submission - Implement POST /contact endpoint with validation"
+            },
+            {
+              "name": "acceptance_criteria",
+              "value": "- Accept name, email, subject, message\n- Validate all required fields\n- Email format validation\n- Return 201 on success\n- Return 400 on validation error"
+            }
+          ]
+        }
+      },
+      "id": "set-context",
+      "name": "Set Sprint Context",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://ollama:11434/api/generate",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "model",
+              "value": "deepseek-coder:33b"
+            },
+            {
+              "name": "prompt",
+              "value": "=You are Johnie, a backend Python developer in a Council of LLMs.\n\nYour task: {{$json.user_story}}\n\nAcceptance Criteria:\n{{$json.acceptance_criteria}}\n\nGenerate a Flask application with the following:\n1. Complete Flask app structure\n2. POST /contact endpoint\n3. Request validation with pydantic\n4. Proper error handling\n5. JSON responses\n6. Environment configuration\n\nProvide ONLY the code, properly formatted with file names as comments.\nStart each file with: # FILE: filename.py\n\nBe production-ready: include error handling, logging, type hints."
+            },
+            {
+              "name": "stream",
+              "value": false
+            },
+            {
+              "name": "temperature",
+              "value": 0.7
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "johnie-generate",
+      "name": "Johnie: Generate Code",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [650, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Extract generated code and parse files\nconst response = items[0].json.response;\n\n// Split by file markers\nconst fileRegex = /# FILE: ([\\w\\/\\.]+)\\n([\\s\\S]*?)(?=# FILE:|$)/g;\nconst files = [];\nlet match;\n\nwhile ((match = fileRegex.exec(response)) !== null) {\n  files.push({\n    filename: match[1],\n    content: match[2].trim()\n  });\n}\n\nreturn [{\n  json: {\n    agent: 'Johnie',\n    user_story: items[0].json.user_story,\n    files: files,\n    raw_response: response,\n    timestamp: new Date().toISOString()\n  }\n}];"
+      },
+      "id": "parse-code",
+      "name": "Parse Generated Files",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [850, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://ollama:11434/api/generate",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "model",
+              "value": "qwen2.5-coder:32b"
+            },
+            {
+              "name": "prompt",
+              "value": "=You are Boris, the security expert in a Council of LLMs.\n\nReview this code for security vulnerabilities:\n\n{{$json.raw_response}}\n\nCheck for:\n1. SQL Injection vulnerabilities\n2. XSS vulnerabilities  \n3. Input validation gaps\n4. Sensitive data exposure\n5. Authentication/Authorization issues\n6. Error message information leakage\n7. Missing security headers\n8. Dependency security\n\nProvide:\n- SEVERITY: Critical/High/Medium/Low/None\n- List of specific issues found\n- Recommendations for fixes\n- Approval status: APPROVED or NEEDS_FIXES"
+            },
+            {
+              "name": "stream",
+              "value": false
+            },
+            {
+              "name": "temperature",
+              "value": 0.3
+            }
+          ]
+        }
+      },
+      "id": "boris-review",
+      "name": "Boris: Security Review",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [1050, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://ollama:11434/api/generate",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "model",
+              "value": "qwen2.5-coder:32b"
+            },
+            {
+              "name": "prompt",
+              "value": "=You are Linda, the test engineer in a Council of LLMs.\n\nWrite comprehensive pytest tests for this code:\n\n{{$node['Parse Generated Files'].json.raw_response}}\n\nUser Story: {{$node['Set Sprint Context'].json.user_story}}\nAcceptance Criteria:\n{{$node['Set Sprint Context'].json.acceptance_criteria}}\n\nGenerate:\n1. Unit tests for each function\n2. Integration tests for API endpoints\n3. Edge case tests\n4. Error handling tests\n5. Validation tests\n\nProvide ONLY test code with file names as comments.\nStart each file with: # FILE: tests/test_*.py\n\nInclude pytest fixtures and proper assertions."
+            },
+            {
+              "name": "stream",
+              "value": false
+            },
+            {
+              "name": "temperature",
+              "value": 0.7
+            }
+          ]
+        }
+      },
+      "id": "linda-tests",
+      "name": "Linda: Write Tests",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [1250, 300]
+    },
+    {
+      "parameters": {
+        "operation": "insert",
+        "schema": "council",
+        "table": "agent_activity",
+        "columns": "agent_name,activity_type,description,status,metadata",
+        "returnFields": "id,started_at"
+      },
+      "id": "log-johnie",
+      "name": "Log Johnie Activity",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2,
+      "position": [850, 500],
+      "credentials": {
+        "postgres": {
+          "name": "Council PostgreSQL"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "insert",
+        "schema": "council",
+        "table": "agent_activity",
+        "columns": "agent_name,activity_type,description,status,metadata"
+      },
+      "id": "log-boris",
+      "name": "Log Boris Activity",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2,
+      "position": [1050, 500],
+      "credentials": {
+        "postgres": {
+          "name": "Council PostgreSQL"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "insert",
+        "schema": "council",
+        "table": "agent_activity",
+        "columns": "agent_name,activity_type,description,status,metadata"
+      },
+      "id": "log-linda",
+      "name": "Log Linda Activity",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2,
+      "position": [1250, 500],
+      "credentials": {
+        "postgres": {
+          "name": "Council PostgreSQL"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Aggregate all results\nconst johnieData = $node['Parse Generated Files'].json;\nconst borisData = $node['Boris: Security Review'].json;\nconst lindaData = $node['Linda: Write Tests'].json;\n\n// Extract approval status from Boris review\nconst borisReview = borisData.response;\nconst isApproved = borisReview.includes('APPROVED') && !borisReview.includes('NEEDS_FIXES');\nconst hasCritical = borisReview.includes('SEVERITY: Critical');\n\nreturn [{\n  json: {\n    sprint_result: {\n      user_story: johnieData.user_story,\n      code_files: johnieData.files,\n      security_review: {\n        agent: 'Boris',\n        approved: isApproved,\n        has_critical: hasCritical,\n        full_review: borisReview\n      },\n      tests: {\n        agent: 'Linda',\n        test_code: lindaData.response\n      },\n      status: isApproved && !hasCritical ? 'READY_FOR_DEPLOYMENT' : 'NEEDS_REVISION',\n      timestamp: new Date().toISOString(),\n      agents_involved: ['Johnie', 'Boris', 'Linda']\n    }\n  }\n}];"
+      },
+      "id": "aggregate-results",
+      "name": "Aggregate Sprint Results",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [1450, 300]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{JSON.stringify($json.sprint_result, null, 2)}}"
+      },
+      "id": "return-response",
+      "name": "Return Results",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [1650, 300]
+    }
+  ],
+  "connections": {
+    "Manual Trigger": {
+      "main": [[{ "node": "Set Sprint Context", "type": "main", "index": 0 }]]
+    },
+    "Set Sprint Context": {
+      "main": [
+        [{ "node": "Johnie: Generate Code", "type": "main", "index": 0 }]
+      ]
+    },
+    "Johnie: Generate Code": {
+      "main": [
+        [
+          { "node": "Parse Generated Files", "type": "main", "index": 0 },
+          { "node": "Log Johnie Activity", "type": "main", "index": 0 }
+        ]
+      ]
+    },
+    "Parse Generated Files": {
+      "main": [
+        [{ "node": "Boris: Security Review", "type": "main", "index": 0 }]
+      ]
+    },
+    "Boris: Security Review": {
+      "main": [
+        [
+          { "node": "Linda: Write Tests", "type": "main", "index": 0 },
+          { "node": "Log Boris Activity", "type": "main", "index": 0 }
+        ]
+      ]
+    },
+    "Linda: Write Tests": {
+      "main": [
+        [
+          { "node": "Aggregate Sprint Results", "type": "main", "index": 0 },
+          { "node": "Log Linda Activity", "type": "main", "index": 0 }
+        ]
+      ]
+    },
+    "Aggregate Sprint Results": {
+      "main": [[{ "node": "Return Results", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": {},
+  "staticData": null,
+  "tags": [],
+  "meta": {
+    "instanceId": "council-llm"
+  },
+  "pinData": {},
+  "versionId": "1.0.0"
+}
