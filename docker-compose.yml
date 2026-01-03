@@ -24,35 +24,9 @@ services:
       - council-network
 
   # Ollama - LLM runtime voor lokale modellen
-  ollama:
-    image: ollama/ollama:latest
-    container_name: council-ollama
-    restart: unless-stopped
-    volumes:
-      - ollama-models:/root/.ollama
-    ports:
-      - '11434:11434'
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: all
-              capabilities: [gpu]
-    environment:
-      # Houd modellen 24 uur in geheugen (voor 24/7 operatie)
-      - OLLAMA_KEEP_ALIVE=24h
-      # Aantal parallelle requests (pas aan op basis van VRAM)
-      - OLLAMA_NUM_PARALLEL=${OLLAMA_NUM_PARALLEL:-4}
-      # Max context lengte
-      - OLLAMA_MAX_LOADED_MODELS=${OLLAMA_MAX_LOADED_MODELS:-2}
-    networks:
-      - council-network
-    healthcheck:
-      test: ['CMD', 'curl', '-f', 'http://localhost:11434/api/tags']
-      interval: 30s
-      timeout: 10s
-      retries: 3
+  # Note: Ollama service is NOT included in this compose file
+  # We use the existing openregister-ollama container on host.docker.internal:11434
+  # This avoids port conflicts and shares models between projects
 
   # n8n - Workflow orchestration voor agent coördinatie
   n8n:
@@ -85,13 +59,15 @@ services:
       - GENERIC_TIMEZONE=Europe/Amsterdam
       # AI/LLM integrations
       - N8N_AI_ENABLED=true
+      # Ollama connection (uses host's existing Ollama on port 11434)
+      - OLLAMA_HOST=host.docker.internal:11434
     volumes:
       - n8n-data:/home/node/.n8n
       - ./n8n-workflows:/home/node/.n8n/workflows:rw
     depends_on:
       postgres:
         condition: service_healthy
-      ollama:
+      redis:
         condition: service_healthy
     networks:
       - council-network
@@ -121,8 +97,6 @@ services:
 
 volumes:
   postgres-data:
-    driver: local
-  ollama-models:
     driver: local
   n8n-data:
     driver: local

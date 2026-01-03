@@ -1,0 +1,23 @@
+{
+  "user_stories": [
+    {
+      "id": "US1",
+      "title": "As a user I want to submit a contact form with validation so that I receive a confirmation message.",
+      "description": "The user should be able to fill out the contact form with required fields (name, email, subject, message) and submit it. The form should validate the input and return a 201 status code with the submission ID if successful. If any validation errors occur, the form should return a 400 status code.",
+      "acceptance_criteria": [
+        "The user can fill out the contact form with required fields (name, email, subject, message).",
+        "The form validates the input and returns a 201 status code with the submission ID if successful.",
+        "If any validation errors occur, the form returns a 400 status code."
+      ]
+    },
+    {
+      "id": "US2",
+      "title": "As a user I want to check the health of the API so that I know it is running properly.",
+      "description": "The user should be able to access the health check endpoint (/health) and receive a 200 OK status code with the status. The endpoint should return a JSON object with the status information.",
+      "acceptance_criteria": [
+        "The user can access the health check endpoint (/health).",
+        "The endpoint returns a 200 OK status code with the status information."
+      ]
+    }
+  ]
+}

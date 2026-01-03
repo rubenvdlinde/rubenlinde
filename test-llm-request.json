@@ -1,0 +1,5 @@
+{
+  "model": "qwen2.5-coder:1.5b",
+  "prompt": "Write a Python function that validates an email address. Return ONLY the code, no explanation.",
+  "stream": false
+}

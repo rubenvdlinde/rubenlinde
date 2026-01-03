@@ -1,0 +1,27 @@
+{
+  "sprint_name": "Sprint 1: User Story US1",
+  "user_stories_in_sprint": ["US1"],
+  "tasks": [
+    {
+      "id": "TASK1.1.1",
+      "user_story_id": "US1",
+      "agent": "Johnie",
+      "description": "Implement the backend code for handling the contact form submission.",
+      "dependencies": []
+    },
+    {
+      "id": "TASK1.2.1",
+      "user_story_id": "US1",
+      "agent": "Boris",
+      "description": "Perform a security review of the backend code to ensure it is secure.",
+      "dependencies": ["TASK1.1.1"]
+    },
+    {
+      "id": "TASK1.3.1",
+      "user_story_id": "US1",
+      "agent": "Linda",
+      "description": "Write tests for the backend code using a testing framework like Jest or Mocha.",
+      "dependencies": ["TASK1.1.1"]
+    }
+  ]
+}
