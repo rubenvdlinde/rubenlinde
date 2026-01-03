@@ -744,6 +744,359 @@ n8n workflow:
 
 Boris interpreteert de tool output en geeft context-aware feedback.
 
+### Advanced Security: Beyond Static Analysis
+
+Maar we stoppen niet bij static analysis. Security is een layered approach, en Boris krijgt toegang tot **geavanceerde security tooling** die in de CI/CD pipeline draait:
+
+#### 1. Container Security Scanning
+
+Elke Docker image die we bouwen moet door container scanning:
+
+```mermaid
+flowchart TB
+    Build[Docker Image Built] --> Scan{Container Scanners}
+
+    Scan -->|Scanner 1| Trivy[Trivy<br/>OS & dependency vulns]
+    Scan -->|Scanner 2| Snyk[Snyk Container<br/>Base image issues]
+    Scan -->|Scanner 3| Grype[Grype<br/>CVE matching]
+
+    Trivy --> Aggregate[Aggregate Results]
+    Snyk --> Aggregate
+    Grype --> Aggregate
+
+    Aggregate --> Boris[🔒 Boris analyzes]
+    Boris --> Severity{Severity Check}
+
+    Severity -->|Critical| Block[❌ Block Deploy<br/>+ Remediation]
+    Severity -->|High| Manual[⚠️ Manual Review<br/>Required]
+    Severity -->|Medium/Low| Log[📝 Log & Monitor]
+    Severity -->|Clean| Deploy[✅ Deploy]
+
+    style Build fill:#4ecdc4
+    style Trivy fill:#ff6b6b
+    style Snyk fill:#ff6b6b
+    style Grype fill:#ff6b6b
+    style Boris fill:#f7b731
+    style Block fill:#eb3b5a
+    style Deploy fill:#26de81
+```
+
+**Waarom dit cruciaal is:**
+
+- Base images (zoals `node:18`) kunnen kwetsbaarheden bevatten
+- Dependencies in layers kunnen outdated zijn
+- Supply chain attacks via compromised images[^16]
+- Compliance: we willen weten wat er in onze containers zit
+
+**Boris' container review:**
+
+```
+Voor elke image:
+1. Scan met Trivy[^11], Snyk[^12], Grype
+2. Aggregeer CVEs en severity scores
+3. Check tegen acceptabel risico-niveau
+4. Bij critical/high: block deploy + suggest fixes
+   - Update base image
+   - Patch vulnerable dependencies
+   - Replace compromised packages
+5. Bij medium/low: log en monitor
+6. Generate SBOM (Software Bill of Materials)[^16]
+```
+
+#### 2. Penetration Testing Automation
+
+We integreren **automated pentesting** in de CI/CD:
+
+```yaml
+# n8n workflow: Weekly Pentest
+schedule: '0 2 * * 0' # Zondag 2:00 AM
+
+steps:
+  - name: OWASP ZAP Active Scan
+    target: staging.app.local
+    scan_types:
+      - SQL injection
+      - XSS (reflected & stored)
+      - CSRF
+      - Authentication bypass
+      - API security
+
+  - name: Nuclei Template Scan
+    templates:
+      - cves/
+      - exposures/
+      - vulnerabilities/
+      - misconfigurations/
+
+  - name: Custom Fuzzing
+    tool: ffuf
+    wordlists:
+      - api-endpoints
+      - parameters
+      - payloads
+
+  - name: Boris Analysis
+    input: aggregated_scan_results
+    output:
+      - vulnerability_report
+      - risk_assessment
+      - remediation_plan
+```
+
+**OWASP ZAP**: Automated web app security scanner[^13]
+**Nuclei**: Fast vulnerability scanner met 1000+ templates[^14]
+**ffuf**: Web fuzzer voor endpoint discovery en parameter testing
+
+#### 3. AI-Powered Security: De Toekomst
+
+Hier wordt het interessant - **AI-enhanced security** die verder gaat dan traditionele tools:
+
+**A. LLM-Based Code Review (Boris' Superpower)**
+
+Boris gebruikt zijn LLM capabilities voor:
+
+```python
+# Boris' security prompting
+context = """
+You are reviewing this code for security issues.
+Focus on:
+- Logic flaws (business logic vulnerabilities)
+- Race conditions in async code
+- Subtle injection vulnerabilities
+- Authorization bypass opportunities
+- Cryptographic misuse
+- Time-of-check to time-of-use (TOCTOU) bugs
+"""
+
+# Boris analyzes CONTEXT + CODE + PATTERNS
+# Output: natuurlijke taal uitleg van subtiele bugs
+```
+
+**Waarom LLMs hier beter zijn:**
+
+- Traditionele tools missen **logic flaws** (business logic bugs)
+- LLMs kunnen **context begrijpen**: "deze check kan bypassed worden als..."
+- LLMs vinden **novel attack vectors** die niet in CVE databases staan
+- LLMs kunnen **impact uitleggen** in natuurlijke taal
+
+**Voorbeeld: Boris vindt een subtle bug**
+
+```javascript
+// Code in PR
+if (user.role === 'admin' || user.permissions.includes('delete')) {
+  await deleteResource(resourceId);
+}
+
+// Boris' analyse:
+"⚠️ Authorization Logic Flaw gevonden:
+De check gebruikt OR in plaats van AND. Een user met alleen
+'delete' permission (zonder admin role) kan nu resources deleten,
+ook al was de intentie dat dit alleen admins mogen.
+
+Impact: Privilege escalation - regular users met 'delete' permission
+kunnen admin-only resources verwijderen.
+
+Fix: Verander naar AND of voeg separate check toe voor admin-only resources."
+```
+
+**B. AI-Powered Fuzzing**
+
+We gebruiken **ML-guided fuzzing** voor intelligentere pentesting:[^15]
+
+```
+Tool: AFL++ met MOpt scheduler (ML mutation)
+Doel: Find edge cases en crashes
+
+Traditionele fuzzing: random mutations
+AI fuzzing: ML leert welke mutations
+           interessante code paths triggeren
+
+Result: 5-10x snellere bug discovery[^15]
+```
+
+**C. Threat Modeling met LLMs**
+
+Boris kan **automated threat modeling**:[^17]
+
+```
+Input: System architecture diagram + code
+Boris' prompt:
+"Generate a threat model using STRIDE methodology:[^17]
+- Spoofing opportunities
+- Tampering vectors
+- Repudiation risks
+- Information disclosure
+- Denial of service
+- Elevation of privilege
+
+For each threat, provide:
+- Attack scenario
+- Likelihood & impact
+- Mitigation strategy"
+
+Output: Comprehensive threat model per feature
+```
+
+**D. Runtime Application Self-Protection (RASP)**
+
+We integreren een **AI-powered RASP layer**:
+
+```javascript
+// In runtime: real-time monitoring
+const rasp = require('rasp-shield');
+
+app.use(
+  rasp.middleware({
+    ai_model: 'security/anomaly-detection',
+
+    detect: [
+      'sql-injection-attempts',
+      'unusual-request-patterns',
+      'rate-limit-violations',
+      'jwt-tampering',
+      'suspicious-payload-structure',
+    ],
+
+    actions: {
+      block: true,
+      alert_boris: true, // Real-time alert naar Boris
+      log_forensics: true,
+    },
+  })
+);
+```
+
+**Hoe RASP werkt:**
+
+1. App draait met RASP layer
+2. RASP monitort alle requests real-time
+3. AI model detecteert **anomalieën** (afwijkend gedrag)
+4. Bij verdacht gedrag: block + alert Boris
+5. Boris analyseert: false positive of echte attack?
+6. Bij echte attack: emergency patch workflow
+
+**E. Automated Patch Suggestions**
+
+Boris kan **automated security patches** voorstellen:
+
+```
+Workflow:
+1. CVE wordt ontdekt in dependency
+2. Boris analyseert:
+   - Welke code gebruikt deze dependency?
+   - Wat is de impact op onze app?
+   - Welke versie fixed de CVE?
+3. Boris genereert:
+   - Update PR voor package.json
+   - Tests om te checken dat update niet breekt
+   - Rollback plan als het misgaat
+4. Boris assignt aan Johnie/Ingrid voor review
+5. Bij approval: automated merge + deploy
+```
+
+**F. Security Log Analysis met AI**
+
+Boris analyseert **security logs** met LLM:
+
+```
+Input: 10.000 log regels per dag
+Boris' AI analysis:
+- Pattern recognition: welke logs horen bij elkaar?
+- Anomaly detection: wat is afwijkend?
+- Threat correlation: is dit deel van een attack chain?
+- Natural language alerting: "Mogelijk brute force attack
+  op /api/login - 500 failed attempts van IP 1.2.3.4
+  in laatste 5 minuten"
+
+Output: Actionable security alerts (geen noise)
+```
+
+#### 4. Security in CI/CD Pipeline
+
+**Volledige security gate:**
+
+```yaml
+# .github/workflows/security.yml
+name: Security Pipeline
+
+on: [push, pull_request]
+
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+    steps:
+      # Static Analysis
+      - name: SAST (Static Application Security Testing)
+        run: semgrep --config=auto
+
+      # Dependency Scanning
+      - name: Dependency Check
+        run: |
+          npm audit --audit-level=high
+          snyk test
+
+      # Secret Scanning
+      - name: Secret Detection
+        run: gitleaks detect --verbose
+
+      # Container Scanning
+      - name: Build & Scan Docker Image
+        run: |
+          docker build -t app:${{ github.sha }} .
+          trivy image app:${{ github.sha }}
+
+      # IaC Security (Infrastructure as Code)
+      - name: Terraform Security
+        run: tfsec .
+
+      # Boris Review
+      - name: AI Security Analysis
+        run: |
+          n8n execute security-review-workflow \
+            --pr=${{ github.event.number }} \
+            --commit=${{ github.sha }}
+
+      # Security Gate
+      - name: Check Security Status
+        run: |
+          if [[ "$BORIS_APPROVAL" != "true" ]]; then
+            echo "❌ Boris blocked this PR due to security concerns"
+            exit 1
+          fi
+```
+
+**Security metrics we tracken:**
+
+- **MTTR (Mean Time To Remediate)**: Hoe snel fixen we CVEs?
+- **Vulnerability Density**: CVEs per 1000 lines of code
+- **Security Test Coverage**: % code gecheckt door security tests
+- **False Positive Rate**: Boris' accuracy (< 5% target)
+- **Zero-Day Response Time**: Hoe snel reageren we op nieuwe CVEs?
+
+### Waarom Deze Security Aanpak Werkt
+
+**Layered Defense (Defense in Depth):**
+
+1. **Preventie**: Boris blokkeert onveilige code voor merge
+2. **Detection**: Container scanning + RASP detecteert runtime issues
+3. **Response**: Automated patching + pentesting vindt nieuwe vectors
+4. **Recovery**: SBOM + forensics voor incident response
+
+**AI als Force Multiplier:**
+
+- Boris vindt bugs die tools missen (logic flaws)
+- ML-fuzzing vindt edge cases 10x sneller
+- Automated threat modeling schaalt met team growth
+- Log analysis reduceert alert fatigue (alleen actionable alerts)
+
+**Continuous Improvement:**
+
+- Boris leert van elke CVE: "deze pattern is vulnerable"
+- Team leert van Boris' reviews: "zo denk je als attacker"
+- Security metrics tonen improvement over tijd
+
+Dit is niet alleen security - dit is **security at scale**, waarbij AI ons helpt om sneller, slimmer, en proactief te zijn tegen threats.
+
 ## Testing: De Visual QA Layer
 
 **Linda (Test & QA)** heeft een special ability: **browser toegang** voor visuele testing.
@@ -838,9 +1191,306 @@ n8n heeft ingebouwde **browser automation** (gebaseerd op Puppeteer):
 
 Linda kan zelf **test scripts schrijven** in Playwright syntax, die n8n uitvoert.
 
+### WCAG en Digitale Toegankelijkheid: Linda's Specialiteit
+
+Een cruciaal onderdeel van kwaliteit is **toegankelijkheid**. Linda heeft hiervoor een dedicated workflow met externe tooling:
+
+**Automated Accessibility Testing Stack:**
+
+```mermaid
+flowchart LR
+    PR[New PR] --> Linda[🧪 Linda triggers a11y scan]
+
+    Linda --> Tools{Run A11y Tools}
+
+    Tools -->|Tool 1| Axe[axe-core<br/>WCAG violations]
+    Tools -->|Tool 2| Lighthouse[Lighthouse CI<br/>Accessibility score]
+    Tools -->|Tool 3| Pa11y[Pa11y<br/>Standards compliance]
+    Tools -->|Tool 4| Wave[WAVE API<br/>Visual feedback]
+
+    Axe --> Aggregate[Aggregate Results]
+    Lighthouse --> Aggregate
+    Pa11y --> Aggregate
+    Wave --> Aggregate
+
+    Aggregate --> Linda2[Linda analyzes<br/>& generates report]
+    Linda2 --> Decision{WCAG AA compliant?}
+
+    Decision -->|No ✗| Block[Block PR + remediation guide]
+    Decision -->|Yes ✓| Approve[Approve PR]
+
+    style Linda fill:#5f27cd
+    style Linda2 fill:#5f27cd
+    style Axe fill:#00d2d3
+    style Lighthouse fill:#00d2d3
+    style Pa11y fill:#00d2d3
+    style Wave fill:#00d2d3
+    style Block fill:#ff6b6b
+    style Approve fill:#26de81
+```
+
+**Tooling uitleg:**
+
+- **axe-core**: Automated WCAG 2.1 Level AA testing - checkt 57+ accessibility rules[^8]
+- **Lighthouse CI**: Google's accessibility auditing tool - geeft een score 0-100
+- **Pa11y**: Command-line tool die WCAG A, AA, AAA standaarden checkt
+- **WAVE API**: WebAIM's tool die visuele feedback geeft op a11y issues
+
+**Linda's toegankelijkheidsworkflow:**
+
+```
+1. PR wordt aangemaakt
+2. Linda runt parallel alle 4 a11y tools
+3. Results worden geaggregeerd:
+   - Violations per WCAG criterium[^10]
+   - Severity (critical, serious, moderate, minor)
+   - Specifieke elementen met problemen
+4. Linda analyseert en genereert een rapport met:
+   - WCAG compliance status (A, AA, of AAA)
+   - Concrete remediation steps per violation
+   - Code voorbeelden voor fixes
+   - Screenshots met problemen gemarkeerd
+5. Bij blocking issues: PR wordt geblokkeerd met remediation guide
+6. Bij compliance: PR krijgt accessibility approval ✓
+```
+
+**Target compliance:** WCAG 2.1 Level AA als minimum, met streven naar AAA waar mogelijk.[^10]
+
+**Waarom dit werkt:**
+
+- **Geautomatiseerd**: Elke PR wordt gecheckt, geen handmatig werk
+- **Vroeg in proces**: A11y issues worden gevonden voor merge, niet na deploy
+- **Educatief**: Linda geeft concrete fix-voorbeelden, team leert
+- **Compliant**: Voldoet aan Nederlandse toegankelijkheidseisen (Digitoegankelijk.nl)[^9]
+
 ## Challenges & Realiteit Check
 
 Laten we eerlijk zijn - dit is een experiment, en er zijn challenges:
+
+## Council of LLMs vs. Menselijk Dev Team
+
+Voor we in de challenges duiken, laten we eerst eerlijk zijn: **hoe verhoudt dit Council zich tot een echt menselijk development team?** Want dat is de relevante vergelijking.
+
+### De Menselijke Benchmark
+
+Een typisch menselijk development team voor een middelgroot project:
+
+```
+Team samenstelling (8 personen):
+├─ 2x Frontend Developer (€60-80k/jaar elk)
+├─ 2x Backend Developer (€60-80k/jaar elk)
+├─ 1x DevOps/Infrastructure (€70-90k/jaar)
+├─ 1x QA/Tester (€50-65k/jaar)
+├─ 1x Product Owner (€70-85k/jaar)
+├─ 1x Scrum Master (€65-80k/jaar)
+
+Kosten: €535-660k/jaar (excl. overhead, tooling, kantoor)
+Capaciteit: ~40 uur/week per persoon = 320 uur/week totaal
+```
+
+### De Council Benchmark
+
+```
+Team samenstelling (9 LLMs):
+├─ 4x Development LLMs (Anita, Henk, Johnie, Ingrid)
+├─ 2x Quality LLMs (Boris, Linda)
+├─ 3x Management LLMs (Geert, Saskia, Thierry)
+
+Kosten:
+├─ Hardware: RTX 4090 €2000 (eenmalig)
+├─ Elektriciteit: ~€30/maand = €360/jaar
+├─ Setup & onderhoud: ~40 uur/jaar × €100 = €4000/jaar
+
+Totaal Year 1: €6360 | Year 2+: €4360/jaar
+Capaciteit: 24/7 beschikbaar = 168 uur/week × 9 agents = 1512 uur/week
+```
+
+### Vergelijking: Wat Zijn De Verschillen?
+
+```mermaid
+graph TB
+    subgraph Human["👥 Menselijk Team"]
+        HCost["💰 €535-660k/jaar"]
+        HTime["⏰ 320 uur/week"]
+        HQuality["⭐ Hoge kwaliteit"]
+        HCreative["💡 Creatief & innovatief"]
+        HContext["🧠 Diep begrip"]
+        HComm["🗣️ Natuurlijke communicatie"]
+    end
+
+    subgraph Council["🤖 Council of LLMs"]
+        CCost["💰 €4-6k/jaar"]
+        CTime["⏰ 1512 uur/week"]
+        CQuality["⭐ Variabele kwaliteit"]
+        CCreative["💡 Beperkt creatief"]
+        CContext["🧠 Beperkte context"]
+        CComm["🗣️ Moet gestuurd worden"]
+    end
+
+    style HCost fill:#ff6b6b
+    style CCost fill:#26de81
+    style HTime fill:#fd9644
+    style CTime fill:#26de81
+    style HQuality fill:#26de81
+    style CQuality fill:#fd9644
+```
+
+### Voordelen van het Council (vs. Mensen)
+
+**1. Kosten: 99% goedkoper**
+
+- Council: €4-6k/jaar vs. Team: €535-660k/jaar
+- Break-even na 3 maanden
+- Geen recruitment kosten, geen onboarding, geen benefits
+
+**2. Beschikbaarheid: 5x meer capaciteit**
+
+- Council werkt 24/7, geen vakanties, geen ziekte
+- 1512 uur/week vs. 320 uur/week
+- Geen context switching tussen projecten
+
+**3. Consistentie: Geen "bad days"**
+
+- LLMs hebben geen slechte dagen, frustraties, of burn-out
+- Constante code kwaliteit (binnen model capabilities)
+- Geen interpersoonlijke conflicten
+
+**4. Schaalbaarheid: Instant scaling**
+
+- Voeg een agent toe = 5 minuten
+- Menselijk team uitbreiden = 3-6 maanden recruitment + onboarding
+- Geen teamdynamiek issues bij groei
+
+**5. Documentatie: Perfect memory**
+
+- Agents documenteren automatisch alles
+- Geen kennis die "in iemands hoofd zit"
+- Complete audit trail van alle beslissingen
+
+**6. Specialisatie: Hyper-focused**
+
+- Elk agent focust 100% op hun domein
+- Geen "jack of all trades, master of none"
+- Deep expertise per domein
+
+### Nadelen van het Council (vs. Mensen)
+
+**1. Creativiteit: LLMs zijn niet innovatief**[^6]
+
+- Mensen bedenken nieuwe architecturen, patterns, oplossingen
+- LLMs reproduceren bestaande kennis
+- Breakthrough innovations komen van mensen, niet van LLMs
+
+**2. Begrip: Oppervlakkige context**
+
+- Mensen begrijpen de _waarom_ achter requirements
+- LLMs volgen instructies, maar missen business context
+- Subtiele user needs worden door mensen beter begrepen
+
+**3. Communicatie: Geert is geen echte PO**
+
+- Stakeholder management vereist empathie, onderhandeling
+- LLMs kunnen niet effectief vergaderen met klanten
+- Politieke navigatie binnen organisaties is menselijk werk
+
+**4. Judgment calls: Geen "gut feeling"**
+
+- Ervaren developers voelen aan wat "not quite right" is
+- LLMs hebben geen intuïtie, alleen patronen
+- Edge cases vereisen menselijke judgment
+
+**5. Kwaliteit: Inferieur aan senior developers**
+
+- DeepSeek Coder (33B) < Claude Sonnet < Senior Developer
+- Code quality: 70-80% van menselijke output[^19]
+- Subtiele bugs blijven vaak door de mazen
+
+**6. Debugging: Beperkte problem-solving**
+
+- "Waarom werkt dit niet?" - mensen debuggen beter
+- LLMs kunnen vastlopen op complexe issues
+- Root cause analysis is moeilijk voor LLMs
+
+**7. Setup complexiteit: Niet plug-and-play**
+
+- Menselijk team: onboarden = 2 weken, productief
+- Council setup: weken aan configuratie, debugging, tuning
+- Maintenance overhead blijft hoog
+
+**8. Context limitations: Beperkt geheugen**
+
+- Mensen onthouden hele project geschiedenis
+- LLMs: beperkte context window (128k tokens ≈ 100 files)
+- Vector DB helpt, maar is geen perfect oplossing
+
+### De Realistische Sweet Spot: Hybrid Teams
+
+Hier is de waarheid: **het is geen óf/óf, maar én/én**.[^7]
+
+**Optimale setup:**
+
+```
+Menselijk Team (klein, senior):
+├─ 1x Lead Developer (architectuur, moeilijke problemen)
+├─ 1x Product Owner (stakeholder management, strategy)
+└─ 1x DevOps Engineer (infrastructure, security review)
+
+Council of LLMs (grunt work):
+├─ Anita, Henk, Johnie, Ingrid (feature development)
+├─ Boris, Linda (automated testing & security)
+└─ Saskia, Thierry (documentatie, code review)
+
+Samenwerking:
+- Mensen sturen de Council: requirements, architectuur beslissingen
+- Council doet het zware tilwerk: code schrijven, tests, reviews
+- Mensen reviewen Council output: finale quality gate
+- Council amplifieert menselijke productiviteit 5-10x
+```
+
+**Kosten hybrid model:**
+
+- 3 menselijke seniors: €210-270k/jaar
+- Council: €4-6k/jaar
+- **Totaal: €214-276k/jaar (60% besparing vs. volledig menselijk team)**
+- **Output: Vergelijkbaar met 6-8 persoons team**
+
+### Waar Werkt Het Council Het Beste?
+
+**✅ Ideaal voor:**
+
+- **Maintenance work**: Bug fixes, small features, refactoring
+- **Testing & QA**: Automated test generation en execution
+- **Documentation**: Code comments, API docs, README updates
+- **Security scanning**: Continuous security reviews
+- **Code reviews**: First-pass reviews voor obvious issues
+- **Prototyping**: Snel MVPs bouwen voor validatie
+
+**❌ Minder geschikt voor:**
+
+- **Greenfield projects**: Nieuwe architectuur vereist menselijke creativiteit
+- **Complex problem-solving**: Novel bugs, performance issues
+- **Stakeholder management**: Klanten willen met mensen praten
+- **Critical systems**: Waar fouten levensgevaarlijk zijn (medical, aviation)
+- **Highly regulated**: Compliance, legal vereist menselijke accountability
+
+### De Eerlijke Conclusie
+
+Het Council of LLMs is **niet** een vervanging voor menselijke developers. Het is een **force multiplier**.
+
+**Denk aan het als:**
+
+- Menselijke developers = Architects & Engineers
+- Council = Construction crew
+
+De architect ontwerpt het gebouw, de engineer lost de moeilijke problemen op, maar de crew doet het daadwerkelijke bouwen. En die crew werkt 24/7, kost bijna niets, en maakt weinig fouten bij repetitief werk.
+
+**Voor mijn experiment:**
+Ik test dit op **niet-kritische projecten** (personal projects, prototypes). Voor production work blijf ik een hybrid model gebruiken: Cursor/Claude voor complex werk, Council voor grunt work.
+
+**De toekomst?**
+Modellen worden beter. Over 2-3 jaar kunnen lokale 100B+ modellen misschien wel senior developer niveau halen.[^20] Maar voorlopig: **Council = junior developers met superkrachten**, niet senior developers.
+
+## Technical Challenges
 
 ### Challenge 1: Context Management
 
@@ -1002,7 +1652,7 @@ Als ik pleit voor digital soevereiniteit bij overheden[^5], moet ik ook zelf exp
 
 ### 2. Leren Hoe LLMs Samenwerken
 
-De toekomst van AI development is waarschijnlijk **niet** één super-intelligent model, maar **teams van gespecialiseerde modellen** die samenwerken. Dit is een kans om die dynamiek te begrijpen.
+De toekomst van AI development is waarschijnlijk **niet** één super-intelligent model, maar **teams van gespecialiseerde modellen** die samenwerken.[^18] Dit is een kans om die dynamiek te begrijpen.
 
 ### 3. Open Source Bijdragen
 
@@ -1049,3 +1699,33 @@ _Let's build a Council of LLMs._ 🚀
 [^4]: **DeepSeek AI** - [DeepSeek Coder: Open source code generation models](https://github.com/deepseek-ai/DeepSeek-Coder)
 
 [^5]: Zie mijn eerdere blog: [Volwassenheid van Open Source](/blog/volwassenheid-open-source)
+
+[^6]: **Nature** - [Large language models cannot replace human participants](https://www.nature.com/articles/s41562-024-01980-6)
+
+[^7]: **McKinsey** - [The economic potential of generative AI: The next productivity frontier](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier)
+
+[^8]: **Deque Systems** - [axe-core: Accessibility testing engine](https://github.com/dequelabs/axe-core)
+
+[^9]: **Digitoegankelijk** - [Toegankelijkheidseisen overheid](https://www.digitoegankelijk.nl/)
+
+[^10]: **WCAG 2.1** - [Web Content Accessibility Guidelines](https://www.w3.org/WAI/WCAG21/quickref/)
+
+[^11]: **Aqua Security** - [Trivy: Container vulnerability scanner](https://github.com/aquasecurity/trivy)
+
+[^12]: **Snyk** - [Container Security](https://snyk.io/product/container-vulnerability-management/)
+
+[^13]: **OWASP** - [ZAP: Zed Attack Proxy](https://www.zaproxy.org/)
+
+[^14]: **ProjectDiscovery** - [Nuclei: Fast vulnerability scanner](https://github.com/projectdiscovery/nuclei)
+
+[^15]: **Google** - [AFL++ with MOpt: Machine Learning-guided Fuzzing](https://github.com/AFLplusplus/AFLplusplus)
+
+[^16]: **NIST** - [Software Bill of Materials (SBOM)](https://www.nist.gov/itl/executive-order-14028-improving-nations-cybersecurity/software-security-supply-chains-software-1)
+
+[^17]: **OWASP** - [STRIDE Threat Model](https://owasp.org/www-community/Threat_Modeling_Process)
+
+[^18]: **Microsoft** - [Multi-agent systems research](https://www.microsoft.com/en-us/research/project/autogen/)
+
+[^19]: **Anthropic** - [Constitutional AI: Harmlessness from AI Feedback](https://arxiv.org/abs/2212.08073)
+
+[^20]: **OpenAI** - [Practices for Governing Agentic AI Systems](https://openai.com/index/practices-for-governing-agentic-ai-systems/)
