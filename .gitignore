@@ -135,3 +135,8 @@ build
 
 # Finder (MacOS) folder config
 .DS_Store
+
+# Docker and Council of LLMs specific
+n8n-workflows/*.json
+.env
+docker-compose.override.yml

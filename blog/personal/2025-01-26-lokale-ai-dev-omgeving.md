@@ -1973,7 +1973,9 @@ Nu de theorie duidelijk is, hoe setup je dit **écht**? Je hebt twee opties: all
 
 #### Docker Compose File
 
-Maak een `docker-compose.yml`:
+Download de complete setup van GitHub: [Council-LLM Docker Setup](https://github.com/rubenvdlinde/rubenlinde/tree/main/)
+
+Of maak een `docker-compose.yml`:
 
 ```yaml
 version: '3.8'

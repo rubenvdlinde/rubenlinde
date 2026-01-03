@@ -1,0 +1,135 @@
+version: '3.8'
+
+services:
+  # PostgreSQL met pgvector voor code embeddings en vector search
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: council-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: council
+      POSTGRES_USER: council
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-change-me-in-production}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ./init-db.sql:/docker-entrypoint-initdb.d/init-db.sql:ro
+    ports:
+      - '5432:5432'
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U council']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - council-network
+
+  # Ollama - LLM runtime voor lokale modellen
+  ollama:
+    image: ollama/ollama:latest
+    container_name: council-ollama
+    restart: unless-stopped
+    volumes:
+      - ollama-models:/root/.ollama
+    ports:
+      - '11434:11434'
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    environment:
+      # Houd modellen 24 uur in geheugen (voor 24/7 operatie)
+      - OLLAMA_KEEP_ALIVE=24h
+      # Aantal parallelle requests (pas aan op basis van VRAM)
+      - OLLAMA_NUM_PARALLEL=${OLLAMA_NUM_PARALLEL:-4}
+      # Max context lengte
+      - OLLAMA_MAX_LOADED_MODELS=${OLLAMA_MAX_LOADED_MODELS:-2}
+    networks:
+      - council-network
+    healthcheck:
+      test: ['CMD', 'curl', '-f', 'http://localhost:11434/api/tags']
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # n8n - Workflow orchestration voor agent coördinatie
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: council-n8n
+    restart: unless-stopped
+    ports:
+      - '5678:5678'
+    environment:
+      # Basic authentication
+      - N8N_BASIC_AUTH_ACTIVE=true
+      - N8N_BASIC_AUTH_USER=${N8N_USER:-admin}
+      - N8N_BASIC_AUTH_PASSWORD=${N8N_PASSWORD:-change-me-in-production}
+      # Host configuratie
+      - N8N_HOST=${N8N_HOST:-localhost}
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=http
+      # Database connectie
+      - DB_TYPE=postgresdb
+      - DB_POSTGRESDB_HOST=postgres
+      - DB_POSTGRESDB_PORT=5432
+      - DB_POSTGRESDB_DATABASE=council
+      - DB_POSTGRESDB_USER=council
+      - DB_POSTGRESDB_PASSWORD=${POSTGRES_PASSWORD:-change-me-in-production}
+      # Execution settings voor agents
+      - EXECUTIONS_PROCESS=main
+      - EXECUTIONS_MODE=regular
+      - N8N_METRICS=true
+      # Timezone
+      - GENERIC_TIMEZONE=Europe/Amsterdam
+      # AI/LLM integrations
+      - N8N_AI_ENABLED=true
+    volumes:
+      - n8n-data:/home/node/.n8n
+      - ./n8n-workflows:/home/node/.n8n/workflows:rw
+    depends_on:
+      postgres:
+        condition: service_healthy
+      ollama:
+        condition: service_healthy
+    networks:
+      - council-network
+    healthcheck:
+      test: ['CMD', 'wget', '--spider', '-q', 'http://localhost:5678/healthz']
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Redis - Voor caching en job queues (optioneel maar aanbevolen)
+  redis:
+    image: redis:7-alpine
+    container_name: council-redis
+    restart: unless-stopped
+    ports:
+      - '6379:6379'
+    volumes:
+      - redis-data:/data
+    command: redis-server --appendonly yes --requirepass ${REDIS_PASSWORD:-change-me}
+    networks:
+      - council-network
+    healthcheck:
+      test: ['CMD', 'redis-cli', '--raw', 'incr', 'ping']
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+volumes:
+  postgres-data:
+    driver: local
+  ollama-models:
+    driver: local
+  n8n-data:
+    driver: local
+  redis-data:
+    driver: local
+
+networks:
+  council-network:
+    driver: bridge
+
