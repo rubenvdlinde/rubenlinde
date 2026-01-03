@@ -1,0 +1,297 @@
+{
+  "name": "Workflow 1: Sprint Planning",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "council/sprint/new",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "id": "webhook-trigger",
+      "name": "Webhook: New Sprint Request",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [240, 300],
+      "webhookId": "council-sprint-planning"
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "project_name",
+              "value": "={{$json.body.project_name}}"
+            },
+            {
+              "name": "project_description",
+              "value": "={{$json.body.project_description}}"
+            },
+            {
+              "name": "epic_requirements",
+              "value": "={{$json.body.epic_requirements}}"
+            },
+            {
+              "name": "sprint_duration_weeks",
+              "value": "={{$json.body.sprint_duration_weeks || 2}}"
+            }
+          ]
+        }
+      },
+      "id": "extract-input",
+      "name": "Extract Sprint Input",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [460, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://ollama:11434/api/generate",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "model",
+              "value": "llama3.1:70b"
+            },
+            {
+              "name": "prompt",
+              "value": "=You are Geert, the Product Owner in a Council of LLMs.\n\nProject: {{$json.project_name}}\nDescription: {{$json.project_description}}\n\nEpic Requirements:\n{{$json.epic_requirements}}\n\nYour task:\n1. Break this epic into 5-8 user stories\n2. For each story:\n   - Write a clear user story (As a... I want... So that...)\n   - List 3-5 specific acceptance criteria\n   - Estimate complexity (S/M/L/XL)\n   - Identify dependencies\n\nFormat your response as JSON:\n{\n  \"epic_name\": \"...\",\n  \"user_stories\": [\n    {\n      \"id\": \"US-1\",\n      \"title\": \"...\",\n      \"story\": \"As a... I want... So that...\",\n      \"acceptance_criteria\": [\"...\", \"...\"],\n      \"complexity\": \"M\",\n      \"dependencies\": [],\n      \"priority\": \"high\"\n    }\n  ]\n}\n\nProvide ONLY the JSON, no explanations."
+            },
+            {
+              "name": "stream",
+              "value": false
+            },
+            {
+              "name": "temperature",
+              "value": 0.7
+            }
+          ]
+        }
+      },
+      "id": "geert-breakdown",
+      "name": "Geert: Break Down Epic",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [680, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Parse Geert's JSON response\nconst response = items[0].json.response;\n\n// Extract JSON from response (might have markdown code blocks)\nlet jsonText = response;\nif (response.includes('```json')) {\n  const match = response.match(/```json\\n([\\s\\S]*?)\\n```/);\n  if (match) jsonText = match[1];\n} else if (response.includes('```')) {\n  const match = response.match(/```\\n([\\s\\S]*?)\\n```/);\n  if (match) jsonText = match[1];\n}\n\ntry {\n  const parsed = JSON.parse(jsonText);\n  return [{\n    json: {\n      epic: parsed,\n      project_name: items[0].json.project_name,\n      sprint_duration_weeks: items[0].json.sprint_duration_weeks\n    }\n  }];\n} catch (e) {\n  // Fallback: return raw response for debugging\n  return [{\n    json: {\n      error: 'Failed to parse JSON',\n      raw_response: response,\n      project_name: items[0].json.project_name\n    }\n  }];\n}"
+      },
+      "id": "parse-stories",
+      "name": "Parse User Stories",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [900, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://ollama:11434/api/generate",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "model",
+              "value": "llama3.1:70b"
+            },
+            {
+              "name": "prompt",
+              "value": "=You are Saskia, the Scrum Master in a Council of LLMs.\n\nEpic: {{$json.epic.epic_name}}\n\nUser Stories:\n{{JSON.stringify($json.epic.user_stories, null, 2)}}\n\nYour task:\n1. Estimate story points (Fibonacci: 1,2,3,5,8,13)\n2. Break large stories (8+) into smaller ones\n3. Identify dependencies and sequence\n4. Assign to developers based on:\n   - Anita: Frontend components, UI\n   - Henk: State management, utils, infrastructure\n   - Johnie: Backend API, database\n   - Ingrid: Auth, documentation, configuration\n5. Create sprint backlog for {{$json.sprint_duration_weeks}} weeks\n\nFormat as JSON:\n{\n  \"sprint_name\": \"Sprint 1: ...\",\n  \"sprint_goal\": \"...\",\n  \"total_story_points\": 21,\n  \"tasks\": [\n    {\n      \"story_id\": \"US-1\",\n      \"task_id\": \"T-1\",\n      \"title\": \"...\",\n      \"description\": \"...\",\n      \"assigned_to\": \"Johnie\",\n      \"story_points\": 3,\n      \"dependencies\": [],\n      \"order\": 1\n    }\n  ]\n}\n\nProvide ONLY the JSON."
+            },
+            {
+              "name": "stream",
+              "value": false
+            },
+            {
+              "name": "temperature",
+              "value": 0.5
+            }
+          ]
+        }
+      },
+      "id": "saskia-planning",
+      "name": "Saskia: Sprint Planning",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [1120, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Parse Saskia's sprint plan\nconst response = items[0].json.response;\n\nlet jsonText = response;\nif (response.includes('```json')) {\n  const match = response.match(/```json\\n([\\s\\S]*?)\\n```/);\n  if (match) jsonText = match[1];\n} else if (response.includes('```')) {\n  const match = response.match(/```\\n([\\s\\S]*?)\\n```/);\n  if (match) jsonText = match[1];\n}\n\nconst sprint = JSON.parse(jsonText);\n\nreturn [{\n  json: {\n    sprint_plan: sprint,\n    epic: items[0].json.epic,\n    project_name: items[0].json.project_name\n  }\n}];"
+      },
+      "id": "parse-sprint",
+      "name": "Parse Sprint Plan",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [1340, 300]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "=INSERT INTO council.sprints (\n  sprint_name,\n  status,\n  goal,\n  user_stories,\n  metrics\n) VALUES (\n  '{{$json.sprint_plan.sprint_name}}',\n  'planning',\n  '{{$json.sprint_plan.sprint_goal}}',\n  '{{JSON.stringify($json.epic.user_stories)}}'::jsonb,\n  '{\"total_story_points\": {{$json.sprint_plan.total_story_points}}}'::jsonb\n) RETURNING id;"
+      },
+      "id": "save-sprint",
+      "name": "Save Sprint to Database",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2,
+      "position": [1560, 300],
+      "credentials": {
+        "postgres": {
+          "name": "Council PostgreSQL"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Create individual task entries\nconst sprintId = items[0].json.id;\nconst tasks = items[0].json.sprint_plan.tasks;\n\n// Return array of tasks to insert\nreturn tasks.map((task, index) => ({\n  json: {\n    sprint_id: sprintId,\n    agent_name: task.assigned_to,\n    activity_type: 'task_assignment',\n    description: `${task.title}: ${task.description}`,\n    status: 'assigned',\n    metadata: JSON.stringify({\n      story_id: task.story_id,\n      task_id: task.task_id,\n      story_points: task.story_points,\n      dependencies: task.dependencies,\n      order: task.order\n    })\n  }\n}));"
+      },
+      "id": "prepare-tasks",
+      "name": "Prepare Task Assignments",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [1560, 500]
+    },
+    {
+      "parameters": {
+        "operation": "insert",
+        "schema": "council",
+        "table": "agent_activity",
+        "columns": "sprint_id,agent_name,activity_type,description,status,metadata",
+        "options": {}
+      },
+      "id": "save-tasks",
+      "name": "Save Task Assignments",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2,
+      "position": [1780, 500],
+      "credentials": {
+        "postgres": {
+          "name": "Council PostgreSQL"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Aggregate all results for response\nconst sprint = items[0].json.sprint_plan;\nconst sprintId = items[0].json.id;\nconst epic = items[0].json.epic;\n\nreturn [{\n  json: {\n    success: true,\n    sprint_id: sprintId,\n    sprint_name: sprint.sprint_name,\n    sprint_goal: sprint.sprint_goal,\n    total_story_points: sprint.total_story_points,\n    user_stories_count: epic.user_stories.length,\n    tasks_count: sprint.tasks.length,\n    assignments: sprint.tasks.map(t => ({\n      agent: t.assigned_to,\n      task: t.title,\n      points: t.story_points\n    })),\n    next_step: 'Tasks assigned. Agents will be notified via Workflow 2.',\n    webhook_url: 'http://n8n:5678/webhook/council/task/start'\n  }\n}];"
+      },
+      "id": "aggregate-response",
+      "name": "Aggregate Sprint Results",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [2000, 300]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{JSON.stringify($json, null, 2)}}"
+      },
+      "id": "return-response",
+      "name": "Return Sprint Plan",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [2220, 300]
+    },
+    {
+      "parameters": {
+        "operation": "insert",
+        "schema": "council",
+        "table": "agent_activity",
+        "columns": "agent_name,activity_type,description,status,metadata",
+        "options": {}
+      },
+      "id": "log-geert",
+      "name": "Log Geert Activity",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2,
+      "position": [900, 500],
+      "credentials": {
+        "postgres": {
+          "name": "Council PostgreSQL"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "insert",
+        "schema": "council",
+        "table": "agent_activity",
+        "columns": "agent_name,activity_type,description,status,metadata",
+        "options": {}
+      },
+      "id": "log-saskia",
+      "name": "Log Saskia Activity",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2,
+      "position": [1340, 500],
+      "credentials": {
+        "postgres": {
+          "name": "Council PostgreSQL"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Webhook: New Sprint Request": {
+      "main": [[{ "node": "Extract Sprint Input", "type": "main", "index": 0 }]]
+    },
+    "Extract Sprint Input": {
+      "main": [
+        [{ "node": "Geert: Break Down Epic", "type": "main", "index": 0 }]
+      ]
+    },
+    "Geert: Break Down Epic": {
+      "main": [
+        [
+          { "node": "Parse User Stories", "type": "main", "index": 0 },
+          { "node": "Log Geert Activity", "type": "main", "index": 0 }
+        ]
+      ]
+    },
+    "Parse User Stories": {
+      "main": [
+        [{ "node": "Saskia: Sprint Planning", "type": "main", "index": 0 }]
+      ]
+    },
+    "Saskia: Sprint Planning": {
+      "main": [
+        [
+          { "node": "Parse Sprint Plan", "type": "main", "index": 0 },
+          { "node": "Log Saskia Activity", "type": "main", "index": 0 }
+        ]
+      ]
+    },
+    "Parse Sprint Plan": {
+      "main": [
+        [
+          { "node": "Save Sprint to Database", "type": "main", "index": 0 },
+          { "node": "Prepare Task Assignments", "type": "main", "index": 0 }
+        ]
+      ]
+    },
+    "Save Sprint to Database": {
+      "main": [
+        [{ "node": "Aggregate Sprint Results", "type": "main", "index": 0 }]
+      ]
+    },
+    "Prepare Task Assignments": {
+      "main": [
+        [{ "node": "Save Task Assignments", "type": "main", "index": 0 }]
+      ]
+    },
+    "Aggregate Sprint Results": {
+      "main": [[{ "node": "Return Sprint Plan", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": {},
+  "staticData": null,
+  "tags": [],
+  "meta": {
+    "instanceId": "council-llm",
+    "templateCredsSetupCompleted": true
+  },
+  "pinData": {},
+  "versionId": "1.0.0"
+}

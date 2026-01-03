@@ -1,0 +1,237 @@
+{
+  "name": "Workflow 2: Task Assignment & Notification",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [{ "field": "minutes", "minutesInterval": 5 }]
+        }
+      },
+      "id": "schedule-trigger",
+      "name": "Schedule: Check New Tasks",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "SELECT \n  id,\n  agent_name,\n  description,\n  metadata\nFROM council.agent_activity\nWHERE status = 'assigned'\n  AND activity_type = 'task_assignment'\n  AND started_at > NOW() - INTERVAL '10 minutes'\nORDER BY metadata->>'order' ASC;"
+      },
+      "id": "fetch-new-tasks",
+      "name": "Fetch New Task Assignments",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2,
+      "position": [460, 300],
+      "credentials": {
+        "postgres": {
+          "name": "Council PostgreSQL"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "number": [
+            {
+              "value1": "={{$json.length}}",
+              "operation": "larger",
+              "value2": 0
+            }
+          ]
+        }
+      },
+      "id": "has-tasks",
+      "name": "Has New Tasks?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [680, 300]
+    },
+    {
+      "parameters": {},
+      "id": "split-tasks",
+      "name": "Split Into Individual Tasks",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 1,
+      "position": [900, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Parse task metadata\nconst task = items[0].json;\nconst metadata = JSON.parse(task.metadata);\n\nreturn [{\n  json: {\n    task_id: task.id,\n    agent_name: task.agent_name,\n    description: task.description,\n    story_id: metadata.story_id,\n    task_code: metadata.task_id,\n    story_points: metadata.story_points,\n    dependencies: metadata.dependencies || [],\n    order: metadata.order\n  }\n}];"
+      },
+      "id": "parse-task",
+      "name": "Parse Task Details",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [1120, 200]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{$json.dependencies.length}}",
+              "operation": "equal",
+              "value2": "0"
+            }
+          ]
+        }
+      },
+      "id": "check-dependencies",
+      "name": "Dependencies Met?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [1340, 200]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=http://n8n:5678/webhook/council/task/{{$json.agent_name.toLowerCase()}}",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "task_id",
+              "value": "={{$json.task_id}}"
+            },
+            {
+              "name": "story_id",
+              "value": "={{$json.story_id}}"
+            },
+            {
+              "name": "task_code",
+              "value": "={{$json.task_code}}"
+            },
+            {
+              "name": "description",
+              "value": "={{$json.description}}"
+            },
+            {
+              "name": "story_points",
+              "value": "={{$json.story_points}}"
+            }
+          ]
+        }
+      },
+      "id": "notify-agent-webhook",
+      "name": "Notify Agent (Webhook)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [1560, 100]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "=UPDATE council.agent_activity\nSET status = 'notified',\n    completed_at = NOW()\nWHERE id = {{$json.task_id}};"
+      },
+      "id": "update-task-status",
+      "name": "Update Task Status",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2,
+      "position": [1780, 100],
+      "credentials": {
+        "postgres": {
+          "name": "Council PostgreSQL"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "insert",
+        "schema": "council",
+        "table": "agent_activity",
+        "columns": "agent_name,activity_type,description,status",
+        "options": {}
+      },
+      "id": "log-notification",
+      "name": "Log Notification Sent",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2,
+      "position": [2000, 100],
+      "credentials": {
+        "postgres": {
+          "name": "Council PostgreSQL"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "=UPDATE council.agent_activity\nSET status = 'blocked',\n    metadata = metadata || '{\"reason\": \"waiting_for_dependencies\"}'::jsonb\nWHERE id = {{$json.task_id}};"
+      },
+      "id": "mark-blocked",
+      "name": "Mark Task as Blocked",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2,
+      "position": [1560, 300],
+      "credentials": {
+        "postgres": {
+          "name": "Council PostgreSQL"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "id": "wait-dependencies",
+      "name": "Will Retry Later",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [1780, 300]
+    },
+    {
+      "parameters": {},
+      "id": "no-tasks",
+      "name": "No New Tasks",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [900, 400]
+    }
+  ],
+  "connections": {
+    "Schedule: Check New Tasks": {
+      "main": [
+        [{ "node": "Fetch New Task Assignments", "type": "main", "index": 0 }]
+      ]
+    },
+    "Fetch New Task Assignments": {
+      "main": [[{ "node": "Has New Tasks?", "type": "main", "index": 0 }]]
+    },
+    "Has New Tasks?": {
+      "main": [
+        [{ "node": "Split Into Individual Tasks", "type": "main", "index": 0 }],
+        [{ "node": "No New Tasks", "type": "main", "index": 0 }]
+      ]
+    },
+    "Split Into Individual Tasks": {
+      "main": [[{ "node": "Parse Task Details", "type": "main", "index": 0 }]]
+    },
+    "Parse Task Details": {
+      "main": [[{ "node": "Dependencies Met?", "type": "main", "index": 0 }]]
+    },
+    "Dependencies Met?": {
+      "main": [
+        [{ "node": "Notify Agent (Webhook)", "type": "main", "index": 0 }],
+        [{ "node": "Mark Task as Blocked", "type": "main", "index": 0 }]
+      ]
+    },
+    "Notify Agent (Webhook)": {
+      "main": [[{ "node": "Update Task Status", "type": "main", "index": 0 }]]
+    },
+    "Update Task Status": {
+      "main": [
+        [{ "node": "Log Notification Sent", "type": "main", "index": 0 }]
+      ]
+    },
+    "Mark Task as Blocked": {
+      "main": [[{ "node": "Will Retry Later", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": {},
+  "staticData": null,
+  "tags": [],
+  "meta": {
+    "instanceId": "council-llm"
+  },
+  "pinData": {},
+  "versionId": "1.0.0"
+}
