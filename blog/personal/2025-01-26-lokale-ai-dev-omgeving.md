@@ -56,7 +56,7 @@ Dit experiment is volledig gebouwd op open source tooling. Hier zijn de belangri
 - **n8n**: Workflow orchestration - het zenuwstelsel van ons systeem
 - **Ollama**: Local LLM runtime - draait de modellen
 - **DeepSeek Coder / Qwen / Llama**: De LLM modellen zelf
-- **OpenCode**: Open source IDE met LLM integratie
+- **Continue**: Open source IDE met LLM integratie (VS Code extensie)
 - **PostgreSQL + pgvector**: Vector database voor code embeddings en context[^21]
 - **Git**: Version control en samenwerking
 - **Playwright/Puppeteer**: Browser automation voor testing
@@ -333,7 +333,7 @@ Voor dit experiment kies ik bewust voor open source tooling, passend bij mijn ov
 ```mermaid
 graph LR
     subgraph IDE["🎨 IDE Layer"]
-        OpenCode["OpenCode<br/>(Open Source IDE)"]
+        Continue["Continue<br/>(VS Code Extension)"]
     end
 
     subgraph Orchestration["🎼 Orchestration Layer"]
@@ -353,7 +353,7 @@ graph LR
         PG["PostgreSQL + pgvector<br/>(Vector Database)"]
     end
 
-    OpenCode -->|Integrates| n8n
+    Continue -->|Integrates| n8n
     n8n -->|Orchestrates| Ollama
     n8n -->|Controls| Browser
     Ollama -->|Runs| DeepSeek
@@ -361,23 +361,41 @@ graph LR
     Ollama -->|Runs| Llama
     n8n -->|Commits| Git
     n8n -->|Queries Context| PG
-    OpenCode -->|Reads| PG
+    Continue -->|Reads| PG
 
-    style OpenCode fill:#00d2d3
+    style Continue fill:#00d2d3
     style n8n fill:#ff6b6b
     style Ollama fill:#45b7d1
     style Git fill:#f39c12
     style PG fill:#336791
 ```
 
-### OpenCode: De IDE
+### Continue: De IDE
 
-In plaats van Cursor (closed source, cloud-dependent) gebruik ik **OpenCode** - een open source code editor met lokale LLM integratie. Het biedt:
+In plaats van Cursor (closed source, cloud-dependent) heb je meerdere open source alternatieven met lokale LLM integratie:
 
-- Native LLM support voor lokale modellen
-- Code completion en generation
-- Multi-agent support (cruciaal voor ons council concept)
-- Full controle over model gedrag en prompts
+**Optie 1: Continue** (Aanbevolen)
+
+- Open source Cursor alternative
+- Native support voor Ollama + lokale modellen
+- VS Code extensie
+- Multi-agent workflows (beta)
+- GitHub: https://github.com/continuedev/continue
+
+**Optie 2: VSCodium + Ollama extensies**
+
+- Fully open source VS Code fork
+- Ollama extensie voor autocomplete
+- CodeGPT plugin voor chat
+- Privacy-first (geen telemetry)
+
+**Optie 3: Cody van Sourcegraph**
+
+- Open source AI coding assistant
+- Werkt met lokale modellen via Ollama
+- Context-aware code completion
+
+Voor dit experiment gebruiken we **Continue** omdat het het beste multi-agent support heeft.
 
 ### n8n: De Orchestrator
 
@@ -1909,7 +1927,7 @@ gantt
 - [x] Hardware: RTX 4090 geïnstalleerd
 - [x] Ollama setup met DeepSeek Coder
 - [x] n8n geïnstalleerd en geconfigureerd
-- [x] OpenCode getest met lokale LLMs
+- [x] Continue getest met lokale LLMs
 
 ### Fase 2: Single LLM Development (Februari 2025)
 
@@ -1938,6 +1956,374 @@ gantt
 - [ ] Performance optimalisatie
 - [ ] Context management met vector DB
 - [ ] Hybrid cloud/local workflows
+
+## Praktische Setup: Hoe Begin Je?
+
+Nu de theorie duidelijk is, hoe setup je dit **écht**? Je hebt twee opties: alles lokaal installeren (complex) of Docker gebruiken (makkelijk).
+
+### Optie 1: Docker Compose Setup (Aanbevolen)
+
+**Waarom Docker?**
+
+- Geen lokale installatie chaos
+- Werkt op Windows, Mac, Linux
+- Alle dependencies in containers
+- Easy updates en rollbacks
+- Isolated omgeving
+
+**Wat draait er in containers?**
+
+- Ollama (LLM runtime)
+- n8n (workflow orchestration)
+- PostgreSQL + pgvector (vector database)
+- (Optioneel) Continue server mode
+
+#### Docker Compose File
+
+Maak een `docker-compose.yml`:
+
+```yaml
+version: '3.8'
+
+services:
+  # PostgreSQL met pgvector voor code embeddings
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: council-postgres
+    environment:
+      POSTGRES_DB: council
+      POSTGRES_USER: council
+      POSTGRES_PASSWORD: change-me-in-production
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    ports:
+      - '5432:5432'
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U council']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Ollama - LLM runtime
+  ollama:
+    image: ollama/ollama:latest
+    container_name: council-ollama
+    volumes:
+      - ollama-models:/root/.ollama
+    ports:
+      - '11434:11434'
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    environment:
+      - OLLAMA_KEEP_ALIVE=24h
+      - OLLAMA_NUM_PARALLEL=4
+
+  # n8n - Workflow orchestration
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: council-n8n
+    ports:
+      - '5678:5678'
+    environment:
+      - N8N_BASIC_AUTH_ACTIVE=true
+      - N8N_BASIC_AUTH_USER=admin
+      - N8N_BASIC_AUTH_PASSWORD=change-me
+      - N8N_HOST=localhost
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=http
+      - POSTGRES_HOST=postgres
+      - POSTGRES_PORT=5432
+      - POSTGRES_DB=council
+      - POSTGRES_USER=council
+      - POSTGRES_PASSWORD=change-me-in-production
+    volumes:
+      - n8n-data:/home/node/.n8n
+    depends_on:
+      postgres:
+        condition: service_healthy
+      ollama:
+        condition: service_started
+
+volumes:
+  postgres-data:
+  ollama-models:
+  n8n-data:
+```
+
+#### Setup Instructies (Windows, Mac, Linux)
+
+**Vereisten:**
+
+1. **Docker Desktop** geïnstalleerd
+   - Windows: https://docs.docker.com/desktop/install/windows-install/
+   - Mac: https://docs.docker.com/desktop/install/mac-install/
+   - Linux: https://docs.docker.com/desktop/install/linux-install/
+
+2. **NVIDIA GPU** (voor GPU acceleratie)
+   - Windows: NVIDIA Container Toolkit via WSL2
+   - Linux: NVIDIA Container Toolkit
+   - Mac: Helaas geen NVIDIA support, gebruik CPU (langzaam)
+
+**Step 1: Start de Stack**
+
+```bash
+# Clone of maak een project folder
+mkdir council-llm && cd council-llm
+
+# Sla bovenstaande docker-compose.yml op
+
+# Start alle services
+docker-compose up -d
+
+# Check of alles draait
+docker-compose ps
+```
+
+**Step 2: Download LLM Models**
+
+```bash
+# DeepSeek Coder voor development agents
+docker exec council-ollama ollama pull deepseek-coder:33b
+
+# Qwen voor review agents
+docker exec council-ollama ollama pull qwen2.5-coder:32b
+
+# Llama voor management agents
+docker exec council-ollama ollama pull llama3.1:70b
+
+# Check gedownloade models
+docker exec council-ollama ollama list
+```
+
+**Step 3: Test de Setup**
+
+```bash
+# Test Ollama API
+curl http://localhost:11434/api/generate -d '{
+  "model": "deepseek-coder:33b",
+  "prompt": "Write a Python hello world"
+}'
+
+# Open n8n
+# Browser: http://localhost:5678
+# Login: admin / change-me
+
+# Check PostgreSQL
+docker exec council-postgres psql -U council -d council -c "SELECT version();"
+```
+
+**Step 4: Install Continue (IDE)**
+
+**Windows:**
+
+1. Installeer VS Code: https://code.visualstudio.com/
+2. Open VS Code
+3. Extensions → Search "Continue"
+4. Install "Continue - Open Source AI Code Assistant"
+5. Configure Continue:
+   - Open Command Palette (Ctrl+Shift+P)
+   - "Continue: Open Config"
+   - Add Ollama config:
+
+```json
+{
+  "models": [
+    {
+      "title": "DeepSeek Coder",
+      "provider": "ollama",
+      "model": "deepseek-coder:33b",
+      "apiBase": "http://localhost:11434"
+    }
+  ]
+}
+```
+
+6. Restart VS Code
+7. Test: Open een file, vraag Continue iets via Ctrl+L
+
+### Optie 2: Native Installatie (Advanced)
+
+Als je liever alles lokaal install (zonder Docker):
+
+**Windows Setup:**
+
+```powershell
+# 1. Install Ollama
+# Download: https://ollama.ai/download
+# Run installer, restart terminal
+
+# Verify
+ollama --version
+
+# 2. Install PostgreSQL
+# Download: https://www.postgresql.org/download/windows/
+# Install with pgAdmin
+
+# Add pgvector extension
+# In pgAdmin SQL editor:
+CREATE EXTENSION vector;
+
+# 3. Install n8n
+# Requires Node.js 18+
+npm install -g n8n
+
+# Start n8n
+n8n start
+
+# 4. Pull models
+ollama pull deepseek-coder:33b
+ollama pull qwen2.5-coder:32b
+ollama pull llama3.1:70b
+```
+
+**Linux Setup:**
+
+```bash
+# 1. Install Ollama
+curl -fsSL https://ollama.ai/install.sh | sh
+
+# 2. Install PostgreSQL + pgvector
+sudo apt update
+sudo apt install postgresql postgresql-contrib
+sudo -u postgres psql -c "CREATE EXTENSION vector;"
+
+# 3. Install n8n
+npm install -g n8n
+
+# 4. Pull models
+ollama pull deepseek-coder:33b
+ollama pull qwen2.5-coder:32b
+ollama pull llama3.1:70b
+```
+
+**Mac Setup:**
+
+```bash
+# 1. Install Ollama
+brew install ollama
+
+# 2. Install PostgreSQL + pgvector
+brew install postgresql@16
+brew install pgvector
+
+# 3. Install n8n
+npm install -g n8n
+
+# 4. Pull models
+ollama pull deepseek-coder:33b
+ollama pull qwen2.5-coder:32b
+ollama pull llama3.1:70b
+```
+
+### Windows Specifieke Notes
+
+**GPU Acceleratie op Windows:**
+
+Als je een NVIDIA GPU hebt op Windows:
+
+1. **Installeer WSL2** (Windows Subsystem for Linux)
+
+```powershell
+wsl --install
+```
+
+2. **Installeer NVIDIA CUDA drivers** voor WSL2
+   - Download: https://developer.nvidia.com/cuda-downloads
+
+3. **Docker Desktop** moet WSL2 backend gebruiken
+   - Settings → General → Use WSL 2 based engine
+
+4. **Verify GPU in Docker:**
+
+```bash
+docker run --rm --gpus all nvidia/cuda:12.0-base nvidia-smi
+```
+
+**Zonder GPU (CPU Only):**
+
+Als je geen NVIDIA GPU hebt (Intel/AMD graphics):
+
+- Models draaien op CPU (10-20x langzamer)
+- Gebruik kleinere models: 7B ipv 33B
+- Of gebruik quantized models (Q4)
+- Overweeg cloud hybrid approach
+
+### Resource Requirements
+
+**Minimum (voor experimenten):**
+
+- CPU: 8 cores
+- RAM: 32GB
+- GPU: RTX 3060 12GB (of CPU only met 64GB RAM)
+- Disk: 100GB SSD
+- Internet: Voor model downloads (20-50GB)
+
+**Recommended (voor Council):**
+
+- CPU: 16 cores
+- RAM: 64GB
+- GPU: RTX 4090 24GB
+- Disk: 250GB NVMe
+- Internet: Fiber (voor snelle updates)
+
+### Troubleshooting
+
+**Problem: Ollama out of memory**
+
+```bash
+# Reduce parallel requests
+export OLLAMA_NUM_PARALLEL=2
+
+# Use smaller models
+ollama pull deepseek-coder:6.7b
+```
+
+**Problem: n8n can't connect to Ollama**
+
+```bash
+# Check if Ollama is running
+curl http://localhost:11434
+
+# Check Docker network
+docker network inspect council-llm_default
+```
+
+**Problem: PostgreSQL permission denied**
+
+```bash
+# Fix volume permissions
+docker-compose down
+docker volume rm council-llm_postgres-data
+docker-compose up -d
+```
+
+**Problem: VS Code Continue can't find models**
+
+```bash
+# Verify Ollama API
+curl http://localhost:11434/api/tags
+
+# Check Continue config path:
+# Windows: %USERPROFILE%\.continue\config.json
+# Mac/Linux: ~/.continue/config.json
+```
+
+### Next Steps
+
+Als je setup draait:
+
+1. **Setup n8n workflows** voor de Council agents
+2. **Configure Continue** voor je dev agents
+3. **Test single agent** voor je dual/quad agent workflows gaat bouwen
+4. **Build incrementeel**: Start met 1 agent, voeg er geleidelijk bij toe
+5. **Monitor resources**: Check GPU/RAM usage met `nvidia-smi` en `htop`
+
+**Volgende blog:** Ik zal een detailed guide schrijven over hoe je de eerste n8n workflows bouwt voor agent coördinatie. Stay tuned!
 
 ## Waarom Dit Experiment?
 
