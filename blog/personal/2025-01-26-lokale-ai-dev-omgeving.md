@@ -1504,7 +1504,99 @@ Modellen worden beter. Over 2-3 jaar kunnen lokale 100B+ modellen misschien wel 
 - Agents querien alleen relevante context voor hun taak
 - Semantic search: "find authentication code" → retrieves auth modules
 
-### Challenge 2: Agent Coordination Overhead
+### Challenge 2: Performance - Lokaal is Langzamer
+
+**Probleem**: Lokale LLMs zijn **significant langzamer** dan cloud APIs.
+
+**Reality check:**
+
+```
+Claude Sonnet 3.5 (Cloud):
+- Response tijd: 2-5 seconden
+- Tokens/seconde: ~100-150 tokens/sec
+- Parallel requests: onbeperkt
+
+DeepSeek Coder (Lokaal RTX 4090):
+- Response tijd: 15-45 seconden
+- Tokens/seconde: ~20-30 tokens/sec
+- Parallel: max 2-3 agents tegelijk (VRAM limiet)
+```
+
+**Concrete impact:**
+
+- Een feature die Claude in 5 minuten schrijft, duurt lokaal 20-30 minuten
+- Code review die 10 seconden duurt in cloud = 1-2 minuten lokaal
+- Sprint van 8 uur (menselijk) = 24-48 uur voor Council (lokaal)
+
+**Maar hier is het slimme deel:**
+
+Dit maakt **juist niet uit** wanneer je de Council als autonoom team laat draaien:
+
+**De 24/7 Strategie:**
+
+```
+Vrijdagavond 18:00:
+└─> Geert (PO) krijgt backlog met 10 user stories
+└─> Saskia (SM) plant sprint en verdeelt werk
+└─> Anita, Henk, Johnie, Ingrid starten development
+
+PC draait 24/7 door het weekend:
+├─> Vrijdagnacht: Development (8 uur)
+├─> Zaterdagochtend: Code reviews + fixes (6 uur)
+├─> Zaterdagmiddag: Boris security scans (4 uur)
+├─> Zaterdagavond: Linda test automation (6 uur)
+└─> Zondagochtend: Integratie + deploy (4 uur)
+
+Maandagochtend 09:00:
+└─> 10 features klaar, getest, gedeployed
+└─> Menselijke review: 2 uur voor final check
+└─> Sprint retrospective met metrics
+```
+
+**Waarom dit werkt:**
+
+1. **Geen wachttijd**: Agents hebben geen meetings, pauzes, of context switching
+2. **Nachtelijke productiviteit**: Terwijl jij slaapt, werkt de Council door
+3. **Weekends zijn productief**: 48 uur extra dev tijd per week
+4. **Compound effect**: Langzaam × 24/7 = Meer output dan snel × 40 uur/week
+
+**Rekensom:**
+
+```
+Menselijk team (8 personen):
+- 40 uur/week × 8 = 320 productive uur/week
+- Alleen tijdens kantooruren
+- Met meetings, pauzes, context switches
+
+Council (9 agents, 3x langzamer):
+- 168 uur/week × 9 agents = 1512 beschikbare uur
+- Effectief door slowdown: 1512 / 3 = 504 productive uur/week
+- Zonder meetings, pauzes, of context switches
+- 24/7 beschikbaar
+
+Result: 504 > 320 → Council wint op volume
+```
+
+**Trade-off:**
+
+- ✗ **Niet geschikt voor**: Urgent hotfixes, real-time collaboration
+- ✓ **Perfect voor**: Planned work, sprints, background maintenance
+- ✓ **Ideaal scenario**: Vrijdag requirements, maandag results
+
+**De persoonlijke use case:**
+
+Voor mijn experimenten betekent dit:
+
+1. Vrijdag: Ik schrijf user stories (1 uur werk)
+2. Weekend: Council werkt 48 uur autonoom
+3. Maandag: Ik review output (2 uur), merge wat goed is
+4. Resultaat: 3 uur werk van mij = 40+ uur dev output
+
+**Performance vs. Convenience:**
+
+Lokaal is langzamer per taak, maar bij 24/7 autonomous operation is het **sneller per week** dan een menselijk team dat 40 uur werkt. Het is de shift van "fast per task" naar "high throughput per sprint".
+
+### Challenge 3: Agent Coordination Overhead
 
 **Probleem**: 9 agents coördineren is complex. Wat als ze het niet eens zijn?
 
@@ -1514,7 +1606,7 @@ Modellen worden beter. Over 2-3 jaar kunnen lokale 100B+ modellen misschien wel 
 - **Voting system**: Bij conflicts stemmen relevante agents
 - **Escalation**: Bij blijvend conflict → human intervention
 
-### Challenge 3: Cost vs. Cloud
+### Challenge 4: Cost vs. Cloud
 
 **Probleem**: Een RTX 4090 kost €2000+, elektriciteit loopt op.
 
@@ -1547,7 +1639,7 @@ graph LR
 - Lokaal is voor **gevoelige projecten** of **offline scenarios**
 - Hybrid approach: cloud voor prototyping, lokaal voor production
 
-### Challenge 4: Model Quality
+### Challenge 5: Model Quality
 
 **Probleem**: Zijn lokale modellen (33B) even goed als Claude Sonnet (175B+)?
 
@@ -1560,7 +1652,7 @@ graph LR
 - Door **peer review** (agents checken elkaar) vang je fouten
 - Voor veel taken is "goed genoeg" voldoende
 
-### Challenge 5: Setup Complexiteit
+### Challenge 6: Setup Complexiteit
 
 **Probleem**: Dit is _niet_ plug-and-play. Setup is complex.
 
