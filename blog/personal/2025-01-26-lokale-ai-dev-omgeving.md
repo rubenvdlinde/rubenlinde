@@ -1632,7 +1632,210 @@ graph LR
     style LocalTotal fill:#26de81
 ```
 
+**Maar wacht - dit is te simpel.** Een enkele RTX 4090 kan niet meerdere 33B+ modellen **tegelijk** draaien voor ons Council. Laten we realistisch zijn over wat je écht nodig hebt.
+
+## De Hardware Investering: Wat Kost Een Echte Council Machine?
+
+Om 9 agents tegelijk te laten draaien met acceptabele snelheid, heb je **serieuze hardware** nodig. Hier zijn drie realistische configuraties:
+
+### Configuratie 1: Budget - Single GPU (Beperkt Council)
+
+**Wat kan het:**
+
+- 1-2 agents tegelijk (33B modellen)
+- Veel task switching, langzaam
+- Goed voor experimenten, niet voor productie
+
+**Hardware:**
+
+| Component      | Specificatie       | Prijs      |
+| -------------- | ------------------ | ---------- |
+| **GPU**        | RTX 4090 24GB VRAM | €2.000     |
+| **CPU**        | AMD Ryzen 9 7950X  | €550       |
+| **RAM**        | 64GB DDR5 6000MHz  | €250       |
+| **Moederbord** | X670E chipset      | €350       |
+| **Voeding**    | 1000W 80+ Gold     | €180       |
+| **Koeling**    | AIO watercooling   | €150       |
+| **Opslag**     | 2TB NVMe Gen4      | €150       |
+| **Behuizing**  | ATX case           | €120       |
+| **TOTAAL**     |                    | **€3.750** |
+
+**Elektriciteit:** ~500W gemiddeld × 24/7 × €0.40/kWh = €175/maand
+
+**Year 1 kosten:** €3.750 + (€175 × 12) = **€5.850**  
+**Year 2+ kosten:** €2.100/jaar
+
+### Configuratie 2: Production - Dual GPU (Echt Council)
+
+**Wat kan het:**
+
+- 4-5 agents parallel (2x 33B + 1x 70B)
+- Redelijke snelheid voor development
+- Goed voor serious experimenten
+
+**Hardware:**
+
+| Component      | Specificatie                | Prijs      |
+| -------------- | --------------------------- | ---------- |
+| **GPU 1**      | RTX 4090 24GB VRAM          | €2.000     |
+| **GPU 2**      | RTX 4090 24GB VRAM          | €2.000     |
+| **CPU**        | AMD Threadripper PRO 5965WX | €2.500     |
+| **RAM**        | 128GB DDR4 ECC              | €500       |
+| **Moederbord** | TRX40 met 4x PCIe x16       | €700       |
+| **Voeding**    | 1600W 80+ Platinum          | €350       |
+| **Koeling**    | Custom watercooling         | €400       |
+| **Opslag**     | 4TB NVMe Gen4               | €280       |
+| **Behuizing**  | Full Tower                  | €200       |
+| **TOTAAL**     |                             | **€8.930** |
+
+**Elektriciteit:** ~900W gemiddeld × 24/7 × €0.40/kWh = €260/maand
+
+**Year 1 kosten:** €8.930 + (€260 × 12) = **€12.050**  
+**Year 2+ kosten:** €3.120/jaar
+
+### Configuratie 3: Enterprise - Quad GPU (Full Council)
+
+**Wat kan het:**
+
+- Alle 9 agents parallel
+- Production-ready snelheid
+- Multi-model serving
+
+**Hardware:**
+
+| Component      | Specificatie             | Prijs       |
+| -------------- | ------------------------ | ----------- |
+| **GPU 1-4**    | 4× RTX 4090 24GB VRAM    | €8.000      |
+| **CPU**        | AMD EPYC 7543P 32-core   | €3.200      |
+| **RAM**        | 256GB DDR4 ECC           | €900        |
+| **Moederbord** | Server board 7x PCIe x16 | €1.200      |
+| **Voeding**    | 2× 1600W 80+ Titanium    | €800        |
+| **Koeling**    | Server watercooling      | €600        |
+| **Opslag**     | 8TB NVMe RAID            | €600        |
+| **Behuizing**  | 4U Server rack           | €400        |
+| **TOTAAL**     |                          | **€15.700** |
+
+**Elektriciteit:** ~1600W gemiddeld × 24/7 × €0.40/kWh = €460/maand
+
+**Year 1 kosten:** €15.700 + (€460 × 12) = **€21.220**  
+**Year 2+ kosten:** €5.520/jaar
+
+## RAM & GPU Prijzen: De Realiteit van 2025
+
+De prijzen zijn aan het zakken, maar high-end AI hardware blijft duur:
+
+**GPU Trends (2024-2025):**
+
+- RTX 4090 24GB: €2.200 (2024) → €2.000 (2025) → ~€1.700 (2026 verwacht)
+- RTX 5090 32GB: Verwacht Q2 2025 voor ~€2.500
+- Gebruikt RTX 3090 24GB: €800-1.000 (goede budget optie!)
+
+**RAM Trends:**
+
+- DDR5 prijzen dalen: €5/GB (2023) → €3.90/GB (2025) → ~€3/GB (2026)
+- DDR4 ECC (voor servers): €3.90/GB stabiel
+- Voor AI workloads: veel RAM helpt, maar VRAM is kritischer
+
+**Waarom GPUs zo duur zijn:**
+
+- AI boom = hoge vraag
+- TSMC production constraints
+- Crypto mining (nog steeds)
+- **Maar**: Prijzen zakken ~15-20% per jaar sinds 2023
+
+## VRAM Requirements: Hoeveel Heb Je Nodig?
+
+Voor verschillende model groottes:
+
+```
+Model Size | VRAM Needed (FP16) | VRAM Needed (Q4 quantized)
+-----------|-------------------|---------------------------
+7B         | 14GB              | 4GB
+13B        | 26GB              | 8GB
+33B        | 66GB              | 20GB
+70B        | 140GB             | 40GB
+
+Voor ons Council:
+- 4× 33B dev models: 4 × 20GB = 80GB (met quantization)
+- 2× 32B review models: 2 × 19GB = 38GB
+- 3× 70B management: 3 × 40GB = 120GB (kan met model offloading)
+
+Minimum: 96GB VRAM (4× RTX 4090)
+Comfortable: 128GB+ VRAM
+```
+
+**Praktische oplossing:**
+
+- **Model offloading**: Laad modellen in RAM als ze niet actief zijn
+- **Quantization**: Q4 models zijn 70% kleiner met 5% quality loss
+- **Sequential loading**: Niet alle 9 agents tegelijk, maar in batches
+
+## De Echte Kostenberekening: Council vs. Team
+
+Laten we nu de **realistische** vergelijking maken:
+
+### Cloud (Heavy Usage)
+
+```
+Cursor Pro: €20/maand
+Claude API (1M tokens/dag): €50-200/dag
+→ Maand: €20 + (€125 × 30) = €3.770/maand
+→ Jaar: €45.240/jaar
+
+Break-even: €45.240 / €12.050 (dual GPU) = 3.8 maanden
+```
+
+**Conclusie Cloud:** Bij intensief gebruik (council-level) is cloud **veel duurder** dan lokaal.
+
+### Lokale Setup (Dual GPU - Realistisch)
+
+```
+Year 1: €12.050 (hardware + elektriciteit)
+Year 2: €3.120 (alleen elektriciteit)
+Year 3: €3.120
+Year 4: €3.120
+Year 5: €3.120
+
+5-year total: €24.530
+→ Gemiddeld: €4.906/jaar
+→ Per maand: €409
+
+vs. Cloud 5-year: €226.200
+Saving: €201.670 (82% goedkoper)
+```
+
+**Maar:** Dit gaat ervan uit dat je de hardware 5 jaar gebruikt. GPU's verouderen snel (2-3 jaar cycle).
+
+## Alternative: Gebruikt Hardware
+
+Slimme opties om kosten te drukken:
+
+**Budget Council Setup:**
+
+| Component   | Specificatie                     | Prijs      |
+| ----------- | -------------------------------- | ---------- |
+| **GPU 1-2** | 2× RTX 3090 24GB (gebruikt)      | €1.800     |
+| **CPU**     | AMD Ryzen 9 5950X (gebruikt)     | €350       |
+| **RAM**     | 128GB DDR4 (gebruikt server RAM) | €250       |
+| **Rest**    | Nieuw                            | €1.000     |
+| **TOTAAL**  |                                  | **€3.400** |
+
+**Met deze setup:**
+
+- 2-3 agents parallel
+- Acceptabele snelheid
+- Year 1: €5.500 all-in
+- Break-even vs. cloud: 1.5 maanden!
+
 **Realiteit**:
+
+- Voor **experimenten**: Single RTX 4090 (€3.750) is genoeg
+- Voor **serious development**: Dual GPU setup (€8.930) is minimum
+- Voor **production Council**: Quad GPU (€15.700) of cloud hybrid
+
+**De sweet spot:** Dual RTX 3090 gebruikt (€3.400) → affordable én capable
+
+**Realiteit:**
 
 - Dit is een **experiment en learning exercise**
 - Voor productie blijf ik cloud (Cursor/Claude) gebruiken waar het kan
