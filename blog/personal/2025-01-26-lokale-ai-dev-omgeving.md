@@ -1950,28 +1950,32 @@ gantt
 - [ ] Context management met vector DB
 - [ ] Hybrid cloud/local workflows
 
-## Praktische Setup: Hoe Begin Je?
+## Praktische Setup: Stap-voor-Stap Implementatie
 
-Nu de theorie duidelijk is, hoe setup je dit **écht**? Je hebt twee opties: alles lokaal installeren (complex) of Docker gebruiken (makkelijk).
+Nu de theorie duidelijk is, tijd voor de **praktijk**. Ik heb deze setup zelf uitgevoerd en getest. Hieronder vind je de exacte stappen die nodig zijn om een volledig werkend Council of LLMs op te zetten.
 
-### Optie 1: Docker Compose Setup (Aanbevolen)
+**Wat gaan we bouwen:**
 
-**Waarom Docker?**
+- ✅ Complete Docker environment met alle services
+- ✅ PostgreSQL database met vector search capabilities
+- ✅ Ollama runtime met 3 LLM modellen
+- ✅ n8n voor workflow orchestration
+- ✅ OpenCode IDE configuratie
+- ✅ Verificatie dat alles werkt
 
-- Geen lokale installatie chaos
-- Werkt op Windows, Mac, Linux
-- Alle dependencies in containers
-- Easy updates en rollbacks
-- Isolated omgeving
+**Totale tijd:** ~2-3 uur (vooral model downloads)  
+**Moeilijkheidsgraad:** Intermediate  
+**Vereiste kennis:** Basic terminal, Docker basics
 
-**Wat draait er in containers?**
+Je hebt twee opties: **Docker** (aanbevolen, getest, werkt overal) of **Native installatie** (advanced, platform-specific).
 
-- Ollama (LLM runtime)
-- n8n (workflow orchestration)
-- PostgreSQL + pgvector (vector database)
-- (Optioneel) Continue server mode
+---
 
-#### Docker Compose File
+## 🚀 Optie 1: Docker Setup (Aanbevolen & Getest)
+
+Deze methode heb ik volledig uitgevoerd en getest. Het werkt op Windows, Mac, en Linux.
+
+###
 
 Download de complete setup van GitHub: [Council-LLM Docker Setup](https://github.com/rubenvdlinde/rubenlinde/tree/main/)
 
