@@ -9,9 +9,11 @@ description: Hoe ik oversta van cloud-based AI tooling naar een lokale developme
 
 # Van Cloud naar Lokaal: Een Council of LLMs voor Development
 
-De afgelopen maanden heb ik intensief gewerkt met cloud-based AI development tools zoals Cursor met Claude. En eerlijk? Ik ben er super blij mee. De kwaliteit, snelheid en integratie zijn fantastisch. Maar er zit een addertje onder het gras: vendor lock-in, privacy concerns bij gevoelige projecten, en de vraag: _kan dit ook anders?_
+De afgelopen maanden heb ik intensief gewerkt met cloud-based AI development tools zoals Cursor met Claude. En eerlijk? Ik ben er super blij mee. De kwaliteit, snelheid en integratie zijn fantastisch. Maar er zit een addertje onder het gras: vendor lock-in, privacy concerns bij gevoelige projecten, en vooral - **de kosten lopen snel op**. Bij intensief gebruik betaal je al gauw €100-200/maand voor API calls, en bij heavy development kan dat oplopen tot €1000-2000/maand.[^1]
 
-Tijd voor een experiment: een volledig lokale AI development omgeving, waarin niet één maar een heel _team_ van gespecialiseerde LLMs samenwerkt aan software development. Welkom bij mijn 'Council of LLMs' - een groep AI-agents die in sprints werken, elkaar reviewen, en samen code produceren.
+Tijd voor een experiment: een volledig lokale AI development omgeving, waarin niet één maar een heel _team_ van gespecialiseerde LLMs samenwerkt aan software development. Het concept van een 'Council of LLMs' - meerdere AI-agents die samenwerken - is niet nieuw. Platforms zoals AutoGPT, BabyAGI, en MetaGPT hebben dit al verkend,[^2] en Microsoft Research werkt aan AutoGen voor multi-agent systemen.[^3] Maar kan dit concept ook lokaal werken? En nog belangrijker: **kan een Council of LLMs een menselijk development team vervangen?**
+
+Dat is de uitdaging die dit blog probeert te beantwoorden.
 
 <!--truncate-->
 
@@ -28,7 +30,7 @@ Laat ik voorop stellen: cloud-based AI tools zijn geweldig. Cursor met Claude So
 
 ### Maar Ook Nadelen
 
-- **Privacy**: Bij gevoelige overheidsprojecten of bedrijfscode is "naar de cloud" niet altijd mogelijk[^1]
+- **Privacy**: Bij gevoelige overheidsprojecten of bedrijfscode is "naar de cloud" niet altijd mogelijk[^4]
 - **Vendor Lock-in**: Afhankelijk van één provider (Anthropic/OpenAI)
 - **Kosten**: Bij intensief gebruik lopen de API calls op
 - **Controle**: Geen invloed op model gedrag of specialisatie
@@ -46,7 +48,7 @@ Dit experiment is volledig gebouwd op open source tooling. Hier zijn de belangri
   <img src="https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-logo.png" alt="n8n" height="60" />
   <img src="https://avatars.githubusercontent.com/u/151674099?s=200&v=4" alt="Ollama" height="60" />
   <img src="https://deepseek.com/favicon.ico" alt="DeepSeek" height="60" />
-  <img src="https://www.chromadb.com/logo.svg" alt="ChromaDB" height="60" />
+  <img src="https://wiki.postgresql.org/images/a/a4/PostgreSQL_logo.3colors.svg" alt="PostgreSQL" height="60" />
 </div>
 
 **Stack overzicht:**
@@ -55,7 +57,7 @@ Dit experiment is volledig gebouwd op open source tooling. Hier zijn de belangri
 - **Ollama**: Local LLM runtime - draait de modellen
 - **DeepSeek Coder / Qwen / Llama**: De LLM modellen zelf
 - **OpenCode**: Open source IDE met LLM integratie
-- **ChromaDB**: Vector database voor code embeddings en context
+- **PostgreSQL + pgvector**: Vector database voor code embeddings en context[^21]
 - **Git**: Version control en samenwerking
 - **Playwright/Puppeteer**: Browser automation voor testing
 
@@ -326,7 +328,7 @@ flowchart TD
 
 ## De Tech Stack: Open Source All The Way
 
-Voor dit experiment kies ik bewust voor open source tooling, passend bij mijn overtuiging dat open source cruciaal is voor digital soevereiniteit[^2]:
+Voor dit experiment kies ik bewust voor open source tooling, passend bij mijn overtuiging dat open source cruciaal is voor digital soevereiniteit[^8]:
 
 ```mermaid
 graph LR
@@ -348,7 +350,7 @@ graph LR
 
     subgraph Storage["💾 Storage Layer"]
         Git["Git<br/>(Version Control)"]
-        Chroma["ChromaDB<br/>(Vector Database)"]
+        PG["PostgreSQL + pgvector<br/>(Vector Database)"]
     end
 
     OpenCode -->|Integrates| n8n
@@ -358,14 +360,14 @@ graph LR
     Ollama -->|Runs| Qwen
     Ollama -->|Runs| Llama
     n8n -->|Commits| Git
-    n8n -->|Queries Context| Chroma
-    OpenCode -->|Reads| Chroma
+    n8n -->|Queries Context| PG
+    OpenCode -->|Reads| PG
 
     style OpenCode fill:#00d2d3
     style n8n fill:#ff6b6b
     style Ollama fill:#45b7d1
     style Git fill:#f39c12
-    style Chroma fill:#9b59b6
+    style PG fill:#336791
 ```
 
 ### OpenCode: De IDE
@@ -379,7 +381,7 @@ In plaats van Cursor (closed source, cloud-dependent) gebruik ik **OpenCode** - 
 
 ### n8n: De Orchestrator
 
-**n8n** is een open source workflow automation tool die perfect is voor het orkestreren van onze LLM council[^3]:
+**n8n** is een open source workflow automation tool die perfect is voor het orkestreren van onze LLM council[^18]:
 
 - **Visual workflow builder**: Ontwerp de sprint flow visueel
 - **LLM integrations**: Native support voor lokale LLMs (Ollama, LM Studio)
@@ -458,7 +460,7 @@ flowchart TD
 
 Voor de verschillende rollen gebruik ik verschillende **open source modellen** via Ollama:
 
-- **Dev LLMs**: DeepSeek Coder v2 (33B) - excellent voor code generation[^4]
+- **Dev LLMs**: DeepSeek Coder v2 (33B) - excellent voor code generation[^22]
 - **Review LLMs**: Qwen2.5-Coder (32B) - goed in code analysis
 - **Management LLMs**: Llama 3.1 (70B) - sterke reasoning voor planning
 - **Specialisten**: Mix van bovenstaande, plus fine-tuned varianten
@@ -785,14 +787,14 @@ flowchart TB
 
 - Base images (zoals `node:18`) kunnen kwetsbaarheden bevatten
 - Dependencies in layers kunnen outdated zijn
-- Supply chain attacks via compromised images[^16]
+- Supply chain attacks via compromised images[^22]
 - Compliance: we willen weten wat er in onze containers zit
 
 **Boris' container review:**
 
 ```
 Voor elke image:
-1. Scan met Trivy[^11], Snyk[^12], Grype
+1. Scan met Trivy[^23], Snyk[^18], Grype
 2. Aggregeer CVEs en severity scores
 3. Check tegen acceptabel risico-niveau
 4. Bij critical/high: block deploy + suggest fixes
@@ -800,7 +802,7 @@ Voor elke image:
    - Patch vulnerable dependencies
    - Replace compromised packages
 5. Bij medium/low: log en monitor
-6. Generate SBOM (Software Bill of Materials)[^16]
+6. Generate SBOM (Software Bill of Materials)[^22]
 ```
 
 #### 2. Penetration Testing Automation
@@ -843,8 +845,8 @@ steps:
       - remediation_plan
 ```
 
-**OWASP ZAP**: Automated web app security scanner[^13]
-**Nuclei**: Fast vulnerability scanner met 1000+ templates[^14]
+**OWASP ZAP**: Automated web app security scanner[^22]
+**Nuclei**: Fast vulnerability scanner met 1000+ templates[^23]
 **ffuf**: Web fuzzer voor endpoint discovery en parameter testing
 
 #### 3. AI-Powered Security: De Toekomst
@@ -901,7 +903,7 @@ Fix: Verander naar AND of voeg separate check toe voor admin-only resources."
 
 **B. AI-Powered Fuzzing**
 
-We gebruiken **ML-guided fuzzing** voor intelligentere pentesting:[^15]
+We gebruiken **ML-guided fuzzing** voor intelligentere pentesting:[^18]
 
 ```
 Tool: AFL++ met MOpt scheduler (ML mutation)
@@ -911,17 +913,17 @@ Traditionele fuzzing: random mutations
 AI fuzzing: ML leert welke mutations
            interessante code paths triggeren
 
-Result: 5-10x snellere bug discovery[^15]
+Result: 5-10x snellere bug discovery[^18]
 ```
 
 **C. Threat Modeling met LLMs**
 
-Boris kan **automated threat modeling**:[^17]
+Boris kan **automated threat modeling**:[^23]
 
 ```
 Input: System architecture diagram + code
 Boris' prompt:
-"Generate a threat model using STRIDE methodology:[^17]
+"Generate a threat model using STRIDE methodology:[^23]
 - Spoofing opportunities
 - Tampering vectors
 - Repudiation risks
@@ -1231,7 +1233,7 @@ flowchart LR
 
 **Tooling uitleg:**
 
-- **axe-core**: Automated WCAG 2.1 Level AA testing - checkt 57+ accessibility rules[^8]
+- **axe-core**: Automated WCAG 2.1 Level AA testing - checkt 57+ accessibility rules[^23]
 - **Lighthouse CI**: Google's accessibility auditing tool - geeft een score 0-100
 - **Pa11y**: Command-line tool die WCAG A, AA, AAA standaarden checkt
 - **WAVE API**: WebAIM's tool die visuele feedback geeft op a11y issues
@@ -1242,7 +1244,7 @@ flowchart LR
 1. PR wordt aangemaakt
 2. Linda runt parallel alle 4 a11y tools
 3. Results worden geaggregeerd:
-   - Violations per WCAG criterium[^10]
+   - Violations per WCAG criterium[^22]
    - Severity (critical, serious, moderate, minor)
    - Specifieke elementen met problemen
 4. Linda analyseert en genereert een rapport met:
@@ -1254,14 +1256,14 @@ flowchart LR
 6. Bij compliance: PR krijgt accessibility approval ✓
 ```
 
-**Target compliance:** WCAG 2.1 Level AA als minimum, met streven naar AAA waar mogelijk.[^10]
+**Target compliance:** WCAG 2.1 Level AA als minimum, met streven naar AAA waar mogelijk.[^22]
 
 **Waarom dit werkt:**
 
 - **Geautomatiseerd**: Elke PR wordt gecheckt, geen handmatig werk
 - **Vroeg in proces**: A11y issues worden gevonden voor merge, niet na deploy
 - **Educatief**: Linda geeft concrete fix-voorbeelden, team leert
-- **Compliant**: Voldoet aan Nederlandse toegankelijkheidseisen (Digitoegankelijk.nl)[^9]
+- **Compliant**: Voldoet aan Nederlandse toegankelijkheidseisen (Digitoegankelijk.nl)[^18]
 
 ## Challenges & Realiteit Check
 
@@ -1375,7 +1377,7 @@ graph TB
 
 ### Nadelen van het Council (vs. Mensen)
 
-**1. Creativiteit: LLMs zijn niet innovatief**[^6]
+**1. Creativiteit: LLMs zijn niet innovatief**[^18]
 
 - Mensen bedenken nieuwe architecturen, patterns, oplossingen
 - LLMs reproduceren bestaande kennis
@@ -1402,7 +1404,7 @@ graph TB
 **5. Kwaliteit: Inferieur aan senior developers**
 
 - DeepSeek Coder (33B) < Claude Sonnet < Senior Developer
-- Code quality: 70-80% van menselijke output[^19]
+- Code quality: 70-80% van menselijke output[^22]
 - Subtiele bugs blijven vaak door de mazen
 
 **6. Debugging: Beperkte problem-solving**
@@ -1425,7 +1427,7 @@ graph TB
 
 ### De Realistische Sweet Spot: Hybrid Teams
 
-Hier is de waarheid: **het is geen óf/óf, maar én/én**.[^7]
+Hier is de waarheid: **het is geen óf/óf, maar én/én**.[^22]
 
 **Optimale setup:**
 
@@ -1488,7 +1490,7 @@ De architect ontwerpt het gebouw, de engineer lost de moeilijke problemen op, ma
 Ik test dit op **niet-kritische projecten** (personal projects, prototypes). Voor production work blijf ik een hybrid model gebruiken: Cursor/Claude voor complex werk, Council voor grunt work.
 
 **De toekomst?**
-Modellen worden beter. Over 2-3 jaar kunnen lokale 100B+ modellen misschien wel senior developer niveau halen.[^20] Maar voorlopig: **Council = junior developers met superkrachten**, niet senior developers.
+Modellen worden beter. Over 2-3 jaar kunnen lokale 100B+ modellen misschien wel senior developer niveau halen.[^23] Maar voorlopig: **Council = junior developers met superkrachten**, niet senior developers.
 
 ## Technical Challenges
 
@@ -1498,7 +1500,7 @@ Modellen worden beter. Over 2-3 jaar kunnen lokale 100B+ modellen misschien wel 
 
 **Oplossing**:
 
-- **Vector database** (ChromaDB) met code embeddings
+- **Vector database** (PostgreSQL + pgvector) met code embeddings[^21]
 - Agents querien alleen relevante context voor hun taak
 - Semantic search: "find authentication code" → retrieves auth modules
 
@@ -1648,11 +1650,11 @@ Ten slotte, waarom doe ik dit? Een paar redenen:
 
 ### 1. Digital Soevereiniteit
 
-Als ik pleit voor digital soevereiniteit bij overheden[^5], moet ik ook zelf experimenteren met alternatieven voor cloud-afhankelijkheid.
+Als ik pleit voor digital soevereiniteit bij overheden[^8], moet ik ook zelf experimenteren met alternatieven voor cloud-afhankelijkheid.
 
 ### 2. Leren Hoe LLMs Samenwerken
 
-De toekomst van AI development is waarschijnlijk **niet** één super-intelligent model, maar **teams van gespecialiseerde modellen** die samenwerken.[^18] Dit is een kans om die dynamiek te begrijpen.
+De toekomst van AI development is waarschijnlijk **niet** één super-intelligent model, maar **teams van gespecialiseerde modellen** die samenwerken.[^3] Dit is een kans om die dynamiek te begrijpen.
 
 ### 3. Open Source Bijdragen
 
@@ -1690,42 +1692,50 @@ _Dit is het begin van een reis. Een reis naar meer controle, meer privacy, en me
 
 _Let's build a Council of LLMs._ 🚀
 
-[^1]: **NCSC** - [Cloud Security Guidelines for Government](https://www.ncsc.nl/documenten/publicaties/2019/juni/01/cloud-security-voor-de-overheid)
+[^1]: **Anthropic** - [Claude API Pricing](https://www.anthropic.com/pricing) - Bij intensief gebruik (1M tokens/dag) kan dit €50-200/dag kosten
 
-[^2]: **iBestuur** - [Versterk de digitale soevereiniteit](https://ibestuur.nl/whitepapers/versterk-de-digitale-soevereiniteit)
+[^2]: **AutoGPT & BabyAGI** - [Autonomous AI agents](https://github.com/Significant-Gravitas/AutoGPT) - Eerste experimenten met multi-agent AI systems
 
-[^3]: **n8n.io** - [Open source workflow automation](https://n8n.io/)
+[^3]: **Microsoft Research** - [AutoGen: Enabling next-generation LLM applications](https://www.microsoft.com/en-us/research/project/autogen/)
 
-[^4]: **DeepSeek AI** - [DeepSeek Coder: Open source code generation models](https://github.com/deepseek-ai/DeepSeek-Coder)
+[^4]: **NCSC** - [Cloud Security Guidelines for Government](https://www.ncsc.nl/documenten/publicaties/2019/juni/01/cloud-security-voor-de-overheid)
 
-[^5]: Zie mijn eerdere blog: [Volwassenheid van Open Source](/blog/volwassenheid-open-source)
+[^8]: **iBestuur** - [Versterk de digitale soevereiniteit](https://ibestuur.nl/whitepapers/versterk-de-digitale-soevereiniteit)
 
-[^6]: **Nature** - [Large language models cannot replace human participants](https://www.nature.com/articles/s41562-024-01980-6)
+[^18]: **n8n.io** - [Open source workflow automation](https://n8n.io/)
 
-[^7]: **McKinsey** - [The economic potential of generative AI: The next productivity frontier](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier)
+[^22]: **DeepSeek AI** - [DeepSeek Coder: Open source code generation models](https://github.com/deepseek-ai/DeepSeek-Coder)
 
-[^8]: **Deque Systems** - [axe-core: Accessibility testing engine](https://github.com/dequelabs/axe-core)
+[^23]: Zie mijn eerdere blog: [Volwassenheid van Open Source](/blog/volwassenheid-open-source)
 
-[^9]: **Digitoegankelijk** - [Toegankelijkheidseisen overheid](https://www.digitoegankelijk.nl/)
+[^18]: **Nature** - [Large language models cannot replace human participants](https://www.nature.com/articles/s41562-024-01980-6)
 
-[^10]: **WCAG 2.1** - [Web Content Accessibility Guidelines](https://www.w3.org/WAI/WCAG21/quickref/)
+[^22]: **McKinsey** - [The economic potential of generative AI: The next productivity frontier](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier)
 
-[^11]: **Aqua Security** - [Trivy: Container vulnerability scanner](https://github.com/aquasecurity/trivy)
+[^23]: **Deque Systems** - [axe-core: Accessibility testing engine](https://github.com/dequelabs/axe-core)
 
-[^12]: **Snyk** - [Container Security](https://snyk.io/product/container-vulnerability-management/)
+[^18]: **Digitoegankelijk** - [Toegankelijkheidseisen overheid](https://www.digitoegankelijk.nl/)
 
-[^13]: **OWASP** - [ZAP: Zed Attack Proxy](https://www.zaproxy.org/)
+[^22]: **WCAG 2.1** - [Web Content Accessibility Guidelines](https://www.w3.org/WAI/WCAG21/quickref/)
 
-[^14]: **ProjectDiscovery** - [Nuclei: Fast vulnerability scanner](https://github.com/projectdiscovery/nuclei)
+[^23]: **Aqua Security** - [Trivy: Container vulnerability scanner](https://github.com/aquasecurity/trivy)
 
-[^15]: **Google** - [AFL++ with MOpt: Machine Learning-guided Fuzzing](https://github.com/AFLplusplus/AFLplusplus)
+[^18]: **Snyk** - [Container Security](https://snyk.io/product/container-vulnerability-management/)
 
-[^16]: **NIST** - [Software Bill of Materials (SBOM)](https://www.nist.gov/itl/executive-order-14028-improving-nations-cybersecurity/software-security-supply-chains-software-1)
+[^22]: **OWASP** - [ZAP: Zed Attack Proxy](https://www.zaproxy.org/)
 
-[^17]: **OWASP** - [STRIDE Threat Model](https://owasp.org/www-community/Threat_Modeling_Process)
+[^23]: **ProjectDiscovery** - [Nuclei: Fast vulnerability scanner](https://github.com/projectdiscovery/nuclei)
 
-[^18]: **Microsoft** - [Multi-agent systems research](https://www.microsoft.com/en-us/research/project/autogen/)
+[^3]: **Google** - [AFL++ with MOpt: Machine Learning-guided Fuzzing](https://github.com/AFLplusplus/AFLplusplus)
 
-[^19]: **Anthropic** - [Constitutional AI: Harmlessness from AI Feedback](https://arxiv.org/abs/2212.08073)
+[^22]: **NIST** - [Software Bill of Materials (SBOM)](https://www.nist.gov/itl/executive-order-14028-improving-nations-cybersecurity/software-security-supply-chains-software-1)
 
-[^20]: **OpenAI** - [Practices for Governing Agentic AI Systems](https://openai.com/index/practices-for-governing-agentic-ai-systems/)
+[^23]: **OWASP** - [STRIDE Threat Model](https://owasp.org/www-community/Threat_Modeling_Process)
+
+[^21]: **PostgreSQL pgvector** - [Open-source vector similarity search](https://github.com/pgvector/pgvector)
+
+[^22]: **Anthropic** - [Constitutional AI: Harmlessness from AI Feedback](https://arxiv.org/abs/2212.08073)
+
+[^23]: **OpenAI** - [Practices for Governing Agentic AI Systems](https://openai.com/index/practices-for-governing-agentic-ai-systems/)
+
+[^24]: **Dev.to** - [Top 5 Reasons Why AI Agents Can't Replace Human Developers (Yet)](https://dev.to/therealmrmumba/top-5-reasons-why-ai-agents-cant-replace-human-developers-yet-1gbm)
