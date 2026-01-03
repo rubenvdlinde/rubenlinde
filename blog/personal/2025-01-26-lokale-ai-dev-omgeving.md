@@ -56,7 +56,7 @@ Dit experiment is volledig gebouwd op open source tooling. Hier zijn de belangri
 - **n8n**: Workflow orchestration - het zenuwstelsel van ons systeem
 - **Ollama**: Local LLM runtime - draait de modellen
 - **DeepSeek Coder / Qwen / Llama**: De LLM modellen zelf
-- **Continue**: Open source IDE met LLM integratie (VS Code extensie)
+- **OpenCode**: Open source AI coding agent (terminal, IDE, desktop)[^25]
 - **PostgreSQL + pgvector**: Vector database voor code embeddings en context[^21]
 - **Git**: Version control en samenwerking
 - **Playwright/Puppeteer**: Browser automation voor testing
@@ -333,7 +333,7 @@ Voor dit experiment kies ik bewust voor open source tooling, passend bij mijn ov
 ```mermaid
 graph LR
     subgraph IDE["🎨 IDE Layer"]
-        Continue["Continue<br/>(VS Code Extension)"]
+        OpenCode["OpenCode<br/>(AI Coding Agent)"]
     end
 
     subgraph Orchestration["🎼 Orchestration Layer"]
@@ -353,7 +353,7 @@ graph LR
         PG["PostgreSQL + pgvector<br/>(Vector Database)"]
     end
 
-    Continue -->|Integrates| n8n
+    OpenCode -->|Integrates| n8n
     n8n -->|Orchestrates| Ollama
     n8n -->|Controls| Browser
     Ollama -->|Runs| DeepSeek
@@ -361,41 +361,34 @@ graph LR
     Ollama -->|Runs| Llama
     n8n -->|Commits| Git
     n8n -->|Queries Context| PG
-    Continue -->|Reads| PG
+    OpenCode -->|Reads| PG
 
-    style Continue fill:#00d2d3
+    style OpenCode fill:#00d2d3
     style n8n fill:#ff6b6b
     style Ollama fill:#45b7d1
     style Git fill:#f39c12
     style PG fill:#336791
 ```
 
-### Continue: De IDE
+### OpenCode: De AI Coding Agent
 
-In plaats van Cursor (closed source, cloud-dependent) heb je meerdere open source alternatieven met lokale LLM integratie:
+**OpenCode.ai** - De open source AI coding agent voor dit experiment:[^25]
 
-**Optie 1: Continue** (Aanbevolen)
+- **45.000+ GitHub stars** - bewezen en vertrouwd door 650.000+ developers
+- **Multi-provider support**: 75+ LLM providers via Models.dev, inclusief lokale modellen
+- **Cross-platform**: Terminal, IDE extensie, en desktop app (Windows, Mac, Linux)
+- **LSP enabled**: Automatisch de juiste Language Server Protocols voor LLMs
+- **Multi-session**: Meerdere agents parallel op hetzelfde project
+- **Privacy-first**: Geen code of context data opslag
+- **Claude Pro support**: Log in met je eigen Anthropic account
+- **Open source**: Volledig transparant en community-driven (https://opencode.ai)
 
-- Open source Cursor alternative
-- Native support voor Ollama + lokale modellen
-- VS Code extensie
-- Multi-agent workflows (beta)
-- GitHub: https://github.com/continuedev/continue
+Voor ons Council is OpenCode perfect omdat het:
 
-**Optie 2: VSCodium + Ollama extensies**
-
-- Fully open source VS Code fork
-- Ollama extensie voor autocomplete
-- CodeGPT plugin voor chat
-- Privacy-first (geen telemetry)
-
-**Optie 3: Cody van Sourcegraph**
-
-- Open source AI coding assistant
-- Werkt met lokale modellen via Ollama
-- Context-aware code completion
-
-Voor dit experiment gebruiken we **Continue** omdat het het beste multi-agent support heeft.
+1. **Native lokale model support** heeft via Ollama
+2. **Multi-agent workflows** ondersteunt (meerdere sessies parallel)
+3. **LSP integration** heeft (agents begrijpen code context beter)
+4. **Cross-platform** werkt (Windows, Mac, Linux zonder gedoe)
 
 ### n8n: De Orchestrator
 
@@ -1927,7 +1920,7 @@ gantt
 - [x] Hardware: RTX 4090 geïnstalleerd
 - [x] Ollama setup met DeepSeek Coder
 - [x] n8n geïnstalleerd en geconfigureerd
-- [x] Continue getest met lokale LLMs
+- [x] OpenCode getest met lokale LLMs
 
 ### Fase 2: Single LLM Development (Februari 2025)
 
@@ -2119,32 +2112,49 @@ docker exec council-postgres psql -U council -d council -c "SELECT version();"
 
 **Step 4: Install Continue (IDE)**
 
-**Windows:**
+**Step 4: Install OpenCode (IDE/Terminal/Desktop)**
 
-1. Installeer VS Code: https://code.visualstudio.com/
-2. Open VS Code
-3. Extensions → Search "Continue"
-4. Install "Continue - Open Source AI Code Assistant"
-5. Configure Continue:
-   - Open Command Palette (Ctrl+Shift+P)
-   - "Continue: Open Config"
-   - Add Ollama config:
+**Windows/Mac/Linux - Via installer:**
 
-```json
-{
-  "models": [
-    {
-      "title": "DeepSeek Coder",
-      "provider": "ollama",
-      "model": "deepseek-coder:33b",
-      "apiBase": "http://localhost:11434"
-    }
-  ]
-}
+```bash
+# Via curl (Linux/Mac)
+curl -fsSL https://opencode.ai/install | bash
+
+# Via npm
+npm install -g opencode
+
+# Via brew (Mac)
+brew install opencode
+
+# Windows: Download desktop app
+# https://opencode.ai/download
 ```
 
-6. Restart VS Code
-7. Test: Open een file, vraag Continue iets via Ctrl+L
+**Configure OpenCode met Ollama:**
+
+```bash
+# Start OpenCode
+opencode
+
+# In OpenCode, configure model:
+# Settings → Models → Add Provider
+# Provider: Ollama
+# Base URL: http://localhost:11434
+# Model: deepseek-coder:33b
+```
+
+**Test OpenCode:**
+
+```bash
+# Terminal mode
+opencode --model ollama/deepseek-coder:33b "Write a Python hello world"
+
+# IDE mode (VS Code/Cursor extension)
+# Install via: code --install-extension Anomaly.opencode
+
+# Desktop app
+# Launch OpenCode.app
+```
 
 ### Optie 2: Native Installatie (Advanced)
 
@@ -2420,3 +2430,5 @@ _Let's build a Council of LLMs._ 🚀
 [^23]: **OpenAI** - [Practices for Governing Agentic AI Systems](https://openai.com/index/practices-for-governing-agentic-ai-systems/)
 
 [^24]: **Dev.to** - [Top 5 Reasons Why AI Agents Can't Replace Human Developers (Yet)](https://dev.to/therealmrmumba/top-5-reasons-why-ai-agents-cant-replace-human-developers-yet-1gbm)
+
+[^25]: **OpenCode.ai** - [Open source AI coding agent](https://opencode.ai/) - 45K+ GitHub stars, 650K+ monthly developers
