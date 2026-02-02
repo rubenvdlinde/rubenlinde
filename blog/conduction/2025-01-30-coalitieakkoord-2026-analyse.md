@@ -1,6 +1,6 @@
 ---
 slug: coalitieakkoord-2026-digitale-soevereiniteit-analyse
-title: Coalitieakkoord 2026 - Mooie Woorden of Echte Transitie?
+title: Coalitieakkoord 2026 - Mooie woorden of echte transitie?
 date: 2025-01-30
 authors: [ruben]
 tags:
@@ -16,7 +16,7 @@ tags:
 description: Het coalitieakkoord 2026 belooft digitale autonomie, open source en afbouw van big tech-afhankelijkheid. Maar waar zijn de deadlines, budgetten en sancties? Een kritische analyse van goede intenties zonder tanden.
 ---
 
-# Coalitieakkoord 2026: Mooie woorden of echte transitie naar digitale soevereiniteit?
+# Coalitieakkoord 2026: mooie woorden of echte transitie naar digitale soevereiniteit?
 
 Het coalitieakkoord 2026 leest als een wensenlijstje voor iedereen die al jaren pleit voor digitale soevereiniteit.[^1] Digitale autonomie als uitgangspunt. Afbouw van strategische afhankelijkheden. Open source als criterium bij inkoop. Een Europese digitale infrastructuur. Een AI-fabriek in Noord-Nederland. Het klinkt als muziek in de oren – en dat is precies het probleem. Want muziek kun je niet eten, en mooie woorden betalen geen serverrekeningen.
 
@@ -24,7 +24,7 @@ Laten we eerlijk zijn: dit akkoord erkent eindelijk wat we al jaren roepen. Nede
 
 <!--truncate-->
 
-## De Kernboodschap: Digitale autonomie als leidend principe
+## De kernboodschap: digitale autonomie als leidend principe
 
 Het akkoord stelt onomwonden: "Digitale autonomie wordt voor het kabinet het leidende principe."[^5] De overheid kiest voor een Europese digitale infrastructuur en wil strategische afhankelijkheden in cloud, data en cruciale systemen "doelgericht afbouwen". Grote IT-projecten worden opgesplitst zodat meer Nederlandse en Europese mkb'ers kunnen meedoen. Digitale inkoop wordt gecentraliseerd met eisen voor security-by-design, zero-trust, soevereiniteit, open source en ketenveiligheid.[^6]
 
@@ -38,7 +38,7 @@ Maar hier wringt de schoen: "doelgericht afbouwen" is geen deadline. "Europese d
 
 Zonder zulke harde doelen blijft het risico bestaan dat aanbestedingen gewoon doorgaan zoals altijd – met een vinkje bij "open source overwogen" als excuus.
 
-## De nederlandse digitale dienst: regie zonder minister
+## De Nederlandse Digitale Dienst: regie zonder minister
 
 Het akkoord introduceert een Nederlandse Digitale Dienst – een compacte, deskundige organisatie met doorzettingsmacht die de digitalisering rijksbreed moet ondersteunen.[^9] Het kabinet kijkt naar Estland als voorbeeld: een land waar je binnen vijftien minuten een bedrijf kunt starten, volledig digitaal.[^10]
 
@@ -48,7 +48,7 @@ Maar er is geen aparte minister voor Digitale Zaken.[^12] Die keuze is begrijpel
 
 De vraag is simpel: krijgt deze dienst werkelijk doorzettingsmacht? Of wordt het een adviesorgaan dat door ministeries genegeerd kan worden zodra het ongemakkelijke aanbevelingen doet?
 
-## Open Source: Erkenning zonder verplichting
+## Open source: erkenning zonder verplichting
 
 Het akkoord noemt open source expliciet als criterium voor inkoop en aanbesteding.[^13] Dat is positief – voor het eerst staat het zwart-op-wit in een coalitieakkoord. Maar "criterium" is iets anders dan "voorkeur" of "verplichting".
 
@@ -56,7 +56,7 @@ In de praktijk weten we hoe dit werkt. Een aanbesteding wordt uitgeschreven. Er 
 
 De beleidslijn "Open, tenzij" bestaat sinds 2020.[^14] Software die de overheid maakt of laat maken moet zo veel mogelijk open source zijn. Toch draait vrijwel de hele overheid nog op Microsoft 365.[^15] De wet open overheid legt een inspanningsverplichting op om broncode openbaar te maken – maar een inspanningsverplichting is geen resultaatverplichting.[^16]
 
-### Wat Wél Werkt: Mijn Bureau en Europese Samenwerking
+### Wat wél werkt: Mijn Bureau en Europese samenwerking
 
 Terwijl het akkoord in algemeenheden blijft hangen, gebeurt er concreet wél iets. De technische beproevingen van **Mijn Bureau** – een open source alternatief voor Microsoft 365 – zijn recent afgerond.[^17] Dit is een samenwerking tussen Nederland, Duitsland en Frankrijk, waarbij we componenten delen:
 
@@ -74,7 +74,7 @@ Microsoft-president Brad Smith ontkende dat ze diensten hadden opgeschort.[^23] 
 
 Als internationale tribunalen en Europese legers overstappen, waarom blijft de Nederlandse overheid dan hangen in Microsoft-land?
 
-## Common Ground: De logische ruggengraat
+## Common Ground: de logische ruggengraat
 
 Het akkoord noemt Common Ground niet expliciet, maar de architectuurprincipes passen naadloos bij de doelstellingen.[^26] Data gescheiden van applicaties. Hergebruik via API's. Open standaarden. Geen vendor lock-in. Dit is precies wat Common Ground al jaren predikt – en wat meer dan 100 gemeenten al in de praktijk brengen.[^27]
 
@@ -82,7 +82,7 @@ Als de overheid echt kiest voor Europese infrastructuur en open source, dan is C
 
 Het akkoord biedt Common Ground wind in de zeilen – maar alleen als de mooie woorden worden omgezet in aanbestedingseisen. "Soevereiniteit" als criterium is mooi; "Common Ground-compliant" als eis is beter.
 
-## Cybersecurity: Het sterkste deel
+## Cybersecurity: het sterkste deel
 
 Het meest concrete deel van het akkoord gaat over cybersecurity.[^30] NIS2-implementatie via de Cyberbeveiligingswet, die naar verwachting Q2 2026 ingaat.[^31] Centrale regie conform advies van de Cyber Security Raad. Nationale stresstests op risico's voor het landsbelang. Strategieën voor ontvlechting. Apparatuur uit risicolanden geweerd uit vitale sectoren.[^32]
 
@@ -90,7 +90,7 @@ Dit is precies wat nodig is. Bestuurders worden persoonlijk verantwoordelijk voo
 
 Maar ook hier: geen harde deadlines voor ontvlechting. Geen concrete sancties op niet-naleving. Geen budget voor alternatieven.
 
-## De Visie Digitale Autonomie: Open waar het kan, beschermen waar het moet
+## De visie digitale autonomie: open waar het kan, beschermen waar het moet
 
 Parallel aan het coalitieakkoord is op 12 december 2025 de "Visie Digitale autonomie en soevereiniteit van de overheid" vastgesteld door de ministerraad.[^34] Dit document is concreter dan het akkoord en bevat echte bouwstenen:
 
@@ -102,7 +102,7 @@ Parallel aan het coalitieakkoord is op 12 december 2025 de "Visie Digitale auton
 
 De kernboodschap: "Open waar het kan, beschermen waar het moet."[^40] Nederland streeft niet naar volledige soevereiniteit – dat zou niet haalbaar zijn – maar wel naar controle over de digitale infrastructuur waar de overheid op leunt.[^41]
 
-### Europese Samenwerking: EDIC digitale gemeenschapsgoederen
+### Europese samenwerking: EDIC digitale gemeenschapsgoederen
 
 De visie sluit aan bij het **European Digital Infrastructure Consortium (EDIC) Digitale Gemeenschapsgoederen** – een samenwerking tussen Frankrijk, Duitsland, Italië en Nederland, inmiddels uitgebreid naar negen EU-lidstaten.[^42] Dit consortium is in Den Haag gelanceerd en staat onder Nederlands voorzitterschap.[^43]
 
@@ -110,7 +110,7 @@ Dit is veelbelovend: concrete Europese samenwerking met gedeelde doelen. Maar de
 
 Dat is begrijpelijk vanuit diplomatiek perspectief. Maar het roept de vraag op: als we niet categorisch uitsluiten, wat doen we dan wél als Microsoft opnieuw accounts blokkeert? Of als Trump tarieven verhoogt op "digitale diensten"? Of als de Cloud Act wordt ingezet om overheidsdata op te eisen?
 
-## EuroStack: De europese belofte
+## EuroStack: de Europese belofte
 
 Terwijl Nederland voorzichtig stapjes zet, ontstaat op Europees niveau een ambitieuzere beweging: **EuroStack**.[^45] Een analyse van de Bertelsmann Stiftung schat dat 90 procent van Europa's digitale infrastructuur – cloud, compute, software – wordt gecontroleerd door niet-Europese, overwegend Amerikaanse bedrijven.[^46] Meer dan 80% van Europa's digitale technologieën wordt geïmporteerd. 70% van de wereldwijd gebruikte AI-modellen komt uit de VS.[^47]
 
@@ -118,7 +118,7 @@ EuroStack pleit voor een transformatie die tien jaar en €300 miljard vereist.[
 
 De vraag is of Nederland deze beweging leidt of volgt. Het coalitieakkoord positioneert ons als voorzichtige volger. Maar met ASML, Common Ground en de EDIC-voorzitterschapsrol hebben we de kaarten om voorloper te zijn.
 
-## De Kritische Noot: Waar zijn de tanden?
+## De kritische noot: waar zijn de tanden?
 
 Na alle analyses blijft de kernvraag: heeft dit akkoord tanden? Het antwoord is helaas: nee.
 
@@ -132,7 +132,7 @@ Na alle analyses blijft de kernvraag: heeft dit akkoord tanden? Het antwoord is 
 
 Zonder dit blijft het risico groot dat we over vier jaar terugkijken op weer een akkoord met mooie woorden en weinig resultaat.
 
-## Praktisch: Wat kunnen Gemeenten nu doen?
+## Praktisch: wat kunnen gemeenten nu doen?
 
 Wachten op Den Haag is geen optie. Gemeenten kunnen nu al handelen:
 
@@ -140,23 +140,23 @@ Wachten op Den Haag is geen optie. Gemeenten kunnen nu al handelen:
 
 Breng in kaart welke systemen draaien op Amerikaanse infrastructuur. Email, documentbeheer, cloudstorage, videoconferencing – waar zit het risico?
 
-### 2. Start Pilots met Alternatieven
+### 2. Start pilots met alternatieven
 
 Mijn Bureau is beschikbaar. OpenZaak draait bij tientallen gemeenten. Nextcloud kan morgen geïnstalleerd worden. Begin klein, leer, schaal op.
 
-### 3. Werk Samen via Common Ground
+### 3. Werk samen via Common Ground
 
 Niet elke gemeente hoeft het wiel uit te vinden. Hergebruik wat anderen hebben gebouwd. Draag bij aan wat je verbetert. Samen ontwikkelen is goedkoper én beter.
 
-### 4. Eis Soevereiniteit bij aanbestedingen
+### 4. Eis soevereiniteit bij aanbestedingen
 
 Voeg concrete eisen toe: data op Europese servers, broncode openbaar, exit-strategie verplicht. Niet als "overweging", maar als knock-out criterium.
 
-### 5. Investeer in eigen Eexpertise
+### 5. Investeer in eigen expertise
 
 Neem IT-talent in dienst. Train ambtenaren. Verminder afhankelijkheid van externe consultants die morgen weer weg zijn.
 
-## Conclusie: Kansen, maar Alleen als we ze pakken
+## Conclusie: kansen, maar alleen als we ze pakken
 
 Het coalitieakkoord 2026 biedt meer dan we in jaren hebben gezien. Erkenning van afhankelijkheid. Expliciete voorkeur voor open source. Europese samenwerking. Centrale regie. Voor Common Ground en digitale soevereiniteit is dit een stevige basis – áls de woorden worden omgezet in daden.
 
@@ -170,7 +170,7 @@ Publiek geld voor publiek goed. De woorden staan er. Nu de daden nog.
 
 ---
 
-## EuroStack-Componenten en Open Source Tools
+## EuroStack-componenten en open source tools
 
 Hieronder een overzicht van concrete tools die passen bij de ambities uit het coalitieakkoord:
 
