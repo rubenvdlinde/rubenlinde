@@ -13,12 +13,12 @@ tags:
     europa,
     beleid,
   ]
-description: Overpeinzingen in de Trein terug naar Amsterdam. Van het open source halleluja in Brussel naar de dagelijkse praktijk. Over volle zalen, beleidsmakers tussen hackers, en de vraag of Europa nu écht wakker wordt.
+description: Overpeinzingen in de trein terug naar Amsterdam. Van het open source halleluja in Brussel naar de dagelijkse praktijk. Over volle zalen, beleidsmakers tussen hackers, en de vraag of Europa nu écht wakker wordt.
 ---
 
 # FOSDEM 2026: terug naar de werkelijkheid
 
-De Trein dendert door het Belgische landschap. Buiten glijden weilanden voorbij, binnen zit ik met een lauwe koffie en een hoofd vol indrukken. Twee dagen FOSDEM. Twee dagen open source halleluja. En nu terug naar de werkelijkheid – naar aanbestedingen, naar vergaderingen, naar de dagelijkse praktijk waarin "open source overwegen" nog te vaak een checkbox is.
+De trein dendert door het Belgische landschap. Buiten glijden weilanden voorbij, binnen zit ik met een lauwe koffie en een hoofd vol indrukken. Twee dagen FOSDEM. Twee dagen open source halleluja. En nu terug naar de werkelijkheid – naar aanbestedingen, naar vergaderingen, naar de dagelijkse praktijk waarin "open source overwegen" nog te vaak een checkbox is.
 
 Maar dit jaar voelt anders. Iets is verschoven. En terwijl de trein Antwerpen passeert, probeer ik te begrijpen wat.
 
@@ -38,9 +38,9 @@ Maar dwars door die laag loopt nu een tweede: de overheden. Tussen de hoodies en
 
 Je zag ze bij elkaar staan in de gangen, koffie in de hand, pratend over implementaties en aanbestedingen terwijl om hen heen developers discussieerden over merge conflicts. Twee talen, één campus. Het was fascinerend om te zien – en veelzeggend. FOSDEM is niet langer alleen van de hackers. De overheid heeft een plek geclaimd.
 
-Wat is er gebeurd? Tjsa, Trump.
+Wat is er gebeurd? Tja, Trump.
 
-## Maar zo voor de Nederlandse grens vraag ja, wat is nou de afdronk.
+## Maar zo voor de Nederlandse grens vraag je je af: wat is nou de afdronk?
 
 Geopolitiek. Dat is er gebeurd.
 
@@ -56,7 +56,7 @@ Dat is een wezenlijk verschil. Van "we zouden willen" naar "we hebben gedaan". V
 
 ## Voorbij de grens: Europese harmonieën
 
-Het mooiste van dit FOSDEM was de zichtbare afstemming tussen landen. Frankrijk met La Suite – inmiddels gebruikt door meer dan 600.000 ambtenaren.[^6] Duitsland met openDesk – geadopteerd door het ICC, het Duitse leger, en natuuelijk ook heel Sleeswijk-Holstein.[^7] En Nederland met OpenBSW en Mijn Bureau – ons oranje antwoord op dezelfde vraag.
+Het mooiste van dit FOSDEM was de zichtbare afstemming tussen landen. Frankrijk met La Suite – inmiddels gebruikt door meer dan 600.000 ambtenaren.[^6] Duitsland met openDesk – geadopteerd door het ICC, het Duitse leger, en natuurlijk ook heel Sleeswijk-Holstein.[^7] En Nederland met OpenBSW en Mijn Bureau – ons oranje antwoord op dezelfde vraag.
 
 Drie landen, drie implementaties, maar gedeelde componenten en één gedeelde visie: open source werkplekken voor de publieke sector, los van Amerikaanse afhankelijkheden. En het mooie is: ze praten met elkaar. Ze delen componenten. Ze bouwen voort op elkaars werk.[^8]
 
@@ -66,7 +66,7 @@ In de devroom "Building Europe's Public Digital Infrastructure" zag je het samen
 
 EuroStack – het Europese antwoord op de Amerikaanse hyperscalers – begint ook serieus vorm te krijgen.[^10] De naam viel dit jaar vaker dan ooit. Maar eerlijk is eerlijk: de focus ligt nog steeds vooral op werkplekoplossingen. Email, documenten, videobellen. Dat is belangrijk, maar het is pas het begin.
 
-Wat wel hoopgevend is: de volgende stap tekent zich af. Er was veel te doen over gefederaliseerde register-oplossingen – de gedachte dat data niet meer in één centrale silo hoeft te zitten, maar verspreid kan leven en toch bevraagbaar blijft. Dit sluit aan bij wat wij in Common Ground al jaren prediken: data bij de bron, applicaties los van de data. En nu komt diezelfde boodschap vanuit de Europese Commissie. 2026 wordt het jaar waarin het lostrekken van applicaties en data serieus op de agenda komt – niet als techneuten-hobby, maar als Europees beleid. De commissie ziet dit als logische vervolgstap na de werkplek: eerst soevereine tools om mee te werken, dan soevereine manieren om data te beheren en delen.
+Wat wel hoopgevend is: de volgende stap tekent zich af. Er was veel te doen over gefederaliseerde register-oplossingen – de gedachte dat data niet meer in één centrale silo hoeft te zitten, maar verspreid kan leven en toch bevraagbaar blijft. Dit sluit aan bij wat wij in Common Ground al jaren prediken: data bij de bron, applicaties los van de data. En nu komt diezelfde boodschap vanuit de Europese Commissie. 2026 wordt het jaar waarin het lostrekken van applicaties en data serieus op de agenda komt – niet als techneuten-hobby, maar als Europees beleid. De Commissie ziet dit als logische vervolgstap na de werkplek: eerst soevereine tools om mee te werken, dan soevereine manieren om data te beheren en delen.
 
 Voor Common Ground is dit tweeledig. Aan de ene kant is het een enorme bevestiging – wat wij al jaren roepen, wordt nu Europees beleid. De architectuurprincipes die we in Nederland hebben ontwikkeld, worden gelegitimeerd op continentaal niveau. Dat geeft rugdekking, dat geeft momentum, dat maakt het makkelijker om bestuurders mee te krijgen.
 
@@ -76,7 +76,7 @@ Het is geen reden voor paniek, maar wel voor alertheid. We moeten zorgen dat we 
 
 De echte uitdaging – Europese alternatieven voor cloud-infrastructuur, voor AI, voor data-analyse – ligt nog grotendeels voor ons. Maar de richting is gezet.
 
-## Maar reizend door Frans, Nederlands én Duits sprekend Belgie kan je jezelf niet ontrekken aan de vraag hoe werkt dit zo samen.
+## Maar reizend door Frans, Nederlands én Duits sprekend België kun je jezelf niet onttrekken aan de vraag: hoe werkt dit zo samen?
 
 Er is iets geks aan de hand op FOSDEM, en ik kan het niet helemaal plaatsen.
 
@@ -86,7 +86,7 @@ Aan de andere kant is er een hele beleidslaag ontstaan. De EU Policy devroom.[^1
 
 Het zijn twee werelden die op hetzelfde evenement bestaan, maar elkaar niet altijd begrijpen. De hacker die een cool project bouwt, weet niet altijd dat zijn code straks misschien in een Europees ministerie draait. De beleidsmaker die enthousiast is over digitale soevereiniteit, begrijpt niet altijd de cultuur van vrijwilligers en maintainers die dit mogelijk maken.
 
-En toch – en dit is misschien wel de belangrijkste observatie – beginnen die werelden te versmelten. De hacker die ook meedenkt over beleid. De ambtenaar die ook code leert lezen. De OSPO-manager die de brug slaat. FOSDEM wordt langzaam een plek waar techniek en beleid elkaar ontmoeten, niet als tegenstanders, maar als bondgenoten. Ik vraag me af of de jongen met het i void warrenties t-shirt deze wending had zien aankomen 2 jaar geleden.
+En toch – en dit is misschien wel de belangrijkste observatie – beginnen die werelden te versmelten. De hacker die ook meedenkt over beleid. De ambtenaar die ook code leert lezen. De OSPO-manager die de brug slaat. FOSDEM wordt langzaam een plek waar techniek en beleid elkaar ontmoeten, niet als tegenstanders, maar als bondgenoten. Ik vraag me af of de jongen met het "I void warranties" t-shirt deze wending had zien aankomen twee jaar geleden.
 
 ## En na het passeren van de Nederlandse grens vraag je jezelf af: wat betekent dit voor onze gemeenten?
 
@@ -100,7 +100,7 @@ Wat gemeenten nu kunnen doen is simpel: begin. Niet met een big bang migratie, m
 
 En het mooie is: je hoeft het niet alleen te doen. Common Ground bestaat precies hiervoor – samen ontwikkelen, samen leren, samen sterker. De Duitse en Franse ervaringen zijn beschikbaar. De code is open. De community groeit. De vraag is niet meer óf het kan, maar of je durft te beginnen.
 
-Het is dan ook grappig, om na Fossdem meteen door te reizen naar de werkconferrentie commonground. Fair ehough, waarschijnlijk net geen acht duizend man. Maar wel weer overheden en leveranciers die samen problemen oplossen.
+Het is dan ook grappig om na FOSDEM meteen door te reizen naar de werkconferentie Common Ground. Fair enough, waarschijnlijk net geen achtduizend man. Maar wel weer overheden en leveranciers die samen problemen oplossen.
 
 ## Amsterdam Centraal: terug in de werkelijkheid
 
