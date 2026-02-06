@@ -1,5 +1,11 @@
 {
   "permissions": {
-    "allow": ["WebSearch"]
+    "allow": [
+      "WebSearch",
+      "Bash(wc:*)",
+      "WebFetch(domain:en.bioerrorlog.work)",
+      "Bash(npm run build:*)",
+      "WebFetch(domain:www.linkedin.com)"
+    ]
   }
 }
