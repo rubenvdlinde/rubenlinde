@@ -2,11 +2,101 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.rubenlinde.nl/en/blog</id>
     <title>Ruben van der Linde Blog</title>
-    <updated>2025-02-01T00:00:00.000Z</updated>
+    <updated>2026-02-06T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.rubenlinde.nl/en/blog"/>
     <subtitle>Ruben van der Linde Blog</subtitle>
     <icon>https://www.rubenlinde.nl/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Open source lost jouw lock-in niet op]]></title>
+        <id>https://www.rubenlinde.nl/en/blog/open-source-lost-jouw-lock-in-niet-op</id>
+        <link href="https://www.rubenlinde.nl/en/blog/open-source-lost-jouw-lock-in-niet-op"/>
+        <updated>2026-02-06T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Lock-in is geen argument tegen open source — het is een probleem dat de overheid zelf heeft gecreëerd en zelf moet oplossen.]]></summary>
+        <content type="html"><![CDATA[<p>Open source lost jouw lock-in niet op. Dat moet je zelf doen.</p>
+<p>Ik merk het steeds vaker in gesprekken over digitale soevereiniteit en migraties weg van Foreign Tech. Er wordt naar open source gekeken als een soort wondermiddel. Alsof je Collabora Office<sup><a href="https://www.rubenlinde.nl/en/blog/open-source-lost-jouw-lock-in-niet-op#user-content-fn-1-808774" id="user-content-fnref-1-808774" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">1</a></sup> installeert, Nextcloud<sup><a href="https://www.rubenlinde.nl/en/blog/open-source-lost-jouw-lock-in-niet-op#user-content-fn-2-808774" id="user-content-fnref-2-808774" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">2</a></sup> uitrolt, en dan vanzelf verlost bent van twintig jaar Microsoft-afhankelijkheid. Maar zo werkt het niet. Open source is geen stofzuiger die jouw puinhoop opruimt. Het is een fundament om op te bouwen — maar dan moet je eerst je eigen rommel opruimen.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="het-probleem-is-niet-open-source--het-probleem-ben-jij">Het probleem is niet open source — het probleem ben jij<a href="https://www.rubenlinde.nl/en/blog/open-source-lost-jouw-lock-in-niet-op#het-probleem-is-niet-open-source--het-probleem-ben-jij" class="hash-link" aria-label="Direct link to Het probleem is niet open source — het probleem ben jij" title="Direct link to Het probleem is niet open source — het probleem ben jij" translate="no">​</a></h2>
+<p>Laten we eerlijk zijn. De Nederlandse overheid heeft <em>zelf gekozen</em> voor een diepe, allesomvattende afhankelijkheid van het Microsoft-ecosysteem. Dat is niet per ongeluk gegaan. Het was beleid. Er is een oud devies in overheidsinkoop: "Er is nog nooit een ambtenaar ontslagen omdat die voor Microsoft koos." En dat klopt. Het was de veilige keuze. Jarenlang zijn aanbestedingen geschreven met Microsoft-producten als impliciete of expliciete eis. Jarenlang zijn werkprocessen ingericht rond Word, Excel, Outlook en SharePoint. Jarenlang is er geïnvesteerd in maatwerk dat alleen werkt binnen dat ecosysteem.</p>
+<p>En nu, nu de geopolitieke wind draait en digitale soevereiniteit opeens op de agenda staat, kijkt diezelfde overheid naar open source en zegt: "Ja maar het werkt niet met onze macro's."</p>
+<p>Nee. Natuurlijk niet. Dat was ook nooit de bedoeling.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="de-macros-in-je-word-documenten">De macro's in je Word-documenten<a href="https://www.rubenlinde.nl/en/blog/open-source-lost-jouw-lock-in-niet-op#de-macros-in-je-word-documenten" class="hash-link" aria-label="Direct link to De macro's in je Word-documenten" title="Direct link to De macro's in je Word-documenten" translate="no">​</a></h2>
+<p>Een voorbeeld dat steeds terugkomt: VBA-macro's in overheidsdocumenten. Organisaties hebben in de loop der jaren honderden, soms duizenden, macro's gebouwd in Word en Excel. Die macro's automatiseren werkprocessen, genereren rapporten, vullen templates in. Ze zijn diep verweven met de dagelijkse werkzaamheden.</p>
+<p>En dan wil je migreren naar Collabora Office of Nextcloud Office. En dan werken die macro's niet. En dan is de conclusie: "Zie je wel, open source is niet klaar."</p>
+<p>Tijdens de drukbezochte HAVEN+ dag — waarvoor dank aan <a href="https://www.linkedin.com/in/jaccobrouwernl/" target="_blank" rel="noopener noreferrer" class="">Jacco de Groot</a> voor de organisatie — merkte <a href="https://www.linkedin.com/in/claudiavankruistum/" target="_blank" rel="noopener noreferrer" class="">Claudia van Kruistum</a> van SURF terecht op dat dit de wereld op z'n kop is. SURF, dezelfde organisatie die Nextcloud uitrolt naar meer dan dertig onderwijsinstellingen<sup><a href="https://www.rubenlinde.nl/en/blog/open-source-lost-jouw-lock-in-niet-op#user-content-fn-3-808774" id="user-content-fnref-3-808774" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">3</a></sup>. Die macro's zijn geen tekortkoming van open source. Ze zijn een direct gevolg van de keuze om <em>zo diep</em> het Microsoft-ecosysteem in te duiken dat je werkprocessen niet meer los te koppelen zijn van proprietary technologie. Dat is lock-in. En die lock-in heb je zelf gecreëerd.</p>
+<p>Open source kan niet en moet niet worden gevraagd om die macro's "even" te ondersteunen. Dat is niet het probleem van Collabora Office. Dat is jouw probleem. En jij — de organisatie die die keuze heeft gemaakt — moet dat oplossen. Door je werkprocessen te herzien. Door macro's te herschrijven of te vervangen door open standaarden. Door de pijn te nemen die hoort bij het rechtzetten van twintig jaar verkeerde keuzes.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="de-applicaties-die-naar-office-verwijzen">De applicaties die naar Office verwijzen<a href="https://www.rubenlinde.nl/en/blog/open-source-lost-jouw-lock-in-niet-op#de-applicaties-die-naar-office-verwijzen" class="hash-link" aria-label="Direct link to De applicaties die naar Office verwijzen" title="Direct link to De applicaties die naar Office verwijzen" translate="no">​</a></h2>
+<p>Het gaat verder dan macro's. <a href="https://www.linkedin.com/in/theo-peters-787539a/" target="_blank" rel="noopener noreferrer" class="">Theo Peters</a> wees er terecht op dat het probleem veel breder is. Kijk naar het aantal overheidsapplicaties dat hardcoded verwijst naar Microsoft Word of Microsoft Office. Documentgeneratiesystemen die alleen Word-templates aankunnen. Workflowsystemen die Outlook-integratie als harde dependency hebben. Rapportagetools die Excel-exports als enige optie bieden.</p>
+<p>Dit is geen technische lock-in. Dit is <em>beleids-lock-in</em>. Jarenlang zijn aanbestedingen uitgeschreven met eisen als "moet integreren met Microsoft Office 365" of "moet compatibel zijn met de Microsoft-werkplek". Elke leverancier die wilde meedoen, moest bouwen voor Microsoft. En nu zitten we met een heel ecosysteem van applicaties dat alleen werkt in een Microsoft-omgeving. Uit onderzoek van iBestuur bleek dat slechts 9% van de ondervraagde gemeenten een overstap van Microsoft überhaupt haalbaar acht<sup><a href="https://www.rubenlinde.nl/en/blog/open-source-lost-jouw-lock-in-niet-op#user-content-fn-4-808774" id="user-content-fnref-4-808774" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">4</a></sup>. Dat cijfer zegt alles.</p>
+<p>Dat is niet de schuld van open source. Dat is het directe gevolg van aanbestedingsbeleid dat concurrentie uitsloot en afhankelijkheid inbouwde. De overheid heeft die eis zelf neergelegd. De overheid moet die eis zelf weer weghalen.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="de-technische-onderlaag-entra-oracle-en-de-rest">De technische onderlaag: Entra, Oracle en de rest<a href="https://www.rubenlinde.nl/en/blog/open-source-lost-jouw-lock-in-niet-op#de-technische-onderlaag-entra-oracle-en-de-rest" class="hash-link" aria-label="Direct link to De technische onderlaag: Entra, Oracle en de rest" title="Direct link to De technische onderlaag: Entra, Oracle en de rest" translate="no">​</a></h2>
+<p>En dan heb je nog de lagen die je niet direct ziet. <a href="https://www.linkedin.com/in/theo-peters-787539a/" target="_blank" rel="noopener noreferrer" class="">Theo Peters</a> benoemde ook die technische onderlaag — en terecht, want daar zitten lock-ins die nog lastiger te doorbreken zijn dan macro's en Office-integraties.</p>
+<p><strong>Microsoft Entra</strong> (voorheen Azure AD) is het identity management platform waar veel overheidsorganisaties op draaien. Elke applicatie, elke inlog, elk autorisatiebesluit loopt via Entra. Migreren naar een open alternatief als Keycloak<sup><a href="https://www.rubenlinde.nl/en/blog/open-source-lost-jouw-lock-in-niet-op#user-content-fn-5-808774" id="user-content-fnref-5-808774" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">5</a></sup> is technisch mogelijk, maar vereist dat je elke aangesloten applicatie opnieuw configureert. Dat is geen klein project.</p>
+<p><strong>Oracle databases</strong> zitten diep in de technische fundamenten van veel overheidssystemen. Migreren naar PostgreSQL[^6] is absoluut haalbaar — PostgreSQL is in veel opzichten superieur — maar het vereist dat je applicatiecode aanpast, stored procedures herschrijft, en migratiepaden test voor systemen die soms al tientallen jaren draaien.</p>
+<p>Hoe dieper je kijkt, hoe meer lock-in je vindt. En elke laag heeft zijn eigen complexiteit, zijn eigen migratiepad, zijn eigen tijdsinvestering. Maar geen van deze lock-ins is een argument <em>tegen</em> open source. Het zijn argumenten voor een gestructureerd migratieplan.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="lock-in-als-argument-vóór-lock-in">Lock-in als argument vóór lock-in<a href="https://www.rubenlinde.nl/en/blog/open-source-lost-jouw-lock-in-niet-op#lock-in-als-argument-v%C3%B3%C3%B3r-lock-in" class="hash-link" aria-label="Direct link to Lock-in als argument vóór lock-in" title="Direct link to Lock-in als argument vóór lock-in" translate="no">​</a></h2>
+<p>En hier zit de kern van mijn frustratie. Ik zie steeds vaker dat de lock-in zelf wordt gebruikt als argument om <em>niet</em> te migreren. De redenering gaat zo:</p>
+<ol>
+<li class="">We zitten vast aan Microsoft</li>
+<li class="">Migreren is complex vanwege die afhankelijkheid</li>
+<li class="">Dus blijven we bij Microsoft</li>
+</ol>
+<p>Dat is een cirkelredenering. Je gebruikt de lock-in als argument vóór de lock-in. Dat is alsof je zegt: "Ik kan niet stoppen met roken, want ik ben verslaafd." Ja, dat klopt. Dat is precies waarom je moet stoppen.</p>
+<p>De complexiteit van de migratie is geen bewijs dat open source niet werkt. Het is bewijs van hoe diep de lock-in gaat. En hoe langer je wacht, hoe dieper die lock-in wordt. Elke dag dat je nog een macro schrijft in VBA, nog een applicatie bouwt op Entra, nog een aanbesteding uitschrijft met "Microsoft-compatibel" als eis — elke dag wordt de migratie complexer.</p>
+<p>De vraag is niet <em>of</em> je moet migreren. De vraag is hoe snel je begint.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="stap-voor-stap-eruit">Stap voor stap eruit<a href="https://www.rubenlinde.nl/en/blog/open-source-lost-jouw-lock-in-niet-op#stap-voor-stap-eruit" class="hash-link" aria-label="Direct link to Stap voor stap eruit" title="Direct link to Stap voor stap eruit" translate="no">​</a></h2>
+<p>Betekent dit dat je morgen alles moet omgooien? Nee. Absoluut niet. Dat zou roekeloos zijn en tot mislukking leiden. Maar het betekent wel dat je moet beginnen. Rustig, gestructureerd, stap voor stap.</p>
+<ul>
+<li class=""><strong>Erken het probleem.</strong> Stop met doen alsof de lock-in een feature is. Het is een risico, een afhankelijkheid, een beperking van je keuzevrijheid.</li>
+<li class=""><strong>Breng de lock-in in kaart.</strong> Waar zitten je afhankelijkheden? Macro's, applicatie-integraties, identity management, databases — maak de lijst compleet.</li>
+<li class=""><strong>Stop de bloeding.</strong> Schrijf geen nieuwe aanbestedingen met Microsoft als harde eis. Bouw geen nieuwe macro's in VBA. Creëer geen nieuwe lock-in.</li>
+<li class=""><strong>Begin met de buitenste lagen.</strong> Documentformaten, kantoorsuites, e-mail — dat zijn de lagen waar open alternatieven het verst gevorderd zijn en waar de impact het grootst is.</li>
+<li class=""><strong>Werk naar binnen toe.</strong> Identity management, databases, de zware technische onderlaag — dat zijn langetermijnprojecten, maar ze moeten wel op de roadmap staan.</li>
+</ul>
+<p>En ja, dat kost tijd. En ja, dat kost geld. Maar die kosten zijn het directe gevolg van keuzes die je zelf hebt gemaakt. Open source vragen om dat gratis op te lossen is niet eerlijk, niet realistisch, en niet constructief.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="de-keuze-is-aan-jou">De keuze is aan jou<a href="https://www.rubenlinde.nl/en/blog/open-source-lost-jouw-lock-in-niet-op#de-keuze-is-aan-jou" class="hash-link" aria-label="Direct link to De keuze is aan jou" title="Direct link to De keuze is aan jou" translate="no">​</a></h2>
+<p>Open source biedt een uitweg. Een goed fundament. Bewezen technologie die wereldwijd draait op de meest kritieke systemen. Maar het is geen magische knop die twintig jaar lock-in ongedaan maakt.</p>
+<p>De overheid moet haar eigen rommel opruimen. De macro's herschrijven. De aanbestedingen herschrijven. De architectuur herzien. En dan — dan werkt open source fantastisch.</p>
+<p>Maar verwacht niet dat het jouw problemen oplost. Die heb je zelf gecreëerd. En die los je zelf op.</p>
+<p><strong>Begin vandaag. Stap voor stap. Want elke dag dat je wacht, wordt de weg terug langer.</strong></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="6-postgresql---postgresql--s-werelds-meest-geavanceerde-open-source-database-breed-ingezet-als-alternatief-voor-oracle-zonder-licentiekosten">[^6]: <strong>PostgreSQL</strong> - <a href="https://www.postgresql.org/" target="_blank" rel="noopener noreferrer" class="">PostgreSQL</a> — 's Werelds meest geavanceerde open source database. Breed ingezet als alternatief voor Oracle, zonder licentiekosten.<a href="https://www.rubenlinde.nl/en/blog/open-source-lost-jouw-lock-in-niet-op#6-postgresql---postgresql--s-werelds-meest-geavanceerde-open-source-database-breed-ingezet-als-alternatief-voor-oracle-zonder-licentiekosten" class="hash-link" aria-label="Direct link to 6-postgresql---postgresql--s-werelds-meest-geavanceerde-open-source-database-breed-ingezet-als-alternatief-voor-oracle-zonder-licentiekosten" title="Direct link to 6-postgresql---postgresql--s-werelds-meest-geavanceerde-open-source-database-breed-ingezet-als-alternatief-voor-oracle-zonder-licentiekosten" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="gerelateerd">Gerelateerd<a href="https://www.rubenlinde.nl/en/blog/open-source-lost-jouw-lock-in-niet-op#gerelateerd" class="hash-link" aria-label="Direct link to Gerelateerd" title="Direct link to Gerelateerd" translate="no">​</a></h2>
+<ul>
+<li class=""><a class="" href="https://www.rubenlinde.nl/en/blog/einde-pax-americana-digitale-soevereiniteit">Het Einde van Pax Americana - Tijd voor digitale soevereiniteit</a> — Waarom Europa moet afkicken van Foreign Tech</li>
+<li class=""><a class="" href="https://www.rubenlinde.nl/en/blog/volwassenheid-open-source-overheid">Volwassenheid van Open Source - Wanneer is technologie 'klaar'?</a> — Het volwassenheidsargument ontkracht</li>
+<li class=""><a class="" href="https://www.rubenlinde.nl/en/blog/coalitieakkoord-2026-digitale-soevereiniteit-analyse">Coalitieakkoord 2026 - Mooie woorden of echte transitie?</a> — Wat het nieuwe coalitieakkoord zegt over digitale soevereiniteit</li>
+<li class=""><a class="" href="https://www.rubenlinde.nl/en/blog/migratie-naar-codeberg">Waarom ik overweeg te migreren van GitHub naar Codeberg</a> — Een persoonlijke migratie als voorbeeld</li>
+</ul>
+<!-- -->
+<section data-footnotes="true" class="footnotes"><h2 class="anchor anchorTargetStickyNavbar_Vzrq sr-only" id="footnote-label">Footnotes<a href="https://www.rubenlinde.nl/en/blog/open-source-lost-jouw-lock-in-niet-op#footnote-label" class="hash-link" aria-label="Direct link to Footnotes" title="Direct link to Footnotes" translate="no">​</a></h2>
+<ol>
+<li class="anchorTargetStickyNavbar_Vzrq" id="user-content-fn-1-808774">
+<p><strong>Collabora Office</strong> - <a href="https://www.collaboraonline.com/" target="_blank" rel="noopener noreferrer" class="">Collabora Online</a> — Open source kantooroplossing gebaseerd op LibreOffice, met enterprise support en GDPR-compliance. Wordt ingezet door overheden in heel Europa. <a href="https://www.rubenlinde.nl/en/blog/open-source-lost-jouw-lock-in-niet-op#user-content-fnref-1-808774" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+</li>
+<li class="anchorTargetStickyNavbar_Vzrq" id="user-content-fn-2-808774">
+<p><strong>Nextcloud</strong> - <a href="https://nextcloud.com/" target="_blank" rel="noopener noreferrer" class="">Nextcloud</a> — Self-hosted samenwerkingsplatform als alternatief voor Microsoft 365 en SharePoint. Gebruikt door onder andere de Duitse deelstaat Sleeswijk-Holstein en het Oostenrijkse Ministerie van Economische Zaken. <a href="https://www.rubenlinde.nl/en/blog/open-source-lost-jouw-lock-in-niet-op#user-content-fnref-2-808774" data-footnote-backref="" aria-label="Back to reference 2" class="data-footnote-backref">↩</a></p>
+</li>
+<li class="anchorTargetStickyNavbar_Vzrq" id="user-content-fn-3-808774">
+<p><strong>SURF &amp; Nextcloud</strong> - <a href="https://www.ictmagazine.nl/blogs/surf-rolt-nextcloud-breed-uit-naar-nederlandse-onderwijsinstellingen/" target="_blank" rel="noopener noreferrer" class="">SURF rolt Nextcloud breed uit naar Nederlandse onderwijsinstellingen</a> — Januari 2026: SURF rolt Nextcloud uit naar meer dan dertig onderwijsinstellingen als reactie op de roep om minder afhankelijkheid van Microsoft en Google. <a href="https://www.rubenlinde.nl/en/blog/open-source-lost-jouw-lock-in-niet-op#user-content-fnref-3-808774" data-footnote-backref="" aria-label="Back to reference 3" class="data-footnote-backref">↩</a></p>
+</li>
+<li class="anchorTargetStickyNavbar_Vzrq" id="user-content-fn-4-808774">
+<p><strong>iBestuur</strong> - <a href="https://ibestuur.nl/artikel/gemeenten-voelen-zich-klemgezet-door-microsoft/" target="_blank" rel="noopener noreferrer" class="">Gemeenten voelen zich klemgezet door Microsoft</a> — Onderzoek waaruit bleek dat slechts 9% van de 54 ondervraagde gemeenten een overstap van Microsoft haalbaar acht. <a href="https://www.rubenlinde.nl/en/blog/open-source-lost-jouw-lock-in-niet-op#user-content-fnref-4-808774" data-footnote-backref="" aria-label="Back to reference 4" class="data-footnote-backref">↩</a></p>
+</li>
+<li class="anchorTargetStickyNavbar_Vzrq" id="user-content-fn-5-808774">
+<p><strong>Keycloak</strong> - <a href="https://www.keycloak.org/" target="_blank" rel="noopener noreferrer" class="">Keycloak</a> — Open source identity en access management platform. Ondersteunt SAML, OpenID Connect en OAuth2 als alternatief voor Microsoft Entra. <a href="https://www.rubenlinde.nl/en/blog/open-source-lost-jouw-lock-in-niet-op#user-content-fnref-5-808774" data-footnote-backref="" aria-label="Back to reference 5" class="data-footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>]]></content>
+        <author>
+            <name>Ruben van der Linde</name>
+            <email>your-email@example.com</email>
+            <uri>https://github.com/rubenvdlinde</uri>
+        </author>
+        <category label="personal" term="personal"/>
+        <category label="open-source" term="open-source"/>
+        <category label="soevereiniteit" term="soevereiniteit"/>
+        <category label="overheid" term="overheid"/>
+        <category label="migratie" term="migratie"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[FOSDEM 2026 - terug naar de werkelijkheid]]></title>
         <id>https://www.rubenlinde.nl/en/blog/fosdem-2026-terugreis-open-source-halleluja</id>
