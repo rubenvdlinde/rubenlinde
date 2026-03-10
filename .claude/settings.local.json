@@ -5,7 +5,13 @@
       "Bash(wc:*)",
       "WebFetch(domain:en.bioerrorlog.work)",
       "Bash(npm run build:*)",
-      "WebFetch(domain:www.linkedin.com)"
+      "WebFetch(domain:www.linkedin.com)",
+      "WebFetch(domain:www.opentalk.eu)",
+      "WebFetch(domain:lasuite.crisp.help)",
+      "Bash(git add blog/personal/2026-03-10-overheid-open-source-lastige-liefde.md .claude/skills/write-blog/SKILL.md)",
+      "Bash(git commit:*)",
+      "Bash(git push origin main)",
+      "Bash(git add blog/personal/2026-03-10-overheid-open-source-lastige-liefde.md .claude/settings.local.json)"
     ]
   }
 }

@@ -11,9 +11,9 @@ description: 'De overheid omarmt open source, maar bouwt liever zelf dan dat ze 
 
 De overheid houdt van open source — zolang ze het zelf mogen bouwen.
 
-Dat klinkt cynisch, maar ik meen het. Ik zie het steeds weer gebeuren. In vergaderingen, in aanbestedingen, in Europese samenwerkingsverbanden. Overheden die open source omarmen als de toekomst, die soevereiniteit en samenwerking prediken, en die vervolgens hun eigen versie bouwen van iets dat al bestaat. Met eigen standaarden. Eigen integraties. Eigen eilandjes.
+Dat klinkt cynisch, maar ik meen het. Ik zie het steeds weer gebeuren. In vergaderingen, in aanbestedingen, in Europese samenwerkingsverbanden. Overheden die open source omarmen als de toekomst, die soevereiniteit en samenwerking prediken, en die vervolgens hun eigen versie bouwen van iets dat al bestaat. Met eigen standaarden. Eigen integraties. Eigen eilandjes. Het is een beetje alsof je Narcissus Product Owner maakt.
 
-Het resultaat? Een Europees landschap van open source projecten die niet met elkaar praten, geld dat verdampt aan duplicatie, en bestaande communities die verzwakken terwijl overheden naast hen hun eigen ding doen.
+Het resultaat? Een Europees landschap van open source projecten die niet met elkaar praten, geld dat verdampt aan duplicatie, en bestaande communities die verzwakken terwijl overheden hun eigen weggaan.
 
 Laten we eerlijk zijn: het probleem is niet dat overheden open source willen. Het probleem is _hoe_ ze het doen.
 
@@ -93,7 +93,7 @@ En dat brengt me bij het meest veelzeggende voorbeeld van dit hele probleem.
 
 Nergens is dit patroon zo zichtbaar als in het Europese speelveld rondom soevereine werkplekken. Duitsland en Frankrijk — twee landen die allebei digitale soevereiniteit nastreven, allebei investeren in open source, maar het fundamenteel anders aanpakken. Het verschil zegt alles over wat er misgaat.
 
-### Duitsland: OpenDesk — Bouwen Mét het Ecosysteem
+### Duitsland: OpenDesk — Bouwen mét het Ecosysteem
 
 OpenDesk is het Duitse antwoord op de Microsoft-afhankelijkheid.[^11] Gebouwd door ZenDiS (Zentrum für Digitale Souveränität) met een budget van 45 miljoen euro. Het uitgangspunt: **best of breed**. Neem bestaande, bewezen open source tools en integreer ze tot een samenhangend geheel.
 
@@ -117,7 +117,7 @@ Nextcloud heeft een app store. Dat betekent dat je volledige applicaties kunt bo
 
 **Dit is het verschil tussen een platform en een eiland.**
 
-### Frankrijk: La Suite Numérique — De As van het Kwaad
+### Frankrijk: La Suite Numérique — Bouwen tégen het Ecosysteem
 
 En dan Frankrijk.
 
