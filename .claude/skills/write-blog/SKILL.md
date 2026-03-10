@@ -100,6 +100,67 @@ Write the complete blog post following ALL style rules from CLAUDE.md. Key remin
 - Use "Laten we eerlijk zijn" naturally where it fits (don't force it)
 - Use rhetorical questions, direct address, and concrete analogies
 
+### Rhetorical Devices & Patterns (CRITICAL — apply these consistently)
+
+#### The Escalation Arc (5-phase emotional structure)
+
+Every post follows this trajectory. Master this arc:
+
+1. **Fair Acknowledgment** — Start by acknowledging the opposing view or legitimate difficulty. Show you understand before you critique. Example: "Voordat ik de kritiek induik, is het fair om te erkennen dat de motivatie oprecht is."
+2. **"Laten we eerlijk zijn" Pivot** — Mark the transition from understanding to honest critique. This is the signature moment.
+3. **Evidence Stacking** — Pile up examples, case studies, comparison tables. The tone becomes data-driven and relentless.
+4. **Confrontational Peak** — Short sentences. Direct accusations. Bold metaphors. One-liners land here. "Het probleem ben jij." / "Dat is hypocriet."
+5. **Constructive Conclusion** — Never end on pure negativity. Always provide practical "Wat nu?" steps, followed by a punchy closing line.
+
+#### Bold One-Liners & Stellingnames
+
+- Use **one-sentence paragraphs** for maximum impact: "Dat is het." / "Maar hoop is geen strategie."
+- **"Het probleem is niet X — het probleem ben jij"** pattern: directly blame the responsible party, don't hedge
+- **"Dat is geen X, dat is Y"** reframe: relabel the opponent's position. Example: "Dat is geen zekerheid, dat is vendor lock-in verpakt als service." / "Dat is angst voor verandering verpakt als technische eis."
+- The **triple-sentence knockout**: escalate in three steps ending with a blunt short sentence. Example: "En dan wil je migreren. En dan werken die macro's niet. En dan is de conclusie: 'Zie je wel, open source is niet klaar.'"
+
+#### Extended Metaphors
+
+Every post should have at least ONE extended metaphor that carries through multiple sections (not just a single mention):
+
+- Tech dependency as "loverboy-constructie" (Pax Americana post)
+- Lock-in as smoking addiction: "Dat is alsof je zegt: 'Ik kan niet stoppen met roken, want ik ben verslaafd.'"
+- Open source as "stofzuiger die jouw puinhoop opruimt" (Lock-in post)
+- Government projects as "eilandjes" (Lastige liefde post)
+- Unused code as "digitaal graf"
+
+#### The Hypocrisy Reveal
+
+Build toward a moment where a double standard is exposed. This is one of the most effective persuasive tools:
+
+- "Google Workspace accepted without question, but open source must have 100% feature parity?"
+- "Microsoft Azure runs on open source, but open source is 'not mature enough'?"
+- "France preaches open source collaboration, but builds everything itself?"
+
+#### "De vraag is niet... maar" Urgency Frame
+
+Recurring closer/reframing device: "De vraag is niet _of_ je moet migreren. De vraag is hoe snel je begint." / "De vraag is niet of de technologie klaar is. De vraag is of wij klaar zijn."
+
+#### Concrete Examples & Personas
+
+- **Named fictional personas** with specific costs: "Frans, de groenteboer" who pays EUR 5.50/month for Microsoft 365
+- **Real people** cited by name with LinkedIn links where appropriate (Claudia van Kruistum, Theo Peters, etc.)
+- **Historical parallels**: Windows 95 crashes in 1995 vs. open source scrutiny today; Truman's Greenland bid vs. Trump's
+
+### Footnote Format
+
+Footnotes must follow this exact format with a hyphen after the source name and a description after the URL:
+
+```
+[^1]: **Source Name** - [Link Title](https://url) — Description of what this source is and why it's relevant. Include context.
+```
+
+Example:
+
+```
+[^1]: **Collabora Office** - [Collabora Online](https://www.collaboraonline.com/) — Open source kantooroplossing gebaseerd op LibreOffice, met enterprise support en GDPR-compliance. Wordt ingezet door overheden in heel Europa.
+```
+
 ### Structure
 
 - Start with proper frontmatter (slug, title, authors: [ruben], tags, description)
