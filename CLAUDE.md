@@ -124,6 +124,15 @@ The writing style uses a distinctive **staccato rhythm**:
 - **Longer sentences** (3-4 clauses) only when explaining complex policy or technical concepts
 - **Question-answer pairs** as structural devices: "Dus wat is het probleem?" followed by the answer
 
+### Anti-AI schrijfpatronen
+
+Vermijd deze patronen die AI-gegenereerde tekst verraden:
+
+- **Geen em-dashes (—) in lopende tekst.** Gebruik punten, komma's of dubbele punten. Em-dashes in zinnen zijn een typisch AI-patroon. Enige uitzondering: bij opsommingen met bold-lead items (`- **Label** — uitleg`).
+- **Geen title case in koppen.** Alleen het eerste woord en eigennamen krijgen een hoofdletter. Fout: "## Zelf Bouwen vs. Aansluiten". Goed: "## Zelf bouwen vs. aansluiten".
+- **Geen overbodige bijzinnen tussen streepjes.** Waar een AI schrijft "Dit project — dat al drie jaar draait — is succesvol", schrijf je "Dit project draait al drie jaar en is succesvol."
+- **Geen dubbele punten als scheidingsteken in koppen** tenzij het echt een opsomming inleidt.
+
 ### Signature Rhetorical Devices
 
 1. **"Laten we eerlijk zijn"** — The author's signature phrase. Used across the majority of posts as a rhetorical pivot to honest assessment. Use it naturally but don't force it into every post.

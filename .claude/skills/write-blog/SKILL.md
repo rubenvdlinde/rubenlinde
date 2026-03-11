@@ -17,9 +17,9 @@ The user may have provided a topic hint: $ARGUMENTS
 
 If the user provided a topic, acknowledge it. If not, ask what they want to write about.
 
-Either way, proceed to Phase 2 — you must ALWAYS ask clarifying questions before writing.
+Either way, proceed to Phase 2. You must ALWAYS ask clarifying questions before writing.
 
-## Phase 2: Clarifying Questions (MANDATORY — minimum 5 questions)
+## Phase 2: Clarifying Questions (MANDATORY, minimum 5 questions)
 
 Use the AskUserQuestion tool to ask questions. You MUST ask **at least 5 clarifying questions** before writing anything. Ask them in batches of 2-4 using the AskUserQuestion tool (which supports up to 4 questions per call).
 
@@ -100,6 +100,13 @@ Write the complete blog post following ALL style rules from CLAUDE.md. Key remin
 - Use "Laten we eerlijk zijn" naturally where it fits (don't force it)
 - Use rhetorical questions, direct address, and concrete analogies
 
+### Stijlregels om AI-achtig schrijven te vermijden
+
+- **Geen em-dashes (—) in lopende tekst.** Gebruik punten, komma's of dubbele punten in plaats van gedachtestreepjes. Em-dashes zijn een veelvoorkomend AI-patroon. Het enige toegestane gebruik is bij opsommingen met bold-lead items (bijv. `- **Label** — uitleg`).
+- **Geen title case in koppen.** Alleen het eerste woord en eigennamen krijgen een hoofdletter. Fout: "## Zelf Bouwen vs. Aansluiten — Het Eeuwige Dilemma". Goed: "## Zelf bouwen vs. aansluiten".
+- **Geen dubbele punten als scheidingsteken in koppen.** Gebruik een komma of begin een nieuwe zin. Uitzondering: als het echt een opsomming inleidt.
+- **Geen overbodige bijzinnen tussen streepjes.** Waar een AI zou schrijven "Dit project — dat al drie jaar draait — is succesvol", schrijf je "Dit project draait al drie jaar en is succesvol."
+
 ### Rhetorical Devices & Patterns (CRITICAL — apply these consistently)
 
 #### The Escalation Arc (5-phase emotional structure)
@@ -115,7 +122,7 @@ Every post follows this trajectory. Master this arc:
 #### Bold One-Liners & Stellingnames
 
 - Use **one-sentence paragraphs** for maximum impact: "Dat is het." / "Maar hoop is geen strategie."
-- **"Het probleem is niet X — het probleem ben jij"** pattern: directly blame the responsible party, don't hedge
+- **"Het probleem is niet X, het probleem ben jij"** pattern: directly blame the responsible party, don't hedge
 - **"Dat is geen X, dat is Y"** reframe: relabel the opponent's position. Example: "Dat is geen zekerheid, dat is vendor lock-in verpakt als service." / "Dat is angst voor verandering verpakt als technische eis."
 - The **triple-sentence knockout**: escalate in three steps ending with a blunt short sentence. Example: "En dan wil je migreren. En dan werken die macro's niet. En dan is de conclusie: 'Zie je wel, open source is niet klaar.'"
 
