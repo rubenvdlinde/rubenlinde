@@ -11,9 +11,11 @@ description: 'De overheid omarmt open source, maar bouwt liever zelf dan dat ze 
 
 De overheid houdt van open source — zolang ze het zelf mogen bouwen.
 
-Dat klinkt cynisch, maar ik meen het. Ik zie het steeds weer gebeuren. In vergaderingen, in aanbestedingen, in Europese samenwerkingsverbanden. Overheden die open source omarmen als de toekomst, die soevereiniteit en samenwerking prediken, en die vervolgens hun eigen versie bouwen van iets dat al bestaat. Met eigen standaarden. Eigen integraties. Eigen eilandjes. Het is een beetje alsof je Narcissus Product Owner maakt.
+Dat klinkt cynisch, maar ik meen het. Bij Common Ground lopen we hier dagelijks tegenaan. Maar het is een gevoelig onderwerp. Niemand wil horen dat zijn project een duplicaat is. Daarom vergelijk ik Europa's twee grootste soevereine werkplekprojecten: OpenDesk (Duitsland) en La Suite Numérique (Frankrijk). Zelfs op dat niveau botsen ze niet op functionaliteit maar op aanpak. OpenDesk shopt best-of-breed componenten bij bestaande projecten. La Suite bouwt alles zelf. Niet om Nederlandse collega's op de tenen te trappen, maar om het patroon zichtbaar te maken. Want het patroon is overal hetzelfde.
 
-Het resultaat? Een Europees landschap van open source projecten die niet met elkaar praten, geld dat verdampt aan duplicatie, en bestaande communities die verzwakken terwijl overheden hun eigen weggaan.
+Overheden die open source omarmen als de toekomst, die soevereiniteit en samenwerking prediken, en die vervolgens hun eigen versie bouwen van iets dat al bestaat. Met eigen standaarden. Eigen integraties. Eigen eilandjes. Het is een beetje alsof je Narcissus Product Owner maakt.
+
+Het resultaat? Een landschap van open source projecten die niet met elkaar praten, geld dat verdampt aan duplicatie, en bestaande communities die verzwakken terwijl overheden hun eigen weg gaan.
 
 Laten we eerlijk zijn: het probleem is niet dat overheden open source willen. Het probleem is _hoe_ ze het doen.
 
@@ -21,7 +23,7 @@ Laten we eerlijk zijn: het probleem is niet dat overheden open source willen. He
 
 ## Waarom Wil de Overheid Open Source?
 
-De motivaties zijn oprecht en valide — ik schreef er een [apart stuk](/blog/open-source-voor-beleidsmakers) over. In het kort:
+De motivaties zijn oprecht en valide — ik schreef er een [apart stuk](/blog/open-source-voor-beleidsmakers) over. Maar ze zijn ook onze lat. Aan het einde vergelijk ik de twee grootste Europese open source werkplekprojecten en houd ze tegen deze criteria. Dan wordt zichtbaar wat de gevolgen zijn van de keuze tussen aansluiten en zelf bouwen. In het kort:
 
 - **Soevereiniteit** — Geen kill switch in handen van een ander land. Het ICC-incident bewees dat dit geen theorie is.[^1]
 - **Veiligheid** — Open code kun je inspecteren; proprietary code moet je vertrouwen.[^2]
@@ -73,7 +75,7 @@ Het resultaat is een suite die bestaat uit componenten die je kent:
 
 De architectuurprincipes zijn helder: modulariteit, interoperabiliteit, uitwisselbaarheid.[^7] Elk component kan worden vervangen zonder het geheel te breken. Open standaarden — CalDAV, CardDAV, IMAP, WebDAV, Matrix — vormen de lijm.
 
-En het werkt. De Bundeswehr tekende een zevenjarig contract. Het Robert Koch-instituut rolde het uit voor 7.000 gebruikers. Het ICC stapte over na de Microsoft-sancties. In januari 2026 begonnen de Deutsche Rentenversicherung en de Bundesagentur für Arbeit met pilots. Het doel: meer dan 160.000 licenties bij Duitse overheidsinstellingen.[^8]
+En het werkt. De Bundeswehr tekende een zevenjarig contract. Het Robert Koch-instituut rolde het uit voor 7.000 gebruikers. Het ICC stapte over na de Microsoft-sancties. In januari 2026 begonnen de Deutsche Rentenversicherung en de Bundesagentur für Arbeit met pilots. Het doel: meer dan 160.000 gebruikers bij Duitse overheidsinstellingen.[^8]
 
 Maar het mooie van OpenDesk zit niet in de suite zelf. Het zit in het ecosysteem.
 
@@ -90,7 +92,7 @@ La Suite Numérique is het Franse equivalent, gebouwd door DINUM met een budget 
 Waar Duitsland bestaande projecten integreert, bouwt Frankrijk alles zelf:
 
 - **Docs**: custom frontend (React/Next.js) op BlockNote en Y.js — in plaats van Collabora of een ander bestaand project dat al jarenlang door duizenden organisaties wordt gebruikt
-- **Visio**: custom videoconferencing op LiveKit — in plaats van OpenTalk, een Europees alternatief onder EUPL-licentie dat al wordt ingezet door Duitse deelstaten en Deense gemeenten
+- **Visio**: custom videoconferencing op LiveKit — in plaats van OpenTalk, een Europees alternatief onder EUPL-licentie dat al wordt ingezet door Duitse deelstaten en Deense gemeenten (overigens ook op LiveKit)
 - **Tchap**: eigen Matrix-client — in plaats van Element, de standaard Matrix-client die ook Duitsland gebruikt
 - **Drive**: eigen file-sharing (Django + React) — in plaats van Nextcloud, het platform dat OpenDesk als kern gebruikt en dat tientallen miljoenen gebruikers wereldwijd bedient
 - **Messages**: eigen mailclient from scratch — in plaats van OX App Suite, dat ironisch genoeg wél door DINUM zelf wordt gebruikt voor ministerie-email
@@ -107,7 +109,7 @@ Ja, de _bouwstenen_ zijn open source. Maar de producten die erop gebouwd worden 
 | **Aanbouwbaarheid**    | Elke ontwikkelaar kan apps bouwen via Nextcloud app store | Alles wat je wilt koppelen vereist custom integratie-werk |
 | **Interoperabiliteit** | Standaard open protocollen                                | Eigen implementaties van open protocollen                 |
 
-Het probleem met La Suite is niet dat het slecht is gebouwd. Het is technisch en visuel indrukwekkend.
+Het probleem met La Suite is niet dat het slecht is gebouwd. Het is technisch en visueel indrukwekkend.
 
 **Het probleem is dat het een eiland is.**
 
@@ -141,11 +143,11 @@ En dat merk je. Laten we de cijfers naast elkaar leggen.
 
 De getallen spreken voor zich, maar een paar dingen springen er extra uit. Bij Visio zijn 1.377 van de ~1.700 commits door één persoon gedaan ([lebaudantoine](https://github.com/lebaudantoine)) — 81% van het hele project. Bij Docs komt 57% van alle commits van één developer ([AntoLC](https://github.com/AntoLC)). Tchap is een fork van Element — de 848 "contributors" die GitHub toont zijn grotendeels Element-developers wiens commits zijn meegekopieerd. Slechts ~10-20 mensen werken daadwerkelijk aan Tchap-specifieke code.
 
-En dan de functionaliteit. Docs is in wezen een markdown-editor op BlockNote.js, terwijl Collabora een volledig office-pakket is met Writer, Calc en Impress. Drive is een simpele file-sharing applicatie in versie 0.14, terwijl Nextcloud een compleet platform is met app store, federatie en honderden integraties. Messages ondersteunt niet eens IMAP of POP3 — het is 11 maanden oud met 14 contributors, tegenover OX App Suite dat al 21 jaar draait en 220 miljoen mailboxen bedient.[^18] Overigens gebruikt DINUM voor de ministeries wél gewoon OX App Suite als webmail — wat eigenlijk alleen maar bewijst dat ze het alternatief al in huis hadden.
+En dan de functionaliteit. Docs is in wezen een markdown-editor op BlockNote.js, terwijl Collabora een volledig office-pakket is met Writer, Calc en Impress. Drive is een simpele file-sharing applicatie in versie 0.14, terwijl Nextcloud een compleet platform is met app store, federatie en honderden integraties, archivering, metadatering noem het maar op. Messages ondersteunt niet eens IMAP of POP3 — het is 11 maanden oud met 14 contributors, tegenover OX App Suite dat al 21 jaar draait en 220 miljoen mailboxen bedient.[^18] Overigens gebruikt DINUM voor de ministeries wél gewoon OX App Suite als webmail — wat eigenlijk alleen maar bewijst dat ze het alternatief al in huis hadden.
 
-Vier van de vijf La Suite-componenten gebruiken MIT — de licentie die het makkelijkst maakt om code te sluiten en commercieel te exploiteren zonder iets terug te geven. OpenTalk gebruikt EUPL-1.2, Collabora MPLv2, Nextcloud en Element AGPL-3.0 — licenties die expliciet ontworpen zijn om open source open te houden.
+Dan is er ook nog een licentieprobleem. Vier van de vijf La Suite-componenten gebruiken MIT — de licentie die het makkelijkst maakt om code te sluiten en commercieel te exploiteren zonder iets terug te geven. OpenTalk gebruikt EUPL-1.2, Collabora MPLv2, Nextcloud en Element AGPL-3.0 — licenties die expliciet ontworpen zijn om open source open te houden.
 
-Vijf componenten. Vijf keer hetzelfde verhaal. La Suite forkt of herbouwt wat er al is, met een fractie van de mankracht en een fractie van de functionaliteit. Frankrijk heeft inmiddels 23 miljoen euro uitgegeven aan minder functionaliteit, gebouwd door een handvol developers. Hiermee heeft het geen onafhankelijk soeverein ecosysteem opgebouwd, maar een risico op de continuïteit van de staat.
+Vijf componenten. Vijf keer hetzelfde verhaal. La Suite forkt of herbouwt wat er al is, met een fractie van de mankracht en een fractie van de functionaliteit. Frankrijk heeft inmiddels 23 miljoen euro uitgegeven aan minder functionaliteit, gebouwd door een handvol developers. Hiermee heeft het geen onafhankelijk soeverein ecosysteem opgebouwd, maar een risico op de continuïteit van de staat. Het Franse eilandje is extreem dun bevolkt.
 
 ### Het Eiland-Effect
 
@@ -163,43 +165,31 @@ Het resultaat: bestaande open source projecten verliezen bijdragen, verliezen ge
 
 En het zijn niet alleen de directe bijdragen die wegvallen. Het gaat ook om het signaal. Als een grote Europese overheid besluit om Collabora te negeren en zelf iets te bouwen, dan zegt dat tegen de markt: "Dit project is niet goed genoeg." Dat ondermijnt het vertrouwen van andere potentiële gebruikers. Het trekt talent weg. Het verdeelt de community.
 
-Weet je nog die gast op het feest die alleen met zichzelf staat te praten? La Suite is die gast. Het drinkt de drank op — het gebruikt de open source bouwstenen, de protocollen, de standaarden. Het profiteert van het feest. Maar het praat met niemand. Het luistert naar niemand. Het draagt niks bij. En aan het einde van de avond is het ervan overtuigd dat het de beste werkplek van Europa heeft gebouwd. Maar het feest — het Europese open source ecosysteem — is er niks mee opgeschoten.
+Weet je nog die gast op het feest die alleen met zichzelf staat te praten? La Suite is die gast. Het drinkt de drank op — het gebruikt de open source bouwstenen, de protocollen, de standaarden. Het profiteert van het feest. Maar het praat met niemand. Het luistert naar niemand. Het draagt niks bij. En aan het einde van de avond is het ervan overtuigd dat het de beste werkplek van Europa heeft gebouwd. Maar het feest van een Europese open source ecosysteem is er niks mee opgeschoten.
 
 ### De Interoperabiliteits-Farce
 
-En het wordt nog absurder. Tchap en Element zijn allebei gebouwd op het Matrix-protocol. Ze spreken letterlijk dezelfde taal. Maar een Franse ambtenaar op Tchap kan niet communiceren met een Duitse collega op Element.[^10] Twee landen die samenwerken aan digitale soevereiniteit — er is zelfs een trilaterale overeenkomst tussen Frankrijk, Duitsland en Nederland[^11] — maar wiens chat-systemen niet met elkaar praten.
+En het wordt nog absurder. Tchap (La Suite) en Element (OpenDesk) zijn allebei gebouwd op het Matrix-protocol. Ze spreken letterlijk dezelfde taal. Maar een Franse ambtenaar op Tchap kan niet communiceren met een Duitse collega op Element.[^10] Twee landen die samenwerken aan digitale soevereiniteit (er is zelfs een trilaterale overeenkomst tussen Frankrijk, Duitsland en Nederland[^11]) maar wiens chat-systemen niet met elkaar praten.
 
 Je kunt het niet verzinnen. Het is alsof twee buurlanden allebei een telefoonnetwerk bouwen, allebei op dezelfde technologie, maar weigeren om hun centrales met elkaar te verbinden. Technisch triviaal. Politiek blijkbaar onmogelijk.
 
-Frankrijk investeerde ook nog eens 23 miljoen euro in drie concurrerende private consortiums onder het France 2030-programma[^12] — nog meer fragmentatie, nog meer eilandjes, nog meer geld naar projecten die niet met de rest van Europa communiceren.
+Frankrijk investeerde ook nog eens 23 miljoen euro in drie concurrerende private consortiums onder het France 2030-programma[^12], nog meer fragmentatie, nog meer eilandjes, nog meer geld naar projecten die niet met de rest van Europa communiceren.
 
 ### En Nederland?
 
-Nederland zit er tussenin met MijnBureau, een initiatief van het Ministerie van BZK dat elementen van beide benaderingen combineert.[^13] En op lokaal niveau zien we hetzelfde patroon bij Common Ground: officieel een weging, maar in de praktijk bouwen gemeenten regelmatig eigen varianten van dingen die al bestaan. Na acht jaar is het project nog steeds zoekende naar breed gedragen hergebruik.[^14]
+Nederland zit er tussenin met MijnBureau, een initiatief van het Ministerie van BZK dat elementen van beide benaderingen combineert.[^13] En op lokaal niveau zien we hetzelfde patroon bij Common Ground: officieel een weging, maar in de praktijk bouwen gemeenten regelmatig eigen varianten van dingen die al bestaan.[^14]
 
 Ik zeg dit niet om Common Ground af te branden — het uitgangspunt is goed en er zijn waardevolle resultaten geboekt. Maar het illustreert het bredere patroon: zelfs binnen één land, zelfs binnen een expliciet samenwerkingsverband, is de neiging om zelf te bouwen sterker dan de discipline om aan te sluiten.
 
-Het Nederlandse OSPO (Open Source Program Office) bij BZK laat gelukkig zien dat het ook anders kan. Zij kozen bewust voor Forgejo als basis voor het overheids-codeplatform — niet zelf bouwen, maar aansluiten en bijdragen.[^15] Boris van Hoytema, de kwartiermaker, zei expliciet tegen de Forgejo-community dat ze "niet alleen willen nemen, maar ook middelen willen inbrengen." Dat is precies de houding die nodig is.
-
-## Vibe Coding — Het Probleem op Steroïden
-
-Alsof het niet genoeg was dat overheden institutioneel de neiging hebben om zelf te bouwen, maakt vibe coding dat probleem exponentieel erger. AI verlaagt de drempel om zelf te bouwen tot nul, verzwakt de bijdragen aan bestaande projecten, en produceert code die er professioneel uitziet maar fundamenteel onveilig kan zijn. Ik schreef er een [diepere analyse](/blog/vibe-coding-open-source) over.
-
-**Dat is alsof je een rokende verslaafde een gratis aansteker geeft. Het probleem bestond al — maar je maakt het onweerstaanbaar.**
+Het Nederlandse OSPO (Open Source Program Office) bij BZK laat gelukkig zien dat het ook anders kan. Zij kozen bewust voor Forgejo als basis voor het overheids-codeplatform. Niet zelf bouwen, maar aansluiten en bijdragen.[^15] Gina Plat, de kwartiermaker, zei expliciet tegen de Forgejo-community dat ze "niet alleen willen nemen, maar ook middelen willen inbrengen." Dat is precies de houding die nodig is.
 
 ## Waarom Blijven Overheden Dit Doen?
 
-Het is makkelijk om te wijzen naar politici en bureaucraten, maar het probleem is structureler dan dat. Ik zie een aantal patronen die steeds terugkomen.
+Het probleem is structureler dan slechte keuzes van individuele politici. Overheden zijn gewend aan maatwerk. "Onze situatie is uniek" is het standaardargument. En eerlijk: overheidsprocessen _zijn_ complex. Maar 80% van de functionaliteit is identiek. Het is die 20% maatwerk waarvoor je de 100% zelf bouwt.
 
-**Maatwerk als default.** Overheden zijn gewend aan maatwerk. Decennia van enterprise software hebben een cultuur gecreëerd waarin "onze situatie is uniek" het standaardargument is. En eerlijk: overheidsprocessen _zijn_ complex. De WMO verschilt per gemeente, de Awb heeft lokale varianten, elk gemeente heeft haar eigen historische IT-landschap. Maar complexe processen zijn geen excuus om standaardcomponenten te negeren. De 80/20 regel geldt ook hier: 80% van de functionaliteit is identiek. Het is die 20% maatwerk waarvoor je de 100% zelf bouwt.
+Daarbovenop komen perverse prikkels. Wie budget heeft, bestaat. Een team dat aansluit bij een bestaand project verbruikt minder budget, heeft minder mensen nodig, en heeft dus minder invloed. De prikkel is om te bouwen, niet om aan te sluiten.
 
-**Budgetten als bestaansrecht.** In de overheidswereld geldt: wie budget heeft, bestaat. Een team dat aansluit bij een bestaand project verbruikt minder budget. Minder budget betekent minder mensen. Minder mensen betekent minder invloed. De prikkel is om te bouwen, niet om aan te sluiten.
-
-**Gebrek aan overzicht.** Het open source landschap is enorm. Zonder actief scouting-mechanisme weten overheden simpelweg niet wat er al bestaat. En als je niet weet dat er een oplossing is, bouw je je eigen.
-
-**Nationale ijdelheid.** Laten we eerlijk zijn: sommige landen bouwen liever een middelmatig eigen product dan een excellent buitenlands project te adopteren. Soevereiniteit is een valide argument. Protectionisme vermomd als soevereiniteit is dat niet. Als je een eigen Docs-applicatie bouwt terwijl Collabora prima werkt, is dat geen soevereiniteit — **dat is nationale ijdelheid die het hele Europese open source ecosysteem verzwakt.**
-
-**Het patroon schaalt.** Van de Europese Commissie tot Nederlandse gemeenten — overal zie je hetzelfde: een voorkeur voor eigen bouwen boven samenwerken. De dynamiek bij een gemeente die een eigen formulierenmodule bouwt is identiek aan die van een land dat een eigen soevereine werkplek bouwt: het gevoel van controle wint het van de logica van samenwerking.
+En laten we eerlijk zijn: sommige landen bouwen liever een middelmatig eigen product dan een excellent buitenlands project te adopteren. Protectionisme vermomd als soevereiniteit. Van de Europese Commissie tot Nederlandse gemeenten: het gevoel van controle wint het van de logica van samenwerking.
 
 ## Naar een Betere Balans — Wat Moet Er Veranderen?
 
@@ -248,19 +238,19 @@ Laten we eerlijk zijn. De motivaties voor open source bij de overheid zijn helde
 
 Zes van de acht motivaties scoort La Suite slechter dan OpenDesk. Alleen op soevereiniteit — het vermijden van Foreign Tech — scoren ze gelijk. En dat is ironisch, want soevereiniteit is juist het argument dat Frankrijk gebruikt om de hele aanpak te rechtvaardigen. Op alle andere criteria — veiligheid, democratie, innovatie, kosten, diversiteit, publieke functionaliteit, interoperabiliteit — levert zelf bouwen een slechter resultaat dan aansluiten bij bestaande projecten.
 
+### Teruggeven aan het publiek
+
+En dat verschil vertaalt zich direct naar de markt. OpenDesk kun je vandaag al afnemen bij meerdere commerciële partijen: Bechtle, The Good Cloud, Proculix, office.eu. Ook bekende Nederlandse spelers als KPN en Centric komen met een aanbod. Je hebt als overheid, inwoner of ondernemer echte keuze bij wie je je soevereine werkplek plus eventuele apps afneemt. Dat is logisch: het bestaande ecosysteem van leveranciers kan dit product direct uitleveren. La Suite is bij mijn weten momenteel alleen verkrijgbaar via Mosa Cloud. En zelfs dan krijg je een werkplek, geen ecosysteem van apps.
+
 ## De Keuze
 
 De overheid hoeft niet alles zelf te bouwen om soeverein te zijn. Sterker nog: door alles zelf te bouwen, ondermijn je precies de open source ecosystemen waarvan je afhankelijk wilt zijn.
 
-Duitsland laat zien dat het anders kan. OpenDesk bewijst dat je een soevereine werkplek kunt bouwen door bestaande open source tools te integreren, in plaats van ze te vervangen. Dat versterkt het ecosysteem, verlaagt de kosten, en creëert een platform waar anderen op kunnen voortbouwen. Elke app in de Nextcloud app store maakt OpenDesk waardevoller — zonder dat ZenDiS er een cent aan uitgeeft.
+Duitsland laat zien dat het anders kan. OpenDesk bewijst dat je een soevereine werkplek kunt bouwen door bestaande open source tools te integreren, in plaats van ze te vervangen. Dat versterkt het ecosysteem, verlaagt de kosten, en creëert een platform waar anderen op kunnen voortbouwen. Elke app in de Nextcloud app store maakt OpenDesk waardevoller zonder dat ZenDiS er een cent aan uitgeeft.
 
 Frankrijk laat zien wat er misgaat als je dat niet doet. La Suite is technisch indrukwekkend, maar het is een eiland. Een duur, gepolijst eiland dat geld en aandacht wegtrekt bij de projecten die het Europese open source ecosysteem daadwerkelijk dragen. Een eiland waar je niet tegenaan kunt bouwen zonder custom integratie-werk.
 
-De vraag is niet of overheden open source moeten gebruiken. Dat debat is voorbij. De vraag is of ze het ecosysteem versterken of verzwakken. Of ze samenwerken of dupliceren. Of ze bijdragen of bouwen.
-
-**En met vibe coding als versneller is het makkelijker dan ooit om de verkeerde keuze te maken.**
-
-De intenties zijn goed. De uitvoering moet beter. Publiek geld verdient publieke functionaliteit — niet publieke eilandjes.
+Dit symboliseerd dan weer de keuze waar we in Nederland en binnen het porgramma commongournd ook voor staan. Gaan het ecosysteem versterken of verzwakken. Samenwerken of dupliceren. Bijdragen of bouwen.
 
 **Begin met bijdragen. Stop met bouwen. De rest volgt vanzelf.**
 
