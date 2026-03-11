@@ -23,7 +23,7 @@ Laten we eerlijk zijn: het probleem is niet dat overheden open source willen. He
 
 ## Waarom wil de overheid open source?
 
-De motivaties zijn oprecht en valide. Ik schreef er een [apart stuk](/blog/open-source-voor-beleidsmakers) over. Ze zijn tegelijk onze lat. Aan het einde vergelijk ik de twee grootste Europese open source werkplekprojecten en houd ze tegen deze criteria. Dan wordt zichtbaar wat de gevolgen zijn van de keuze tussen aansluiten en zelf bouwen. In het kort:
+De motivaties zijn oprecht en valide. Ze zijn tegelijk onze lat. Aan het einde vergelijk ik de twee grootste Europese open source werkplekprojecten en houd ze tegen deze criteria. Dan wordt zichtbaar wat de gevolgen zijn van de keuze tussen aansluiten en zelf bouwen. In het kort:
 
 - **Soevereiniteit** — Geen kill switch in handen van een ander land. Het ICC-incident bewees dat dit geen theorie is.[^1]
 - **Veiligheid** — Open code kun je inspecteren; proprietary code moet je vertrouwen.[^2]
@@ -109,7 +109,7 @@ Ja, de _bouwstenen_ zijn open source. Maar de producten die erop gebouwd worden 
 | **Aanbouwbaarheid**    | Elke ontwikkelaar kan apps bouwen via Nextcloud app store | Alles wat je wilt koppelen vereist custom integratie-werk |
 | **Interoperabiliteit** | Standaard open protocollen                                | Eigen implementaties van open protocollen                 |
 
-Het probleem met La Suite is niet dat het slecht is gebouwd. Het is technisch en visueel indrukwekkend.
+Het probleem met La Suite is niet dat het slecht is gebouwd. Het is technisch en visueel indrukwekkend. Zo als [Jacco Brouwer](https://www.linkedin.com/in/jaccobrouwernl) laat ook al [op linkedin](https://www.linkedin.com/feed/update/urn:li:activity:7436694736876453888/) constateerde naar aanleiding van zijn voorbereiding voor het [iBestuur](https://www.linkedin.com/company/ibestuur) congres met [Boris van Hoytema](https://www.linkedin.com/in/borisvanhoytema) .
 
 **Het probleem is dat het een eiland is.**
 
@@ -181,7 +181,7 @@ Nederland zit er tussenin met MijnBureau, een initiatief van het Ministerie van 
 
 Ik zeg dit niet om Common Ground af te branden. Het uitgangspunt is goed en er zijn waardevolle resultaten geboekt. Het illustreert wel het bredere patroon: zelfs binnen één land, zelfs binnen een expliciet samenwerkingsverband, is de neiging om zelf te bouwen sterker dan de discipline om aan te sluiten.
 
-Het Nederlandse OSPO (Open Source Program Office) bij BZK laat gelukkig zien dat het ook anders kan. Zij kozen bewust voor Forgejo als basis voor het overheids-codeplatform. Niet zelf bouwen, maar aansluiten en bijdragen.[^15] Gina Plat, de kwartiermaker, zei expliciet tegen de Forgejo-community dat ze "niet alleen willen nemen, maar ook middelen willen inbrengen." Dat is precies de houding die nodig is.
+Het Nederlandse OSPO (Open Source Program Office) bij BZK laat gelukkig zien dat het ook anders kan. Zij kozen bewust voor Forgejo als basis voor het overheids-codeplatform. Niet zelf bouwen, maar aansluiten en bijdragen.[^15] de kwartiermaker, zei expliciet tegen de Forgejo-community dat ze "niet alleen willen nemen, maar ook middelen willen inbrengen." Dat is precies de houding die nodig is.
 
 ## Waarom blijven overheden dit doen?
 
@@ -296,7 +296,7 @@ Dit symboliseert de keuze waar we in Nederland en binnen het programma Common Gr
 
 [^14]: **VNG** - [Common Ground: zonder samenwerking redden we het niet](https://vng.nl/artikelen/common-ground-zonder-samenwerking-redden-we-het-niet) — VNG's analyse van de uitdagingen rondom Common Ground, waaronder het gebrek aan brede adoptie en de noodzaak van betere samenwerking.
 
-[^15]: **Forgejo / Hacker News** - [Meeting notes between Forgejo and the Dutch government](https://news.ycombinator.com/item?id=45929247) — Het Nederlandse OSPO koos bewust voor Forgejo als basis voor het overheids-codeplatform. Gina Plat, de kwartiermaker, gaf aan dat de overheid niet alleen wil nemen, maar ook middelen wil inbrengen aan het project.
+[^15]: **Forgejo / Hacker News** - [Meeting notes between Forgejo and the Dutch government](https://news.ycombinator.com/item?id=45929247) — Het Nederlandse OSPO koos bewust voor Forgejo als basis voor het overheids-codeplatform.
 
 [^16]: **Element** - [Element at the Summit on European Digital Sovereignty](https://element.io/blog/element-at-the-summit-on-european-digital-sovereignty/) — De eerste European Summit on Digital Sovereignty in Berlijn (november 2025), met keynotes van Merz en Macron over Europese digitale onafhankelijkheid.
 
