@@ -106,6 +106,8 @@ Write the complete blog post following ALL style rules from CLAUDE.md. Key remin
 - **Geen title case in koppen.** Alleen het eerste woord en eigennamen krijgen een hoofdletter. Fout: "## Zelf Bouwen vs. Aansluiten — Het Eeuwige Dilemma". Goed: "## Zelf bouwen vs. aansluiten".
 - **Geen dubbele punten als scheidingsteken in koppen.** Gebruik een komma of begin een nieuwe zin. Uitzondering: als het echt een opsomming inleidt.
 - **Geen overbodige bijzinnen tussen streepjes.** Waar een AI zou schrijven "Dit project — dat al drie jaar draait — is succesvol", schrijf je "Dit project draait al drie jaar en is succesvol."
+- **Vermijd het woord "maar" als het afbreekt.** "Maar" ontkracht alles wat ervoor komt. Gebruik "maar" alleen als het je argument _versterkt_ (bijv. "Dat klinkt subtiel, maar het is een wereld van verschil"). Vermijd "Maar" aan het begin van een zin als het de voorgaande zin ontkracht. Alternatieven: herformuleer positief, gebruik "toch", "wel", "alleen", of laat het weg. Patroon "niet X, maar Y" en "Ja X, maar Y" zijn wél goed: daar versterkt "maar" het argument.
+- **Schrijf in een positieve toon.** Focus op wat wél werkt, wat de lezer wél kan doen. Begin zinnen bij voorkeur met het positieve alternatief in plaats van het probleem. Kritiek is goed en mag scherp zijn, cynisme zonder richting is dat niet.
 
 ### Rhetorical Devices & Patterns (CRITICAL — apply these consistently)
 

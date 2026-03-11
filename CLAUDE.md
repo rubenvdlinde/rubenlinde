@@ -132,6 +132,8 @@ Vermijd deze patronen die AI-gegenereerde tekst verraden:
 - **Geen title case in koppen.** Alleen het eerste woord en eigennamen krijgen een hoofdletter. Fout: "## Zelf Bouwen vs. Aansluiten". Goed: "## Zelf bouwen vs. aansluiten".
 - **Geen overbodige bijzinnen tussen streepjes.** Waar een AI schrijft "Dit project — dat al drie jaar draait — is succesvol", schrijf je "Dit project draait al drie jaar en is succesvol."
 - **Geen dubbele punten als scheidingsteken in koppen** tenzij het echt een opsomming inleidt.
+- **Vermijd het woord "maar" als het afbreekt.** "Maar" ontkracht alles wat ervoor komt. Gebruik "maar" alleen als het je argument _versterkt_ (bijv. "Dat klinkt subtiel, maar het is een wereld van verschil"). Vermijd "Maar" aan het begin van een zin wanneer het de voorgaande zin ontkracht. Alternatieven: herformuleer positief, gebruik "toch", "wel", "alleen", of laat het weg. Patronen als "niet X, maar Y" en "Ja X, maar Y" zijn wél goed.
+- **Schrijf in een positieve toon.** Focus op wat wél werkt, wat de lezer wél kan doen. Kritiek mag scherp zijn, cynisme zonder richting niet.
 
 ### Signature Rhetorical Devices
 
