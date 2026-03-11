@@ -296,7 +296,7 @@ Dit symboliseert de keuze waar we in Nederland en binnen het programma Common Gr
 
 [^14]: **VNG** - [Common Ground: zonder samenwerking redden we het niet](https://vng.nl/artikelen/common-ground-zonder-samenwerking-redden-we-het-niet) — VNG's analyse van de uitdagingen rondom Common Ground, waaronder het gebrek aan brede adoptie en de noodzaak van betere samenwerking.
 
-[^15]: **FOSDEM 2026** - [From Policy to Practice: Open Source in the Dutch Government](https://fosdem.org/2026/schedule/event/BNPJ7P-from-policy-to-practice-open-source-in-gov/) — Het Nederlandse OSPO koos bewust voor Forgejo als basis voor het overheids-codeplatform en bouwt mee aan bestaande open source projecten.
+[^15]: **Forgejo / Hacker News** - [Meeting notes between Forgejo and the Dutch government](https://news.ycombinator.com/item?id=45929247) — Het Nederlandse OSPO koos bewust voor Forgejo als basis voor het overheids-codeplatform. Gina Plat, de kwartiermaker, gaf aan dat de overheid niet alleen wil nemen, maar ook middelen wil inbrengen aan het project.
 
 [^16]: **Element** - [Element at the Summit on European Digital Sovereignty](https://element.io/blog/element-at-the-summit-on-european-digital-sovereignty/) — De eerste European Summit on Digital Sovereignty in Berlijn (november 2025), met keynotes van Merz en Macron over Europese digitale onafhankelijkheid.
 
